@@ -1,0 +1,20 @@
+# REQUIRED
+
+applicationSuite:
+  name:  STAR
+  softwareVersion: 2.5
+  identifier:
+
+name: inputAlignmentsFromBAM
+
+version: 1.0.0
+
+# RECOMMENDED
+
+description: Processing of BAM file without re-alignment.
+
+# OPTIONAL
+
+alternateName: []
+
+

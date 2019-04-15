@@ -1,0 +1,19 @@
+# REQUIRED
+
+applicationSuite:
+  name:  trimmomatic
+  softwareVersion: 0.38
+  identifier:
+
+name: PE
+
+version: 0.1
+
+# RECOMMENDED
+
+description: Trimmomatic for paired end reads.
+keywords: []
+
+# OPTIONAL
+
+alternateName: []

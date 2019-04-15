@@ -1,0 +1,24 @@
+# REQUIRED
+
+applicationSuite:
+  name:  STAR
+  softwareVersion: 2.5
+  identifier:
+
+name: alignReads
+
+version: 1.0.0
+
+# RECOMMENDED
+
+description:  >
+  In this step user supplies the genome files generated in the 1st step, as well as the RNA-seq
+  reads (sequences) in the form of FASTA or FASTQ files. STAR maps the reads to the genome,
+  and writes several output files, such as alignments (SAM/BAM), mapping summary statistics,
+  splice junctions, unmapped reads, signal (wiggle) tracks etc.
+
+# OPTIONAL
+
+alternateName: []
+
+

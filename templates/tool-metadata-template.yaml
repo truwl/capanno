@@ -1,0 +1,50 @@
+# REQUIRED
+name:
+
+softwareVersion:
+
+version:
+
+# Recommended
+
+description:
+
+codeRepository:
+  name:
+  URL:
+
+license:
+
+WebSite:
+  - name:
+    description:
+    URL:
+  - name:
+    description:
+    URL:
+
+contactPoint:
+  - name:
+    email:
+    identifier:
+
+publication:
+  - headline:
+    identifier:
+
+keywords: []
+
+# OPTIONAL
+
+alternateName: []
+
+creator:
+  - name:
+    email:
+    identifier:
+
+programmingLanguage: []
+
+datePublished:
+
+dowloadURL:

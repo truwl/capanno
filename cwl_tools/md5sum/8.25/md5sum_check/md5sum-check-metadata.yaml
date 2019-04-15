@@ -1,0 +1,20 @@
+# REQUIRED
+
+applicationSuite:
+  name:  # e.g. STAR
+  softwareVersion:
+  identifier:
+
+name:
+
+version:
+
+# RECOMMENDED
+
+description:
+
+# OPTIONAL
+
+alternateName: []
+
+

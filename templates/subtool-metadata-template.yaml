@@ -1,0 +1,21 @@
+# REQUIRED
+
+applicationSuite:
+  name:
+  softwareVersion:
+  identifier:
+
+name:
+
+version:
+
+# RECOMMENDED
+
+description:
+keywords: []
+
+# OPTIONAL
+
+alternateName: []
+
+

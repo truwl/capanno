@@ -1,0 +1,17 @@
+.idea/*
+.DS_Store
+.AppleDouble
+.LSOverridec
+.AppleDB
+.AppleDesktop
+.Trashes
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# vim swap files
+*.swp
+# C extensions
+*.so

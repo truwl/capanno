@@ -1,0 +1,19 @@
+# REQUIRED
+
+applicationSuite:
+  name:  trimmomatic
+  softwareVersion: 0.38
+  identifier:
+
+name: SE
+
+version: 1.0.0
+
+# RECOMMENDED
+
+description: Trimmomatic for single end reads.
+keywords: []
+
+# OPTIONAL
+
+alternateName: []

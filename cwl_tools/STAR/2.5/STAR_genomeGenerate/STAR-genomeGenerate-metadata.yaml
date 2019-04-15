@@ -1,0 +1,20 @@
+# REQUIRED
+
+applicationSuite:
+  name: STAR
+  softwareVersion: 2.5
+  identifier:
+
+name: genomeGenerate
+
+version: 1.0.0
+
+# RECOMMENDED
+
+description: genomeGenerate option directs STAR to run genome indices generation job.
+
+# OPTIONAL
+
+alternateName: []
+
+
