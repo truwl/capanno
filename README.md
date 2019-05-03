@@ -9,7 +9,7 @@ Tools in this repository will be made available through [truwl.com](https://truw
 
 
 ## Repository structure and directory/file names
-All CWL command line tools and metadata files are in the [`cwl_tools`](cwl_tools/) directory. 
+All CWL command line tools and metadata files are in the [`cwl_tools`](cwl-tools/) directory. 
 ### `cwl_tools/` subdirectories
 The directories in `cwl_tools/` must be named with the name of the tool being described preserving capitalization, 
 dashes, and underscores. 

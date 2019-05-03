@@ -4,7 +4,7 @@ Metadata Guide
 
 This documents how to describe metadata for command line tools described by the common workflow language (CWL) in this repository. 
 Separate metadata files must be specified for each version of a tool (excluding patch versions). Metadata files are
-specified in YAML. All metadata keys are defined by [schema.org](https://schema.org/) vocabularies and can be adapted to be 
+specified in YAML. Most metadata keys are defined by [schema.org](https://schema.org/) vocabularies and can be adapted to be 
 imported by CWL files.
 ### Metafile types 
 There are three types of metadata files:
