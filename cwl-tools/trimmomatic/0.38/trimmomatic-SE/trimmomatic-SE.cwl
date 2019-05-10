@@ -11,9 +11,9 @@ arguments:
 requirements:
   - class: SchemaDefRequirement
     types:
-    - $import: trimmomatic-illumina_clipping.yml
-    - $import: trimmomatic-sliding_window.yml
-    - $import: trimmomatic-max_info.yml
+    - $import: ../common/trimmomatic-illumina_clipping.yml
+    - $import: ../common/trimmomatic-sliding_window.yml
+    - $import: ../common/trimmomatic-max_info.yml
 
   - class: InlineJavascriptRequirement
   - class: ShellCommandRequirement
@@ -97,7 +97,7 @@ inputs:
   ILLUMINACLIP:
     type:
       - "null"
-      - trimmomatic-illumina_clipping.yml#illuminaClipping
+      - ../common/trimmomatic-illumina_clipping.yml#illuminaClipping
     inputBinding:
       valueFrom: >
         ${
@@ -113,7 +113,7 @@ inputs:
   SLIDINGWINDOW:
     type:
       - "null"
-      - trimmomatic-sliding_window.yml#slidingWindow
+      - ../common/trimmomatic-sliding_window.yml#slidingWindow
     inputBinding:
       position: 24
       prefix: 'SLIDINGWINDOW:'
@@ -134,7 +134,7 @@ inputs:
   MAXINFO:
     type:
       - "null"
-      - trimmomatic-max_info.yml#maxinfo
+      - ../common/trimmomatic-max_info.yml#maxinfo
     inputBinding:
       position: 24
       valueFrom: >

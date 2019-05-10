@@ -3,11 +3,14 @@
 applicationSuite:
   name:  STAR
   softwareVersion: 2.5
-  identifier:
+  identifier: TL_8ab263.82
+
 
 name: alignReads
 
 version: 1.0.0
+
+identifier:  TL_8ab263_a4.82
 
 # RECOMMENDED
 

@@ -1,6 +1,7 @@
 # REQUIRED
 name: trimmomatic
 softwareVersion: 0.38
+identifier: TL_a2e03a.af
 featureList:
   - SE
   - PE

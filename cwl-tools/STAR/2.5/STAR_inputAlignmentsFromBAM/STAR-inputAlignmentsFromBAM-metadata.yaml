@@ -3,11 +3,13 @@
 applicationSuite:
   name:  STAR
   softwareVersion: 2.5
-  identifier:
+  identifier: TL_8ab263.82
 
 name: inputAlignmentsFromBAM
 
 version: 1.0.0
+
+identifier: TL_8ab263_d6.82
 
 # RECOMMENDED
 
