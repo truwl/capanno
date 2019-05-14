@@ -19,4 +19,5 @@ description: Processing of BAM file without re-alignment.
 
 alternateName: []
 
-
+parentMetadata:
+  - ../common/STAR-metadata.yaml

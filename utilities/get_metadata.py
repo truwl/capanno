@@ -43,7 +43,8 @@ def _handle_credit(credit):
             contacts.append({'name': entity.get('name'), 'email': entity.get('email'), 'identifier': entity.get('orcidid')})
     return {'creator': creators, 'contactPoint': contacts}
 
-def tbd(homepage, link, documentation):
+
+def pop_websites_and_repo(homepage, link, documentation):
     websites = []
     code_repo = None
     if homepage:
@@ -55,7 +56,9 @@ def tbd(homepage, link, documentation):
             websites.append({'name': None, 'description': entity['type'], 'URL': entity.get('url')})
     for entity in documentation:
         websites.append({'name': None, 'description': 'documentation', 'URL': entity.get('url')})
+
     return {'WebSite': websites, 'codeRepository': code_repo}
+
 
 def pop_metadata_template_from_biotools(biotoolsID):
     meta_dict = get_metadata_from_biotools(biotoolsID)
@@ -63,7 +66,7 @@ def pop_metadata_template_from_biotools(biotoolsID):
     tool_metadata = ToolMetadata(name=meta_data['name'],
                                  description=meta_data['description'],
                                  license=meta_data['license'],
-                                 **tbd(meta_data['homepage'], meta_data['link'], meta_data['documentation']),
+                                 **pop_websites_and_repo(meta_data['homepage'], meta_data['link'], meta_data['documentation']),
                                  **_handle_credit(meta_data['credit']),
                                  publication=_handle_publication(meta_data.get('publication')),
                                  keywords=_handle_keywords(meta_data['topic'], meta_data['function']),
@@ -71,6 +74,7 @@ def pop_metadata_template_from_biotools(biotoolsID):
                                  # datePublished='',
                                  # downloadURL=''
                                  )
+    tool_metadata.extra.update({'biotools_id': biotoolsID})
     filename = f"{tool_metadata.name}-metadata.yaml"
     tool_metadata.mk_file(filename)
     return filename

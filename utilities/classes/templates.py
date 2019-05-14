@@ -36,7 +36,8 @@ class ToolMetadata(MetadataBase):
         ('creator', [{'name': None, 'email': None, 'identifier': None}]),
         ('programmingLanguage', []),
         ('datePublished', None),
-        ('downloadURL', None)
+        ('downloadURL', None),
+        ('extra', {}),
     ])
 
     @classmethod
