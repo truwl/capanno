@@ -22,7 +22,6 @@ inputs:
     inputBinding:
       position: 2
       prefix: --binary
-      alternatePrefix: -b
     doc: read in binary mode
 
   tag:
@@ -37,7 +36,6 @@ inputs:
     inputBinding:
       position: 2
       prefix: --text
-      alternatePrefix: -t
     doc: read in text mode (default)
 
 
