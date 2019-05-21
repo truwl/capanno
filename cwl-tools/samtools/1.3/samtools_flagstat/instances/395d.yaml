@@ -1,0 +1,6 @@
+inFile: {
+  class: File,
+  path: ../FileInputs/Generated/starAlignOut/Aligned.sortedByCoord.out.bam,
+  identifier: XX_3f4172e3.1
+  }
+outputFileName: _genome_flagstat.txt

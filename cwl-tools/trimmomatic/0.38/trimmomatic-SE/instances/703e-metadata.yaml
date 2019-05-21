@@ -1,0 +1,8 @@
+toolName: trimmomatic SE
+toolVersion: 0.38
+toolIdentifier: TL_a2e03a_53.af
+identifier: TL_a2e03a_53.af.703e
+version: 0.1
+createsFiles:
+  reads_trimmed: {identifier: XX_eebf667b.1}
+description: trimmomatic with test input data. Parameters taken from ENCODE Demo-pipeline.

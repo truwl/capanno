@@ -1,0 +1,14 @@
+toolName: STAR alignReads
+toolVersion: '2.5'
+toolIdentifier: TL_8ab263_a4.82
+identifier: TL_8ab263_a4.82.aad2
+inputObjects:
+  genomeDir: FC_571b9d8a:1
+createsFiles:
+  logFinal: {identifier: XX_eebf667b.1}
+  log: {identifier: XX_9a006e6d.1}
+  logProgress: {identifier: XX_35952b82.1}
+  SJout: {identifier: XX_8b2a2643.1}
+  aligned: {identifier: XX_3f4172e3.1}
+  alignedToTranscriptomeOut: {identifier: XX_cf5dd15f.1}
+description: Runs a STAR mapping job. Creates alignments to the genome and transcriptome with associated log files.

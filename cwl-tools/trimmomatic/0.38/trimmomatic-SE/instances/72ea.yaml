@@ -1,0 +1,20 @@
+phred: 33
+reads1:
+  class: File
+  path: file1.fastq.gz
+  identifier: XX_9238c6d3
+output: trimmed.file1.fastq.gz
+ILLUMINACLIP:
+  adapters:
+    class: File
+    path: fakeDir/adapters.fasta
+    identifier: fake314159
+  seedMismatches: 4
+  palindromeClipThreshold: 5
+  simpleClipThreshold: 6
+LEADING: 3
+TRAILING: 3
+SLIDINGWINDOW:
+  windowSize: 3
+  requiredQuality: 15
+MINLEN: 50

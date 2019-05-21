@@ -1,0 +1,30 @@
+genomeDir:
+  class: Directory
+  path: ../FileInputs/Generated/prepOut
+  identifier: FC_571b9d8a:1
+
+readFilesIn: [
+  {class: File, path: ../FileInputs/Primary/ENCFF107OTF_Chr22.fastq.gz, identifier: 'XX_cfe88db7.1'},
+  {class: File, path: ../FileInputs/Primary/ENCFF378NQQ_Chr22.fastq.gz, 'identifier': 'XX_4b0dce51.1'}
+
+  ]
+readFilesCommand: zcat
+runThreadN: 1
+genomeLoad: NoSharedMemory
+outFilterMultimapNmax: 20
+alignSJoverhangMin: 8
+alignSJDBoverhangMin: 1
+outFilterMismatchNmax: 999
+outFilterMismatchNoverReadLmax: 0.04
+alignIntronMin: 20
+alignIntronMax: 1000000
+alignMatesGapMax: 1000000
+outSAMheaderCommentFile: COfile.txt
+outSAMheaderHD: '@HD VN:1.4 SO:coordinate'
+outSAMunmapped: Within
+outFilterType: BySJout
+outSAMattributes: [NH, HI, AS, NM, MD]
+outSAMtype: [BAM, SortedByCoordinate]
+quantMode: [TranscriptomeSAM]
+sjdbScore: 1
+limitBAMsortRAM: 60000000000

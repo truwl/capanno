@@ -1,0 +1,9 @@
+
+toolName: samtools view
+toolVersion: '1.3.1'
+toolIdentifier: TL_ec2a8d_46.0b
+identifier: TL_ec2a8d_46.0b.6be2
+version:
+createsFiles:
+  output: {identifier: XX_bc361acb.1}
+description: This step prints all alignments in specified input alignment file to stdout in SAM format with no header.

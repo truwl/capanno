@@ -1,0 +1,43 @@
+toolName: STAR genomeGenerate
+toolVersion: 2.5
+toolIdentifier: TL_8ab263_95.82
+identifier: TL_8ab263_95.82.c76d
+description: Runs genome indices generation job. Generates 15 files.
+createsFiles:
+  indices:
+    - identifier: XX_00cdc643.1
+      name: SAindex
+    - identifier: XX_ad4af729.1
+      name: SA
+    - identifier: XX_76c95ca4.1
+      name: Genome
+    - identifier: XX_ad003027.1
+      name: genomeParameters.txt
+    - identifier: XX_356a90cc.1
+      name: sjdbInfo.txt
+    - identifier: XX_77e45e98.1
+      name: sjdbList.out.tab
+    - identifier: XX_759c9d66.1
+      name: sjdbList.fromGTF.out.tab
+    - identifier: XX_183f4140.1
+      name: exonInfo.tab
+    - identifier: XX_b1ceb014.1
+      name: transcriptInfo.tab
+    - identifier: XX_1e8722a8.1
+      name: exonGeTrInfo.tab
+    - identifier: XX_5347d5c0.1
+      name: geneInfo.tab
+    - identifier: XX_4ef98681.1
+      name: chrLength.txt
+    - identifier: XX_10ee06b2.1
+      name: chrNameLength.txt
+    - identifier: XX_b2f3c5c9.1
+      name: chrName.txt
+    - identifier: XX_c821343a.1
+      name: chrStart.txt
+
+command: >
+  {base_command: 'STAR', command_inputs: [$(inputs.runMode), $(inputs.refGenomeFastaFile), $(inputs.spikeInFasta),
+  $(inputs.sjdbOverhang), $(inputs.sjdbGtfFile), $(inputs.runThreadN), $(inputs.genomeDirName),
+  $(inputs.outFileNamePrefix), $(inputs.genomeSAsparseD)]}
+

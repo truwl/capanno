@@ -1,0 +1,8 @@
+toolName: trimmomatic SE
+toolVersion: '0.38'
+toolIdentifier: TL_a2e03a_53.af
+version: 0.1
+identifier: TL_a2e03a_53.af.72ea
+createsFiles:
+  reads_trimmed: {identifier: fake_eebf667b.1}
+description: trimmomatic with test input data. Designed to test record inputs fail.

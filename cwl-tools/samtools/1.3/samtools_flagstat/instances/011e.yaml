@@ -1,0 +1,6 @@
+inFile: {
+  class: File,
+  path: ../FileInputs/Generated/bamsortOut/_star_out_anno.bam,
+  identifier: XX_bf96ec54.1
+  }
+outputFileName: _anno_flagstat.txt
