@@ -1,8 +1,8 @@
-toolName: gawk
-toolVersion: '4.1'
+toolName: awk
+toolVersion: 4.1
 identifier: 'TL_9579db.89.1C10'
-createsFiles:
-  awkOutput: {identifier: FL_dadb5ac3.1}
+name:
+version: 1.0
 description: |
   Create a combined GTF file from Gencode annotations, Gencode tRNAs, and spike-ins fasta
   usage: gawk -f GTF.awk genomeAnnotationGRF tRNAAnnotationGTF spikeInFasta > mergedGTF
@@ -15,3 +15,12 @@ description: |
 command: >
   {base_command: 'gawk -f', command_inputs: [$(inputs.awkFile), $(inputs.genomeAnnotationGTF),
   $(inputs.tRNAAnnotationGTF), $(inputs.spikeInFasta)]}
+
+inputObjects:
+  - id: awkScript
+    identifier: FL_d8ec9cc3.1
+  - id: inputFiles
+    identifiers: [FL_7121c612.1, FL_a5e0f911.1, FL_6bf0d017.1]
+outputObjects:
+  - id: awkOutput
+    identifier: FL_dadb5ac3.1

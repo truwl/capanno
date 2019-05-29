@@ -301,7 +301,7 @@ inputs:
       --files0-from=F
               read input from the files specified by NUL-terminated names in file F; If F is - then read names from standard input
 
-  inputFiles:
+  inputFile:
     type: ["null", File]
     inputBinding:
       position: 3

@@ -1,4 +1,4 @@
 
 rawPatternAction: '{printf $0 " "; getline; print}'
-inputFiles: [{class: File, path: samtools-viewOut2.txt, identifier: FL_bc361acb.1}]
+inputFiles: [{class: File, path: samtools-viewOut2.txt}]
 outFileName: gawkOutput.txt

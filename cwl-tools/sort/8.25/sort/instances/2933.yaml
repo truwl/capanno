@@ -1,4 +1,9 @@
 bufferSize: 60G
-temporaryDirectory: {class: Directory, path: ./, identifier: FC_2f898942.1}
-inputFiles: {class: File, path: ../gawkOutput.txt, identifier: FL_20506af7.1}
+temporaryDirectory:
+  class: Directory
+  path: ./
+  identifier:
+inputFile:
+  class: File
+  path: ../gawkOutput.txt
 outputFile: sortOutput.txt

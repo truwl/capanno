@@ -1,8 +1,13 @@
 toolName: gawk
-toolVersion: '4.1'
+toolVersion: 4.1
 toolIdentifier: TL_9579db.89
-identifier: 'TL_9579db.89.e9de'
-instanceVersion: 1.0
+identifier: TL_9579db.89.e9de
+name:
+version: 1.0
 description: Takes a headerless sam file and puts consecutive lines on single line. Pairs adjacent reads.
-createsFiles:
-  awkOutput: {identifier: FL_20506af7.1}
+inputObjects:
+  - id: inputFiles
+    identifiers: [FL_bc361acb.1]
+outputObjects:
+  - id: awkOutput
+    identifier: FL_20506af7.1

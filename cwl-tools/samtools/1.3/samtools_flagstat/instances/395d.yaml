@@ -1,6 +1,4 @@
-inFile: {
-  class: File,
-  path: ../FileInputs/Generated/starAlignOut/Aligned.sortedByCoord.out.bam,
-  identifier: FL_3f4172e3.1
-  }
+inFile:
+  class: File
+  path: ../FileInputs/Generated/starAlignOut/Aligned.sortedByCoord.out.bam
 outputFileName: _genome_flagstat.txt

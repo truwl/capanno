@@ -3,6 +3,12 @@ toolName: cat
 toolVersion: '8.25'
 toolIdentifier: TL_d077f2.47
 identifier: TL_d077f2.47.8a6c
-createsFiles:
-  output: {identifier: FL_25f76df3.1}
-description: This step just outputs the header of the input bam file.
+name:
+version:
+description: This step outputs the header of an input bam file.
+inputObjects:
+  - id: inFiles
+    identifiers: [FL_68a6c839.1, FL_4e07c5d8.1]
+outputObjects:
+  - id: output
+  - identifier: FL_25f76df3.1

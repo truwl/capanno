@@ -1,4 +1,6 @@
-input: {class: File, path: ../catOut.txt, identifier: FL_25f76df3.1}
+input:
+  class: File
+  path: ../catOut.txt
 threads: 1
 outBam: true
 samInput: true

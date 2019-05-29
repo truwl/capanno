@@ -1,3 +1,7 @@
-inFiles: [{class: File, path: ../samtools-viewOut1.txt, identifier: FL_68a6c839.1},
-  {class: File, path: ../trOutput.txt, identifier: FL_4e07c5d8.1}]
+inFiles:
+  - class: File
+    path: ../samtools-viewOut1.txt
+  - class: File
+    path: ../trOutput.txt
+
 outputName: outCat.txt

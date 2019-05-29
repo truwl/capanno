@@ -1,8 +1,8 @@
-awkScript: {class: File, path: ../FileInputs/Primary/GTF.awk, identifier: FL_d8ec9cc3.1}
+awkScript: {class: File, path: ../FileInputs/Primary/GTF.awk}
 
 inputFiles: [
-{class: File, path: gencode.v25.annotation_chr22Entries.gtf, identifier: FL_7121c612.1},
-{class: File, path: gencode.v25.tRNAs_chr22Entries.gtf, identifier: FL_a5e0f911.1},
-{class: File, path: ENCFF001RTP.fasta, identifier: FL_6bf0d017.1}
+{class: File, path: gencode.v25.annotation_chr22Entries.gtf},
+{class: File, path: gencode.v25.tRNAs_chr22Entries.gtf},
+{class: File, path: ENCFF001RTP.fasta}
 ]
 outFileName: mergedGTF.gtf
