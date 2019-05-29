@@ -2,7 +2,7 @@ toolName: gawk
 toolVersion: '4.1'
 identifier: 'TL_9579db.89.1C10'
 createsFiles:
-  awkOutput: {identifier: XX_dadb5ac3.1}
+  awkOutput: {identifier: FL_dadb5ac3.1}
 description: |
   Create a combined GTF file from Gencode annotations, Gencode tRNAs, and spike-ins fasta
   usage: gawk -f GTF.awk genomeAnnotationGRF tRNAAnnotationGTF spikeInFasta > mergedGTF

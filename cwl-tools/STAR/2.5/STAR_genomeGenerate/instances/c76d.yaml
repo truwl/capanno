@@ -1,12 +1,12 @@
 genomeFastaFiles: [
-  {class: File, path: ../FileInputs/Primary/hg38chr22.fasta,  identifier: XX_576134f5.1},
-  {class: File, path: ../FileInputs/Primary/ENCFF001RTP.fasta, identifier: XX_6bf0d017.1}
+  {class: File, path: ../FileInputs/Primary/hg38chr22.fasta,  identifier: FL_576134f5.1},
+  {class: File, path: ../FileInputs/Primary/ENCFF001RTP.fasta, identifier: FL_6bf0d017.1}
 ]
 sjdbOverhang: 100
 sjdbGTFfile:
   class: File
   path: ../FileInputs/Generated/mergedGTF.gtf
-  identifier: XX_dadb5ac3.1
+  identifier: FL_dadb5ac3.1
 runThreadN: 4
 genomeDir:
   class: Directory

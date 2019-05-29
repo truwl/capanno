@@ -1,7 +1,7 @@
 toolName: samtools view
-toolVersion: '1.3.1'
+toolVersion: 1.3
 toolIdentifier: TL_ec2a8d_46.0b
 identifier: TL_ec2a8d_46.0b.3a64
 createsFiles:
-  output: {identifier: XX_68a6c839.1}
+  output: {identifier: FL_68a6c839.1}
 description: This step just outputs the header of the input bam file.

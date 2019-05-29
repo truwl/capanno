@@ -5,4 +5,4 @@ identifier: 'TL_9579db.89.e9de'
 instanceVersion: 1.0
 description: Takes a headerless sam file and puts consecutive lines on single line. Pairs adjacent reads.
 createsFiles:
-  awkOutput: {identifier: XX_20506af7.1}  # Need identifier. Name of output should come from cwl file.
+  awkOutput: {identifier: FL_20506af7.1}

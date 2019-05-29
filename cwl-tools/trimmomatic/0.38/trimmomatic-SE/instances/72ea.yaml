@@ -2,7 +2,7 @@ phred: 33
 reads1:
   class: File
   path: file1.fastq.gz
-  identifier: XX_9238c6d3
+  identifier: FL_9238c6d3
 output: trimmed.file1.fastq.gz
 ILLUMINACLIP:
   adapters:
