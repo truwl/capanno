@@ -1,12 +1,10 @@
 genomeDir:
   class: Directory
   path: ../FileInputs/Generated/prepOut
-  identifier: FC_571b9d8a:1
 
 readFilesIn: [
-  {class: File, path: ../FileInputs/Primary/ENCFF107OTF_Chr22.fastq.gz, identifier: 'FL_cfe88db7.1'},
-  {class: File, path: ../FileInputs/Primary/ENCFF378NQQ_Chr22.fastq.gz, 'identifier': 'FL_4b0dce51.1'}
-
+  {class: File, path: ../FileInputs/Primary/ENCFF107OTF_Chr22.fastq.gz},
+  {class: File, path: ../FileInputs/Primary/ENCFF378NQQ_Chr22.fastq.gz}
   ]
 readFilesCommand: zcat
 runThreadN: 1

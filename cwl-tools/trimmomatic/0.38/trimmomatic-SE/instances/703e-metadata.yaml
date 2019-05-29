@@ -3,6 +3,10 @@ toolVersion: 0.38
 toolIdentifier: TL_a2e03a_53.af
 identifier: TL_a2e03a_53.af.703e
 version: 0.1
-createsFiles:
-  reads_trimmed: {identifier: FL_eebf667b.1}
 description: trimmomatic with test input data. Parameters taken from ENCODE Demo-pipeline.
+inputObjects:
+  - id: reads1
+    identifier: FL_9238c6d3.1
+outputObjects:
+  - id: reads_trimmed
+    identifier: FL_eebf667b.1

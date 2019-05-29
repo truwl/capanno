@@ -2,13 +2,11 @@ phred: 33
 reads1:
   class: File
   path: file1.fastq.gz
-  identifier: FL_9238c6d3
 output: trimmed.file1.fastq.gz
 ILLUMINACLIP:
   adapters:
     class: File
     path: fakeDir/adapters.fasta
-    identifier: fake314159
   seedMismatches: 4
   palindromeClipThreshold: 5
   simpleClipThreshold: 6
