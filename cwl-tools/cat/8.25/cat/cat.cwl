@@ -99,7 +99,7 @@ inputs:
     inputBinding:
       position: 1
       prefix: --help
-    doc:  --help display this help and exi
+    doc:  --help display this help and exit
 
   version:
     type: ["null", boolean]

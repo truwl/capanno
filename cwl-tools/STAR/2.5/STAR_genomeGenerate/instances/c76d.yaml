@@ -10,5 +10,4 @@ runThreadN: 4
 genomeDir:
   class: Directory
   path: ./
-  identifier: FC_34101dae.1
 genomeSAsparseD: 4

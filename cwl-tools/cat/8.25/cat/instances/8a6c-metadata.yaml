@@ -8,7 +8,11 @@ version:
 description: This step outputs the header of an input bam file.
 inputObjects:
   - id: inFiles
-    identifiers: [FL_68a6c839.1, FL_4e07c5d8.1]
+    objects:
+      - identifier: FL_68a6c839.1
+        path: ../samtools-viewOut1.txt
+      - identifier: FL_4e07c5d8.1
+        path: ../trOutput.txt
 outputObjects:
   - id: output
-  - identifier: FL_25f76df3.1
+    identifier: FL_25f76df3.1

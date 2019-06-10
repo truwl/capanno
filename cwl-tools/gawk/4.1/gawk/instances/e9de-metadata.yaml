@@ -7,7 +7,9 @@ version: 1.0
 description: Takes a headerless sam file and puts consecutive lines on single line. Pairs adjacent reads.
 inputObjects:
   - id: inputFiles
-    identifiers: [FL_bc361acb.1]
+    objects:
+      - identifier: FL_bc361acb.1
+        path: samtools-viewOut2.txt
 outputObjects:
   - id: awkOutput
     identifier: FL_20506af7.1
