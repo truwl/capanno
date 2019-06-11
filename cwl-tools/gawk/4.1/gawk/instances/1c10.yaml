@@ -1,0 +1,8 @@
+awkScript: {class: File, path: ../FileInputs/Primary/GTF.awk}
+
+inputFiles: [
+{class: File, path: gencode.v25.annotation_chr22Entries.gtf},
+{class: File, path: gencode.v25.tRNAs_chr22Entries.gtf},
+{class: File, path: ENCFF001RTP.fasta}
+]
+outFileName: mergedGTF.gtf

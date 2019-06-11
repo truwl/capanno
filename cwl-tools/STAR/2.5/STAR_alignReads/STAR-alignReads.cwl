@@ -991,6 +991,24 @@ inputs:
       default: 5
       int>0: minimum overhang (i.e. block size) for spliced alignments
 
+  alignSJDBoverhangMin:
+    type: ["null", int]
+    inputBinding:
+      position: 1
+      prefix: --alignSJDBoverhangMin
+    doc: |
+      default: 1
+      minimum overhang for annotated junctions.
+
+  sjdbScore:
+    type: ["null", int]
+    inputBinding:
+      position: 1
+      prefix: --sjdbScore
+    doc: |
+      default: 2
+      int: extra alignment score for alignmets that cross database junctions
+
   alignSplicedMateMapLmin:
     type: ["null", int]
     inputBinding:

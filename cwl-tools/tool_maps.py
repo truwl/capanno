@@ -17,10 +17,10 @@ gnu_tools = OrderedDict([
 
 samtools = OrderedDict([
     ('TL_ec2a8d.0b', 'cwl-tools/samtools/1.3/common/samtools-metadata.yaml'),
-    ('TL_ec2a8d_c2.0b', 'cwl-tools/samtools/1.3/samtools_flagstat/samtools-flagstat.cwl'),
+    ('TL_ec2a8d_a6.0b', 'cwl-tools/samtools/1.3/samtools_flagstat/samtools-flagstat.cwl'),
     ('TL_ec2a8d_6a.0b', 'cwl-tools/samtools/1.3/samtools_index/samtools-index.cwl'),
     ('TL_ec2a8d_ca.0b', 'cwl-tools/samtools/1.3/samtools_sort/samtools-sort.cwl'),
-    ('TL_ec2a8d_1b.0b', 'cwl-tools/samtools/1.3/samtools_view/samtools-view.cwl'),
+    ('TL_ec2a8d_46.0b', 'cwl-tools/samtools/1.3/samtools_view/samtools-view.cwl'),
 ])
 
 STAR = OrderedDict([
@@ -33,11 +33,12 @@ STAR = OrderedDict([
 
 trimmomatic = OrderedDict([
     ('TL_a2e03a.af', 'cwl-tools/trimmomatic/0.38/common/trimmomatic-metadata.yaml'),
-    ('TL_a2e03a_f0.af)', 'cwl-tools/trimmomatic/0.38/trimmomatic-SE/trimmomatic-SE.cwl'),
+    ('TL_a2e03a_53.af', 'cwl-tools/trimmomatic/0.38/trimmomatic-SE/trimmomatic-SE.cwl'),
 ])
 
 everything = OrderedDict(chain(
     gnu_tools.items(),
     samtools.items(),
     STAR.items(),
+    trimmomatic.items(),
 ))

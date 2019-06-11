@@ -1,0 +1,38 @@
+toolName: STAR genomeGenerate
+toolVersion: 2.5
+toolIdentifier: TL_8ab263_95.82
+identifier: TL_8ab263_95.82.c76d
+version: 1.0
+description: Runs genome indices generation job. Generates 15 files.
+inputObjects:
+  - id: genomeFastaFiles
+    objects:
+      - identifier: FL_576134f5.1
+        path: ../FileInputs/Primary/hg38chr22.fasta
+      - identifier: FL_6bf0d017.1
+        path: ../FileInputs/Primary/ENCFF001RTP.fasta
+  - id: sjdbGTFfile
+    identifier: FL_dadb5ac3.1
+  - id: genomeDir
+    identifier: FC_34101dae.1
+outputObjects:
+  - id: indices
+    objects:
+      - identifier: FL_00cdc643.1
+        name:
+        version:
+      - identifier: FL_ad4af729.1
+      - identifier: FL_76c95ca4.1
+      - identifier: FL_ad003027.1
+      - identifier: FL_356a90cc.1
+      - identifier: FL_77e45e98.1
+      - identifier: FL_759c9d66.1
+      - identifier: FL_183f4140.1
+      - identifier: FL_b1ceb014.1
+      - identifier: FL_1e8722a8.1
+      - identifier: FL_5347d5c0.1
+      - identifier: FL_4ef98681.1
+      - identifier: FL_10ee06b2.1
+      - identifier: FL_b2f3c5c9.1
+      - identifier: FL_c821343a.1
+

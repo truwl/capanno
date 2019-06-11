@@ -1,0 +1,13 @@
+genomeFastaFiles: [
+  {class: File, path: ../FileInputs/Primary/hg38chr22.fasta},
+  {class: File, path: ../FileInputs/Primary/ENCFF001RTP.fasta}
+]
+sjdbOverhang: 100
+sjdbGTFfile:
+  class: File
+  path: ../FileInputs/Generated/mergedGTF.gtf
+runThreadN: 4
+genomeDir:
+  class: Directory
+  path: ./
+genomeSAsparseD: 4
