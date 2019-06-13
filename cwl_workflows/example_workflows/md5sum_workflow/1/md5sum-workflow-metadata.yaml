@@ -1,0 +1,10 @@
+name: md5sum tool workflow
+identifier: WF_680a59.6e
+description: |
+  A one step "workflow" to be a subworkflow of a wrapping checker workflow.
+
+version: master__42b7f70
+keywords: []
+
+call_map:
+  md5sum: ST_71882e.e4

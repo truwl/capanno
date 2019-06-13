@@ -1,0 +1,24 @@
+name: encode_xcor.py
+description: ENCODE DCC cross-correlation analysis.
+identifier: ST_23a390.f7
+version: 1.0
+
+tools:
+  - name: echo
+    version:
+
+  - name: sed
+    version:
+
+  - name: Rscript # run_spp.R
+    version:
+
+parentScripts:
+  - name: encode_common_genomic.py
+    version: v1.1.5
+
+  - name: encode_common_log_parser.py
+    version: v1.1
+
+parentMetadata:
+  - ../v1.1/common/encode_atac_script-metadata.yaml

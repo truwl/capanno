@@ -1,0 +1,20 @@
+workflowName: hello world script with checker
+workflowVersion: 1
+workflowIdentifier: WF_0b650e.e4
+name:
+identifier: WF_0b650e.e4.9187
+inputObjects:
+  - id: template_file
+    identifier: FL_d4dbc843.1
+  - id: input_file
+    identifier: FL_8bd095e2.1
+  - id: knowngood_file
+    identifier: FL_c9fdb9d0.1
+
+outputObjects:
+  - id: output_file
+    identifier: FL_a49a226b.1
+  - id: results_file
+    identifier: FL_ea36dbeb.1
+
+description: runs a script that should output a file with the text 'Hello World!', then runs a checker to make sure that output file contains the expectec contents.

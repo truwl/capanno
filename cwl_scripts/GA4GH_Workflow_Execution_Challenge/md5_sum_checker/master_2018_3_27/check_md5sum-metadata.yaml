@@ -1,0 +1,22 @@
+name: check_md5sum
+identifier: ST_493ada.e4
+description: Checks to see if a given file contains a certain string and then returns a JSON.
+version: 1.0
+softwareVersion: 1.0
+programmingLanguage: Python3
+contactPoint:
+  - name: Andrew Duncan
+    email: agduncan@uwaterloo.ca
+
+license: Apache-2.0
+
+codeRepository:
+  name: GitHub,
+  url: https://github.com/dockstore-testing/md5sum-checker/blob/master/checker/bin/check_md5sum
+
+websites:
+  - name: Dockstore
+    url: https://dockstore.org/workflows/github.com/dockstore-testing/md5sum-checker/_cwl_checker:develop?tab=files
+
+publication: {}
+datePublished: 01/24/2018
