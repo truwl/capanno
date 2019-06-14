@@ -25,6 +25,6 @@ steps:
   sort:
     run: sort.cwl
     in:
-      inputFiles: cat/output
+      inputFile: cat/output
     out: [output]
 
