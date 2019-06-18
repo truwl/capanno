@@ -1,7 +1,7 @@
 
 import requests
 import logging
-from .classes.templates import ToolMetadata
+from .classes.metadata import ToolMetadata
 
 def get_metadata_from_biotools(biotoolsID):
     """

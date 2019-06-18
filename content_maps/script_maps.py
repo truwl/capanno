@@ -21,13 +21,13 @@ ENCODE_atac_seq = OrderedDict([
 # ENCODE_DCC = None
 
 GA4GH_Workflow_Execution_Challenge_hello_world_with_checker = OrderedDict([
-    ('ST_99b1ff.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/hello_world_with_checker/1.0/bash-hello_world.cwl'),
-    ('ST_d03368.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/hello_world_with_checker/1.0/python-helloworld_check.cwl')
+    ('ST_99b1ff.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/hello_world/master__8460fb1/bash-hello_world.cwl'),
+    ('ST_d03368.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/hello_world_check/master__8460fb1/python-helloworld_check.cwl')
 ])
 
 GA4GH_Workflow_Execution_Challenge_md5sum_checker = OrderedDict([
-    ('ST_493ada.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/md5_sum_checker/master_2018_3_27/check_md5sum.cwl'),
-    ('ST_71882e.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/md5_sum_checker/master_2018_3_27/my_md5sum.cwl')
+    ('ST_493ada.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/check_md5sum/master__bfd7e5c/check_md5sum.cwl'),
+    ('ST_71882e.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/my_md5sum/master__ca3823d/my_md5sum.cwl')
 ])
 
 GA4GH_Workflow_Execution_Challenge = OrderedDict(chain(

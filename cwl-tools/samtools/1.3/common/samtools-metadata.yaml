@@ -2,6 +2,7 @@
 name: samtools
 softwareVersion: 1.3
 identifier: TL_ec2a8d.0b
+version: 1.0
 
 featureList:
   - view

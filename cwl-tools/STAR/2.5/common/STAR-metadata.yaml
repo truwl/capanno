@@ -4,7 +4,7 @@ name: STAR
 softwareVersion: 2.5
 
 identifier: TL_8ab263.82
-
+version: 1.0
 featureList:
   - genomeGenerate
   - alignReads

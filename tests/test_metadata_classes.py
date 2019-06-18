@@ -1,7 +1,7 @@
 import os
 from ruamel.yaml import safe_load
 from tests.test_base import TestBase
-from utilities.classes.templates import ToolMetadata, ParentToolMetadata, SubtoolMetadata
+from utilities.classes.metadata import ToolMetadata, ParentToolMetadata, SubtoolMetadata
 
 
 class TestMakeToolMetadata(TestBase):

@@ -3,9 +3,12 @@ identifier: WF_ba9852.6e
 description: |
   This demonstrates how to wrap a "real" tool with a checker workflow that runs both the tool and a tool that performs verification of results
 
-version: master__42b7f70
-keywords: []
+softwareVersion: master__42b7f70
+version: 1.0
+keywords:
 
-call_map:
-  md5sum: WF_680a59.6e
-  checker: ST_493ada.e4
+callMap:
+  - id: md5sum
+    identifier: WF_680a59.6e
+  - id: checker
+    identifier: ST_493ada.e4

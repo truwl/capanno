@@ -3,6 +3,8 @@ workflowVersion: 1.0
 workflowIdentifier: WF_1f4d8f.cb
 identifier: WF_1f4d8f.cb.ecd8
 name:
+softwareVersion: 1.0
+version: 1.0
 description: Test case. Concatenates and sorts two small test files.
 outputObjects:
   - id: concatenatedSortedFile

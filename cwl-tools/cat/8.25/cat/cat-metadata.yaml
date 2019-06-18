@@ -2,7 +2,7 @@
 name: cat
 softwareVersion: 8.25
 identifier: TL_d077f2.47
-version: 1.0.0
+version: 1.0
 
 # RECOMMENDED
 description: cat - concatenate files and print on the standard output.

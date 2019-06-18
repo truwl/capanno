@@ -3,7 +3,7 @@ identifier: ST_71882e.e4
 description: A very simple tool that just performs an md5sum
 programmingLanguage: bash
 version: 1.0
-softwareVersion: 1.0
+softwareVersion: master_ca3823d
 
 contactPoint:
   - name: Brian O'Connor
@@ -29,5 +29,5 @@ tools:
   - name: set
     version:
 
-publication: {}
+publication:
 datePublished: 01/28/2017
