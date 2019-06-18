@@ -1,4 +1,4 @@
-Metadata Guide
+Tool Metadata Guide
 ==============
 ### Introduction
 
@@ -6,12 +6,16 @@ This documents how to describe metadata for command line tools described by the 
 Separate metadata files must be specified for each version of a tool (excluding patch versions). Metadata files are
 specified in YAML. Most metadata keys are defined by [schema.org](https://schema.org/) vocabularies and can be adapted to be 
 imported by CWL files.
+
 ### Metafile types 
 There are three types of metadata files:
+
 -  **[Complete tool metadata](#complete):** 
 Metadata file for a tool that is not separated into separate subtools. 
+
 -  **[Parent metadata](#parent)** 
  Metadata that is inherited by multiple subtools.
+ 
 - **[Subtool metadata](#subtools)**
 Metadata that is specific to a subtool. 
 
@@ -19,12 +23,14 @@ Templates are provided for each of these types of metadata in the [templates](..
 
 ### List order
 Metadata fields that accept lists as values should be ordered by importance if applicable. 
+
 ### Metadata sources
 We recommend populating metadata files from [bio.tools](https://bio.tools/) if available. A python script to pre-populate 
 metadata files from the bio.tools api should be coming soon and will be made available.
 
 Metadata can also be obtained from tool manual and help pages, [SciCrunch](https://scicrunch.org/), or other web resources.
 
+$include docs/components/version.md
 
 ## <a name="complete"><a/>Complete tool metadata
 Metadata file fields for a tool that is not separated into subtools.
@@ -34,19 +40,12 @@ Metadata file fields for a tool that is not separated into subtools.
 The name of the tool. Typically, extensions are left out of the name. e.g. 'Picard', not 'picard.jar' although this is
 not a requirement. Alternate names can optionally be stored in the [alternateName](#alternatename) list. 
 ex: `name: Picard`
+
 #### <a name="sversion1"></a>softwareVersion
 A string that specifies the version of the tool that the CWL file is valid for. Versions must follow the 
 version conventions used by the tool.
 ex: `softwareVersion: v3.2`
 
-#### <a name="version1"><a/>version
-Specifies the version of the CWL file. 
-Must follow [semantic versioning](https://semver.org/spec/v2.0.0.html) conventions.
-A 1.0 or greater version of a CWL document must contain valid CWL syntax, 
-follow the required [best practices](CommandLineTool_guide.md), and 
-describe enough input parameters to be useful to others. Breaking changes that constitute a major revision
-include changing the name/id of a command input parameter that would make any job files not run properly.
-ex: `version: 0.2.1`
 
 
 ### Recommended Fields
@@ -63,6 +62,7 @@ description: |
    In addition, the variant programs egrep, fgrep and rgrep are the same as grep -E, grep -F, and grep -r, respectively.  
    These variants are deprecated, but are provided for backward compatibility.
 ~~~
+
 #### <a name="repo1"><a/>codeRepository
 Code repository information. `URL` should specify a web page (should not have a .git extension).
 
@@ -116,6 +116,7 @@ publication:
   - headline: 'BEDTools: The Swiss-Army Tool for Genome Feature Analysis.'
     identifier: 10.1002/0471250953.bi1112s47
 ~~~
+
 #### <a name="key1"></a>keywords
 List of tags to categorize the tool by topic and operation specified with an 
 [edam](http://bioportal.bioontology.org/ontologies/EDAM?p=classes)  or other ontology identifier.
@@ -133,10 +134,12 @@ keywords:
 ~~~
 
 ### Optional Fields
+
 #### <a name="altname1"><a/>alternateName
 List of alternate names for the tool. This is convenient place to put any other names for the tool that someone 
 might use to search for it.
 ex: `alternateName: []`
+
 #### <a name="creator1"><a/>creator
 List of the tool's creator(s). Might be redundant if this is captured in `contactPoint` and/or `publication`.
 Can alias `contactPoint` if this is the case.
@@ -147,11 +150,14 @@ creator:
     email: bob@bobsbobbins.eu
     identifier: 
 ~~~
+
 #### <a name="plang1"><a/>programmingLanguage
 List of programming languages that the tool is written in `programmingLanguage: [Python2, C]`
+
 #### <a name="datepub1"><a/>datePublished
 The release date of the particular version of software in international standard date notation (YYYY-MM-DD). 
 ex: `datePublished: 2003-04-14`
+
 #### <a name="dload1"><a/>downloadURL
 URL to download the tool. `downloadURL: https://github.com/arq5x/bedtools2/archive/v2.27.1.zip`
 
@@ -160,10 +166,13 @@ URL to download the tool. `downloadURL: https://github.com/arq5x/bedtools2/archi
 Metadata file fields for metadata that is inherited by multiple subtools.
 
 ### Required Fields
+
 #### name
 Name of the main tool. ex: `pip`. Also see [name](#name1) above.
+
 #### softwareVersion
 Same as [softwareVersion](#sversion1) above.
+
 #### featureList
 Required for tools that are divided into subtools. The names in the list must correspond to `subtoolName` 
 provided in the metadata file for the subtool, if one has been created, and should be the string used to identify the 
@@ -191,31 +200,43 @@ featureList:
 ```
 
 ### Recommended Fields
+
 #### description
 Description of the tool that applies to the tool as a whole, not to an individual subtool. 
 Also see [description](#desc1) above.
+
 #### codeRepository
 Same as [codeRepository](#repo1) above.
+
 #### license
 Same as [license](#license1) above.
+
 #### Website
 Same as [Website](#site1) above.
+
 #### contactPoint
 Same as [contactPoint](#cpoint1) above.
+
 #### publication
 Same as [publication](#pub1) above.
+
 #### keywords
 Terms that are relevant to all subtools of the tool. See [keywords](#key1) above.
 
 ### Optional Fields
+
 #### alternateName
 Same as [alternateName](#altname) above.
+
 #### creator
 Same as [creator](#creator1) above.
+
 #### programmingLanguage
 Same as [programmingLanguage](#plang1) above.
+
 #### datePublished
 Same as [datePublished](#datepub1) above.
+
 #### downloadURL
 Same as [downloadURL](#dload1) above.
 
@@ -223,7 +244,9 @@ Same as [downloadURL](#dload1) above.
 
 ## <a name="subtools"><a/>Subtool metadata
 Metadata file fields for a CWL file that describes a subtool of a tool.
+
 ### Required Fields
+
 #### applicationSuite
 Information to identify the main tool. The subtool will inherit metadata from the parent metadata.
 The `name` and `SoftwareVersion` fields must match the corresponding fields in the [main tool metadata file].(#)
@@ -233,13 +256,17 @@ applicationSuite:
   softwareVersion: v19.0
   identifier:  # truwl identifier of main tool metadata, if it exists.
 ~~~
+
 #### name
 This must correspond to the name of the subtool as specified in the [featureList](#featurelist) field of the primary tool metadata file.
 ex: `search`
+
 #### version
 Same as [version](#version1) above. Each subtool CWL file
 must have its own version.
+
 ### Recommended Fields
+
 #### description
 Description of the subtool. Should contain subtool specific information.
 
@@ -248,12 +275,15 @@ ex. pip search
 description:  |
   Search PyPI for packages.
 ~~~
+
 ##### keywords
 Terms that are specfic to the subtool. 
 Terms that are relevant to all subtools of a tool should be defined in the common metadata file.
 See [keywords](#keywords) above.
 
+
 ### Optional Fields
+
 #### alternateName
 List of alternate names for the subtool. 
 ex: gzip -c . gzip is parent tool name. 'c' is subtool name. zcat is an alternateName.

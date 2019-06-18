@@ -1,6 +1,7 @@
 # Classes to represent metadata for command line tools.
 from collections import OrderedDict
 from ruamel.yaml import YAML
+from ruamel.yaml import safe_load
 from ruamel.yaml.comments import CommentedMap
 
 
@@ -52,6 +53,13 @@ class ToolMetadata(MetadataBase):
                 raise AttributeError(f"{k} is not a valid key for ToolMetadata")
             setattr(self, k, v)
         return
+
+    @classmethod
+    def load_from_file(cls, file_path):
+        with open(file_path, 'r') as file:
+            file_dict = safe_load(file)
+        return cls(**file_dict)
+
 
     def mk_file(self, file_path):
         keys = ToolMetadata._metafile_keys()
@@ -218,6 +226,32 @@ class WorkflowMetadata(MetadataBase):
         ('programmingLanguage', None),
         ('datePublished', None),
         ('downloadURL', None),
-        ('call_map', [{'id': None, 'identifier': None}])
+        ('callMap', [{'id': None, 'identifier': None}])
     ])
 
+    @classmethod
+    def _metafile_keys(cls):
+        return list(cls._init_metadata.keys())
+
+    def __init__(self, **kwargs):
+        super().__init__()
+        for k, v in self._init_metadata.items():
+            setattr(self, k, v)
+
+        for k, v in kwargs.items():
+            if not k in self._init_metadata:
+                raise KeyError(f"{k} is not a valid key for WorkflowMetadata")
+            setattr(self, k, v)
+        return
+
+    def mk_file(self, file_path):
+        keys = WorkflowMetadata._metafile_keys()
+        meta_map = CommentedMap()
+        for key in keys:
+            meta_map[key] = getattr(self, key)
+        yaml = YAML()
+        yaml.default_flow_style = False
+        yaml.indent(mapping=2, sequence=4, offset=2)
+        with open(file_path, 'w') as yaml_file:
+            yaml.dump(meta_map, yaml_file)
+        return

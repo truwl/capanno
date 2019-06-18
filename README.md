@@ -48,7 +48,7 @@ need to be imported by more than one subtool such as SchemaDefRequirement and Do
 ## How to contribute
 Contributions to CWL files, metadata files, best practices and other documentation files 
 are highly encouraged and can be made through pull requests and issues. When making changes to a CWL file please remember
-to update the version of the file which is specified in the tool metadata as described in [best practices](docs/CommandLineTool_guide.md). 
+to update the version of the file which is specified in the tool metadata as described in [best practices](docs/templates/CommandLineTool_guide.md). 
 There must only be one CWL file per tool or subtool and version combination. 
 
 

@@ -39,7 +39,7 @@ incomplete parameter descriptions that can be built upon later by themselves or 
 ### File names
 Files must be named with the format `{toolName}-{subtoolName}.cwl` The subtoolName must be 
 excluded if the tool is not divided into subtools. 
-More on file names can be found in this repository's [README](../README.md)
+More on file names can be found in this repository's [README](../../README.md)
 
 ### Defining name and versions
 The name and version of the tool must be specified in the [tool's metadata](CommandLineTool_metadata_guide.md)
