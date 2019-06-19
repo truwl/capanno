@@ -68,7 +68,7 @@ Alternate names can optionally be stored in the
 
 #### <a name="sversion1"></a>softwareVersion
 
-A string that specifies the version of the tool that the CWL file is
+A string that specifies the version of the software that the CWL file is
 valid for. Versions must follow the version conventions used by the
 tool. ex: `softwareVersion: v3.2`
 
@@ -79,36 +79,35 @@ tool. ex: `softwareVersion: v3.2`
 Description of the tool. Should be taken directly from the tool
 documentation if it exists.
 
-ex: ~\~~yaml description: | grep searches for PATTERN in each FILE. A
-FILE of “-” stands for standard input. If no FILE is given, recursive
-searches examine the working directory, and nonrecursive searches read
-standard input. By default, grep prints the matching lines.
+ex:
 
-In addition, the variant programs egrep, fgrep and rgrep are the same as
-grep -E, grep -F, and grep -r, respectively.\
-These variants are deprecated, but are provided for backward
-compatibility. ~\~~
+``` {.yaml}
+description: |
+   grep  searches  for  PATTERN  in  each  FILE.  A FILE of “-” stands for standard input.  If no FILE is given, 
+   recursive searches examine the working directory, and nonrecursive searches read standard input.  By default, 
+   grep prints the matching lines.
+
+   In addition, the variant programs egrep, fgrep and rgrep are the same as grep -E, grep -F, and grep -r, respectively.  
+   These variants are deprecated, but are provided for backward compatibility.
+```
 
 #### <a name="repo1"><a/>codeRepository
 
 Code repository information. `URL` should specify a web page (should not
 have a .git extension).
 
-ex: cwltool ~\~~yaml codeRepository: name: GitHub URL:
-https://github.com/common-workflow-language/cwltool
+ex: cwltool
 
-~\~~ \#\#\#\# <a name="license1"><a/>license Software license for the
-tool defined by [SPDX identifier](https://spdx.org/licenses/). e.g.
-`license: Apache-2.0` \#\#\#\# <a name="site1"><a/>Website A list of
-websites associated with the tool, excluding the code repository which
-should be provided in `codeRepository`.
+``` {.yaml}
+codeRepository:
+  name: GitHub
+  URL: https://github.com/common-workflow-language/cwltool
+```
 
-ex: ~\~~yaml Website: - name: Samtools \# The name of the website.
-description: Samtools homepage. URL: http://www.htslib.org/ - name:
-Wikipeda description: Wikipedia entry for SAMtools URL:
-https://en.wikipedia.org/wiki/SAMtools
+#### <a name="license1"><a/>license
 
-~\~~
+Software license for the tool defined by [SPDX
+identifier](https://spdx.org/licenses/). e.g. `license: Apache-2.0`
 
 #### <a name="cpoint1"><a/>contactPoint
 
@@ -134,7 +133,14 @@ A list that describes publications related to the tool. The first entry
 should be the reference to cite the tool.
 
 ex:
-~~~yaml\ publication:\ -\ headline:\ 'BEDTools:\ a\ flexible\ suite\ of\ utilities\ for\ comparing\ genomic\ features.'\ \#\ Title\ goes\ here.\ identifier:\ 10.1093/bioinformatics/btq033\ \#\ DOI\ goes\ here\ -\ headline:\ 'BEDTools:\ The\ Swiss-Army\ Tool\ for\ Genome\ Feature\ Analysis.'\ identifier:\ 10.1002/0471250953.bi1112s47~~~
+
+``` {.yaml}
+publication:
+  - headline: 'BEDTools: a flexible suite of utilities for comparing genomic features.' # Title goes here.
+    identifier: 10.1093/bioinformatics/btq033  # DOI goes here
+  - headline: 'BEDTools: The Swiss-Army Tool for Genome Feature Analysis.'
+    identifier: 10.1002/0471250953.bi1112s47
+```
 
 #### <a name="key1"></a>keywords
 
@@ -148,7 +154,14 @@ the keys `name` and `category`. The value of `category` must be either
 [EDAM](http://edamontology.org/page).
 
 ex.
-~~~yaml\ keywords:\ -\ http://edamontology.org/operation\_3182\ \#\ Genome\ alignment\ -\ http://edamontology.org/topic\_0085\ \#\ Functional\ Genomics\ -\ name:\ ENCODE\ category:\ topic~~~
+
+``` {.yaml}
+keywords:
+  - http://edamontology.org/operation_3182  # Genome alignment
+  - http://edamontology.org/topic_0085  # Functional Genomics
+  - name: ENCODE
+    category: topic
+```
 
 ### Optional Fields
 
@@ -193,9 +206,11 @@ subtools.
 
 Name of the main tool. ex: `pip`. Also see [name](#name1) above.
 
-#### softwareVersion
+#### <a name="sversion1"></a>softwareVersion {#softwareversion}
 
-Same as [softwareVersion](#sversion1) above.
+A string that specifies the version of the software that the CWL file is
+valid for. Versions must follow the version conventions used by the
+tool. ex: `softwareVersion: v3.2`
 
 #### featureList
 
@@ -231,57 +246,142 @@ featureList:
 
 ### Recommended Fields
 
-#### description
+#### <a name="desc1"><a/>description {#description}
 
-Description of the tool that applies to the tool as a whole, not to an
-individual subtool. Also see [description](#desc1) above.
+Description of the tool. Should be taken directly from the tool
+documentation if it exists.
 
-#### codeRepository
+ex:
 
-Same as [codeRepository](#repo1) above.
+``` {.yaml}
+description: |
+   grep  searches  for  PATTERN  in  each  FILE.  A FILE of “-” stands for standard input.  If no FILE is given, 
+   recursive searches examine the working directory, and nonrecursive searches read standard input.  By default, 
+   grep prints the matching lines.
 
-#### license
+   In addition, the variant programs egrep, fgrep and rgrep are the same as grep -E, grep -F, and grep -r, respectively.  
+   These variants are deprecated, but are provided for backward compatibility.
+```
 
-Same as [license](#license1) above.
+#### <a name="repo1"><a/>codeRepository {#coderepository}
 
-#### Website
+Code repository information. `URL` should specify a web page (should not
+have a .git extension).
 
-Same as [Website](#site1) above.
+ex: cwltool
 
-#### contactPoint
+``` {.yaml}
+codeRepository:
+  name: GitHub
+  URL: https://github.com/common-workflow-language/cwltool
+```
 
-Same as [contactPoint](#cpoint1) above.
+#### <a name="license1"><a/>license {#license}
 
-#### publication
+Software license for the tool defined by [SPDX
+identifier](https://spdx.org/licenses/). e.g. `license: Apache-2.0`
 
-Same as [publication](#pub1) above.
+#### <a name="site1"><a/>Website
 
-#### keywords
+A list of websites associated with the tool, excluding the code
+repository which should be provided in `codeRepository`.
 
-Terms that are relevant to all subtools of the tool. See
-[keywords](#key1) above.
+ex:
+
+``` {.yaml}
+Website:
+  - name: Samtools  # The name of the website.
+    description: Samtools homepage.
+    URL: http://www.htslib.org/
+  - name: Wikipeda
+    description: Wikipedia entry for SAMtools
+    URL: https://en.wikipedia.org/wiki/SAMtools
+```
+
+#### <a name="cpoint1"><a/>contactPoint {#contactpoint}
+
+A list that contains information about the software maintainer(s). Might
+be convenient to add an anchor (with '&' symbol) to this field if the
+maintainer(s) is also the also the tool creator so they can also be
+referenced in the optional `creator` field. `identifier` fields are not
+required, but recommended if available.
+
+``` {.yaml}
+contactPoint: 
+  - &Jane
+    name: Jane Schmoe 
+    email: jane@theschmoes.com
+    identifier: https://orcid.org/0000-0001-6022-9825
+  - name: Joe Schmoe
+    email: joe@theschmoes.com
+```
+
+#### <a name="pub1"><a/>publication {#publication}
+
+A list that describes publications related to the tool. The first entry
+should be the reference to cite the tool.
+
+ex:
+
+``` {.yaml}
+publication:
+  - headline: 'BEDTools: a flexible suite of utilities for comparing genomic features.' # Title goes here.
+    identifier: 10.1093/bioinformatics/btq033  # DOI goes here
+  - headline: 'BEDTools: The Swiss-Army Tool for Genome Feature Analysis.'
+    identifier: 10.1002/0471250953.bi1112s47
+```
+
+#### <a name="key1"></a>keywords {#keywords}
+
+List of tags to categorize the tool by topic and operation specified
+with an
+[edam](http://bioportal.bioontology.org/ontologies/EDAM?p=classes) or
+other ontology identifier. EDAM keywords are preferred. If you wish to
+provide a keyword that is not in an ontology, it may be specified with
+the keys `name` and `category`. The value of `category` must be either
+'topic' or 'operation'. These categories have the meanings defined by
+[EDAM](http://edamontology.org/page).
+
+ex.
+
+``` {.yaml}
+keywords:
+  - http://edamontology.org/operation_3182  # Genome alignment
+  - http://edamontology.org/topic_0085  # Functional Genomics
+  - name: ENCODE
+    category: topic
+```
 
 ### Optional Fields
 
-#### alternateName
+#### <a name="altname1"><a/>alternateName {#alternatename}
 
-Same as [alternateName](#altname) above.
+List of alternate names for the tool. This is convenient place to put
+any other names for the tool that someone might use to search for it.
+ex: `alternateName: []`
 
-#### creator
+#### <a name="creator1"><a/>creator {#creator}
 
-Same as [creator](#creator1) above.
+List of the tool's creator(s). Might be redundant if this is captured in
+`contactPoint` and/or `publication`. Can alias `contactPoint` if this is
+the case. ~\~~yaml creator: - \*Jane \# alias to &Jane in the
+contactPoint field. - name: Bob Bobbins email: bob@bobsbobbins.eu
+identifier: ~\~~
 
-#### programmingLanguage
+#### <a name="plang1"><a/>programmingLanguage {#programminglanguage}
 
-Same as [programmingLanguage](#plang1) above.
+List of programming languages that the tool is written in
+`programmingLanguage: [Python2, C]`
 
-#### datePublished
+#### <a name="datepub1"><a/>datePublished {#datepublished}
 
-Same as [datePublished](#datepub1) above.
+The release date of the particular version of software in international
+standard date notation (YYYY-MM-DD). ex: `datePublished: 2003-04-14`
 
-#### downloadURL
+#### <a name="dload1"><a/>downloadURL {#downloadurl}
 
-Same as [downloadURL](#dload1) above.
+URL to download the tool.
+`downloadURL: https://github.com/arq5x/bedtools2/archive/v2.27.1.zip`
 
 <a name="subtools"><a/>Subtool metadata
 ---------------------------------------
@@ -295,7 +395,13 @@ Metadata file fields for a CWL file that describes a subtool of a tool.
 Information to identify the main tool. The subtool will inherit metadata
 from the parent metadata. The `name` and `SoftwareVersion` fields must
 match the corresponding fields in the \[main tool metadata file\].(\#)
-~~~yaml\ applicationSuite:\ name:\ pip\ softwareVersion:\ v19.0\ identifier:\ \#\ truwl\ identifier\ of\ main\ tool\ metadata,\ if\ it\ exists.~~~
+
+``` {.yaml}
+applicationSuite:
+  name: pip
+  softwareVersion: v19.0
+  identifier:  # truwl identifier of main tool metadata, if it exists.
+```
 
 #### name
 
@@ -310,13 +416,47 @@ own version.
 
 ### Recommended Fields
 
-#### description
+#### <a name="desc1"><a/>description {#description}
+
+Description of the tool. Should be taken directly from the tool
+documentation if it exists.
+
+ex:
+
+``` {.yaml}
+description: |
+   grep  searches  for  PATTERN  in  each  FILE.  A FILE of “-” stands for standard input.  If no FILE is given, 
+   recursive searches examine the working directory, and nonrecursive searches read standard input.  By default, 
+   grep prints the matching lines.
+
+   In addition, the variant programs egrep, fgrep and rgrep are the same as grep -E, grep -F, and grep -r, respectively.  
+   These variants are deprecated, but are provided for backward compatibility.
+```
 
 Description of the subtool. Should contain subtool specific information.
 
 ex. pip search ~~~yaml\ description:\ |\ Search\ PyPI\ for\ packages.~~~
 
-##### keywords
+#### <a name="key1"></a>keywords {#keywords}
+
+List of tags to categorize the tool by topic and operation specified
+with an
+[edam](http://bioportal.bioontology.org/ontologies/EDAM?p=classes) or
+other ontology identifier. EDAM keywords are preferred. If you wish to
+provide a keyword that is not in an ontology, it may be specified with
+the keys `name` and `category`. The value of `category` must be either
+'topic' or 'operation'. These categories have the meanings defined by
+[EDAM](http://edamontology.org/page).
+
+ex.
+
+``` {.yaml}
+keywords:
+  - http://edamontology.org/operation_3182  # Genome alignment
+  - http://edamontology.org/topic_0085  # Functional Genomics
+  - name: ENCODE
+    category: topic
+```
 
 Terms that are specfic to the subtool. Terms that are relevant to all
 subtools of a tool should be defined in the common metadata file. See
@@ -324,7 +464,11 @@ subtools of a tool should be defined in the common metadata file. See
 
 ### Optional Fields
 
-#### alternateName
+#### <a name="altname1"><a/>alternateName {#alternatename}
+
+List of alternate names for the tool. This is convenient place to put
+any other names for the tool that someone might use to search for it.
+ex: `alternateName: []`
 
 List of alternate names for the subtool. ex: gzip -c . gzip is parent
 tool name. 'c' is subtool name. zcat is an alternateName.
