@@ -1,0 +1,1 @@
+Python modules that contain dictionaries that map truwl object identifiers to their paths in this repo. Used for importing and updating objects by their identifiers, or collections of objects by dict names.
