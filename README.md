@@ -6,7 +6,11 @@ command line tools and workflows with a an emphasis on tools used in bioinformat
 The goal is to create a set CWL tool wrappers that are thorough, well documented, consistent, 
 openly curated, and widely used by the community.
 
+identifiers.
+
 Consistent tools, versioning, etc. Build workflows through tools.
+
+instances.
 
 Tools in this repository will be made available through [truwl.com](https://truwl.com).
 
@@ -57,6 +61,7 @@ need to be imported by more than one subtool such as SchemaDefRequirement and Do
 
 
 ## Utilities available
+Metadata template factory methods
 
 ## License
 All contributions to this repository shall be made available under the [Apache-2.0](LICENSE.txt). 
