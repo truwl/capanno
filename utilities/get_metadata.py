@@ -60,7 +60,7 @@ def pop_websites_and_repo(homepage, link, documentation):
     return {'WebSite': websites, 'codeRepository': code_repo}
 
 
-def pop_metadata_template_from_biotools(biotoolsID):
+def make_metadata_file_from_biotools(biotoolsID, output_dir):
     meta_dict = get_metadata_from_biotools(biotoolsID)
     meta_data = meta_dict['list'][0]
     tool_metadata = ToolMetadata(name=meta_data['name'],
@@ -70,11 +70,10 @@ def pop_metadata_template_from_biotools(biotoolsID):
                                  **_handle_credit(meta_data['credit']),
                                  publication=_handle_publication(meta_data.get('publication')),
                                  keywords=_handle_keywords(meta_data['topic'], meta_data['function']),
-                                 # programmingLanguage=[],
-                                 # datePublished='',
-                                 # downloadURL=''
+                                 extra={}
                                  )
     tool_metadata.extra.update({'biotools_id': biotoolsID})
     filename = f"{tool_metadata.name}-metadata.yaml"
+    output_path = output_dir / filename
     tool_metadata.mk_file(filename)
     return filename
