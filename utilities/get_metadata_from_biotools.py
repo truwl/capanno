@@ -75,6 +75,7 @@ def make_tool_metadata_kwargs_from_biotools(biotools_id):
     tool_kwargs['description'] = meta_data['description']
     tool_kwargs['license'] = meta_data['license']
     tool_kwargs['publication'] = _handle_publication(meta_data.get('publication'))
+    tool_kwargs['programmingLanguage'] = meta_data.get('language', None)
     tool_kwargs['keywords'] = _handle_keywords(meta_data['topic'], meta_data['function'])
     tool_kwargs['extra'] = {'biotoolsID': biotools_id}
     tool_kwargs.update(pop_websites_and_repo(meta_data['homepage'], meta_data['link'], meta_data['documentation']))

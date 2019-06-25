@@ -1,23 +1,20 @@
 #
 # * This file is subject to the terms and conditions defined in
 # * file 'LICENSE.txt', which is part of this source code package.
-#
-# The Original Code is biodrafter.
-#
-# The Original Developer is the Initial Developer.  The Initial Developer of
-# the Original Code is xDBio Inc.
-#
-# All portions of the code written by xDBio are Copyright (c) 2016-2019 xDBio
-# Inc. All Rights Reserved.
-from collections import OrderedDict
 
+
+from abc import ABC, abstractclassmethod
+from collections import OrderedDict
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedMap
 
-from utilities.classes.tool_metadata import MetadataBase
+from utilities.classes.tool_metadata import ToolMetadataBase
+
+class ScriptMetadataBase(ABC):
+    pass
 
 
-class ScriptMetadata(MetadataBase):
+class ScriptMetadata(ScriptMetadataBase):
     _init_metadata = OrderedDict([
         ('name', None),
         ('softwareVersion', None),

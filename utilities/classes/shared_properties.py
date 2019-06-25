@@ -2,6 +2,7 @@
 # * This file is subject to the terms and conditions defined in
 # * file 'LICENSE.md', which is part of this source code package.
 
+from urllib.parse import urlparse
 from ruamel.yaml.comments import CommentedMap
 
 
@@ -26,6 +27,13 @@ class CodeRepository:
 
     @URL.setter
     def URL(self, new_URL):
+        if new_URL:
+            valid_schemes = ['https', 'http', 'git']
+            parse_result = urlparse(new_URL)
+            if parse_result.scheme not in valid_schemes:
+                raise ValueError(f"URL scheme should be in {valid_schemes}")
+        else:
+            new_URL = None
         self._URL = new_URL
         return
 
@@ -62,6 +70,13 @@ class WebSite:
 
     @URL.setter
     def URL(self, new_URL):
+        if new_URL:
+            valid_schemes = ['https', 'http']
+            parse_result = urlparse(new_URL)
+            if parse_result.scheme not in valid_schemes:
+                raise ValueError(f"URL scheme should be in {valid_schemes}")
+        else:
+            new_URL = None
         self._URL = new_URL
         return
 
@@ -97,6 +112,7 @@ class Publication:
     def dump(self):
         publication = CommentedMap([('identifier', self.identifier), ('headline', self.headline)])
         return publication
+
 
 class Person:
     def __init__(self, name=None, email=None, identifier=None):
@@ -179,3 +195,40 @@ class Keyword:
         else:
             keyword = CommentedMap([('name', self.name), ('category', self.category)])
             return keyword
+
+
+class ApplicationSuite:
+
+    def __init__(self, name=None, softwareVersion=None, identifier=None):
+        self._name = name
+        self._softwareVersion = softwareVersion
+        self._identifier = identifier
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, new_name):
+        self._name = new_name
+
+    @property
+    def softwareVersion(self):
+        return self._softwareVersion
+
+    @softwareVersion.setter
+    def softwareVersion(self, new_softwareVersion):
+        self._softwareVersion = new_softwareVersion
+
+    @property
+    def identifier(self):
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, new_identifier):
+        self._identifier = new_identifier
+
+    def dump(self):
+        application_suite = CommentedMap(
+            [('name', self.name), ('softwareVersion', self.softwareVersion), ('identifier', self.identifier)])
+        return application_suite

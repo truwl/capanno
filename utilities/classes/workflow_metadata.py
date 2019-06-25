@@ -1,15 +1,19 @@
 #
 # * This file is subject to the terms and conditions defined in
 # * file 'LICENSE.txt', which is part of this source code package.
-from collections import OrderedDict
 
+from abc import ABC, abstractclassmethod
+from collections import OrderedDict
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedMap
 
-from utilities.classes.tool_metadata import MetadataBase
+from utilities.classes.tool_metadata import ToolMetadataBase
+
+class WorkflowMetadataBase(ABC):
+    pass
 
 
-class WorkflowMetadata(MetadataBase):
+class WorkflowMetadata(WorkflowMetadataBase):
     _init_metadata = OrderedDict([
         ('name', None),
         ('softwareVersion', None),

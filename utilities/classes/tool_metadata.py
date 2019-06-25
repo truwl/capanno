@@ -7,13 +7,13 @@ import semantic_version
 from ruamel.yaml import YAML
 from ruamel.yaml import safe_load
 from ruamel.yaml.comments import CommentedMap
-from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword
+from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite
 from utilities.get_metadata_from_biotools import make_tool_metadata_kwargs_from_biotools
 
 
-object_attributes = (CodeRepository, Person, Publication, WebSite, Keyword)
+object_attributes = (CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite)
 
-class MetadataBase(ABC):
+class ToolMetadataBase(ABC):
     """Factor stuff out to here."""
 
     @staticmethod
@@ -60,13 +60,11 @@ class MetadataBase(ABC):
 
 
     def __init__(self, **kwargs):
-
-
         metadata = self._init_metadata()
 
         for k, v in kwargs.items():
             if not k in metadata:
-                raise AttributeError(f"{k} is not a valid key for ToolMetadata")
+                raise AttributeError(f"{k} is not a valid key for {type(self)}")
 
         for k, v in metadata.items():
             if k in kwargs:
@@ -98,7 +96,7 @@ class MetadataBase(ABC):
         return
 
 
-class ToolMetadata(MetadataBase):
+class ToolMetadata(ToolMetadataBase):
     """Class to represent metadata for a 'stand alone' command line tool."""
 
     @staticmethod
@@ -107,6 +105,7 @@ class ToolMetadata(MetadataBase):
         ('name', None),
         ('softwareVersion', None),
         ('version', '0.1.0'),  # Set to something low if not provided.
+        ('identifier', None),
         ('description', None),
         ('codeRepository', CodeRepository()),
         ('license', None),
@@ -138,10 +137,15 @@ class ToolMetadata(MetadataBase):
         return cls(**kwargs, version=version)
 
 
-class ParentToolMetadata(MetadataBase):
-    _init_metadata = OrderedDict([
+class ParentToolMetadata(ToolMetadataBase):
+
+    @staticmethod
+    def _init_metadata():
+        return OrderedDict([
         ('name', None),
         ('softwareVersion', None),
+        ('version', '0.1.0'),
+        ('identifier', None),
         ('featureList', None),
         ('description', None),
         ('codeRepository', CodeRepository()),
@@ -154,78 +158,58 @@ class ParentToolMetadata(MetadataBase):
         ('creator', [Person()]),
         ('programmingLanguage', None),
         ('datePublished', None),
-        ('downloadURL', None)
+        ('downloadURL', None),
+        ('extra', None)
     ])
 
+
+    def make_subtool_metadata(self, subtool_name):
+        if not self.featureList:
+            raise ValueError(f"Cannot create subtool. featureList of {self.name} is not populated.")
+        if subtool_name not in self.featureList:
+            raise ValueError(f"{subtool_name} must be in the parent featureList")
+        subtool_metadata = SubtoolMetadata(name=subtool_name, applicationSuite={'name': self.name, 'version': self.version, 'identifier': self.identifier})
+        return subtool_metadata
+
+
     @classmethod
-    def _metafile_keys(cls):
-        return list(cls._init_metadata.keys())
+    def load_from_file(cls, file_path):
+        file_path = Path(file_path)
+        with file_path.open('r') as file:
+            file_dict = safe_load(file)
+        return cls(**file_dict)
 
-    def __init__(self, **kwargs):
-        super().__init__()
-        for k, v in self._init_metadata.items():
-            setattr(self, k, v)
-
-        for k, v in kwargs.items():
-            if not k in self._init_metadata:
-                raise KeyError(f"{k} is not a valid key for ToolMetadata")
-            setattr(self, k, v)
-        return
-
-    def mk_file(self, file_path):
-        keys = ParentToolMetadata._metafile_keys()
-        meta_map = CommentedMap()
-        for key in keys:
-            meta_map[key] = getattr(self, key)
-        yaml = YAML()
-        yaml.default_flow_style = False
-        yaml.indent(mapping=2, sequence=4, offset=2)
-        with open(file_path, 'w') as yaml_file:
-            yaml.dump(meta_map, yaml_file)
-        return
+    @classmethod
+    def create_from_biotools(cls, biotools_id, version='0.1.1'):
+        kwargs = make_tool_metadata_kwargs_from_biotools(biotools_id)
+        return cls(**kwargs, version=version)
 
 
+class SubtoolMetadata(ToolMetadataBase):
 
-class SubtoolMetadata(MetadataBase):
-    _init_metadata = OrderedDict([
-        ('applicationSuite', {'name': None, 'softwareVersion': None, 'identifier': None}),
+    @staticmethod
+    def _init_metadata():
+        return OrderedDict([
+        ('applicationSuite', ApplicationSuite()),
         ('name', None),
-        ('version', None),
+        ('version', '0.1'),
         ('description', None),
-        ('keywords', None),
+        ('keywords', Keyword()),
         ('alternateName', None),
     ])
 
     @classmethod
-    def _metafile_keys(cls):
-        return list(cls._init_metadata.keys())
+    def load_from_file(cls, file_path):
+        file_path = Path(file_path)
+        with file_path.open('r') as file:
+            file_dict = safe_load(file)
+        return cls(**file_dict)
 
-    def __init__(self, **kwargs):
-        super().__init__()
-        for k, v in self._init_metadata.items():
-            setattr(self, k, v)
-
-        for k, v in kwargs.items():
-            if not k in self._init_metadata:
-                raise KeyError(f"{k} is not a valid key for ToolMetadata")
-            setattr(self, k, v)
-        return
 
     @classmethod
     def initialize_from_parent(cls, parent_metadata):
         pass
 
-    def mk_file(self, file_path):
-        keys = SubtoolMetadata._metafile_keys()
-        meta_map = CommentedMap()
-        for key in keys:
-            meta_map[key] = getattr(self, key)
-        yaml = YAML()
-        yaml.default_flow_style = False
-        yaml.indent(mapping=2, sequence=4, offset=2)
-        with open(file_path, 'w') as yaml_file:
-            yaml.dump(meta_map, yaml_file)
-        return
 
 
 
