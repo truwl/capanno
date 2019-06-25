@@ -1,7 +1,7 @@
 import os
 from tests.test_base import TestBase
 from ruamel.yaml import safe_load
-from utilities.get_metadata import make_metadata_file_from_biotools
+from utilities.get_metadata_from_biotools import make_metadata_file_from_biotools
 
 
 class TestMetadataFromBioTools(TestBase):

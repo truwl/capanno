@@ -7,7 +7,7 @@ from pathlib import Path
 from os.path import join as pjoin
 from shutil import copyfile
 from utilities.classes.metadata import ToolMetadata, SubtoolMetadata, ParentToolMetadata
-from utilities.get_metadata import make_metadata_file_from_biotools
+from utilities.get_metadata_from_biotools import make_metadata_file_from_biotools
 
 
 parser = argparse.ArgumentParser(description='Initialize directory and files for new cwl-tool')

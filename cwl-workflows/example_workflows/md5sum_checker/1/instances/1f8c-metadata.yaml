@@ -10,5 +10,5 @@ inputObjects:
   - id: input_file
     identifier: FL_7ea4fce9.1
 outputObjects:
-  - id: output_file
+  - id: workflow_output_file
     identifier: FL_26dde77e.1

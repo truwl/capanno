@@ -1,7 +1,7 @@
 
 import requests
 import logging
-from .classes.metadata import ToolMetadata
+# from .classes.metadata import ToolMetadata
 
 def get_metadata_from_biotools(biotoolsID):
     """
@@ -15,14 +15,17 @@ def get_metadata_from_biotools(biotoolsID):
     r = requests.get(f"https://bio.tools/api/t/", params={**params, **attrs})
     biotools_dict = r.json()
     if biotools_dict['count'] != 1:
-        logging.ERROR(f"bio.tools returned {biotools_dict['count']} results. Expected 1")
+        logging.error(f"bio.tools returned {biotools_dict['count']} results. Expected 1")
     return biotools_dict
 
 def _handle_publication(publication_list):
     pub_list = []
     if publication_list:
         for publication in publication_list:
-            pub_list.append({'identifier': publication.get('doi'), 'headline': publication['metadata'].get('title')})
+            pub_dict = {'identifier': publication.get('doi')}
+            if publication.get('metadata'):
+                pub_dict['headline'] = publication['metadata'].get('title')
+            pub_list.append(pub_dict)
         return pub_list
     else:
         return
@@ -60,20 +63,24 @@ def pop_websites_and_repo(homepage, link, documentation):
     return {'WebSite': websites, 'codeRepository': code_repo}
 
 
-def make_metadata_file_from_biotools(biotoolsID, output_dir):
-    meta_dict = get_metadata_from_biotools(biotoolsID)
+def make_tool_metadata_kwargs_from_biotools(biotools_id):
+    meta_dict = get_metadata_from_biotools(biotools_id)
     meta_data = meta_dict['list'][0]
-    tool_metadata = ToolMetadata(name=meta_data['name'],
-                                 description=meta_data['description'],
-                                 license=meta_data['license'],
-                                 **pop_websites_and_repo(meta_data['homepage'], meta_data['link'], meta_data['documentation']),
-                                 **_handle_credit(meta_data['credit']),
-                                 publication=_handle_publication(meta_data.get('publication')),
-                                 keywords=_handle_keywords(meta_data['topic'], meta_data['function']),
-                                 extra={}
-                                 )
-    tool_metadata.extra.update({'biotools_id': biotoolsID})
-    filename = f"{tool_metadata.name}-metadata.yaml"
-    output_path = output_dir / filename
-    tool_metadata.mk_file(filename)
-    return filename
+    tool_kwargs = {}
+    tool_kwargs['name'] = meta_data['name']
+    tool_kwargs['description'] = meta_data['description']
+    tool_kwargs['license'] = meta_data['license']
+    tool_kwargs['publication'] = _handle_publication(meta_data.get('publication'))
+    tool_kwargs['keywords'] = _handle_keywords(meta_data['topic'], meta_data['function'])
+    tool_kwargs['extra'] = {'biotoolsID': biotools_id}
+    tool_kwargs.update(pop_websites_and_repo(meta_data['homepage'], meta_data['link'], meta_data['documentation']))
+    tool_kwargs.update(_handle_credit(meta_data['credit']))
+    return tool_kwargs
+
+# def make_metadata_file_from_biotools(biotoolsID, output_dir):
+#     tool_kwargs = make_tool_metadata_kwargs_from_biotools(biotoolsID)
+#     tool_metadata = ToolMetadata(**tool_kwargs)
+#     filename = f"{tool_metadata.name}-metadata.yaml"
+#     output_path = output_dir / filename
+#     tool_metadata.mk_file(filename)
+#     return filename
