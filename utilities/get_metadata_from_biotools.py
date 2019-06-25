@@ -31,25 +31,29 @@ def _handle_publication(publication_list):
         return
 
 def _handle_keywords(topics, functions):
-    kew_words = [topic.get('uri') for topic in topics if topic.get('uri')]
+    key_words = [topic.get('uri') for topic in topics if topic.get('uri')]
     for function in functions:
-        kew_words.extend([operation.get('uri') for operation in function['operation'] if operation.get('uri')])
-    return kew_words
+        key_words.extend([operation.get('uri') for operation in function['operation'] if operation.get('uri')])
+    return key_words if key_words else None
 
 def _handle_credit(credit):
-    creators = []
-    contacts = []
-    for entity in credit:
-        if 'Developer' in entity['typeRole']:
-            creators.append({'name': entity.get('name'), 'email': entity.get('email'), 'identifier': entity.get('orcidid')})
-        if 'Primary contact' in entity['typeRole']:
-            contacts.append({'name': entity.get('name'), 'email': entity.get('email'), 'identifier': entity.get('orcidid')})
-    return {'creator': creators, 'contactPoint': contacts}
+    if credit:
+        creators = []
+        contacts = []
+        for entity in credit:
+            if 'Developer' in entity['typeRole']:
+                creators.append({'name': entity.get('name'), 'email': entity.get('email'), 'identifier': entity.get('orcidid')})
+            if 'Primary contact' in entity['typeRole']:
+                contacts.append({'name': entity.get('name'), 'email': entity.get('email'), 'identifier': entity.get('orcidid')})
+        return_dict = {'creator': creators if creators else None, 'contactPoint': contacts if contacts else None}
+    else:
+        return_dict = {'creator': None, 'contactPoint': None}
+    return return_dict
 
 
 def pop_websites_and_repo(homepage, link, documentation):
     websites = []
-    code_repo = None
+    code_repo = {'name': None, 'URL': None}
     if homepage:
         websites.append({'name': None, 'description': 'homepage', 'URL': homepage})
     for entity in link:
@@ -60,7 +64,7 @@ def pop_websites_and_repo(homepage, link, documentation):
     for entity in documentation:
         websites.append({'name': None, 'description': 'documentation', 'URL': entity.get('url')})
 
-    return {'WebSite': websites, 'codeRepository': code_repo}
+    return {'WebSite': websites if websites else None, 'codeRepository': code_repo}
 
 
 def make_tool_metadata_kwargs_from_biotools(biotools_id):
@@ -77,10 +81,3 @@ def make_tool_metadata_kwargs_from_biotools(biotools_id):
     tool_kwargs.update(_handle_credit(meta_data['credit']))
     return tool_kwargs
 
-# def make_metadata_file_from_biotools(biotoolsID, output_dir):
-#     tool_kwargs = make_tool_metadata_kwargs_from_biotools(biotoolsID)
-#     tool_metadata = ToolMetadata(**tool_kwargs)
-#     filename = f"{tool_metadata.name}-metadata.yaml"
-#     output_path = output_dir / filename
-#     tool_metadata.mk_file(filename)
-#     return filename

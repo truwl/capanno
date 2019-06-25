@@ -80,7 +80,7 @@ All utilities have been developed and tested using Python 3.6
 
 Generate a directory with the proper structure.
 
-Metadata templates are available in the [templates](templates) directory. Alternatively these templates can be generated from classes in [metadata.py](utilities/classes/metadata.py)
+Metadata templates are available in the [templates](templates) directory. Alternatively these templates can be generated from classes in [metadata.py](utilities/classes/tool_metadata.py)
 
 Generation of tool metadata using [bio.tools](https://bio.tools/)
 

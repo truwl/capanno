@@ -7,12 +7,14 @@ import semantic_version
 from ruamel.yaml import YAML
 from ruamel.yaml import safe_load
 from ruamel.yaml.comments import CommentedMap
+from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword
 from utilities.get_metadata_from_biotools import make_tool_metadata_kwargs_from_biotools
 
 
-class MetadataBase(ABC):
-    """Will factor stuff out to here eventually."""
+object_attributes = (CodeRepository, Person, Publication, WebSite, Keyword)
 
+class MetadataBase(ABC):
+    """Factor stuff out to here."""
 
     @staticmethod
     @abstractmethod
@@ -29,7 +31,6 @@ class MetadataBase(ABC):
     @name.setter
     def name(self, new_name):
         # Can put validators here.
-        print('hit it.')
         self._name = new_name
 
 
@@ -39,6 +40,7 @@ class MetadataBase(ABC):
 
     @version.setter
     def version(self, new_version):
+        new_version = str(new_version)
         is_semantic = semantic_version.validate(new_version)
         if is_semantic:
             v = semantic_version.Version(new_version)
@@ -78,7 +80,16 @@ class MetadataBase(ABC):
         meta_map = CommentedMap()
         keys = self._get_metafile_keys()
         for key in keys:
-            meta_map[key] = getattr(self, key)
+            attr_value = getattr(self, key)
+            if isinstance(attr_value, object_attributes):
+                meta_map[key] = attr_value.dump()
+            elif isinstance(attr_value, list):
+                if isinstance(attr_value[0], object_attributes):
+                    meta_map[key] = [item.dump() for item in attr_value]
+                else:
+                    meta_map[key] = attr_value
+            else:
+                meta_map[key] = attr_value
         yaml = YAML()
         yaml.default_flow_style = False
         yaml.indent(mapping=2, sequence=4, offset=2)
@@ -87,40 +98,24 @@ class MetadataBase(ABC):
         return
 
 
-
-class CodeRepository:
-    pass
-
-class WebSite:
-    pass
-
-class Publication:
-    pass
-
-class Person:
-    pass
-
-
-
 class ToolMetadata(MetadataBase):
-    """Class to represent metadata for a command line tool."""
-
+    """Class to represent metadata for a 'stand alone' command line tool."""
 
     @staticmethod
     def _init_metadata():
         return OrderedDict([
         ('name', None),
         ('softwareVersion', None),
-        ('version', None),
+        ('version', '0.1.0'),  # Set to something low if not provided.
         ('description', None),
-        ('codeRepository', dict([('name', None), ('URL', None)])),
+        ('codeRepository', CodeRepository()),
         ('license', None),
-        ('WebSite', [{'name': None, 'description': None, 'URL': None}]),
-        ('contactPoint', [{'name': None, 'email': None, 'identifier': None}]),
-        ('publication', [{'identifier': None, 'headline': None}]),
-        ('keywords', None),
+        ('WebSite', [WebSite()]),
+        ('contactPoint', [Person()]),
+        ('publication', [Publication()]),
+        ('keywords', [Keyword()]),
         ('alternateName', None),
-        ('creator', [{'name': None, 'email': None, 'identifier': None}]),
+        ('creator', [Person()]),
         ('programmingLanguage', None),
         ('datePublished', None),
         ('downloadURL', None),
@@ -141,6 +136,53 @@ class ToolMetadata(MetadataBase):
     def create_from_biotools(cls, biotools_id, version='0.1.1'):
         kwargs = make_tool_metadata_kwargs_from_biotools(biotools_id)
         return cls(**kwargs, version=version)
+
+
+class ParentToolMetadata(MetadataBase):
+    _init_metadata = OrderedDict([
+        ('name', None),
+        ('softwareVersion', None),
+        ('featureList', None),
+        ('description', None),
+        ('codeRepository', CodeRepository()),
+        ('license', None),
+        ('WebSite', [WebSite()]),
+        ('contactPoint', [Person()]),
+        ('publication', [Publication()]),
+        ('keywords', [Keyword()]),
+        ('alternateName', None),
+        ('creator', [Person()]),
+        ('programmingLanguage', None),
+        ('datePublished', None),
+        ('downloadURL', None)
+    ])
+
+    @classmethod
+    def _metafile_keys(cls):
+        return list(cls._init_metadata.keys())
+
+    def __init__(self, **kwargs):
+        super().__init__()
+        for k, v in self._init_metadata.items():
+            setattr(self, k, v)
+
+        for k, v in kwargs.items():
+            if not k in self._init_metadata:
+                raise KeyError(f"{k} is not a valid key for ToolMetadata")
+            setattr(self, k, v)
+        return
+
+    def mk_file(self, file_path):
+        keys = ParentToolMetadata._metafile_keys()
+        meta_map = CommentedMap()
+        for key in keys:
+            meta_map[key] = getattr(self, key)
+        yaml = YAML()
+        yaml.default_flow_style = False
+        yaml.indent(mapping=2, sequence=4, offset=2)
+        with open(file_path, 'w') as yaml_file:
+            yaml.dump(meta_map, yaml_file)
+        return
 
 
 
@@ -186,146 +228,5 @@ class SubtoolMetadata(MetadataBase):
         return
 
 
-class ParentToolMetadata(MetadataBase):
-    _init_metadata = OrderedDict([
-        ('name', None),
-        ('softwareVersion', None),
-        ('featureList', None),
-        ('description', None),
-        ('codeRepository', dict([('name', None), ('URL', None)])),
-        ('license', None),
-        ('WebSite', [{'name': None, 'description': None, 'URL': None}]),
-        ('contactPoint', [{'name': None, 'email': None, 'identifier': None}]),
-        ('publication', [{'identifier': None, 'headline': None}]),
-        ('keywords', None),
-        ('alternateName', None),
-        ('creator', [{'name': None, 'email': None, 'identifier': None}]),
-        ('programmingLanguage', None),
-        ('datePublished', None),
-        ('downloadURL', None)
-    ])
-
-    @classmethod
-    def _metafile_keys(cls):
-        return list(cls._init_metadata.keys())
-
-    def __init__(self, **kwargs):
-        super().__init__()
-        for k, v in self._init_metadata.items():
-            setattr(self, k, v)
-
-        for k, v in kwargs.items():
-            if not k in self._init_metadata:
-                raise KeyError(f"{k} is not a valid key for ToolMetadata")
-            setattr(self, k, v)
-        return
-
-    def mk_file(self, file_path):
-        keys = ParentToolMetadata._metafile_keys()
-        meta_map = CommentedMap()
-        for key in keys:
-            meta_map[key] = getattr(self, key)
-        yaml = YAML()
-        yaml.default_flow_style = False
-        yaml.indent(mapping=2, sequence=4, offset=2)
-        with open(file_path, 'w') as yaml_file:
-            yaml.dump(meta_map, yaml_file)
-        return
 
 
-class ScriptMetadata(MetadataBase):
-    _init_metadata = OrderedDict([
-        ('name', None),
-        ('softwareVersion', None),
-        ('description', None),
-        ('identifier', None),
-        ('version', None),
-        ('WebSite', [{'name': None, 'description': None, 'URL': None}]),
-        ('codeRepository', dict([('name', None), ('URL', None)])),
-        ('license', None),
-        ('contactPoint', [{'name': None, 'email': None, 'identifier': None}]),
-        ('publication', [{'identifier': None, 'headline': None}]),
-        ('keywords', None),
-        ('alternateName', None),
-        ('creator', [{'name': None, 'email': None, 'identifier': None}]),
-        ('programmingLanguage', None),
-        ('datePublished', None),
-        ('downloadURL', None),
-        ('parentScripts', {'name': None, 'version': None, 'identifier': None}),
-        ('parentMetadata', None),
-    ])
-
-    @classmethod
-    def _metafile_keys(cls):
-        return list(cls._init_metadata.keys())
-
-    def __init__(self, **kwargs):
-        super().__init__()
-        for k, v in self._init_metadata.items():
-            setattr(self, k, v)
-
-        for k, v in kwargs.items():
-            if not k in self._init_metadata:
-                raise KeyError(f"{k} is not a valid key for ScriptMetadata")
-            setattr(self, k, v)
-        return
-
-    def mk_file(self, file_path):
-        keys = ScriptMetadata._metafile_keys()
-        meta_map = CommentedMap()
-        for key in keys:
-            meta_map[key] = getattr(self, key)
-        yaml = YAML()
-        yaml.default_flow_style = False
-        yaml.indent(mapping=2, sequence=4, offset=2)
-        with open(file_path, 'w') as yaml_file:
-            yaml.dump(meta_map, yaml_file)
-        return
-
-class WorkflowMetadata(MetadataBase):
-    _init_metadata = OrderedDict([
-        ('name', None),
-        ('softwareVersion', None),
-        ('description', None),
-        ('identifier', None),
-        ('version', None),
-        ('WebSite', [{'name': None, 'description': None, 'URL': None}]),
-        ('codeRepository', dict([('name', None), ('URL', None)])),
-        ('license', None),
-        ('contactPoint', [{'name': None, 'email': None, 'identifier': None}]),
-        ('publication', [{'identifier': None, 'headline': None}]),
-        ('keywords', None),
-        ('alternateName', None),
-        ('creator', [{'name': None, 'email': None, 'identifier': None}]),
-        ('programmingLanguage', None),
-        ('datePublished', None),
-        ('downloadURL', None),
-        ('callMap', [{'id': None, 'identifier': None}])
-    ])
-
-    @classmethod
-    def _metafile_keys(cls):
-        return list(cls._init_metadata.keys())
-
-    def __init__(self, **kwargs):
-        super().__init__()
-        for k, v in self._init_metadata.items():
-            setattr(self, k, v)
-
-        for k, v in kwargs.items():
-            if not k in self._init_metadata:
-                raise KeyError(f"{k} is not a valid key for WorkflowMetadata")
-            setattr(self, k, v)
-        return
-
-    def mk_file(self, file_path):
-        keys = WorkflowMetadata._metafile_keys()
-        meta_map = CommentedMap()
-        for key in keys:
-            meta_map[key] = getattr(self, key)
-        yaml = YAML()
-        yaml.default_flow_style = False
-        yaml.indent(mapping=2, sequence=4, offset=2)
-        with open(file_path, 'w') as yaml_file:
-            yaml.dump(meta_map, yaml_file)
-        return

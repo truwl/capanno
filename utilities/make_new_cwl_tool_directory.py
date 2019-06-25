@@ -6,7 +6,7 @@ import argparse
 from pathlib import Path
 from os.path import join as pjoin
 from shutil import copyfile
-from utilities.classes.metadata import ToolMetadata, SubtoolMetadata, ParentToolMetadata
+from utilities.classes.tool_metadata import ToolMetadata, SubtoolMetadata, ParentToolMetadata
 from utilities.get_metadata_from_biotools import make_metadata_file_from_biotools
 
 

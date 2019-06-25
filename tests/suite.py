@@ -1,6 +1,6 @@
 import unittest
 from unittest import defaultTestLoader
-from tests.test_metadata_classes import TestMakeToolMetadata, TestMakeParentToolMetadata, TestMakeSubtoolMetadata
+from tests.test_tool_metadata_classes import TestMakeToolMetadata, TestMakeParentToolMetadata, TestMakeSubtoolMetadata
 from tests.test_get_metadata import TestMetadataFromBioTools
 
 
