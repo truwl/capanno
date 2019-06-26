@@ -19,7 +19,7 @@ description: >
   are emerging from the third-generation sequencing technologies.
 
 codeRepository:
-  name: GitHiub
+  name: GitHub
   URL: 'https://github.com/alexdobin/STAR'
 
 license: GPL-3.0-only

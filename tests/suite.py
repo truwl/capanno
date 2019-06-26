@@ -1,14 +1,18 @@
 import unittest
 from unittest import defaultTestLoader
 from tests.test_tool_metadata_classes import TestMakeToolMetadata, TestMakeParentToolMetadata, TestMakeSubtoolMetadata
+from tests.test_script_metadata import TestScriptMetadata
 from tests.test_get_metadata import TestMetadataFromBioTools
 
 
 def full_suite():
-    # Metadata classes
+    # Tool metadata classes
     suite = defaultTestLoader.loadTestsFromTestCase(TestMakeToolMetadata)
     suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestMakeSubtoolMetadata))
     suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestMakeParentToolMetadata))
+
+    # Script metadata classes
+    suite.addTest((defaultTestLoader.loadTestsFromTestCase(TestScriptMetadata)))
 
     # Get metadata
     suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestMetadataFromBioTools))

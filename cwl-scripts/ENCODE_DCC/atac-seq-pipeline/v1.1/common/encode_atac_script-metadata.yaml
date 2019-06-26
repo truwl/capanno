@@ -2,7 +2,7 @@
 description: "Python scripts for running ENCODE atac-seq pipeline."
 programmingLanguage: "Python3"
 
-Website:
+WebSite:
   - name: encode project atac-seq pipeline
     url: https://www.encodeproject.org/atac-seq/
 

@@ -34,7 +34,7 @@ class TestMakeToolMetadata(TestBase):
         return
 
 
-@skip('Pass to isolate tests')
+# @skip('Pass to isolate tests')
 class TestMakeSubtoolMetadata(TestBase):
     test_dict = {'name': 'subtool_name', 'bad': 'A bad key or value.'}
     def test_make_subtool_metadata(self):
@@ -43,9 +43,9 @@ class TestMakeSubtoolMetadata(TestBase):
 
     def test_make_file(self):
         st_metadata = SubtoolMetadata(name=TestMakeSubtoolMetadata.test_dict['name'])
-        test_filename = f"{TestMakeSubtoolMetadata.test_dict['name']}--testMeta.yaml"
+        test_filename = self.temp_dir / 'subtool_test.yaml'
         st_metadata.mk_file(test_filename)
-        with open(test_filename) as file:
+        with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
         self.assertEqual(test_file_dict['name'], TestMakeSubtoolMetadata.test_dict['name'])
         os.remove(test_filename)
