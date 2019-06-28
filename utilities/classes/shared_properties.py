@@ -2,11 +2,38 @@
 # * This file is subject to the terms and conditions defined in
 # * file 'LICENSE.md', which is part of this source code package.
 
+from abc import abstractmethod, ABC
 from urllib.parse import urlparse
 from ruamel.yaml.comments import CommentedMap
 
+class AttributeBase(ABC):
 
-class CodeRepository:
+    def is_empty(self):
+        _is_empty = True
+        for attribute in self.attrs:
+            if getattr(self, attribute):
+                _is_empty = False
+                break
+        return _is_empty
+
+    @staticmethod
+    @abstractmethod
+    def _attrs():
+        return frozenset([])
+
+
+    @property
+    def attrs(self):
+        return self._attrs()
+
+    def dump(self):
+        map_object = CommentedMap()
+        for attribute in self.attrs:
+            map_object[attribute] = getattr(self, attribute)
+        return map_object
+
+
+class CodeRepository(AttributeBase):
     def __init__(self, name=None, URL=None):
         self._name = name
         self._URL = URL
@@ -37,12 +64,13 @@ class CodeRepository:
         self._URL = new_URL
         return
 
-    def dump(self):
-        code_repo = CommentedMap([('name', self.name), ('URL', self.URL)])
-        return code_repo
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['name', 'URL'])
 
 
-class WebSite:
+class WebSite(AttributeBase):
     def __init__(self, name=None, description=None, URL=None):
         self._name = name
         self._description = description
@@ -80,12 +108,12 @@ class WebSite:
         self._URL = new_URL
         return
 
-    def dump(self):
-        web_site = CommentedMap([('name', self.name), ('description', self.description), ('URL', self.URL)])
-        return web_site
+    @staticmethod
+    def _attrs():
+        return frozenset(['name', 'description', 'URL'])
 
 
-class Publication:
+class Publication(AttributeBase):
     def __init__(self, identifier=None, headline=None):
         self._identifier = identifier
         self._headline = headline
@@ -109,12 +137,12 @@ class Publication:
         self._headline = new_headline
         return
 
-    def dump(self):
-        publication = CommentedMap([('identifier', self.identifier), ('headline', self.headline)])
-        return publication
+    @staticmethod
+    def _attrs():
+        return frozenset(['identifier', 'headline'])
 
 
-class Person:
+class Person(AttributeBase):
     def __init__(self, name=None, email=None, identifier=None):
         self._name = name
         self._email = email
@@ -145,12 +173,12 @@ class Person:
     def identifier(self, new_identifier):
         self._identifier = new_identifier
 
-    def dump(self):
-        person = CommentedMap([('name', self.name), ('email', self.email), ('identifier', self.identifier)])
-        return person
+    @staticmethod
+    def _attrs():
+        return frozenset(['name', 'email', 'identifier'])
 
 
-class Keyword:
+class Keyword(AttributeBase):
     def __init__(self, *args, **kwargs):  # Might need to initialize off of *args and **kwargs to handle both forms.
         args_len = len(args)
         if args_len == 0:
@@ -196,8 +224,11 @@ class Keyword:
             keyword = CommentedMap([('name', self.name), ('category', self.category)])
             return keyword
 
+    @staticmethod
+    def _attrs():
+        return frozenset(['name', 'category', 'uri'])
 
-class ApplicationSuite:
+class ApplicationSuite(AttributeBase):
 
     def __init__(self, name=None, softwareVersion=None, identifier=None):
         self._name = name
@@ -228,7 +259,81 @@ class ApplicationSuite:
     def identifier(self, new_identifier):
         self._identifier = new_identifier
 
-    def dump(self):
-        application_suite = CommentedMap(
-            [('name', self.name), ('softwareVersion', self.softwareVersion), ('identifier', self.identifier)])
-        return application_suite
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['name', 'softwareVersion', 'identifier'])
+
+
+class ParentScript(AttributeBase):
+
+    def __init__(self, name=None, version=None, identifier=None):
+        self._name = name
+        self._version = version
+        self._identifier = identifier
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, new_name):
+        self._name = new_name
+
+    @property
+    def version(self):
+        return self._version
+
+    @version.setter
+    def version(self, new_version):
+        self._version = new_version
+
+    @property
+    def identifier(self):
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, new_identifier):
+        self._identifier = new_identifier
+
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['name', 'version', 'identifier'])
+
+
+class Tool(AttributeBase):
+
+    def __init__(self, name=None, version=None, identifier=None):
+        self._name = name
+        self._version = version
+        self._identifier = identifier
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, new_name):
+        self._name = new_name
+
+    @property
+    def version(self):
+        return self._version
+
+    @version.setter
+    def version(self, new_version):
+        self._version = new_version
+
+    @property
+    def identifier(self):
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, new_identifier):
+        self._identifier = new_identifier
+
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['name', 'version', 'identifier'])

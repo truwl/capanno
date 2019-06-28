@@ -25,5 +25,5 @@ tools:
     version:
     identifier:
 
-commonMetadataPath:  # additional metadata from most specific to least.
+parentMetadata:  # additional metadata from most specific to least.
   - ../v1.1/common/encode_atac_script-metadata.yaml

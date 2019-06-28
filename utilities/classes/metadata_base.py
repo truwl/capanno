@@ -9,9 +9,9 @@ from pathlib import Path
 import semantic_version
 from ruamel.yaml.comments import CommentedMap
 from ruamel.yaml import YAML
-from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite
+from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite, ParentScript, Tool
 
-object_attributes = (CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite)
+object_attributes = (CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite, ParentScript, Tool)
 
 class MetadataBase(ABC):
     """Factor stuff out to here."""
@@ -75,6 +75,8 @@ class MetadataBase(ABC):
         meta_map = CommentedMap()
         keys = self._get_metafile_keys()
         for key in keys:
+            if key.startswith('_'):
+                continue
             attr_value = getattr(self, key)
             if isinstance(attr_value, object_attributes):
                 meta_map[key] = attr_value.dump()
