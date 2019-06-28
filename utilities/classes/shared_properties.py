@@ -337,3 +337,30 @@ class Tool(AttributeBase):
     @staticmethod
     def _attrs():
         return frozenset(['name', 'version', 'identifier'])
+
+
+class CallMap(AttributeBase):
+
+    def __init__(self, id_=None, identifier=None):
+        self._id = id_
+        self._identifier = identifier
+
+    @property
+    def id(self):
+        return self._id
+
+    @id.setter
+    def id(self, new_id):
+        self._id = new_id
+
+    @property
+    def identifier(self):
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, new_identifier):
+        self._identifier = new_identifier
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['id', 'identifier'])

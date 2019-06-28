@@ -12,16 +12,8 @@ from utilities.classes.metadata_base import MetadataBase, object_attributes
 
 
 class ScriptMetadataBase(MetadataBase):
-    """Factor stuff out to here."""
-
-    @property
-    def name(self):
-        return self._name
-
-    @name.setter
-    def name(self, new_name):
-        # Can put validators here.
-        self._name = new_name
+    """Factor stuff out to here if there is more than one ScriptMetadata class."""
+    pass
 
 
 class ScriptMetadata(ScriptMetadataBase):
