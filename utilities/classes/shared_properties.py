@@ -11,9 +11,20 @@ class AttributeBase(ABC):
     def is_empty(self):
         _is_empty = True
         for attribute in self.attrs:
-            if getattr(self, attribute):
+            if isinstance(attribute, list):
+                for item in attribute:
+                    if getattr(item, 'attrs'):
+                        if not item.is_empty():
+                            _is_empty = False
+                            break
+                    elif item:
+                        _is_empty = False
+                        break
+            elif getattr(self, attribute):
                 _is_empty = False
                 break
+            else:
+                pass
         return _is_empty
 
     @staticmethod
@@ -364,3 +375,87 @@ class CallMap(AttributeBase):
     @staticmethod
     def _attrs():
         return frozenset(['id', 'identifier'])
+
+
+class IOObject(AttributeBase):
+
+    def __init__(self, identifier=None, path=None):
+        self._identifier = identifier
+        self._path = path
+
+    @property
+    def identifier(self):
+        return self._identifier
+
+    @identifier.setter
+    def identifier(self, new_identifier):
+        self._identifier = new_identifier
+
+    @property
+    def path(self):
+        return self._path
+
+    @path.setter
+    def path(self, new_path):
+        self._path = new_path
+
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['identifier', 'path'])
+
+class IOObjectItem(AttributeBase):
+    def __init__(self, id_=None, io_object=IOObject()):
+        self._id = id_
+        self._io_object = io_object
+
+    @property
+    def id(self):
+        return self._id
+
+    @id.setter
+    def id(self, new_id):
+        self._id = new_id
+
+    @property
+    def identifier(self):
+        return self._io_object._identifier
+
+    @identifier.setter
+    def identifier(self, new_identifier):
+        self._io_object._identifier = new_identifier
+
+    @property
+    def path(self):
+        return self._io_object._path
+
+    @path.setter
+    def path(self, new_path):
+        self._io_object._path = new_path
+
+    @property
+    def io_object(self):
+        return self._io_object
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['id', 'io_object'])
+
+    def dump(self):
+        map_object = CommentedMap()
+        map_object['id'] = getattr(self, 'id')
+        map_object.update(self.io_object.dump())
+        return map_object
+
+class IOArrayItem(AttributeBase):
+    def __init__(self, id_, objects=None):
+        self._id = id_
+        self._objects = objects if objects else [IOObject()]
+
+    @staticmethod
+    def _attrs():
+        return frozenset(['id', 'objects'])
+
+
+
+

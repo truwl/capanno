@@ -3,7 +3,8 @@ from pathlib import Path
 from collections import OrderedDict
 from ruamel.yaml import safe_load
 from utilities.classes.metadata_base import MetadataBase
-from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite
+from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite, \
+    IOObjectItem
 from utilities.get_metadata_from_biotools import make_tool_metadata_kwargs_from_biotools
 
 
@@ -148,3 +149,19 @@ class SubtoolMetadata(ToolMetadataBase):
 
 
 
+
+class ToolInstanceMetadata(ToolMetadataBase):
+
+    @staticmethod
+    def _init_metadata():
+        return OrderedDict([
+            ('toolName', None),
+            ('toolVersion', None),
+            ('toolIdentifier', None),
+            ('name', None),
+            ('version', '0.1.0'),  # Set to something low if not provided.
+            ('identifier', None),
+            ('description', None),
+            ('inputObjects', [IOObjectItem()]),
+            ('ouputObjects', [IOObjectItem()]),
+        ])
