@@ -10,7 +10,7 @@ codeRepository:
   name: GitHub
   URL: https://github.com/coreutils/coreutils/blob/master/src/cat.c
 license: GPL-3.0-only
-Website:
+WebSite:
   - name: GNU coreutils
     URL: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html
     description:

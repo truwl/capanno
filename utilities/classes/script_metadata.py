@@ -7,8 +7,10 @@
 from pathlib import Path
 from collections import OrderedDict
 from ruamel.yaml import safe_load
+
+from utilities.classes.common_functions import is_attr_empty
 from utilities.classes.shared_properties import WebSite, CodeRepository, Person, Publication, Keyword, ParentScript, Tool
-from utilities.classes.metadata_base import MetadataBase, object_attributes
+from utilities.classes.metadata_base import MetadataBase
 
 
 class ScriptMetadataBase(MetadataBase):
@@ -94,19 +96,3 @@ class ScriptMetadata(ScriptMetadataBase):
         return
 
 
-def is_attr_empty(attribute):
-    # Need to check for lists.
-    if isinstance(attribute, list):
-        is_empty = True
-        for item in attribute:
-            if not is_attr_empty(item):
-                is_empty = False
-                break
-    elif isinstance(attribute, object_attributes):
-        is_empty = attribute.is_empty()
-    else:
-        if attribute:
-            is_empty = False
-        else:
-            is_empty = True
-    return is_empty
