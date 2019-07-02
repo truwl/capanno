@@ -16,7 +16,9 @@ def add_common_script_metadata(group_name, project_name, software_version, filen
     path = _get_script_directory(group_name, project_name, software_version) / 'common'
     path.mkdir(exist_ok=True)
     file_path = path / filename
-    script_metadata = ScriptMetadata()
+    script_metadata = CommonScriptMetadata(**kwargs)
+    script_metadata.mk_file(file_path)
+    return
 
 
 def add_script(script_name, script_version, parent_metadata=None):
