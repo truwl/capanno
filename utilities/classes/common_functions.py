@@ -51,3 +51,25 @@ def is_attr_empty(attribute):
         else:
             is_empty = True
     return is_empty
+
+
+class NameSoftwareVersionMixin:
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, new_name):
+        if not new_name:
+            raise ValueError(f"'name'' must be set.")
+        self._name = new_name
+
+    @property
+    def softwareVersion(self):
+        return self._softwareVersion
+
+    @softwareVersion.setter
+    def softwareVersion(self, new_softwareVersion):
+        if not new_softwareVersion:
+            raise ValueError(f"'softwareVersion must be set.")
+        self._softwareVersion = new_softwareVersion

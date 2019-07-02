@@ -8,7 +8,7 @@ from utilities.classes.metadata_base import MetadataBase
 from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite, \
     IOObjectItem
 from utilities.get_metadata_from_biotools import make_tool_metadata_kwargs_from_biotools
-from utilities.classes.common_functions import _mk_hashes
+from utilities.classes.common_functions import _mk_hashes, NameSoftwareVersionMixin
 
 
 class ToolMetadataBase(MetadataBase):
@@ -33,27 +33,6 @@ class ToolMetadataBase(MetadataBase):
         else:
             identifier = self._mk_identifier(**kwargs)
         self._identifier = identifier
-
-class NameSoftwareVersionMixin:
-    @property
-    def name(self):
-        return self._name
-
-    @name.setter
-    def name(self, new_name):
-        if not new_name:
-            raise ValueError(f"'name'' must be set.")
-        self._name = new_name
-
-    @property
-    def softwareVersion(self):
-        return self._softwareVersion
-
-    @softwareVersion.setter
-    def softwareVersion(self, new_softwareVersion):
-        if not new_softwareVersion:
-            raise ValueError(f"'softwareVersion must be set.")
-        self._softwareVersion = new_softwareVersion
 
 
 class ToolMetadata(NameSoftwareVersionMixin, ToolMetadataBase):

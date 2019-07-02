@@ -1,14 +1,10 @@
-#
-# * This file is subject to the terms and conditions defined in
-# * file 'LICENSE.txt', which is part of this source code package.
 
-
-
+from abc import abstractmethod
 from pathlib import Path
+import re
 from collections import OrderedDict
 from ruamel.yaml import safe_load
-
-from utilities.classes.common_functions import is_attr_empty
+from utilities.classes.common_functions import is_attr_empty, NameSoftwareVersionMixin, _mk_hashes
 from utilities.classes.shared_properties import WebSite, CodeRepository, Person, Publication, Keyword, ParentScript, Tool
 from utilities.classes.metadata_base import MetadataBase
 
@@ -18,7 +14,9 @@ class ScriptMetadataBase(MetadataBase):
     pass
 
 
-class ScriptMetadata(ScriptMetadataBase):
+
+
+class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
 
     @staticmethod
     def _init_metadata():
@@ -44,6 +42,24 @@ class ScriptMetadata(ScriptMetadataBase):
         ('parentMetadata', None),
         ('_parentMetadata', None),  # Place to store parent ScriptMetadata objects.
     ])
+
+    def _check_identifier(self, identifier):
+        if not identifier[:3] == "ST_":
+            raise ValueError(f"Script identifiers must start with 'ST_' you provided {identifier}")
+        else:
+            hex_pattern = r'[0-9a-f]{6}\.[0-9a-f]{2}$'
+            match_obj = re.match(hex_pattern, identifier[3:])
+            if not match_obj:
+                raise ValueError(f"Script identifier not formatted correctly: {identifier}")
+
+        return identifier
+
+    def _mk_identifier(self, start=0):
+        if not (self.name and self.softwareVersion):
+            raise ValueError(f"Name and softwareVersion must be provided to make an identifier.")
+        name_hash, version_hash = _mk_hashes(self.name, self.softwareVersion)
+        identifier = f"ST_{name_hash[start:start + 6]}.{version_hash[:2]}"
+        return identifier
 
     def _load_common_metadata(self, file_path):
         # Start with returning a list of dicts.
@@ -95,4 +111,35 @@ class ScriptMetadata(ScriptMetadataBase):
             MetadataBase.mk_file(self, file_path)
         return
 
+    @property
+    def identifier(self):
+        return self._identifier
 
+    @identifier.setter
+    def identifier(self, identifier=None, **kwargs):
+        if identifier:
+            identifier = self._check_identifier(identifier)
+        else:
+            identifier = self._mk_identifier(**kwargs)
+        self._identifier = identifier
+
+
+class CommonScriptMetadata(ScriptMetadataBase):
+    @staticmethod
+    def _init_metadata():
+        # Only attributes which can be common to multiple scripts.
+        return OrderedDict([
+            ('softwareVersion', None),
+            ('description', None),
+            ('WebSite', [WebSite()]),
+            ('codeRepository', CodeRepository()),
+            ('license', None),
+            ('contactPoint', [Person()]),
+            ('publication', [Publication()]),
+            ('keywords', [Keyword()]),
+            ('creator', [Person()]),
+            ('programmingLanguage', None),
+            ('datePublished', None),
+            ('parentScripts', ParentScript()),
+            ('tools', Tool()),
+            ])

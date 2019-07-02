@@ -10,6 +10,7 @@ featureList:
   - alignReads
   - liftOver
   - inputAlignmentsFromBAM
+  - fake1
 
 # Recommended
 
@@ -56,5 +57,3 @@ creator:
 programmingLanguage: [C++]
 
 datePublished:
-
-dowloadURL:

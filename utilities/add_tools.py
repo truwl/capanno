@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
 
-import sys
-import argparse
 from pathlib import Path
-from utilities.classes.tool_metadata import ToolMetadata, SubtoolMetadata, ParentToolMetadata
+from utilities.classes.tool_metadata import ToolMetadata, ParentToolMetadata
 
-
-parser = argparse.ArgumentParser(description='Initialize directory and files for new cwl-tool')
-parser.add_argument('name', type=str, nargs=1, help='The name of the new tool that is being added')
-parser.add_argument('version', type=str, nargs=1, help='The version of the new tool that is being added')
-parser.add_argument('subtools', type=str, nargs='*', help='List of subtool names for the tool.')
-parser.add_argument('--biotools_id', help="bio.tools ID. If provided will be used to populate metadata file with data from https://bio.tools.")
 
 def add_parent_tool(tool_name, tool_version, subtool_names=None, biotools_id=None):
     """
