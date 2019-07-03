@@ -29,13 +29,13 @@ class TestScriptMetadata(TestBase):
         os.remove(test_filename)
 
     def test_make_script_metadata_from_file(self):
-        file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE_DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
+        file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE-DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
         st_metadata = ScriptMetadata.load_from_file(file_path)
         return
 
     # @skip("Pass")
     def test_mk_file_with_inherited_data(self):
-        file_path = file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE_DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
+        file_path = file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE-DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
         st_metadata = ScriptMetadata.load_from_file(file_path)
         test_filename = self.temp_dir / 'script2_test_metadata.yaml'
         st_metadata.mk_completed_file(test_filename)
@@ -46,7 +46,7 @@ class TestScriptMetadata(TestBase):
         return
 
     def test_mk_file_without_inherited_data(self):
-        file_path = file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE_DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
+        file_path = file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE-DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
         st_metadata = ScriptMetadata.load_from_file(file_path)
         test_filename = self.temp_dir / 'script3_test_metadata.yaml'
         st_metadata.mk_file(test_filename)

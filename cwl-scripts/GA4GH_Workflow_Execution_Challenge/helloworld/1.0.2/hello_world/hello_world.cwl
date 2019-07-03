@@ -3,8 +3,8 @@
 class: CommandLineTool
 id: "hello-world"
 label: "Simple hello world tool"
-baseCommand: ["bash", "hello_world"]
-#baseCommand: ["bash", "/usr/local/bin/hello_world"]
+baseCommand: ["bash", "helloworld"]
+#baseCommand: ["bash", "/usr/local/bin/helloworld"]
 
 cwlVersion: v1.0
 

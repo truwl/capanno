@@ -31,7 +31,7 @@ steps:
       input_file: input_file
     out: [output_file]
   checker:
-    run: check_md5sum.cwl
+    run: md5sum-checker.cwl
     in:
       input_file: md5sum/output_file
       expected_md5: expected_md5

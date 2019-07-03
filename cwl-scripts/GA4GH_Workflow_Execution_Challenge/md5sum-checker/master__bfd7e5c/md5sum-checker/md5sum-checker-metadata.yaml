@@ -1,4 +1,4 @@
-name: check_md5sum
+name: md5sum-checker
 identifier: ST_493ada.e4
 description: Checks to see if a given file contains a certain string and then returns a JSON.
 version: 1.0
@@ -11,8 +11,8 @@ contactPoint:
 license: Apache-2.0
 
 codeRepository:
-  name: GitHub,
-  url: https://github.com/dockstore-testing/md5sum-checker/blob/master/checker/bin/check_md5sum
+  name: GitHub
+  url: https://github.com/dockstore-testing/md5sum-checker/blob/master/checker/bin/md5sum-checker
 
 websites:
   - name: Dockstore

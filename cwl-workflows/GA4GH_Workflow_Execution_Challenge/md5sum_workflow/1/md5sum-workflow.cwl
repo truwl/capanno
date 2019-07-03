@@ -12,7 +12,7 @@ outputs:
 
 steps:
   md5sum:
-    run: my_md5sum.cwl
+    run: md5sum.cwl
     in:
       input_file: input_file
     out: [output_file]

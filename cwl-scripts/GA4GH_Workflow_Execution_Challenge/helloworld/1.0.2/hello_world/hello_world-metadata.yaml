@@ -1,12 +1,12 @@
-name: hello_world
+name: helloworld
 identifier: ST_99b1ff.e4
 description: A bash script that combines the text of an input file into a template file.
 programmingLanguage: bash
 version: 1.0
 
 codeRepository:
-    name: GitHub,
-    URL: https://github.com/GA4GH-DREAM/dockstore-tool-helloworld/
+    name: GitHub
+    URL: https://github.com/GA4GH-DREAM/dockstore-tool-helloworld/tree/master/bin
 
 tools:
   - name: set
@@ -20,5 +20,5 @@ contactPoint:
     email: james.a.eddy@gmail.com
 
 
-softwareVersion: master__bdeefcc
-datePublished: 04/13/2017
+softwareVersion: 1.0.2
+datePublished: 05/24/2017

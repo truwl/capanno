@@ -45,4 +45,4 @@ outputs:
       glob: log.txt
     doc: A text log file that contains more details.
 
-baseCommand: check_md5sum
+baseCommand: md5sum-checker

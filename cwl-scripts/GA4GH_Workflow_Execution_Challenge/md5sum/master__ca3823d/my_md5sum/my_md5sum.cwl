@@ -36,4 +36,4 @@ outputs:
       glob: md5sum.txt
     doc: A text file that contains a single line that is the md5sum of the input file.
 
-baseCommand: my_md5sum
+baseCommand: md5sum

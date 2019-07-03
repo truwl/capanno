@@ -13,7 +13,7 @@ inputs:
 outputs:
   output_file:
     type: File
-    outputSource: hello_world/output
+    outputSource: helloworld/output
   results_file:
     type: File
     outputSource: helloworld_check/results_file
@@ -21,15 +21,15 @@ outputs:
 
 steps:
   hello_world:
-    run: bash-hello_world.cwl
+    run: helloworld.cwl
     in:
       input_file: input_file
       template_file: template_file
     out: [output]
 
   helloworld_check:
-    run: python-helloworld_check.cwl
+    run: helloworld_check.cwl
     in:
       knowngood_file: knowngood_file
-      helloworld_file: hello_world/output
+      helloworld_file: helloworld/output
     out: [results_file]
