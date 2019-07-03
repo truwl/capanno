@@ -33,7 +33,7 @@ class TestScriptMetadata(TestBase):
         st_metadata = ScriptMetadata.load_from_file(file_path)
         return
 
-    @skip("Review")
+    # @skip("Pass")
     def test_mk_file_with_inherited_data(self):
         file_path = file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE_DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
         st_metadata = ScriptMetadata.load_from_file(file_path)
@@ -42,5 +42,17 @@ class TestScriptMetadata(TestBase):
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
         self.assertEqual(test_file_dict['license'], 'MIT')
+        os.remove(test_filename)
+        return
+
+    def test_mk_file_without_inherited_data(self):
+        file_path = file_path = Path().cwd() / 'cwl-scripts' / 'ENCODE_DCC' /'atac-seq-pipeline' / 'v1.1' / 'encode_ataqc-metadata.yaml'
+        st_metadata = ScriptMetadata.load_from_file(file_path)
+        test_filename = self.temp_dir / 'script2_test_metadata.yaml'
+        st_metadata.mk_file(test_filename)
+        with test_filename.open('r') as file:
+            test_file_dict = safe_load(file)
+        with self.assertRaises(KeyError):
+            license = test_file_dict['license']
         os.remove(test_filename)
         return

@@ -76,10 +76,11 @@ class MetadataBase(ABC):
                     setattr(self, k, v)  # Set to default value provided in self._init_metadata. Last resort.
         return
 
-    def mk_file(self, file_path):
+    def mk_file(self, file_path, keys=None):
         file_path = Path(file_path)
         meta_map = CommentedMap()
-        keys = self._get_metafile_keys()
+        if not keys:
+            keys = self._get_metafile_keys()
         for key in keys:
             if key.startswith('_'):
                 continue
