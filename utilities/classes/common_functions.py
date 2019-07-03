@@ -70,6 +70,8 @@ class NameSoftwareVersionMixin:
 
     @softwareVersion.setter
     def softwareVersion(self, new_softwareVersion):
-        if not new_softwareVersion:
+
+        if not new_softwareVersion:  # softwareVersion not defined. Check in parentMetadata
             raise ValueError(f"'softwareVersion must be set.")
         self._softwareVersion = new_softwareVersion
+        return

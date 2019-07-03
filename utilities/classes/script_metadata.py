@@ -1,11 +1,11 @@
-
 from abc import abstractmethod
 from pathlib import Path
 import re
 from collections import OrderedDict
 from ruamel.yaml import safe_load
 from utilities.classes.common_functions import is_attr_empty, NameSoftwareVersionMixin, _mk_hashes
-from utilities.classes.shared_properties import WebSite, CodeRepository, Person, Publication, Keyword, ParentScript, Tool
+from utilities.classes.shared_properties import WebSite, CodeRepository, Person, Publication, Keyword, ParentScript, \
+    Tool
 from utilities.classes.metadata_base import MetadataBase
 
 
@@ -14,34 +14,56 @@ class ScriptMetadataBase(MetadataBase):
     pass
 
 
-
-
 class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
 
     @staticmethod
     def _init_metadata():
         return OrderedDict([
-        ('name', None),
-        ('softwareVersion', None),
-        ('description', None),
-        ('identifier', None),
-        ('version', '0.1'),
-        ('WebSite', [WebSite()]),
-        ('codeRepository', CodeRepository()),
-        ('license', None),
-        ('contactPoint', [Person()]),
-        ('publication', [Publication()]),
-        ('keywords', [Keyword()]),
-        ('alternateName', None),
-        ('creator', [Person()]),
-        ('programmingLanguage', None),
-        ('datePublished', None),
-        ('downloadURL', None),
-        ('parentScripts', ParentScript()),
-        ('tools', Tool()),
-        ('parentMetadata', None),
-        ('_parentMetadata', None),  # Place to store parent ScriptMetadata objects.
-    ])
+            ('name', None),
+            ('softwareVersion', None),
+            ('description', None),
+            ('identifier', None),
+            ('version', '0.1'),
+            ('WebSite', [WebSite()]),
+            ('codeRepository', CodeRepository()),
+            ('license', None),
+            ('contactPoint', [Person()]),
+            ('publication', [Publication()]),
+            ('keywords', [Keyword()]),
+            ('alternateName', None),
+            ('creator', [Person()]),
+            ('programmingLanguage', None),
+            ('datePublished', None),
+            ('downloadURL', None),
+            ('parentScripts', ParentScript()),
+            ('tools', Tool()),
+            ('parentMetadata', None),
+            ('_parentMetadata', None),  # Place to store list of parent ScriptMetadata objects.
+            ('_primary_file_attrs', None),
+            # List to store attributes that are not inherited from a parent metadata file or object.
+        ])
+
+    def __init__(self, file_path=Path.cwd(), **kwargs):
+        """
+        What it's gotta do: see if there's anything in parentMetadata. If so, load it into _parentMetadata. Check for values in kwargs.
+        If value is there, leave it alone and put key in _primary_file_attrs. If it is not there, check for highest priority value in _parent_metadada and set to that value.
+        The main question. How to do this with the base class init which only expects kwargs as arguments. What if value already set...
+        :param file_path:
+        :param kwargs:
+        """
+        # Get parent metadata first.
+        if kwargs.get('parentMetadata'):
+            self.parentMetadata = kwargs['parentMetadata']
+            self._load_common_metadata(file_path)  # Will set self._parentMetadata
+            master_common_metadata = self._mk_master_common_metadata()
+
+            # populate _primary_attrs and populate required values from common_metadata where required.
+            self._primary_file_attrs = []
+            for k, value in kwargs.items():
+                if value:
+                    self._primary_file_attrs.append(k)
+            self._update_attributes(master_common_metadata)
+        super().__init__(**kwargs)
 
     def _check_identifier(self, identifier):
         if not identifier[:3] == "ST_":
@@ -62,28 +84,28 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
         return identifier
 
     def _load_common_metadata(self, file_path):
-        # Start with returning a list of dicts.
+        """
+
+        :param file_path: path of the original file that specifies parent/commonMetadata. parentMetadata file paths are relative to this.
+        :return:
+        """
+        self._parentMetadata = []  # List of parent CommonScriptMetadata objects.
         if self.parentMetadata:
-            common_meta_list = []  # List of parent ScriptMetadata objects.
-            dirname = file_path.parents[0]
+            dirname = file_path.parent
             for rel_path in self.parentMetadata:
                 full_path = dirname / rel_path
                 with full_path.resolve().open('r') as f:
                     common_meta_dict = safe_load(f)
-                common_meta_list.append(ScriptMetadata(**common_meta_dict))
-            return common_meta_list
+                self._parentMetadata.append(CommonScriptMetadata(**common_meta_dict))
         return
-
 
     @classmethod
     def load_from_file(cls, file_path):
         file_path = Path(file_path)
         with file_path.open('r') as file:
             file_dict = safe_load(file)
-        new_instance = cls(**file_dict)
-        new_instance._parentMetadata = new_instance._load_common_metadata(file_path)
+        new_instance = cls(file_path=file_path, **file_dict)
         return new_instance
-
 
     def _update_attributes(self, update_instance):
         """
@@ -91,17 +113,36 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
         :param update_instance:
         :return:
         """
-
         for attribute_name in self._init_metadata().keys():
-            if is_attr_empty(getattr(self, attribute_name)):
-                update_value = getattr(update_instance, attribute_name)
-                if is_attr_empty(update_value):
+            try:
+                attribute = getattr(self, attribute_name)
+            except AttributeError:  # attribute doesn't exist yet.
+                attribute = None
+                try:
+                    getattr(update_instance, attribute_name)
+                except AttributeError:
+                    # attribute doesn't exist in self, or update_instance. Don't do anything.
                     continue
-                else:
-                    setattr(self, attribute_name, update_value)
-            else:
+            if is_attr_empty(attribute):
+                update_value = getattr(update_instance, attribute_name)
+                setattr(self, attribute_name, update_value)
+            else: # attribute has something there. Leave it alone.
                 continue
         return
+
+    def _mk_master_common_metadata(self):
+        # Combine all common metadata files into a master CommonScriptMetadata instance where lower priority metadata is overwritten by higher priority metadata.
+        # This will be used to update the ScriptMetadata instance.
+        len_parent_metadata = len(self._parentMetadata)
+        if len_parent_metadata == 0:
+            master_common_metadata =  None
+        elif len_parent_metadata == 1:
+            master_common_metadata = self._parentMetadata[0]
+        else:
+            master_common_metadata = self._parentMetadata[0]    # initialize
+            for common_script_metadata in self._parentMetadata[1:]:  # skip first entry since it is used to initialize.
+                master_common_metadata.update_from_other_instance(common_script_metadata)
+        return master_common_metadata
 
 
     def mk_completed_file(self, file_path):
@@ -127,7 +168,7 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
 class CommonScriptMetadata(ScriptMetadataBase):
     @staticmethod
     def _init_metadata():
-        # Only attributes which can be common to multiple scripts.
+        # Only attributes which can be common to multiple scripts. Skips validation of codeRepository
         return OrderedDict([
             ('softwareVersion', None),
             ('description', None),
@@ -142,4 +183,17 @@ class CommonScriptMetadata(ScriptMetadataBase):
             ('datePublished', None),
             ('parentScripts', ParentScript()),
             ('tools', Tool()),
-            ])
+        ])
+
+    def update_from_other_instance(self, common_script_metadata_instance):
+        # Update self from common_script_metadata_instance
+        for attribute in self._init_metadata():
+            if is_attr_empty(getattr(self, attribute)):
+                update_value = getattr(common_script_metadata_instance, attribute)
+                if is_attr_empty(update_value):
+                    continue
+                else:
+                    setattr(self, attribute, update_value)
+            else:
+                continue
+        return

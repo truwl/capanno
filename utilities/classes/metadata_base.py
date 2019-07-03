@@ -57,17 +57,23 @@ class MetadataBase(ABC):
 
 
     def __init__(self, **kwargs):
-        metadata = self._init_metadata()
+        init_metadata = self._init_metadata()
 
         for k, v in kwargs.items():
-            if not k in metadata:
+            if not k in init_metadata:
                 raise AttributeError(f"{k} is not a valid key for {type(self)}")
 
-        for k, v in metadata.items():
+        for k, v in init_metadata.items():
             if k in kwargs:
-                setattr(self, k, kwargs[k])
+                setattr(self, k, kwargs[k])  # Highest priority.
             else:
-                setattr(self, k, v)
+                try:
+                    if getattr(self, k):  # value has already been set by derived class __init__. Second highest priority.
+                        continue
+                    else:
+                        raise NotImplementedError(f"Figure out what's happening here and fix it.")
+                except AttributeError:
+                    setattr(self, k, v)  # Set to default value provided in self._init_metadata. Last resort.
         return
 
     def mk_file(self, file_path):

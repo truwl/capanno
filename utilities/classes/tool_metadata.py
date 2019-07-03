@@ -7,7 +7,7 @@ from ruamel.yaml import safe_load
 from utilities.classes.metadata_base import MetadataBase
 from utilities.classes.shared_properties import CodeRepository, Person, Publication, WebSite, Keyword, ApplicationSuite, \
     IOObjectItem
-from utilities.get_metadata_from_biotools import make_tool_metadata_kwargs_from_biotools
+from utilities.helpers.get_metadata_from_biotools import make_tool_metadata_kwargs_from_biotools
 from utilities.classes.common_functions import _mk_hashes, NameSoftwareVersionMixin
 
 
