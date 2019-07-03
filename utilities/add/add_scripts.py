@@ -22,6 +22,7 @@ def _get_script_directory(group_name, project_name, script_version):
 def add_common_script_metadata(group_name, project_name, script_version, filename, **kwargs):
     path = _get_script_directory(group_name, project_name, script_version) / 'common'
     path.mkdir(exist_ok=True)
+    filename = f"{filename}-metadata.yaml"
     file_path = path / filename
     script_metadata = CommonScriptMetadata(**kwargs)
     script_metadata.mk_file(file_path)
