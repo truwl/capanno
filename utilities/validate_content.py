@@ -4,6 +4,7 @@ import argparse
 import sys
 from utilities.validate.validate_tools import validate_parent_tool_metadata, validate_tool_metadata, validate_subtool_metadata
 from utilities.validate.validate_scripts import validate_script_metadata, validate_common_script_metadata
+from utilities.validate.validate_workflows import validate_workflow_metadata
 
 parser = argparse.ArgumentParser(description="Validate metadata files.")
 subparsers = parser.add_subparsers(description="Specify type of metadata to validate.", dest='command')
@@ -23,6 +24,9 @@ validate_script.add_argument('path', help="Path to script metadata file.")
 validate_script_common = subparsers.add_parser('script_common', help="Validate common script metadata.")
 validate_script_common.add_argument('path', help="Validate common script metadata")
 
+validate_workflow = subparsers.add_parser('workflow', help="Validate workflow metadata.")
+validate_workflow.add_argument('path', help="Path to workflow metadata")
+
 def main(args):
     if args.command == 'tool':
         validate_tool_metadata(args.path)
@@ -34,6 +38,8 @@ def main(args):
         validate_script_metadata(args.path)
     elif args.command == 'script_common':
         validate_common_script_metadata(args.path)
+    elif args.command == 'workflow':
+        validate_workflow_metadata(args.path)
     else:
         parser.print_help()
     return
