@@ -91,7 +91,7 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
         """
         self._parentMetadata = []  # List of parent CommonScriptMetadata objects.
         if self.parentMetadata:
-            dirname = file_path.parent
+            dirname = file_path.parents[1]
             for rel_path in self.parentMetadata:
                 full_path = dirname / rel_path
                 with full_path.resolve().open('r') as f:
@@ -198,3 +198,11 @@ class CommonScriptMetadata(ScriptMetadataBase):
             else:
                 continue
         return
+
+    @classmethod
+    def load_from_file(cls, file_path):
+        file_path = Path(file_path)
+        with file_path.open('r') as file:
+            file_dict = safe_load(file)
+        new_instance = cls(**file_dict)
+        return new_instance
