@@ -97,8 +97,7 @@ class ToolMetadata(NameSoftwareVersionMixin, ToolMetadataBase):
 
 
     def mk_instance(self):
-        tool_inst = ToolInstanceMetadata(toolName=self.name, toolVersion=self.version, toolIdentifier=self.identifier)
-        return tool_inst
+        raise NotImplementedError
 
 class ParentToolMetadata(ToolMetadataBase):
 
@@ -177,9 +176,11 @@ class SubtoolMetadata(MetadataBase):
         ('applicationSuite', ApplicationSuite()),
         ('name', None),
         ('version', '0.1'),
+        ('identifier', None),
         ('description', None),
         ('keywords', Keyword()),
         ('alternateName', None),
+        ('parentMetadata', None),
         ('_parentMetadata', None),
     ])
 
@@ -213,23 +214,3 @@ class SubtoolMetadata(MetadataBase):
 
     def mk_instance(self):
         raise NotImplementedError
-
-
-class ToolInstanceMetadata(ToolMetadataBase):
-
-    # instances of ToolInstanceMetadata should not be instantiated directly, but instantiated from ToolMetadata and SubtoolMetadata.
-    @staticmethod
-    def _init_metadata():
-        return OrderedDict([
-            ('toolName', None),
-            ('toolVersion', None),
-            ('toolIdentifier', None),
-            ('name', None),
-            ('version', '0.1.0'),  # Set to something low if not provided.
-            ('identifier', None),
-            ('description', None),
-            ('inputObjects', [IOObjectItem()]),
-            ('ouputObjects', [IOObjectItem()]),
-            ('_tool_metadata', None)
-        ])
-
