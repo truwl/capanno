@@ -4,6 +4,7 @@ from tests.test_tool_metadata import TestMakeToolMetadata, TestMakeParentToolMet
 from tests.test_script_metadata import TestScriptMetadata
 from tests.test_workflow_metadata import TestWorkflowMetadata
 from tests.test_get_metadata import TestMetadataFromBioTools
+from tests.test_validate import TestValidateMetadata
 
 
 def full_suite():
@@ -21,7 +22,12 @@ def full_suite():
 
     # Get metadata
     suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestMetadataFromBioTools))
+
+    # Validate
+    suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestValidateMetadata))
+
     return suite
+
 
 
 def main():

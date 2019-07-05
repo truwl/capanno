@@ -2,7 +2,8 @@
 
 import argparse
 import sys
-from utilities.validate.validate_tools import validate_parent_tool_metadata, validate_tool_metadata, validate_subtool_metadata
+import logging
+from utilities.classes.tool_metadata import ToolMetadata, ParentToolMetadata, SubtoolMetadata
 from utilities.validate.validate_scripts import validate_script_metadata, validate_common_script_metadata
 from utilities.validate.validate_workflows import validate_workflow_metadata
 
@@ -27,12 +28,26 @@ validate_script_common.add_argument('path', help="Validate common script metadat
 validate_workflow = subparsers.add_parser('workflow', help="Validate workflow metadata.")
 validate_workflow.add_argument('path', help="Path to workflow metadata")
 
+def metadata_validator_factory(class_to_validate):
+    def metadata_validator(metadata_path):
+        try:
+            metadata = class_to_validate.load_from_file(metadata_path)
+            logging.info(f"Metadata in {metadata_path} is valid {str(class_to_validate)}")
+        except:
+            logging.error(f"{str(class_to_validate)} in {metadata_path} failed validation.")
+            raise
+        return
+    return metadata_validator
+
 def main(args):
     if args.command == 'tool':
+        validate_tool_metadata = metadata_validator_factory(ToolMetadata)
         validate_tool_metadata(args.path)
     elif args.command == 'parent_tool':
+        validate_parent_tool_metadata = metadata_validator_factory(ParentToolMetadata)
         validate_parent_tool_metadata(args.path)
     elif args.command == 'subtool':
+        validate_subtool_metadata = metadata_validator_factory(SubtoolMetadata)
         validate_subtool_metadata(args.path)
     elif args.command == 'script':
         validate_script_metadata(args.path)

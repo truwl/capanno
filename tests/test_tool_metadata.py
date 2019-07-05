@@ -20,7 +20,7 @@ class TestMakeToolMetadata(TestBase):
 
     def test_make_file(self):
         tm = ToolMetadata(name=TestMakeToolMetadata.test_dict['name'], softwareVersion=0.1)
-        test_filename = self.temp_dir / 'tool_test.yaml'
+        test_filename = self.temp_dir() / 'tool_test.yaml'
         tm.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
@@ -29,7 +29,7 @@ class TestMakeToolMetadata(TestBase):
 
     def test_make_from_biotools(self):
         biotools_id = 'star'
-        file_name = self.temp_dir / 'biotools_test.yaml'
+        file_name = self.temp_dir() / 'biotools_test.yaml'
         biotools_meta = ToolMetadata.create_from_biotools(biotools_id, softwareVersion=1)
         biotools_meta.mk_file(file_name)
         os.remove(file_name)
@@ -45,7 +45,7 @@ class TestMakeSubtoolMetadata(TestBase):
 
     def test_make_file(self):
         st_metadata = SubtoolMetadata(name=TestMakeSubtoolMetadata.test_dict['name'])
-        test_filename = self.temp_dir / 'subtool_test.yaml'
+        test_filename = self.temp_dir() / 'subtool_test.yaml'
         st_metadata.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
@@ -64,7 +64,7 @@ class TestMakeParentToolMetadata(TestBase):
     def test_make_file(self):
         p_metadata = ParentToolMetadata(name=TestMakeParentToolMetadata.test_dict['name'], softwareVersion=1)
 
-        test_filename = self.temp_dir / 'parent.yaml'
+        test_filename = self.temp_dir() / 'parent.yaml'
         p_metadata.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
@@ -97,5 +97,4 @@ class TestAddTools(TestBase):
         parent_tool_path = add_parent_tool(self._foo_tool_name, self._foo_softwareVersion, self._foo_subtool_name)
         subtool_path = add_subtool(parent_tool_path, self._foo_subtool_name)
         return
-
 

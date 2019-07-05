@@ -1,7 +1,8 @@
-# REQUIRED
+# softwareVersion not set
+
 name: gawk
 
-softwareVersion: 4.1
+softwareVersion:
 
 version: 1.0
 
