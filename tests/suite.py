@@ -1,10 +1,13 @@
 import unittest
+import logging
 from unittest import defaultTestLoader
 from tests.test_tool_metadata import TestMakeToolMetadata, TestMakeParentToolMetadata, TestMakeSubtoolMetadata, TestAddTools
 from tests.test_script_metadata import TestScriptMetadata
 from tests.test_workflow_metadata import TestWorkflowMetadata
 from tests.test_get_metadata import TestMetadataFromBioTools
 from tests.test_validate import TestValidateMetadata
+
+
 
 
 def full_suite():
@@ -31,6 +34,7 @@ def full_suite():
 
 
 def main():
+    logging.basicConfig(level=logging.CRITICAL)
     suite = full_suite()
     unittest.TextTestRunner().run(suite)
     return

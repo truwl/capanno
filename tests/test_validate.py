@@ -26,11 +26,15 @@ class TestValidateMetadata(TestBase):
         validate_parent_metadata(metadata_path)
 
     def test_validate_parent_tool_metadata_fail(self):
-        pass
+        validate_parent_metadata = metadata_validator_factory(ParentToolMetadata)
+        metadata_path = Path('tests/test_files/bad_samtools-metadata.yaml')
+        with self.assertRaises(AttributeError):
+            validate_parent_metadata(metadata_path)
+        return
 
     def test_validate_subtool_metadata(self):
         validate_tool_metadata = metadata_validator_factory(SubtoolMetadata)
-        metadata_path = TestBase.get_metadata_path(tool_maps.STAR['TL_8ab263_a4.82'])
+        metadata_path = TestBase.get_metadata_path(tool_maps.STAR['TL_8ab263_a4.82'])  # alignReads
         validate_tool_metadata(metadata_path)
         return
 
