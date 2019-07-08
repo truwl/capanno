@@ -7,6 +7,10 @@ softwareVersion: master__42b7f70
 version: 1.0
 keywords:
 
+codeRepository:
+  name: GitHub
+  URL: https://github.com/dockstore-testing/md5sum-checker
+
 callMap:
   - id: md5sum
     identifier: ST_71882e.e4

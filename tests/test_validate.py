@@ -1,7 +1,7 @@
 
 from tests.test_base import TestBase
 from pathlib import Path
-from utilities.validate_content import metadata_validator_factory
+from utilities.validate import metadata_validator_factory
 from utilities.classes.tool_metadata import ToolMetadata, ParentToolMetadata, SubtoolMetadata
 from content_maps import tool_maps, script_maps, workflow_maps
 

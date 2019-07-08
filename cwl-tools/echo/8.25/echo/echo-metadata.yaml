@@ -17,7 +17,7 @@ codeRepository:
 
 license: GPL-3.0-only
 
-Website:
+WebSite:
   - name: GNU coreutils
     URL: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html
     description:
@@ -48,5 +48,3 @@ creator:
 programmingLanguage: []
 
 datePublished:
-
-dowloadURL:

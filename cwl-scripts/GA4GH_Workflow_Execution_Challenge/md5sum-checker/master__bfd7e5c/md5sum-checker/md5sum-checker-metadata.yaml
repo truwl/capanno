@@ -14,7 +14,7 @@ codeRepository:
   name: GitHub
   url: https://github.com/dockstore-testing/md5sum-checker/blob/master/checker/bin/md5sum-checker
 
-websites:
+WebSite:
   - name: Dockstore
     url: https://dockstore.org/workflows/github.com/dockstore-testing/md5sum-checker/_cwl_checker:develop?tab=files
 

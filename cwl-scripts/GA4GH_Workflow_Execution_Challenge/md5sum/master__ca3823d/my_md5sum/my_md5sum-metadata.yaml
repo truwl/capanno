@@ -15,7 +15,7 @@ codeRepository:
   name: GitHub,
   url: https://github.com/briandoconnor/dockstore-tool-md5sum/blob/master/bin/md5sum
 
-websites:
+WebSite:
   - name: Dockstore
     url: https://dockstore.org/workflows/github.com/dockstore-testing/md5sum-checker:develop?tab=files
 

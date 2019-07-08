@@ -270,7 +270,7 @@ class SubtoolMetadata(MetadataBase):
         raise NotImplementedError
 
     def mk_file(self, file_path, keys=None):
-        parent_path = self.parentMetadata
+        parent_path = Path(self.parentMetadata)
         subtool_path = file_path
         rel_path = parent_path.relative_to(subtool_path.parents[1])
         rel_path_str = '../' + str(rel_path)
