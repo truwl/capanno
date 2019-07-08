@@ -46,7 +46,7 @@ def add_subtool(parent_rel_path, subtool_name):
     parent_meta = ParentToolMetadata.load_from_file(parent_path)
     new_subtool_dir = parent_path.parents[1] / f"{parent_meta.name}_{subtool_name}"
     new_subtool_dir.mkdir()
-    subtool_meta = parent_meta.make_subtool_metadata(subtool_name)
+    subtool_meta = parent_meta.make_subtool_metadata(subtool_name, parent_path)
     new_file_path = new_subtool_dir / f"{subtool_name}-metadata.yaml"
     subtool_meta.mk_file(new_file_path)
     return new_file_path

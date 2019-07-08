@@ -20,5 +20,4 @@ description: genomeGenerate option directs STAR to run genome indices generation
 alternateName: []
 
 
-parentMetadata:
-  - ../common/STAR-metadata.yaml
+parentMetadata: ../common/STAR-metadata.yaml

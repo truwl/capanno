@@ -33,13 +33,17 @@ class TestValidateMetadata(TestBase):
         return
 
     def test_validate_subtool_metadata(self):
-        validate_tool_metadata = metadata_validator_factory(SubtoolMetadata)
+        validate_subtool_metadata = metadata_validator_factory(SubtoolMetadata)
         metadata_path = TestBase.get_metadata_path(tool_maps.STAR['TL_8ab263_a4.82'])  # alignReads
-        validate_tool_metadata(metadata_path)
+        validate_subtool_metadata(metadata_path)
         return
 
     def test_validate_subtool_metadata_fail(self):
-        pass
+        validate_subtool_metadata = metadata_validator_factory(SubtoolMetadata)
+        metadata_path = Path('tests/test_files/bad_samtools-view-metadata.yaml')  # subtool name not in parent featurelist.
+        with self.assertRaises(ValueError):
+            validate_subtool_metadata(metadata_path)
+        return
 
 
 
