@@ -87,10 +87,11 @@ All contributions to this repository shall be made available under the [Apache-2
 
 
 ## What we're working on now (and you could help!)
-- Utilities for generating and validating content (including instance files and associated instance metadata classes.)
+- More utilities for generating and validating content (CWL, job files, job metadata, etc.)
 - Continuous integration
 - Referencing software containers.
-
+- utilities for generating CWL tool wrappers.
+- More content!
 
 ## Code of Conduct
 
