@@ -4,7 +4,7 @@ This repository contains [Common Workflow Language](https://www.commonwl.org/) (
 
 The goal is to create a set CWL tool wrappers that are thorough, well documented, consistent, openly curated, and widely used by the community. A quality set of standardized CWL CommandLineTools will allow for assembly of workflows from "known-good" components with predictable input and output names and behaviour.
 
-CWL files in this repository are divided broadly into 'tools', 'scripts', and 'workflows'; and collectively referred to as 'methods'. Tools and scripts are both instances of the CommandLineTool CWL class, but differ in the format of their metadata and the software that they describe. Tools typically describe stand-alone programs and are more likely to have documentation and versioned releases. Scripts will often call tools, are more specialized, and have parent and child relationships with other scripts. Workflows correspond to CWL workflows and call one or more tools and/or scripts.
+CWL files in this repository are divided broadly into tools, scripts, and workflows; collectively referred to as 'methods'. Tools and scripts are both instances of the CommandLineTool CWL class, but differ in the format of their metadata and the software that they describe. Tools typically describe stand-alone programs and are more likely to have documentation and versioned releases. Scripts will often call tools, are more specialized, and have parent and child relationships with other scripts. Workflows correspond to CWL workflows and call one or more tools and/or scripts.
 
 Each CWL/metadata file combination is meant to describe a single version of a method and is separated into its own directory as described in [Repository structure and directory/file names](#structure) below. There are 'instances' directories in each method directory where inputs files (i.e. job files) and metadata that describe individual runs are placed.
 
@@ -32,7 +32,7 @@ The `{toolVersion}` path component must be named according to the version of the
 
 Tools that contain a limited number of arguments that can be provided together should be described by a single cwl file and metadata file that are contained in a directory named with the tool name. The CWL file must be named `{toolName}.cwl` and the metadata file must be named `{toolName}-metadata.yaml`. e.g. `cwl-tools/cat/8.25/cat/cat.cwl` and `cwl-tools/cat/8.25/cat/cat-metadata.yaml` 
 
-Tools that contain multiple subtools or modes should be divided into rational components (subtools) and be placed in their own directory named `{toolName}-{subtoolName}`e.g. `cwl-tools/STAR/2.7/STAR-genomeGenerate/STAR-genomeGenerate.cwl` and `cwl-tools/STAR/2.7/STAR-genomeGenerate/STAR-genomeGenerate-metadata.yaml`If dividing subtools into more finite components is deemed necessary, more directory nesting must not be added and the further breakdown must be specified in the filename e.g. `cwl-tools/{tool_name}/{tool_version}/{tool_name}-{subtool_name}/{tool_name}-{subtool_name}-{subtool_component_name}.cwl`
+Tools that contain multiple subtools or modes should be divided into logical components (subtools) and be placed in their own directory named `{toolName}-{subtoolName}`e.g. `cwl-tools/STAR/2.7/STAR-genomeGenerate/STAR-genomeGenerate.cwl` and `cwl-tools/STAR/2.7/STAR-genomeGenerate/STAR-genomeGenerate-metadata.yaml`If dividing subtools into more finite components is deemed necessary, more directory nesting must not be added. The addtional subdivision must be specified in the filename e.g. `cwl-tools/{tool_name}/{tool_version}/{tool_name}-{subtool_name}/{tool_name}-{subtool_name}-{subtool_component_name}.cwl`
 
 The metadata file for a subtool should be specific to the subtool. Metadata pertinent to all subtools should be placed in a parent metadata file in the  the `common/` directory described below. If particular metadata fields are provided in both the subtool and parent metadata, the metadata in the subtool metadata file takes precedence, i.e. subtools first get metadata from the parent metadata file then the subtool specific metadata file with the subtool specific metadata overwriting any fields that are provided in both.
 
@@ -48,13 +48,16 @@ import uuid
 uuid.uuid4().hex[:4]
 ~~~
 
+
 ### <a name="cwl-scripts"></a> cwl-scripts
 
-The cwl-scripts directory structure follows the pattern `cwl-scripts/{groupName}/{projectName}/{version}/...`
+The cwl-scripts directory structure follows the pattern `cwl-scripts/{groupName}/{projectName}/{version}/{scriptName}/...`
 
 The `groupName` and `projectName` path components should be meaningful and unique enough to not clash with other names.
 
-The `{version}` path component must be named according to the version of the script that is described preserving the version conventions of the script author. (see [ToDo](docs/components...) for more details)
+The `{version}` path component must be named according to the version of the script or group of scripts that are described preserving the version conventions of the script author. (see [ToDo](docs/components...) for more details).
+
+Several `{scriptName}` directories may be present in the `{version}` directory. Generally, scripts that are in the same code repository and that are versioned together should be in the same `{version}` directory. When there are multiple scripts grouped together, there should also be a `cwl-scripts/{groupName}/{projectName}/{version}/common/` directory to place metadata that is relevant to multiple scripts in the directory. See `cwl-scripts/ENCODE-DCC/atac-seq-pipeline/v1.1` for an example.
 
 ####  Subdirectories of  `cwl-scripts/{groupName}/{projectName}/{version}/...`
 
@@ -76,14 +79,7 @@ Contains workflow CWL file, workflow metadata file, and instances directory.
 
 ## Utilities available
 
-All utilities have been developed and tested using Python 3.6
-
-Generate a directory with the proper structure.
-
-Metadata templates are available in the [templates](templates) directory. Alternatively these templates can be generated from classes in [metadata.py](utilities/classes/tool_metadata.py)
-
-Generation of tool metadata using [bio.tools](https://bio.tools/)
-
+Code for generating, validating, and working with files (including generation of tool metadata from [bio.tools](https://bio.tools/)) is in the utilities directory have been developed and tested using Python 3.6 (we like f-strings and use them liberally!). Use of these utilities and setting up a virtual environment is covered in the [Adding Content]() documentation.
 
 ## License
 
@@ -91,7 +87,11 @@ All contributions to this repository shall be made available under the [Apache-2
 
 
 ## What we're working on now (and you could help!)
-- Utilities for generating and validating content. 
+- Utilities for generating and validating content (including instance files and associated instance metadata classes.)
 - Continuous integration
-- Referencing softwared containers.
+- Referencing software containers.
 
+
+## Code of Conduct
+
+Users of this repo must adhere to xD Bio Inc's [Code of Conduct](https://truwl.com/conduct).

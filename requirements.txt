@@ -1,2 +1,3 @@
 requests==2.21.0
 ruamel.yaml==0.15.91
+semantic-version==2.6.0
