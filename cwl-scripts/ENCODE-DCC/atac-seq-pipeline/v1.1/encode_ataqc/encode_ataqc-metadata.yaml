@@ -5,15 +5,15 @@ version: 1.0
 
 parentScripts:
   - name: encode_common_genomic.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
     identifier:
 
   - name: run_ataqc.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
     identifier:
 
   - name: encode_common_log_parser.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
     identifier:
 
 

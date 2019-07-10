@@ -10,10 +10,10 @@ codeRepository:
 
 tools:
   - name: set
-    version:
+    softwareVersion: 2
 
   - name: cat
-    version:
+    softwareVersion:
 
 contactPoint:
   - name: James Eddy

@@ -34,6 +34,26 @@ class ToolMetadataBase(MetadataBase):
             identifier = self._mk_identifier(**kwargs)
         self._identifier = identifier
 
+    @property
+    def keywords(self):
+        return self._keywords
+
+    @keywords.setter
+    def keywords(self, keywords_list):
+        if keywords_list:
+            keywords = []
+            for keyword in keywords_list:
+                if isinstance(keyword, Keyword):
+                    keywords.append(keyword)
+                else:
+                    if isinstance(keyword, dict):
+                        keywords.append(Keyword(**keyword))
+                    else:
+                        keywords.append(Keyword(keyword))
+        else:
+            keywords = [Keyword()]
+        self._keywords = keywords
+
 
 class ToolMetadata(NameSoftwareVersionMixin, ToolMetadataBase):
     """Class to represent metadata for a 'stand alone' command line tool."""
@@ -51,7 +71,7 @@ class ToolMetadata(NameSoftwareVersionMixin, ToolMetadataBase):
             ('WebSite', [WebSite()]),
             ('contactPoint', [Person()]),
             ('publication', [Publication()]),
-            ('keywords', [Keyword()]),
+            ('keywords', None),
             ('alternateName', None),
             ('creator', [Person()]),
             ('programmingLanguage', None),
@@ -114,7 +134,7 @@ class ParentToolMetadata(ToolMetadataBase):
             ('WebSite', [WebSite()]),
             ('contactPoint', [Person()]),
             ('publication', [Publication()]),
-            ('keywords', [Keyword()]),
+            ('keywords', None),
             ('alternateName', None),
             ('creator', [Person()]),
             ('programmingLanguage', None),
@@ -165,7 +185,7 @@ class ParentToolMetadata(ToolMetadataBase):
         return cls(**kwargs)
 
 
-class SubtoolMetadata(MetadataBase):
+class SubtoolMetadata(ToolMetadataBase):
 
     @staticmethod
     def _init_metadata():
@@ -175,7 +195,7 @@ class SubtoolMetadata(MetadataBase):
             ('version', '0.1'),
             ('identifier', None),
             ('description', None),
-            ('keywords', Keyword()),
+            ('keywords', None),
             ('alternateName', None),
             ('parentMetadata', None),  # relative path to parentMetadata
             ('_parentMetadata', None),  # ParentMetadata instance. Can be loaded from parentMetadata or set directly.
@@ -239,7 +259,7 @@ class SubtoolMetadata(MetadataBase):
 
     def _check_identifier(self, identifier):
         parent_identifier = self._parentMetadata.identifier
-        if not identifier.startswith(parent_identifier[:10]):
+        if not identifier.startswith(parent_identifier[:9]):
             raise ValueError(f"Subtool identifier {identifier} does not properly correspond to parent identifier {parent_identifier}")
         if not identifier.endswith(parent_identifier[-3:]):  # should be '.xx'
             raise ValueError(

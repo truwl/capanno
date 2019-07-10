@@ -5,17 +5,17 @@ version: 1.0
 
 tools:
   - name: bowtie2
-    version:
+    softwareVersion:
 
   - name: samtools view
-    version:
+    softwareVersion:
 
   - name: cat
-    version:
+    softwareVersion:
 
 parentScripts:
   - name: encode_common_genomic.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
 parentMetadata:  # additional metadata from most specific to least.
   - ../v1.1/common/encode_atac_script-metadata.yaml

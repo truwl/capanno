@@ -11,10 +11,65 @@ from utilities.classes.metadata_base import MetadataBase
 
 class ScriptMetadataBase(MetadataBase):
     """Factor stuff out to here if there is more than one ScriptMetadata class."""
-    pass
+
+    @property
+    def parentScripts(self):
+        return self._parentScripts
+
+    @parentScripts.setter
+    def parentScripts(self, parent_script_list):
+        if parent_script_list:
+            parent_scripts = []
+            for parent_script in parent_script_list:
+                if isinstance(parent_script, ParentScript):
+                    parent_scripts.append(parent_script)
+                else:
+                    parent_scripts.append(ParentScript(**parent_script))
+        else:
+            parent_scripts = [ParentScript()]
+        self._parentScripts = parent_scripts
+
+    @property
+    def tools(self):
+        return self._tools
+
+    @tools.setter
+    def tools(self, tools_list):
+        if tools_list:
+            tools = []
+            for tool in tools_list:
+                if isinstance(tool, Tool):
+                    tools.append(tool)
+                else:
+                    tools.append(Tool(**tool))
+        else:
+            tools = [Tool()]
+        self._tools = tools
+
+    @property
+    def keywords(self):
+        return self._keywords
+
+    @keywords.setter
+    def keywords(self, keywords_list):
+        if keywords_list:
+            keywords = []
+            for keyword in keywords_list:
+                if isinstance(keyword, Keyword):
+                    keywords.append(keyword)
+                else:
+                    if isinstance(keyword, dict):
+                        keywords.append(Keyword(**keyword))
+                    else:
+                        keywords.append(Keyword(keyword))
+        else:
+            keywords = [Keyword()]
+        self._keywords = keywords
+
 
 
 class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
+
 
     @staticmethod
     def _init_metadata():
@@ -24,8 +79,8 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
             ('description', None),
             ('identifier', None),
             ('version', '0.1'),
-            ('WebSite', [WebSite()]),
             ('codeRepository', CodeRepository()),
+            ('WebSite', [WebSite()]),
             ('license', None),
             ('contactPoint', [Person()]),
             ('publication', [Publication()]),
@@ -34,9 +89,8 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
             ('creator', [Person()]),
             ('programmingLanguage', None),
             ('datePublished', None),
-            ('downloadURL', None),
-            ('parentScripts', ParentScript()),
-            ('tools', Tool()),
+            ('parentScripts', None),
+            ('tools', None),
             ('parentMetadata', None),
             ('_parentMetadata', None),  # Place to store list of parent ScriptMetadata objects.
             ('_primary_file_attrs', None),
@@ -104,8 +158,8 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
         file_path = Path(file_path)
         with file_path.open('r') as file:
             file_dict = safe_load(file)
-        new_instance = cls(file_path=file_path, **file_dict)
-        return new_instance
+        return cls(file_path=file_path, **file_dict)
+
 
     def _update_attributes(self, update_instance):
         """
@@ -166,7 +220,10 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
         self._identifier = identifier
 
 
+
 class CommonScriptMetadata(ScriptMetadataBase):
+
+
     @staticmethod
     def _init_metadata():
         # Only attributes which can be common to multiple scripts. Skips validation of codeRepository
@@ -182,8 +239,8 @@ class CommonScriptMetadata(ScriptMetadataBase):
             ('creator', [Person()]),
             ('programmingLanguage', None),
             ('datePublished', None),
-            ('parentScripts', ParentScript()),
-            ('tools', Tool()),
+            ('parentScripts', None),
+            ('tools', None),
         ])
 
     def update_from_other_instance(self, common_script_metadata_instance):

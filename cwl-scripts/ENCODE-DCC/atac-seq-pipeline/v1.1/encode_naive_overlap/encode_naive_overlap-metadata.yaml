@@ -6,27 +6,27 @@ version: 1.0
 tools:
   - name: bedtools intersect
     alternateName: intersectBed
-    version:
+    softwareVersion:
 
   - name: awk
     alternateName: gawk
-    version:
+    softwareVersion:
 
   - name: cut
-    version:
+    softwareVersion:
 
 parentScripts:
   - name: encode_common.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
   - name: encode_common_genomic.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
   - name: encode_blacklist_filter.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
   - name: encode_frip.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
 
 parentMetadata:  # additional metadata from most specific to least.

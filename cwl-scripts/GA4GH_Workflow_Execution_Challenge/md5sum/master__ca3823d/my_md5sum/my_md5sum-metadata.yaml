@@ -21,13 +21,13 @@ WebSite:
 
 tools:
   - name: md5sum
-    version:
+    softwareVersion:
 
   - name: awk
-    version:
+    softwareVersion:
 
   - name: set
-    version:
+    softwareVersion:
 
 publication:
 datePublished: 01/28/2017

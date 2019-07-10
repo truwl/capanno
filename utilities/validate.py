@@ -53,7 +53,11 @@ def main(command, path):
         validate_subtool_metadata(path)
     elif command == 'script':
         validate_script_metadata = metadata_validator_factory(ScriptMetadata)
-        validate_script_metadata(path)
+        try:
+            validate_script_metadata(path)
+        except:
+            logging.error(f"Problem with {path}")
+            raise
     elif command == 'script_common':
         validate_common_script_metadata = metadata_validator_factory(CommonScriptMetadata)
         validate_common_script_metadata(path)

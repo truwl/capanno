@@ -8,6 +8,9 @@ from ruamel.yaml.comments import CommentedMap
 
 class AttributeBase(ABC):
 
+    def __init__(self, *args, **kwargs):
+        __slots__ = list(self.attrs)
+
     def is_empty(self):
         _is_empty = True
         for attribute in self.attrs:
@@ -46,6 +49,7 @@ class AttributeBase(ABC):
 
 class CodeRepository(AttributeBase):
     def __init__(self, name=None, URL=None):
+        super().__init__()
         self._name = name
         self._URL = URL
         return
@@ -83,6 +87,7 @@ class CodeRepository(AttributeBase):
 
 class WebSite(AttributeBase):
     def __init__(self, name=None, description=None, URL=None):
+        super().__init__()
         self._name = name
         self._description = description
         self._URL = URL
@@ -126,6 +131,7 @@ class WebSite(AttributeBase):
 
 class Publication(AttributeBase):
     def __init__(self, identifier=None, headline=None):
+        super().__init__()
         self._identifier = identifier
         self._headline = headline
         return
@@ -155,6 +161,7 @@ class Publication(AttributeBase):
 
 class Person(AttributeBase):
     def __init__(self, name=None, email=None, identifier=None):
+        super().__init__()
         self._name = name
         self._email = email
         self._identifier = identifier
@@ -190,7 +197,8 @@ class Person(AttributeBase):
 
 
 class Keyword(AttributeBase):
-    def __init__(self, *args, **kwargs):  # Might need to initialize off of *args and **kwargs to handle both forms.
+    def __init__(self, *args, **kwargs):  # Need to initialize off of *args and **kwargs to handle both forms.
+        super().__init__()
         args_len = len(args)
         if args_len == 0:
             self._uri = kwargs.get('uri', None)
@@ -242,6 +250,7 @@ class Keyword(AttributeBase):
 class ApplicationSuite(AttributeBase):
 
     def __init__(self, name=None, softwareVersion=None, identifier=None):
+        super().__init__()
         self._name = name
         self._softwareVersion = softwareVersion
         self._identifier = identifier
@@ -278,9 +287,10 @@ class ApplicationSuite(AttributeBase):
 
 class ParentScript(AttributeBase):
 
-    def __init__(self, name=None, version=None, identifier=None):
+    def __init__(self, name=None, softwareVersion=None, identifier=None):
+        super().__init__()
         self._name = name
-        self._version = version
+        self._softwareVersion = softwareVersion
         self._identifier = identifier
 
     @property
@@ -291,13 +301,14 @@ class ParentScript(AttributeBase):
     def name(self, new_name):
         self._name = new_name
 
-    @property
-    def version(self):
-        return self._version
 
-    @version.setter
-    def version(self, new_version):
-        self._version = new_version
+    @property
+    def softwareVersion(self):
+        return self._softwareVersion
+
+    @softwareVersion.setter
+    def softwareVersion(self, new_softwareVersion):
+        self._softwareVersion = new_softwareVersion
 
     @property
     def identifier(self):
@@ -307,17 +318,18 @@ class ParentScript(AttributeBase):
     def identifier(self, new_identifier):
         self._identifier = new_identifier
 
-
     @staticmethod
     def _attrs():
-        return frozenset(['name', 'version', 'identifier'])
+        return frozenset(['name','softwareVersion', 'identifier'])
 
 
 class Tool(AttributeBase):
 
-    def __init__(self, name=None, version=None, identifier=None):
+    def __init__(self, name=None, softwareVersion=None, identifier=None, alternateName=None):
+        super().__init__()
         self._name = name
-        self._version = version
+        self._alternateName = alternateName
+        self._softwareVersion = softwareVersion
         self._identifier = identifier
 
     @property
@@ -329,12 +341,20 @@ class Tool(AttributeBase):
         self._name = new_name
 
     @property
-    def version(self):
-        return self._version
+    def alternateName(self):
+        return self._alternateName
 
-    @version.setter
-    def version(self, new_version):
-        self._version = new_version
+    @alternateName.setter
+    def alternateName(self, value):
+        self._alternateName = value
+
+    @property
+    def softwareVersion(self):
+        return self._softwareVersion
+
+    @softwareVersion.setter
+    def softwareVersion(self, new_softwareVersion):
+        self._softwareVersion = new_softwareVersion
 
     @property
     def identifier(self):
@@ -347,12 +367,14 @@ class Tool(AttributeBase):
 
     @staticmethod
     def _attrs():
-        return frozenset(['name', 'version', 'identifier'])
+        return frozenset(['name', 'alternateName', 'softwareVersion', 'identifier'])
 
 
 class CallMap(AttributeBase):
 
     def __init__(self, id_=None, identifier=None):
+        super().__init__()
+
         self._id = id_
         self._identifier = identifier
 
@@ -380,6 +402,7 @@ class CallMap(AttributeBase):
 class IOObject(AttributeBase):
 
     def __init__(self, identifier=None, path=None):
+        super().__init__()
         self._identifier = identifier
         self._path = path
 
@@ -406,6 +429,8 @@ class IOObject(AttributeBase):
 
 class IOObjectItem(AttributeBase):
     def __init__(self, id_=None, io_object=IOObject()):
+        super().__init__()
+
         self._id = id_
         self._io_object = io_object
 
@@ -449,6 +474,7 @@ class IOObjectItem(AttributeBase):
 
 class IOArrayItem(AttributeBase):
     def __init__(self, id_, objects=None):
+        super().__init__()
         self._id = id_
         self._objects = objects if objects else [IOObject()]
 

@@ -103,8 +103,6 @@ Name of the main tool. ex: `pip`. Also see [name](#name1) above.
 
 !include docs/components/datePublished_field.md
 
-!include docs/components/downloadURL_field.md
-
 
 ## <a name="subtools"><a/>Subtool metadata
 

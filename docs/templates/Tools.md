@@ -1,4 +1,5 @@
 # Introduction
+
 This document contains xD Bio's best practices for the describing command line tools with the
 [Common Workflow Language](https://github.com/common-workflow-language/common-workflow-language) (CWL) and tool metadata
 files.
@@ -6,6 +7,7 @@ Several practices here were adapted from
 [CommonsWorkflow Language User Guide: Recommended Practices](http://www.commonwl.org/user_guide/rec-practices/)
 
 ## Definitions
+
 The words "MUST", "REQUIRED",  "SHOULD" and "MAY" have the meanings described in 
 [Key words for use in RFCs to Indicate Requirement Levels](https://www.ietf.org/rfc/rfc2119.txt)
 
@@ -31,6 +33,7 @@ separate CWL files and metadata files as described above. For example md5sum sho
 has arguments that are not relevant when running `md5sum`  without the --check option.
 
 ## CWL tool status
+
 CWL tools may be contributed at any point of their development. 
 The state of the CWL tool or subtool must be documented by using 
 [semantic versioning](https://semver.org/spec/v2.0.0.html) and specified in the tool's metadata `version` field.

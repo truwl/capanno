@@ -5,20 +5,20 @@ version: 1.0
 
 tools:
   - name: split
-    version:
+    softwareVersion:
 
   - name: awk
-    version:
+    softwareVersion:
 
   - name: shuf
-    version:
+    softwareVersion:
 
   - name: gzip
-    version:
+    softwareVersion:
 
 parentScripts:
   - name: encode_common.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
   
 
 parentMetadata:

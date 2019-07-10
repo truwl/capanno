@@ -6,17 +6,17 @@ version: 1.0
 
 parentScripts:
   - name: encode_common.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
   - name: encode_common_log_parser.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
   - name: encode_common_html.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
 
 tools:
   - name: echo
-    version:
+    softwareVersion:
 
 parentMetadata:
   - ../v1.1/common/encode_atac_script-metadata.yaml

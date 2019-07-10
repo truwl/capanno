@@ -20,7 +20,7 @@ ENCODE_atac_seq = OrderedDict([
 
 
 
-GA4GH_Workflow_Execution_Challenge_hello_world_with_checker = OrderedDict([
+GA4GH_Workflow_Execution_Challenge_helloworld_checker = OrderedDict([
     ('ST_99b1ff.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/helloworld/1.0.2/hello_world/hello_world.cwl'),
     ('ST_d03368.e4', 'cwl-scripts/GA4GH_Workflow_Execution_Challenge/helloworld-checker/1.1.2/helloworld_check/helloworld_check.cwl')
 ])
@@ -31,7 +31,7 @@ GA4GH_Workflow_Execution_Challenge_md5sum_checker = OrderedDict([
 ])
 
 GA4GH_Workflow_Execution_Challenge = OrderedDict(chain(
-    GA4GH_Workflow_Execution_Challenge_hello_world_with_checker.items(),
+    GA4GH_Workflow_Execution_Challenge_helloworld_checker.items(),
     GA4GH_Workflow_Execution_Challenge_md5sum_checker.items(),
 ))
 

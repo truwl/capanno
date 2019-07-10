@@ -5,44 +5,44 @@ version: 1.0
 
 tools:
   - name: samtools view
-    version:
+    softwareVersion:
 
   - name: awk
-    version:
+    softwareVersion:
 
   - name: grep
-    version:
+    softwareVersion:
 
   - name: Picard MarkDuplicates
-    version:
+    softwareVersion:
 
   - name: samtools view
-    version:
+    softwareVersion:
 
   - name: sambamba sort
-    version:
+    softwareVersion:
 
   - name: sambamba index
-    version:
+    softwareVersion:
 
   - name: sambamba flagstat
-    version:
+    softwareVersion:
 
   - name: samtools sort
-    version:
+    softwareVersion:
 
   - name: samtools fixmate
-    version:
+    softwareVersion:
 
   - name: sambamba markdup
-    version:
+    softwareVersion:
 
   - name: bedtools bamtobed
-    version:
+    softwareVersion:
 
 parentScripts:
   - name: assign_multimappers.py
-    version:
+    softwareVersion:
 
 parentMetadata:  # additional metadata from most specific to least.
   - ../v1.1/common/encode_atac_script-metadata.yaml

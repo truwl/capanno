@@ -36,25 +36,6 @@ class TestMakeToolMetadata(TestBase):
         os.remove(file_name)
         return
 
-
-@skip('Cant make SubtoolMetadata from kwargs for now. Needs parentMetadata')
-class TestMakeSubtoolMetadata(TestBase):
-    test_dict = {'name': 'subtool_name', 'bad': 'A bad key or value.'}
-    def test_make_subtool_metadata(self):
-        st_metadata = SubtoolMetadata(name=TestMakeSubtoolMetadata.test_dict['name'])
-        self.assertTrue(st_metadata.name == TestMakeSubtoolMetadata.test_dict['name'])
-
-    def test_make_file(self):
-        st_metadata = SubtoolMetadata(name=TestMakeSubtoolMetadata.test_dict['name'])
-        test_filename = self.temp_dir() / 'subtool_test.yaml'
-        st_metadata.mk_file(test_filename)
-        with test_filename.open('r') as file:
-            test_file_dict = safe_load(file)
-        self.assertEqual(test_file_dict['name'], TestMakeSubtoolMetadata.test_dict['name'])
-        os.remove(test_filename)
-
-
-# @skip('Pass to isolate tests')
 class TestMakeParentToolMetadata(TestBase):
     test_dict = {'name': 'parent_name', 'bad': 'A bad key or value.'}
 
@@ -71,6 +52,17 @@ class TestMakeParentToolMetadata(TestBase):
             test_file_dict = safe_load(file)
         self.assertEqual(test_file_dict['name'], TestMakeParentToolMetadata.test_dict['name'])
         os.remove(test_filename)
+
+
+class TestMakeSubtoolMetadata(TestBase):
+    test_dict = {'name': 'subtool_name', 'bad': 'A bad key or value.'}
+    def test_make_subtool_metadata(self):
+        p_metadata = ParentToolMetadata(name=TestMakeParentToolMetadata.test_dict['name'], softwareVersion=1, featureList=['subtool_name'])
+        st_metadata = SubtoolMetadata(name=TestMakeSubtoolMetadata.test_dict['name'], _parentMetadata=p_metadata)
+        self.assertTrue(st_metadata.name == TestMakeSubtoolMetadata.test_dict['name'])
+
+
+
 
 class TestAddTools(TestBase):
 

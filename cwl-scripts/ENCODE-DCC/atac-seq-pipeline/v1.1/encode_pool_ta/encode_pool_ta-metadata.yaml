@@ -5,12 +5,12 @@ version: 1.0
 
 tools:
   - name: gzip
-    version:
+    softwareVersion:
     identifier:
 
 parentScripts:
   - name: encode_common.py
-    version: v1.1.5
+    softwareVersion: v1.1.5
     identifier:
 
 
