@@ -22,4 +22,4 @@ parentScripts:
   
 
 parentMetadata:
-  - ../v1.1/common/encode_atac_script-metadata.yaml
+  - ../common/encode_atac_script-metadata.yaml

@@ -16,4 +16,4 @@ parentScripts:
     softwareVersion: v1.1.5
 
 parentMetadata:
-  - ../v1.1/common/encode_atac_script-metadata.yaml
+  - ../common/encode_atac_script-metadata.yaml

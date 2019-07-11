@@ -25,4 +25,4 @@ tools:
     identifier:
 
 parentMetadata:  # additional metadata from most specific to least.
-  - ../v1.1/common/encode_atac_script-metadata.yaml
+  - ../common/encode_atac_script-metadata.yaml

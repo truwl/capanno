@@ -10,7 +10,6 @@ featureList:
   - alignReads
   - liftOver
   - inputAlignmentsFromBAM
-  - fake1
 
 # Recommended
 

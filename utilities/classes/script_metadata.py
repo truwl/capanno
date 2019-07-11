@@ -145,7 +145,7 @@ class ScriptMetadata(NameSoftwareVersionMixin, ScriptMetadataBase):
         """
         self._parentMetadata = []  # List of parent CommonScriptMetadata objects.
         if self.parentMetadata:
-            dirname = file_path.parents[1]
+            dirname = file_path.parent
             for rel_path in self.parentMetadata:
                 full_path = dirname / rel_path
                 with full_path.resolve().open('r') as f:

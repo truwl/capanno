@@ -8,7 +8,7 @@ identifier: WF_0b650e.e4
 keywords:
 
 callMap:
-  - id: helloworld
+  - id: hello_world
     identifier: ST_99b1ff.e4
   - id: helloworld_check
     identifier: ST_d03368.e4

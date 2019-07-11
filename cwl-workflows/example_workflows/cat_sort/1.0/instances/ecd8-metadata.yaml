@@ -1,17 +1,17 @@
 workflowName: cat sort
-workflowVersion: master__42b7f70.0.0
+workflowVersion: 1.0.0
 workflowIdentifier: WF_1f4d8f.cb
 identifier: WF_1f4d8f.cb.ecd8
 name:
-softwareVersion: master__42b7f70.0.0
-version: master__42b7f70.0.0
+softwareVersion: 1.0.0
+version: 1.0.0
 description: Test case. Concatenates and sorts two small test files.
 outputObjects:
   - id: concatenatedSortedFile
     name: sortOutput.txt
-    identifier: FL_16e70a6e.master__42b7f70.0
+    identifier: FL_16e70a6e.1.0
 inputObjects:
   - id: file1
-    identifier: FL_0f4d46ea.master__42b7f70.0
+    identifier: FL_0f4d46ea.1.0
   - id: file2
-    identifier: FL_3a9f63fe.master__42b7f70.0
+    identifier: FL_3a9f63fe.1.0
