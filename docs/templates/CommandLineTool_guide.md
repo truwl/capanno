@@ -1,26 +1,26 @@
 ## Shared requirements
 
-If multiple subtools have the same requirements (SchemaDefRequirement, DockerRequirement, etc.) the requirement should be
-moved to its own file, placed in the tool's common directory, and be imported (using $import) into each subtool CWL file 
-rather than being specified separately in each subtool CWL file. 
+If multiple subtools or scripts have the same requirements (SchemaDefRequirement, DockerRequirement, etc.) the requirement should be
+moved to its own file, placed in the tool or script's common directory, and be imported (using $import) into each subtool/script CWL file 
+rather than being specified separately in each subtool/script CWL file. 
 
 ## Parameter completeness
 
 The cwl documents in this repository are intended to completely describe
-use cases for tools and subtools. Documents should be in progress towards including all the parameters for a 
-tool/subtool. The --help parameter or other similar options are an exception to this, although 
+use cases for tools, subtools, and scripts. Documents should be in progress towards including all the parameters for a 
+method. The --help parameter or other similar options are an exception to this, although 
 --help could be described as its own subtool. Authors are encouraged to contribute a tools/subtools with
 incomplete parameter descriptions that can be built upon later by themselves or others.
 
 ## File names
 
-Files must be named with the format `{toolName}-{subtoolName}.cwl` The subtoolName must be 
+Files must be named with the format `{toolName}-{subtoolName}.cwl` or `{sciptName}.cwl` The subtoolName must be 
 excluded if the tool is not divided into subtools. 
 More on file names can be found in this repository's [README](../../README.md)
 
 ## Defining name and versions
 
-The name and version of the tool must be specified in the [tool's metadata](CommandLineTool_metadata_guide.md)
+The name and version of the methods must be specified in the tool's metadata.
 
 ## Field specific instructions
 
@@ -31,11 +31,15 @@ May be used, but should be limited to a single line.
 ### doc
 
 May be used to make notes about the CWL file.  Documentation for the tool itself should be placed in 
-a separate metadata file as described in the [metadata guide](CommandLineTool_metadata_guide.md).
+a separate metadata file.
 
 ### cwlVersion
 
-Must be v1.0
+Must be `v1.0`
+
+### class
+
+Must be `CommandLineTool`
 
 ### baseCommand and arguments
 
@@ -49,7 +53,7 @@ binding instructions would be described `arguments`.
 
 ### requirements and hints
 
-Requirements needed to validate a tool must be placed in `requirements`. All other 'requirements'
+Requirements needed to validate a CWL file must be placed in `requirements`. All other 'requirements'
 must be placed in `hints`.
 
 #### requirements that go in `requirements`

@@ -1,5 +1,4 @@
-#### <a name="repo1"><a/>codeRepository
-Code repository information. `URL` should specify a web page (should not have a .git extension).
+Code repository information.
 
 ex: cwltool
 

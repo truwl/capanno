@@ -1,4 +1,3 @@
-#### featureList
 Required for tools that are divided into subtools. The names in the list must correspond to `subtoolName` 
 provided in the metadata file for the subtool, if one has been created, and should be the string used to identify the 
 subtool when running it from the command line, excluding any dashes. `featureList` must include all the subtools of the tool

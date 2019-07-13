@@ -14,7 +14,7 @@ Methods contributed to this repository that meet a minimum version requirement w
 
 ## How to contribute
 
-Contributions to CWL files, metadata files, best practices and other documentation files are highly encouraged and can be made through pull requests and issues. CWL and metadata file contributions must follow the best practices described in  [best practices](docs/templates/CommandLineTool_guide.md). 
+Contributions to CWL files, metadata files, best practices and other documentation files are highly encouraged and can be made through pull requests and issues. CWL and metadata file contributions must follow the best practices described in  [best practices](docs/templates/CommandLineTool_guide.md). See [getting started](docs/Getting_Started.md) to learn how to add new content with the proper directory structure and initialize metadata files. 
 
 ## <a name="structure"></a> Repository structure and directory/file names
 
@@ -79,7 +79,7 @@ Contains workflow CWL file, workflow metadata file, and instances directory.
 
 ## Utilities available
 
-Code for generating, validating, and working with files (including generation of tool metadata from [bio.tools](https://bio.tools/)) is in the utilities directory have been developed and tested using Python 3.6 (we like f-strings and use them liberally!). Use of these utilities and setting up a virtual environment is covered in the [Adding Content]() documentation.
+Code for generating, validating, and working with files (including generation of tool metadata from [bio.tools](https://bio.tools/)) is in the utilities directory have been developed and tested using Python 3.6 (we like f-strings and use them liberally!). Use of these utilities and setting up a virtual environment is covered in the [getting started](docs/Getting_Started.md) documentation.
 
 ## License
 

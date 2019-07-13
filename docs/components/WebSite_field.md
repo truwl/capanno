@@ -1,4 +1,3 @@
-#### <a name="site1"><a/>Website
 A list of websites associated with the tool, excluding the code repository which should be provided in `codeRepository`.
 
 ex:

@@ -24,8 +24,9 @@ class WorkflowMetadata(WorkflowMetadataBase):
         ('description', None),
         ('identifier', None),
         ('version', '0.1'),
-        ('WebSite', [WebSite()]),
+        ('callMap', [CallMap()]),
         ('codeRepository', CodeRepository()),
+        ('WebSite', [WebSite()]),
         ('license', None),
         ('contactPoint', [Person()]),
         ('publication', [Publication()]),
@@ -34,8 +35,6 @@ class WorkflowMetadata(WorkflowMetadataBase):
         ('creator', [Person()]),
         ('programmingLanguage', None),
         ('datePublished', None),
-        ('downloadURL', None),
-        ('callMap', [CallMap()])
     ])
 
     @classmethod

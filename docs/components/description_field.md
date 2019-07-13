@@ -1,5 +1,4 @@
-#### <a name="desc1"><a/>description
-Description of the tool. Should be taken directly from the tool documentation if it exists.
+Description of the method. Should be taken directly from the tool documentation if it exists.
 
 ex:
 

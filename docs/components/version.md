@@ -1,6 +1,4 @@
-#### <a name="version1"><a/>version
-
-Specifies the version of the CWL file. 
+Specifies the version of the CWL file and is used to determine its development state.
 Must follow [semantic versioning](https://semver.org/spec/v2.0.0.html) conventions.
 A 1.0 or greater version of a CWL document must contain valid CWL syntax, 
 follow the required [best practices](CommandLineTool_guide.md), and 

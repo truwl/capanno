@@ -1,5 +1,4 @@
-#### <a name="pub1"><a/>publication
-A list that describes publications related to the tool. The first entry should be the reference to cite the tool. 
+A list that describes publications related to the tool. The first entry should be the main reference to cite the tool. 
 
 ex:
 
