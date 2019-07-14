@@ -1,0 +1,14 @@
+workflowName:
+workflowVersion:
+workflowIdentifier: WF_ba9852.6e
+identifier: WF_ba9852.6e.1f8c
+name:
+softwareVersion: 1.0.0
+version: 1.0.0
+description: An md5sum workflow is run and checked for an expected result. Creates a json file that describes the result of the checker.
+inputObjects:
+  - id: input_file
+    identifier: FL_7ea4fce9.1
+outputObjects:
+  - id: workflow_output_file
+    identifier: FL_26dde77e.1

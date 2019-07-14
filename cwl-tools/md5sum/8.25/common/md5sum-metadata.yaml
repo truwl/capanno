@@ -4,7 +4,7 @@ name: md5sum
 softwareVersion: 8.25
 
 identifier: TL_c8f1ee.47
-
+version: 1.0
 featureList:
   - check
   - ''
@@ -54,5 +54,3 @@ creator:
 programmingLanguage: []
 
 datePublished:
-
-dowloadURL:

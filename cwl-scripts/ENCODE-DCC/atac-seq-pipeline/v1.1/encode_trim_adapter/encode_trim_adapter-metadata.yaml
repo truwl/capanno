@@ -1,0 +1,19 @@
+name: encode_trim_adapter.py
+description: ENCODE DCC adapter trimmer.
+identifier: ST_263ee1.f7
+version: 1.0
+
+tools:
+  - name: cutadapt
+    softwareVersion:
+
+  - name: gzip
+    alternateName: zcat
+    softwareVersion:
+
+parentScripts:
+  - name: encode_common.py
+    softwareVersion: v1.1.5
+
+parentMetadata:
+  - ../common/encode_atac_script-metadata.yaml

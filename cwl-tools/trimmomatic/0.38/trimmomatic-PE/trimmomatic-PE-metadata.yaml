@@ -17,3 +17,5 @@ keywords: []
 # OPTIONAL
 
 alternateName: []
+
+parentMetadata: ../common/trimmomatic-metadata.yaml

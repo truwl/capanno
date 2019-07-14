@@ -34,5 +34,4 @@ keywords: []
 alternateName: []
 
 
-parentMetadata:
-  - ../common/samtools-metadata.yaml
+parentMetadata: ../common/samtools-metadata.yaml

@@ -2,6 +2,7 @@
 name: trimmomatic
 softwareVersion: 0.38
 identifier: TL_a2e03a.af
+version: 1.0
 featureList:
   - SE
   - PE
@@ -57,5 +58,3 @@ creator:
 programmingLanguage: [java]
 
 datePublished:
-
-dowloadURL:
