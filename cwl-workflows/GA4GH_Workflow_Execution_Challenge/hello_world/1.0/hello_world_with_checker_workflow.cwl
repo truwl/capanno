@@ -13,7 +13,7 @@ inputs:
 outputs:
   output_file:
     type: File
-    outputSource: helloworld/output
+    outputSource: hello_world/output
   results_file:
     type: File
     outputSource: helloworld_check/results_file
@@ -31,5 +31,5 @@ steps:
     run: helloworld_check.cwl
     in:
       knowngood_file: knowngood_file
-      helloworld_file: helloworld/output
+      helloworld_file: hello_world/output
     out: [results_file]
