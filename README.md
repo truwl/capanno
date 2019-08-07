@@ -95,4 +95,4 @@ All contributions to this repository shall be made available under the [Apache-2
 
 ## Code of Conduct
 
-Users of this repo must adhere to xD Bio Inc's [Code of Conduct](https://truwl.com/conduct).
+Users of this repo must adhere to xD Bio Inc's [Code of Conduct](https://github.com/xDBio-Inc/Policies/blob/master/xd_code_of_conduct.md).
