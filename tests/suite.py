@@ -1,5 +1,7 @@
 import unittest
 import logging
+import tempfile
+import os
 from unittest import defaultTestLoader
 from tests.test_tool_metadata import TestMakeToolMetadata, TestMakeParentToolMetadata, TestMakeSubtoolMetadata, TestAddTools
 from tests.test_script_metadata import TestScriptMetadata
@@ -38,6 +40,9 @@ def full_suite():
 
 def main():
     logging.basicConfig(level=logging.CRITICAL)
+    # Set temp directory
+    test_temp_dir = tempfile.TemporaryDirectory(prefix='cwlTest_')
+    os.environ['TEST_TMP_DIR'] = test_temp_dir.name
     suite = full_suite()
     unittest.TextTestRunner().run(suite)
     return

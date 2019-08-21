@@ -22,7 +22,7 @@ class TestScriptMetadata(TestBase):
     def test_mk_file_from_script_metadata(self):
         kwargs = {'name': 'test_script', 'softwareVersion': 1, 'identifier': 'ST_abcdef.12'}
         st_metadata = ScriptMetadata(**kwargs)
-        test_filename = self.temp_dir() / 'script_test_metadata.yaml'
+        test_filename = Path(os.environ.get('TEST_TMP_DIR')) / 'script_test_metadata.yaml'
         st_metadata.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
@@ -38,7 +38,7 @@ class TestScriptMetadata(TestBase):
     def test_mk_file_with_inherited_data(self):
         metadata_path = TestBase.get_metadata_path(script_maps.ENCODE_atac_seq['ST_43baaf.f7'])
         st_metadata = ScriptMetadata.load_from_file(metadata_path)
-        test_filename = self.temp_dir() / 'script2_test_metadata.yaml'
+        test_filename = Path(os.environ.get('TEST_TMP_DIR')) / 'script2_test_metadata.yaml'
         st_metadata.mk_completed_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
@@ -49,7 +49,7 @@ class TestScriptMetadata(TestBase):
     def test_mk_file_without_inherited_data(self):
         metadata_path = TestBase.get_metadata_path(script_maps.ENCODE_atac_seq['ST_43baaf.f7'])
         st_metadata = ScriptMetadata.load_from_file(metadata_path)
-        test_filename = self.temp_dir() / 'script3_test_metadata.yaml'
+        test_filename = Path(os.environ.get('TEST_TMP_DIR')) / 'script3_test_metadata.yaml'
         st_metadata.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)

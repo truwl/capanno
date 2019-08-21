@@ -26,7 +26,7 @@ class TestWorkflowMetadata(TestBase):
     def test_mk_file(self):
         metafile_path = TestBase.get_metadata_path(workflow_maps.example_workflows['WF_1f4d8f.cb'])
         wf_meta = WorkflowMetadata.load_from_file(metafile_path)
-        test_filename = self.temp_dir() / 'wf_test_metadata.yaml'
+        test_filename = Path(os.environ.get('TEST_TMP_DIR')) / 'wf_test_metadata.yaml'
         wf_meta.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)

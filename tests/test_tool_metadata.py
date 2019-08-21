@@ -21,7 +21,7 @@ class TestMakeToolMetadata(TestBase):
 
     def test_make_file(self):
         tm = ToolMetadata(name=TestMakeToolMetadata.test_dict['name'], softwareVersion=0.1)
-        test_filename = self.temp_dir() / 'tool_test.yaml'
+        test_filename = Path(os.environ.get('TEST_TMP_DIR')) / 'tool_test.yaml'
         tm.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
@@ -30,7 +30,7 @@ class TestMakeToolMetadata(TestBase):
 
     def test_make_from_biotools(self):
         biotools_id = 'star'
-        file_name = self.temp_dir() / 'biotools_test.yaml'
+        file_name = Path(os.environ.get('TEST_TMP_DIR')) / 'biotools_test.yaml'
         biotools_meta = ToolMetadata.create_from_biotools(biotools_id, softwareVersion=1)
         biotools_meta.mk_file(file_name)
         os.remove(file_name)
@@ -46,7 +46,7 @@ class TestMakeParentToolMetadata(TestBase):
     def test_make_file(self):
         p_metadata = ParentToolMetadata(name=TestMakeParentToolMetadata.test_dict['name'], softwareVersion=1)
 
-        test_filename = self.temp_dir() / 'parent.yaml'
+        test_filename = Path(os.environ.get('TEST_TMP_DIR')) / 'parent.yaml'
         p_metadata.mk_file(test_filename)
         with test_filename.open('r') as file:
             test_file_dict = safe_load(file)
