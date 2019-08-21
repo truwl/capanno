@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/xDBio-Inc/cwl-source.svg?branch=master)](https://travis-ci.com/xDBio-Inc/cwl-source)
 ## Repository scope and purpose
 
 This repository contains [Common Workflow Language](https://www.commonwl.org/) (CWL) files, cwl job input files, and associated metadata to describe and run command line tools and workflows with a an emphasis on bioinformatics methods. 
