@@ -1,14 +1,9 @@
+import tempfile
 from unittest import TestCase
 from pathlib import Path
 
 
 class TestBase(TestCase):
-
-    _temp_dir = Path().cwd() / 'temp'
-
-    @classmethod
-    def temp_dir(cls):
-        return cls._temp_dir
 
     @staticmethod
     def get_metadata_path(rel_primary_file_path):
@@ -21,8 +16,8 @@ class TestBase(TestCase):
 
 
 
-    def setUp(self) -> None:
-        pass
+    def setUp(self):
+        self.test_dir = tempfile.TemporaryDirectory()
 
     def tearDown(self) -> None:
         pass
