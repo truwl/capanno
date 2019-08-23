@@ -9,6 +9,7 @@ from tests.test_workflow_metadata import TestWorkflowMetadata
 from tests.test_get_metadata import TestMetadataFromBioTools
 from tests.test_validate import TestValidateMetadata
 from tests.test_validate_all_metadata_in_maps import TestValidateContent
+from tests.test_validate_tool_inputs import TestValidateInputs
 
 
 
@@ -31,8 +32,10 @@ def full_suite():
 
     # Validate
     suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestValidateMetadata))
-
     suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestValidateContent))
+
+    # Validate inputs
+    suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestValidateInputs))
 
     return suite
 

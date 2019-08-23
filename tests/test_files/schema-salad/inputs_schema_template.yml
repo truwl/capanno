@@ -124,7 +124,3 @@ $graph:
   type: record
   documentRoot: true
   fields:
-    inFiles:
-      - "null"
-      - type: array
-        items: File
