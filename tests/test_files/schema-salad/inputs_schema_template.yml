@@ -123,4 +123,4 @@ $graph:
 - name: InputsField
   type: record
   documentRoot: true
-  fields:
+  fields: ~
