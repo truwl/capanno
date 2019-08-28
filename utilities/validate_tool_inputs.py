@@ -8,7 +8,7 @@ import schema_salad
 from cwltool.process import shortname
 from utilities.classes.cwl.command_line_tool import load_document
 from utilities.helpers.dict_tools import get_dict_from_list
-from utilities.helpers.get_files import get_inputs_schema_template, get_cwl_tool, get_tool_inputs, get_cwl_script, get_script_inputs
+from utilities.helpers.get_paths import get_inputs_schema_template, get_cwl_tool, get_tool_inputs, get_cwl_script, get_script_inputs
 
 
 def validate_tool_inputs(tool_name, tool_version, input_hash, subtool_name=None):
@@ -39,12 +39,6 @@ def validate_tool_inputs(tool_name, tool_version, input_hash, subtool_name=None)
         yaml.dump(template_dict, tf)
 
     schema_salad_validate(test_file, inputs)
-    # return_code = schema_salad_tool(['--debug', str(test_file), str(inputs)])
-    # if return_code != 0:
-    #     raise ValueError("Placeholder error")
-    # print(f"return code: {return_code}")
-
-
 
     return
 
@@ -104,5 +98,4 @@ def schema_salad_validate(schema_path, document_path):
 
     schema_salad.main.schema.validate_doc(avsc_names, document, document_loader, strict=strict, strict_foreign_properties=strict_foreign_properties)
 
-    print(f"{document_path} is valid.")
     return

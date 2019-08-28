@@ -6,10 +6,9 @@ from utilities.validate_tool_inputs import validate_tool_inputs
 class TestValidateInputs(TestBase):
 
     def test_validate_tool_inputs(self):
-        tool_name = 'cat'
-        tool_version = '8.25'
-        subtool = None
-        instance_hash = '8a6c'
+        tool_name = 'samtools'
+        tool_version = '1.3'
+        subtool = 'flagstat'
+        instance_hash = '395d'
         validate_tool_inputs(tool_name, tool_version, instance_hash, subtool)
         return
-

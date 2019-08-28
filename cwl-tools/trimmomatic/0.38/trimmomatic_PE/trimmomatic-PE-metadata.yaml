@@ -3,9 +3,10 @@
 applicationSuite:
   name:  trimmomatic
   softwareVersion: 0.38
-  identifier:
+  identifier: TL_a2e03a.af
 
 name: PE
+identifier: TL_a2e03a_3a.af
 
 version: 0.1
 
