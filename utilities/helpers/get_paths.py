@@ -1,6 +1,6 @@
 
 from pathlib import Path
-from utilities.config import CWL_TOOL_DIR
+from utilities.config import CWL_TOOL_DIR, CWL_SCRIPT_DIR
 
 # Misc
 
@@ -36,17 +36,28 @@ def get_cwl_tool_metadata(tool_name, tool_version, subtool_name=None, parent=Fal
         cwl_tool_metadata_path = get_metadata_path(get_cwl_tool(tool_name, tool_version, subtool_name=subtool_name))
     return cwl_tool_metadata_path
 
-# cwl-scripts
-
-def get_cwl_script():
-    raise NotImplementedError
-
 def get_tool_inputs(tool_name, tool_version, input_hash, subtool_name=None):
 
     cwl_tool_dir = get_cwl_tool(tool_name,tool_version, subtool_name=subtool_name).parent
     inputs_path = cwl_tool_dir / 'instances' / f"{input_hash}.yaml"
 
     return inputs_path
+
+# cwl-scripts
+
+def get_script_version_dir(group_name, project_name, version):
+    script_ver_dir = CWL_SCRIPT_DIR / group_name / project_name / version
+    return script_ver_dir
+
+def get_cwl_script(group_name, project_name, version, script_name):
+    script_ver_dir = get_script_version_dir(group_name, project_name, version)
+    script_path = script_ver_dir / script_name / f"{script_name}.cwl"
+    return script_path
+
+def get_script_metadata(group_name, project_name, version, script_name):
+    script_ver_dir = get_script_version_dir(group_name, project_name, version)
+    script_metadata_path = script_ver_dir / script_name / f"{script_name}-metadata.cwl"
+    return script_metadata_path
 
 
 def get_script_inputs():

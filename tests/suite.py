@@ -5,13 +5,12 @@ import os
 from unittest import defaultTestLoader
 from tests.test_tool_metadata import TestMakeToolMetadata, TestMakeParentToolMetadata, TestMakeSubtoolMetadata, TestAddTools
 from tests.test_script_metadata import TestScriptMetadata
+from tests.test_content_maps import TestToolMaps
 from tests.test_workflow_metadata import TestWorkflowMetadata
 from tests.test_get_metadata import TestMetadataFromBioTools
 from tests.test_validate import TestValidateMetadata
 from tests.test_validate_all_metadata_in_maps import TestValidateContent
 from tests.test_validate_tool_inputs import TestValidateInputs
-
-
 
 
 def full_suite():
@@ -36,6 +35,8 @@ def full_suite():
 
     # Validate inputs
     suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestValidateInputs))
+
+    suite.addTest(defaultTestLoader.loadTestsFromTestCase(TestToolMaps))
 
     return suite
 
