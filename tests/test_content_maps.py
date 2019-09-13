@@ -1,11 +1,13 @@
 
+from pathlib import Path
 from tests.test_base import TestBase
-from utilities.content_maps import make_tools_map, make_script_map, make_script_maps
-
+from xd_cwl_utils.content_maps import make_tools_map, make_script_map, make_script_maps
 class TestToolMaps(TestBase):
 
     def test_make_tools_map(self):
-        make_tools_map()
+        tool_dir = Path.cwd() / 'cwl-tools'
+        outfile = Path.cwd() / 'content_maps' / 'tool-marps.yaml'
+        make_tools_map(tool_dir, outfile)
         return
 
 

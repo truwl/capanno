@@ -1,6 +1,6 @@
 
 from pathlib import Path
-from utilities.config import CWL_TOOL_DIR, CWL_SCRIPT_DIR
+from utilities.config import CWL_TOOL_DIR, CWL_SCRIPT_DIR, BASE_DIR
 
 # Misc
 
@@ -68,6 +68,10 @@ def get_script_inputs():
 
 
 # helpers
+
+def get_relative_path(full_path, base_path=BASE_DIR):
+
+    return full_path.relative_to(base_path)
 
 def get_metadata_path(cwl_path):
     path_dir = cwl_path.parent

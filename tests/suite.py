@@ -47,6 +47,7 @@ def main():
     # Set temp directory
     test_temp_dir = tempfile.TemporaryDirectory(prefix='cwlTest_')
     os.environ['TEST_TMP_DIR'] = test_temp_dir.name
+    os.environ['CONFIG_KEY'] = 'DEFAULT'
     suite = full_suite()
     unittest.TextTestRunner().run(suite)
     return
