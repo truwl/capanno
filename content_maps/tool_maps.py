@@ -33,7 +33,7 @@ STAR = OrderedDict([
 
 trimmomatic = OrderedDict([
     ('TL_a2e03a.af', 'cwl-tools/trimmomatic/0.38/common/trimmomatic-metadata.yaml'),
-    ('TL_a2e03a_53.af', 'cwl-tools/trimmomatic/0.38/trimmomatic-SE/trimmomatic-SE.cwl'),
+    ('TL_a2e03a_53.af', 'cwl-tools/trimmomatic/0.38/trimmomatic_SE/trimmomatic-SE.cwl'),
 ])
 
 everything = OrderedDict(chain(

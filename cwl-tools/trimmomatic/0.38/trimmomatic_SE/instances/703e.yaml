@@ -1,0 +1,11 @@
+phred: '33'
+reads1:
+  class: File
+  path: file1.fastq.gz
+output: trimmed.file1.fastq.gz
+LEADING: 3
+TRAILING: 3
+SLIDINGWINDOW:
+  windowSize: 3
+  requiredQuality: 15
+MINLEN: 50
