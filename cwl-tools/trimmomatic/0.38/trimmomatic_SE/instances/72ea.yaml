@@ -1,4 +1,4 @@
-phred: 33
+phred: '33'
 reads1:
   class: File
   path: file1.fastq.gz

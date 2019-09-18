@@ -2,7 +2,6 @@ bufferSize: 60G
 temporaryDirectory:
   class: Directory
   path: ./
-  identifier:
 inputFile:
   class: File
   path: ../gawkOutput.txt
