@@ -1,14 +1,8 @@
-import unittest
+
 import logging
-import tempfile
 import os
-from unittest import defaultTestLoader
-from xd_cwl_utils.validate import validate_repo
-
-class TestValidateRepo(unittest.TestCase):
-
-    def test_validate_repo(self):
-        validate_repo()
+from unittest import defaultTestLoader, TextTestRunner
+from tests.test_validate_repo import TestValidateRepo
 
 
 def test_suite():
@@ -20,7 +14,7 @@ def main():
     logging.basicConfig(level=logging.CRITICAL)
     os.environ['CONFIG_KEY'] = 'DEFAULT'
     suite = test_suite()
-    unittest.TextTestRunner().run(suite)
+    TextTestRunner().run(suite)
     return
 
 
