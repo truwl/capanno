@@ -4,7 +4,7 @@ programmingLanguage: "Python3"
 
 WebSite:
   - name: encode project atac-seq pipeline
-    url: https://www.encodeproject.org/atac-seq/
+    URL: https://www.encodeproject.org/atac-seq/
 
 codeRepository:
   name: GiHhub
