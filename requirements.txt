@@ -1,2 +1,2 @@
 pandoc-include==0.3.2
-xd-cwl-utils==0.4.0a2
+xd-cwl-utils==0.5.0a3
