@@ -6,5 +6,5 @@ class TestValidateRepo(TestCase):
 
     def test_validate_repo(self):
 
-        print(Path.cwd())
-        validate_repo()
+        base_dir = Path.cwd()
+        validate_repo(base_dir=base_dir)

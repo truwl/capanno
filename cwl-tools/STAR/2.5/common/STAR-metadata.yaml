@@ -31,7 +31,8 @@ WebSite:
 
 
 contactPoint:
-  - &cp name: Alexander Dobin
+  - &cp
+    name: Alexander Dobin
     email: dobin@cshl.edu
     identifier:
 
