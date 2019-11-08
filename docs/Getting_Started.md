@@ -2,6 +2,8 @@
 
 ## General
 
+THIS IS OUT OF DATE. Tools to manage content have been factored out and released on pypi as xd-cwl-utils !!!!! Documentation on using that tool will come soon (soon is a relative term.).
+
 To start working with this repo you should first clone it and create a python 3.6+ virtual environment.
 
 ~~~bash
