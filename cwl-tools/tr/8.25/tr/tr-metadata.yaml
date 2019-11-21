@@ -15,7 +15,7 @@ codeRepository:
   name:
   URL:
 
-license: GPL-3.0-onlyv
+license: GPL-3.0-only
 
 WebSite:
   - name: Documentation

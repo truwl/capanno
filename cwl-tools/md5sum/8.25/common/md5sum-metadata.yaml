@@ -7,7 +7,7 @@ identifier: TL_c8f1ee.47
 version: 1.0
 featureList:
   - check
-  - ''
+  - ' '  # md5sum without a subtool specified.
 
 # Recommended
 
@@ -49,7 +49,11 @@ creator:
     email:
     identifier:
   - name: Scott Miller
+    email:
+    identifier:
   - name: David Madore
+    email:
+    identifier:
 
 programmingLanguage: []
 
