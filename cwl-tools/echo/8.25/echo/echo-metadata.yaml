@@ -1,50 +1,10 @@
-# REQUIRED
-name: echo
+applicationSuite:
+  name: echo
+  softwareVersion: 8.25
+  identifier: TL_cbb11e.47
 
-softwareVersion: 8.25
-
-identifier: TL_cbb11e.47
-
+name: __main__
 version: 1.0
+identifier:
 
-# Recommended
-
-description: echo - display a line of text
-
-codeRepository:
-  name: GitHub
-  URL: https://github.com/coreutils/coreutils
-
-license: GPL-3.0-only
-
-WebSite:
-  - name: GNU coreutils
-    URL: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html
-    description:
-
-contactPoint:
-  - name:
-    email:
-    identifier:
-
-publication: []
-
-keywords:
-  - name: GNU
-    category: topic
-
-# OPTIONAL
-
-alternateName: []
-
-creator:
-  - name: Brian Fox
-    email:
-    identifier:
-  - name: Chet Ramey
-    email:
-    identifier:
-
-programmingLanguage: []
-
-datePublished:
+parentMetadata: ../common/common-metadata.yaml
