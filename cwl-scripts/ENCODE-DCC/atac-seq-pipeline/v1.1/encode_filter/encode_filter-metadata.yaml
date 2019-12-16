@@ -4,9 +4,6 @@ identifier: ST_5f34e1.f7
 version: 1.0
 
 tools:
-  - name: samtools view
-    softwareVersion:
-
   - name: awk
     softwareVersion:
 
@@ -14,9 +11,6 @@ tools:
     softwareVersion:
 
   - name: Picard MarkDuplicates
-    softwareVersion:
-
-  - name: samtools view
     softwareVersion:
 
   - name: sambamba sort
@@ -29,6 +23,9 @@ tools:
     softwareVersion:
 
   - name: samtools sort
+    softwareVersion:
+
+  - name: samtools view
     softwareVersion:
 
   - name: samtools fixmate

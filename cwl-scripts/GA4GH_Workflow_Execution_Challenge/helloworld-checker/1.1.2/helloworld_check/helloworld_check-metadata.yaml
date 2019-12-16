@@ -10,7 +10,7 @@ contactPoint:
 license:
 
 codeRepository:
-  name: GitHub,
+  name: GitHub
   URL: https://github.com/GA4GH-DREAM/dockstore-tool-helloworld-checker/
 
 

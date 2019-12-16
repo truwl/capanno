@@ -12,7 +12,7 @@ contactPoint:
 license: Apache-2.0
 
 codeRepository:
-  name: GitHub,
+  name: GitHub
   URL: https://github.com/briandoconnor/dockstore-tool-md5sum/blob/master/bin/md5sum
 
 WebSite:
