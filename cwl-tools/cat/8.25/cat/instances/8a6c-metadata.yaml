@@ -1,8 +1,8 @@
 
 toolName: cat
 toolVersion: '8.25'
-toolIdentifier: TL_d077f2.47
-identifier: TL_d077f2.47.8a6c
+toolIdentifier: TL_d077f2_54.47
+identifier: TL_d077f2_54.47.8a6c
 name:
 version: 1.0
 description: This step outputs the header of an input bam file.
