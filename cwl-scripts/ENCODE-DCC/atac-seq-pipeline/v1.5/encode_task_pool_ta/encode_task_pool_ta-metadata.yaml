@@ -1,0 +1,33 @@
+name: encode_task_pool_ta
+softwareVersion: v1.5
+identifier: ST_96c71b.0b
+version: 0.1.0
+description:
+codeRepository:
+  name:
+  URL:
+WebSite:
+  - name:
+    description:
+    URL:
+license:
+contactPoint:
+  - name:
+    identifier:
+    email:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - name:
+    identifier:
+    email:
+programmingLanguage:
+datePublished:
+parentMetadata:

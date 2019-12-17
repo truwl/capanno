@@ -1,0 +1,33 @@
+name: encode_task_spr
+softwareVersion: v1.5
+identifier: ST_f87f0b.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - description:
+    URL:
+    name:
+license:
+contactPoint:
+  - identifier:
+    name:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - identifier:
+    name:
+    email:
+programmingLanguage:
+datePublished:
+parentMetadata:

@@ -1,0 +1,33 @@
+name: encode_task_qc_report
+softwareVersion: v1.5
+identifier: ST_00221b.0b
+version: 0.1.0
+description:
+codeRepository:
+  name:
+  URL:
+WebSite:
+  - name:
+    URL:
+    description:
+license:
+contactPoint:
+  - email:
+    name:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - email:
+    name:
+    identifier:
+programmingLanguage:
+datePublished:
+parentMetadata:

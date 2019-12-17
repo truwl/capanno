@@ -1,0 +1,33 @@
+name: encode_task_reproducibility
+softwareVersion: v1.5
+identifier: ST_e0a4be.0b
+version: 0.1.0
+description:
+codeRepository:
+  name:
+  URL:
+WebSite:
+  - name:
+    URL:
+    description:
+license:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+parentMetadata:

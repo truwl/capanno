@@ -1,0 +1,33 @@
+name: encode_lib_qc_category
+softwareVersion: v1.5
+identifier: ST_2e1384.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - URL:
+    name:
+    description:
+license:
+contactPoint:
+  - email:
+    name:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - email:
+    name:
+    identifier:
+programmingLanguage:
+datePublished:
+parentMetadata:

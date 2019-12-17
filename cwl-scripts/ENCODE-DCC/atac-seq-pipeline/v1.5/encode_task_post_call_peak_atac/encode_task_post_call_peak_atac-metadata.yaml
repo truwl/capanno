@@ -1,0 +1,33 @@
+name: encode_task_post_call_peak_atac
+softwareVersion: v1.5
+identifier: ST_1d7847.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - URL:
+    name:
+    description:
+license:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+parentMetadata:

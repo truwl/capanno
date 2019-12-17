@@ -1,0 +1,33 @@
+name: encode_task_xcor
+softwareVersion: v1.5
+identifier: ST_6feef3.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - URL:
+    name:
+    description:
+license:
+contactPoint:
+  - email:
+    identifier:
+    name:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - email:
+    identifier:
+    name:
+programmingLanguage:
+datePublished:
+parentMetadata:

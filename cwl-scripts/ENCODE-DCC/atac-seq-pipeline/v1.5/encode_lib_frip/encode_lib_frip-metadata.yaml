@@ -1,0 +1,32 @@
+name: encode_lib_frip
+softwareVersion: v1.5
+identifier: ST_7af2eb.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - description:
+    URL:
+    name:
+license:
+contactPoint:
+  - identifier:
+    email:
+    name:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - identifier:
+    email:
+    name:
+programmingLanguage:
+datePublished:

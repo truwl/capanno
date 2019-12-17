@@ -1,0 +1,33 @@
+name: encode_task_idr
+softwareVersion: v1.5
+identifier: ST_8ddd87.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - description:
+    URL:
+    name:
+license:
+contactPoint:
+  - name:
+    identifier:
+    email:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - name:
+    identifier:
+    email:
+programmingLanguage:
+datePublished:
+parentMetadata:

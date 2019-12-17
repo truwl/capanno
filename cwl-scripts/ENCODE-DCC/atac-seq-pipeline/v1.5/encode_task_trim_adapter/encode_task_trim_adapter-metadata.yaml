@@ -1,0 +1,33 @@
+name: encode_task_trim_adapter
+softwareVersion: v1.5
+identifier: ST_05da37.0b
+version: 0.1.0
+description:
+codeRepository:
+  name:
+  URL:
+WebSite:
+  - name:
+    description:
+    URL:
+license:
+contactPoint:
+  - name:
+    identifier:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - name:
+    identifier:
+    email:
+programmingLanguage:
+datePublished:
+parentMetadata:

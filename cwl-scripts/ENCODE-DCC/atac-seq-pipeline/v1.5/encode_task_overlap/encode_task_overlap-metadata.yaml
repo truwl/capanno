@@ -1,0 +1,33 @@
+name: encode_task_overlap
+softwareVersion: v1.5
+identifier: ST_6118c8.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - URL:
+    description:
+    name:
+license:
+contactPoint:
+  - identifier:
+    name:
+    email:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - identifier:
+    name:
+    email:
+programmingLanguage:
+datePublished:
+parentMetadata:

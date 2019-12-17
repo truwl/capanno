@@ -1,0 +1,33 @@
+name: encode_task_fraglen_stat_pe
+softwareVersion: v1.5
+identifier: ST_d1c562.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - URL:
+    name:
+    description:
+license:
+contactPoint:
+  - identifier:
+    name:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - identifier:
+    name:
+    email:
+programmingLanguage:
+datePublished:
+parentMetadata:

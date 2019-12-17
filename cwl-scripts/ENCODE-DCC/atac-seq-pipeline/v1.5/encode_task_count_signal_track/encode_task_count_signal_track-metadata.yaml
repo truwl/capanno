@@ -1,0 +1,32 @@
+name: encode_task_count_signal_track
+softwareVersion: v1.5
+identifier: ST_ef6550.0b
+version: 0.1.0
+description: ENCODE DCC Count signal track generation
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+tools:
+  - name: zcat
+    softwareVersion: 8.28
+    identifier:
+  - name: sort
+    softwareVersion: 8.28
+    identifier:
+  - name: bedtools genomecov
+    softwareVersion: 2.29.0
+    identifier:
+  - name: bedGraphToBigWig
+    softwareVersion: v377
+    identifier:
+alternateName:
+creator:
+  - name:
+    identifier:
+    email:
+datePublished:
+parentMetadata:

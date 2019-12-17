@@ -1,0 +1,33 @@
+name: encode_task_preseq
+softwareVersion: v1.5
+identifier: ST_63b25a.0b
+version: 0.1.0
+description:
+codeRepository:
+  name:
+  URL:
+WebSite:
+  - description:
+    name:
+    URL:
+license:
+contactPoint:
+  - email:
+    identifier:
+    name:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - email:
+    identifier:
+    name:
+programmingLanguage:
+datePublished:
+parentMetadata:

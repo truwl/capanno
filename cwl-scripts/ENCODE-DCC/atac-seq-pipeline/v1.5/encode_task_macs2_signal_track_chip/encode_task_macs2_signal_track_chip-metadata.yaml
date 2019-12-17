@@ -1,0 +1,33 @@
+name: encode_task_macs2_signal_track_chip
+softwareVersion: v1.5
+identifier: ST_029a33.0b
+version: 0.1.0
+description:
+codeRepository:
+  URL:
+  name:
+WebSite:
+  - URL:
+    name:
+    description:
+license:
+contactPoint:
+  - email:
+    name:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - email:
+    name:
+    identifier:
+programmingLanguage:
+datePublished:
+parentMetadata:

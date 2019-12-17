@@ -1,0 +1,33 @@
+name: encode_task_gc_bias
+softwareVersion: v1.5
+identifier: ST_2bc371.0b
+version: 0.1.0
+description:
+codeRepository:
+  name:
+  URL:
+WebSite:
+  - description:
+    name:
+    URL:
+license:
+contactPoint:
+  - email:
+    name:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - email:
+    name:
+    identifier:
+programmingLanguage:
+datePublished:
+parentMetadata:
