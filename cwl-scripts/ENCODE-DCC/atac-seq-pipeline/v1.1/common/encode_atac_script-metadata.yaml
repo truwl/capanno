@@ -7,7 +7,7 @@ WebSite:
     URL: https://www.encodeproject.org/atac-seq/
 
 codeRepository:
-  name: GiHhub
+  name: GitHhub
   URL: https://github.com/ENCODE-DCC/atac-seq-pipeline
 
 license: MIT

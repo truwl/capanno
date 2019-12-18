@@ -25,12 +25,13 @@ parentScripts:
   - name: encode_lib_common
     softwareVersion: 1.5.4
     identifier:
-tools:- name: samtools view
-  softwareVersion: 1.9
-  identifier:
-    - name: samtools sort
-      softwareVersion: 1.9
-      identifier:
+tools:
+  - name: samtools view
+    softwareVersion: 1.9
+    identifier:
+  - name: samtools sort
+    softwareVersion: 1.9
+    identifier:
   - name: bowtie2
     softwareVersion: 2.3.4.3
     identifier:

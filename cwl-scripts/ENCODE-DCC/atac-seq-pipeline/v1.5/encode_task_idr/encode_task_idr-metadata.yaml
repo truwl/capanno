@@ -2,27 +2,39 @@ name: encode_task_idr
 softwareVersion: v1.5
 identifier: ST_8ddd87.0b
 version: 0.1.0
-description:
-codeRepository:
-  URL:
-  name:
-WebSite:
-  - description:
-    URL:
-    name:
-license:
-contactPoint:
-  - name:
-    identifier:
-    email:
-publication:
-  - headline:
-    identifier:
+description: ENCODE DCC IDR wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_blacklist_filter
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_frip
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: idr
+    softwareVersion: 2.0.3
+    identifier:
+  - name: awk
+    softwareVersion: 8.28
+    identifier:
+  - name: sort
+    softwareVersion: 8.28
+    identifier:
+  - name: gzip
+    softwareVersion: 8.28
+    identifier:
+  - name: zcat
+    softwareVersion: 8.28
+    identifier:
 alternateName:
 creator:
   - name:

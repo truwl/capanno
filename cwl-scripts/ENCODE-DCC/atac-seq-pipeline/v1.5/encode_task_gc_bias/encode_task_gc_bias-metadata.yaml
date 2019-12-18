@@ -2,32 +2,28 @@ name: encode_task_gc_bias
 softwareVersion: v1.5
 identifier: ST_2bc371.0b
 version: 0.1.0
-description:
-codeRepository:
-  name:
-  URL:
-WebSite:
-  - description:
-    name:
-    URL:
-license:
-contactPoint:
-  - email:
-    name:
-    identifier:
-publication:
-  - headline:
-    identifier:
+description: ENCODE DCC GC bias wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: picard CollectGcBiasMetrics
+    softwareVersion: 2.20.7-SNAPSHOT
+    identifier:
 alternateName:
 creator:
-  - email:
-    name:
+  - name: Daniel Kim
     identifier:
-programmingLanguage:
+    email:
+  - name: Jin Lee
+    identifier:
+    email: leepc12@gmail.com
 datePublished:
 parentMetadata:

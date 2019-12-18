@@ -2,7 +2,7 @@ name: encode_task_fraglen_stat_pe
 softwareVersion: v1.5
 identifier: ST_d1c562.0b
 version: 0.1.0
-description:
+description: ENCODE fragment length stat wrapper
 codeRepository:
   URL:
   name:
@@ -22,12 +22,26 @@ keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: picard CollectInsertSizeMetrics
+    softwareVersion: 2.20.7-SNAPSHOT
+    identifier:
+
 alternateName:
 creator:
-  - identifier:
-    name:
+  - name: Daniel Kim
+    identifier:
     email:
+  - name: Jin Lee
+    identifier:
+    email: leepc12@gmail.com
+
 programmingLanguage:
 datePublished:
 parentMetadata:

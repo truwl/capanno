@@ -2,32 +2,25 @@ name: encode_task_jsd
 softwareVersion: v1.5
 identifier: ST_a8d08b.0b
 version: 0.1.0
-description:
-codeRepository:
-  name:
-  URL:
-WebSite:
-  - description:
-    name:
-    URL:
-license:
-contactPoint:
-  - email:
-    name:
-    identifier:
-publication:
-  - identifier:
-    headline:
+description: ENCODE DCC fingerprint/JSD plot wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_blacklist_filter
+    softwareVersion: 1.5.4
+    identifier:
 tools:
 alternateName:
 creator:
   - email:
     name:
     identifier:
-programmingLanguage:
 datePublished:
 parentMetadata:
