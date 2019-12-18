@@ -2,32 +2,28 @@ name: encode_task_trim_adapter
 softwareVersion: v1.5
 identifier: ST_05da37.0b
 version: 0.1.0
-description:
-codeRepository:
-  name:
-  URL:
-WebSite:
-  - name:
-    description:
-    URL:
-license:
-contactPoint:
-  - name:
-    identifier:
-    email:
-publication:
-  - identifier:
-    headline:
+description: ENCODE DCC adapter trimmer wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: cutadapt
+    softwareVersion: 2.5
+    identifier:
+  - name: gzip
+    softwareVersion: 8.28
+    identifier:
+  - name: zcat
+    softwareVersion: 8.28
+    identifier:
 alternateName:
 creator:
   - name:
     identifier:
     email:
-programmingLanguage:
 datePublished:
 parentMetadata:

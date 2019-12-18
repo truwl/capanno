@@ -2,32 +2,42 @@ name: encode_task_overlap
 softwareVersion: v1.5
 identifier: ST_6118c8.0b
 version: 0.1.0
-description:
-codeRepository:
-  URL:
-  name:
-WebSite:
-  - URL:
-    description:
-    name:
-license:
-contactPoint:
-  - identifier:
-    name:
-    email:
-publication:
-  - headline:
-    identifier:
+description: ENCODE DCC Naive overlap wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_blacklist_filter
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_frip
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: gunzip
+    softwareVersion: 8.28
+    identifier:
+  - name: bedtools intersect
+    softwareVersion: v2.29.0
+    identifier:
+    alternateName: intersectBed
+  - name: awk
+    softwareVersion: 8.28
+    identifier:
+  - name: cut
+    softwareVersion: 8.28
+    identifier:
+
 alternateName:
 creator:
   - identifier:
     name:
     email:
-programmingLanguage:
 datePublished:
 parentMetadata:

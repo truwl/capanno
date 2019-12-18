@@ -2,32 +2,34 @@ name: encode_task_preseq
 softwareVersion: v1.5
 identifier: ST_63b25a.0b
 version: 0.1.0
-description:
-codeRepository:
-  name:
-  URL:
-WebSite:
-  - description:
-    name:
-    URL:
-license:
-contactPoint:
-  - email:
-    identifier:
-    name:
-publication:
-  - headline:
-    identifier:
+description: ENCODE preseq wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: picard EstimateLibraryComplexity
+    softwareVersion: 2.20.7-SNAPSHOT
+    identifier:
+  - name: samtools sort
+    softwareVersion: 1.9
+    identifier:
+  - name: preseq
+    softwareVersion: 2.0.3
+    identifier:
 alternateName:
 creator:
-  - email:
+  - name: Daniel Kim
     identifier:
-    name:
-programmingLanguage:
+    email:
+  - name: Jin Lee
+    identifier:
+    email: leepc12@gmail.com
 datePublished:
 parentMetadata:

@@ -3,31 +3,21 @@ softwareVersion: v1.5
 identifier: ST_2188b6.0b
 version: 0.1.0
 description:
-codeRepository:
-  URL:
-  name:
-WebSite:
-  - URL:
-    name:
-    description:
-license:
-contactPoint:
-  - identifier:
-    email:
-    name:
-publication:
-  - identifier:
-    headline:
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    softwareVersion: 1.5.4
+    identifier:
 tools:
 alternateName:
 creator:
   - identifier:
     email:
     name:
-programmingLanguage:
 datePublished:
 parentMetadata:

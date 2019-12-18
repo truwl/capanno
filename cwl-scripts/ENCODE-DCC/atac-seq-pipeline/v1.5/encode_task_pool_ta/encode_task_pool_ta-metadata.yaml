@@ -2,32 +2,28 @@ name: encode_task_pool_ta
 softwareVersion: v1.5
 identifier: ST_96c71b.0b
 version: 0.1.0
-description:
-codeRepository:
-  name:
-  URL:
-WebSite:
-  - name:
-    description:
-    URL:
-license:
-contactPoint:
-  - name:
-    identifier:
-    email:
-publication:
-  - headline:
-    identifier:
+description: ENCODE DCC TAGALIGN pooler wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: zcat
+    softwareVersion: 8.28
+    identifier:
+  - name: gzip
+    softwareVersion: 8.28
+    identifier:
+  - name: cut
+    softwareVersion: 8.28
+    identifier:
 alternateName:
 creator:
   - name:
     identifier:
     email:
-programmingLanguage:
 datePublished:
 parentMetadata:
