@@ -26,8 +26,8 @@ tools:
   - name: gzip
     softwareVersion: 8.28
     identifier:
-  - name: awk
-    softwareVersion: 8.28
+  - name: mawk
+    softwareVersion: 1.3.3
     identifier:
 alternateName:
 creator:

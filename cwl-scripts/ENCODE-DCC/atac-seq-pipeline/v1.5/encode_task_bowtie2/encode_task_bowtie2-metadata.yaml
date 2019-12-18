@@ -3,21 +3,6 @@ softwareVersion: v1.5
 identifier: ST_6e73b6.0b
 version: 0.1.0
 description: ENCODE DCC bowtie2 wrapper
-codeRepository:
-  URL:
-  name:
-WebSite:
-  - description:
-    name:
-    URL:
-license:
-contactPoint:
-  - email:
-    name:
-    identifier:
-publication:
-  - headline:
-    identifier:
 keywords:
   - name:
     category:
@@ -35,7 +20,6 @@ tools:
   - name: bowtie2
     softwareVersion: 2.3.4.3
     identifier:
-
   - name: cat
     softwareVersion: 8.28
     identifier:
@@ -44,6 +28,5 @@ creator:
   - email:
     name:
     identifier:
-programmingLanguage:
 datePublished:
 parentMetadata:

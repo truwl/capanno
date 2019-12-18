@@ -3,21 +3,6 @@ softwareVersion: v1.5
 identifier: ST_d1c562.0b
 version: 0.1.0
 description: ENCODE fragment length stat wrapper
-codeRepository:
-  URL:
-  name:
-WebSite:
-  - URL:
-    name:
-    description:
-license:
-contactPoint:
-  - identifier:
-    name:
-    email:
-publication:
-  - identifier:
-    headline:
 keywords:
   - name:
     category:

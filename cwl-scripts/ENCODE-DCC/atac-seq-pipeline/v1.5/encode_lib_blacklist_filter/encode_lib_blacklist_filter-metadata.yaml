@@ -2,31 +2,36 @@ name: encode_lib_blacklist_filter
 softwareVersion: v1.5
 identifier: ST_c97088.0b
 version: 0.1.0
-description:
-codeRepository:
-  name:
-  URL:
-WebSite:
-  - name:
-    description:
-    URL:
-license:
-contactPoint:
-  - name:
-    identifier:
-    email:
-publication:
-  - headline:
-    identifier:
+description: ENCODE DCC blacklist filter wrapper
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: zcat
+    softwareVersion: 8.28
+    identifier:
+  - name: grep
+    softwareVersion: 3.1
+    identifier:
+  - name: gzip
+    softwareVersion: 8.28
+    identifier:
+  - name: gunzip
+    softwareVersion: 8.28
+    identifier:
+  - name: mawk
+    softwareVersion: 1.3.3
+    identifier:
+  - name: bedtools intersect
+    softwareVersion: 2.29.0
+    identifier:
 alternateName:
 creator:
   - name:
     identifier:
     email:
-programmingLanguage:
 datePublished:

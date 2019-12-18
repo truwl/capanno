@@ -23,8 +23,8 @@ tools:
   - name: idr
     softwareVersion: 2.0.3
     identifier:
-  - name: awk
-    softwareVersion: 8.28
+  - name: mawk
+    softwareVersion: 1.3.3
     identifier:
   - name: sort
     softwareVersion: 8.28
@@ -40,6 +40,5 @@ creator:
   - name:
     identifier:
     email:
-programmingLanguage:
 datePublished:
 parentMetadata:

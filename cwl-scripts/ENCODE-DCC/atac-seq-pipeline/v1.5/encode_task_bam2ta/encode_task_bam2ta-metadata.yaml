@@ -17,8 +17,8 @@ tools:
   - name: bedtools bamtobed
     softwareVersion: 2.29.0
     identifier:
-  - name: awk
-    softwareVersion: 8.28
+  - name: mawk
+    softwareVersion: 1.33
     identifier:
   - name: gzip
     softwareVersion: 8.28
@@ -28,9 +28,6 @@ tools:
     identifier:
   - name: sort
     softwareVersion: 8.28
-    identifier:
-  - name:
-    softwareVersion:
     identifier:
 
 alternateName:

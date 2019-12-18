@@ -2,32 +2,74 @@ name: encode_lib_genomic
 softwareVersion: v1.5
 identifier: ST_2ad2cd.0b
 version: 0.1.0
-description:
-codeRepository:
-  URL:
-  name:
-WebSite:
-  - description:
-    name:
-    URL:
-license:
-contactPoint:
-  - email:
-    name:
-    identifier:
-publication:
-  - identifier:
-    headline:
+description: ENCODE DCC common functions
 keywords:
   - name:
     category:
 parentScripts:
+  - name: encode_lib_common
+    softwareVersion: 1.5.4
+    identifier:
 tools:
+  - name: zcat
+    softwareVersion: 8.28
+    identifier:
+  - name: cat
+    softwareVersion: 8.28
+    identifier:
+  - name: gzip
+    softwareVersion: 8.28
+    identifier:
+  - name: grep
+    softwareVersion: 3.1
+    identifier:
+  - name: sort
+    softwareVersion: 8.28
+    identifier:
+  - name: shuf
+    softwareVersion: 8.28
+    identifier:
+  - name: touch
+    softwareVersion: 8.28
+    identifier:
+  - name: mawk
+    softwareVersion: 1.3.3
+    identifier:
+  - name: tabix
+    softwareVersion: 1.7-2
+    identifier:
+  - name: samtools view
+    softwareVersion: 1.9
+    identifier:
+  - name: samtools sort
+    softwareVersion: 1.9
+    identifier:
+  - name: samtools flagstat
+    softwareVersion: 1.9
+    identifier:
+  - name: samtools index
+    softwareVersion: 1.9
+    identifier:
+  - name: sambamba index
+    softwareVersion: 0.6.6
+    identifier:
+  - name: sambamba flagstat
+    softwareVersion: 0.6.6
+    identifier:
+  - name: sambamba sort
+    softwareVersion: 0.6.6
+    identifier:
+  - name: bedClip
+    softwareVersion: v377
+    identifier:
+  - name: bedToBigBed
+    softwareVersion: v377
+    identifier:
 alternateName:
 creator:
   - email:
     name:
     identifier:
-programmingLanguage:
+callable: false
 datePublished:
 parentMetadata:
