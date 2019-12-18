@@ -1,0 +1,15 @@
+applicationSuite:
+  softwareVersion: 2.x
+  identifier: TL_28ea7f.68
+  name: cutadapt
+name: __main__
+version: 0.1.0
+identifier: TL_28ea7f_54.68
+description:
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0632
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_3192
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

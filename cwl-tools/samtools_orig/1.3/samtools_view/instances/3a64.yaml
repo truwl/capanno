@@ -1,0 +1,5 @@
+headerOnly: true
+input:
+  class: File
+  path: ../../FileInputs/Generated/starAlignOut/Aligned.toTranscriptome.out.bam
+outputName: samtools-viewOut1.txt

@@ -1,0 +1,13 @@
+applicationSuite:
+  softwareVersion: 1.x
+  name: samtools
+  identifier: TL_ec2a8d.8b
+name: depad
+version: 0.1.0
+identifier: TL_ec2a8d_3e.8b
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml
