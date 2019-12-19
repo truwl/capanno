@@ -1,0 +1,14 @@
+applicationSuite:
+  name: bedtools
+  identifier: TL_43392c.c8
+  softwareVersion: '2'
+name: bamtobed
+version: 0.1.0
+identifier: TL_43392c_87.c8
+description: |
+  bedtools bamtobed is a conversion utility that converts sequence alignments in BAM format into BED, BED12, and/or BEDPE records.
+keywords:
+  - name:
+    category:
+alternateName: bamToBed
+parentMetadata: ../common/common-metadata.yaml

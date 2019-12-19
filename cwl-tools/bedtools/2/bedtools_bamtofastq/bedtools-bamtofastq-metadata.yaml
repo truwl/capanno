@@ -1,0 +1,14 @@
+applicationSuite:
+  name: bedtools
+  identifier: TL_43392c.c8
+  softwareVersion: '2'
+name: bamtofastq
+version: 0.1.0
+identifier: TL_43392c_11.c8
+description: |
+  bedtools bamtofastq is a conversion utility for extracting FASTQ records from sequence alignments in BAM format.
+keywords:
+  - name:
+    category:
+alternateName: bamToFastq
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,13 @@
+applicationSuite:
+  name: bedtools
+  identifier: TL_43392c.c8
+  softwareVersion: '2'
+name: nuc
+version: 0.1.0
+identifier: TL_43392c_a9.c8
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

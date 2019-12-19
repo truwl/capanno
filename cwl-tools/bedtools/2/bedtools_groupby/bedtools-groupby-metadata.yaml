@@ -1,0 +1,17 @@
+applicationSuite:
+  name: bedtools
+  identifier: TL_43392c.c8
+  softwareVersion: '2'
+name: groupby
+version: 0.1.0
+identifier: TL_43392c_a5.c8
+description: |
+  bedtools groupby is a useful tool that mimics the “group by” clause in database systems.
+  Given a file or stream that is sorted by the appropriate “grouping columns” (-g), groupby will compute summary statistics on another column (-c) in the file or stream.
+  This will work with output from all BEDTools as well as any other tab-delimited file or stream.
+  As such, this is a generally useful tool for all command-line analyses, not just genomics related research.
+keywords:
+  - name:
+    category:
+alternateName: groupBy
+parentMetadata: ../common/common-metadata.yaml
