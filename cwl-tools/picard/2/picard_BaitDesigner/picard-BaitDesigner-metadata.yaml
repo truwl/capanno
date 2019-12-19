@@ -1,0 +1,13 @@
+applicationSuite:
+  name: picard
+  identifier: TL_e24fa5.c8
+  softwareVersion: '2'
+name: BaitDesigner
+version: 0.1.0
+identifier: TL_e24fa5_82.c8
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml
