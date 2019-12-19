@@ -1,0 +1,19 @@
+applicationSuite:
+  identifier: TL_bf790f.e9
+  softwareVersion: '0.6'
+  name: sambamba
+name: view
+version: 0.1.0
+identifier: TL_bf790f_1b.e9
+description: |
+  sambamba view allows to efficiently filter BAM file for alignments satisfying various conditions, as well as access its SAM header and information about reference sequences.
+  In order to make these data readily available for consumption by scripts in Perl/Python/Ruby, JSON output is provided.
+
+  By default, the tool expects BAM file as an input. In order to work with SAM file, specify -S|--sam-input command-line option, the tool does NOT try to guess file format from extension.
+  Beware that when reading SAM, the tool will skip tags which don't conform to the SAM/BAM specification, and set invalid fields to their default values.
+  However, only syntax is checked, use --valid for full validation.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml
