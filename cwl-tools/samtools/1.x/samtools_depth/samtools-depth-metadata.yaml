@@ -5,7 +5,10 @@ applicationSuite:
 name: depth
 version: 0.1.0
 identifier: TL_ec2a8d_12.8b
-description:
+description: |
+  samtools depth [options] [in1.sam|in1.bam|in1.cram [in2.sam|in2.bam|in2.cram] [...]]
+
+  Computes the read depth at each position or region.
 keywords:
   - name:
     category:

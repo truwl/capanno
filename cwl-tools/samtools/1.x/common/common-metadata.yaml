@@ -12,6 +12,7 @@ featureList:
   - bedcov
   - depth
   - merge
+  - cat
   - faidx
   - fqidx
   - tview
@@ -20,11 +21,16 @@ featureList:
   - dict
   - fixmate
   - mpileup
+  - rmdup
+  - targetcut
+  - phase
+  - calmd
   - flags
   - fastq
   - fasta
   - addreplacerg
   - collate
+  - reheader
   - depad
   - markdup
 description: A software package with various utilities for processing alignments in

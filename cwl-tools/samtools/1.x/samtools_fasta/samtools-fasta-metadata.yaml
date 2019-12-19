@@ -5,7 +5,14 @@ applicationSuite:
 name: fasta
 version: 0.1.0
 identifier: TL_ec2a8d_2d.8b
-description:
+description: |
+  samtools fastq [options] in.bam
+  samtools fasta [options] in.bam
+
+  Converts a BAM or CRAM into either FASTQ or FASTA format depending on the command invoked.
+  The files will be automatically compressed if the file names have a .gz or .bgzf extension.
+
+  The input to this program must be collated by name. Use samtools collate or samtools sort -n to ensure this.
 keywords:
   - name:
     category:

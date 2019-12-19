@@ -5,7 +5,10 @@ applicationSuite:
 name: addreplacerg
 version: 0.1.0
 identifier: TL_ec2a8d_fd.8b
-description:
+description: |
+  samtools addreplacerg [-r rg-line | -R rg-ID] [-m mode] [-l level] [-o out.bam] in.bam
+
+  Adds or replaces read group tags in a file.
 keywords:
   - name:
     category:

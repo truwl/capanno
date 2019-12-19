@@ -5,7 +5,13 @@ applicationSuite:
 name: flagstat
 version: 0.1.0
 identifier: TL_ec2a8d_c2.8b
-description:
+description: |
+  samtools flagstat in.sam|in.bam|in.cram
+
+  Does a full pass through the input file to calculate and print statistics to stdout.
+
+  Provides counts for each of 13 categories based primarily on bit flags in the FLAG field.
+  Each category in the output is broken down into QC pass and QC fail, which is presented as "#PASS + #FAIL" followed by a description of the category.
 keywords:
   - name:
     category:

@@ -5,7 +5,11 @@ applicationSuite:
 name: stats
 version: 0.1.0
 identifier: TL_ec2a8d_44.8b
-description:
+description: |
+  samtools stats [options] in.sam|in.bam|in.cram [region...]
+
+  samtools stats collects statistics from BAM files and outputs in a text format.
+  The output can be visualized graphically using plot-bamstats.
 keywords:
   - name:
     category:

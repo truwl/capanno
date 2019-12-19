@@ -2,13 +2,10 @@ applicationSuite:
   softwareVersion: 1.x
   name: samtools
   identifier: TL_ec2a8d.8b
-name: dict
+name: rmdup
 version: 0.1.0
-identifier: TL_ec2a8d_bb.8b
-description: |
-  samtools dict ref.fasta|ref.fasta.gz
-
-  Create a sequence dictionary file from a fasta file.
+identifier: TL_ec2a8d_86.8b
+description:
 keywords:
   - name:
     category:

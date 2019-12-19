@@ -5,7 +5,13 @@ applicationSuite:
 name: mpileup
 version: 0.1.0
 identifier: TL_ec2a8d_e0.8b
-description:
+description: |
+  samtools mpileup [-EB] [-C capQcoef] [-r reg] [-f in.fa] [-l list] [-Q minBaseQ] [-q minMapQ] in.bam [in2.bam [...]]
+
+  Generate textual pileup for one or multiple BAM files. For VCF and BCF output, please use the bcftools mpileup command instead.
+  Alignment records are grouped by sample (SM) identifiers in @RG header lines. If sample identifiers are absent, each input file is regarded as one sample.
+
+  See the samtools-mpileup man page for a description of the pileup format and options.
 keywords:
   - name:
     category:

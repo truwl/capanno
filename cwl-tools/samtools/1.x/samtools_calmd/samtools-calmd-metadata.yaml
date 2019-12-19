@@ -1,0 +1,20 @@
+applicationSuite:
+  name: samtools
+  softwareVersion: 1.x
+  identifier: TL_ec2a8d.8b
+name: calmd
+version: 0.1.0
+identifier: TL_ec2a8d_ac.8b
+description: |
+  samtools calmd [-Eeubr] [-C capQcoef] aln.bam ref.fasta
+
+  Generate the MD tag. If the MD tag is already present, this command will give a warning if the MD tag generated is different from the existing tag.
+  Output SAM by default.
+
+  Calmd can also read and write CRAM files although in most cases it is pointless as CRAM recalculates MD and NM tags on the fly.
+  The one exception to this case is where both input and output CRAM files have been / are being created with the no_ref option.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

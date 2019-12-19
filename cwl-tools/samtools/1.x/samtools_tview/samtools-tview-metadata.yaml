@@ -5,7 +5,11 @@ applicationSuite:
 name: tview
 version: 0.1.0
 identifier: TL_ec2a8d_ab.8b
-description:
+description: |
+  samtools tview [-p chr:pos] [-s STR] [-d display] <in.sorted.bam> [ref.fasta]
+
+  Text alignment viewer (based on the ncurses library).
+  In the viewer, press `?' for help and press `g' to check the alignment start from a region in the format like `chr10:10,000,000' or `=10,000,000' when viewing the same reference sequence.
 keywords:
   - name:
     category:

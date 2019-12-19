@@ -5,7 +5,10 @@ applicationSuite:
 name: split
 version: 0.1.0
 identifier: TL_ec2a8d_ee.8b
-description:
+description: |
+  samtools split [options] merged.sam|merged.bam|merged.cram
+
+  Splits a file by read group, producing one or more output files matching a common prefix (by default based on the input filename) each containing one read-group.
 keywords:
   - name:
     category:

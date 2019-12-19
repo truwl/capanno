@@ -5,7 +5,11 @@ applicationSuite:
 name: markdup
 version: 0.1.0
 identifier: TL_ec2a8d_02.8b
-description:
+description: |
+  samtools markdup [-l length] [-r] [-s] [-T] [-S] in.algsort.bam out.bam
+
+  Mark duplicate alignments from a coordinate sorted file that has been run through samtools fixmate with the -m option.
+  This program relies on the MC and ms tags that fixmate provides.
 keywords:
   - name:
     category:
