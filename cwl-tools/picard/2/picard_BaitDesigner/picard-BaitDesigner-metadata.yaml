@@ -5,7 +5,19 @@ applicationSuite:
 name: BaitDesigner
 version: 0.1.0
 identifier: TL_e24fa5_82.c8
-description:
+description: |
+  Designs oligonucleotide baits for hybrid selection reactions.
+
+  This tool is used to design custom bait sets for hybrid selection experiments.
+  The following files are input into BaitDesigner: a (TARGET) interval list indicating the sequences of interest, e.g. exons with their respective coordinates, a reference sequence, and a unique identifier string (DESIGN_NAME).
+
+  The tool will output interval_list files of both bait and target sequences as well as the actual bait sequences in FastA format.
+  At least two baits are output for each target sequence, with greater numbers for larger intervals.
+  Although the default values for both bait size (120 bases) nd offsets (80 bases) are suitable for most applications, these values can be customized.
+  Offsets represent the distance between sequential baits on a contiguous stretch of target DNA sequence.
+
+  The tool will also output a pooled set of 55,000 (default) oligonucleotides representing all of the baits redundantly.
+  This redundancy achieves a uniform concentration of oligonucleotides for synthesis by a vendor as well as equal numbersof each bait to prevent bias during the hybrid selection reaction.
 keywords:
   - name:
     category:

@@ -87,35 +87,37 @@ featureList:
   - ValidateSamFile
   - ViewSam
   - VcfToIntervalList
+  - CollectRnaSeqMetrics
+  - CollectRrbsMetrics
 description: A set of command line tools for manipulating high-throughput sequencing
   (HTS) data in formats such as SAM/BAM/CRAM and VCF. Available as a standalone program
   or within the GATK4 program.
 codeRepository:
-  name:
-  URL:
+  name: GitHub
+  URL: https://github.com/broadinstitute/picard
 license: MIT
 WebSite:
-  - name:
-    URL: https://github.com/broadinstitute/picard
-    description: homepage
-  - name:
-    URL: https://software.broadinstitute.org/gatk/documentation/tooldocs/current/
+  - name: Picard
+    URL: https://broadinstitute.github.io/picard/index.html
     description: documentation
+  - name: GATK Tool Documentation Index
+    URL: https://software.broadinstitute.org/gatk/documentation/tooldocs/current/
+    description: GATK documentation
 contactPoint:
-  - name:
-    identifier:
+  - identifier:
+    name:
     email:
 publication:
-  - headline:
-    identifier:
+  - identifier:
+    headline:
 keywords:
   - http://edamontology.org/topic_3168
   - http://edamontology.org/topic_3071
   - http://edamontology.org/operation_3197
 alternateName:
 creator:
-  - name:
-    identifier:
+  - identifier:
+    name:
     email:
 programmingLanguage:
   - Java

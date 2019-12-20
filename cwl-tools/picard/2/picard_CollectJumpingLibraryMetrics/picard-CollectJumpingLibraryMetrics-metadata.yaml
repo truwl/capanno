@@ -5,7 +5,16 @@ applicationSuite:
 name: CollectJumpingLibraryMetrics
 version: 0.1.0
 identifier: TL_e24fa5_ee.c8
-description:
+description: |
+  Collect jumping library metrics.
+
+  This tool collects high-level metrics about the presence of outward-facing (jumping) and inward-facing (non-jumping) read pairs within a SAM or BAM file.
+  For a brief primer on jumping libraries, see the GATK Dictionary.
+
+  This program gets all data for computation from the first read in each pair in which the mapping quality (MQ) tag is set with the mate's mapping quality.
+  If the MQ tag is not set, then the program assumes that the mate's MQ is greater than or equal to MINIMUM_MAPPING_QUALITY (default value is 0).
+
+  Note: Metrics labeled as percentages are actually expressed as fractions!
 keywords:
   - name:
     category:

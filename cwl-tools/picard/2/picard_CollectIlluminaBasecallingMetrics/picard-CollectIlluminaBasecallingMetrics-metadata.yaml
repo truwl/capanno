@@ -5,7 +5,18 @@ applicationSuite:
 name: CollectIlluminaBasecallingMetrics
 version: 0.1.0
 identifier: TL_e24fa5_24.c8
-description:
+description: |
+  Collects Illumina Basecalling metrics for a sequencing run.
+
+  This tool will produce per-barcode and per-lane basecall metrics for each sequencing run.
+  Mean values for each metric are determined using data from all of the tiles.
+  This tool requires the following data, LANE(#), BASECALLS_DIR, READ_STRUCTURE, and an input file listing the sample barcodes.
+  Program will provide metrics including: the total numbers of bases, reads, and clusters, as well as the fractions of each bases, reads, and clusters that passed Illumina quality filters (PF) both per barcode and per lane.
+  For additional information on Illumina's PF quality metric, please see the corresponding GATK Dictionary entry.
+
+  The input barcode_list.txt file is a file containing all of the sample and molecular barcodes and can be obtained from the ExtractIlluminaBarcodes tool.
+
+  Note: Metrics labeled as percentages are actually expressed as fractions!
 keywords:
   - name:
     category:
