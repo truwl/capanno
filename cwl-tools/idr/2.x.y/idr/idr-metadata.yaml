@@ -1,0 +1,13 @@
+applicationSuite:
+  softwareVersion: 2.x.y
+  name: idr
+  identifier: TL_38d2dd.93
+name: __main__
+version: 0.1.0
+identifier: TL_38d2dd_54.93
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

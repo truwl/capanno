@@ -1,0 +1,13 @@
+applicationSuite:
+  name: tabix
+  softwareVersion: 1.x-y
+  identifier: TL_8537c7.9e
+name: __main__
+version: 0.1.0
+identifier: TL_8537c7_54.9e
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml
