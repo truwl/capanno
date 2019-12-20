@@ -1,0 +1,16 @@
+applicationSuite:
+  softwareVersion: 1.x
+  name: gzip
+  identifier: TL_749cad.1d
+name: c
+version: 0.1.0
+identifier: TL_749cad_4a.1d
+description: >-
+  zcat uncompresses either a list of files on the command line or its standard input and writes the uncompressed data on standard output.
+  zcat will uncompress files that have the correct magic number whether they have a .gz suffix or not.
+
+keywords:
+  - name:
+    category:
+alternateName: zcat
+parentMetadata: ../common/common-metadata.yaml

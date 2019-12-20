@@ -21,7 +21,7 @@ tools:
     softwareVersion: 2.2.4
     identifier:
   - name: zcat
-    softwareVersion: 2.2.4
+    softwareVersion: 1.6
     identifier:
   - name: mawk
     softwareVersion: 1.3.3

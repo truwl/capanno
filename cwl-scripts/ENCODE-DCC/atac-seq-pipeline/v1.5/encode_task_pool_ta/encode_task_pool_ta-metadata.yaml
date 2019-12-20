@@ -12,10 +12,10 @@ parentScripts:
     identifier:
 tools:
   - name: zcat
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: gzip
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: cut
     softwareVersion: 8.28

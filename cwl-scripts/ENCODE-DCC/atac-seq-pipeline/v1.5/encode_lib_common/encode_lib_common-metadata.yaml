@@ -12,7 +12,7 @@ tools:
     softwareVersion: 1.29
     identifier:
   - name: zcat
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: touch
     softwareVersion: 1.29

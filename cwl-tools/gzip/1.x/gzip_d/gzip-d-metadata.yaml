@@ -1,0 +1,25 @@
+applicationSuite:
+  softwareVersion: 1.x
+  name: gzip
+  identifier: TL_749cad.1d
+name: d
+version: 0.1.0
+identifier: TL_749cad_82.1d
+description: >-
+  gunzip  takes  a  list of files on its command line and replaces each file whose name ends with .gz, -gz, .z, -z, or _z (ignoring case) and which begins with the correct magic number with an uncompressed file without the original extension.
+  gunzip also recognizes the special extensions .tgz and .taz as shorthands for .tar.gz and .tar.Z respectively.
+  When compressing, gzip uses the .tgz extension if necessary instead of truncating a file with a .tar extension.
+
+  gunzip can currently decompress files created by gzip, zip, compress, compress -H or pack.
+  The detection of the input format is automatic.
+  When using the first two formats, gunzip checks a 32 bit CRC.
+  For pack and gunzip checks the uncompressed length. The standard compress format was  not designed  to allow consistency checks.
+  However gunzip is sometimes able to detect a bad .Z file. If you get an error when uncompressing a .Z file, do not assume that the .Z file is correct simply because the standard uncompress does not complain.
+  This generally means that the standard uncompress does not check its input, and happily generates garbage output.
+  The SCO compress -H format (lzh compression method) does not include a CRC but also allows some consistency checks.
+
+keywords:
+  - name:
+    category:
+alternateName: gunzip
+parentMetadata: ../common/common-metadata.yaml

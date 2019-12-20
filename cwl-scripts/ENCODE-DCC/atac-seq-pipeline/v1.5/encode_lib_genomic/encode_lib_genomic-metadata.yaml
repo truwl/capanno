@@ -12,13 +12,13 @@ parentScripts:
     identifier:
 tools:
   - name: zcat
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: cat
     softwareVersion: 8.28
     identifier:
   - name: gzip
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: grep
     softwareVersion: 3.1

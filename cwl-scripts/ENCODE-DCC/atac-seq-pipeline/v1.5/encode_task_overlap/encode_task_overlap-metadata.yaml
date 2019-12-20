@@ -21,7 +21,7 @@ parentScripts:
     identifier:
 tools:
   - name: gunzip
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: bedtools intersect
     softwareVersion: v2.29.0

@@ -21,10 +21,10 @@ tools:
     softwareVersion: 1.33
     identifier:
   - name: gzip
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: zcat
-    softwareVersion: 8.28
+    softwareVersion: 1.6
     identifier:
   - name: sort
     softwareVersion: 8.28
