@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectGcBiasMetrics
 version: 0.1.0
 identifier: TL_e24fa5_b5.c8
-description: |
+description: >-
   Collect metrics regarding GC bias.
   This tool collects information about the relative proportions of guanine (G) and cytosine (C) nucleotides in a sample.
   Regions of high and low G + C content have been shown to interfere with mapping/aligning, ultimately leading to fragmented genome assemblies and poor coverage in a phenomenon known as 'GC bias'.

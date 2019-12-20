@@ -5,7 +5,7 @@ applicationSuite:
 name: getfasta
 version: 0.1.0
 identifier: TL_43392c_ae.c8
-description: |
+description: >-
   bedtools getfasta extracts sequences from a FASTA file for each of the intervals defined in a BED/GFF/VCF file.
 keywords:
   - name:

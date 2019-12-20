@@ -5,7 +5,7 @@ applicationSuite:
 name: lc_extrap
 version: 0.1.0
 identifier: TL_ec197e_37.d1
-description: |
+description: >-
   lc_extrap computes the expected future yield of distinct reads and bounds on the number of total distinct reads in the library and the associated confidence intervals.
   The -o parameter specifies the output file for the expected future yield.
 

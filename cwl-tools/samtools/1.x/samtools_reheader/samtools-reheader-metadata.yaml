@@ -1,11 +1,11 @@
 applicationSuite:
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
   name: samtools
   softwareVersion: 1.x
 name: reheader
 version: 0.1.0
-identifier: TL_ec2a8d_71.8b
-description: |
+identifier: TL_ec2a8d_71.0b
+description: >-
   samtools reheader [-iP] in.header.sam in.bam
 
   Replace the header in in.bam with the header in in.header.sam.

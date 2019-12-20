@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectJumpingLibraryMetrics
 version: 0.1.0
 identifier: TL_e24fa5_ee.c8
-description: |
+description: >-
   Collect jumping library metrics.
 
   This tool collects high-level metrics about the presence of outward-facing (jumping) and inward-facing (non-jumping) read pairs within a SAM or BAM file.

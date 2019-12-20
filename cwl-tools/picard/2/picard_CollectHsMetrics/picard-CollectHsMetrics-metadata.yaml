@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectHsMetrics
 version: 0.1.0
 identifier: TL_e24fa5_a4.c8
-description: |
+description: >-
   Collects hybrid-selection (HS) metrics for a SAM or BAM file. This tool takes a SAM/BAM file input and collects metrics that are specific for sequence datasets generated through hybrid-selection.
   Hybrid-selection (HS) is the most commonly used technique to capture exon-specific sequences for targeted sequencing experiments such as exome sequencing; for more information, please see the corresponding GATK Dictionary entry.
 

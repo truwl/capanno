@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: faidx
 version: 0.1.0
-identifier: TL_ec2a8d_bb.8b
-description: |
+identifier: TL_ec2a8d_bb.0b
+description: >-
   samtools faidx <ref.fasta> [region1 [...]]
 
   Index reference sequence in the FASTA format or extract subsequence from indexed reference sequence.

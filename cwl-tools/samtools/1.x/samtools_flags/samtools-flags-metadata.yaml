@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: flags
 version: 0.1.0
-identifier: TL_ec2a8d_4e.8b
-description: |
+identifier: TL_ec2a8d_4e.0b
+description: >-
   samtools flags INT|STR[,...]
 
   Convert between textual and numeric flag representation.

@@ -5,7 +5,9 @@ applicationSuite:
 name: GatherVcfs
 version: 0.1.0
 identifier: TL_e24fa5_42.c8
-description:
+description: >-
+  Gathers multiple VCF files from a scatter operation into a single VCF file.
+  Input files must be supplied in genomic order and must not have events at overlapping positions.
 keywords:
   - name:
     category:

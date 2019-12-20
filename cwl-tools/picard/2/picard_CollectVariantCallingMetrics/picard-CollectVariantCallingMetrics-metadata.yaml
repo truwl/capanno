@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectVariantCallingMetrics
 version: 0.1.0
 identifier: TL_e24fa5_8f.c8
-description: |
+description: >-
   Collects per-sample and aggregate (spanning all samples) metrics from the provided VCF file.
 keywords:
   - name:

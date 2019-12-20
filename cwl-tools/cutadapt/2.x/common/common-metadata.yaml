@@ -4,7 +4,7 @@ version: 0.1.1
 identifier: TL_28ea7f.68
 featureList:
   - __main__
-description: |
+description: >-
   Find and remove adapter sequences, primers, poly-A tails and other types
   of unwanted sequence from your high-throughput sequencing reads.
 

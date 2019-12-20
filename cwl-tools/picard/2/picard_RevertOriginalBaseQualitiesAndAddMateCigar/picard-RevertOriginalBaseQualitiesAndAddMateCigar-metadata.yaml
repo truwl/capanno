@@ -5,7 +5,8 @@ applicationSuite:
 name: RevertOriginalBaseQualitiesAndAddMateCigar
 version: 0.1.0
 identifier: TL_e24fa5_73.c8
-description:
+description: >-
+  Reverts the original base qualities and adds the mate cigar tag to read-group BAMs.
 keywords:
   - name:
     category:

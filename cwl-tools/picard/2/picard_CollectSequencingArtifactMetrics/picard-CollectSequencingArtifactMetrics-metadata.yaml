@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectSequencingArtifactMetrics
 version: 0.1.0
 identifier: TL_e24fa5_49.c8
-description: |
+description: >-
   Collect metrics to quantify single-base sequencing artifacts.
 
   This tool examines two sources of sequencing errors associated with hybrid selection protocols.

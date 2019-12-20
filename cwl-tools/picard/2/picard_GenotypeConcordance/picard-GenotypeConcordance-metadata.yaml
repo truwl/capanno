@@ -5,7 +5,9 @@ applicationSuite:
 name: GenotypeConcordance
 version: 0.1.0
 identifier: TL_e24fa5_1f.c8
-description:
+description: >-
+  Evaluate genotype concordance between callsets.
+  This tool evaluates the concordance between genotype calls for samples in different callsets where one is being considered as the truth (aka standard, or reference) and the other as the call that is being evaluated for accuracy.
 keywords:
   - name:
     category:

@@ -5,7 +5,13 @@ applicationSuite:
 name: MergeSamFiles
 version: 0.1.0
 identifier: TL_e24fa5_f5.c8
-description:
+description: >-
+  Merges multiple SAM and/or BAM files into a single file.
+  This tool is used for combining SAM and/or BAM files from different runs or read groups, similarly to the "merge" function of Samtools (http://www.htslib.org/doc/samtools.html).
+
+  Note that to prevent errors in downstream processing, it is critical to identify/label read groups appropriately.
+  If different samples contain identical read group IDs, this tool will avoid collisions by modifying the read group IDs to be unique.
+  For more information about read groups, see the GATK Dictionary entry.
 keywords:
   - name:
     category:

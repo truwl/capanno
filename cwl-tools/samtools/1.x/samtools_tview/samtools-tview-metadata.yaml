@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: tview
 version: 0.1.0
-identifier: TL_ec2a8d_ab.8b
-description: |
+identifier: TL_ec2a8d_ab.0b
+description: >-
   samtools tview [-p chr:pos] [-s STR] [-d display] <in.sorted.bam> [ref.fasta]
 
   Text alignment viewer (based on the ncurses library).

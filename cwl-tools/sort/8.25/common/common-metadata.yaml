@@ -10,7 +10,7 @@ featureList:
   - __main__
 # Recommended
 
-description: |
+description: >-
   Write sorted concatenation of all FILE(s) to standard output.
   With no FILE, or when FILE is -, read standard input.
 

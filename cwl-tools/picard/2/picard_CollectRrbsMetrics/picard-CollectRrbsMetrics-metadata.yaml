@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectRrbsMetrics
 version: 0.1.0
 identifier: TL_e24fa5_00.c8
-description: |
+description: >-
   Collects metrics from reduced representation bisulfite sequencing (Rrbs) data.
 
   This tool uses reduced representation bisulfite sequencing (Rrbs) data to determine cytosine methylation status across all reads of a genomic DNA sequence.

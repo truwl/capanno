@@ -5,7 +5,8 @@ applicationSuite:
 name: FilterSamReads
 version: 0.1.0
 identifier: TL_e24fa5_65.c8
-description:
+description: >-
+  Subset read data from a SAM or BAM fileThis tool takes a SAM or BAM file and subsets it to a new file that either excludes or only includes either aligned or unaligned reads (set using FILTER), or specific reads based on a list of reads names supplied in the READ_LIST_FILE.
 keywords:
   - name:
     category:

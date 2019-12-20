@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectQualityYieldMetrics
 version: 0.1.0
 identifier: TL_e24fa5_56.c8
-description: |
+description: >-
   Collect metrics about reads that pass quality thresholds and Illumina-specific filters.
   This tool evaluates the overall quality of reads within a bam file containing one read group.
   The output indicates the total numbers of bases within a read group that pass a minimum base quality score threshold and (in the case of Illumina data) pass Illumina quality filters as described in the GATK Dictionary entry.

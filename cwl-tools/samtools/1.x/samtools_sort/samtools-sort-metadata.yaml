@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: sort
 version: 0.1.0
-identifier: TL_ec2a8d_ca.8b
-description: |
+identifier: TL_ec2a8d_ca.0b
+description: >-
   samtools sort [-l level] [-m maxMem] [-o out.bam] [-O format] [-n] [-t tag] [-T tmpprefix] [-@ threads] [in.sam|in.bam|in.cram]
 
   Sort alignments by leftmost coordinates, or by read name when -n is used. An appropriate @HD-SO sort order header tag will be added or an existing one updated if necessary.

@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: quickcheck
 version: 0.1.0
-identifier: TL_ec2a8d_9a.8b
-description: |
+identifier: TL_ec2a8d_9a.0b
+description: >-
   samtools quickcheck [options] in.sam|in.bam|in.cram [ ... ]
 
   Quickly check that input files appear to be intact.

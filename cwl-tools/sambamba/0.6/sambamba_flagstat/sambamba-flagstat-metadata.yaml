@@ -5,7 +5,7 @@ applicationSuite:
 name: flagstat
 version: 0.1.0
 identifier: TL_bf790f_c2.e9
-description: |
+description: >-
   Outputs some statistics drawn from read flags.
 
   First line contains numbers of QC-passed and QC-failed reads. Then come pairs of numbers, the former for QC-passed reads, the latter for QC-failed ones:

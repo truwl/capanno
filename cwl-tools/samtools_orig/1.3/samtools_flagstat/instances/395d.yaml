@@ -1,4 +1,0 @@
-inFile:
-  class: File
-  path: ../FileInputs/Generated/starAlignOut/Aligned.sortedByCoord.out.bam
-outputFileName: _genome_flagstat.txt

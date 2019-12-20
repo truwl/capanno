@@ -6,7 +6,7 @@ featureList:
   - c_curve
   - lc_extrap
   - gc_extrap
-description: |
+description: >-
   This package is aimed at predicting and number of distinct reads and
   how many will be expected from additional sequencing using an initial sequencing
   experiment. The estimates can then be used to examine the utility of further sequencing,

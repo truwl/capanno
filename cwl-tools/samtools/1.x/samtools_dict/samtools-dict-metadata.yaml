@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: dict
 version: 0.1.0
-identifier: TL_ec2a8d_bb.8b
-description: |
+identifier: TL_ec2a8d_bb.0b
+description: >-
   samtools dict ref.fasta|ref.fasta.gz
 
   Create a sequence dictionary file from a fasta file.

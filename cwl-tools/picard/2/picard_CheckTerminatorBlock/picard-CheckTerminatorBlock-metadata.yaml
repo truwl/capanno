@@ -5,7 +5,8 @@ applicationSuite:
 name: CheckTerminatorBlock
 version: 0.1.0
 identifier: TL_e24fa5_2c.c8
-description:
+description: >-
+  Asserts the provided gzip file's (e.g., BAM) last block is well-formed; RC 100 otherwise
 keywords:
   - name:
     category:

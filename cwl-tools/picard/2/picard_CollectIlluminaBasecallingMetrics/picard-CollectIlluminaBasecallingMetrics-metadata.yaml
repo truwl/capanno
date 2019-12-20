@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectIlluminaBasecallingMetrics
 version: 0.1.0
 identifier: TL_e24fa5_24.c8
-description: |
+description: >-
   Collects Illumina Basecalling metrics for a sequencing run.
 
   This tool will produce per-barcode and per-lane basecall metrics for each sequencing run.

@@ -5,7 +5,8 @@ applicationSuite:
 name: UpdateVcfSequenceDictionary
 version: 0.1.0
 identifier: TL_e24fa5_82.c8
-description:
+description: >-
+  Takes a VCF and a second file that contains a sequence dictionary and updates the VCF with the new sequence dictionary.
 keywords:
   - name:
     category:

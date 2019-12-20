@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: mpileup
 version: 0.1.0
-identifier: TL_ec2a8d_e0.8b
-description: |
+identifier: TL_ec2a8d_e0.0b
+description: >-
   samtools mpileup [-EB] [-C capQcoef] [-r reg] [-f in.fa] [-l list] [-Q minBaseQ] [-q minMapQ] in.bam [in2.bam [...]]
 
   Generate textual pileup for one or multiple BAM files. For VCF and BCF output, please use the bcftools mpileup command instead.

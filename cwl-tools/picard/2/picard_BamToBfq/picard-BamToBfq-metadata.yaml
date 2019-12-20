@@ -5,7 +5,7 @@ applicationSuite:
 name: BamToBfq
 version: 0.1.0
 identifier: TL_e24fa5_d8.c8
-description: |
+description: >-
   Create BFQ files from a BAM file for use by the maq aligner. BFQ is a binary version of the FASTQ file format.
   This tool creates bfq files from a BAM file for use by the maq aligner.
 keywords:

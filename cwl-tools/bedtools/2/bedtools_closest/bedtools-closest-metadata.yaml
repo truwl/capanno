@@ -5,7 +5,7 @@ applicationSuite:
 name: closest
 version: 0.1.0
 identifier: TL_43392c_95.c8
-description: |
+description: >-
   Similar to intersect, closest searches for overlapping features in A and B.
   In the event that no feature in B overlaps the current feature in A, closest will report the nearest (that is, least genomic distance from the start or end of A) feature in B.
   For example, one might want to find which is the closest gene to a significant GWAS polymorphism.

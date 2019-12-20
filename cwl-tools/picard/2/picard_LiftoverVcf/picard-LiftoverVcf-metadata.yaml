@@ -5,7 +5,15 @@ applicationSuite:
 name: LiftoverVcf
 version: 0.1.0
 identifier: TL_e24fa5_e5.c8
-description:
+description: >-
+  Lifts over a VCF file from one reference build to another.
+  This tool adjusts the coordinates of variants within a VCF file to match a new reference.
+  The output file will be sorted and indexed using the target reference build.
+  To be clear, REFERENCE_SEQUENCE should be the target reference build.
+  The tool is based on the UCSC liftOver tool (see: http://genome.ucsc.edu/cgi-bin/hgLiftOver) and uses a UCSC chain file to guide its operation.
+
+  Note that records may be rejected because they cannot be lifted over or because of sequence incompatibilities between the source and target reference genomes.
+  Rejected records will be emitted with filters to the REJECT file, using the source genome coordinates.
 keywords:
   - name:
     category:

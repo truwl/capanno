@@ -5,7 +5,8 @@ applicationSuite:
 name: ViewSam
 version: 0.1.0
 identifier: TL_e24fa5_86.c8
-description:
+description: >-
+  Prints a SAM or BAM file to the screen.
 keywords:
   - name:
     category:

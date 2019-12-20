@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: collate
 version: 0.1.0
-identifier: TL_ec2a8d_31.8b
-description: |
+identifier: TL_ec2a8d_31.0b
+description: >-
   samtools collate [options] in.sam|in.bam|in.cram [<prefix>]
 
   Shuffles and groups reads together by their names. A faster alternative to a full query name sort, collate ensures that reads of the same name are grouped together in contiguous groups, but doesn't make any guarantees about the order of read names between groups.

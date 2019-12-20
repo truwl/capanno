@@ -5,7 +5,7 @@ applicationSuite:
 name: merge
 version: 0.1.0
 identifier: TL_bf790f_65.e9
-description: |
+description: >-
   sambamba merge is used for merging several sorted BAM files into one.
   The sorting order of all the files must be the same, and it is maintained in the output file.
 

@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectTargetedPcrMetrics
 version: 0.1.0
 identifier: TL_e24fa5_6a.c8
-description: |
+description: >-
   Calculate PCR-related metrics from targeted sequencing data.
 
   This tool calculates a set of PCR-related metrics from an aligned SAM or BAM file containing targeted sequencing data.

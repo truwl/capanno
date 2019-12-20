@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: index
 version: 0.1.0
-identifier: TL_ec2a8d_6a.8b
-description: |
+identifier: TL_ec2a8d_6a.0b
+description: >-
   samtools index [-bc] [-m INT] aln.bam|aln.cram [out.index]
 
   Index a coordinate-sorted BAM or CRAM file for fast random access. (Note that this does not work with SAM files even if they are bgzip compressed — to index such files, use tabix(1) instead.)

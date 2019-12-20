@@ -5,7 +5,22 @@ applicationSuite:
 name: ValidateSamFile
 version: 0.1.0
 identifier: TL_e24fa5_b5.c8
-description:
+description: >-
+  Validates a SAM or BAM file.
+
+  This tool reports on the validity of a SAM or BAM file relative to the SAM format specification.
+  This is useful for troubleshooting errors encountered with other tools that may be caused by improper formatting, faulty alignments, incorrect flag values, etc.
+
+  By default, the tool runs in VERBOSE mode and will exit after finding 100 errors and output them to the console (stdout).
+  Therefore, it is often more practical to run this tool initially using the MODE=SUMMARY option.
+  This mode outputs a summary table listing the numbers of all 'errors' and 'warnings'.
+
+  When fixing errors in your file, it is often useful to prioritize the severe validation errors and ignore the errors/warnings of lesser concern.
+  This can be done using the IGNORE and/or IGNORE_WARNINGS arguments.
+  For helpful suggestions on error prioritization, please follow this link to obtain additional documentation on ValidateSamFile.
+
+  After identifying and fixing your 'warnings/errors', we recommend that you rerun this tool to validate your SAM/BAM file prior to proceeding with your downstream analysis.
+  This will verify that all problems in your file have been addressed.
 keywords:
   - name:
     category:

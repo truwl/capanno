@@ -1,11 +1,11 @@
 applicationSuite:
   name: samtools
   softwareVersion: 1.x
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: calmd
 version: 0.1.0
-identifier: TL_ec2a8d_ac.8b
-description: |
+identifier: TL_ec2a8d_ac.0b
+description: >-
   samtools calmd [-Eeubr] [-C capQcoef] aln.bam ref.fasta
 
   Generate the MD tag. If the MD tag is already present, this command will give a warning if the MD tag generated is different from the existing tag.

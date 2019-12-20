@@ -5,7 +5,8 @@ applicationSuite:
 name: SamFormatConverter
 version: 0.1.0
 identifier: TL_e24fa5_ab.c8
-description:
+description: >-
+  Convert a BAM file to a SAM file, or SAM to BAM. Input and output formats are determined by file extension.
 keywords:
   - name:
     category:

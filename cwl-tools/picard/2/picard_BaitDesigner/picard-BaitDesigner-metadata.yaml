@@ -5,7 +5,7 @@ applicationSuite:
 name: BaitDesigner
 version: 0.1.0
 identifier: TL_e24fa5_82.c8
-description: |
+description: >-
   Designs oligonucleotide baits for hybrid selection reactions.
 
   This tool is used to design custom bait sets for hybrid selection experiments.

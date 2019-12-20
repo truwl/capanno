@@ -5,7 +5,18 @@ applicationSuite:
 name: MarkDuplicatesWithMateCigar
 version: 0.1.0
 identifier: TL_e24fa5_4a.c8
-description:
+description: >-
+  Identifies duplicate reads, accounting for mate CIGAR.
+  This tool locates and tags duplicate reads (both PCR and optical) in a BAM or SAM file, where duplicate reads are defined as originating from the same original fragment of DNA, taking into account the CIGAR string of read mates.
+
+  It is intended as an improvement upon the original MarkDuplicates algorithm, from which it differs in several ways, includingdifferences in how it breaks ties.
+  It may be the most effective duplicate marking program available, as it handles all cases including clipped and gapped alignments and locates duplicate molecules using mate cigar information.
+  However, please note that it is not yet used in the Broad's production pipeline, so use it at your own risk.
+
+  Note also that this tool will not work with alignments that have large gaps or deletions, such as those from RNA-seq data.
+  This is due to the need to buffer small genomic windows to ensure integrity of the duplicate marking, while large skips (ex. skipping introns) in the alignment records would force making that window very large, thus exhausting memory.
+
+  Note: Metrics labeled as percentages are actually expressed as fractions!
 keywords:
   - name:
     category:

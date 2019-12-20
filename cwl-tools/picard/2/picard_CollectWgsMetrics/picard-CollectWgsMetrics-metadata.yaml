@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectWgsMetrics
 version: 0.1.0
 identifier: TL_e24fa5_ce.c8
-description: |
+description: >-
   Collect metrics about coverage and performance of whole genome sequencing (WGS) experiments.
 
   This tool collects metrics about the fractions of reads that pass base- and mapping-quality filters as well as coverage (read-depth) levels for WGS analyses.

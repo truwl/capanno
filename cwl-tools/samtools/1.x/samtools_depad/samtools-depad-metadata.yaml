@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: depad
 version: 0.1.0
-identifier: TL_ec2a8d_3e.8b
-description: |
+identifier: TL_ec2a8d_3e.0b
+description: >-
   samtools depad [-SsCu1] [-T ref.fa] [-o output] in.bam
 
   Converts a BAM aligned against a padded reference to a BAM aligned against the depadded reference.

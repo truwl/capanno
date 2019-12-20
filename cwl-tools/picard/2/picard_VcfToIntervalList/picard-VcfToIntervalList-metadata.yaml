@@ -5,7 +5,8 @@ applicationSuite:
 name: VcfToIntervalList
 version: 0.1.0
 identifier: TL_e24fa5_31.c8
-description:
+description: >-
+  Converts a VCF or BCF file to a Picard Interval List.
 keywords:
   - name:
     category:

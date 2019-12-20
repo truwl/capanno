@@ -1,10 +1,10 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: rmdup
 version: 0.1.0
-identifier: TL_ec2a8d_86.8b
+identifier: TL_ec2a8d_86.0b
 description:
 keywords:
   - name:

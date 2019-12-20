@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: cat
 version: 0.1.0
-identifier: TL_ec2a8d_d0.8b
-description: |
+identifier: TL_ec2a8d_d0.0b
+description: >-
   samtools cat [-b list] [-h header.sam] [-o out.bam] in1.bam in2.bam [ ... ]
 
   Concatenate BAMs or CRAMs. Although this works on either BAM or CRAM, all input files must be the same format as each other.

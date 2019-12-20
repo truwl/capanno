@@ -5,7 +5,7 @@ applicationSuite:
 name: shuffle
 version: 0.1.0
 identifier: TL_43392c_64.c8
-description: |
+description: >-
   bedtools shuffle will randomly permute the genomic locations of a feature file among a genome defined in a genome file.
   One can also provide an “exclusions” BED/GFF/VCF file that lists regions where you do not want the permuted features to be placed.
   For example, one might want to prevent features from being placed in known genome gaps.

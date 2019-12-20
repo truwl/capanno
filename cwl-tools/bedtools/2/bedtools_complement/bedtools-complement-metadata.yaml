@@ -5,7 +5,7 @@ applicationSuite:
 name: complement
 version: 0.1.0
 identifier: TL_43392c_e6.c8
-description: |
+description: >-
   bedtools complement returns all intervals in a genome that are not covered by at least one interval in the input BED/GFF/VCF file.
 keywords:
   - name:

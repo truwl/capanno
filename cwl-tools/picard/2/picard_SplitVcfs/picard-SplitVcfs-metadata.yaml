@@ -5,7 +5,9 @@ applicationSuite:
 name: SplitVcfs
 version: 0.1.0
 identifier: TL_e24fa5_1c.c8
-description:
+description: >-
+  Splits SNPs and INDELs into separate files. This tool reads in a VCF or BCF file and writes out the SNPs and INDELs it contains to separate files.
+  The headers of the two output files will be identical and index files will be created for both outputs. If records other than SNPs or INDELs are present, set the STRICT option to "false", otherwise the tool will raise an exception and quit.
 keywords:
   - name:
     category:

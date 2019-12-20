@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectInsertSizeMetrics
 version: 0.1.0
 identifier: TL_e24fa5_4e.c8
-description: |
+description: >-
   This tool provides useful metrics for validating library construction including the insert size distribution and read orientation of paired-end libraries.
 
   The expected proportions of these metrics vary depending on the type of library preparation used, resulting from technical differences between pair-end libraries and mate-pair libraries.

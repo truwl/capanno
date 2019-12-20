@@ -5,7 +5,8 @@ applicationSuite:
 name: FilterVcf
 version: 0.1.0
 identifier: TL_e24fa5_0c.c8
-description:
+description: >-
+  Applies one or more hard filters to a VCF file to filter out genotypes and variants.
 keywords:
   - name:
     category:

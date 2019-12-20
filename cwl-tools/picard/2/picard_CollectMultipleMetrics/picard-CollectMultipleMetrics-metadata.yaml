@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectMultipleMetrics
 version: 0.1.0
 identifier: TL_e24fa5_70.c8
-description: |
+description: >-
   Collect multiple classes of metrics.
   This 'meta-metrics' tool runs one or more of the metrics collection modules at the same time to cut down on the time spent reading in data from input files.
   Available modules include CollectAlignmentSummaryMetrics, CollectInsertSizeMetrics, QualityScoreDistribution, MeanQualityByCycle, CollectBaseDistributionByCycle, CollectGcBiasMetrics, RnaSeqMetrics, CollectSequencingArtifactMetrics, and CollectQualityYieldMetrics.

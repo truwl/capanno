@@ -5,7 +5,7 @@ applicationSuite:
 name: c_curve
 version: 0.1.0
 identifier: TL_ec197e_8b.d1
-description: |
+description: >-
   c_curve computes the expected yield of distinct reads for experiments smaller than the input experiment in a .bed or .bam file through resampling.
   The full set of parameters can be outputed by simply typing the program name.
   If output.txt is the desired output file name and input.bed is the input .bed file, then simply type

@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectAlignmentSummaryMetrics
 version: 0.1.0
 identifier: TL_e24fa5_40.c8
-description: |
+description: >-
   Produces a summary of alignment metrics from a SAM or BAM file.
   This tool takes a SAM/BAM file input and produces metrics detailing the quality of the read alignments as well as the proportion of the reads that passed machine signal-to-noise threshold quality filters.
   Note that these quality filters are specific to Illumina data; for additional information, please see the corresponding GATK Dictionary entry.

@@ -5,7 +5,7 @@ applicationSuite:
 name: CleanSam
 version: 0.1.0
 identifier: TL_e24fa5_5c.c8
-description: |
+description: >-
   Cleans the provided SAM/BAM, soft-clipping beyond-end-of-reference alignments and setting MAPQ to 0 for unmapped reads
 
 keywords:

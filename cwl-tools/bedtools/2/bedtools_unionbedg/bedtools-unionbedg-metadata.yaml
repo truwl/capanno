@@ -5,7 +5,7 @@ applicationSuite:
 name: unionbedg
 version: 0.1.0
 identifier: TL_43392c_70.c8
-description: |
+description: >-
   bedtools unionbedg combines multiple BEDGRAPH files into a single file such that one can directly compare coverage (and other text-values such as genotypes) across multiple sample
 
 keywords:

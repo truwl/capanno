@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: flagstat
-version: 0.1.0
-identifier: TL_ec2a8d_c2.8b
-description: |
+version: 1.0
+identifier: TL_ec2a8d_a6.0b
+description: >-
   samtools flagstat in.sam|in.bam|in.cram
 
   Does a full pass through the input file to calculate and print statistics to stdout.

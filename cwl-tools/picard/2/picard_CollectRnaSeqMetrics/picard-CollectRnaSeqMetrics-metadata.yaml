@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectRnaSeqMetrics
 version: 0.1.0
 identifier: TL_e24fa5_67.c8
-description: |
+description: >-
   Produces RNA alignment metrics for a SAM or BAM file.
 
   This tool takes a SAM/BAM file containing the aligned reads from an RNAseq experiment and produces metrics describing the distribution of the bases within the transcripts.

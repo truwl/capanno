@@ -5,7 +5,7 @@ applicationSuite:
 name: CollectOxoGMetrics
 version: 0.1.0
 identifier: TL_e24fa5_5d.c8
-description: |
+description: >-
   Collect metrics to assess oxidative artifacts.
   This tool collects metrics quantifying the error rate resulting from oxidative artifacts.
   For a brief primer on oxidative artifacts, see the GATK Dictionary.

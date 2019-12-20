@@ -1,11 +1,11 @@
 applicationSuite:
   softwareVersion: 1.x
   name: samtools
-  identifier: TL_ec2a8d.8b
+  identifier: TL_ec2a8d.0b
 name: view
-version: 0.1.0
-identifier: TL_ec2a8d_1b.8b
-description: |
+version: 1.0
+identifier: TL_ec2a8d_46.0b
+description: >-
   samtools view [options] in.sam|in.bam|in.cram [region...]
 
   With no options or regions specified, prints all alignments in the specified input alignment file (in SAM, BAM, or CRAM format) to standard output in SAM format (with no header by default).
