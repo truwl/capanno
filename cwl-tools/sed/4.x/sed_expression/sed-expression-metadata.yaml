@@ -1,0 +1,17 @@
+applicationSuite:
+  name: sed
+  softwareVersion: 4.x
+  identifier: TL_177544.aa
+name: expression
+version: 0.1.0
+identifier: TL_177544_63.aa
+description: >-
+  -e script, --expression=script
+
+      add the script to the commands to be executed
+
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

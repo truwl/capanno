@@ -39,7 +39,7 @@ description: >-
 codeRepository:
   URL: https://git.savannah.gnu.org/git/gzip.git/
   name:
-license: GPL-3.0-only
+license: GPL-3.0-or-later
 WebSite:
   - description: homepage
     URL: https://www.gzip.org/

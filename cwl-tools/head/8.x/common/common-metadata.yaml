@@ -1,0 +1,44 @@
+name: head
+softwareVersion: 8.x
+version: 0.1.0
+identifier: TL_96e89a.1d
+featureList:
+  - __main__
+description: >-
+  head - output the first part of files
+
+  Print the first 10 lines of each FILE to standard output.  With more than one FILE, precede each with a header giving the file name.
+
+  With no FILE, or when FILE is -, read standard input.
+
+codeRepository:
+  URL:
+  name:
+license:
+WebSite:
+  - description: Full documentation
+    URL: http://www.gnu.org/softwared/coreutils/head
+    name:
+contactPoint:
+  - email:
+    identifier:
+    name:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - email:
+    identifier:
+    name: David MacKenzie
+  - email:
+    identifier:
+    name: Jim Meyering
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

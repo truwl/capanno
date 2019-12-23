@@ -1,0 +1,13 @@
+applicationSuite:
+  name: sed
+  softwareVersion: 4.x
+  identifier: TL_177544.aa
+name: __main__
+version: 0.1.0
+identifier: TL_177544_54.aa
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

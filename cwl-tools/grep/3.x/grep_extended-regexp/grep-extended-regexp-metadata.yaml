@@ -1,0 +1,15 @@
+applicationSuite:
+  identifier: TL_4a037f.29
+  softwareVersion: 3.x
+  name: grep
+name: extended-regexp
+version: 0.1.0
+identifier: TL_4a037f_da.29
+description: >-
+  -E, --extended-regexp
+         Interpret PATTERN as an extended regular expression (ERE, see below).
+keywords:
+  - name:
+    category:
+alternateName: egrep
+parentMetadata: ../common/common-metadata.yaml

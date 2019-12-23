@@ -1,0 +1,16 @@
+applicationSuite:
+  identifier: TL_fe47aa.1d
+  name: cut
+  softwareVersion: 8.x
+name: bytes
+version: 0.1.0
+identifier: TL_fe47aa_4b.1d
+description: >-
+  -b, --bytes=LIST
+         select only these bytes
+
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,47 @@
+name: touch
+softwareVersion: 8.x
+version: 0.1.0
+identifier: TL_b96ba5.1d
+featureList:
+  - __main__
+description: touch - change file timestamps
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0-or-later
+WebSite:
+  - name: "touch: Change file timestamps"
+    URL: https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html#touch-invocation
+    description: documentation
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - name: Paul Rubin
+    email:
+    identifier:
+  - name: Arnold Robbins
+    email:
+    identifier:
+  - name: Jim Kingdon
+    email:
+    identifier:
+  - name: David MaKenzie
+    email:
+    identifier:
+  - name: Randy Smith
+    email:
+    identifier:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

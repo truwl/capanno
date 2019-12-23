@@ -1,0 +1,19 @@
+applicationSuite:
+  identifier: TL_db5570.8b
+  name: tar
+  softwareVersion: 1.x
+name: list
+version: 0.1.0
+identifier: TL_db5570_10.8b
+description: >-
+  -t, --list
+
+  List the contents of an archive.
+  Arguments are optional.
+  When given, they specify the names of the members to list.
+
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

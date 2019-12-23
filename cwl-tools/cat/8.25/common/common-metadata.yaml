@@ -11,7 +11,8 @@ description: cat - concatenate files and print on the standard output.
 codeRepository:
   name: GitHub
   URL: https://github.com/coreutils/coreutils/blob/master/src/cat.c
-license: GPL-3.0-only
+license: GPL-3.0-or-later
+
 WebSite:
   - name: GNU coreutils
     URL: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html

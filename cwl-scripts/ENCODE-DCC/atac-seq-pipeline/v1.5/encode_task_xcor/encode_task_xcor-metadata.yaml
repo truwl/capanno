@@ -18,7 +18,7 @@ parentScripts:
     identifier:
 tools:
   - name: sed
-    softwareVersion: 2.2.4
+    softwareVersion: 4.4
     identifier:
   - name: zcat
     softwareVersion: 1.6

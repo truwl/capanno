@@ -1,0 +1,19 @@
+applicationSuite:
+  identifier: TL_db5570.8b
+  name: tar
+  softwareVersion: 1.x
+name: extract
+version: 0.1.0
+identifier: TL_db5570_3e.8b
+description: >-
+  -x, --extract, --get
+
+  Extract files from an archive.
+  Arguments are optional.
+  When given, they specify names of the archive members to be extracted.
+
+keywords:
+  - name:
+    category:
+alternateName: tar get
+parentMetadata: ../common/common-metadata.yaml
