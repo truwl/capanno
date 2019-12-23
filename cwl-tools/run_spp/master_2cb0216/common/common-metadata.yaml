@@ -1,0 +1,37 @@
+name: run_spp
+softwareVersion: master_2cb0216
+version: 0.1.0
+identifier: TL_365fb0.e0
+featureList:
+  - __main__
+description: >-
+  Usage: Rscript run_spp.R <options>
+
+codeRepository:
+  URL: https://github.com/crazyhottommy/phantompeakqualtools/blob/master/run_spp.R
+  name: GitHub
+license:
+WebSite:
+  - URL:
+    name:
+    description:
+contactPoint:
+  - identifier:
+    email:
+    name:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - identifier:
+    email:
+    name:
+programmingLanguage:
+  - R
+datePublished:
+downloadURL:
+extra:

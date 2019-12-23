@@ -1,0 +1,35 @@
+name: bedClip
+softwareVersion: v377
+version: 0.1.0
+identifier: TL_9e51cc.d3
+featureList:
+  - __main__
+description: >-
+  run the bedClip program to remove the problematic row(s) in your input BED file before using the bedToBigBed program.
+codeRepository:
+  name:
+  URL: http://hgdownload.soe.ucsc.edu/admin/exe/
+license:
+WebSite:
+  - name: bigBed Track Format
+    description:
+    URL: http://genome.ucsc.edu/goldenPath/help/bigBed.html
+contactPoint:
+  - name:
+    identifier:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name: UCSC
+    category: topic
+alternateName:
+creator:
+  - name:
+    identifier:
+    email:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

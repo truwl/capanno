@@ -1,0 +1,13 @@
+applicationSuite:
+  name: gs
+  softwareVersion: 9.x
+  identifier: TL_1d8d5e.d7
+name: __main__
+version: 0.1.0
+identifier: TL_1d8d5e_54.d7
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml
