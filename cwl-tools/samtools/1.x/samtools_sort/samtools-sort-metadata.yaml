@@ -1,9 +1,6 @@
-applicationSuite:
-  softwareVersion: 1.x
-  name: samtools
-  identifier: TL_ec2a8d.0b
 name: sort
-version: 0.1.0
+metadataStatus: Released
+cwlStatus: Incomplete
 identifier: TL_ec2a8d_ca.0b
 description: >-
   samtools sort [-l level] [-m maxMem] [-o out.bam] [-O format] [-n] [-t tag] [-T tmpprefix] [-@ threads] [in.sam|in.bam|in.cram]

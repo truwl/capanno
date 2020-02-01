@@ -1,9 +1,6 @@
-applicationSuite:
-  softwareVersion: 1.x
-  name: samtools
-  identifier: TL_ec2a8d.0b
 name: flagstat
-version: 1.0
+metadataStatus: Released
+cwlStatus: Released
 identifier: TL_ec2a8d_a6.0b
 description: >-
   samtools flagstat in.sam|in.bam|in.cram

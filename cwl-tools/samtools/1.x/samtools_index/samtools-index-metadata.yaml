@@ -1,9 +1,6 @@
-applicationSuite:
-  softwareVersion: 1.x
-  name: samtools
-  identifier: TL_ec2a8d.0b
 name: index
-version: 0.1.0
+metadataStatus: Released
+cwlStatus: Incomplete
 identifier: TL_ec2a8d_6a.0b
 description: >-
   samtools index [-bc] [-m INT] aln.bam|aln.cram [out.index]

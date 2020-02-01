@@ -1,11 +1,17 @@
-# REQUIRED
-name: sort
+applicationSuite:
+  identifier: TL_cadc8c.47
+  name: sort
+  softwareVersion:
+    versionName: 8.x
+    includedVersions:
+      - 8.25
+      - 8.26
+      - 8.27
+      - 8.28
 
-softwareVersion: 8.25
+metadataStatus: Released
 
-version: 1.0.0
 
-identifier: TL_cadc8c.47
 featureList:
   - __main__
 # Recommended

@@ -1,5 +1,5 @@
 toolName: samtools flagstat
-toolVersion:
+toolVersion: 1.3
 toolIdentifier: TL_ec2a8d_a6.0b
 identifier: TL_ec2a8d_a6.0b.011e
 name:

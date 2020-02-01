@@ -1,13 +1,6 @@
-# REQUIRED
-
-applicationSuite:
-  name: STAR
-  softwareVersion: 2.5
-  identifier: TL_8ab263.82
-
 name: genomeGenerate
-
-version: 1.0.0
+metadataStatus: Released
+cwlStatus: Released
 
 identifier: TL_8ab263_95.82
 

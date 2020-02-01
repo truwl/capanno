@@ -1,13 +1,8 @@
-# REQUIRED
-
-applicationSuite:
-  name:  STAR
-  softwareVersion: 2.5
-  identifier: TL_8ab263.82
 
 name: inputAlignmentsFromBAM
+metadataStatus: Released
+cwlStatus: Released
 
-version: 1.0.0
 
 identifier: TL_8ab263_d6.82
 

@@ -1,10 +1,19 @@
-# REQUIRED
-name: STAR
+applicationSuite:
+  identifier: TL_8ab263.82
+  name: STAR
+  softwareVersion:
+    versionName: 2.5
+    includedVersions:
+      - 2.5.0a
+      - 2.5.0b
+      - 2.5.0c
+      - 2.5.1a
+      - 2.5.1b
+      - 2.5.2a
+      - 2.5.2b
+      - 2.5.3a
 
-softwareVersion: 2.5
-
-identifier: TL_8ab263.82
-version: 1.0
+metadataStatus: Released
 featureList:
   - genomeGenerate
   - alignReads

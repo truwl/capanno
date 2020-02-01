@@ -1,10 +1,20 @@
 # REQUIRED
-name: cat
-softwareVersion: 8.25
-identifier: TL_d077f2.47
-version: 1.0
+
+applicationSuite:
+  identifier: TL_d077f2.47
+  name: cat
+  softwareVersion:
+    versionName: 8.x
+    includedVersions:
+      - 8.25
+      - 8.26
+      - 8.27
+      - 8.28
+
 featureList:
   - __main__
+
+metadataStatus: Released
 
 # RECOMMENDED
 description: cat - concatenate files and print on the standard output.

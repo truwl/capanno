@@ -1,9 +1,6 @@
-applicationSuite:
-  softwareVersion: 1.x
-  name: samtools
-  identifier: TL_ec2a8d.0b
 name: view
-version: 1.0
+metadataStatus: Released
+cwlStatus: Released
 identifier: TL_ec2a8d_46.0b
 description: >-
   samtools view [options] in.sam|in.bam|in.cram [region...]
