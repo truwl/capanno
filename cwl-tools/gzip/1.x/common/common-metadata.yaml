@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_749cad.1d
-  name: gzip
-  softwareVersion:
-    versionName: 1.x
-    includedVersions: []
+identifier: TL_749cad.1d
+name: gzip
+softwareVersion:
+  versionName: 1.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - c

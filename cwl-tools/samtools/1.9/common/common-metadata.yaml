@@ -1,19 +1,17 @@
-applicationSuite:
-  identifier: TL_ec2a8d.0b
-  name: samtools
-  softwareVersion:
-    versionName: 1.x
-    includedVersions:
-      - 1.3
-      - 1.3.1
-      - 1.4
-      - 1.4.1
-      - 1.5
-      - 1.6
-      - 1.7
-      - 1.8
-      - 1.9
-
+identifier: TL_ec2a8d.0b
+name: samtools
+softwareVersion:
+  versionName: 1.x
+  includedVersions:
+    - 1.3
+    - 1.3.1
+    - 1.4
+    - 1.4.1
+    - 1.5
+    - 1.6
+    - 1.7
+    - 1.8
+    - 1.9
 metadataStatus: Released
 featureList:
   - view
@@ -46,7 +44,6 @@ featureList:
   - reheader
   - depad
   - markdup
-
 description: A software package with various utilities for processing alignments in
   the SAM format, including variant calling and alignment viewing.
 codeRepository:

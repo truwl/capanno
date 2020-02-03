@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_fe47aa.1d
-  name: cut
-  softwareVersion:
-    versionName: 8.x
-    includedVersions: []
+identifier: TL_fe47aa.1d
+name: cut
+softwareVersion:
+  versionName: 8.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - bytes

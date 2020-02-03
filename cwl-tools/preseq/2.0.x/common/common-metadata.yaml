@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_ec197e.d1
-  name: preseq
-  softwareVersion:
-    versionName: 2.0.x
-    includedVersions: []
+identifier: TL_ec197e.d1
+name: preseq
+softwareVersion:
+  versionName: 2.0.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - c_curve

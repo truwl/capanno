@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_9e51cc.d3
-  name: bedClip
-  softwareVersion:
-    versionName: v377-plus
-    includedVersions: []
+identifier: TL_9e51cc.d3
+name: bedClip
+softwareVersion:
+  versionName: v377-plus
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - __main__

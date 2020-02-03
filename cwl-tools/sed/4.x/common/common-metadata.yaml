@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_177544.aa
-  name: sed
-  softwareVersion:
-    versionName: 4.x
-    includedVersions: []
+identifier: TL_177544.aa
+name: sed
+softwareVersion:
+  versionName: 4.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - expression

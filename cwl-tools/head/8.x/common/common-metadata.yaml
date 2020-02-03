@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_96e89a.1d
-  name: head
-  softwareVersion:
-    versionName: 8.x
-    includedVersions: []
+identifier: TL_96e89a.1d
+name: head
+softwareVersion:
+  versionName: 8.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - __main__

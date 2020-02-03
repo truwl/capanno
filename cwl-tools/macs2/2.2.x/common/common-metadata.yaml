@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_89cd0d.93
-  name: macs2
-  softwareVersion:
-    versionName: 2.2.x
-    includedVersions: []
+identifier: TL_89cd0d.93
+name: macs2
+softwareVersion:
+  versionName: 2.2.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - callpeak

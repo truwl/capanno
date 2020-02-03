@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_1de660.4d
-  name: mawk
-  softwareVersion:
-    versionName: 1.3.x
-    includedVersions: []
+identifier: TL_1de660.4d
+name: mawk
+softwareVersion:
+  versionName: 1.3.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - __main__

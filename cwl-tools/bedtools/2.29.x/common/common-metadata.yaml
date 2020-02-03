@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_43392c.c8
-  name: bedtools
-  softwareVersion:
-    versionName: 2.29.x
-    includedVersions: []
+identifier: TL_43392c.c8
+name: bedtools
+softwareVersion:
+  versionName: 2.29.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - annotate

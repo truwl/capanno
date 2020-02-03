@@ -1,46 +1,35 @@
-# REQUIRED
-
-applicationSuite:
-  identifier: TL_d077f2.47
-  name: cat
-  softwareVersion:
-    versionName: 8.x
-    includedVersions:
-      - 8.25
-      - 8.26
-      - 8.27
-      - 8.28
-
+identifier: TL_d077f2.47
+name: cat
+softwareVersion:
+  versionName: 8.x
+  includedVersions:
+    - 8.25
+    - 8.26
+    - 8.27
+    - 8.28
 featureList:
   - __main__
-
 metadataStatus: Released
-
-# RECOMMENDED
 description: cat - concatenate files and print on the standard output.
 codeRepository:
   name: GitHub
   URL: https://github.com/coreutils/coreutils/blob/master/src/cat.c
 license: GPL-3.0-or-later
-
 WebSite:
   - name: GNU coreutils
     URL: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html
     description:
 creator:
-    - name: Torbjorn Granlund
-      email:
-      identifier:
-    - name: Richard M Stallman
-      email:
-      identifier:
-
+  - name: Torbjorn Granlund
+    email:
+    identifier:
+  - name: Richard M Stallman
+    email:
+    identifier:
 publication: []
 keywords:
   - name: GNU
     category: topic
-
-# OPTIONAL
-programmingLanguage: [C]
+programmingLanguage:
+  - C
 datePublished: 2016, 01, 20
-

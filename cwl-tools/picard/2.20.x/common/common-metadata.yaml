@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_e24fa5.c8
-  name: picard
-  softwareVersion:
-    versionName: 2.20.x
-    includedVersions: []
+identifier: TL_e24fa5.c8
+name: picard
+softwareVersion:
+  versionName: 2.20.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - AddCommentsToBam

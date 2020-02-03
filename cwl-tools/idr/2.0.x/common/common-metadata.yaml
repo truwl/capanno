@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_38d2dd.93
-  name: idr
-  softwareVersion:
-    versionName: 2.0.x
-    includedVersions: []
+identifier: TL_38d2dd.93
+name: idr
+softwareVersion:
+  versionName: 2.0.x
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - __main__

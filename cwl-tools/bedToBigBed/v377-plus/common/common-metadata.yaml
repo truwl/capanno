@@ -1,9 +1,8 @@
-applicationSuite:
-  identifier: TL_babf1a.d3
-  name: bedToBigBed
-  softwareVersion:
-    versionName: v377-plus
-    includedVersions: []
+identifier: TL_babf1a.d3
+name: bedToBigBed
+softwareVersion:
+  versionName: v377-plus
+  includedVersions: []
 metadataStatus: Released
 featureList:
   - __main__
