@@ -1,0 +1,5 @@
+threads: 1
+input:
+  class: File
+  path: ../../FileInputs/Generated/starAlignOut/Aligned.toTranscriptome.out.bam
+outputName: samtools-viewOut2.txt

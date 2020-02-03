@@ -1,0 +1,18 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: flags
+identifier: TL_ec2a8d_4e.0b
+description: "samtools flags INT|STR[,...]\nConvert between textual and numeric flag\
+  \ representation.\nFLAGS:\n0x1\tPAIRED\tpaired-end (or multiple-segment) sequencing\
+  \ technology 0x2\tPROPER_PAIR\teach segment properly aligned according to the aligner\
+  \ 0x4\tUNMAP\tsegment unmapped 0x8\tMUNMAP\tnext segment in the template unmapped\
+  \ 0x10\tREVERSE\tSEQ is reverse complemented 0x20\tMREVERSE\tSEQ of the next segment\
+  \ in the template is reverse complemented 0x40\tREAD1\tthe first segment in the\
+  \ template 0x80\tREAD2\tthe last segment in the template 0x100\tSECONDARY\tsecondary\
+  \ alignment 0x200\tQCFAIL\tnot passing quality controls 0x400\tDUP\tPCR or optical\
+  \ duplicate 0x800\tSUPPLEMENTARY\tsupplementary alignment"
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

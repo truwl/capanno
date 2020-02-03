@@ -1,0 +1,19 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: CollectInsertSizeMetrics
+identifier: TL_e24fa5_4e.c8
+description: "This tool provides useful metrics for validating library construction\
+  \ including the insert size distribution and read orientation of paired-end libraries.\n\
+  The expected proportions of these metrics vary depending on the type of library\
+  \ preparation used, resulting from technical differences between pair-end libraries\
+  \ and mate-pair libraries. For a brief primer on paired-end sequencing and mate-pair\
+  \ reads, see the GATK Dictionary. The CollectInsertSizeMetrics tool outputs the\
+  \ percentages of read pairs in each of the three orientations (FR, RF, and TANDEM)\
+  \ as a histogram. In addition, the insert size distribution is output as both a\
+  \ histogram (.insert_size_Histogram.pdf) and as a data table (.insert_size_metrics.txt).\n\
+  Note: Metrics labeled as percentages are actually expressed as fractions!"
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

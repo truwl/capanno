@@ -1,0 +1,130 @@
+applicationSuite:
+  identifier: TL_e24fa5.c8
+  name: picard
+  softwareVersion:
+    versionName: 2.20.x
+    includedVersions: []
+metadataStatus: Released
+featureList:
+  - AddCommentsToBam
+  - AddOrReplaceReadGroups
+  - BaitDesigner
+  - BamToBfq
+  - BamIndexStats
+  - BedToIntervalList
+  - BuildBamIndex
+  - CalculateReadGroupChecksum
+  - CleanSam
+  - CollectAlignmentSummaryMetrics
+  - CollectBaseDistributionByCycle
+  - CollectGcBiasMetrics
+  - CollectHiSeqXPfFailMetrics
+  - CollectHsMetrics
+  - CollectIlluminaBasecallingMetrics
+  - CollectIlluminaLaneMetrics
+  - CollectInsertSizeMetrics
+  - CollectJumpingLibraryMetrics
+  - CollectMultipleMetrics
+  - CollectOxoGMetrics
+  - CollectQualityYieldMetrics
+  - CollectRawWgsMetrics
+  - CollectTargetedPcrMetrics
+  - CollectSequencingArtifactMetrics
+  - CollectVariantCallingMetrics
+  - CollectWgsMetrics
+  - CollectWgsMetricsWithNonZeroCoverage
+  - CompareMetrics
+  - CompareSAMs
+  - ConvertSequencingArtifactToOxoG
+  - CreateSequenceDictionary
+  - DownsampleSam
+  - ExtractIlluminaBarcodes
+  - EstimateLibraryComplexity
+  - FastqToSam
+  - FifoBuffer
+  - FindMedelianViolations
+  - CrosscheckFingerprints
+  - ClusterCrosscheckMetrics
+  - CheckFingerprint
+  - FilterSamReads
+  - FilterVcf
+  - FixMateInformation
+  - GatherBamFiles
+  - GatherVcfs
+  - GenotypeConcordance
+  - IlluminaBasecallsToFastq
+  - IluminaBasecallsToSam
+  - CheckIlluminaDirectroy
+  - CheckTerminatorBlock
+  - IntervalListTools
+  - LiftOverIntervalList
+  - LiftoverVcf
+  - MakeSitesOnlyVcf
+  - MarkDuplicates
+  - MarkDuplicatesWithMateCigar
+  - MeanQualityByCycle
+  - MergeBamAlignment
+  - MergeSamFiles
+  - MergeVcfs
+  - NormalizeFasta
+  - PositionBasedDownsampleSam
+  - ExtractSequences
+  - QualityScoreDistribution
+  - RenameSampleInVcf
+  - ReorderSam
+  - ReplaceSamHeader
+  - RevertSam
+  - RevertOriginalBaseQualitiesAndAddMateCigar
+  - SamFormatConverter
+  - SamToFastq
+  - ScatterIntervalsByNs
+  - SetNmMdAndUqTags
+  - SortSam
+  - SortVcf
+  - SplitSamByLibrary
+  - UmiAwareMarkDuplicatesWithMateCigar
+  - UpdateVcfSequenceDictionary
+  - VcfFormatConverter
+  - MarkIlluminaAdapters
+  - SplitVcfs
+  - ValidateSamFile
+  - ViewSam
+  - VcfToIntervalList
+  - CollectRnaSeqMetrics
+  - CollectRrbsMetrics
+description: A set of command line tools for manipulating high-throughput sequencing
+  (HTS) data in formats such as SAM/BAM/CRAM and VCF. Available as a standalone program
+  or within the GATK4 program.
+codeRepository:
+  name: GitHub
+  URL: https://github.com/broadinstitute/picard
+license: MIT
+WebSite:
+  - name: Picard
+    URL: https://broadinstitute.github.io/picard/index.html
+    description: documentation
+  - name: GATK Tool Documentation Index
+    URL: https://software.broadinstitute.org/gatk/documentation/tooldocs/current/
+    description: GATK documentation
+contactPoint:
+  - identifier:
+    name:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_3071
+  - http://edamontology.org/operation_3197
+alternateName:
+creator:
+  - identifier:
+    name:
+    email:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: picard_tools

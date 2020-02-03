@@ -1,0 +1,12 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: bedpetobam
+identifier: TL_43392c_f8.c8
+description: bedToBam converts features in a feature file to BAM format. This is useful
+  as an efficient means of storing large genome annotations in a compact, indexed
+  format for visualization purposes.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

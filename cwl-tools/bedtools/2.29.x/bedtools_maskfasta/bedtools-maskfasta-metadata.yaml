@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: maskfasta
+identifier: TL_43392c_4c.c8
+description: bedtools maskfasta masks sequences in a FASTA file based on intervals
+  defined in a feature file. The headers in the input FASTA file must exactly match
+  the chromosome column in the feature file. This may be useful fro creating your
+  own masked genome file based on custom annotations or for masking all but your target
+  regions when aligning sequence data from a targeted capture experiment.
+keywords:
+  - name:
+    category:
+alternateName: maskFastaFromBed
+parentMetadata: ../common/common-metadata.yaml

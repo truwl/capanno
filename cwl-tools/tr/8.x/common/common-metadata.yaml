@@ -1,0 +1,35 @@
+applicationSuite:
+  identifier: TL_e7d707.47
+  name: tr
+  softwareVersion:
+    versionName: 8.x
+    includedVersions: []
+metadataStatus: Released
+featureList:
+  - __main__
+description: Translate, squeeze, and/or delete characters from standard input, writing
+  to standard output.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0-only
+WebSite:
+  - name: Documentation
+    description:
+    URL: http://www.gnu.org/software/coreutils/manual/html_node/tr-invocation.html#tr-invocation
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: GNU
+    category: topic
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:

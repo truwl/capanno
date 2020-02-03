@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: fastq
+identifier: TL_ec2a8d_52.0b
+description: "samtools fastq [options] in.bam samtools fasta [options] in.bam\nConverts\
+  \ a BAM or CRAM into either FASTQ or FASTA format depending on the command invoked.\
+  \ The files will be automatically compressed if the file names have a .gz or .bgzf\
+  \ extension.\nThe input to this program must be collated by name. Use samtools collate\
+  \ or samtools sort -n to ensure this."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

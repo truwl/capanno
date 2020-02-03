@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: ReorderSam
+identifier: TL_e24fa5_36.c8
+description: Not to be confused with SortSam which sorts a SAM or BAM file with a
+  valid sequence dictionary, ReorderSam reorders reads in a SAM/BAM file to match
+  the contig ordering in a provided reference file, as determined by exact name matching
+  of contigs. Reads mapped to contigs absent in the new reference are dropped. Runs
+  substantially faster if the input is an indexed BAM file.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

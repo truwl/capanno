@@ -1,0 +1,17 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: depad
+identifier: TL_ec2a8d_3e.0b
+description: "samtools depad [-SsCu1] [-T ref.fa] [-o output] in.bam\nConverts a BAM\
+  \ aligned against a padded reference to a BAM aligned against the depadded reference.\
+  \ The padded reference may contain verbatim \"*\" bases in it, but \"*\" bases are\
+  \ also counted in the reference numbering. This means that a sequence base-call\
+  \ aligned against a reference \"*\" is considered to be a cigar match (\"M\" or\
+  \ \"X\") operator (if the base-call is \"A\", \"C\", \"G\" or \"T\"). After depadding\
+  \ the reference \"*\" bases are deleted and such aligned sequence base-calls become\
+  \ insertions. Similarly transformations apply for deletions and padding cigar operations."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

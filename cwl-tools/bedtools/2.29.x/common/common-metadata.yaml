@@ -1,0 +1,85 @@
+applicationSuite:
+  identifier: TL_43392c.c8
+  name: bedtools
+  softwareVersion:
+    versionName: 2.29.x
+    includedVersions: []
+metadataStatus: Released
+featureList:
+  - annotate
+  - bamtobed
+  - bamtofastq
+  - bed12tobed6
+  - bedpetobam
+  - bedtobam
+  - closest
+  - cluster
+  - complement
+  - coverage
+  - expand
+  - flank
+  - fisher
+  - genomecov
+  - getfasta
+  - groupby
+  - igv
+  - intersect
+  - jaccard
+  - links
+  - makewindows
+  - map
+  - maskfasta
+  - merge
+  - multicov
+  - multiinter
+  - nuc
+  - overlap
+  - pairtobed
+  - pairtopair
+  - random
+  - reldist
+  - shift
+  - shuffle
+  - slop
+  - sort
+  - substract
+  - tag
+  - unionbedg
+  - window
+description: BEDTools is an extensive suite of utilities for comparing genomic features
+  in BED format.
+codeRepository:
+  name: GitHub
+  URL: https://github.com/arq5x/bedtools2
+license: GPL-2.0
+WebSite:
+  - name:
+    URL: https://github.com/arq5x/bedtools2
+    description: homepage
+  - name:
+    URL: http://bedtools.readthedocs.io/en/latest/
+    description: documentation
+  - name: bedtools-discuss
+    URL: https://groups.google.com/forum/#!forum/bedtools-discuss
+    description: Mailing list @ Google Groups
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: https://doi.org/10.1093/bioinformatics/btq033
+    headline: 'BEDTools: A flexible suite of utilities for comparing genomic features'
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/operation_2429
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: bedtools

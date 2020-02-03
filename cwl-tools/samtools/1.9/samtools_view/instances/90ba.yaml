@@ -1,0 +1,7 @@
+input:
+  class: File
+  path: ../catOut.txt
+threads: 1
+outBam: true
+samInput: true
+outputName: _star_out_anno.bam

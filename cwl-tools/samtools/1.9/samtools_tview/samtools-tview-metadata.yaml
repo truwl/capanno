@@ -1,0 +1,13 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: tview
+identifier: TL_ec2a8d_ab.0b
+description: "samtools tview [-p chr:pos] [-s STR] [-d display] <in.sorted.bam> [ref.fasta]\n\
+  Text alignment viewer (based on the ncurses library). In the viewer, press `?' for\
+  \ help and press `g' to check the alignment start from a region in the format like\
+  \ `chr10:10,000,000' or `=10,000,000' when viewing the same reference sequence."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: VcfFormatConverter
+identifier: TL_e24fa5_dc.c8
+description: Converts VCF to BCF or BCF to VCF. This tool converts files between the
+  plain-text VCF format and its binary compressed equivalent, BCF. Input and output
+  formats are determined by file extensions specified in the file names. For best
+  results, it is recommended to ensure that an index file is present and set the REQUIRE_INDEX
+  option to true.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

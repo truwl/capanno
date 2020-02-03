@@ -1,0 +1,6 @@
+metadataStatus: Released
+cwlStatus: Released
+name: check
+identifier: TL_c8f1ee_0b.47
+description: read MD5 sums from the FILEs and check them.
+parentMetadata: ../common/common-metadata.yaml

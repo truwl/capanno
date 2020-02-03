@@ -1,0 +1,18 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: MeanQualityByCycle
+identifier: TL_e24fa5_99.c8
+description: "Collect mean quality by cycle. This tool generates a data table and\
+  \ chart of mean quality by cycle from a BAM file. It is intended to be used on a\
+  \ single lane or a read group's worth of data, but can be applied to merged BAMs\
+  \ if needed.\nThis metric gives an overall snapshot of sequencing machine performance.\
+  \ For most types of sequencing data, the output is expected to show a slight reduction\
+  \ in overall base quality scores towards the end of each read. Spikes in quality\
+  \ within reads are not expected and may indicate that technical problems occurred\
+  \ during sequencing.\nNote: Metrics labeled as percentages are actually expressed\
+  \ as fractions!"
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

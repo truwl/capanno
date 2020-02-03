@@ -1,0 +1,19 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: merge
+identifier: TL_ec2a8d_65.0b
+description: "samtools merge [-nur1f] [-h inh.sam] [-t tag] [-R reg] [-b list] out.bam\
+  \ in1.bam [in2.bam in3.bam ... inN.bam]\nMerge multiple sorted alignment files,\
+  \ producing a single sorted output file that contains all the input records and\
+  \ maintains the existing sort order.\nIf -h is specified the @SQ headers of input\
+  \ files will be merged into the specified header, otherwise they will be merged\
+  \ into a composite header created from the input headers. If the @SQ headers differ\
+  \ in order this may require the output file to be re-sorted after merge.\nThe ordering\
+  \ of the records in the input files must match the usage of the -n and -t command-line\
+  \ options. If they do not, the output order will be undefined. See sort for information\
+  \ about record ordering."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

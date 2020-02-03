@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: AddCommentsToBam
+identifier: TL_e24fa5_12.c8
+description: "Adds comments to the header of a BAM file. This tool makes a copy of\
+  \ the input bam file, with a modified header that includes the comments specified\
+  \ at the command line (prefixed by @CO). Use double quotes to wrap comments that\
+  \ include whitespace or special characters.\nNote that this tool cannot be run on\
+  \ SAM files."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

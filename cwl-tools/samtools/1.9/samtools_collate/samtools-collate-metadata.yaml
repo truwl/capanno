@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: collate
+identifier: TL_ec2a8d_31.0b
+description: "samtools collate [options] in.sam|in.bam|in.cram [<prefix>]\nShuffles\
+  \ and groups reads together by their names. A faster alternative to a full query\
+  \ name sort, collate ensures that reads of the same name are grouped together in\
+  \ contiguous groups, but doesn't make any guarantees about the order of read names\
+  \ between groups.\nThe output from this command should be suitable for any operation\
+  \ that requires all reads from the same template to be grouped together."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

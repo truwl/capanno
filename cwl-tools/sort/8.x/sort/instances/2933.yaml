@@ -1,0 +1,8 @@
+bufferSize: 60G
+temporaryDirectory:
+  class: Directory
+  path: ./
+inputFile:
+  class: File
+  path: ../gawkOutput.txt
+outputFile: sortOutput.txt

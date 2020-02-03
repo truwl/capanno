@@ -1,0 +1,40 @@
+applicationSuite:
+  identifier: TL_babf1a.d3
+  name: bedToBigBed
+  softwareVersion:
+    versionName: v377-plus
+    includedVersions: []
+metadataStatus: Released
+featureList:
+  - __main__
+description: "The bigBed format stores annotation items that can be either a simple\
+  \ or a linked collection of exons, much as BED files do. BigBed files are created\
+  \ from BED type files using the program bedToBigBed. The resulting bigBed files\
+  \ are in an indexed binary format.\n"
+codeRepository:
+  name:
+  URL: http://hgdownload.soe.ucsc.edu/admin/exe/
+license:
+WebSite:
+  - URL: http://genome.ucsc.edu/goldenPath/help/bigBed.html
+    name: bigBed Track Format
+    description:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: UCSC
+    category: topic
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:
