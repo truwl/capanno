@@ -1,9 +1,6 @@
-applicationSuite:
-  softwareVersion: 2.x
-  identifier: TL_28ea7f.68
-  name: cutadapt
+metadataStatus: Released
+cwlStatus: Incomplete
 name: __main__
-version: 0.1.0
 identifier: TL_28ea7f_54.68
 description:
 keywords:

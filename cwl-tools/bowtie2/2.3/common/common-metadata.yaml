@@ -1,7 +1,10 @@
-name: bowtie2
-softwareVersion: '2.3'
-version: 0.1.0
-identifier: TL_8d0912.1a
+applicationSuite:
+  identifier: TL_8d0912.1a
+  name: bowtie2
+  softwareVersion:
+    versionName: '2.3'
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - __main__
 description: 'Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing

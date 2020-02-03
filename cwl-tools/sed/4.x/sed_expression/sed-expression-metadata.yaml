@@ -1,15 +1,9 @@
-applicationSuite:
-  name: sed
-  softwareVersion: 4.x
-  identifier: TL_177544.aa
+metadataStatus: Released
+cwlStatus: Incomplete
 name: expression
-version: 0.1.0
 identifier: TL_177544_63.aa
-description: >-
-  -e script, --expression=script
-
-      add the script to the commands to be executed
-
+description: "-e script, --expression=script\n\n    add the script to the commands\
+  \ to be executed"
 keywords:
   - name:
     category:

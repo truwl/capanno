@@ -1,9 +1,6 @@
-applicationSuite:
-  identifier: TL_eefec3.1d
-  name: split
-  softwareVersion: 8.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: __main__
-version: 0.1.0
 identifier: TL_eefec3_54.1d
 description:
 keywords:

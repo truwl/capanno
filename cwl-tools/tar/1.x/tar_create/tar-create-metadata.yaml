@@ -1,17 +1,10 @@
-applicationSuite:
-  identifier: TL_db5570.8b
-  name: tar
-  softwareVersion: 1.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: create
-version: 0.1.0
 identifier: TL_db5570_76.8b
-description: >-
-  -c, --create
-
-  Create a new archive.
-  Arguments supply the names of the files to be archived.
-  Directories are archived recursively, unless the --no-recursion option is given.
-
+description: "-c, --create\nCreate a new archive. Arguments supply the names of the\
+  \ files to be archived. Directories are archived recursively, unless the --no-recursion\
+  \ option is given."
 keywords:
   - name:
     category:

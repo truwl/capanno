@@ -1,9 +1,6 @@
-applicationSuite:
-  identifier: TL_8d0912.1a
-  softwareVersion: '2.3'
-  name: bowtie2
+metadataStatus: Released
+cwlStatus: Incomplete
 name: __main__
-version: 0.1.0
 identifier: TL_8d0912_54.1a
 description:
 keywords:

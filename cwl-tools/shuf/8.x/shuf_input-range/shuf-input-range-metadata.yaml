@@ -1,14 +1,9 @@
-applicationSuite:
-  name: shuf
-  identifier: TL_8b1156.1d
-  softwareVersion: 8.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: input-range
-version: 0.1.0
 identifier: TL_8b1156_86.1d
-description: >-
-  -i, --input-range=LO-HI
-         treat each number LO through HI as an input line
-
+description: "-i, --input-range=LO-HI\n       treat each number LO through HI as an\
+  \ input line"
 keywords:
   - name:
     category:

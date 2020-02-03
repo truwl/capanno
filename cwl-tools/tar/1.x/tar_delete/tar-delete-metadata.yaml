@@ -1,19 +1,10 @@
-applicationSuite:
-  identifier: TL_db5570.8b
-  name: tar
-  softwareVersion: 1.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: delete
-version: 0.1.0
 identifier: TL_db5570_09.8b
-description: >-
-  --delete
-
-  Delete from the archive.
-  The arguments supply names of the archive members to be removed.
-  At least one argument must be given.
-
-  This option does not operate on compressed archives.
-  There is no short option equivalent.
+description: "--delete\nDelete from the archive. The arguments supply names of the\
+  \ archive members to be removed. At least one argument must be given.\nThis option\
+  \ does not operate on compressed archives. There is no short option equivalent."
 keywords:
   - name:
     category:

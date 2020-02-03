@@ -1,17 +1,10 @@
-applicationSuite:
-  identifier: TL_db5570.8b
-  name: tar
-  softwareVersion: 1.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: diff
-version: 0.1.0
 identifier: TL_db5570_2d.8b
-description: >-
-  -d, --diff, --compare
-
-  Find differences between archive and file system.
-  The arguments are optional and specify archive members to compare.
-  If not given, the current working directory is assumed.
-
+description: "-d, --diff, --compare\nFind differences between archive and file system.\
+  \ The arguments are optional and specify archive members to compare. If not given,\
+  \ the current working directory is assumed."
 keywords:
   - name:
     category:

@@ -1,7 +1,10 @@
-name: grep
-softwareVersion: 3.x
-version: 0.1.0
-identifier: TL_4a037f.29
+applicationSuite:
+  identifier: TL_4a037f.29
+  name: grep
+  softwareVersion:
+    versionName: 3.x
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - regexp
   - file

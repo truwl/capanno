@@ -1,21 +1,13 @@
-applicationSuite:
-  identifier: TL_db5570.8b
-  name: tar
-  softwareVersion: 1.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: test-label
-version: 0.1.0
 identifier: TL_db5570_1d.8b
-description: >-
-  --test-label
-
-  Test the archive volume label and exit.
-  When used without arguments, it prints the volume label (if any) and exits with status 0.
-  When one or more command line arguments are given.  tar compares the volume label with each argument.
-  It exits with code 0 if a match is found, and with code 1 otherwise.
-  No output is displayed, unless used together with the -v (--verbose) option.
-
-  There is no short option equivalent for this option.
-
+description: "--test-label\nTest the archive volume label and exit. When used without\
+  \ arguments, it prints the volume label (if any) and exits with status 0. When one\
+  \ or more command line arguments are given.  tar compares the volume label with\
+  \ each argument. It exits with code 0 if a match is found, and with code 1 otherwise.\
+  \ No output is displayed, unless used together with the -v (--verbose) option.\n\
+  There is no short option equivalent for this option."
 keywords:
   - name:
     category:

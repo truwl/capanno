@@ -1,14 +1,8 @@
-applicationSuite:
-  name: shuf
-  identifier: TL_8b1156.1d
-  softwareVersion: 8.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: echo
-version: 0.1.0
 identifier: TL_8b1156_e1.1d
-description: >-
-  -e, --echo
-         treat each ARG as an input line
-
+description: "-e, --echo\n       treat each ARG as an input line"
 keywords:
   - name:
     category:

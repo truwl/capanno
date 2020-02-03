@@ -1,15 +1,9 @@
-applicationSuite:
-  name: sed
-  softwareVersion: 4.x
-  identifier: TL_177544.aa
+metadataStatus: Released
+cwlStatus: Incomplete
 name: file
-version: 0.1.0
 identifier: TL_177544_8c.aa
-description: >-
-  -f script-file, --file=script-file
-
-      add the contents of script-file to the commands to be executed
-
+description: "-f script-file, --file=script-file\n\n    add the contents of script-file\
+  \ to the commands to be executed"
 keywords:
   - name:
     category:

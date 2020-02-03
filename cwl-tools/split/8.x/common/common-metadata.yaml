@@ -1,16 +1,15 @@
-name: split
-softwareVersion: 8.x
-version: 0.1.0
-identifier: TL_eefec3.1d
+applicationSuite:
+  identifier: TL_eefec3.1d
+  name: split
+  softwareVersion:
+    versionName: 8.x
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - __main__
-description: >-
-  split - split a file into pieces
-
-  Output pieces of FILE to PREFIXaa, PREFIXab, ...; default size is 1000 lines, and default PREFIX is 'x'.
-
-  With no FILE, or when FILE is -, read standard input.
-
+description: "split - split a file into pieces\nOutput pieces of FILE to PREFIXaa,\
+  \ PREFIXab, ...; default size is 1000 lines, and default PREFIX is 'x'.\nWith no\
+  \ FILE, or when FILE is -, read standard input."
 codeRepository:
   URL:
   name:

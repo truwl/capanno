@@ -1,9 +1,6 @@
-applicationSuite:
-  name: shuf
-  identifier: TL_8b1156.1d
-  softwareVersion: 8.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: __main__
-version: 0.1.0
 identifier: TL_8b1156_54.1d
 description:
 keywords:

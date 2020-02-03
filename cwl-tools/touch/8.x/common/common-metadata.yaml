@@ -1,7 +1,10 @@
-name: touch
-softwareVersion: 8.x
-version: 0.1.0
-identifier: TL_b96ba5.1d
+applicationSuite:
+  identifier: TL_b96ba5.1d
+  name: touch
+  softwareVersion:
+    versionName: 8.x
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - __main__
 description: touch - change file timestamps
@@ -10,7 +13,7 @@ codeRepository:
   URL:
 license: GPL-3.0-or-later
 WebSite:
-  - name: "touch: Change file timestamps"
+  - name: 'touch: Change file timestamps'
     URL: https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html#touch-invocation
     description: documentation
 contactPoint:

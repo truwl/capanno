@@ -1,19 +1,20 @@
-name: sed
-softwareVersion: 4.x
-version: 0.1.0
-identifier: TL_177544.aa
+applicationSuite:
+  identifier: TL_177544.aa
+  name: sed
+  softwareVersion:
+    versionName: 4.x
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - expression
   - file
   - __main__
-description: >-
-  sed - stream editor for filtering and transforming text
-
-  Sed  is a stream editor.
-  A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline).
-  While in some ways similar to an editor which permits scripted edits (such as ed), sed works by making only one pass over the input(s), and is consequently more efficient.
-  But it is sed's ability to filter text in a pipeline which particularly distinguishes it from other types of editors.
-
+description: "sed - stream editor for filtering and transforming text\nSed  is a stream\
+  \ editor. A stream editor is used to perform basic text transformations on an input\
+  \ stream (a file or input from a pipeline). While in some ways similar to an editor\
+  \ which permits scripted edits (such as ed), sed works by making only one pass over\
+  \ the input(s), and is consequently more efficient. But it is sed's ability to filter\
+  \ text in a pipeline which particularly distinguishes it from other types of editors."
 codeRepository:
   URL:
   name:

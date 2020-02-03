@@ -1,17 +1,17 @@
-name: cut
-softwareVersion: 8.x
-version: 0.1.0
-identifier: TL_fe47aa.1d
+applicationSuite:
+  identifier: TL_fe47aa.1d
+  name: cut
+  softwareVersion:
+    versionName: 8.x
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - bytes
   - characters
   - fields
-description: >-
-  cut - remove sections from each line of files
-
-  Print selected parts of lines from each FILE to standard output.
-
-  With no FILE, or when FILE is -, read standard input.
+description: "cut - remove sections from each line of files\nPrint selected parts\
+  \ of lines from each FILE to standard output.\nWith no FILE, or when FILE is -,\
+  \ read standard input."
 codeRepository:
   name:
   URL:

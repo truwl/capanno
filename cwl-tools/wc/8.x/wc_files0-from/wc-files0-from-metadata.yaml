@@ -1,13 +1,9 @@
-applicationSuite:
-  softwareVersion: 8.x
-  name: wc
-  identifier: TL_8399d8.1d
+metadataStatus: Released
+cwlStatus: Incomplete
 name: files0-from
-version: 0.1.0
 identifier: TL_8399d8_e1.1d
-description: >-
-  --files0-from=F
-      read input from the files specified by NUL-terminated names in file F; If F is - then read names from standard input
+description: "--files0-from=F\n    read input from the files specified by NUL-terminated\
+  \ names in file F; If F is - then read names from standard input"
 keywords:
   - name:
     category:

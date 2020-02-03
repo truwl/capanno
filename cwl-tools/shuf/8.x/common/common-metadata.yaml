@@ -1,25 +1,23 @@
-name: shuf
-softwareVersion: 8.x
-version: 0.1.0
-identifier: TL_8b1156.1d
+applicationSuite:
+  identifier: TL_8b1156.1d
+  name: shuf
+  softwareVersion:
+    versionName: 8.x
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - echo
   - input-range
   - __main__
-description: >-
-  shuf - generate random permutations
-
-  Write a random permutation of the input lines to standard output.
-
-  With no FILE, or when FILE is -, read standard input.
-
-  Mandatory arguments to long options are mandatory for short options too.
+description: "shuf - generate random permutations\nWrite a random permutation of the\
+  \ input lines to standard output.\nWith no FILE, or when FILE is -, read standard\
+  \ input.\nMandatory arguments to long options are mandatory for short options too."
 codeRepository:
   name:
   URL:
 license: GPL-3.0-or-later
 WebSite:
-  - name: "shuf: Shuffling text"
+  - name: 'shuf: Shuffling text'
     description:
     URL: https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.html
 contactPoint:

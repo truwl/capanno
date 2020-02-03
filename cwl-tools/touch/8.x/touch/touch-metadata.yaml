@@ -1,9 +1,6 @@
-applicationSuite:
-  name: touch
-  softwareVersion: 8.x
-  identifier: TL_b96ba5.1d
+metadataStatus: Released
+cwlStatus: Incomplete
 name: __main__
-version: 0.1.0
 identifier: TL_b96ba5_54.1d
 description:
 keywords:

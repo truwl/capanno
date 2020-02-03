@@ -1,14 +1,9 @@
-applicationSuite:
-  identifier: TL_fe47aa.1d
-  name: cut
-  softwareVersion: 8.x
+metadataStatus: Released
+cwlStatus: Incomplete
 name: fields
-version: 0.1.0
 identifier: TL_fe47aa_d0.1d
-description: >-
-  -f, --fields=LIST
-         select only these fields;  also print any line that contains no delimiter character, unless the -s option is specified
-
+description: "-f, --fields=LIST\n       select only these fields;  also print any\
+  \ line that contains no delimiter character, unless the -s option is specified"
 keywords:
   - name:
     category:

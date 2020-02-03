@@ -1,16 +1,17 @@
-name: wc
-softwareVersion: 8.x
-version: 0.1.0
-identifier: TL_8399d8.1d
+applicationSuite:
+  identifier: TL_8399d8.1d
+  name: wc
+  softwareVersion:
+    versionName: 8.x
+    includedVersions: []
+metadataStatus: Released
 featureList:
   - files0-from
   - __main__
-description: >-
-  wc - print newline, word, and byte counts for each file
-
-  Print newline, word, and byte counts for each FILE, and a total line if more than one FILE is specified.  A word is a non-zero-length sequence of characters delimited by white space.
-
-  With no FILE, or when FILE is -, read standard input.
+description: "wc - print newline, word, and byte counts for each file\nPrint newline,\
+  \ word, and byte counts for each FILE, and a total line if more than one FILE is\
+  \ specified.  A word is a non-zero-length sequence of characters delimited by white\
+  \ space.\nWith no FILE, or when FILE is -, read standard input."
 codeRepository:
   URL:
   name:
@@ -18,7 +19,7 @@ license: GPL-3.0-or-later
 WebSite:
   - URL: https://www.gnu.org/software/coreutils/manual/html_node/wc-invocation.html#wc-invocation
     description:
-    name: "wc: Print newline, word, and byte counts"
+    name: 'wc: Print newline, word, and byte counts'
 contactPoint:
   - identifier:
     name:
