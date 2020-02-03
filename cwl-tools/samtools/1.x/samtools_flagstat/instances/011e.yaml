@@ -1,4 +1,0 @@
-inFile:
-  class: File
-  path: ../FileInputs/Generated/bamsortOut/_star_out_anno.bam
-outputFileName: _anno_flagstat.txt
