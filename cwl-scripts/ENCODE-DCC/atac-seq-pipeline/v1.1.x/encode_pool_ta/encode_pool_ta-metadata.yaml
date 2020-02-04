@@ -1,7 +1,12 @@
 name: encode_pool_ta.py
 description: ENCODE DCC TAGALIGN pooler.
 identifier: ST_78d274.f7
-version: 1.0
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
 
 tools:
   - name: gzip

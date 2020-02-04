@@ -1,42 +1,47 @@
 name: encode_macs2_atac.py
 description: ENCODE DCC MACS2 callpeak
 identifier: ST_da7194.f7
-version: 1.0
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
 
 tools:
   - name: bedtools slop
-    softwareVersion:
+    version:
 
   - name: awk
-    softwareVersion:
+    version:
 
   - name: grep
-    softwareVersion:
+    version:
 
   - name: sort
-    softwareVersion:
+    version:
 
   - name: head
-    softwareVersion:
+    version:
 
   - name: macs2
-    softwareVersion:
+    version:
 
   - name: bedGraphToBigWig
-    softwareVersion:
+    version:
 
 parentScripts:
   - name: encode_common.py
-    softwareVersion: v1.1.5
+    version: 1.1.5
 
   - name: encode_common_genomic.py
-    softwareVersion: v1.1.5
+    version: 1.1.5
 
   - name: encode_blacklist_filter.py
-    softwareVersion: v1.1.5
+    version: 1.1.5
 
   - name: encode_frip.py
-    softwareVersion: v1.1.5
+    version: 1.1.5
 
 parentMetadata:  # additional metadata from most specific to least.
   - ../common/encode_atac_script-metadata.yaml

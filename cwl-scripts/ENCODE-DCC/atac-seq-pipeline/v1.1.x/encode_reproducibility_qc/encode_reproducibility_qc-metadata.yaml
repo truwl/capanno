@@ -1,15 +1,19 @@
 name: encode_reproducibility_qc.py
 description: ENCODE DCC reproducibility QC. IDR peak or overlap peak only.
 identifier: ST_ae51d1.f7
-version: 1.0
-
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
 
 parentScripts:
   - name: encode_common.py
-    softwareVersion: v1.1.5
+    version: 1.1.5
 
   - name: encode_common_genomic.py
-    softwareVersion: v1.1.5
+    version: 1.1.5
 
 parentMetadata:
   - ../common/encode_atac_script-metadata.yaml

@@ -1,45 +1,50 @@
 name: encode_filter.py
 description: ENCODE DCC filter
 identifier: ST_5f34e1.f7
-version: 1.0
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
 
 tools:
   - name: awk
-    softwareVersion:
+    version:
 
   - name: grep
-    softwareVersion:
+    version:
 
   - name: Picard MarkDuplicates
-    softwareVersion:
+    version:
 
   - name: sambamba sort
-    softwareVersion:
+    version:
 
   - name: sambamba index
-    softwareVersion:
+    version:
 
   - name: sambamba flagstat
-    softwareVersion:
+    version:
 
   - name: samtools sort
-    softwareVersion:
+    version:
 
   - name: samtools view
-    softwareVersion:
+    version:
 
   - name: samtools fixmate
-    softwareVersion:
+    version:
 
   - name: sambamba markdup
-    softwareVersion:
+    version:
 
   - name: bedtools bamtobed
-    softwareVersion:
+    version:
 
 parentScripts:
   - name: assign_multimappers.py
-    softwareVersion:
+    version:
 
 parentMetadata:  # additional metadata from most specific to least.
   - ../common/encode_atac_script-metadata.yaml
