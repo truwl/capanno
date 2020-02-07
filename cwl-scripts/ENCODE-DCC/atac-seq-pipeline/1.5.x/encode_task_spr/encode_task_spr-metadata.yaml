@@ -1,0 +1,43 @@
+name: encode_task_spr
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_f87f0b.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC pseudo replicator wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.4
+    identifier:
+tools:
+  - name: zcat
+    version: 1.6
+    identifier:
+  - name: shuf
+    version: 8.28
+    identifier:
+  - name: wc
+    version: 8.28
+    identifier:
+  - name: split
+    version: 8.28
+    identifier:
+  - name: gzip
+    version: 1.6
+    identifier:
+  - name: mawk
+    version: 1.3.3
+    identifier:
+alternateName:
+creator:
+  - identifier:
+    name:
+    email:
+programmingLanguage:
+datePublished:
+parentMetadata:

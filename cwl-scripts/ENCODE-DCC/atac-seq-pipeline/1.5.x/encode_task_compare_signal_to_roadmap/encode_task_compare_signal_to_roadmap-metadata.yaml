@@ -1,0 +1,27 @@
+name: encode_task_compare_signal_to_roadmap
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_b6dd8c.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC compare signal to roadmap wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.4
+    identifier:
+tools:
+alternateName:
+creator:
+  - name: Daniel Kim
+    identifier:
+    email:
+  - name: Jin Lee
+    identifier:
+    email: leepc12@gmail.com
+datePublished:
+parentMetadata:

@@ -3,8 +3,13 @@ identifier: WF_ba9852.6e
 description: |
   This demonstrates how to wrap a "real" tool with a checker workflow that runs both the tool and a tool that performs verification of results
 
-softwareVersion: master__42b7f70
-version: 1.0
+softwareVersion:
+  versionName: master
+  includedVersions:
+    -
+cwlStatus: Released
+metadataStatus: Released
+
 keywords:
 
 codeRepository:

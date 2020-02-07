@@ -1,0 +1,34 @@
+name: encode_task_post_call_peak_atac
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_1d7847.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description:
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    version: 1.5.4
+    identifier:
+  - name: encode_lib_blacklist_filter
+    version: 1.5.4
+    identifier:
+  - name: encode_lib_frip
+    version: 1.5.4
+    identifier:
+tools:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+parentMetadata:

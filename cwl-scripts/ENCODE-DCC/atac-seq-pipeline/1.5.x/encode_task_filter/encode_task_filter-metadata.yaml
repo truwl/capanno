@@ -1,0 +1,51 @@
+name: encode_task_filter
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_409222.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC filter wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.4
+    identifier:
+  - name: encode_lib_genomic
+    version: 1.5.4
+    identifier:
+tools:
+  - name: samtools view
+    version: 1.9
+    identifier:
+  - name: samtools sort
+    version: 1.9
+    identifier:
+  - name: samtools fixmate
+    version: 1.9
+    identifier:
+  - name: picard MarkDuplicates
+    version: 2.20.7-SNAPSHOT
+    identifier:
+  - name: sambamba markdup
+    version: 0.6.6
+    identifier:
+  - name: bedtools bamtobed
+    version: 2.29.0
+    identifier:
+  - name: mawk
+    version: 1.3.3
+    identifier:
+  - name: grep
+    version: 3.1
+    identifier:
+alternateName:
+creator:
+  - email:
+    identifier:
+    name:
+datePublished:
+parentMetadata:

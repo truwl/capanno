@@ -1,0 +1,34 @@
+name: encode_lib_common
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_78bcca.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC common functions
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+  - name: tar
+    version: 1.29
+    identifier:
+  - name: zcat
+    version: 1.6
+    identifier:
+  - name: touch
+    version: 1.29
+    identifier:
+  - name: gs
+    version: 9.26
+    identifier:
+alternateName:
+creator:
+  - email:
+    identifier:
+    name:
+callable: false
+datePublished:
+parentMetadata:
