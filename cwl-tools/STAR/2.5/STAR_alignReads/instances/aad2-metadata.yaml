@@ -2,7 +2,7 @@ toolName: STAR alignReads
 toolVersion: 2.5
 toolIdentifier: TL_8ab263_a4.82
 identifier: TL_8ab263_a4.82.aad2
-version: 1.0
+jobStatus: Released
 description: Runs a STAR mapping job. Creates alignments to the genome and transcriptome with associated log files.
 inputObjects:
   - id: genomeDir

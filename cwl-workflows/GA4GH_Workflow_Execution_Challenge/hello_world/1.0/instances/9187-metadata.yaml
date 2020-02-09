@@ -2,7 +2,7 @@ workflowName: hello world script with checker
 workflowVersion: 1
 workflowIdentifier: WF_0b650e.e4
 name:
-cwlStatus: Released
+jobStatus: Released
 softwareVersion:
   versionName: 1.0
   includedVersions:

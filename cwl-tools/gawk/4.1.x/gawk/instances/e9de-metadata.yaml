@@ -3,7 +3,7 @@ toolVersion: 4.1
 toolIdentifier: TL_9579db_54.89
 identifier: TL_9579db_54.89.e9de
 name:
-version: 1.0
+jobStatus: Released
 description: Takes a headerless sam file and puts consecutive lines on single line. Pairs adjacent reads.
 inputObjects:
   - id: inputFiles

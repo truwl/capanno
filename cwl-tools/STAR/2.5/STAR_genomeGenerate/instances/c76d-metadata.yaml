@@ -2,7 +2,7 @@ toolName: STAR genomeGenerate
 toolVersion: 2.5
 toolIdentifier: TL_8ab263_95.82
 identifier: TL_8ab263_95.82.c76d
-version: 1.0
+jobStatus: Released
 description: Runs genome indices generation job. Generates 15 files.
 inputObjects:
   - id: genomeFastaFiles

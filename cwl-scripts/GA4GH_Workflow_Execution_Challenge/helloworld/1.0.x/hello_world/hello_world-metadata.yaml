@@ -10,7 +10,7 @@ codeRepository:
 
 tools:
   - name: set
-    version: 2
+    version:
 
   - name: cat
     version:
