@@ -10,13 +10,13 @@ cwlStatus: Released
 
 tools:
   - name: echo
-    version:
+    version: 8.25
 
   - name: sed
-    version:
+    version: 4.2.2
 
   - name: Rscript # run_spp.R
-    version:
+    version: 3.2.3
 
 parentScripts:
   - name: encode_common_genomic.py
