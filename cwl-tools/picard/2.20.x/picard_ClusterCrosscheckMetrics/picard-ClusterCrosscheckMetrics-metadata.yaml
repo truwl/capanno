@@ -1,0 +1,11 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: ClusterCrosscheckMetrics
+identifier: TL_e24fa5_7e.c8
+description: Clusters the results from a CrosscheckFingerprints into groups that are
+  connected according to a large enough LOD score.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

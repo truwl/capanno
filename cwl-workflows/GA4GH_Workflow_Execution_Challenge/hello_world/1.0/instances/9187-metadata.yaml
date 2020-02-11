@@ -2,8 +2,11 @@ workflowName: hello world script with checker
 workflowVersion: 1
 workflowIdentifier: WF_0b650e.e4
 name:
-version: 1.0
-softwareVersion: 1.0
+jobStatus: Released
+softwareVersion:
+  versionName: 1.0
+  includedVersions:
+    - 1.0
 identifier: WF_0b650e.e4.9187
 inputObjects:
   - id: template_file

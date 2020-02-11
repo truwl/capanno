@@ -1,0 +1,39 @@
+identifier: TL_cbb11e.47
+name: echo
+softwareVersion:
+  versionName: 8.x
+  includedVersions:
+    - 8.25
+    - 8.26
+    - 8.27
+    - 8.28
+metadataStatus: Released
+featureList:
+  - __main__
+description: echo - display a line of text
+codeRepository:
+  name: GitHub
+  URL: https://github.com/coreutils/coreutils
+license: GPL-3.0-only
+WebSite:
+  - name: GNU coreutils
+    URL: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html
+    description:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication: []
+keywords:
+  - name: GNU
+    category: topic
+alternateName: []
+creator:
+  - name: Brian Fox
+    email:
+    identifier:
+  - name: Chet Ramey
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:

@@ -1,0 +1,25 @@
+name: encode_qc_report.py
+description: ENCODE DCC generate HTML report and QC JSON.
+identifier: ST_3b3a64.f7
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
+parentScripts:
+  - name: encode_common.py
+    version: 1.1.5
+
+  - name: encode_common_log_parser.py
+    version: 1.1.5
+
+  - name: encode_common_html.py
+    version: 1.1.5
+
+tools:
+  - name: echo
+    version:
+
+parentMetadata:
+  - ../common/encode_atac_script-metadata.yaml

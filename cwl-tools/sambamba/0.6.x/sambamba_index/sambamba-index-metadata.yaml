@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: index
+identifier: TL_bf790f_6a.e9
+description: "sambamba index builds an index for a sorted by coordinate BAM file.\
+  \ This step is required for effective region querying in most tools for working\
+  \ with BAM data.\nAn index is by default written to the file with the same filename\
+  \ except .bai extension added to the end. The user can, however, override this default\
+  \ by providing desired output filename explicitly as an optional command-line argument."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

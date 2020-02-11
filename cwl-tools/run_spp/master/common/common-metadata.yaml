@@ -1,0 +1,37 @@
+identifier: TL_365fb0.e0
+name: run_spp
+softwareVersion:
+  versionName: master
+  includedVersions: []
+metadataStatus: Released
+featureList:
+  - __main__
+description: 'Usage: Rscript run_spp.R <options>'
+codeRepository:
+  URL: https://github.com/crazyhottommy/phantompeakqualtools/blob/master/run_spp.R
+  name: GitHub
+license:
+WebSite:
+  - URL:
+    name:
+    description:
+contactPoint:
+  - identifier:
+    email:
+    name:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - identifier:
+    email:
+    name:
+programmingLanguage:
+  - R
+datePublished:
+downloadURL:
+extra:

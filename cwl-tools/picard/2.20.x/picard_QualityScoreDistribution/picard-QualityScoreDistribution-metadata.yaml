@@ -1,0 +1,19 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: QualityScoreDistribution
+identifier: TL_e24fa5_da.c8
+description: "Chart the distribution of quality scores.\nThis tool is used for determining\
+  \ the overall 'quality' for a library in a given run. To that effect, it outputs\
+  \ a chart and tables indicating the range of quality scores and the total numbers\
+  \ of bases corresponding to those scores. Options include plotting the distribution\
+  \ of all of the reads, only the aligned reads, or reads that have passed the Illumina\
+  \ Chastity filter thresholds as described here.\nNote on base quality score options\n\
+  If the quality score of read bases has been modified in a previous data processing\
+  \ step such as GATK Base Recalibration and an OQ tag is available, this tool can\
+  \ be set to plot the OQ value as well as the primary quality value for the evaluation.\
+  \ Note: Metrics labeled as percentages are actually expressed as fractions!"
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

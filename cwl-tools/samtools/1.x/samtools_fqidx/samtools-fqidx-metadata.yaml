@@ -1,0 +1,18 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: fqidx
+identifier: TL_ec2a8d_a3.0b
+description: "samtools fqidx <ref.fastq> [region1 [...]]\nIndex reference sequence\
+  \ in the FASTQ format or extract subsequence from indexed reference sequence. If\
+  \ no region is specified, fqidx will index the file and create <ref.fastq>.fai on\
+  \ the disk. If regions are specified, the subsequences will be retrieved and printed\
+  \ to stdout in the FASTQ format.\nThe input file can be compressed in the BGZF format.\n\
+  samtools fqidx should only be used on fastq files with a small number of entries.\
+  \ Trying to use it on a file containing millions of short sequencing reads will\
+  \ produce an index that is almost as big as the original file, and searches using\
+  \ the index will be very slow and use a lot of memory."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

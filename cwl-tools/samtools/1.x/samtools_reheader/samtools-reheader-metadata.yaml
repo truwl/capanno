@@ -1,0 +1,16 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: reheader
+identifier: TL_ec2a8d_71.0b
+description: "samtools reheader [-iP] in.header.sam in.bam\nReplace the header in\
+  \ in.bam with the header in in.header.sam. This command is much faster than replacing\
+  \ the header with a BAM→SAM→BAM conversion.\nBy default this command outputs the\
+  \ BAM or CRAM file to standard output (stdout), but for CRAM format files it has\
+  \ the option to perform an in-place edit, both reading and writing to the same file.\
+  \ No validity checking is performed on the header, nor that it is suitable to use\
+  \ with the sequence data itself."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

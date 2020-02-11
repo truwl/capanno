@@ -1,0 +1,15 @@
+
+workflowName:
+workflowVersion:
+workflowIdentifier: WF_680a59.6e
+name:
+jobStatus: Released
+softwareVersion: 1.0.0
+identifier: WF_680a59.6e.ea1d
+description: Runs md5sum on a simple test file outputs the md5sum to a tex
+inputObjects:
+  - id: input_file
+    identifier: FL_7ea4fce9.1
+outputObjects:
+  - id: output_file
+    identifier: FL_92e71669.1

@@ -2,7 +2,7 @@ toolName: trimmomatic SE
 toolVersion: 0.38
 toolIdentifier: TL_a2e03a_53.af
 identifier: TL_a2e03a_53.af.703e
-version: 0.1
+jobStatus: Incomplete
 description: trimmomatic with test input data. Parameters taken from ENCODE Demo-pipeline.
 inputObjects:
   - id: reads1

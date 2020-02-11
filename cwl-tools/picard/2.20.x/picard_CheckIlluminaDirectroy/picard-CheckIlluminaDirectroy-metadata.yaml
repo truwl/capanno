@@ -1,0 +1,17 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: CheckIlluminaDirectroy
+identifier: TL_e24fa5_15.c8
+description: "Asserts the validity for specified Illumina basecalling data.\nThis\
+  \ tool will check that the basecall directory and the internal files are available,\
+  \ exist, and are reasonably sized for every tile and cycle. Reasonably sized means\
+  \ non-zero sized for files that exist per tile and equal size for binary files that\
+  \ exist per cycle or per tile. If DATA_TYPES {Position, BaseCalls, QualityScores,\
+  \ PF, or Barcodes} are not specified, then the default data types used by IlluminaBasecallsToSam\
+  \ are used. CheckIlluminaDirectory DOES NOT check that the individual records in\
+  \ a file are well-formed."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

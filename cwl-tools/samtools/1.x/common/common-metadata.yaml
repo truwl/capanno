@@ -1,0 +1,110 @@
+identifier: TL_ec2a8d.0b
+name: samtools
+softwareVersion:
+  versionName: 1.x
+  includedVersions:
+    - 1.3
+    - 1.3.1
+    - 1.4
+    - 1.4.1
+    - 1.5
+    - 1.6
+    - 1.7
+    - 1.8
+    - 1.9
+metadataStatus: Released
+featureList:
+  - view
+  - sort
+  - index
+  - idxstats
+  - flagstat
+  - stats
+  - bedcov
+  - depth
+  - merge
+  - cat
+  - faidx
+  - fqidx
+  - tview
+  - split
+  - quickcheck
+  - dict
+  - fixmate
+  - mpileup
+  - rmdup
+  - targetcut
+  - phase
+  - calmd
+  - flags
+  - fastq
+  - fasta
+  - addreplacerg
+  - collate
+  - reheader
+  - depad
+  - markdup
+description: A software package with various utilities for processing alignments in
+  the SAM format, including variant calling and alignment viewing.
+codeRepository:
+  name: GitHub
+  URL: https://github.com/samtools/samtools
+license: MIT
+WebSite:
+  - description: homepage
+    name:
+    URL: http://www.htslib.org/
+  - description: Mailing list
+    name:
+    URL: http://www.htslib.org/support/#lists
+  - description: Issue tracker
+    name:
+    URL: https://github.com/samtools/samtools/issues
+  - description: documentation
+    name:
+    URL: http://www.htslib.org/doc/#howtos
+  - description: documentation
+    name:
+    URL: http://www.htslib.org/doc/#manual-pages
+  - description: documentation
+    name:
+    URL: http://www.htslib.org/download/
+contactPoint:
+  - name: Richard Durbin
+    identifier:
+    email: rd@sanger.ac.uk
+publication:
+  - headline:
+    identifier: 10.1093/bioinformatics/btp352
+keywords:
+  - http://edamontology.org/topic_0102
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_0227
+  - http://edamontology.org/operation_3096
+  - http://edamontology.org/operation_1812
+  - http://edamontology.org/operation_0337
+  - http://edamontology.org/operation_0335
+alternateName:
+creator:
+  - name: Heng Li
+    email:
+    identifier:
+  - name: Bob Handsaker
+    email:
+    identifier:
+  - name: Jue Ruan
+    email:
+    identifier:
+  - name: Colin Hercus
+    email:
+    identifier:
+  - name: Petr Danecek
+    email:
+    identifier:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: samtools

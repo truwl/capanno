@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: CreateSequenceDictionary
+identifier: TL_e24fa5_4c.c8
+description: "Creates a sequence dictionary for a reference sequence. This tool creates\
+  \ a sequence dictionary file (with \".dict\" extension) from a reference sequence\
+  \ provided in FASTA format, which is required by many processing and analysis tools.\
+  \ The output file contains a header but no SAMRecords, and the header contains only\
+  \ sequence records.\nThe reference sequence can be gzipped (both .fasta and .fasta.gz\
+  \ are supported)."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

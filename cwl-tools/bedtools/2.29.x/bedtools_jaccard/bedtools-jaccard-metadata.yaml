@@ -1,0 +1,20 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: jaccard
+identifier: TL_43392c_21.c8
+description: 'Whereas the bedtools intersect tool enumerates each an every intersection
+  between two sets of genomic intervals, one often needs a single statistic reflecting
+  the similarity of the two sets based on the intersections between them. The Jaccard
+  statistic is used in set theory to represent the ratio of the intersection of two
+  sets to the union of the two sets. Similarly, Favorov et al [1] reported the use
+  of the Jaccard statistic for genome intervals: specifically, it measures the ratio
+  of the number of intersecting base pairs between two sets to the number of base
+  pairs in the union of the two sets. The bedtools jaccard tool implements this statistic,
+  yet modifies the statistic such that the length of the intersection is subtracted
+  from the length of the union. As a result, the final statistic ranges from 0.0 to
+  1.0, where 0.0 represents no overlap and 1.0 represent complete overlap.'
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

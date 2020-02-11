@@ -1,0 +1,10 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: VcfToIntervalList
+identifier: TL_e24fa5_31.c8
+description: Converts a VCF or BCF file to a Picard Interval List.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,12 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: diff
+identifier: TL_db5570_2d.8b
+description: "-d, --diff, --compare\nFind differences between archive and file system.\
+  \ The arguments are optional and specify archive members to compare. If not given,\
+  \ the current working directory is assumed."
+keywords:
+  - name:
+    category:
+alternateName: tar compare
+parentMetadata: ../common/common-metadata.yaml

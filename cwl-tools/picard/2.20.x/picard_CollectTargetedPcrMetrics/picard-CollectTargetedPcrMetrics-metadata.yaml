@@ -1,0 +1,20 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: CollectTargetedPcrMetrics
+identifier: TL_e24fa5_6a.c8
+description: "Calculate PCR-related metrics from targeted sequencing data.\nThis tool\
+  \ calculates a set of PCR-related metrics from an aligned SAM or BAM file containing\
+  \ targeted sequencing data. It is appropriate for data produced with multiple small-target\
+  \ technologies including exome sequencing an custom amplicon panels such as the\
+  \ Illumina TruSeq Custom Amplicon (TSCA) kit.\nIf a reference sequence is provided,\
+  \ AT/GC dropout metrics will be calculated and the PER_TARGET_COVERAGE option can\
+  \ be used to output GC content and mean coverage information for each target. The\
+  \ AT/GC dropout metrics indicate the degree of inadequate coverage of a particular\
+  \ region based on its AT or GC content. The PER_TARGET_COVERAGE option can be used\
+  \ to output GC content and mean sequence depth information for every target interval.\n\
+  Note: Metrics labeled as percentages are actually expressed as fractions!"
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

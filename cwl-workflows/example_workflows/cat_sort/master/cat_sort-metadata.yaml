@@ -1,0 +1,18 @@
+name: cat sort
+description: A toy workflow used for testing. Concatenates two text files and sorts the combined file.
+softwareVersion:
+  versionName: master
+  includedVersions:
+    - master__42b7f70
+metadataStatus: Released
+cwlStatus: Released
+identifier: WF_1f4d8f.cb
+keywords:
+  - name: GNU
+    category: topic
+
+callMap:
+  - id: cat
+    identifier: TL_d077f2_54.47
+  - id: sort
+    identifier:  TL_cadc8c_54.47

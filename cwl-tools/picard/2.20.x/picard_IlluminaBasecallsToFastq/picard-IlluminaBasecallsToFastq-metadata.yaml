@@ -1,0 +1,25 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: IlluminaBasecallsToFastq
+identifier: TL_e24fa5_8e.c8
+description: "Generate FASTQ file(s) from Illumina basecall read data.\nThis tool\
+  \ generates FASTQ files from data in an Illumina BaseCalls output directory. Separate\
+  \ FASTQ files are created for each template, barcode, and index (molecular barcode)\
+  \ read. Briefly, the template reads are the target sequence of your experiment,\
+  \ the barcode sequence reads facilitate sample demultiplexing, and the index reads\
+  \ help mitigate instrument phasing errors. For additional information on the read\
+  \ types, please see the following reference here.\nIn the absence of sample pooling\
+  \ (multiplexing) and/or barcodes, then an OUTPUT_PREFIX (file directory) must be\
+  \ provided as the sample identifier. For multiplexed samples, a MULTIPLEX_PARAMS\
+  \ file must be specified. The MULTIPLEX_PARAMS file contains the list of sample\
+  \ barcodes used to sort template, barcode, and index reads. It is essentially the\
+  \ same as the BARCODE_FILE used in theExtractIlluminaBarcodes tool.\nFiles from\
+  \ this tool use the following naming format: {prefix}.{type}_{number}.fastq with\
+  \ the {prefix} indicating the sample barcode, the {type} indicating the types of\
+  \ reads e.g. index, barcode, or blank (if it contains a template read). The {number}\
+  \ indicates the read number, either first (1) or second (2) for paired-end sequencing."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

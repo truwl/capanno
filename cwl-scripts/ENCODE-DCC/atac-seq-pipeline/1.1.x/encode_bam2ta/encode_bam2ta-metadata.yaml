@@ -1,0 +1,32 @@
+name: encode_bam2ta.py
+identifier: ST_49b9f4.f7
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
+parentScripts:
+  - name: encode_common_genomic.py
+    version: 1.1.5
+    identifier:
+
+tools:
+  - name: bedtools bamtotbed
+    version:
+    identifier:
+
+  - name: awk
+    version:
+    identifier:
+
+  - name: grep
+    version:
+    identifier:
+
+  - name: gzip
+    version:
+    identifier:
+
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/encode_atac_script-metadata.yaml

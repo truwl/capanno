@@ -1,0 +1,18 @@
+name: index
+metadataStatus: Released
+cwlStatus: Incomplete
+identifier: TL_ec2a8d_6a.0b
+description: >-
+  samtools index [-bc] [-m INT] aln.bam|aln.cram [out.index]
+
+  Index a coordinate-sorted BAM or CRAM file for fast random access. (Note that this does not work with SAM files even if they are bgzip compressed — to index such files, use tabix(1) instead.)
+
+  This index is needed when region arguments are used to limit samtools view and similar commands to particular regions of interest.
+
+  If an output filename is given, the index file will be written to out.index.
+  Otherwise, for a CRAM file aln.cram, index file aln.cram.crai will be created; for a BAM file aln.bam, either aln.bam.bai or aln.bam.csi will be created, depending on the index format selected.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

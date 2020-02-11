@@ -1,0 +1,47 @@
+identifier: TL_fe47aa.1d
+name: cut
+softwareVersion:
+  versionName: 8.x
+  includedVersions: []
+metadataStatus: Released
+featureList:
+  - bytes
+  - characters
+  - fields
+description: "cut - remove sections from each line of files\nPrint selected parts\
+  \ of lines from each FILE to standard output.\nWith no FILE, or when FILE is -,\
+  \ read standard input."
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0-or-later
+WebSite:
+  - name:
+    URL: http://www.gnu.org/software/coreutils/cut
+    description: Full documentation
+contactPoint:
+  - identifier:
+    email:
+    name:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - identifier:
+    email:
+    name: David M. Ihnat
+  - identifier:
+    email:
+    name: David MacKenzie
+  - identifier:
+    email:
+    name: Jim Meyering
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

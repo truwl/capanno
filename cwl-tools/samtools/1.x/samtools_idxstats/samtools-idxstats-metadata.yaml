@@ -1,0 +1,17 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: idxstats
+identifier: TL_ec2a8d_d1.0b
+description: "samtools idxstats in.sam|in.bam|in.cram\nRetrieve and print stats in\
+  \ the index file corresponding to the input file. Before calling idxstats, the input\
+  \ BAM file should be indexed by samtools index.\nIf run on a SAM or CRAM file or\
+  \ an unindexed BAM file, this command will still produce the same summary statistics,\
+  \ but does so by reading through the entire file. This is far slower than using\
+  \ the BAM indices.\nThe output is TAB-delimited with each line consisting of reference\
+  \ sequence name, sequence length, # mapped reads and # unmapped reads. It is written\
+  \ to stdout."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

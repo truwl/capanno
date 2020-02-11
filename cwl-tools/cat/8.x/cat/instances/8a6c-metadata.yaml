@@ -1,0 +1,18 @@
+
+toolName: cat
+toolVersion: '8.25'
+toolIdentifier: TL_d077f2_54.47
+identifier: TL_d077f2_54.47.8a6c
+name:
+jobStatus: Released
+description: This step outputs the header of an input bam file.
+inputObjects:
+  - id: inFiles
+    objects:
+      - identifier: FL_68a6c839.1
+        path: samtools-viewOut1.txt
+      - identifier: FL_4e07c5d8.1
+        path: trOutput.txt
+outputObjects:
+  - id: output
+    identifier: FL_25f76df3.1

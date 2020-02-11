@@ -1,0 +1,25 @@
+name: encode_bowtie2.py
+description: ENCODE DCC bowtie2 aligner
+identifier: ST_cff563.f7
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
+tools:
+  - name: bowtie2
+    version:
+
+  - name: samtools view
+    version:
+
+  - name: cat
+    version:
+
+parentScripts:
+  - name: encode_common_genomic.py
+    version: 1.1.5
+
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/encode_atac_script-metadata.yaml

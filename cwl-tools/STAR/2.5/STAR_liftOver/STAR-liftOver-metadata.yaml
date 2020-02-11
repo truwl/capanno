@@ -1,14 +1,8 @@
-# REQUIRED
-
-applicationSuite:
-  name:  STAR
-  softwareVersion: 2.5
-  identifier: TL_8ab263.82
 
 name: liftOver
 identifier: TL_8ab263_15.82
-
-version: 0.1.0
+metadataStatus: Incomplete
+cwlStatus: Incomplete
 
 # RECOMMENDED
 

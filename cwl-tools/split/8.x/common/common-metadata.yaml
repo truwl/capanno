@@ -1,0 +1,42 @@
+identifier: TL_eefec3.1d
+name: split
+softwareVersion:
+  versionName: 8.x
+  includedVersions: []
+metadataStatus: Released
+featureList:
+  - __main__
+description: "split - split a file into pieces\nOutput pieces of FILE to PREFIXaa,\
+  \ PREFIXab, ...; default size is 1000 lines, and default PREFIX is 'x'.\nWith no\
+  \ FILE, or when FILE is -, read standard input."
+codeRepository:
+  URL:
+  name:
+license: GPL-3.0-or-later
+WebSite:
+  - URL: http://www.gnu.org/software/coreutils/split
+    description: Full documentation
+    name:
+contactPoint:
+  - email:
+    identifier:
+    name:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - email:
+    identifier:
+    name: Torbjorn Granlund
+  - email:
+    identifier:
+    name: Richard M. Stallman
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

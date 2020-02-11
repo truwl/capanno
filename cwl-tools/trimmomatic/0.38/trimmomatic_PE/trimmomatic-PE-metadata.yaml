@@ -1,22 +1,8 @@
-# REQUIRED
-
-applicationSuite:
-  name:  trimmomatic
-  softwareVersion: 0.38
-  identifier: TL_a2e03a.af
-
+metadataStatus: Released
+cwlStatus: Incomplete
 name: PE
 identifier: TL_a2e03a_3a.af
-
-version: 0.1
-
-# RECOMMENDED
-
 description: Trimmomatic for paired end reads.
 keywords: []
-
-# OPTIONAL
-
 alternateName: []
-
 parentMetadata: ../common/common-metadata.yaml

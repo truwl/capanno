@@ -1,0 +1,51 @@
+name: encode_task_annot_enrich
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_3045ef.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE annot_enrich (fraction of reads in annotated regions) wrapper
+contactPoint:
+  - name:
+    identifier:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.4
+    identifier:
+tools:
+  - name: bedtools sort
+    version: 2.29.0
+    identifier:
+  - name: bedtools merge
+    version: 2.29.0
+    identifier:
+  - name: bedtools intersect
+    version: 2.29.0
+    identifier:
+  - name: wc
+    version: 8.28
+    identifier:
+
+
+alternateName:
+creator:
+  - name: Daniel Kim
+    identifier:
+    email:
+  - name: Jin Lee
+    identifier:
+    email: leepc12@gmail.com
+
+
+programmingLanguage:
+datePublished:
+parentMetadata:

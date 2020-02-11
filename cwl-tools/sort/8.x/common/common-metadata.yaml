@@ -1,0 +1,39 @@
+identifier: TL_cadc8c.47
+name: sort
+softwareVersion:
+  versionName: 8.x
+  includedVersions:
+    - 8.25
+    - 8.26
+    - 8.27
+    - 8.28
+metadataStatus: Released
+featureList:
+  - __main__
+description: Write sorted concatenation of all FILE(s) to standard output. With no
+  FILE, or when FILE is -, read standard input.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0-or-later
+WebSite:
+  - name: Documentation
+    description:
+    URL: http://www.gnu.org/software/coreutils/
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: GNU
+    category: topic
+alternateName: []
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:

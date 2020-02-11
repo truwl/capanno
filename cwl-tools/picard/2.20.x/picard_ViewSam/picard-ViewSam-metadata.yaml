@@ -1,0 +1,10 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: ViewSam
+identifier: TL_e24fa5_86.c8
+description: Prints a SAM or BAM file to the screen.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

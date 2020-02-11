@@ -1,0 +1,11 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: depth
+identifier: TL_ec2a8d_12.0b
+description: "samtools depth [options] [in1.sam|in1.bam|in1.cram [in2.sam|in2.bam|in2.cram]\
+  \ [...]]\nComputes the read depth at each position or region."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

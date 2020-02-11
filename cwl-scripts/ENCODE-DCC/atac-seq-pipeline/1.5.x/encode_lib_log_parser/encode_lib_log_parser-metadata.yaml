@@ -1,0 +1,22 @@
+name: encode_lib_log_parser
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_937202.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE QC log parser wrapper which converts a log file into a dict
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - identifier:
+    name:
+    email:
+callable: false
+datePublished:
+parentMetadata:
