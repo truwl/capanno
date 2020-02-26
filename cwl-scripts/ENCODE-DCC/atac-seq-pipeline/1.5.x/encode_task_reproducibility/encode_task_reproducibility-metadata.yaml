@@ -24,4 +24,5 @@ creator:
     email:
     identifier:
 datePublished:
-parentMetadata:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

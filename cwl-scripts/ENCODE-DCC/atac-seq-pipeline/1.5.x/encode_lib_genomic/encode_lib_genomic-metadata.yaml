@@ -74,6 +74,7 @@ creator:
   - email:
     name:
     identifier:
-callable: false
+isCallable: false
 datePublished:
-parentMetadata:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

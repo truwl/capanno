@@ -1,5 +1,4 @@
 description: Scripts called by ENCODE atac-seq pipeline
-metadataStatus: Released
 codeRepository:
   name: GitHub
   URL: https://github.com/ENCODE-DCC/atac-seq-pipeline
@@ -9,7 +8,7 @@ WebSite:
     URL: https://www.encodeproject.org/atac-seq/
   - name: ATAC-Seq pipeline v1 specifications
     description: Google document describing specifications
-    url: https://docs.google.com/document/d/1f0Cm4vRyDQDu0bMehHD7P7KOMxTOP-HiNoIvL1VcBt8/edit#heading=h.9ecc41kilcvq
+    URL: https://docs.google.com/document/d/1f0Cm4vRyDQDu0bMehHD7P7KOMxTOP-HiNoIvL1VcBt8/edit#heading=h.9ecc41kilcvq
 license: MIT
 contactPoint:
   - identifier:

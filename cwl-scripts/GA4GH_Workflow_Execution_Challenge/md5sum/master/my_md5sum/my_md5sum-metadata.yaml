@@ -27,7 +27,7 @@ tools:
   - name: md5sum
     version:
 
-  - name: awk
+  - name: gawk
     version:
 
   - name: set
