@@ -2,7 +2,8 @@ identifier: TL_38d2dd.93
 name: idr
 softwareVersion:
   versionName: 2.0.x
-  includedVersions: []
+  includedVersions:
+    - 2.0.3
 metadataStatus: Released
 featureList:
   - __main__

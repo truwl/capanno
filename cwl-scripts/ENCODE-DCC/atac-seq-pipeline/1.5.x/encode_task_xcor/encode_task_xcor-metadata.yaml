@@ -33,7 +33,7 @@ tools:
   - name: head
     version: 8.28
     identifier:
-  - name: Rscript run_spp.R
+  - name: run_spp
     version:  master_2cb0216
     identifier:
 alternateName:

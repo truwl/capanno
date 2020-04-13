@@ -2,7 +2,8 @@ identifier: TL_8537c7.9e
 name: tabix
 softwareVersion:
   versionName: '1.7'
-  includedVersions: []
+  includedVersions:
+    - 1.7-2
 metadataStatus: Released
 featureList:
   - __main__

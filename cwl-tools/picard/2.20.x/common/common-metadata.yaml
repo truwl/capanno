@@ -2,7 +2,8 @@ identifier: TL_e24fa5.c8
 name: picard
 softwareVersion:
   versionName: 2.20.x
-  includedVersions: []
+  includedVersions:
+    - 2.20.7-SNAPSHOT
 metadataStatus: Released
 featureList:
   - AddCommentsToBam

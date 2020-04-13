@@ -2,7 +2,8 @@ identifier: TL_28ea7f.68
 name: cutadapt
 softwareVersion:
   versionName: 2.x
-  includedVersions: []
+  includedVersions:
+    - 2.5
 metadataStatus: Released
 featureList:
   - __main__

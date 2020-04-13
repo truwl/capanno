@@ -2,7 +2,8 @@ identifier: TL_749cad.1d
 name: gzip
 softwareVersion:
   versionName: 1.x
-  includedVersions: []
+  includedVersions:
+    - 1.6
 metadataStatus: Released
 featureList:
   - c

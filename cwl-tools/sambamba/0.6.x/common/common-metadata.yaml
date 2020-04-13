@@ -2,7 +2,8 @@ identifier: TL_bf790f.e9
 name: sambamba
 softwareVersion:
   versionName: 0.6.x
-  includedVersions: []
+  includedVersions:
+    - 0.6.6
 metadataStatus: Released
 featureList:
   - view

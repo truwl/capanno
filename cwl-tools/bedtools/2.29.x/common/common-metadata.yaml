@@ -2,7 +2,8 @@ identifier: TL_43392c.c8
 name: bedtools
 softwareVersion:
   versionName: 2.29.x
-  includedVersions: []
+  includedVersions:
+    - 2.29.0
 metadataStatus: Released
 featureList:
   - annotate

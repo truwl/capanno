@@ -3,6 +3,7 @@ name: sed
 softwareVersion:
   versionName: 4.x
   includedVersions:
+    - 4.2.2
     - 4.4
 metadataStatus: Released
 featureList:

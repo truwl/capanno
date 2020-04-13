@@ -2,7 +2,8 @@ identifier: TL_1d8d5e.d7
 name: gs
 softwareVersion:
   versionName: 9.x
-  includedVersions: []
+  includedVersions:
+    - 9.26
 metadataStatus: Released
 featureList:
   - __main__

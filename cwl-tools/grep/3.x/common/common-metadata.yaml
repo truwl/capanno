@@ -2,7 +2,8 @@ identifier: TL_4a037f.29
 name: grep
 softwareVersion:
   versionName: 3.x
-  includedVersions: []
+  includedVersions:
+    - 3.1
 metadataStatus: Released
 featureList:
   - regexp

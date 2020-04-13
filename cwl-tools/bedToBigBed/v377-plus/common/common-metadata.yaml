@@ -2,7 +2,8 @@ identifier: TL_babf1a.d3
 name: bedToBigBed
 softwareVersion:
   versionName: v377-plus
-  includedVersions: []
+  includedVersions:
+    - v377
 metadataStatus: Released
 featureList:
   - __main__

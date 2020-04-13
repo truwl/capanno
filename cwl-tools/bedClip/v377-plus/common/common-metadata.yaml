@@ -2,7 +2,8 @@ identifier: TL_9e51cc.d3
 name: bedClip
 softwareVersion:
   versionName: v377-plus
-  includedVersions: []
+  includedVersions:
+    - v377
 metadataStatus: Released
 featureList:
   - __main__

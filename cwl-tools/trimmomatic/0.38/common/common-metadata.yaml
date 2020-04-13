@@ -2,7 +2,8 @@ identifier: TL_a2e03a.af
 name: trimmomatic
 softwareVersion:
   versionName: '0.38'
-  includedVersions: []
+  includedVersions:
+    - 0.38
 metadataStatus: Released
 featureList:
   - SE
