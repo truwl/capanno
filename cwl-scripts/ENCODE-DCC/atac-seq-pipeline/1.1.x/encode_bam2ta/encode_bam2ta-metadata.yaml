@@ -13,19 +13,19 @@ parentScripts:
 
 tools:
   - name: bedtools bamtotbed
-    version:
+    version: 2.26.0
     identifier:
 
-  - name: awk
-    version:
+  - name: mawk
+    version: 1.2
     identifier:
 
   - name: grep
-    version:
+    version: 2.25
     identifier:
 
   - name: gzip
-    version:
+    version: 1.6
     identifier:
 
 parentMetadata:  # additional metadata from most specific to least.

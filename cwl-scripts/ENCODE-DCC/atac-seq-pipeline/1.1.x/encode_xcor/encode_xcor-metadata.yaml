@@ -20,10 +20,10 @@ tools:
 
 parentScripts:
   - name: encode_common_genomic.py
-    version: 1.1.5
+    version: 1.1.x
 
   - name: encode_common_log_parser.py
-    version: 1.1.5
+    version: 1.1.x
 
 parentMetadata:
   - ../common/encode_atac_script-metadata.yaml

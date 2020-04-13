@@ -12,10 +12,10 @@ keywords:
     category:
 parentScripts:
   - name: encode_lib_common
-    version: 1.5.4
+    version: 1.5.x
     identifier:
   - name: encode_lib_genomic
-    version: 1.5.4
+    version: 1.5.x
     identifier:
 tools:
   - name: bedtools bamtobed

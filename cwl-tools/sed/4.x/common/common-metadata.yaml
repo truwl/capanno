@@ -2,7 +2,8 @@ identifier: TL_177544.aa
 name: sed
 softwareVersion:
   versionName: 4.x
-  includedVersions: []
+  includedVersions:
+    - 4.4
 metadataStatus: Released
 featureList:
   - expression

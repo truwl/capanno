@@ -10,38 +10,38 @@ cwlStatus: Released
 
 tools:
   - name: bedtools slop
-    version:
+    version: 2.26.0
 
-  - name: awk
-    version:
+  - name: mawk
+    version: 1.2
 
   - name: grep
-    version:
+    version: 2.25
 
   - name: sort
-    version:
+    version: 8.25
 
   - name: head
-    version:
+    version: 8.25
 
   - name: macs2
-    version:
+    version: 2.1.1.20160309
 
   - name: bedGraphToBigWig
-    version:
+    version: v2.26.0
 
 parentScripts:
   - name: encode_common.py
-    version: 1.1.5
+    version: 1.1.x
 
   - name: encode_common_genomic.py
-    version: 1.1.5
+    version: 1.1.x
 
   - name: encode_blacklist_filter.py
-    version: 1.1.5
+    version: 1.1.x
 
   - name: encode_frip.py
-    version: 1.1.5
+    version: 1.1.x
 
 parentMetadata:  # additional metadata from most specific to least.
   - ../common/encode_atac_script-metadata.yaml

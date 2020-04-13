@@ -12,13 +12,13 @@ keywords:
     category:
 parentScripts:
   - name: encode_lib_common
-    version: 1.5.4
+    version: 1.5.x
     identifier:
   - name: encode_lib_log_parser
-    version: 1.5.4
+    version: 1.5.x
     identifier:
   - name: encode_lib_qc_category
-    version: 1.5.4
+    version: 1.5.x
     identifier:
 tools:
 alternateName:

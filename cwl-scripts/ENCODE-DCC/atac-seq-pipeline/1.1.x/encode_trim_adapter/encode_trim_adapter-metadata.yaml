@@ -10,15 +10,15 @@ cwlStatus: Released
 
 tools:
   - name: cutadapt
-    version:
+    version: 1.9.1
 
   - name: gzip
     alternateName: zcat
-    version:
+    version: 1.6
 
 parentScripts:
   - name: encode_common.py
-    version: 1.1.5
+    version: 1.1.x
 
 parentMetadata:
   - ../common/encode_atac_script-metadata.yaml

@@ -2,7 +2,12 @@ identifier: TL_96e89a.1d
 name: head
 softwareVersion:
   versionName: 8.x
-  includedVersions: []
+  includedVersions:
+    - 8.25
+    - 8.26
+    - 8.27
+    - 8.28
+
 metadataStatus: Released
 featureList:
   - __main__

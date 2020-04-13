@@ -10,27 +10,26 @@ cwlStatus: Released
 tools:
   - name: bedtools intersect
     alternateName: intersectBed
-    version:
+    version: v2.26.0
 
-  - name: awk
-    alternateName: gawk
-    version:
+  - name: mawk
+    version: 1.2
 
   - name: cut
-    version:
+    version: 8.25
 
 parentScripts:
   - name: encode_common.py
-    version: 1.1.5
+    version: 1.1.x
 
   - name: encode_common_genomic.py
-    version: 1.1.5
+    version: 1.1.x
 
   - name: encode_blacklist_filter.py
-    version: 1.1.5
+    version: 1.1.x
 
   - name: encode_frip.py
-    version: 1.1.5
+    version: 1.1.x
 
 
 parentMetadata:  # additional metadata from most specific to least.
