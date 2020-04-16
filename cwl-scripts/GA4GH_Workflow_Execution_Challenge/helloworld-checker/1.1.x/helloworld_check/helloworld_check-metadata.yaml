@@ -16,7 +16,7 @@ codeRepository:
 
 tools:
   - name: md5sum
-    version:
+    version: 8.25
 
 programmingLanguage: Python
 

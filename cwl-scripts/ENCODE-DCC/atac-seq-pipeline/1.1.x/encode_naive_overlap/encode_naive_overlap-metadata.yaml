@@ -10,7 +10,7 @@ cwlStatus: Released
 tools:
   - name: bedtools intersect
     alternateName: intersectBed
-    version: v2.26.0
+    version: 2.26.0
 
   - name: mawk
     version: 1.2

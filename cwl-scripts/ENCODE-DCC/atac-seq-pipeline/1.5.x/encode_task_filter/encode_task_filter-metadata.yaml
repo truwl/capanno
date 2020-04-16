@@ -32,7 +32,7 @@ tools:
     identifier:
   - name: sambamba markdup
     version: 0.6.6
-    identifier:
+    identifier: TL_bf790f_02.e9
   - name: bedtools bamtobed
     version: 2.29.0
     identifier:

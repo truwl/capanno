@@ -28,7 +28,7 @@ tools:
     version: 1.6
     identifier:
   - name: bedtools intersect
-    version: v2.29.0
+    version: 2.29.0
     identifier:
     alternateName: intersectBed
   - name: mawk

@@ -25,10 +25,10 @@ WebSite:
 
 tools:
   - name: md5sum
-    version:
+    version: 8.25
 
-  - name: gawk
-    version:
+  - name: mawk
+    version: 1.3.3
 
   - name: set
     version:

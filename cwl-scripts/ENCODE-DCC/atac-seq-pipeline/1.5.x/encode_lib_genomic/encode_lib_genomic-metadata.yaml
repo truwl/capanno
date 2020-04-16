@@ -56,13 +56,13 @@ tools:
     identifier:
   - name: sambamba index
     version: 0.6.6
-    identifier:
+    identifier: TL_bf790f_6a.e9
   - name: sambamba flagstat
     version: 0.6.6
-    identifier:
+    identifier: TL_bf790f_c2.e9
   - name: sambamba sort
     version: 0.6.6
-    identifier:
+    identifier: TL_bf790f_ca.e9
   - name: bedClip
     version: v377
     identifier:

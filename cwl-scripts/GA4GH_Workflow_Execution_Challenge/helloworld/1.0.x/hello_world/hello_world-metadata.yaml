@@ -13,7 +13,7 @@ tools:
     version:
 
   - name: cat
-    version:
+    version: 8.25
 
 contactPoint:
   - name: James Eddy

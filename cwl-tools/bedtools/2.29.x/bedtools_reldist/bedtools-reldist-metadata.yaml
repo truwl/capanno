@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: reldist
-identifier: TL_43392c_65.c8
+identifier: TL_43392c_66.c8
 description: Traditional approaches to summarizing the similarity between two sets
   of genomic intervals are based upon the number or proportion of intersecting intervals.
   However, such measures are largely blind to spatial correlations between the two
