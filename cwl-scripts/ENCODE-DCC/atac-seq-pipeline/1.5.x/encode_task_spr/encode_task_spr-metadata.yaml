@@ -17,7 +17,7 @@ parentScripts:
 tools:
   - name: zcat
     version: 1.6
-    identifier:
+    identifier: TL_749cad_82.1d
   - name: shuf
     version: 8.28
     identifier:

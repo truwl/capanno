@@ -17,13 +17,13 @@ parentScripts:
 tools:
   - name: macs2 callpeak
     version: 2.2.4
-    identifier:
+    identifier: TL_89cd0d_58.93
   - name: macs2 bdgcmp
     version: 2.2.4
-    identifier:
+    identifier: TL_89cd0d_ef.93
   - name: bedtools slop
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_8a.c8
   - name: bedClip
     version: v377
     identifier:

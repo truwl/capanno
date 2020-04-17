@@ -20,22 +20,22 @@ parentScripts:
 tools:
   - name: samtools view
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_46.0b
   - name: samtools sort
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_ca.0b
   - name: samtools fixmate
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_a2.0b
   - name: picard MarkDuplicates
     version: 2.20.7-SNAPSHOT
-    identifier:
+    identifier: TL_e24fa5_5f.c8
   - name: sambamba markdup
     version: 0.6.6
     identifier: TL_bf790f_02.e9
   - name: bedtools bamtobed
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_87.c8
   - name: mawk
     version: 1.3.3
     identifier:

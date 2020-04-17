@@ -17,13 +17,13 @@ parentScripts:
 tools:
   - name: bedtools intersect
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_eb.c8
   - name: bedtools slop
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_8a.c8
   - name: gunzip
     version: 1.6
-    identifier:
+    identifier: TL_749cad_82.1d
   - name: mawk
     version: 1.3.3
     identifier:

@@ -17,10 +17,10 @@ parentScripts:
 tools:
   - name: samtools view
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_46.0b
   - name: samtools sort
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_ca.0b
   - name: bowtie2
     version: 2.3.4.3
     identifier:

@@ -24,13 +24,13 @@ parentScripts:
 tools:
   - name: bedtools sort
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_ca.c8
   - name: bedtools merge
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_65.c8
   - name: bedtools intersect
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_eb.c8
   - name: wc
     version: 8.28
     identifier:

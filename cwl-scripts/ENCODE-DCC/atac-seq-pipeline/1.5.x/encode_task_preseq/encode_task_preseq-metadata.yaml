@@ -20,10 +20,10 @@ parentScripts:
 tools:
   - name: picard EstimateLibraryComplexity
     version: 2.20.7-SNAPSHOT
-    identifier:
+    identifier: TL_e24fa5_2f.c8
   - name: samtools sort
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_ca.0b
   - name: preseq
     version: 2.0.3
     identifier:

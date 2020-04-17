@@ -17,9 +17,9 @@ tools:
     identifier:
   - name: zcat
     version: 1.6
-    identifier:
+    identifier: TL_749cad_82.1d
   - name: touch
-    version: 1.29
+    version: 8.28
     identifier:
   - name: gs
     version: 9.26

@@ -17,7 +17,7 @@ parentScripts:
 tools:
   - name: zcat
     version: 1.6
-    identifier:
+    identifier: TL_749cad_82.1d
   - name: cat
     version: 8.28
     identifier:
@@ -44,16 +44,16 @@ tools:
     identifier:
   - name: samtools view
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_46.0b
   - name: samtools sort
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_ca.0b
   - name: samtools flagstat
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_a6.0b
   - name: samtools index
     version: 1.9
-    identifier:
+    identifier: TL_ec2a8d_6a.0b
   - name: sambamba index
     version: 0.6.6
     identifier: TL_bf790f_6a.e9

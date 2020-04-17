@@ -20,7 +20,7 @@ parentScripts:
 tools:
   - name: picard CollectGcBiasMetrics
     version: 2.20.7-SNAPSHOT
-    identifier:
+    identifier: TL_e24fa5_b6.c8
 alternateName:
 creator:
   - name: Daniel Kim

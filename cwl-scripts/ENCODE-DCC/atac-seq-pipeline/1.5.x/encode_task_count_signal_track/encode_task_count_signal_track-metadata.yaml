@@ -17,13 +17,13 @@ parentScripts:
 tools:
   - name: zcat
     version: 1.6
-    identifier:
+    identifier: TL_749cad_82.1d
   - name: sort
     version: 8.28
     identifier:
   - name: bedtools genomecov
     version: 2.29.0
-    identifier:
+    identifier: TL_43392c_7e.c8
   - name: bedGraphToBigWig
     version: v377
     identifier:

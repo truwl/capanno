@@ -17,7 +17,7 @@ parentScripts:
 tools:
   - name: macs2 callpeak
     version: 2.2.4
-    identifier:
+    identifier: TL_89cd0d_58.93
   - name: mawk
     version: 1.3.3
     identifier:

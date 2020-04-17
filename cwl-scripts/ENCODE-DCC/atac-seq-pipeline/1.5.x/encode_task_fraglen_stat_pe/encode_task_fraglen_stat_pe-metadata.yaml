@@ -20,7 +20,7 @@ parentScripts:
 tools:
   - name: picard CollectInsertSizeMetrics
     version: 2.20.7-SNAPSHOT
-    identifier:
+    identifier: TL_e24fa5_4e.c8
 
 alternateName:
 creator:
