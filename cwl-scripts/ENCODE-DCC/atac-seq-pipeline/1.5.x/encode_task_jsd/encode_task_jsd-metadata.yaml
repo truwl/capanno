@@ -1,0 +1,31 @@
+name: encode_task_jsd
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_a8d08b.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC fingerprint/JSD plot wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.x
+    identifier:
+  - name: encode_lib_genomic
+    version: 1.5.x
+    identifier:
+  - name: encode_lib_blacklist_filter
+    version: 1.5.x
+    identifier:
+tools:
+alternateName:
+creator:
+  - email:
+    name:
+    identifier:
+datePublished:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

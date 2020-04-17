@@ -1,0 +1,12 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: __main__
+identifier: TL_28ea7f_54.68
+description:
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0632
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_3192
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

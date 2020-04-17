@@ -1,0 +1,28 @@
+name: encode_task_reproducibility
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_e0a4be.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC reproducibility QC wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.x
+    identifier:
+  - name: encode_lib_genomic
+    version: 1.5.x
+    identifier:
+tools:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+datePublished:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

@@ -1,0 +1,45 @@
+identifier: TL_8b1156.1d
+name: shuf
+softwareVersion:
+  versionName: 8.x
+  includedVersions:
+    - 8.25
+    - 8.26
+    - 8.27
+    - 8.28
+metadataStatus: Released
+featureList:
+  - echo
+  - input-range
+  - __main__
+description: "shuf - generate random permutations\nWrite a random permutation of the\
+  \ input lines to standard output.\nWith no FILE, or when FILE is -, read standard\
+  \ input.\nMandatory arguments to long options are mandatory for short options too."
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0-or-later
+WebSite:
+  - name: 'shuf: Shuffling text'
+    description:
+    URL: https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.html
+contactPoint:
+  - name:
+    identifier:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - name: Paul Eggert
+    identifier:
+    email:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

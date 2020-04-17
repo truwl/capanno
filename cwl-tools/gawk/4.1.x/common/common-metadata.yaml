@@ -1,0 +1,45 @@
+identifier: TL_9579db.89
+name: gawk
+softwareVersion:
+  versionName: 4.1.x
+  includedVersions: []
+metadataStatus: Released
+featureList:
+  - __main__
+description: pattern scanning and processing language
+codeRepository:
+  name: gnuSavannah
+  URL: https://git.savannah.gnu.org/cgit/gawk.git
+license: GPL-3.0-only
+WebSite:
+  - name: GNU
+    description:
+    URL: https://www.gnu.org/software/gawk/
+  - name: Users Guide
+    description:
+    URL: https://www.gnu.org/software/gawk/manual/gawk.html
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+  - awk
+creator:
+  - name: Alfred Aho
+    email:
+    identifier:
+  - name: Peter Weinberger
+  - name: Brian Kernighan
+  - name: Paul Rubin
+  - name: Jay Fenlason
+  - name: John Woods
+  - name: David Trueman
+  - name: Arnold Robbins
+programmingLanguage: []
+datePublished:

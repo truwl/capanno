@@ -1,0 +1,16 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: faidx
+identifier: TL_ec2a8d_bb.0b
+description: "samtools faidx <ref.fasta> [region1 [...]]\nIndex reference sequence\
+  \ in the FASTA format or extract subsequence from indexed reference sequence. If\
+  \ no region is specified, faidx will index the file and create <ref.fasta>.fai on\
+  \ the disk. If regions are specified, the subsequences will be retrieved and printed\
+  \ to stdout in the FASTA format.\nThe input file can be compressed in the BGZF format.\n\
+  FASTQ files can be read and indexed by this command. Without using --fastq any extracted\
+  \ subsequence will be in FASTA format."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

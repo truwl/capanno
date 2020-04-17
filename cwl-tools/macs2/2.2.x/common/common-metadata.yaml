@@ -1,0 +1,67 @@
+identifier: TL_89cd0d.93
+name: macs2
+softwareVersion:
+  versionName: 2.2.x
+  includedVersions: []
+metadataStatus: Released
+featureList:
+  - callpeak
+  - bdgpeakcall
+  - bdgbroadcall
+  - bdgcmp
+  - bdgopt
+  - cmbreps
+  - bdgdiff
+  - filterdup
+  - predictd
+  - pileup
+  - randsample
+  - refinepeak
+description: "Model-based Analysis of ChIP-seq data.\nWith the improvement of sequencing\
+  \ techniques, chromatin immunoprecipitation followed by high throughput sequencing\
+  \ (ChIP-Seq) is getting popular to study genome-wide protein-DNA interactions. To\
+  \ address the lack of powerful ChIP-Seq analysis method, we presented the Model-based\
+  \ Analysis of ChIP-Seq (MACS), for identifying transcript factor binding sites.\
+  \ MACS captures the influence of genome complexity to evaluate the significance\
+  \ of enriched ChIP regions and MACS improves the spatial resolution of binding sites\
+  \ through combining the information of both sequencing tag position and orientation.\
+  \ MACS can be easily used for ChIP-Seq data alone, or with a control sample with\
+  \ the increase of specificity. Moreover, as a general peak-caller, MACS can also\
+  \ be applied to any “DNA enrichment assays” if the question to be asked is simply:\
+  \ where we can find significant reads coverage than the random background."
+codeRepository:
+  name: GitHub
+  URL: https://github.com/taoliu/MACS
+license: BSD-3-Clause
+WebSite:
+  - name: MACS
+    URL: https://taoliu.github.io/MACS/
+    description: documentation
+  - name: 'Advanced: Call peaks using MACS2 subcommands'
+    URL: https://github.com/taoliu/MACS/wiki/Advanced%3A-Call-peaks-using-MACS2-subcommands
+    description: MACS2 wikipage
+contactPoint:
+  - name: MACS Support
+    email: macs.supporter@gmail.com
+    identifier:
+publication:
+  - headline: Model-based analysis of ChIP-Seq (MACS)
+    identifier: 10.1186/gb-2008-9-9-r137
+keywords:
+  - http://edamontology.org/topic_3169
+  - http://edamontology.org/topic_0602
+  - http://edamontology.org/topic_0749
+  - http://edamontology.org/operation_3222
+  - http://edamontology.org/operation_3501
+  - http://edamontology.org/operation_1781
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python3
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: macs

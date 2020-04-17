@@ -1,0 +1,14 @@
+toolName: samtools flagstat
+toolVersion: 1.3
+toolIdentifier: TL_ec2a8d_a6.0b
+identifier: TL_ec2a8d_a6.0b.395d
+name:
+jobStatus: Released
+description: Produces statistics files for bam files.
+inputObjects:
+  - id: inFile
+    identifier: FL_3f4172e3.1
+outputObjects:
+  - id: flagstatFile
+    identifier: FL_89becb95.1
+

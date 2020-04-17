@@ -1,0 +1,49 @@
+identifier: TL_4a037f.29
+name: grep
+softwareVersion:
+  versionName: 3.x
+  includedVersions:
+    - 3.1
+metadataStatus: Released
+featureList:
+  - regexp
+  - file
+  - __main__
+  - recursive
+  - extended-regexp
+  - fixed-strings
+description: "grep, egrep, fgrep, rgrep - print lines matching a pattern\ngrep searches\
+  \ for PATTERN in each FILE.  A FILE of “-” stands for standard input.  If no FILE\
+  \ is given, recursive searches examine the working directory, and nonrecursive searches\
+  \ read standard input.  By default, grep prints the matching lines.\nIn addition,\
+  \ the variant programs egrep, fgrep and rgrep are the same as grep -E, grep -F,\
+  \ and grep -r, respectively.  These variants are deprecated, but are provided for\
+  \ backward compatibility."
+codeRepository:
+  name:
+  URL:
+license: GFDL-1.3-or-later
+WebSite:
+  - name:
+    URL: http://www.gnu.org/software/grep/manual/
+    description: Complete manual
+contactPoint:
+  - email: bug-grep@gnu.org
+    name:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - email:
+    name:
+    identifier:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

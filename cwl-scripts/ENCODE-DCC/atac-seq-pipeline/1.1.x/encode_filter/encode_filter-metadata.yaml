@@ -1,0 +1,57 @@
+name: encode_filter.py
+description: ENCODE DCC filter
+identifier: ST_5f34e1.f7
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
+
+tools:
+  - name: mawk
+    version: 1.2
+
+  - name: grep
+    version: 2.25
+
+  - name: Picard MarkDuplicates
+    version: 2.10.6-SNAPSHOT
+
+  - name: sambamba sort
+    version: 0.6.6
+    identifier: TL_bf790f_ca.e9
+
+  - name: sambamba index
+    version: 0.6.6
+    identifier: TL_bf790f_6a.e9
+
+  - name: sambamba flagstat
+    version: 0.6.6
+    identifier: TL_bf790f_c2.e9
+
+  - name: samtools sort
+    version: 1.2
+    identifier: TL_ec2a8d_ca.0b
+
+  - name: samtools view
+    version: 1.2
+    identifier: TL_ec2a8d_46.0b
+
+  - name: samtools fixmate
+    version: 1.2
+    identifier: TL_ec2a8d_a2.0b
+
+  - name: sambamba markdup
+    version: 0.6.6
+    identifier: TL_bf790f_02.e9
+
+  - name: bedtools bamtobed
+    version: 2.26.0
+
+parentScripts:
+  - name: assign_multimappers.py
+    version: 1.1.x
+
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/encode_atac_script-metadata.yaml

@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: closest
+identifier: TL_43392c_95.c8
+description: Similar to intersect, closest searches for overlapping features in A
+  and B. In the event that no feature in B overlaps the current feature in A, closest
+  will report the nearest (that is, least genomic distance from the start or end of
+  A) feature in B. For example, one might want to find which is the closest gene to
+  a significant GWAS polymorphism. Note that closest will report an overlapping feature
+  as the closest—that is, it does not restrict to closest non-overlapping feature.
+keywords:
+  - name:
+    category:
+alternateName: closestBed
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,10 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: echo
+identifier: TL_8b1156_e1.1d
+description: "-e, --echo\n       treat each ARG as an input line"
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

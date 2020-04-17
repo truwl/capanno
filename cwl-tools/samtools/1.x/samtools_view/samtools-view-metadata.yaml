@@ -1,0 +1,18 @@
+name: view
+metadataStatus: Released
+cwlStatus: Released
+identifier: TL_ec2a8d_46.0b
+description: >-
+  samtools view [options] in.sam|in.bam|in.cram [region...]
+
+  With no options or regions specified, prints all alignments in the specified input alignment file (in SAM, BAM, or CRAM format) to standard output in SAM format (with no header by default).
+
+  You may specify one or more space-separated region specifications after the input filename to restrict output to only those alignments which overlap the specified region(s).
+  Use of region specifications requires a coordinate-sorted and indexed input file.
+
+  Options exist to change the output format from SAM to BAM or CRAM, so this command also acts as a file format conversion utility.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

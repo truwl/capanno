@@ -1,0 +1,55 @@
+identifier: TL_177544.aa
+name: sed
+softwareVersion:
+  versionName: 4.x
+  includedVersions:
+    - 4.2.2
+    - 4.4
+metadataStatus: Released
+featureList:
+  - expression
+  - file
+  - __main__
+description: "sed - stream editor for filtering and transforming text\nSed  is a stream\
+  \ editor. A stream editor is used to perform basic text transformations on an input\
+  \ stream (a file or input from a pipeline). While in some ways similar to an editor\
+  \ which permits scripted edits (such as ed), sed works by making only one pass over\
+  \ the input(s), and is consequently more efficient. But it is sed's ability to filter\
+  \ text in a pipeline which particularly distinguishes it from other types of editors."
+codeRepository:
+  URL:
+  name:
+license: GPL-3.0-or-later
+WebSite:
+  - description: GNU sed home page
+    name:
+    URL: http://www.gnu.org/software/sed
+contactPoint:
+  - email: bug-sed@gnu.org
+    name:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - email:
+    name: Jay Fenlason
+    identifier:
+  - email:
+    name: Tom Lord
+    identifier:
+  - email:
+    name: Ken Pizzini
+    identifier:
+  - email:
+    name: Paolo Bonzini
+    identifier:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

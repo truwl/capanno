@@ -1,0 +1,34 @@
+name: encode_task_trim_adapter
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_05da37.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC adapter trimmer wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.x
+    identifier:
+tools:
+  - name: cutadapt
+    version: 2.5
+    identifier:
+  - name: gzip
+    version: 1.6
+    identifier:
+  - name: zcat
+    version: 1.6
+    identifier: TL_749cad_82.1d
+alternateName:
+creator:
+  - name:
+    identifier:
+    email:
+datePublished:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

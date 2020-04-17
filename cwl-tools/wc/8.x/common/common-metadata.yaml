@@ -1,0 +1,48 @@
+identifier: TL_8399d8.1d
+name: wc
+softwareVersion:
+  versionName: 8.x
+  includedVersions:
+    - 8.25
+    - 8.26
+    - 8.27
+    - 8.28
+metadataStatus: Released
+featureList:
+  - files0-from
+  - __main__
+description: "wc - print newline, word, and byte counts for each file\nPrint newline,\
+  \ word, and byte counts for each FILE, and a total line if more than one FILE is\
+  \ specified.  A word is a non-zero-length sequence of characters delimited by white\
+  \ space.\nWith no FILE, or when FILE is -, read standard input."
+codeRepository:
+  URL:
+  name:
+license: GPL-3.0-or-later
+WebSite:
+  - URL: https://www.gnu.org/software/coreutils/manual/html_node/wc-invocation.html#wc-invocation
+    description:
+    name: 'wc: Print newline, word, and byte counts'
+contactPoint:
+  - identifier:
+    name:
+    email:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - identifier:
+    name: Paul Rubin
+    email:
+  - identifier:
+    name: David MacKenzie
+    email:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

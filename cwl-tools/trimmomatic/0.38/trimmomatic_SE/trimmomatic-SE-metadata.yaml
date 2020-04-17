@@ -1,22 +1,8 @@
-# REQUIRED
-
-applicationSuite:
-  name:  trimmomatic
-  softwareVersion: 0.38
-  identifier: TL_a2e03a.af
-
+metadataStatus: Released
+cwlStatus: Released
 name: SE
 identifier: TL_a2e03a_53.af
-
-version: 1.0.0
-
-# RECOMMENDED
-
 description: Trimmomatic for single end reads.
 keywords: []
-
-# OPTIONAL
-
 alternateName: []
-
 parentMetadata: ../common/common-metadata.yaml

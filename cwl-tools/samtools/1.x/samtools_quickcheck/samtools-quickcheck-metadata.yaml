@@ -1,0 +1,19 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: quickcheck
+identifier: TL_ec2a8d_9a.0b
+description: "samtools quickcheck [options] in.sam|in.bam|in.cram [ ... ]\nQuickly\
+  \ check that input files appear to be intact. Checks that beginning of the file\
+  \ contains a valid header (all formats) containing at least one target sequence\
+  \ and then seeks to the end of the file and checks that an end-of-file (EOF) is\
+  \ present and intact (BAM only).\nData in the middle of the file is not read since\
+  \ that would be much more time consuming, so please note that this command will\
+  \ not detect internal corruption, but is useful for testing that files are not truncated\
+  \ before performing more intensive tasks on them.\nThis command will exit with a\
+  \ non-zero exit code if any input files don't have a valid header or are missing\
+  \ an EOF block. Otherwise it will exit successfully (with a zero exit code)."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

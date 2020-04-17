@@ -1,0 +1,13 @@
+toolName: samtools view
+toolVersion: 1.3
+toolIdentifier: TL_ec2a8d_46.0b
+identifier: TL_ec2a8d_46.0b.3a64
+name:
+jobStatus: Released
+description: This step just outputs the header of the input bam file.
+inputObjects:
+  - id: input
+    identifier: FL_cf5dd15f.1
+outputObjects:
+  - id: output
+    identifier: FL_68a6c839.1

@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: RevertSam
+identifier: TL_e24fa5_c8.c8
+description: Reverts SAM or BAM files to a previous state. This tool removes or restores
+  certain properties of the SAM records, including alignment information, which can
+  be used to produce an unmapped BAM (uBAM) from a previously aligned BAM. It is also
+  capable of restoring the original quality scores of a BAM file that has already
+  undergone base quality score recalibration (BQSR) if theoriginal qualities were
+  retained.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,11 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: extended-regexp
+identifier: TL_4a037f_da.29
+description: "-E, --extended-regexp\n       Interpret PATTERN as an extended regular\
+  \ expression (ERE, see below)."
+keywords:
+  - name:
+    category:
+alternateName: egrep
+parentMetadata: ../common/common-metadata.yaml

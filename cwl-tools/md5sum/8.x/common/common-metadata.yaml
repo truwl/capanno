@@ -1,0 +1,48 @@
+identifier: TL_c8f1ee.47
+name: md5sum
+softwareVersion:
+  versionName: 8.x
+  includedVersions:
+    - 8.25
+    - 8.26
+    - 8.27
+    - 8.28
+metadataStatus: Released
+featureList:
+  - check
+  - __main__
+description: Print or check MD5 (128-bit) checksums.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0-only
+WebSite:
+  - name: Full documentation
+    description:
+    URL: http://www.gnu.org/software/coreutils/md5sum
+  - name: GNU coreutils online help
+    description:
+    URL: http://www.gnu.org/software/coreutils/
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - headline:
+    identifier:
+keywords:
+  - name: GNU
+    category: topic
+alternateName: []
+creator:
+  - name: Ulrich Drepper
+    email:
+    identifier:
+  - name: Scott Miller
+    email:
+    identifier:
+  - name: David Madore
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:

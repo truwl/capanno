@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: ExtractSequences
+identifier: TL_e24fa5_99.c8
+description: Subsets intervals from a reference sequence to a new FASTA file. This
+  tool takes a list of intervals, reads the corresponding subsquences from a reference
+  FASTA file and writes them to a new FASTA file as separate records. Note that the
+  reference FASTA file must be accompanied by an index file and the interval list
+  must be provided in Picard list format. The names provided for the intervals will
+  be used to name the corresponding records in the output file.
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

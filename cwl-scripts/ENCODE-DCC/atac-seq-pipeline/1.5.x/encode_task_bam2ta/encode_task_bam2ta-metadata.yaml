@@ -1,0 +1,44 @@
+name: encode_task_bam2ta
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_8ef4e6.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC BAM 2 TAGALIGN wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.x
+    identifier:
+  - name: encode_lib_genomic
+    version: 1.5.x
+    identifier:
+tools:
+  - name: bedtools bamtobed
+    version: 2.29.0
+    identifier: TL_43392c_87.c8
+  - name: mawk
+    version: 1.33
+    identifier:
+  - name: gzip
+    version: 1.6
+    identifier:
+  - name: zcat
+    version: 1.6
+    identifier: TL_749cad_82.1d
+  - name: sort
+    version: 8.28
+    identifier:
+
+alternateName:
+creator:
+  - email:
+    identifier:
+    name:
+datePublished:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

@@ -1,0 +1,23 @@
+name: encode_lib_qc_category
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_2e1384.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE QC log/plot to HTML converter
+keywords:
+  - name:
+    category:
+parentScripts:
+tools:
+alternateName:
+creator:
+  - email:
+    name:
+    identifier:
+isCallable: false
+datePublished:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

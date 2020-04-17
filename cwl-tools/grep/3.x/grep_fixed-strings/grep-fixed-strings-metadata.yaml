@@ -1,0 +1,12 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: fixed-strings
+identifier: TL_4a037f_84.29
+description: "-F, --fixed-strings\n       Interpret PATTERN as a list of fixed strings\
+  \ (instead of regular expressions), separated by newlines, any of which is to be\
+  \ matched."
+keywords:
+  - name:
+    category:
+alternateName: fgrep
+parentMetadata: ../common/common-metadata.yaml

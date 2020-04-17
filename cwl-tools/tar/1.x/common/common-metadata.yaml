@@ -1,0 +1,53 @@
+identifier: TL_db5570.8b
+name: tar
+softwareVersion:
+  versionName: 1.x
+  includedVersions:
+    - 1.29
+metadataStatus: Released
+featureList:
+  - concatenate
+  - create
+  - diff
+  - delete
+  - append
+  - list
+  - test-label
+  - update
+  - extract
+description: "tar - an archiving utility\nGNU  tar  is  an  archiving  program designed\
+  \ to store multiple files in a single file (an archive), and to manipulate such\
+  \ archives. The archive can be either a regular file or a device (e.g. a tape drive,\
+  \ hence the name of the program, which stands for tape archiver), which can be located\
+  \ either on the local or on a remote machine."
+codeRepository:
+  name: savannah
+  URL: https://savannah.gnu.org/git/?group=tar
+license: GPL-3.0-or-later
+WebSite:
+  - name: GNU Tar
+    description:
+    URL: https://www.gnu.org/software/tar/
+contactPoint:
+  - identifier:
+    name:
+    email: bug-tar@gnu.org
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name: GNU
+    category: topic
+alternateName:
+creator:
+  - identifier:
+    name: John Gilmore
+    email:
+  - identifier:
+    name: Jay Fenlason
+    email:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:

@@ -1,0 +1,30 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+name: CollectRrbsMetrics
+identifier: TL_e24fa5_00.c8
+description: "Collects metrics from reduced representation bisulfite sequencing (Rrbs)\
+  \ data.\nThis tool uses reduced representation bisulfite sequencing (Rrbs) data\
+  \ to determine cytosine methylation status across all reads of a genomic DNA sequence.\
+  \ For a primer on bisulfite sequencing and cytosine methylation, please see the\
+  \ corresponding GATK Dictionary entry.\nBriefly, bisulfite reduction converts un-methylated\
+  \ cytosine (C) to uracil (U) bases. Methylated sites are not converted because they\
+  \ are resistant to bisulfite reduction. Subsequent to PCR amplification of the reaction\
+  \ products, bisulfite reduction manifests as [C -> T (+ strand) or G -> A (- strand)]\
+  \ base conversions. Thus, conversion rates can be calculated from the reads as follows:\
+  \ [CR = converted/(converted + unconverted)]. Since methylated cytosines are protected\
+  \ against Rrbs-mediated conversion, the methylation rate (MR) is as follows:[MR\
+  \ = unconverted/(converted + unconverted) = (1 - CR)].\nThe CpG CollectRrbsMetrics\
+  \ tool outputs three files including summary and detail metrics tables as well as\
+  \ a PDF file containing four graphs. These graphs are derived from the summary table\
+  \ and include a comparison of conversion rates for both CpG and non-CpG sites, the\
+  \ distribution of total numbers of CpG sites as a function of the CpG conversion\
+  \ rates, the distribution of CpG sites by the level of read coverage (depth), and\
+  \ the numbers of reads discarded resulting from either exceeding the mismatch rate\
+  \ or size (too short). The detailed metrics table includes the coordinates of all\
+  \ of the CpG sites for the experiment as well as the conversion rates observed for\
+  \ each site."
+keywords:
+  - name:
+    category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

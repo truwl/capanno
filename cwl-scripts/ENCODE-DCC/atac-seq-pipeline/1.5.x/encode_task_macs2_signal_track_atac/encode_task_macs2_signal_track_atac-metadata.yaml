@@ -1,0 +1,43 @@
+name: encode_task_macs2_signal_track_atac
+softwareVersion:
+  versionName: 1.5.x
+  includedVersions:
+    - 1.5.4
+identifier: ST_3f6b07.0b
+cwlStatus: Incomplete
+metadataStatus: Released
+description: ENCODE DCC MACS2 signal track wrapper
+keywords:
+  - name:
+    category:
+parentScripts:
+  - name: encode_lib_common
+    version: 1.5.x
+    identifier:
+tools:
+  - name: macs2 callpeak
+    version: 2.2.4
+    identifier: TL_89cd0d_58.93
+  - name: macs2 bdgcmp
+    version: 2.2.4
+    identifier: TL_89cd0d_ef.93
+  - name: bedtools slop
+    version: 2.29.0
+    identifier: TL_43392c_8a.c8
+  - name: bedClip
+    version: v377
+    identifier:
+  - name: bedGraphToBigWig
+    version: v377
+    identifier:
+  - name: mawk
+    version: 1.3.3
+    identifier:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+datePublished:
+parentMetadata:  # additional metadata from most specific to least.
+  - ../common/common-metadata.yaml

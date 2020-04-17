@@ -1,0 +1,29 @@
+name: encode_spr.py
+description: ENCODE DCC pseudo replicator.
+identifier: ST_14c72b.f7
+softwareVersion:
+  versionName: 1.1.x
+  includedVersions:
+    - 1.1.5
+metadataStatus: Released
+cwlStatus: Released
+tools:
+  - name: split
+    version: 8.25
+
+  - name: mawk
+    version: 1.2
+
+  - name: shuf
+    version: 8.25
+
+  - name: gzip
+    version: 1.6
+
+parentScripts:
+  - name: encode_common.py
+    version: 1.1.5
+  
+
+parentMetadata:
+  - ../common/encode_atac_script-metadata.yaml
