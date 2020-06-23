@@ -1,6 +1,6 @@
 from pathlib import Path
 from unittest import TestCase
-from xd_cwl_utils.validate import validate_repo
+from capanno_utils.validate import validate_repo
 
 class TestValidateRepo(TestCase):
 
