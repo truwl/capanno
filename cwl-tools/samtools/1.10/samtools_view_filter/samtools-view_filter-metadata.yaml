@@ -12,6 +12,6 @@ extra:
   cwlDocument:
     isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/samtools/samtools_view_filter.cwl
     dateCreated: '2020-09-21'
-sha1:
-dockerImage:
+    sha1:
+    dockerImage:
 parentMetadata: ../common/common-metadata.yaml

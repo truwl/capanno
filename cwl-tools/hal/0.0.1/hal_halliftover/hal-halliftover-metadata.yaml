@@ -12,6 +12,6 @@ extra:
   cwlDocument:
     isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/hal/halliftover.cwl
     dateCreated: '2020-09-21'
-sha1:
-dockerImage:
+    sha1:
+    dockerImage:
 parentMetadata: ../common/common-metadata.yaml
