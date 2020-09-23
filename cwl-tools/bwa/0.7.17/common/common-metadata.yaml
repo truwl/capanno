@@ -1,12 +1,17 @@
 name: bwa
 softwareVersion:
   versionName: 0.7.17
-  includedVersions: []
+  includedVersions:
+    - 0.7.17
 identifier: TL_a6be17.8e
 featureList:
-  - BWA-Index
-  - BWA-Mem
-metadataStatus: Incomplete
+  - index
+  - mem
+  - aln
+  - samse
+  - sampe
+  - bwasw
+metadataStatus: Released
 description:
 codeRepository:
   name:
