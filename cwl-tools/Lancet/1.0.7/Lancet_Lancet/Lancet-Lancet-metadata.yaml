@@ -1,0 +1,17 @@
+name: Lancet
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+version: 0.1.0
+identifier: TL_5c0f24_5c.e3
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/Lancet/Lancet.cwl
+    dateCreated: '2020-09-21'
+sha1:
+dockerImage:
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,40 @@
+name: odgi
+softwareVersion:
+  versionName: 0.4.1
+  includedVersions: []
+identifier: TL_e1a757.ee
+featureList:
+  - bin
+  - pathindex
+  - sort
+  - viz
+  - build
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

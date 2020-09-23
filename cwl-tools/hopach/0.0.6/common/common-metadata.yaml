@@ -1,0 +1,55 @@
+name: hopach
+softwareVersion:
+  versionName: 0.0.6
+  includedVersions: []
+identifier: TL_0a69c6.03
+featureList:
+  - hopach
+metadataStatus: Incomplete
+description: This algorithm builds a hierarchical tree of clusters by recursively
+  partitioning a data set, while ordering and possibly collapsing clusters at each
+  level. It uses the Mean/Median Split Silhouette (MSS) criteria to identify the level
+  of the tree with maximally homogeneous clusters. It also runs the tree down to produce
+  a final ordered list of the elements. The non-parametric bootstrap allows one to
+  estimate the probability that each element belongs to each cluster.
+codeRepository:
+  name:
+  URL:
+license: GPL-2.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://bioconductor.org/packages/release/bioc/html/hopach.html
+  - name:
+    description:
+      - Mirror
+    URL: http://www.stat.berkeley.edu/~laan/
+  - name:
+    description:
+      - Mirror
+    URL: http://docpollard.org/
+  - name:
+    description: documentation
+    URL: http://bioconductor.org/packages/release/bioc/html/hopach.html
+contactPoint:
+  - name: Katherine S. Pollard
+    email: katherine.pollard@gladstone.ucsf.edu
+    identifier:
+publication:
+  - identifier: 10.1038/nmeth.3252
+    headline: Orchestrating high-throughput genomic analysis with Bioconductor
+keywords:
+  - http://edamontology.org/topic_3071
+  - http://edamontology.org/topic_3365
+  - http://edamontology.org/operation_3432
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: hopach

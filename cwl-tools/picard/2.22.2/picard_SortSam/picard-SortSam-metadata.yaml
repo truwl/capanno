@@ -1,0 +1,17 @@
+name: SortSam
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+version: 0.1.0
+identifier: TL_e24fa5_7b.04
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/picard/picard_SortSam.cwl
+    dateCreated: '2020-09-21'
+sha1:
+dockerImage:
+parentMetadata: ../common/common-metadata.yaml

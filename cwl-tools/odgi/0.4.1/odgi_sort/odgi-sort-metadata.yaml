@@ -1,0 +1,17 @@
+name: sort
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+version: 0.1.0
+identifier: TL_e1a757_ca.ee
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/odgi/odgi_sort.cwl
+    dateCreated: '2020-09-21'
+sha1:
+dockerImage:
+parentMetadata: ../common/common-metadata.yaml

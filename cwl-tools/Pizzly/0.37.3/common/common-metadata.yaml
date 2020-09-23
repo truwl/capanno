@@ -1,0 +1,36 @@
+name: Pizzly
+softwareVersion:
+  versionName: 0.37.3
+  includedVersions: []
+identifier: TL_213d9e.2c
+featureList:
+  - Pizzly
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

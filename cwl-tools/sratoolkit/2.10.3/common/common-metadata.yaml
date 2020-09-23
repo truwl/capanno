@@ -1,0 +1,56 @@
+name: sratoolkit
+softwareVersion:
+  versionName: 2.10.3
+  includedVersions: []
+identifier: TL_84a745.27
+featureList:
+  - fastq_dump
+  - prefetch
+metadataStatus: Incomplete
+description: The SRA Toolkit and SDK from NCBI is a collection of tools and libraries
+  for using data in the INSDC Sequence Read Archives.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc
+  - name:
+    description:
+      - Software catalogue
+    URL: http://www.mybiosoftware.com/sra-software-toolkit-2-3-1-sequence-read-archive-software-toolkit.html
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/ncbi/sra-tools/
+  - name:
+    description: documentation
+    URL: https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&f=std
+  - name:
+    description: documentation
+    URL: https://github.com/ncbi/sra-tools/wiki
+contactPoint:
+  - name:
+    email: sra-tools@ncbi.nlm.nih.gov
+    identifier:
+publication:
+  - identifier:
+    headline: Database resources of the National Center for Biotechnology Information.
+keywords:
+  - http://edamontology.org/topic_0654
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_2409
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: sra-tools

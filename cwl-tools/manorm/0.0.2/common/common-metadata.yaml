@@ -1,0 +1,51 @@
+name: manorm
+softwareVersion:
+  versionName: 0.0.2
+  includedVersions: []
+identifier: TL_ec96b2.fb
+featureList:
+  - manorm
+metadataStatus: Incomplete
+description: Simple and effective method for quantitative comparison of ChIP-Seq data
+  sets describing transcription factor binding sites and epigenetic modifications.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://bcb.dfci.harvard.edu/~gcyuan/MAnorm/MAnorm.htm
+  - name:
+    description:
+      - Software catalogue
+    URL: http://www.mybiosoftware.com/manorm-robust-model-quantitative-comparison-chip-seq-datasets.html
+  - name:
+    description: documentation
+    URL: http://bcb.dfci.harvard.edu/~gcyuan/MAnorm/MAnorm.htm#Downloads
+contactPoint:
+  - name:
+    email: zhangyij@gmail.com
+    identifier:
+publication:
+  - identifier:
+    headline: 'MAnorm: A robust model for quantitative comparison of ChIP-Seq data
+      sets'
+keywords:
+  - http://edamontology.org/topic_3169
+  - http://edamontology.org/topic_3517
+  - http://edamontology.org/topic_0602
+  - http://edamontology.org/topic_3295
+  - http://edamontology.org/operation_0389
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+  - MATLAB
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: manorm

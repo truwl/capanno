@@ -1,0 +1,52 @@
+name: fastx_toolkit
+softwareVersion:
+  versionName: 0.0.14
+  includedVersions: []
+identifier: TL_0070da.1b
+featureList:
+  - fastx_quality_stats
+metadataStatus: Incomplete
+description: Collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing.
+codeRepository:
+  name:
+  URL:
+license: AGPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://hannonlab.cshl.edu/fastx_toolkit/
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/agordon/fastx_toolkit
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/agordon/fastx_toolkit/issues
+  - name:
+    description: documentation
+    URL: http://hannonlab.cshl.edu/fastx_toolkit/galaxy.html
+contactPoint:
+  - name:
+    email: gordon@cshl.edu
+    identifier:
+publication:
+  - identifier: 10.1006/geno.1997.4995
+    headline: Comparison of DNA sequences with protein sequences
+keywords:
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_3219
+  - http://edamontology.org/operation_0231
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Shell
+  - C++
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: fastx-toolkit

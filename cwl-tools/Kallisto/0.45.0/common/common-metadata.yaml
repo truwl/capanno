@@ -1,0 +1,50 @@
+name: Kallisto
+softwareVersion:
+  versionName: 0.45.0
+  includedVersions: []
+identifier: TL_11b64f.a1
+featureList:
+  - Kallisto-Quant
+  - Kallisto-Index
+metadataStatus: Incomplete
+description: A program for quantifying abundances of transcripts from RNA-Seq data,
+  or more generally of target sequences using high-throughput sequencing reads. It
+  is based on the novel idea of pseudoalignment for rapidly determining the compatibility
+  of reads with targets, without the need for alignment.
+codeRepository:
+  name:
+  URL:
+license: BSD-2-Clause
+WebSite:
+  - name:
+    description: homepage
+    URL: https://pachterlab.github.io/kallisto/about.html
+  - name:
+    description: documentation
+    URL: https://pachterlab.github.io/kallisto/manual
+  - name:
+    description: documentation
+    URL: https://pachterlab.github.io/kallisto/starting
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1038/nbt.3519
+    headline: Near-optimal probabilistic RNA-seq quantification
+keywords:
+  - http://edamontology.org/topic_3308
+  - http://edamontology.org/topic_3170
+  - http://edamontology.org/topic_0203
+  - http://edamontology.org/operation_0314
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: kallisto

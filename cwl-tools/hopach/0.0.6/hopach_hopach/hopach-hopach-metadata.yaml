@@ -1,0 +1,17 @@
+name: hopach
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+version: 0.1.0
+identifier: TL_0a69c6_0a.03
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/hopach/hopach.cwl
+    dateCreated: '2020-09-21'
+sha1:
+dockerImage:
+parentMetadata: ../common/common-metadata.yaml

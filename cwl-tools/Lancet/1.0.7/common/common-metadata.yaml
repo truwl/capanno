@@ -1,0 +1,36 @@
+name: Lancet
+softwareVersion:
+  versionName: 1.0.7
+  includedVersions: []
+identifier: TL_5c0f24.e3
+featureList:
+  - Lancet
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

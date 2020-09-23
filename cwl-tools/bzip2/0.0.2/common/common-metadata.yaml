@@ -1,0 +1,36 @@
+name: bzip2
+softwareVersion:
+  versionName: 0.0.2
+  includedVersions: []
+identifier: TL_03ce1b.fb
+featureList:
+  - compress
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

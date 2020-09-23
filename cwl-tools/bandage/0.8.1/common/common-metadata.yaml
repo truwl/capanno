@@ -1,0 +1,37 @@
+name: bandage
+softwareVersion:
+  versionName: 0.8.1
+  includedVersions: []
+identifier: TL_7e0c8a.c6
+featureList:
+  - bandage-image
+  - bandage-info
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

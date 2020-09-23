@@ -1,0 +1,17 @@
+name: nanoplot
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+version: 0.1.0
+identifier: TL_ee40c1_ee.e5
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/nanoplot/nanoplot.cwl
+    dateCreated: '2020-09-21'
+sha1:
+dockerImage:
+parentMetadata: ../common/common-metadata.yaml

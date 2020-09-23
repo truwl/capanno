@@ -1,0 +1,53 @@
+name: deseq
+softwareVersion:
+  versionName: 0.0.8
+  includedVersions: []
+identifier: TL_1571fc.a8
+featureList:
+  - advanced
+metadataStatus: Incomplete
+description: Estimate variance-mean dependence in count data from high-throughput
+  sequencing assays and test for differential expression based on a model using the
+  negative binomial distribution.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://bioconductor.org/packages/release/bioc/html/DESeq.html
+  - name:
+    description:
+      - Mirror
+    URL: http://www-huber.embl.de/users/anders/DESeq
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/deseq/DESEQ/1.0.0
+  - name:
+    description: documentation
+    URL: http://bioconductor.org/packages/release/bioc/html/DESeq.html
+contactPoint:
+  - name: Simon Anders
+    email: sanders@fs.tum.de
+    identifier: http://orcid.org/0000-0003-4868-1805
+publication:
+  - identifier: 10.1186/gb-2010-11-10-r106
+    headline: Differential expression analysis for sequence count data
+  - identifier: 10.7490/f1000research.1114334.1
+    headline:
+keywords:
+  - http://edamontology.org/topic_0203
+  - http://edamontology.org/operation_3223
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: deseq

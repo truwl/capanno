@@ -1,0 +1,36 @@
+name: seqkit
+softwareVersion:
+  versionName: 0.7.1
+  includedVersions: []
+identifier: TL_84d780.63
+featureList:
+  - rmdup
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

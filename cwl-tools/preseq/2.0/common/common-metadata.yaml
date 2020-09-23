@@ -1,0 +1,36 @@
+name: preseq
+softwareVersion:
+  versionName: '2.0'
+  includedVersions: []
+identifier: TL_ec197e.d1
+featureList:
+  - lc_extrap
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:
