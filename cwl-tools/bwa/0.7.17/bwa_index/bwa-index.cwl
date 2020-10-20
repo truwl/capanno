@@ -21,11 +21,10 @@ inputs:
   algoType:
     type:
       - 'null'
-      - name: _:e35b64b9-e0f8-45ac-b4b4-c59afa03a54f
+      - type: enum
         symbols:
           - is
           - bwtsw
-        type: enum
     inputBinding:
       prefix: "-a"
 outputs:

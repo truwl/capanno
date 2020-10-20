@@ -21,7 +21,6 @@ inputs:
       - .sa
   InputFile:
     type:
-      name: _:b55a96f4-6317-4e5c-b12f-1a0e5169e70f
       items: File
       type: array
     inputBinding:
