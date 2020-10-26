@@ -1,7 +1,8 @@
 name: STAR
 softwareVersion:
   versionName: 2.7.6a
-  includedVersions: []
+  includedVersions:
+    - 2.7.6a
 identifier: TL_8ab263.6f
 featureList:
   - STAR-Align
