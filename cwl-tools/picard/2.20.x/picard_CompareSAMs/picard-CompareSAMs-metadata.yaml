@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: CompareSAMs
-identifier: TL_e24fa5_e0.c8
+identifier: TL_e24fa5_c5.c8
 description: 'Compare two input ".sam" or ".bam" files. This tool initially compares
   the headers of SAM or BAM files. If the file headers are comparable, the tool will
   examine and compare readUnmapped flag, reference name, start position and strand

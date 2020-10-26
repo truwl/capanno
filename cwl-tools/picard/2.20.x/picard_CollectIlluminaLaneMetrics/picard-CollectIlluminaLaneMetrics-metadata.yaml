@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: CollectIlluminaLaneMetrics
-identifier: TL_e24fa5_56.c8
+identifier: TL_e24fa5_6e.c8
 description: Collects Illumina lane metrics for the given BaseCalling analysis directory.
   This tool produces quality control metrics on cluster density for each lane of an
   Illumina flowcell. This tool takes Illumina TileMetrics data and places them into

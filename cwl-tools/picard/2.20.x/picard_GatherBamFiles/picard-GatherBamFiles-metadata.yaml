@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: GatherBamFiles
-identifier: TL_e24fa5_4c.c8
+identifier: TL_e24fa5_c4.c8
 description: "Concatenate one or more BAM files as efficiently as possibleThis tool\
   \ performs a rapid \"gather\" operation on BAM files after scatter operations where\
   \ the same process has been performed on different regions of a BAM file creating\

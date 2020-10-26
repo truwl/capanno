@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: SplitVcfs
-identifier: TL_e24fa5_1c.c8
+identifier: TL_e24fa5_c1.c8
 description: Splits SNPs and INDELs into separate files. This tool reads in a VCF
   or BCF file and writes out the SNPs and INDELs it contains to separate files. The
   headers of the two output files will be identical and index files will be created
