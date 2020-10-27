@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: CheckIlluminaDirectroy
-identifier: TL_e24fa5_15.c8
+identifier: TL_e24fa5_55.c8
 description: "Asserts the validity for specified Illumina basecalling data.\nThis\
   \ tool will check that the basecall directory and the internal files are available,\
   \ exist, and are reasonably sized for every tile and cycle. Reasonably sized means\

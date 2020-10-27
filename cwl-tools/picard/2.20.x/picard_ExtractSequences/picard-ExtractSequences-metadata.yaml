@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: ExtractSequences
-identifier: TL_e24fa5_99.c8
+identifier: TL_e24fa5_90.c8
 description: Subsets intervals from a reference sequence to a new FASTA file. This
   tool takes a list of intervals, reads the corresponding subsquences from a reference
   FASTA file and writes them to a new FASTA file as separate records. Note that the

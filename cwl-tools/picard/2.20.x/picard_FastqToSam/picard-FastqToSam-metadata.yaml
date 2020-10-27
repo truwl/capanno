@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: FastqToSam
-identifier: TL_e24fa5_ab.c8
+identifier: TL_e24fa5_bb.c8
 description: "Converts a FASTQ file to an unaligned BAM or SAM file. This tool extracts\
   \ read sequences and base qualities from the input FASTQ file and writes them out\
   \ to a new file in unaligned BAM (uBAM) format. Read group information can be provided\

@@ -1,7 +1,7 @@
 metadataStatus: Released
 cwlStatus: Incomplete
 name: CollectRawWgsMetrics
-identifier: TL_e24fa5_73.c8
+identifier: TL_e24fa5_39.c8
 description: "Collect whole genome sequencing-related metrics. This tool computes\
   \ metrics that are useful for evaluating coverage and performance of whole genome\
   \ sequencing experiments. These metrics include the percentages of reads that pass\
