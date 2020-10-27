@@ -6,7 +6,7 @@ baseCommand:
 requirements:
   - class: ShellCommandRequirement
 hints:
-  - dockerPull: truwl2/scidap:v0.0.3
+  - dockerPull: truwl/scidap:v0.0.3
     class: DockerRequirement
 doc: |
   Tool to decompress input FASTQ file

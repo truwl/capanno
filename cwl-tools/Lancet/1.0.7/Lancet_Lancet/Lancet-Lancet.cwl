@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: lancet
 hints:
-  - dockerPull: "sinaiiidgst/lancet:latest"
+  - dockerPull: "truwl/lancet:latest"
     class: DockerRequirement
   - class: InlineJavascriptRequirement
   - packages:

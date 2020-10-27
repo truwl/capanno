@@ -4,7 +4,7 @@ baseCommand:
   - "/gatk/gatk"
 requirements:
   - class: DockerRequirement
-    dockerPull: "broadinstitute/gatk:4.1.1.0"
+    dockerPull: "truwl/gatk:4.1.1.0"
   - class: InlineJavascriptRequirement
 hints:
   - packages:

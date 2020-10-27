@@ -8,7 +8,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: truwl2/fastqc:v0.11.5
+  - dockerPull: truwl/fastqc:v0.11.5
     class: DockerRequirement
   - packages:
       fastqc:

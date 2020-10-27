@@ -16,7 +16,7 @@ requirements:
                 ]
       }
 hints:
-  - dockerPull: truwl2/scidap:v0.0.2
+  - dockerPull: truwl/scidap:v0.0.2
     class: DockerRequirement
 doc: |-
   Tool compresses `input_file` to `*.bz2`.

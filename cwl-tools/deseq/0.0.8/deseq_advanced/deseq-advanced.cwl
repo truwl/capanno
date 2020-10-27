@@ -5,7 +5,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: truwl2/scidap-deseq:v0.0.8
+  - dockerPull: truwl/scidap-deseq:v0.0.8
     class: DockerRequirement
   - packages:
       deseq:

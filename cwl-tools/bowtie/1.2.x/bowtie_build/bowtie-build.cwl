@@ -6,7 +6,7 @@ requirements:
   - class: ShellCommandRequirement
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: truwl2/bowtie:v1.2.0
+  - dockerPull: truwl/bowtie:v1.2.0
     class: DockerRequirement
   - packages:
       bowtie:

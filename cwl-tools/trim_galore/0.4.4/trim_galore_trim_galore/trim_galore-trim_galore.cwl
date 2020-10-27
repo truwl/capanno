@@ -4,7 +4,7 @@ baseCommand: trim_galore
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: kerstenbreuer/trim_galore:0.4.4_1.14_0.11.7
+  - dockerPull: truwl/trim_galore:0.4.4_1.14_0.11.7
     class: DockerRequirement
   - coresMin: 1
     ramMin: 7000
