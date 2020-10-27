@@ -5,7 +5,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: quay.io/biocontainers/fastp:0.20.0--hdbcaa40_0
+  - dockerPull: truwl/fastp:0.20.0--hdbcaa40_0
     class: DockerRequirement
 arguments:
   - |

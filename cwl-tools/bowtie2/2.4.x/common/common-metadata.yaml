@@ -1,9 +1,9 @@
 identifier: TL_8d0912.1a
 name: bowtie2
 softwareVersion:
-  versionName: '2.3'
+  versionName: '2.4.x'
   includedVersions:
-    - 2.3.4.3
+    - 2.4.2
 metadataStatus: Released
 featureList:
   - __main__

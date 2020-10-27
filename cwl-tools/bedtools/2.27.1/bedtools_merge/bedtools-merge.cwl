@@ -10,7 +10,7 @@ requirements:
         return inputs.bed_file.basename; } else { return inputs.output_filename; }
         };
 hints:
-  - dockerPull: biocontainers/bedtools:v2.27.1dfsg-4-deb_cv1
+  - dockerPull: truwl/bedtools:v2.27.1dfsg-4-deb_cv1
     class: DockerRequirement
   - packages:
       bedtools:

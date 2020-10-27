@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand:
   - STAR
 hints:
-  - dockerPull: "quay.io/biocontainers/star:2.7.6a--0"
+  - dockerPull: "truwl/star:2.7.6a--0"
     class: DockerRequirement
   - packages:
       STAR:

@@ -4,7 +4,7 @@ baseCommand:
   - "bedtools"
   - "genomecov"
 hints:
-  - dockerPull: biocontainers/bedtools:v2.27.1dfsg-4-deb_cv1
+  - dockerPull: truwl/bedtools:v2.27.1dfsg-4-deb_cv1
     class: DockerRequirement
   - coresMin: 1
     ramMin: 15000

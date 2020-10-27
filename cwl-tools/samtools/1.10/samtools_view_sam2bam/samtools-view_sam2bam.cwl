@@ -4,7 +4,7 @@ baseCommand:
   - "samtools"
   - "view"
 hints:
-  - dockerPull: quay.io/biocontainers/samtools:1.2-0
+  - dockerPull: truwl/samtools:1.2-0
     class: DockerRequirement
   - coresMin: 1
     ramMin: 10000

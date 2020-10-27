@@ -1,7 +1,7 @@
 name: bwa
 softwareVersion:
-  versionName: 0.7.17
-  includedVersions: []
+  versionName: 0.7.x
+  includedVersions: [0.7.8]
 identifier: TL_a6be17.8e
 featureList:
   - BWA-Index

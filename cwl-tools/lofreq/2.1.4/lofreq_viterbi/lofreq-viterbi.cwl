@@ -8,7 +8,7 @@ requirements:
     listing:
       - $(inputs.reference)
 hints:
-  - dockerPull: quay.io/biocontainers/lofreq:2.1.4--py27hc3dfafe_1
+  - dockerPull: truwl/lofreq:2.1.4--py27hc3dfafe_1
     class: DockerRequirement
   - coresMin: 1
     ramMin: 20000

@@ -26,7 +26,7 @@ requirements:
         return (root == "")?inputs.crossbow_filelist.basename+ext:root+ext; } else
         { return null; } };
 hints:
-  - dockerPull: biowardrobe2/bowtie:v1.2.0
+  - dockerPull: truwl2/bowtie:v1.2.0
     class: DockerRequirement
   - packages:
       bowtie:

@@ -5,7 +5,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: biowardrobe2/scidap-deseq:v0.0.8
+  - dockerPull: truwl2/scidap-deseq:v0.0.8
     class: DockerRequirement
   - packages:
       deseq:
@@ -14,7 +14,7 @@ hints:
 
     class: SoftwareRequirement
 doc: |-
-  Tool runs DESeq/DESeq2 script similar to the original one from BioWArdrobe.
+  Tool runs DESeq/DESeq2 script similar to the original one from truwl.
   untreated_files and treated_files input files should have the following header (case-sensitive)
   <RefseqId,GeneId,Chrom,TxStart,TxEnd,Strand,TotalReads,Rpkm>         - CSV
   <RefseqId\tGeneId\tChrom\tTxStart\tTxEnd\tStrand\tTotalReads\tRpkm>  - TSV

@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: mashmap
 hints:
-  - dockerPull: "quay.io/biocontainers/mashmap:2.0--gsl2.2_1"
+  - dockerPull: "truwl/mashmap:2.0--gsl2.2_1"
     class: DockerRequirement
   - packages:
       mashmap:

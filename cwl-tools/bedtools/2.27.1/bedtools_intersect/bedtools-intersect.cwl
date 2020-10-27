@@ -9,7 +9,7 @@ requirements:
       - var default_output_filename = function() { if (inputs.output_filename == ""){
         return inputs.file_a.basename; } else { return inputs.output_filename; } };
 hints:
-  - dockerPull: biocontainers/bedtools:v2.27.1dfsg-4-deb_cv1
+  - dockerPull: truwl/bedtools:v2.27.1dfsg-4-deb_cv1
     class: DockerRequirement
   - packages:
       bedtools:

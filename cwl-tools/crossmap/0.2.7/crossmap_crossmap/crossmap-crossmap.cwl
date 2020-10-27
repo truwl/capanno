@@ -17,7 +17,7 @@ requirements:
         return (root == "")?inputs.input_file.basename+ext:root+ext; } else { return
         inputs.output_basename+ext; } };
 hints:
-  - dockerPull: quay.io/biocontainers/crossmap:0.2.7--py27_0
+  - dockerPull: truwl/crossmap:0.2.7--py27_0
     class: DockerRequirement
 stdout: $(get_log_filename())
 doc: |-

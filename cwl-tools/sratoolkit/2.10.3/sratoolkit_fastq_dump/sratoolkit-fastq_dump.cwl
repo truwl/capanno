@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand:
   - fastq-dump
 hints:
-  - dockerPull: quay.io/biocontainers/sra-tools:2.10.3--pl526haddd2b5_0
+  - dockerPull: truwl/sra-tools:2.10.3--pl526haddd2b5_0
     class: DockerRequirement
   - packages:
       sratoolkit:

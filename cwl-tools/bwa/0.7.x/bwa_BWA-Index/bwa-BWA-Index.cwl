@@ -5,7 +5,7 @@ baseCommand:
   - index
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/biocontainers/bwa:0.7.17--ha92aebf_3"
+    dockerPull: "truwl/bwa:0.7.8"
   - class: InlineJavascriptRequirement
 inputs:
   InputFile:

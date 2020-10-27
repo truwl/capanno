@@ -161,7 +161,7 @@ requirements:
            }
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: biocontainers/unicycler:v0.4.7dfsg-2-deb_cv1
+  - dockerPull: truwl/unicycler:v0.4.7dfsg-2-deb_cv1
     class: DockerRequirement
 arguments:
   - unicycler_launch.sh
