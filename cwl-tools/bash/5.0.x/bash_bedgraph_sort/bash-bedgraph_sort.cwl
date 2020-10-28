@@ -6,7 +6,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: kerstenbreuer/samtools:1.7
+  - dockerPull: truwl/samtools:1.9_0.1.0
     class: DockerRequirement
   - coresMin: 1
     ramMin: 15000

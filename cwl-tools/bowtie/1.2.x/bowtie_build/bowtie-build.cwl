@@ -6,12 +6,12 @@ requirements:
   - class: ShellCommandRequirement
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: truwl/bowtie:v1.2.0
+  - dockerPull: truwl/bowtie:1.3.0
     class: DockerRequirement
   - packages:
       bowtie:
         specs: ["http://identifiers.org/biotools/bowtie"]
-        version: ["1.2.0"]
+        version: ["1.3.0"]
     class: SoftwareRequirement
 arguments: []
 doc: |-

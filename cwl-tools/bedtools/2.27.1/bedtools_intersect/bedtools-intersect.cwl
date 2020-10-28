@@ -9,12 +9,12 @@ requirements:
       - var default_output_filename = function() { if (inputs.output_filename == ""){
         return inputs.file_a.basename; } else { return inputs.output_filename; } };
 hints:
-  - dockerPull: truwl/bedtools:v2.27.1dfsg-4-deb_cv1
+  - dockerPull: truwl/bedtools:2.29.2_0.1.0
     class: DockerRequirement
   - packages:
       bedtools:
         specs: ["http://identifiers.org/biotools/bedtools"]
-        version: ["2.27.1"]
+        version: ["2.29.2"]
     class: SoftwareRequirement
 stdout: $(default_output_filename())
 doc: |-

@@ -4,7 +4,7 @@ baseCommand:
   - bash
   - '-c'
 hints:
-  - dockerPull: biowardrobe2/scidap:v0.0.3
+  - dockerPull: truwl/scidap:v0.0.3
     class: DockerRequirement
 doc: |
   Tool to run custom script set as `script` input with arguments from `param`.

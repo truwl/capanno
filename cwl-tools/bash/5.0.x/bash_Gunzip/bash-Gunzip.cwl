@@ -4,7 +4,7 @@ baseCommand:
   - "gunzip"
 requirements:
   - class: DockerRequirement
-    dockerPull: ubuntu:xenial
+    dockerPull: truwl/bash:5.0.018_0.1.0
 arguments:
   - "-c"
 stdout: unzippedfile.stdout

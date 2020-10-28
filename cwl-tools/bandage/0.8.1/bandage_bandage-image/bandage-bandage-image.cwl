@@ -11,7 +11,7 @@ requirements:
       - envName: XDG_RUNTIME_DIR
         envValue: $(runtime.tmpdir)
 hints:
-  - dockerPull: truwl/bandage:v0.8.1-1-deb_cv1
+  - dockerPull: truwl/bandage:v0.8.1
     class: DockerRequirement
 label: Bandage image
 doc: |
