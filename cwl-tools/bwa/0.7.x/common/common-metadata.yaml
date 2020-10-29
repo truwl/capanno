@@ -6,32 +6,34 @@ identifier: TL_a6be17.8e
 featureList:
   - BWA-Index
   - BWA-Mem
-metadataStatus: Incomplete
-description:
+metadataStatus: Released
+description: Burrow-Wheeler Aligner for pairwise alignment between DNA sequences
 codeRepository:
-  name:
-  URL:
-license:
+  name: Burrows-Wheeler Aligner
+  URL: https://github.com/lh3/bwa
+license: GPL-3.0
 WebSite:
-  - name:
-    description:
-    URL:
+  - name: Burrows-Wheeler Aligner
+    description: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome. It consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM. The first algorithm is designed for Illumina sequence reads up to 100bp, while the rest two for longer sequences ranged from 70bp to 1Mbp. BWA-MEM and BWA-SW share similar features such as long-read support and split alignment, but BWA-MEM, which is the latest, is generally recommended for high-quality queries as it is faster and more accurate. BWA-MEM also has better performance than BWA-backtrack for 70-100bp Illumina reads.
+    URL: http://bio-bwa.sourceforge.net/
 contactPoint:
-  - name:
-    email:
+  - name: Mailing List
+    email: bio-bwa-help@sourceforge.net
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: 10.1093/bioinformatics/btp698
+    headline: Fast and accurate long-read alignment with Burrows-Wheeler transform
+  - identifier: http://arxiv.org/abs/1303.3997
+    headline: Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM
 keywords:
-  - name:
-    category:
+  - name: mapping
+    category: topic
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Heng Li
+    email: bio-bwa-help@sourceforge.net
     identifier:
-programmingLanguage:
-datePublished:
-downloadURL:
-extra:
+programmingLanguage: C
+datePublished: 2013 03 16
+downloadURL: https://github.com/lh3/bwa/releases
+extra: see minimap2 for long-read alignment
