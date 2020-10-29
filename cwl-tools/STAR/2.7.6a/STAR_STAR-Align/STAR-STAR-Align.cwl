@@ -5,7 +5,7 @@ baseCommand:
   - --runmode
   - alignReads
 hints:
-  - dockerPull: "truwl/star:2.7.6a--0"
+  - dockerPull: "truwl/STAR:2.7.6a_0.1.0"
     class: DockerRequirement
   - packages:
       STAR:

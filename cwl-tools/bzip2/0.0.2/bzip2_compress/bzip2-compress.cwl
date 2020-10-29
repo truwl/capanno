@@ -16,7 +16,7 @@ requirements:
                 ]
       }
 hints:
-  - dockerPull: truwl/scidap:v0.0.2
+  - dockerPull: truwl/debian-buster:0.1.0
     class: DockerRequirement
 doc: |-
   Tool compresses `input_file` to `*.bz2`.

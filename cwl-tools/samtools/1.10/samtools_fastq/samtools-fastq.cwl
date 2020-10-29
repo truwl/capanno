@@ -8,7 +8,7 @@ requirements:
     listing:
       - $(inputs.bam_sorted)
 hints:
-  - dockerPull: truwl/samtools:1.2-0
+  - dockerPull: truwl/samtools:1.9_0.1.0
     class: DockerRequirement
   - coresMin: 1
     ramMin: 20000

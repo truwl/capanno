@@ -6,7 +6,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: "truwl/seqkit:0.7.1--0"
+  - dockerPull: "truwl/seqkit:0.9.3_0.1.0"
     class: DockerRequirement
   - coresMin: 8
     coresMax: 32

@@ -8,7 +8,7 @@ requirements:
       - var default_output_filename = function() { return inputs.input_file.location.split('/').slice(-1)[0].split('.').slice(0,-1).join('.')
         + ".fastxstat" };
 hints:
-  - dockerPull: truwl/fastx_toolkit:v0.0.14
+  - dockerPull: truwl/fastx_toolkit:0.0.14_0.1.0
     class: DockerRequirement
   - packages:
       fastx_toolkit:

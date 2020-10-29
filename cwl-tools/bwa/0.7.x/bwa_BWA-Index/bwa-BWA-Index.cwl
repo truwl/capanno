@@ -5,7 +5,7 @@ baseCommand:
   - index
 requirements:
   - class: DockerRequirement
-    dockerPull: "truwl/bwa:0.7.8"
+    dockerPull: "truwl/bwa:0.7.8_0.1.0"
   - class: InlineJavascriptRequirement
 inputs:
   InputFile:

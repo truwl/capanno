@@ -3,12 +3,12 @@ class: CommandLineTool
 baseCommand:
   - prefetch
 hints:
-  - dockerPull: truwl/sra-tools:2.10.3--pl526haddd2b5_0
+  - dockerPull: truwl/sra-tools:2.10.8_0.1.0
     class: DockerRequirement
   - packages:
       sratoolkit:
         specs: ["https://bio.tools/sra-tools"]
-        version: ["2.10.3"]
+        version: ["2.10.8"]
     class: SoftwareRequirement
 arguments:
   - "-O"

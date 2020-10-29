@@ -287,7 +287,7 @@ requirements:
           bash  ./run_spades.sh
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: 'truwl/unicycler:v0.4.7dfsg-2-deb_cv1'
+  - dockerPull: 'truwl/unicycler:0.4.8_0.1.0'
     class: DockerRequirement
 arguments:
   - spades_wrapper.sh

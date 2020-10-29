@@ -26,7 +26,7 @@ requirements:
         return (root == "")?inputs.crossbow_filelist.basename+ext:root+ext; } else
         { return null; } };
 hints:
-  - dockerPull: truwl/bowtie:1.3.0
+  - dockerPull: truwl/bowtie:1.2.3_0.1.0
     class: DockerRequirement
   - packages:
       bowtie:

@@ -8,7 +8,7 @@ requirements:
     listing:
       - $(inputs.sequences)
 hints:
-  - dockerPull: truwl/samtools:1.2-0
+  - dockerPull: truwl/samtools:1.9_0.1.0
     class: DockerRequirement
   - packages:
       samtools:

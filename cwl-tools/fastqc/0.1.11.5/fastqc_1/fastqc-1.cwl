@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: "fastqc"
 hints:
-  - dockerPull: truwl/trim_galore:0.4.4_1.14_0.11.7
+  - dockerPull: truwl/fastqc:0.11.9_0.1.0
     class: DockerRequirement
   - coresMin: 1
     ramMin: 5000

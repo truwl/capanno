@@ -11,7 +11,7 @@ requirements:
       - envName: XDG_RUNTIME_DIR
         envValue: $(runtime.tmpdir)
 hints:
-  - dockerPull: biocontainers/bandage:v0.8.1-1-deb_cv1
+  - dockerPull: truwl/bandage:0.8.1_0.1.0
     class: DockerRequirement
 stdout: assembly_graph_info.txt
 label: Bandage info
