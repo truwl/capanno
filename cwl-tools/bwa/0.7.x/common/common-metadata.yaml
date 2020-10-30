@@ -19,7 +19,7 @@ WebSite:
 contactPoint:
   - name: Mailing List
     email: bio-bwa-help@sourceforge.net
-    identifier:
+    identifier: bio-bwa-help@sourceforge.net
 publication:
   - identifier: 10.1093/bioinformatics/btp698
     headline: Fast and accurate long-read alignment with Burrows-Wheeler transform
@@ -32,7 +32,7 @@ alternateName:
 creator:
   - name: Heng Li
     email: bio-bwa-help@sourceforge.net
-    identifier:
+    identifier: bio-bwa-help@sourceforge.net
 programmingLanguage: C
 datePublished: 2013 03 16
 downloadURL: https://github.com/lh3/bwa/releases
