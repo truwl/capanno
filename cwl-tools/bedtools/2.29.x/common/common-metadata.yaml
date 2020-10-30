@@ -20,6 +20,7 @@ featureList:
   - flank
   - fisher
   - genomecov
+  - genomecov_bed2bedgraph
   - getfasta
   - groupby
   - igv

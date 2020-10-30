@@ -1,13 +1,19 @@
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand:
-  - bwa
-  - mem
+
 requirements:
-  - class: DockerRequirement
-    dockerPull: "truwl/bwa:0.7.8_0.1.0"
-stdout: unsorted_reads.sam
+  DockerRequirement:
+    dockerPull: "quay.io/biocontainers/bwa:0.7.17--ha92aebf_3"
+
 inputs:
+  InputFile:
+    type: File[]
+    format:
+      - edam:format_1930 # FASTA
+      - edam:format_1931 # FASTQ
+    inputBinding:
+      position: 201
+    
   Index:
     type: File
     inputBinding:
@@ -19,124 +25,109 @@ inputs:
       - .bwt
       - .pac
       - .sa
-  InputFile:
-    type:
-      name: _:b55a96f4-6317-4e5c-b12f-1a0e5169e70f
-      items: File
-      type: array
-    inputBinding:
-      position: 201
-    format:
-      - http://edamontology.org/format_1930
-      - http://edamontology.org/format_1931
-  BandWidth:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-w"
-  ClipPen:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-L"
-  GapExtPen:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-E"
-  GapOpenPen:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-O"
-  MatchScore:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-A"
-  MaxOcc:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-c"
-  MinSeedLen:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-k"
-  MmPenalty:
-    type:
-      - 'null'
-      - int
-    inputBinding:
-      prefix: "-B"
-  RgLine:
-    type:
-      - 'null'
-      - string
-    inputBinding:
-      prefix: "-R"
-  SeedSplitRatio:
-    type:
-      - 'null'
-      - float
-    inputBinding:
-      prefix: "-r"
+
+#Optional arguments
+
   Threads:
-    type:
-      - 'null'
-      - int
+    type: int?
     inputBinding:
       prefix: "-t"
-  UnpairPen:
-    type:
-      - 'null'
-      - int
+
+  MinSeedLen:
+    type: int?
     inputBinding:
-      prefix: "-U"
-  VerboseLevel:
-    type:
-      - 'null'
-      - int
+      prefix: "-k"
+  
+  BandWidth:
+    type: int?
     inputBinding:
-      prefix: "-v"
+      prefix: "-w"
+
   ZDropoff:
-    type:
-      - 'null'
-      - int
+    type: int?
     inputBinding:
       prefix: "-d"
-  isMarkShortSplit:
-    type:
-      - 'null'
-      - boolean
+
+  SeedSplitRatio:
+    type: float?
     inputBinding:
-      prefix: "-M"
-  isMultiplexedPair:
-    type:
-      - 'null'
-      - boolean
+      prefix: "-r"
+    
+  MaxOcc:
+    type: int?
     inputBinding:
-      prefix: "-p"
+      prefix: "-c"
+
+  MatchScore:
+    type: int?
+    inputBinding:
+      prefix: "-A"
+
+  MmPenalty:
+    type: int?
+    inputBinding:
+      prefix: "-B"
+
+  GapOpenPen:
+    type: int?
+    inputBinding:
+      prefix: "-O"
+
+  GapExtPen:
+    type: int?
+    inputBinding:
+      prefix: "-E"
+
+  ClipPen:
+    type: int?
+    inputBinding:
+      prefix: "-L"
+
+  UnpairPen:
+    type: int?
+    inputBinding:
+      prefix: "-U"
+
+  RgLine:
+    type: string?
+    inputBinding:
+      prefix: "-R"
+
+  VerboseLevel:
+    type: int?
+    inputBinding:
+      prefix: "-v"
+
   isOutSecAlign:
-    type:
-      - 'null'
-      - boolean
+    type: boolean?
     inputBinding:
       prefix: "-a"
+
+  isMarkShortSplit:
+    type: boolean?
+    inputBinding:
+      prefix: "-M"
+
   isUseHardClip:
-    type:
-      - 'null'
-      - boolean
+    type: boolean?
     inputBinding:
       prefix: "-H"
+
+  isMultiplexedPair:
+    type: boolean?
+    inputBinding:
+      prefix: "-p"
+      
+
+baseCommand: [bwa, mem]
+
+stdout: unsorted_reads.sam
+
 outputs:
   reads_stdout:
     type: stdout
+    
+$namespaces:
+  edam: http://edamontology.org/
+$schemas:
+  - http://edamontology.org/EDAM_1.18.owl
