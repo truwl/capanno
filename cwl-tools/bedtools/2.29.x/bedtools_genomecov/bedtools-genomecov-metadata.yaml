@@ -1,5 +1,5 @@
 metadataStatus: Released
-cwlStatus: Incomplete
+cwlStatus: Released
 name: genomecov
 identifier: TL_43392c_7e.c8
 description: bedtools genomecov computes histograms (default), per-base reports (-d)
@@ -10,3 +10,7 @@ keywords:
     category:
 alternateName: genomeCoverageBed
 parentMetadata: ../common/common-metadata.yaml
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/bedtools/bedtools_genomecov.cwl
+    dateCreated: '2020-09-21'
