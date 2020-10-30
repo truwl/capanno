@@ -36,4 +36,5 @@ creator:
 programmingLanguage: C
 datePublished: 2013 03 16
 downloadURL: https://github.com/lh3/bwa/releases
-extra: see minimap2 for long-read alignment
+extra: 
+  notes: see minimap2 for long-read alignment
