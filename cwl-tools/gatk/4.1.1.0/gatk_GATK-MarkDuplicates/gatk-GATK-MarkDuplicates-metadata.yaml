@@ -1,9 +1,9 @@
 name: GATK-MarkDuplicates
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_55f722_ae.d9
-description:
+description: This tool locates and tags duplicate reads in a BAM or SAM file, where duplicate reads are defined as originating from a single fragment of DNA
 keywords:
   - name:
     category:

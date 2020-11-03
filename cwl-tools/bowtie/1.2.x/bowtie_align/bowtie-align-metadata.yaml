@@ -1,9 +1,9 @@
 name: align
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_af1548_f7.62
-description:
+description: perform the Bowtie alignment
 keywords:
   - name:
     category:

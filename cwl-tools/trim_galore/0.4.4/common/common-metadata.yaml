@@ -5,16 +5,16 @@ softwareVersion:
 identifier: TL_a4fd95.d0
 featureList:
   - trim_galore
-metadataStatus: Incomplete
+metadataStatus: Released
 description:
 codeRepository:
-  name:
-  URL:
+  name: TrimGalore
+  URL: https://github.com/FelixKrueger/TrimGalore
 license:
 WebSite:
-  - name:
-    description:
-    URL:
+  - name: Babraham Bioinformatics Trim Galore 
+    description: Project site
+    URL: http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
 contactPoint:
   - name:
     email:
@@ -27,7 +27,7 @@ keywords:
     category:
 alternateName:
 creator:
-  - name:
+  - name: Felix Krueger
     email:
     identifier:
 programmingLanguage:
