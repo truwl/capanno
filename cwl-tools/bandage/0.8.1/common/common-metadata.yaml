@@ -6,7 +6,7 @@ identifier: TL_7e0c8a.c6
 featureList:
   - bandage-image
   - bandage-info
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Bandage (a Bioinformatics Application for Navigating De novo Assembly Graphs Easily) is a tool for visualizing assembly graphs with connections
 codeRepository:
   name: Bandage

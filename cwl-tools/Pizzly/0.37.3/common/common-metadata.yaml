@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_213d9e.2c
 featureList:
   - Pizzly
-metadataStatus: Incomplete
+metadataStatus: Released
 description: pizzly is a program for detecting gene fusions from RNA-Seq data of cancer samples. It requires running kallisto with the --fusion parameter (available in version 0.43.1 or later).
 codeRepository:
   name: pizzly
