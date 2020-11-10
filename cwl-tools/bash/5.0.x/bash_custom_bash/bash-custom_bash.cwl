@@ -4,7 +4,7 @@ baseCommand:
   - bash
   - '-c'
 hints:
-  - dockerPull: truwl/scidap:v0.0.3
+  - dockerPull: truwl/bash:5.0.018_0.1.0
     class: DockerRequirement
 doc: |
   Tool to run custom script set as `script` input with arguments from `param`.
