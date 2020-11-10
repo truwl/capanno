@@ -1,3 +1,4 @@
 pandoc-include==0.3.2
-capanno-utils==0.5.1a1
+#capanno-utils==0.5.1a1
+git+git://github.com/truwl/capanno-utils.git@004223d2964a73243622aba5cbf14d99f046fac9
 future==0.17.1
