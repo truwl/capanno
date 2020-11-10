@@ -26,8 +26,7 @@ publication:
   - identifier: http://arxiv.org/abs/1303.3997
     headline: Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM
 keywords:
-  - name: mapping
-    category: topic
+  - http://edamontology.org/topic_0102
 alternateName:
 creator:
   - name: Heng Li

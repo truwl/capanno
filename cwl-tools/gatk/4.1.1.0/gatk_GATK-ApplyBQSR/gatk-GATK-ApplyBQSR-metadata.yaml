@@ -1,6 +1,6 @@
 name: GATK-ApplyBQSR
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_55f722_d6.d9
 description:

@@ -6,7 +6,7 @@ identifier: TL_af1548.62
 featureList:
   - build
   - align
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Bowtie is an ultrafast, memory-efficient short read aligner.
 codeRepository:
   name:

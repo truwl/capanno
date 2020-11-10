@@ -5,15 +5,15 @@ softwareVersion:
 identifier: TL_a4fd95.d0
 featureList:
   - trim_galore
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Adaptor trimming of reads (single or paired end) in fastq format
 codeRepository:
   name: TrimGalore
   URL: https://github.com/FelixKrueger/TrimGalore
 license: GNU GPL v3.0
 WebSite:
-  - name: Trim Galore
-    description: Project home
+  - name: Babraham Bioinformatics Trim Galore 
+    description: Project site
     URL: http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
 contactPoint:
   - name:

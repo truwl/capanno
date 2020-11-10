@@ -1,6 +1,6 @@
 name: trim_galore
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_a4fd95_a4.d0
 description:
