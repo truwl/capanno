@@ -1,0 +1,6 @@
+file1:
+  class: File
+  location: https://storage.googleapis.com/truwl-cwl-test-files/animals.txt
+file2:
+  class: File
+  location: https://storage.googleapis.com/truwl-cwl-test-files/foods.txt
