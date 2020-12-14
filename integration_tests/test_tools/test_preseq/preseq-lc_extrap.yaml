@@ -1,0 +1,14 @@
+verbose_mode: false  # type "boolean" (optional)
+terms: 0  # type "int" (optional)
+quick mode: false  # type "boolean" (optional)
+pe_mode: false  # type "boolean" (optional)
+max_fragment_size: 0  # type "int" (optional)
+extrapolations_step: 0.1  # type "float" (optional)
+extrapolation: 0.1  # type "float" (optional)
+estimates_filename: a_string  # type "string" (optional)
+defects_mode: false  # type "boolean" (optional)
+confidence_level: 0.1  # type "float" (optional)
+bootstraps: 0  # type "int" (optional)
+bam_file:  # type "File"
+    class: File
+    path: a/file/path

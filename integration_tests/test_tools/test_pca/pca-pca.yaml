@@ -1,0 +1,9 @@
+target_column: a_string  # type "string" (optional)
+output_prefix: a_string  # type "string" (optional)
+expression_files:  # array of type "File"
+  - class: File
+    path: a/file/path
+expression_aliases:  # array of type "string" (optional)
+  - a_string
+combine:  # array of type "string" (optional)
+  - a_string

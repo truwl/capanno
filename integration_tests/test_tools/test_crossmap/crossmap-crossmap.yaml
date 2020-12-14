@@ -1,0 +1,12 @@
+output_basename: a_string  # type "string" (optional)
+input_file_type: a_string  # type "string"
+input_file:  # type "File"
+    class: File
+    path: a/file/path
+chain_file:  # type "File"
+    class: File
+    path: a/file/path
+bam_stdev: 0.1  # type "float" (optional)
+bam_insert_size: 0  # type "int" (optional)
+bam_fold: 0.1  # type "float" (optional)
+bam_append_tags: false  # type "boolean" (optional)

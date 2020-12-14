@@ -1,0 +1,5 @@
+validation_stringency: LENIENT  # enum; valid values: "_:489cb447-8507-4962-abc0-61e19fa500bb#STRICT", "_:489cb447-8507-4962-abc0-61e19fa500bb#LENIENT", "_:489cb447-8507-4962-abc0-61e19fa500bb#SILENT" (optional)
+sort_order: coordinate  # enum; valid values: "_:2e0ece52-61e0-4893-ab02-40f0f8f4bceb#queryname", "_:2e0ece52-61e0-4893-ab02-40f0f8f4bceb#coordinate", "_:2e0ece52-61e0-4893-ab02-40f0f8f4bceb#duplicate" (optional)
+alignments:  # type "File"
+    class: File
+    path: a/file/path

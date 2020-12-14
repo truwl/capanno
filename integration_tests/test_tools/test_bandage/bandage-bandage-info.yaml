@@ -1,0 +1,4 @@
+tsv: false  # type "boolean" (optional)
+graph:  # type "File"
+    class: File
+    path: a/file/path

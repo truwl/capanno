@@ -1,0 +1,14 @@
+isIgnoreProtein: false  # type "boolean" (optional)
+Reference:  # type "File"
+    class: File
+    path: a/file/path
+Output: "pizzly_out"  # default value of type "string".
+Kmer: 0  # type "int"
+InsertSize: 0  # type "int" (optional)
+InputFile:  # type "File"
+    class: File
+    path: a/file/path
+Gtf:  # type "File"
+    class: File
+    path: a/file/path
+Cache: "index.cache.txt"  # default value of type "string". (optional)

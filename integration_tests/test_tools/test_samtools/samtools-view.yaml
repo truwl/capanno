@@ -1,0 +1,39 @@
+uncompressed: false  # type "boolean" (optional)
+threads: 0  # type "int" (optional)
+samInput: false  # type "boolean" (optional)
+samHeader: false  # type "boolean" (optional)
+region: a_string  # type "string" (optional)
+referenceIndexFile:  # type "File" (optional)
+    class: File
+    path: a/file/path
+referenceFasta:  # type "File" (optional)
+    class: File
+    path: a/file/path
+readsWithoutBits: 0  # type "int" (optional)
+readsWithBits: 0  # type "int" (optional)
+readsInLibrary: a_string  # type "string" (optional)
+readsInGroupString: a_string  # type "string" (optional)
+readsInGroupFile:  # type "File" (optional)
+    class: File
+    path: a/file/path
+readQuality: 0  # type "int" (optional)
+randomSeed: 0.1  # type "float" (optional)
+outputToFile: a_string  # type "string" (optional)
+outputName: samtools-viewOut.txt  # default value of type "string".
+outCram: false  # type "boolean" (optional)
+outBam: false  # type "boolean" (optional)
+invertedOutputName: a_string  # type "string" (optional)
+input:  # type "File"
+    class: File
+    path: a/file/path
+help: false  # type "boolean" (optional)
+headerOnly: false  # type "boolean" (optional)
+fastCompression: false  # type "boolean" (optional)
+excludeTag:  # array of type "string" (optional)
+  - a_string
+count: false  # type "boolean" (optional)
+collapseCigar: false  # type "boolean" (optional)
+cigar: 0  # type "int" (optional)
+bedOverlap:  # type "File" (optional)
+    class: File
+    path: a/file/path

@@ -1,0 +1,94 @@
+y: false  # type "boolean" (optional)
+verbose: false  # type "boolean" (optional)
+v: 0  # type "int" (optional)
+upstream_filelist:  # optional
+  -  # type "File"
+    class: File path: a/file/path
+  - # array of type "File"
+      - class: File
+        path: a/file/path
+un: a_string  # type "string" (optional)
+u: 0  # type "int" (optional)
+threads: 0  # type "int" (optional)
+t: false  # type "boolean" (optional)
+suppress: a_string  # type "string" (optional)
+strata: false  # type "boolean" (optional)
+solexa_quals: false  # type "boolean" (optional)
+solexa1.3_quals: false  # type "boolean" (optional)
+snpphred: 0  # type "int" (optional)
+snpfrac: 0.1  # type "float" (optional)
+shmem: false  # type "boolean" (optional)
+seed: 0  # type "int" (optional)
+sam_nosq: false  # type "boolean" (optional)
+sam_nohead: false  # type "boolean" (optional)
+sam_RG: a_string  # type "string" (optional)
+sam: false  # type "boolean" (optional)
+s: 0  # type "int" (optional)
+rf: false  # type "boolean" (optional)
+refout: false  # type "boolean" (optional)
+refidx: false  # type "boolean" (optional)
+reads_per_batch: 0  # type "int" (optional)
+r: false  # type "boolean" (optional)
+quiet: false  # type "boolean" (optional)
+q: false  # type "boolean" (optional)
+phred64_quals: false  # type "boolean" (optional)
+phred33_quals: false  # type "boolean" (optional)
+pairtries: 0  # type "int" (optional)
+output_filename: a_string  # type "string" (optional)
+o: 0  # type "int" (optional)
+nomaqround: false  # type "boolean" (optional)
+nofw: false  # type "boolean" (optional)
+n: 0  # type "int" (optional)
+mm: false  # type "boolean" (optional)
+maxbts: 0  # type "int" (optional)
+max: a_string  # type "string" (optional)
+mapq: 0  # type "int" (optional)
+m: 0  # type "int" (optional)
+large_index: false  # type "boolean" (optional)
+l: 0  # type "int" (optional)
+k: 0  # type "int" (optional)
+integer_quals: false  # type "boolean" (optional)
+indices_folder:  # type "Directory"
+    class: Directory
+    path: a/directory/path
+fullref: false  # type "boolean" (optional)
+fr: false  # type "boolean" (optional)
+ff: false  # type "boolean" (optional)
+f: false  # type "boolean" (optional)
+e: 0  # type "int" (optional)
+downstream_filelist:  # optional
+  -  # type "File"
+    class: File path: a/file/path
+  - # array of type "File"
+      - class: File
+        path: a/file/path
+crossbow_filelist:  # optional
+  -  # type "File"
+    class: File path: a/file/path
+  - # array of type "File"
+      - class: File
+        path: a/file/path
+col_keepends: false  # type "boolean" (optional)
+col_cseq: false  # type "boolean" (optional)
+col_cqual: false  # type "boolean" (optional)
+clip_5p_end: 0  # type "int" (optional)
+clip_3p_end: 0  # type "int" (optional)
+chunkmbs: 0  # type "int" (optional)
+c: false  # type "boolean" (optional)
+best: false  # type "boolean" (optional)
+al: a_string  # type "string" (optional)
+a: false  # type "boolean" (optional)
+X: 0  # type "int" (optional)
+Q2:  # type "File" (optional)
+    class: File
+    path: a/file/path
+Q1:  # type "File" (optional)
+    class: File
+    path: a/file/path
+Q:  # type "File" (optional)
+    class: File
+    path: a/file/path
+M: 0  # type "int" (optional)
+I: 0  # type "int" (optional)
+C: false  # type "boolean" (optional)
+B: 0  # type "int" (optional)

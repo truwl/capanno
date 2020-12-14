@@ -1,0 +1,18 @@
+threads: 0  # type "int" (optional)
+reads_file:  # type "File"
+    class: File
+    path: a/file/path
+nofilter: false  # type "boolean" (optional)
+limits:  # type "File" (optional)
+    class: File
+    path: a/file/path
+kmers: 0  # type "int" (optional)
+hide_group: false  # type "boolean" (optional)
+format_enum: file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/fastqc/fastqc_2.cwl#format_enum/format_enum_value  # enum; valid values: "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/fastqc/fastqc_2.cwl#format_enum/format/bam", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/fastqc/fastqc_2.cwl#format_enum/format/sam", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/fastqc/fastqc_2.cwl#format_enum/format/bam_mapped", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/fastqc/fastqc_2.cwl#format_enum/format/sam_mapped", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/fastqc/fastqc_2.cwl#format_enum/format/fastq" (optional)
+contaminants:  # type "File" (optional)
+    class: File
+    path: a/file/path
+casava: false  # type "boolean" (optional)
+adapters:  # type "File" (optional)
+    class: File
+    path: a/file/path

@@ -1,0 +1,8 @@
+no_overlaps: false  # type "boolean" (optional)
+file_b:  # type "File"
+    class: File
+    path: a/file/path
+file_a:  # type "File"
+    class: File
+    path: a/file/path
+count: false  # type "boolean" (optional)

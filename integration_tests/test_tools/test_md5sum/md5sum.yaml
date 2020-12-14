@@ -1,0 +1,6 @@
+text: false  # type "boolean" (optional)
+tag: false  # type "boolean" (optional)
+binary: false  # type "boolean" (optional)
+FILE:  # array of type "File"
+  - class: File
+    path: a/file/path

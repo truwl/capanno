@@ -1,0 +1,38 @@
+use_orphan: false  # type "boolean" (optional)
+threads: 1  # default value of type "int". (optional)
+replace_non_match: -1  # default value of type "int". (optional)
+region: a_string  # type "string" (optional)
+reference_fasta:  # type "File"
+    class: File
+    path: a/file/path
+reads_align:  # type "File"
+    class: File
+    path: a/file/path
+pvalue_cutoff: 0.01  # default value of type "float". (optional)
+only_indels: false  # type "boolean" (optional)
+no_mapping_quality: false  # type "boolean" (optional)
+no_idaq: false  # type "boolean" (optional)
+no_ext_base_alignment_quality: false  # type "boolean" (optional)
+no_default_filter: false  # type "boolean" (optional)
+no_baq: false  # type "boolean" (optional)
+min_mq: 0  # type "int" (optional)
+min_jq: 0  # type "int" (optional)
+min_cov: 10  # default value of type "int". (optional)
+min_bq: 6  # default value of type "int". (optional)
+min_alt_jq: 0  # type "int" (optional)
+min_alt_bq: 6  # default value of type "int". (optional)
+max_mapping_quality: 255  # default value of type "int". (optional)
+max_depth_cov: 1000000  # default value of type "int". (optional)
+illumina_1_3: false  # type "boolean" (optional)
+ignore_vcf:  # array of type "File" (optional)
+  - class: File
+    path: a/file/path
+enable_source_qual: false  # type "boolean" (optional)
+del_baq: false  # type "boolean" (optional)
+def_alt_jq: 0  # type "int" (optional)
+def_alt_bq: 0  # type "int" (optional)
+call_indels: false  # type "boolean" (optional)
+bonferroni: 'dynamic'  # default value of type "string". (optional)
+bed:  # type "File" (optional)
+    class: File
+    path: a/file/path

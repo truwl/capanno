@@ -1,0 +1,15 @@
+isSingleOverhang: false  # type "boolean" (optional)
+isSingle: false  # type "boolean"
+isFusion: false  # type "boolean" (optional)
+isBias: false  # type "boolean" (optional)
+StandardDeviation: 0.1  # type "double" (optional)
+Seed: 0  # type "int" (optional)
+PseudoBam: false  # type "boolean" (optional)
+InputReads:  # array of type "File"
+  - class: File
+    path: a/file/path
+Index:  # type "File"
+    class: File
+    path: a/file/path
+FragmentLength: 0.1  # type "double" (optional)
+BootstrapSamples: 0  # type "int" (optional)

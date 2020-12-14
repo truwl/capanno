@@ -1,0 +1,12 @@
+version: false  # type "boolean" (optional)
+truncate: false  # type "boolean" (optional)
+squeezeRepeats: false  # type "boolean" (optional)
+set2: a_string  # type "string" (optional)
+set1: a_string  # type "string" (optional)
+outputFile: trOutput.txt  # default value of type "string".
+inputFile:  # type "File"
+    class: File
+    path: a/file/path
+help: false  # type "boolean" (optional)
+delete: false  # type "boolean" (optional)
+complement: false  # type "boolean" (optional)

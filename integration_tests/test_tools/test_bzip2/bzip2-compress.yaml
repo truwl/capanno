@@ -1,0 +1,5 @@
+input_file:  # type "File"
+    class: File
+    path: a/file/path
+fast: false  # type "boolean" (optional)
+best: false  # type "boolean" (optional)

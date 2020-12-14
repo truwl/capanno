@@ -1,0 +1,40 @@
+zeroTerminated: false  # type "boolean" (optional)
+wordSort: a_string  # type "string" (optional)
+versionSort: false  # type "boolean" (optional)
+version: false  # type "boolean" (optional)
+unique: false  # type "boolean" (optional)
+temporaryDirectory:  # type "Directory" (optional)
+    class: Directory
+    path: a/directory/path
+stable: false  # type "boolean" (optional)
+reverse: false  # type "boolean" (optional)
+randomSource:  # type "File" (optional)
+    class: File
+    path: a/file/path
+randomSort: false  # type "boolean" (optional)
+quietCheck: false  # type "boolean" (optional)
+parallel: 0  # type "int" (optional)
+outputFile: sortOutput.txt  # default value of type "string".
+numericSort: false  # type "boolean" (optional)
+monthSort: false  # type "boolean" (optional)
+merge: false  # type "boolean" (optional)
+key: a_string  # type "string" (optional)
+inputFile:  # type "File" (optional)
+    class: File
+    path: a/file/path
+ignoreNonprinting: false  # type "boolean" (optional)
+ignoreLeadingBlanks: false  # type "boolean" (optional)
+ignoreCase: false  # type "boolean" (optional)
+humanNumericSort: false  # type "boolean" (optional)
+help: false  # type "boolean" (optional)
+generalNumericSort: false  # type "boolean" (optional)
+files0From:  # type "File" (optional)
+    class: File
+    path: a/file/path
+fieldSeparator: a_string  # type "string" (optional)
+dictionaryOrder: false  # type "boolean" (optional)
+debug: false  # type "boolean" (optional)
+compressProgram: a_string  # type "string" (optional)
+check: false  # type "boolean" (optional)
+bufferSize: a_string  # type "string" (optional)
+batchSize: 0  # type "int" (optional)

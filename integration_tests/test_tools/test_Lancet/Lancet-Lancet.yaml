@@ -1,0 +1,50 @@
+WinSize: 0  # type "int" (optional)
+Verbose: false  # type "boolean" (optional)
+TumorInput:  # type "File"
+    class: File
+    path: a/file/path
+TrimLowQuality: 0  # type "int" (optional)
+Threads: 0  # type "int" (optional)
+Reference:  # type "File"
+    class: File
+    path: a/file/path
+QualityRange: a_string  # type "string" (optional)
+PrintGraph: false  # type "boolean" (optional)
+Padding: 0  # type "int" (optional)
+NormalInput:  # type "File"
+    class: File
+    path: a/file/path
+NodeStrLen: 0  # type "int" (optional)
+MinVAFTumor: 0.1  # type "float" (optional)
+MinStrandBias: 0.1  # type "float" (optional)
+MinReportUnit: 0  # type "int" (optional)
+MinReportLen: 0  # type "int" (optional)
+MinPhredFisherSTR: 0.1  # type "float" (optional)
+MinPhredFisher: 0.1  # type "float" (optional)
+MinMapQual: 0  # type "int" (optional)
+MinKmer: 0  # type "int" (optional)
+MinCovTumor: 0  # type "int" (optional)
+MinCovThres: 0  # type "int" (optional)
+MinCovRatio: 0.1  # type "float" (optional)
+MinCovNormal: 0  # type "int" (optional)
+MinBaseQual: 0  # type "int" (optional)
+MinAltCountTumor: 0  # type "int" (optional)
+MaxVAFNormal: 0.1  # type "float" (optional)
+MaxUnitLen: 0  # type "int" (optional)
+MaxTipLen: 0  # type "int" (optional)
+MaxMismatch: 0  # type "int" (optional)
+MaxKmer: 0  # type "int" (optional)
+MaxIndelLen: 0  # type "int" (optional)
+MaxCovTumor: 0  # type "int" (optional)
+MaxCovNormal: 0  # type "int" (optional)
+MaxAvgCov: 0  # type "int" (optional)
+MaxAltCountNormal: 0  # type "int" (optional)
+LowCovThres: 0  # type "int" (optional)
+KmerRecov: false  # type "boolean" (optional)
+DistFrSTR: 0  # type "int" (optional)
+DFSLimit: 0  # type "int" (optional)
+BedFile:  # type "File" (optional)
+    class: File
+    path: a/file/path
+ActRegOff: false  # type "boolean" (optional)
+ASXSDifMax: 0  # type "int" (optional)

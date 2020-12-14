@@ -1,0 +1,24 @@
+isUseHardClip: false  # type "boolean" (optional)
+isOutSecAlign: false  # type "boolean" (optional)
+isMultiplexedPair: false  # type "boolean" (optional)
+isMarkShortSplit: false  # type "boolean" (optional)
+ZDropoff: 0  # type "int" (optional)
+VerboseLevel: 0  # type "int" (optional)
+UnpairPen: 0  # type "int" (optional)
+Threads: 0  # type "int" (optional)
+SeedSplitRatio: 0.1  # type "float" (optional)
+RgLine: a_string  # type "string" (optional)
+MmPenalty: 0  # type "int" (optional)
+MinSeedLen: 0  # type "int" (optional)
+MaxOcc: 0  # type "int" (optional)
+MatchScore: 0  # type "int" (optional)
+InputFile:  # array of type "File"
+  - class: File
+    path: a/file/path
+Index:  # type "File"
+    class: File
+    path: a/file/path
+GapOpenPen: 0  # type "int" (optional)
+GapExtPen: 0  # type "int" (optional)
+ClipPen: 0  # type "int" (optional)
+BandWidth: 0  # type "int" (optional)

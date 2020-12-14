@@ -1,0 +1,24 @@
+window_size: 0  # type "int" (optional)
+summit_distance: 0  # type "int" (optional)
+simulations_number: 0  # type "int" (optional)
+shift_size_second: 0  # type "int" (optional)
+shift_size_first: 0  # type "int" (optional)
+sample_name_second: a_string  # type "string" (optional)
+sample_name_first: a_string  # type "string" (optional)
+read_format: file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#read_format/read_format_enum_value  # enum; valid values: "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#read_format/read_format/bed", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#read_format/read_format/bedpe", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#read_format/read_format/sam", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#read_format/read_format/bam" (optional)
+read_file_second:  # type "File"
+    class: File
+    path: a/file/path
+read_file_first:  # type "File"
+    class: File
+    path: a/file/path
+peak_format: file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#peak_format/peak_format_enum_value  # enum; valid values: "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#peak_format/peak_format/bed", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#peak_format/peak_format/bed-summit", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#peak_format/peak_format/macs", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#peak_format/peak_format/macs2", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#peak_format/peak_format/narrowpeak", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/manorm/manorm.cwl#peak_format/peak_format/broadpeak" (optional)
+peak_file_second:  # type "File"
+    class: File
+    path: a/file/path
+peak_file_first:  # type "File"
+    class: File
+    path: a/file/path
+paired_end: false  # type "boolean" (optional)
+p_value_cutoff: 0.1  # type "float" (optional)
+m_value_cutoff: 0.1  # type "float" (optional)

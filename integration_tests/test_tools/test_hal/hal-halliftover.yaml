@@ -1,0 +1,12 @@
+target_genome_name: a_string  # type "string"
+tab_separated: true  # default value of type "boolean". (optional)
+source_genome_name: a_string  # type "string"
+output_filename: a_string  # type "string" (optional)
+no_dupes: false  # type "boolean" (optional)
+keep_extra: false  # type "boolean" (optional)
+input_bed_file:  # type "File"
+    class: File
+    path: a/file/path
+hal_file:  # type "File"
+    class: File
+    path: a/file/path

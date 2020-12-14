@@ -1,0 +1,22 @@
+target_column: a_string  # type "string" (optional)
+row_normalize: false  # type "boolean" (optional)
+row_min: 0.1  # type "float" (optional)
+row_logtransform: false  # type "boolean" (optional)
+row_dist_metric: _:f426f708-0479-4d2b-9e24-d1454129e47d_enum_value  # enum; valid values: "_:f426f708-0479-4d2b-9e24-d1454129e47d#cosangle", "_:f426f708-0479-4d2b-9e24-d1454129e47d#abscosangle", "_:f426f708-0479-4d2b-9e24-d1454129e47d#euclid", "_:f426f708-0479-4d2b-9e24-d1454129e47d#abseuclid", "_:f426f708-0479-4d2b-9e24-d1454129e47d#cor", "_:f426f708-0479-4d2b-9e24-d1454129e47d#abscor" (optional)
+row_center: _:dc94523b-ca70-4716-a59d-c8470e83c540_enum_value  # enum; valid values: "_:dc94523b-ca70-4716-a59d-c8470e83c540#mean", "_:dc94523b-ca70-4716-a59d-c8470e83c540#median" (optional)
+palette:  # array of type "string" (optional)
+  - a_string
+output_prefix: a_string  # type "string" (optional)
+keep_discarded: false  # type "boolean" (optional)
+expression_files:  # array of type "File"
+  - class: File
+    path: a/file/path
+expression_aliases:  # array of type "string" (optional)
+  - a_string
+combine:  # array of type "string" (optional)
+  - a_string
+col_normalize: false  # type "boolean" (optional)
+col_logtransform: false  # type "boolean" (optional)
+col_dist_metric: _:b22610b4-ea56-4044-9064-1bb91c106bc0_enum_value  # enum; valid values: "_:b22610b4-ea56-4044-9064-1bb91c106bc0#cosangle", "_:b22610b4-ea56-4044-9064-1bb91c106bc0#abscosangle", "_:b22610b4-ea56-4044-9064-1bb91c106bc0#euclid", "_:b22610b4-ea56-4044-9064-1bb91c106bc0#abseuclid", "_:b22610b4-ea56-4044-9064-1bb91c106bc0#cor", "_:b22610b4-ea56-4044-9064-1bb91c106bc0#abscor" (optional)
+col_center: _:d605b600-bd0d-4593-a17d-f9b0d09e9974_enum_value  # enum; valid values: "_:d605b600-bd0d-4593-a17d-f9b0d09e9974#mean", "_:d605b600-bd0d-4593-a17d-f9b0d09e9974#median" (optional)
+cluster_method: _:ba75445f-363f-4a1a-b7a7-198d0f236ad3_enum_value  # enum; valid values: "_:ba75445f-363f-4a1a-b7a7-198d0f236ad3#row", "_:ba75445f-363f-4a1a-b7a7-198d0f236ad3#column", "_:ba75445f-363f-4a1a-b7a7-198d0f236ad3#both" (optional)

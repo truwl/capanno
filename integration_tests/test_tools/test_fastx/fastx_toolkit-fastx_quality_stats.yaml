@@ -1,0 +1,5 @@
+output_filename: a_string  # type "string" (optional)
+new_output_format: false  # type "boolean" (optional)
+input_file:  # type "File"
+    class: File
+    path: a/file/path

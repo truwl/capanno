@@ -1,0 +1,35 @@
+version: false  # type "boolean" (optional)
+traditional: false  # type "boolean" (optional)
+sandbox: false  # type "boolean" (optional)
+reInterval: false  # type "boolean" (optional)
+rawPatternAction: a_string  # type "string" (optional)
+programText: a_string  # type "string" (optional)
+prettyPrint: a_string  # type "string" (optional)
+posix: false  # type "boolean" (optional)
+outFileName: gawkOutput.txt  # default value of type "string".
+optimize: false  # type "boolean" (optional)
+nonDecimalData: false  # type "boolean" (optional)
+load: a_string  # type "string" (optional)
+lintOld: false  # type "boolean" (optional)
+lint: a_string  # type "string" (optional)
+inputFiles:  # array of type "File" (optional)
+  - class: File
+    path: a/file/path
+includeFile: a_string  # type "string" (optional)
+help: false  # type "boolean" (optional)
+genPot: false  # type "boolean" (optional)
+fieldSeparator: a_string  # type "string" (optional)
+exec:  # type "File" (optional)
+    class: File
+    path: a/file/path
+end: false  # type "boolean" (optional)
+dumpVariables: a_string  # type "string" (optional)
+debug: a_string  # type "string" (optional)
+copyright: false  # type "boolean" (optional)
+charactersAsBytes: false  # type "boolean" (optional)
+bigNum: false  # type "boolean" (optional)
+awkScript:  # type "File" (optional)
+    class: File
+    path: a/file/path
+assign: a_string  # type "string" (optional)
+UseLcNumeric: false  # type "boolean" (optional)

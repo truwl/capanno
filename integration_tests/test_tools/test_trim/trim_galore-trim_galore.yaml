@@ -1,0 +1,9 @@
+qual_trim_cutoff: 20  # default value of type "int".
+min_read_length: 20  # default value of type "int".
+min_adapter_overlap: 1  # default value of type "int".
+fastq2:  # type "File" (optional)
+    class: File
+    path: a/file/path
+fastq1:  # type "File"
+    class: File
+    path: a/file/path

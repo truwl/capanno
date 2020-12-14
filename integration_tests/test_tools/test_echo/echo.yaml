@@ -1,0 +1,2 @@
+outputName: echoOut.txt  # default value of type "string".
+inputString: test string  # default value of type "string".

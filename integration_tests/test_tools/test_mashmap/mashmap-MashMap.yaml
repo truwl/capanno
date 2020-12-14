@@ -1,0 +1,19 @@
+threads: 0  # type "int" (optional)
+reference_genomes_list:  # type "File" (optional)
+    class: File
+    path: a/file/path
+reference:  # type "File" (optional)
+    class: File
+    path: a/file/path
+query_list:  # type "File" (optional)
+    class: File
+    path: a/file/path
+query:  # type "File" (optional)
+    class: File
+    path: a/file/path
+output_file: a_string  # type "string"
+no_split: false  # type "boolean"
+minimum_segment_length: 0  # type "int" (optional)
+kmer_size: 0  # type "int" (optional)
+identity_threshold: 0  # type "int" (optional)
+filter_mode: file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/mashmap/MashMap.cwl#filter_mode/filter_mode_enum_value  # enum; valid values: "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/mashmap/MashMap.cwl#filter_mode/filter_mode/one-to-one", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/mashmap/MashMap.cwl#filter_mode/filter_mode/map", "file:///Users/leipzig/Documents/dev/capanno-utils/bio-cwl-tools-submodule/mashmap/MashMap.cwl#filter_mode/filter_mode/none" (optional)
