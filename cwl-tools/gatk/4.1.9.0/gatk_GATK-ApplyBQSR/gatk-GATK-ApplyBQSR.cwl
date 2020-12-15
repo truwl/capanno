@@ -13,8 +13,7 @@ hints:
           - 4.1.9.0
         specs:
           - http://identifiers.org/biotools/gatk
-
-    class: SoftwareRequirement
+  - class: SoftwareRequirement
 arguments: []
 inputs:
   JavaOptions:

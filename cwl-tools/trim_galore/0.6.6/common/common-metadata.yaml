@@ -1,6 +1,6 @@
 name: trim_galore
 softwareVersion:
-  versionName: 0.4.4
+  versionName: 0.6.6
   includedVersions: []
 identifier: TL_a4fd95.d0
 featureList:

@@ -3,7 +3,7 @@ metadataStatus: Released
 cwlStatus: Released
 version: 0.1.0
 identifier: TL_55f722_b1.d9
-description:
+description: Filter somatic SNVs and indels called by Mutect2
 keywords:
   - name:
     category:

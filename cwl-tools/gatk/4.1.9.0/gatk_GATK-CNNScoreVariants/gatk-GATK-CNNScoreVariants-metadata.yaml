@@ -3,7 +3,7 @@ metadataStatus: Released
 cwlStatus: Released
 version: 0.1.0
 identifier: TL_55f722_c2.d9
-description:
+description: Apply a Convolutional Neural Net to filter annotated variants
 keywords:
   - name:
     category:

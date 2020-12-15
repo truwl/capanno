@@ -3,7 +3,7 @@ metadataStatus: Released
 cwlStatus: Released
 version: 0.1.0
 identifier: TL_55f722_7d.d9
-description:
+description: Apply tranche filtering to VCF based on scores from an annotation in the INFO field
 keywords:
   - name:
     category:
