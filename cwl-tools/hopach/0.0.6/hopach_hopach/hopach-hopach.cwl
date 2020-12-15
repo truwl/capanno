@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand:
   - "hopach_order.R"
 hints:
-  - dockerPull: biowardrobe2/hopach:v0.0.6
+  - dockerPull: truwl/hopach:v0.0.6
     class: DockerRequirement
   - packages:
       hopach:

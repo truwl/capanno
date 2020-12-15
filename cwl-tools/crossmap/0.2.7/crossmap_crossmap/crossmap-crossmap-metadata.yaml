@@ -1,6 +1,6 @@
 name: crossmap
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_3673de_36.fa
 description:
@@ -12,6 +12,6 @@ extra:
   cwlDocument:
     isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/crossmap/crossmap.cwl
     dateCreated: '2020-09-21'
-sha1:
-dockerImage:
+    sha256:
+    dockerImage:
 parentMetadata: ../common/common-metadata.yaml

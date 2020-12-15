@@ -5,8 +5,8 @@ softwareVersion:
 identifier: TL_03ce1b.fb
 featureList:
   - compress
-metadataStatus: Incomplete
-description:
+metadataStatus: Released
+description: high-quality data compressor
 codeRepository:
   name:
   URL:

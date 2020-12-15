@@ -4,7 +4,7 @@ baseCommand:
   - "pizzly"
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/biocontainers/pizzly:0.37.3--0"
+    dockerPull: "truwl/pizzly:0.37.3--0"
 inputs:
   InputFile:
     type: File

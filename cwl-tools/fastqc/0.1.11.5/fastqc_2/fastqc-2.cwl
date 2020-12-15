@@ -8,7 +8,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: biowardrobe2/fastqc:v0.11.5
+  - dockerPull: truwl/fastqc:0.11.9_0.1.0
     class: DockerRequirement
   - packages:
       fastqc:

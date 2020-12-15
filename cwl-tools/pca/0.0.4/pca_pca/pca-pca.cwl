@@ -4,7 +4,7 @@ baseCommand:
   - "run_pca.R"
 requirements:
   - class: DockerRequirement
-    dockerPull: biowardrobe2/pca:v0.0.4
+    dockerPull: truwl2/pca:v0.0.4
 stdout: pca_stdout.log
 stderr: pca_stderr.log
 doc: |

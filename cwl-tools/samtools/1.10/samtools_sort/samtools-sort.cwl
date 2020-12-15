@@ -6,7 +6,7 @@ baseCommand:
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: quay.io/biocontainers/samtools:1.2-0
+  - dockerPull: truwl/samtools:1.9_0.1.0
     class: DockerRequirement
   - coresMin: 4
     ramMin: 15000

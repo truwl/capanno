@@ -4,7 +4,7 @@ baseCommand:
   - picard
   - MarkDuplicates
 hints:
-  - dockerPull: quay.io/biocontainers/picard:2.22.2--0
+  - dockerPull: truwl/picard:2.22.2--0
     class: DockerRequirement
   - coresMin: 1
     ramMin: 20000

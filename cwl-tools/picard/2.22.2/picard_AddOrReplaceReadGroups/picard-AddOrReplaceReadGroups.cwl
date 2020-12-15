@@ -20,7 +20,7 @@ requirements:
         }
   - class: ShellCommandRequirement
 hints:
-  - dockerPull: quay.io/biocontainers/picard:2.22.2--0
+  - dockerPull: truwl/picard:2.22.2--0
     class: DockerRequirement
   - packages:
       picard:
