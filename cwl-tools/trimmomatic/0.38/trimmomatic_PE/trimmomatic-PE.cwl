@@ -77,7 +77,6 @@ inputs:
         fields:
           forward_reads:
             type: File
-#            secondaryFiles: ${self.path}  # Todo
             inputBinding:
               prefix: -basein
             doc: |
@@ -288,7 +287,7 @@ outputs:
 
   reads_trimmed:
     type: File
-    format: edam:format_1930  # fastq
+    format: http://edamontology.org/format_1930  # fastq
     outputBinding:
       glob: $(inputs.output)
     doc: Trimmed fastq file.
