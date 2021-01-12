@@ -1,0 +1,17 @@
+name: build
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_af1548_b0.62
+description: build the bwt index
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/bowtie/bowtie_build.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

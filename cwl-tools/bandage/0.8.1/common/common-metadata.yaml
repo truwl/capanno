@@ -6,12 +6,12 @@ identifier: TL_7e0c8a.c6
 featureList:
   - bandage-image
   - bandage-info
-metadataStatus: Incomplete
-description:
+metadataStatus: Released
+description: Bandage (a Bioinformatics Application for Navigating De novo Assembly Graphs Easily) is a tool for visualizing assembly graphs with connections
 codeRepository:
-  name:
-  URL:
-license:
+  name: Bandage
+  URL: https://github.com/rrwick/Bandage
+license: GPL3
 WebSite:
   - name:
     description:
@@ -24,14 +24,13 @@ publication:
   - identifier:
     headline:
 keywords:
-  - name:
-    category:
+  - http://edamontology.org/operation_0524
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Ryan Wick
+    email: rrwick@gmail.com
     identifier:
-programmingLanguage:
+programmingLanguage: C++
 datePublished:
 downloadURL:
 extra:

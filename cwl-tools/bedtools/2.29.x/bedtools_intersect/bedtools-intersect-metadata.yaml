@@ -13,3 +13,7 @@ keywords:
     category:
 alternateName: intersectBed
 parentMetadata: ../common/common-metadata.yaml
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/bedtools/bedtools_intersect.cwl
+    dateCreated: '2020-09-21'

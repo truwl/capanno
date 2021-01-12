@@ -5,12 +5,12 @@ softwareVersion:
 identifier: TL_5c0f24.e3
 featureList:
   - Lancet
-metadataStatus: Incomplete
-description:
+metadataStatus: Released
+description: Lancet is a somatic variant caller (SNVs and indels) for short read data
 codeRepository:
-  name:
-  URL:
-license:
+  name: Lancet
+  URL: https://github.com/nygenome/lancet
+license: single user license for not-for-profit entities for academic and non-commercial research purposes only
 WebSite:
   - name:
     description:
@@ -20,17 +20,16 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: 10.1038/s42003-018-0023-9
+    headline: Genome-wide somatic variant calling using localized colored de Bruijn graphs
 keywords:
-  - name:
-    category:
+  - http://edamontology.org/operation_3227
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Giuseppe Narzisi
+    email:  gnarzisi@nygenome.org
     identifier:
-programmingLanguage:
+programmingLanguage: C++
 datePublished:
 downloadURL:
 extra:

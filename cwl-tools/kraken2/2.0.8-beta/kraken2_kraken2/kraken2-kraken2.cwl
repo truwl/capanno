@@ -8,7 +8,7 @@ requirements:
     coresMin: 1
     ramMin: 45000
 hints:
-  - dockerPull: "quay.io/biocontainers/kraken2:2.0.8_beta--pl526h6bb024c_0"
+  - dockerPull: "truwl/kraken2:2.0.8_beta--pl526h6bb024c_0"
     class: DockerRequirement
   - packages:
       kraken2:

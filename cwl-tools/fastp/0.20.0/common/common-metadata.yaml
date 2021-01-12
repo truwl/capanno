@@ -5,11 +5,11 @@ softwareVersion:
 identifier: TL_f73dc8.f7
 featureList:
   - fastp
-metadataStatus: Incomplete
-description:
+metadataStatus: Released
+description: A tool designed to provide fast all-in-one preprocessing for FastQ files including QC/adapters/trimming/filtering/splitting/merging
 codeRepository:
-  name:
-  URL:
+  name: fastp
+  URL: https://github.com/OpenGene/fastp
 license:
 WebSite:
   - name:

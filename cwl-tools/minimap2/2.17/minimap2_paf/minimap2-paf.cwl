@@ -4,7 +4,7 @@ baseCommand: minimap2
 requirements:
   - class: InlineJavascriptRequirement
 hints:
-  - dockerPull: quay.io/biocontainers/minimap2:2.17--h8b12597_1
+  - dockerPull: truwl/minimap2:2.17--h8b12597_1
     class: DockerRequirement
   - coresMin: 8
     coresMax: 32

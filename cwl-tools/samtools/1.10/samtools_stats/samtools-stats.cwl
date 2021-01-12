@@ -5,7 +5,7 @@ baseCommand:
   - stats
 requirements:
   - class: DockerRequirement
-    dockerPull: biocontainers/samtools:v1.7.0_cv3
+    dockerPull: truwl/samtools:v1.7.0_cv3
 arguments: []
 stdout: $(inputs.input_file.nameroot).stats.txt
 inputs:

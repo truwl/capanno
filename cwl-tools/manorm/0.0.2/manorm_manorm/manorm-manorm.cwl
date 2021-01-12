@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand:
   - "manorm"
 hints:
-  - dockerPull: biowardrobe2/manorm:v0.0.2
+  - dockerPull: truwl/manorm:v0.0.2
     class: DockerRequirement
   - packages:
       manorm:

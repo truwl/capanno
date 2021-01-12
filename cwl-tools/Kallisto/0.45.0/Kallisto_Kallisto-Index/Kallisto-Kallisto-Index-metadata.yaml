@@ -1,6 +1,6 @@
 name: Kallisto-Index
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_11b64f_8a.a1
 description:
@@ -12,6 +12,6 @@ extra:
   cwlDocument:
     isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/Kallisto/Kallisto-Index.cwl
     dateCreated: '2020-09-21'
-sha1:
-dockerImage:
+    sha256:
+    dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -10,7 +10,7 @@ requirements:
         return (root == "")?inputs.input_bed_file.basename+ext:root+ext; } else {
         return inputs.output_filename; } };
 hints:
-  - dockerPull: biowardrobe2/hal:v0.0.1
+  - dockerPull: truwl/hal:v0.0.1
     class: DockerRequirement
 doc: |-
   Runs halliftover to project input BED file from source to target genome.
