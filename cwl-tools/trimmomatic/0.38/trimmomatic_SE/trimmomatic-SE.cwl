@@ -249,7 +249,7 @@ inputs:
     doc: This (re)encodes the quality part of the FASTQ file to base 64.
 
 outputs:
-  trimlog:
+  trimlogout:
     type:
       - "null"
       - File
