@@ -1,0 +1,16 @@
+name: chromhmm-learnmodel
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_d78180_d4.71
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/chromhmm/chromhmm-learnmodel.cwl
+    dateCreated: '2021-02-03'
+    sha1: 22cad035db86e6e285b72fbdb5f4fd396101b33d
+parentMetadata: ../common/common-metadata.yaml

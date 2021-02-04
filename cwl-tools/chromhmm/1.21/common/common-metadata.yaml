@@ -1,0 +1,42 @@
+name: chromhmm
+softwareVersion:
+  versionName: '1.21'
+  includedVersions: []
+identifier: TL_d78180.71
+featureList:
+  - chromhmm-binarizebed
+  - chromhmm-learnmodel
+metadataStatus: Released
+description: ChromHMM is software for learning and characterizing chromatin states.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://compbio.mit.edu/ChromHMM
+  - name:
+    description: documentation
+    URL: http://compbio.mit.edu/ChromHMM/ChromHMM_manual.pdf
+contactPoint:
+  - name: Jason Ernst
+    email: jason.ernst@ucla.edu
+    identifier:
+publication:
+  - identifier:
+    headline: 'ChromHMM: Automating chromatin-state discovery and characterization'
+keywords:
+  - http://edamontology.org/topic_3173
+  - http://edamontology.org/operation_2238
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: chromhmm

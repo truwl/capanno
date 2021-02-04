@@ -1,0 +1,16 @@
+name: igvtools-count
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_8e5623_90.a1
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/igvtools/igvtools-count.cwl
+    dateCreated: '2021-02-03'
+    sha1: 63ad3611183e5d757e917ba810868c56d47e192e
+parentMetadata: ../common/common-metadata.yaml

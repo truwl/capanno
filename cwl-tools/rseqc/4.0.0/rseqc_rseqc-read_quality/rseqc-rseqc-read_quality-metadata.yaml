@@ -1,0 +1,16 @@
+name: rseqc-read_quality
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_73aadb_52.49
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-read_quality.cwl
+    dateCreated: '2021-02-03'
+    sha1: b251305c63a2121b437448b0868e894637154466
+parentMetadata: ../common/common-metadata.yaml

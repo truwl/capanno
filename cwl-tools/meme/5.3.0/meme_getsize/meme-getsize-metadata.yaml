@@ -1,0 +1,16 @@
+name: getsize
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_9c2f92_8f.b4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/meme/getsize.cwl
+    dateCreated: '2021-02-03'
+    sha1: 0afa3daa1a6bac8c70f2a1d964ae5baf893236f7
+parentMetadata: ../common/common-metadata.yaml

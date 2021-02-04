@@ -1,0 +1,3 @@
+[submodule "cwl-ngs-workflows-cbb"]
+	path = cwl-ngs-workflows-cbb
+	url = https://github.com/ncbi/cwl-ngs-workflows-cbb.git

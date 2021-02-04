@@ -1,0 +1,16 @@
+name: homer-annotatePeaks
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_dfa832_91.bf
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/homer/homer-annotatePeaks.cwl
+    dateCreated: '2021-02-03'
+    sha1: d8fcc5276bb91e7308ab631cf338c5955c1ea643
+parentMetadata: ../common/common-metadata.yaml
