@@ -14,10 +14,7 @@ featureList:
   - hicbuildmatrix
   - hicmergematrixbins
 metadataStatus: Released
-description: "A web server for reproducible Hi-C, capture Hi-C and single-cell Hi-C\
-  \ data analysis, quality control and visualization.\n\nHiCExplorer — HiCExplorer\
-  \ 3.6 documentation.\n\nscHiCExplorer — scHiCExplorer 7 documentation.\n\nFree document\
-  \ hosting provided by Read the Docs."
+description: "A web server for reproducible Hi-C, capture Hi-C and single-cell Hi-C data analysis, quality control and visualization"
 codeRepository:
   name:
   URL:

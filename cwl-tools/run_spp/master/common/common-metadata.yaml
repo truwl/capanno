@@ -4,7 +4,7 @@ softwareVersion:
   versionName: master
   includedVersions:
     - master_2cb0216
-metadataStatus: Released
+metadataStatus: Incomplete
 featureList:
   - __main__
 description: 'Usage: Rscript run_spp.R <options>'

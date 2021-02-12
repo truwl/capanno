@@ -10,7 +10,7 @@ description: CrossMap is a program for genome coordinates conversion between dif
 codeRepository:
   name: crossmap
   URL: http://crossmap.sourceforge.net/
-license:
+license: GNU General Public License
 WebSite:
   - name:
     description:
@@ -23,8 +23,10 @@ publication:
   - identifier:
     headline:
 keywords:
-  - name:
-    category:
+  - http://edamontology.org/operation_2403
+  - http://edamontology.org/operation_3096
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/topic_3071
 alternateName:
 creator:
   - name:
