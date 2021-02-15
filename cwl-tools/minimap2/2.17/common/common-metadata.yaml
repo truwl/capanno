@@ -6,32 +6,33 @@ identifier: TL_938e07.48
 featureList:
   - sam
   - paf
-metadataStatus: Incomplete
-description:
+metadataStatus: Released
+description: Pairwise aligner for genomic and spliced nucleotide sequences
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/lh3/minimap2
+license: MIT
 WebSite:
-  - name:
-    description:
-    URL:
+  - name: 
+    description: Documentation
+    URL: https://lh3.github.io/minimap2/minimap2.html
 contactPoint:
-  - name:
+  - name: Heng Li
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: 10.1093/bioinformatics/bty191
+    headline: Minimap2: Pairwise alignment for nucleotide sequences
 keywords:
-  - name:
-    category:
+  - http://edamontology.org/operation_0491
+  - http://edamontology.org/topic_0102
 alternateName:
 creator:
   - name:
     email:
     identifier:
-programmingLanguage:
+programmingLanguage: C
 datePublished:
 downloadURL:
 extra:
+  biotoolsID: minimap2

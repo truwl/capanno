@@ -1,9 +1,9 @@
 name: paf
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_938e07_b9.48
-description:
+description: Align to PAF output
 keywords:
   - name:
     category:

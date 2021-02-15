@@ -1,9 +1,9 @@
 name: sam
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_938e07_33.48
-description:
+description: Align to SAM output
 keywords:
   - name:
     category:
