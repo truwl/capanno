@@ -1,6 +1,6 @@
 name: fastx_quality_stats
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 version: 0.1.0
 identifier: TL_0070da_f9.1b
 description:
