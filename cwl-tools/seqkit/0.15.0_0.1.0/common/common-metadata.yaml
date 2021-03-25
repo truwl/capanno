@@ -1,0 +1,47 @@
+name: seqkit
+softwareVersion:
+  versionName: 0.15.0_0.1.0
+  includedVersions: []
+identifier: TL_84d780.1e
+featureList:
+  - seqkit-stats
+metadataStatus: Released
+description: FASTA and FASTQ are basic and ubiquitous formats for storing nucleotide
+  and protein sequences. Common manipulations of FASTA/Q file include converting,
+  searching, filtering, deduplication, splitting, shuffling, and sampling. Existing
+  tools only implement some of these manipulations, and not particularly efficiently,
+  and some are only available for certain operating systems. Furthermore, the complicated
+  installation process of required packages and running environments can render these
+  programs less user friendly. SeqKit demonstrates competitive performance in execution
+  time and memory usage compared to similar tools. The efficiency and usability of
+  SeqKit enable researchers to rapidly accomplish common FASTA/Q file manipulations.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://bioinf.shenwei.me/seqkit/
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1371/journal.pone.0163962
+    headline:
+keywords:
+  - http://edamontology.org/operation_0372
+  - http://edamontology.org/operation_3192
+  - http://edamontology.org/operation_0371
+  - http://edamontology.org/operation_0233
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: seqkit

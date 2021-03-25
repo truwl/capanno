@@ -1,0 +1,48 @@
+name: deeptools
+softwareVersion:
+  versionName: 3.5.0_0.1.0
+  includedVersions: []
+identifier: TL_8b3ec0.7b
+featureList:
+  - deepTools_plotProfile
+  - deepTools_plotHeatmap
+  - deepTools_bamCoverage
+  - deepTools_computeMatrix_reference-point
+  - deepTools_computeMatrix_scale-regions
+metadataStatus: Released
+description: User-friendly tools for the normalization and visualization of deep-sequencing
+  data.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://deeptools.readthedocs.io/en/latest/
+  - name:
+    description: documentation
+    URL: https://deeptools.readthedocs.io/en/latest/content/api.html
+contactPoint:
+  - name: deepToops Support
+    email: deeptools@googlegroups.com
+    identifier:
+publication:
+  - identifier:
+    headline: 'DeepTools: A flexible platform for exploring deep-sequencing data'
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_3169
+  - http://edamontology.org/operation_3435
+  - http://edamontology.org/operation_0337
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: deeptools

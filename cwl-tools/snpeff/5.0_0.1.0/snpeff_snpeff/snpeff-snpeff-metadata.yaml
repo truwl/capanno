@@ -1,0 +1,16 @@
+name: snpeff
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_0dbbaf_0d.6c
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../jesalitis/snpeff/snpeff.cwl
+    dateCreated: '2021-02-16'
+    sha1: 0a8d28a2c6b6da465ed83ab3c5c7afd3b06513d2
+parentMetadata: ../common/common-metadata.yaml

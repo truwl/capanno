@@ -1,0 +1,16 @@
+name: deepTools_plotProfile
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_8b3ec0_30.7b
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../pitagora/tool/deeptools/deepTools_plotProfile.cwl
+    dateCreated: '2021-02-16'
+    sha1: c5ecbb6416764bd44af4abf067a67de5c72b71e1
+parentMetadata: ../common/common-metadata.yaml

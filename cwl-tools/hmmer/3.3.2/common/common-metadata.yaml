@@ -1,0 +1,79 @@
+name: hmmer
+softwareVersion:
+  versionName: 3.3.2
+  includedVersions: []
+identifier: TL_28f952.53
+featureList:
+  - hmmer-hmmsearch
+metadataStatus: Released
+description: This tool is used for searching sequence databases for homologs of protein
+  sequences, and for making protein sequence alignments. It implements methods using
+  probabilistic models called profile hidden Markov models. The new HMMER3 project,
+  HMMER is now as fast as BLAST for protein search.
+codeRepository:
+  name:
+  URL:
+license: Other
+WebSite:
+  - name:
+    description: homepage
+    URL: http://hmmer.org/
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/EddyRivasLab/hmmer
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/EddyRivasLab/hmmer/issues
+  - name:
+    description: documentation
+    URL: http://eddylab.org/software/hmmer3/3.1b2/Userguide.pdf
+  - name:
+    description: documentation
+    URL: http://hmmer.org/documentation.html
+contactPoint:
+  - name: Sean Eddy
+    email: sean@eddylab.org
+    identifier: http://orcid.org/0000-0001-6676-4706
+publication:
+  - identifier: 10.1093/nar/gkr367
+    headline:
+  - identifier: 10.1371/journal.pcbi.1002195
+    headline: Accelerated profile HMM searches
+keywords:
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/topic_0160
+  - http://edamontology.org/topic_0623
+  - http://edamontology.org/operation_0335
+  - http://edamontology.org/operation_0492
+  - http://edamontology.org/operation_0296
+  - http://edamontology.org/operation_0336
+  - http://edamontology.org/operation_3434
+  - http://edamontology.org/operation_0230
+  - http://edamontology.org/operation_2422
+  - http://edamontology.org/operation_2238
+  - http://edamontology.org/operation_2421
+  - http://edamontology.org/operation_0335
+  - http://edamontology.org/operation_2421
+  - http://edamontology.org/operation_2421
+  - http://edamontology.org/operation_3481
+  - http://edamontology.org/operation_2238
+  - http://edamontology.org/operation_2238
+  - http://edamontology.org/operation_0338
+  - http://edamontology.org/operation_0335
+  - http://edamontology.org/operation_0338
+  - http://edamontology.org/operation_2421
+  - http://edamontology.org/operation_0338
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: HMMER3

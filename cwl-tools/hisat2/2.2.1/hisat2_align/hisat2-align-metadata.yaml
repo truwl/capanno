@@ -1,0 +1,16 @@
+name: align
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_922b75_f7.2c
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../wustl/definitions/tools/hisat2/hisat2_align.cwl
+    dateCreated: '2021-02-16'
+    sha1: e76c44eb116379c1b0f0932c3df7d60e5d37adaa
+parentMetadata: ../common/common-metadata.yaml

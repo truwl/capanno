@@ -1,0 +1,16 @@
+name: bbmap-stats
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_c81cef_18.90
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../pitagora/tool/bbmap/bbmap-stats.cwl
+    dateCreated: '2021-02-16'
+    sha1: 39d46caf9dd8af14757e0c6a4cfcdc0d2f5caf16
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,16 @@
+name: deepTools_plotHeatmap
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_8b3ec0_93.7b
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../pitagora/tool/deeptools/deepTools_plotHeatmap.cwl
+    dateCreated: '2021-02-16'
+    sha1: dc263f7fdcbffc1a6d3711eb45d903fe2b45b843
+parentMetadata: ../common/common-metadata.yaml

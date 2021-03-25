@@ -1,0 +1,44 @@
+name: qualimap
+softwareVersion:
+  versionName: 2.2.2d
+  includedVersions: []
+identifier: TL_f6b1de.35
+featureList:
+  - rnaseq
+metadataStatus: Released
+description: Platform-independent application written in Java and R that provides
+  both a Graphical User Inteface (GUI) and a command-line interface to facilitate
+  the quality control of alignment sequencing data.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://qualimap.bioinfo.cipf.es/
+  - name:
+    description: documentation
+    URL: http://qualimap.bioinfo.cipf.es/doc_html/index.html
+contactPoint:
+  - name: QualiMap Forum
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline: 'Qualimap: Evaluating next-generation sequencing alignment data'
+keywords:
+  - http://edamontology.org/topic_3572
+  - http://edamontology.org/operation_3218
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: qualimap

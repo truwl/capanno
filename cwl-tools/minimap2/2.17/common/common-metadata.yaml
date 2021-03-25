@@ -22,7 +22,7 @@ contactPoint:
     identifier:
 publication:
   - identifier: 10.1093/bioinformatics/bty191
-    headline: Minimap2: Pairwise alignment for nucleotide sequences
+    headline: Minimap2 - Pairwise alignment for nucleotide sequences
 keywords:
   - http://edamontology.org/operation_0491
   - http://edamontology.org/topic_0102

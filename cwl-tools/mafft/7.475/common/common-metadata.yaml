@@ -1,0 +1,52 @@
+name: mafft
+softwareVersion:
+  versionName: '7.475'
+  includedVersions: []
+identifier: TL_1a8d36.ea
+featureList:
+  - mafft
+metadataStatus: Released
+description: MAFFT (Multiple Alignment using Fast Fourier Transform) is a high speed
+  multiple sequence alignment program.
+codeRepository:
+  name:
+  URL:
+license: BSD-Source-Code
+WebSite:
+  - name:
+    description: homepage
+    URL: http://mafft.cbrc.jp/alignment/server/index.html
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/mafft/rbc_mafft/7.273.1
+  - name:
+    description: documentation
+    URL: https://mafft.cbrc.jp/alignment/software/tips0.html
+contactPoint:
+  - name: Contact Form
+    email:
+    identifier:
+publication:
+  - identifier: 10.1007/978-1-62703-646-7_8
+    headline:
+  - identifier: 10.7490/f1000research.1114334.1
+    headline:
+  - identifier: 10.1093/bioinformatics/bty121
+    headline:
+  - identifier: 10.1093/bib/bbx108
+    headline:
+keywords:
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_0492
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: MAFFT

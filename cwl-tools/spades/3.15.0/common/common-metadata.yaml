@@ -1,0 +1,51 @@
+name: spades
+softwareVersion:
+  versionName: 3.15.0
+  includedVersions: []
+identifier: TL_b5fc93.59
+featureList:
+  - spades
+metadataStatus: Released
+description: St. Petersburg genome assembler – is intended for both standard isolates
+  and single-cell MDA bacteria assemblies. SPAdes 3.9 works with Illumina or IonTorrent
+  reads and is capable of providing hybrid assemblies using PacBio, Oxford Nanopore
+  and Sanger reads. Additional contigs can be provided and can be used as long reads.
+codeRepository:
+  name:
+  URL:
+license: GPL-2.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://cab.spbu.ru/software/spades/
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/spades/spades/3.9.0
+  - name:
+    description: documentation
+    URL: http://cab.spbu.ru/files/release3.10.1/manual.html
+contactPoint:
+  - name:
+    email: spades.support@cab.spbu.ru
+    identifier:
+publication:
+  - identifier: 10.1089/cmb.2012.0021
+    headline: 'SPAdes: A new genome assembly algorithm and its applications to single-cell
+      sequencing'
+  - identifier: 10.7490/f1000research.1114334.1
+    headline:
+keywords:
+  - http://edamontology.org/topic_0196
+  - http://edamontology.org/operation_0525
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: spades

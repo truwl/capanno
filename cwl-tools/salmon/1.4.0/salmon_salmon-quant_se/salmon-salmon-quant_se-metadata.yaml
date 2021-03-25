@@ -1,0 +1,16 @@
+name: salmon-quant_se
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_180fd1_91.1b
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../VIRTUS/tool/salmon/salmon-quant_se.cwl
+    dateCreated: '2021-02-16'
+    sha1: 57e085ed892797645fbdaa7806d5a4bc794b700c
+parentMetadata: ../common/common-metadata.yaml

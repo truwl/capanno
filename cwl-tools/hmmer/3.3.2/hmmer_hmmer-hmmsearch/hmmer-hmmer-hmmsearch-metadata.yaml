@@ -1,0 +1,16 @@
+name: hmmer-hmmsearch
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_28f952_a6.53
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../pitagora/tool/hmmer/hmmer-hmmsearch.cwl
+    dateCreated: '2021-02-16'
+    sha1: 31f273016e0cdca0cd884b20bb36f31a753e138d
+parentMetadata: ../common/common-metadata.yaml

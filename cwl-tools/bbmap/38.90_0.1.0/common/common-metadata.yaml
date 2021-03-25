@@ -1,0 +1,57 @@
+name: bbmap
+softwareVersion:
+  versionName: 38.90_0.1.0
+  includedVersions: []
+identifier: TL_c81cef.90
+featureList:
+  - bbmap-stats
+metadataStatus: Released
+description: BBMap is a fast splice-aware aligner for RNA and DNA.  It is faster than
+  almost all short-read aligners, yet retains unrivaled sensitivity and specificity,
+  particularly for reads with many errors and indels.
+codeRepository:
+  name:
+  URL:
+license: BSD-3-Clause
+WebSite:
+  - name:
+    description: homepage
+    URL: https://jgi.doe.gov/data-and-tools/bbtools/
+  - name:
+    description:
+      - Repository
+    URL: https://sourceforge.net/projects/bbmap/
+  - name:
+    description: documentation
+    URL: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/
+contactPoint:
+  - name: BBTools Support
+    email: bbtools@lbl.gov
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_3320
+  - http://edamontology.org/topic_3673
+  - http://edamontology.org/topic_3293
+  - http://edamontology.org/topic_3174
+  - http://edamontology.org/topic_3170
+  - http://edamontology.org/operation_3680
+  - http://edamontology.org/operation_3192
+  - http://edamontology.org/operation_3198
+  - http://edamontology.org/operation_3187
+  - http://edamontology.org/operation_3798
+  - http://edamontology.org/operation_0292
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: bbmap

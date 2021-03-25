@@ -1,0 +1,16 @@
+name: deepTools_computeMatrix_reference-point
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_8b3ec0_62.7b
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../pitagora/tool/deeptools/deepTools_computeMatrix_reference-point.cwl
+    dateCreated: '2021-02-16'
+    sha1: b787e7ede8613ebd9958cb88a30b4b8b271bf515
+parentMetadata: ../common/common-metadata.yaml

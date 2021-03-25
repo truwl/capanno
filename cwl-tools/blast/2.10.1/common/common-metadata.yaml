@@ -1,0 +1,47 @@
+name: blast
+softwareVersion:
+  versionName: 2.10.1
+  includedVersions: []
+identifier: TL_9e1b93.e2
+featureList:
+  - blast-blastdbcmd
+  - blast-blastp
+metadataStatus: Released
+description: A tool that finds regions of similarity between biological sequences.
+  The program compares nucleotide or protein sequences to sequence databases and calculates
+  the statistical significance.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://blast.ncbi.nlm.nih.gov/Blast.cgi
+  - name:
+    description: documentation
+    URL: https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs
+contactPoint:
+  - name: BLAST Support
+    email: blast-help@ncbi.nlm.nih.gov
+    identifier:
+publication:
+  - identifier: 10.1016/S0022-2836(05)80360-2
+    headline: Basic local alignment search tool
+  - identifier: 10.1093/bioinformatics/btw305
+    headline: Benchmarking the next generation of homology inference tools
+keywords:
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/operation_0346
+  - http://edamontology.org/operation_0292
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: blast

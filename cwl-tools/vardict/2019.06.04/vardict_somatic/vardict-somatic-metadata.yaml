@@ -1,0 +1,16 @@
+name: somatic
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_ba744c_85.3f
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../janis-pipelines/janis_pipelines/wgs_somatic/cwl/tools/vardict/vardict_somatic.cwl
+    dateCreated: '2021-02-16'
+    sha1: e808b7172054f18e8814466f1839feb35d5ed55c
+parentMetadata: ../common/common-metadata.yaml
