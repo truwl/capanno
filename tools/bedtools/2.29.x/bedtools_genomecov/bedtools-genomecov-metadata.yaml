@@ -1,0 +1,19 @@
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: genomecov
+identifier: TL_43392c_7e.c8
+description: bedtools genomecov computes histograms (default), per-base reports (-d)
+  and BEDGRAPH (-bg) summaries of feature coverage (e.g., aligned sequences) for a
+  given genome.
+keywords:
+- name:
+  category:
+alternateName: genomeCoverageBed
+parentMetadata: ../common/common-metadata.yaml
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/bedtools/bedtools_genomecov.cwl
+    dateCreated: '2020-09-21'

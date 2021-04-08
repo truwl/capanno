@@ -1,0 +1,25 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: UmiAwareMarkDuplicatesWithMateCigar
+identifier: TL_e24fa5_0b.c8
+description: "Identifies duplicate reads using information from read positions and\
+  \ UMIs.\nThis tool locates and tags duplicate reads in a BAM or SAM file, where\
+  \ duplicate reads are defined as originating from a single fragment of DNA. It is\
+  \ based on the MarkDuplicatesWithMateCigar tool, with added logic to leverage Unique\
+  \ Molecular Identifier (UMI) information.\nIn addition to assuming that all members\
+  \ of a duplicate set must have the same start and end position, it imposes that\
+  \ they must also have sufficiently similar UMIs. In this context, 'sufficiently\
+  \ similar' is parameterized by the command line argument MAX_EDIT_DISTANCE_TO_JOIN,\
+  \ which sets the edit distance between UMIs that will be considered to be part of\
+  \ the same original molecule. This logic allows for sequencing errors in UMIs.\n\
+  This tool is NOT intended to be used on data without UMIs; for marking duplicates\
+  \ in non-UMI data, see MarkDuplicates or MarkDuplicatesWithMateCigar. Mixed data\
+  \ (where some reads have UMIs and others do not) is not supported."
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

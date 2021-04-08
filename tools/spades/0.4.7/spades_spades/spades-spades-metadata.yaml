@@ -1,0 +1,20 @@
+name: spades
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_b5fc93_b5.8d
+description:
+keywords:
+- name:
+  category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/spades/spades.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

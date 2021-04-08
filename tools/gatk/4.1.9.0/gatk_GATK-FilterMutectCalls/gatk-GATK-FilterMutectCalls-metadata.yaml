@@ -1,0 +1,20 @@
+name: GATK-FilterMutectCalls
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_55f722_b1.d9
+description: Filter somatic SNVs and indels called by Mutect2
+keywords:
+- name:
+  category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/gatk/GATK-FilterMutectCalls.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

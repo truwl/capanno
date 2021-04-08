@@ -1,0 +1,21 @@
+name: GATK-FilterVariantTranches
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_55f722_7d.d9
+description: Apply tranche filtering to VCF based on scores from an annotation in
+  the INFO field
+keywords:
+- name:
+  category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/gatk/GATK-FilterVariantTranches.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

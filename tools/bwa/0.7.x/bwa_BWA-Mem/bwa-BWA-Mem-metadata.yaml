@@ -1,0 +1,21 @@
+name: BWA-Mem
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_a6be17_02.8e
+description: Align using mem algorithm. To use BWA, you need to first index the genome
+  with `bwa index'. There are three alignment algorithms in BWA `mem', `bwasw', and
+  `aln/samse/sampe'. If you are not sure which use, try `bwa mem' first.
+keywords:
+- http://edamontology.org/topic_0102
+alternateName: bwa-mem
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/bwa/BWA-Mem.cwl
+    dateCreated: '2020-09-21'
+  sha256: 8d0b640650fc48a43ad24081585c929f31d4211bb94567fc531eb2fd52eb9c35
+  dockerImage: truwl/bwa
+parentMetadata: ../common/common-metadata.yaml

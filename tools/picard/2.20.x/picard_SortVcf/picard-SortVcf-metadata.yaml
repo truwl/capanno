@@ -1,0 +1,18 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: SortVcf
+identifier: TL_e24fa5_e6.c8
+description: "Sorts one or more VCF files. This tool sorts the records in VCF files\
+  \ according to the order of the contigs in the header/sequence dictionary and then\
+  \ by coordinate. It can accept an external sequence dictionary. If no external dictionary\
+  \ is supplied, the VCF file headers of multiple inputs must have the same sequence\
+  \ dictionaries.\nIf running on multiple inputs (originating from e.g. some scatter-gather\
+  \ runs), the input files must contain the same sample names in the same column order."
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

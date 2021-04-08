@@ -1,0 +1,18 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: CollectIlluminaLaneMetrics
+identifier: TL_e24fa5_6e.c8
+description: Collects Illumina lane metrics for the given BaseCalling analysis directory.
+  This tool produces quality control metrics on cluster density for each lane of an
+  Illumina flowcell. This tool takes Illumina TileMetrics data and places them into
+  directories containing lane- and phasing-level metrics. In this context, phasing
+  refers to the fraction of molecules that fall behind or jump ahead (prephasing)
+  during a read cycle.
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

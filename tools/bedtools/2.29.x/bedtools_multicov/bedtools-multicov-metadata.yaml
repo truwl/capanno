@@ -1,0 +1,16 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: multicov
+identifier: TL_43392c_62.c8
+description: bedtools multicov, reports the count of alignments from multiple position-sorted
+  and indexed BAM files that overlap intervals in a BED file. Specifically, for each
+  BED interval provided, it reports a separate count of overlapping alignments from
+  each BAM file.
+keywords:
+- name:
+  category:
+alternateName: multiBamCov
+parentMetadata: ../common/common-metadata.yaml

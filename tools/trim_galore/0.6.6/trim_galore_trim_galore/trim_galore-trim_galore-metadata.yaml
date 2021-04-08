@@ -1,0 +1,20 @@
+name: trim_galore
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_a4fd95_a4.d0
+description:
+keywords:
+- name:
+  category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/trim_galore/trim_galore.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

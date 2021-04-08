@@ -1,0 +1,20 @@
+name: view_count_alignments
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_ec2a8d_c4.bd
+description:
+keywords:
+- name:
+  category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/samtools/samtools_view_count_alignments.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

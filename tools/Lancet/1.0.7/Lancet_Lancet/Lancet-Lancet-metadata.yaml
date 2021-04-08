@@ -1,0 +1,19 @@
+name: Lancet
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_5c0f24_5c.e3
+description: Lancet is a somatic variant caller (SNVs and indels) for short read data.
+keywords:
+- http://edamontology.org/operation_3227
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/Lancet/Lancet.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

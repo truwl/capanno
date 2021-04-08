@@ -1,0 +1,13 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: tag
+identifier: TL_43392c_e4.c8
+description: ''
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml
