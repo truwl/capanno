@@ -10,7 +10,6 @@ description: Align using mem algorithm. To use BWA, you need to first index the 
   with `bwa index'. There are three alignment algorithms in BWA `mem', `bwasw', and
   `aln/samse/sampe'. If you are not sure which use, try `bwa mem' first.
 keywords:
-- http://edamontology.org/topic_0102
 alternateName: bwa-mem
 extra:
   cwlDocument:

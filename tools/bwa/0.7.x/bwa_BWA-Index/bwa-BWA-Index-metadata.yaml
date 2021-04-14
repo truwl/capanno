@@ -8,8 +8,6 @@ version: 0.1.0
 identifier: TL_a6be17_6f.8e
 description: index sequences in the FASTA format
 keywords:
-- name: mapping
-  category: topic
 alternateName: bwa-index
 extra:
   cwlDocument:
