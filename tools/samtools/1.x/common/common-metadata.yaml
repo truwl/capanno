@@ -1,19 +1,18 @@
-identifier: TL_ec2a8d.0b
 name: samtools
 softwareVersion:
   versionName: 1.x
   includedVersions:
-    - 1.2
-    - 1.3
+    - '1.2'
+    - '1.3'
     - 1.3.1
-    - 1.4
+    - '1.4'
     - 1.4.1
-    - 1.5
-    - 1.6
-    - 1.7
-    - 1.8
-    - 1.9
-metadataStatus: Released
+    - '1.5'
+    - '1.6'
+    - '1.7'
+    - '1.8'
+    - '1.9'
+identifier: TL_ec2a8d.0b
 featureList:
   - view
   - sort
@@ -45,6 +44,9 @@ featureList:
   - reheader
   - depad
   - markdup
+  - bam2fq_interleaved
+  - nfindex
+metadataStatus: Released
 description: A software package with various utilities for processing alignments in
   the SAM format, including variant calling and alignment viewing.
 codeRepository:
@@ -52,31 +54,31 @@ codeRepository:
   URL: https://github.com/samtools/samtools
 license: MIT
 WebSite:
-  - description: homepage
-    name:
+  - name:
+    description: homepage
     URL: http://www.htslib.org/
-  - description: Mailing list
-    name:
+  - name:
+    description: Mailing list
     URL: http://www.htslib.org/support/#lists
-  - description: Issue tracker
-    name:
+  - name:
+    description: Issue tracker
     URL: https://github.com/samtools/samtools/issues
-  - description: documentation
-    name:
+  - name:
+    description: documentation
     URL: http://www.htslib.org/doc/#howtos
-  - description: documentation
-    name:
+  - name:
+    description: documentation
     URL: http://www.htslib.org/doc/#manual-pages
-  - description: documentation
-    name:
+  - name:
+    description: documentation
     URL: http://www.htslib.org/download/
 contactPoint:
   - name: Richard Durbin
-    identifier:
     email: rd@sanger.ac.uk
+    identifier:
 publication:
-  - headline:
-    identifier: 10.1093/bioinformatics/btp352
+  - identifier: 10.1093/bioinformatics/btp352
+    headline:
 keywords:
   - http://edamontology.org/topic_0102
   - http://edamontology.org/topic_0080
