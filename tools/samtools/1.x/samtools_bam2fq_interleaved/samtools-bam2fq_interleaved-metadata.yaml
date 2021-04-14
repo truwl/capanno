@@ -1,5 +1,5 @@
 name: bam2fq_interleaved
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
