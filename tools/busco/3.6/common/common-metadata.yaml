@@ -1,0 +1,47 @@
+name: busco
+softwareVersion:
+  versionName: '3.6'
+  includedVersions: []
+identifier: TL_717dd0.e4
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Provides measures for quantitative assessment of genome assembly, gene
+  set, and transcriptome completeness based on evolutionarily informed expectations
+  of gene content from near-universal single-copy orthologs.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://busco.ezlab.org/
+  - name:
+    description: documentation
+    URL: http://gitlab.com/ezlab/busco/raw/master/BUSCO_v3_userguide.pdf
+contactPoint:
+  - name:
+    email: evgeny.zdobnov@unige.ch
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/btv351
+    headline: 'BUSCO: Assessing genome assembly and annotation completeness with single-copy
+      orthologs'
+keywords:
+  - http://edamontology.org/topic_0196
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_3308
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_3180
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: busco

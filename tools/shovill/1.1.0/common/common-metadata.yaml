@@ -1,0 +1,48 @@
+name: shovill
+softwareVersion:
+  versionName: 1.1.0
+  includedVersions: []
+identifier: TL_d6cefb.7d
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Shovill is a pipeline for assembly of bacterial isolate genomes from
+  Illumina paired-end reads.  Shovill uses SPAdes at its core, but alters the steps
+  before and after the primary assembly step to get similar results in less time.
+  Shovill also supports other assemblers like SKESA, Velvet and Megahit, so you can
+  take advantage of the pre- and post-processing the Shovill provides with those too.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/tseemann/shovill
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/tseemann/shovill
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_3301
+  - http://edamontology.org/topic_0196
+  - http://edamontology.org/operation_0525
+alternateName:
+creator:
+  - name: Torsten Seemann
+    email:
+    identifier: https://orcid.org/0000-0001-6046-610X
+programmingLanguage:
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: shovill

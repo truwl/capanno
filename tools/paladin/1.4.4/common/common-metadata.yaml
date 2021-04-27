@@ -1,0 +1,46 @@
+name: paladin
+softwareVersion:
+  versionName: 1.4.4
+  includedVersions: []
+identifier: TL_64fd2a.6a
+featureList:
+  - align
+  - index
+  - prepare
+metadataStatus: Incomplete
+description: Protein alignment for functional profiling whole metagenome shotgun data.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/twestbrookunh/paladin
+  - name:
+    description: documentation
+    URL: https://github.com/twestbrookunh/paladin
+contactPoint:
+  - name: Anthony Westbrook
+    email: anthonyw@wildcats.unh.edu
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/btx021
+    headline: 'PALADIN: Protein alignment for functional profiling whole metagenome
+      shotgun data'
+keywords:
+  - http://edamontology.org/topic_3174
+  - http://edamontology.org/topic_0078
+  - http://edamontology.org/topic_0097
+  - http://edamontology.org/operation_0292
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: paladin

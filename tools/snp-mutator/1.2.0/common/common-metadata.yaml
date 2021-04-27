@@ -1,0 +1,36 @@
+name: snp-mutator
+softwareVersion:
+  versionName: 1.2.0
+  includedVersions: []
+identifier: TL_f2f0ae.62
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Generate mutated sequence files from a reference genome.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/CFSAN-Biostatistics/snp-mutator
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/operation_0364
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: snp-mutator

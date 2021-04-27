@@ -1,0 +1,39 @@
+name: optitype
+softwareVersion:
+  versionName: 1.3.5
+  includedVersions: []
+identifier: TL_67f56e.f8
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: OptiType is a novel HLA genotyping algorithm based on integer linear
+  programming, capable of producing accurate 4-digit HLA genotyping predictions from
+  NGS data by simultaneously selecting all major and minor HLA Class I alleles.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/FRED-2/OptiType
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: optitype

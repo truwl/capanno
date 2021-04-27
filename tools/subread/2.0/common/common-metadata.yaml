@@ -1,0 +1,51 @@
+name: subread
+softwareVersion:
+  versionName: '2.0'
+  includedVersions: []
+identifier: TL_0f87b2.d1
+featureList:
+  - featurecounts
+metadataStatus: Incomplete
+description: Subread is a general-purpose read aligner which can be used to map both
+  genomic DNA-seq reads and RNA-seq reads. It uses a new mapping paradigm called "seed-and-vote"
+  to achieve fast, accurate and scalable read mapping. It automatically determines
+  if a read should be globally or locally aligned, therefore particularly powerful
+  in mapping RNA-seq reads. It supports indel detection and can map reads with both
+  fixed and variable lengths.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://subread.sourceforge.net/
+  - name:
+    description: documentation
+    URL: http://bioinf.wehi.edu.au/subread-package/SubreadUsersGuide.pdf
+contactPoint:
+  - name: Dr Wei Shi
+    email: shi@wehi.edu.au
+    identifier:
+publication:
+  - identifier: 10.1093/nar/gkt214
+    headline: 'The Subread aligner: Fast, accurate and scalable read mapping by seed-and-vote'
+  - identifier: 10.1038/nmeth.4106
+    headline: Simulation-based comprehensive benchmarking of RNA-seq aligners
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_0102
+  - http://edamontology.org/topic_3673
+  - http://edamontology.org/topic_3170
+  - http://edamontology.org/operation_3198
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: subread

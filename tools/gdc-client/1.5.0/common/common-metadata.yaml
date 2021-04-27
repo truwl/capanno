@@ -1,0 +1,38 @@
+name: gdc-client
+softwareVersion:
+  versionName: 1.5.0
+  includedVersions: []
+identifier: TL_b36ace.35
+featureList:
+  - download
+metadataStatus: Incomplete
+description: The gdc-client provides several convenience functions over the GDC API
+  which provides general download/upload via HTTPS.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/NCI-GDC/gdc-client
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: gdc-client

@@ -1,0 +1,49 @@
+name: unicycler
+softwareVersion:
+  versionName: 2.4.1
+  includedVersions: []
+identifier: TL_cc07e9.12
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: A tool for assembling bacterial genomes from a combination of short (2nd
+  generation) and long (3rd generation) sequencing reads.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/rrwick/Unicycler
+  - name:
+    description: documentation
+    URL: https://github.com/rrwick/Unicycler
+contactPoint:
+  - name: Ryan R. Wick
+    email: rrwick@gmail.com
+    identifier:
+publication:
+  - identifier: 10.1371/JOURNAL.PCBI.1005595
+    headline: 'Unicycler: Resolving bacterial genome assemblies from short and long
+      sequencing reads'
+keywords:
+  - http://edamontology.org/topic_3301
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_0196
+  - http://edamontology.org/operation_0525
+  - http://edamontology.org/operation_3436
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+  - C++
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: unicycler

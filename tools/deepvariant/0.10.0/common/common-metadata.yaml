@@ -1,0 +1,52 @@
+name: deepvariant
+softwareVersion:
+  versionName: 0.10.0
+  includedVersions: []
+identifier: TL_5eb53f.df
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: DeepVariant is a deep learning-based variant caller that takes aligned
+  reads (in BAM or CRAM format), produces pileup image tensors from them, classifies
+  each tensor using a convolutional neural network, and finally reports the results
+  in a standard VCF or gVCF file.
+codeRepository:
+  name:
+  URL:
+license: BSD-3-Clause
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/google/deepvariant
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/google/deepvariant/issues
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/BIOINFORMATICS/BTAA1081
+    headline:
+keywords:
+  - http://edamontology.org/topic_3673
+  - http://edamontology.org/topic_3676
+  - http://edamontology.org/topic_0625
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_2885
+  - http://edamontology.org/operation_3227
+  - http://edamontology.org/operation_3196
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+  - C++
+  - Shell
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: deepvariant

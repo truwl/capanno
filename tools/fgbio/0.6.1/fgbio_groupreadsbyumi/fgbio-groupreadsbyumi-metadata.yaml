@@ -1,0 +1,15 @@
+name: groupreadsbyumi
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_67e97b_2e.85
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml

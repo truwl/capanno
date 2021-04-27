@@ -1,0 +1,56 @@
+name: igv-reports
+softwareVersion:
+  versionName: '1.0'
+  includedVersions: []
+identifier: TL_148c00.e4
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: High-performance visualization tool for interactive exploration of large,
+  integrated datasets. It supports a wide variety of data types and format, including
+  short-read alignments in the SAM/BAM format. Data can be viewed from local files
+  or over the web via http.
+codeRepository:
+  name:
+  URL:
+license: LGPL-2.1
+WebSite:
+  - name:
+    description: homepage
+    URL: http://www.broadinstitute.org/igv/
+  - name:
+    description: documentation
+    URL: http://software.broadinstitute.org/software/igv/UserGuide
+contactPoint:
+  - name: IGV help group
+    email:
+    identifier:
+  - name: IGV GitHub issues
+    email:
+    identifier:
+  - name: IGV support
+    email: igv-team@broadinstitute.org
+    identifier:
+publication:
+  - identifier: 10.1093/BIB/BBS017
+    headline: 'Integrative Genomics Viewer (IGV): High-performance genomics data visualization
+      and exploration'
+  - identifier:
+    headline: Integrative genomics viewer
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0092
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_0337
+  - http://edamontology.org/operation_3184
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: igv

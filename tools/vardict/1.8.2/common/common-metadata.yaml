@@ -1,0 +1,41 @@
+name: vardict
+softwareVersion:
+  versionName: 1.8.2
+  includedVersions: []
+identifier: TL_ba744c.b1
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: VarDict is an ultra sensitive variant caller for both single and paired
+  sample variant calling from BAM files. VarDict implements several novel features
+  such as amplicon bias aware variant calling from targeted sequencing experiments,
+  rescue of long indels by realigning bwa soft clipped reads and better scalability
+  than many Java based variant callers.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/AstraZeneca-NGS/VarDict
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/nar/gkw227
+    headline: 'VarDict: A novel and versatile variant caller for next-generation sequencing
+      in cancer research'
+keywords:
+  - http://edamontology.org/operation_3227
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: vardict

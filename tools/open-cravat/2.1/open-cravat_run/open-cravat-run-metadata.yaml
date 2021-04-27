@@ -1,0 +1,15 @@
+name: run
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_72cfa3_a5.08
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml

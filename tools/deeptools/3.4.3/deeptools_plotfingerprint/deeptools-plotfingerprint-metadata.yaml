@@ -1,0 +1,15 @@
+name: plotfingerprint
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_8b3ec0_d6.9f
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml

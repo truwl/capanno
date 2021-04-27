@@ -1,0 +1,70 @@
+name: snpeff
+softwareVersion:
+  versionName: 4.3.1t
+  includedVersions: []
+identifier: TL_0dbbaf.17
+featureList:
+  - annotate
+  - download
+metadataStatus: Incomplete
+description: Variant annotation and effect prediction tool. It annotates and predicts
+  the effects of variants on genes and proteins (such as amino acid changes).
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://snpeff.sourceforge.net/
+  - name:
+    description:
+      - Software catalogue
+    URL: http://www.mybiosoftware.com/snpeff-2-0-5d-snpsift-1-3-4-variant-annotation-effect-prediction-tool.html
+  - name:
+    description:
+      - Repository
+    URL: http://snpeff.sourceforge.net/download.html
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/snpeff2/snpEff2/0.3
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/screno/snpeff3/snpEff3/3.5
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/snpeff4/snpEff4/4.1
+  - name:
+    description: documentation
+    URL: http://snpeff.sourceforge.net/SnpEff.html
+  - name:
+    description: documentation
+    URL: http://snpeff.sourceforge.net/SnpEff_manual.html
+  - name:
+    description: documentation
+    URL: http://snpeff.sourceforge.net/about.html#help
+contactPoint:
+  - name:
+    email: pcingola@users.sourceforge.net
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_2885
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/topic_3511
+  - http://edamontology.org/operation_0484
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: snpeff

@@ -1,0 +1,64 @@
+name: dada2
+softwareVersion:
+  versionName: '1.16'
+  includedVersions: []
+identifier: TL_cbf4cc.69
+featureList:
+  - add-species
+  - assign-species
+  - assign-taxonomy
+  - collapse-nomismatch
+  - dereplicate-fastq
+  - filter-trim
+  - learn-errors
+  - make-table
+  - merge-pairs
+  - quality-profile
+  - remove-chimeras
+  - sample-inference
+metadataStatus: Incomplete
+description: This package infers exact sequence variants (SVs) from amplicon data,
+  replacing the commonly used and coarser OTU clustering approach. This pipeline inputs
+  demultiplexed fastq files, and outputs the sequence variants and their sample-wise
+  abundances after removing substitution and chimera errors. Taxonomic classification
+  is available via a native implementation of the RDP naive Bayesian classifier.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://bioconductor.org/packages/release/bioc/html/dada2.html
+  - name:
+    description:
+      - Mirror
+    URL: http://benjjneb.github.io/dada2/
+  - name:
+    description: documentation
+    URL: http://bioconductor.org/packages/release/bioc/html/dada2.html
+  - name:
+    description: documentation
+    URL: https://benjjneb.github.io/dada2/tutorial.html
+contactPoint:
+  - name: Benjamin Callahan
+    email: benjamin.j.callahan@gmail.com
+    identifier:
+publication:
+  - identifier: 10.1038/nmeth.3869
+    headline: 'DADA2: High-resolution sample inference from Illumina amplicon data'
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/operation_3227
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: dada2

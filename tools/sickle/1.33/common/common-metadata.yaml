@@ -1,0 +1,44 @@
+name: sickle
+softwareVersion:
+  versionName: '1.33'
+  includedVersions: []
+identifier: TL_979979.5d
+featureList:
+  - pe
+  - se
+metadataStatus: Incomplete
+description: A  tool that uses sliding windows along with quality and length thresholds
+  to determine when quality is sufficiently low to trim the 3'-end of reads and also
+  determines when the quality is sufficiently high enough to trim the 5'-end of reads.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/najoshi/sickle
+  - name:
+    description: documentation
+    URL: https://github.com/najoshi/sickle/blob/master/README.md
+contactPoint:
+  - name:
+    email: bioinformatics.core@ucdavis.edu
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_3572
+  - http://edamontology.org/operation_3192
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: sickle

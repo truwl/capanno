@@ -1,0 +1,38 @@
+name: fastp
+softwareVersion:
+  versionName: '0.20'
+  includedVersions: []
+identifier: TL_f73dc8.c0
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: A tool designed to provide fast all-in-one preprocessing for FastQ files.
+  This tool is developed in C++ with multithreading supported to afford high performance.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/OpenGene/fastp
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: fastp

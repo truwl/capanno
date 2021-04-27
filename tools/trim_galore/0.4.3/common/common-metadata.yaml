@@ -1,0 +1,44 @@
+name: trim_galore
+softwareVersion:
+  versionName: 0.4.3
+  includedVersions: []
+identifier: TL_a4fd95.1c
+featureList:
+  - se
+  - pe
+metadataStatus: Incomplete
+description: A wrapper tool around Cutadapt and FastQC to consistently apply quality
+  and adapter trimming to FastQ files, with some extra functionality for MspI-digested
+  RRBS-type (Reduced Representation Bisufite-Seq) libraries.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
+  - name:
+    description: documentation
+    URL: http://www.bioinformatics.babraham.ac.uk/index.html
+contactPoint:
+  - name: F. Krueger
+    email: felix.krueger@babraham.ac.uk
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_3192
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: trim_galore

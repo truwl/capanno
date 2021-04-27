@@ -1,0 +1,75 @@
+name: vep
+softwareVersion:
+  versionName: '102'
+  includedVersions: []
+identifier: TL_7354bf.ec
+featureList:
+  - plugins
+  - annotate
+  - cache
+metadataStatus: Incomplete
+description: Tool for predicting effects of variants for any genome in Ensembl or
+  with genome annotation (via GFF). This includes vertebrates and also plants, fungi,
+  protists, metazoa and bacteria.  There is a web and a REST API version but the most
+  powerful is the Perl script version. See McLaren et al., 2016, Genome Biology
+codeRepository:
+  name:
+  URL:
+license: Apache-2.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://www.ensembl.org/vep
+  - name:
+    description:
+      - Other
+    URL: http://www.ensembl.org/vep
+  - name:
+    description:
+      - Other
+    URL: http://metazoa.ensembl.org/tools.html
+  - name:
+    description:
+      - Other
+    URL: http://fungi.ensembl.org/tools.html
+  - name:
+    description:
+      - Other
+    URL: http://plants.ensembl.org/tools.html
+  - name:
+    description:
+      - Other
+    URL: http://protists.ensembl.org/tools.html
+  - name:
+    description:
+      - Other
+    URL: http://bacteria.ensembl.org/tools.html
+  - name:
+    description: documentation
+    URL: http://www.ensembl.org/info/docs/tools/vep/online/index.html
+  - name:
+    description: documentation
+    URL: http://www.ensembl.org/info/docs/tools/vep/script/index.html
+contactPoint:
+  - name: Contact Form
+    email:
+    identifier:
+publication:
+  - identifier: 10.1186/s13059-016-0974-4
+    headline: The Ensembl Variant Effect Predictor
+keywords:
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/operation_3661
+  - http://edamontology.org/operation_3197
+alternateName:
+creator:
+  - name: Ensembl
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: vep

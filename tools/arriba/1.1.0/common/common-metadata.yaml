@@ -1,0 +1,51 @@
+name: arriba
+softwareVersion:
+  versionName: 1.1.0
+  includedVersions: []
+identifier: TL_ab57db.7d
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Arriba is a command-line tool to detect gene fusions from RNA-Seq data
+  based on the STAR aligner. In addition to fusions, it can detect exon duplications/inversions
+  and truncations of genes (i.e., breakpoints in introns and intergenic regions).
+  Arriba is the winner of the DREAM SMC-RNA Challenge.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/suhrig/arriba/
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/suhrig/arriba/issues
+  - name:
+    description: documentation
+    URL: https://arriba.readthedocs.io/
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_3512
+  - http://edamontology.org/topic_3320
+  - http://edamontology.org/topic_3175
+  - http://edamontology.org/operation_3228
+  - http://edamontology.org/operation_3199
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: arriba

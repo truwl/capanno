@@ -1,0 +1,40 @@
+name: rubic
+softwareVersion:
+  versionName: 3.4.1
+  includedVersions: []
+identifier: TL_a7190b.83
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: RUBIC detects recurrent copy number aberrations using copy number breaks,
+  rather than recurrently amplified or deleted regions. This allows for a vastly simplified
+  approach as recursive peak splitting procedures and repeated re-estimation of the
+  background model are avoided. Furthermore, the false discovery rate is controlled
+  on the level of called regions, rather than at the probe level.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/NKI-CCB/RUBIC
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/operation_3964
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: rubic

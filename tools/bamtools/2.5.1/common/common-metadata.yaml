@@ -1,0 +1,48 @@
+name: bamtools
+softwareVersion:
+  versionName: 2.5.1
+  includedVersions: []
+identifier: TL_4f3c04.21
+featureList:
+  - filter
+  - filter_json
+  - split
+  - stats
+metadataStatus: Incomplete
+description: BamTools provides a fast, flexible C++ API & toolkit for reading, writing,
+  and managing BAM files.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/pezmaster31/bamtools
+  - name:
+    description: documentation
+    URL: https://github.com/pezmaster31/bamtools/wiki
+contactPoint:
+  - name: Derek Barnett
+    email: derekwbarnett@gmail.com
+    identifier:
+publication:
+  - identifier:
+    headline: 'Bamtools: A C++ API and toolkit for analyzing and managing BAM files'
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_3071
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_2409
+  - http://edamontology.org/operation_0258
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: bamtools
