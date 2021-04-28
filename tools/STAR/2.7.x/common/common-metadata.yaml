@@ -1,11 +1,11 @@
 name: STAR
 softwareVersion:
   versionName: 2.7.x
-  includedVersions: [2.7.6a]
+  includedVersions: [2.7.6a,2.7.5c]
 identifier: TL_8ab263.6f
 featureList:
-  - STAR-Align
-  - STAR-Index
+  - align
+  - index
 metadataStatus: Released
 description: Ultrafast universal RNA-seq aligner
 codeRepository:

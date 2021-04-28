@@ -1,7 +1,7 @@
 name: STAR-Index
-metadataStatus: Incomplete
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Released
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
