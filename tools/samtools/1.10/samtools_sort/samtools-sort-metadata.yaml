@@ -1,7 +1,7 @@
 name: sort
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
