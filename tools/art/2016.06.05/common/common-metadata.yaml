@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_2c5f64.8b
 featureList:
   - profiler_illumina
-metadataStatus: Incomplete
+metadataStatus: Released
 description: ART is a set of simulation tools to generate synthetic next-generation
   sequencing reads. ART simulates sequencing reads by mimicking real sequencing process
   with empirical error models or quality profiles summarized from large recalibrated
