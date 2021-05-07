@@ -1,8 +1,8 @@
 name: __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_dab8f4_54.03
@@ -11,7 +11,7 @@ keywords:
   - name:
     category:
 alternateName:
-extra: !!omap
+extra:
   - sha1:
   - dockerImage:
 parentMetadata: ../common/common-metadata.yaml

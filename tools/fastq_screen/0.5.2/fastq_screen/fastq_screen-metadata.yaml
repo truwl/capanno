@@ -11,7 +11,7 @@ keywords:
   - name:
     category:
 alternateName:
-extra: !!omap
+extra:
   - sha1:
   - dockerImage:
 parentMetadata: ../common/common-metadata.yaml
