@@ -1,15 +1,20 @@
 name: index
 metadataStatus: Incomplete
-cwlStatus: Incomplete
+cwlStatus: Released
 nextflowStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
-identifier: TL_5581ac_6a.a1
+identifier: TL_11b64f_8a.a1
 description:
 keywords:
   - name:
     category:
 alternateName:
-extra: {}
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/Kallisto/Kallisto-Index.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
 parentMetadata: ../common/common-metadata.yaml
