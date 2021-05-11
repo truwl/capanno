@@ -1,8 +1,8 @@
 name: kmers
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_181523_21.d9

@@ -1,8 +1,8 @@
 name: varType
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ec6b68_74.17

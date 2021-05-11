@@ -1,8 +1,8 @@
 name: assemble
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_f3895a_c8.70

@@ -1,8 +1,8 @@
 name: plotheatmap
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_8b3ec0_0c.9f
