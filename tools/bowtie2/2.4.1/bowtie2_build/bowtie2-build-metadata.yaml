@@ -1,8 +1,8 @@
 name: build
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
-snakemakeStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_8d0912_b0.12

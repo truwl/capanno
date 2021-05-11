@@ -1,12 +1,13 @@
 name: bowtie2
 softwareVersion:
-  versionName: 2.4.1
-  includedVersions: []
-identifier: TL_8d0912.12
+  versionName: '2.4.x'
+  includedVersions:
+    - 2.4.2
+identifier: TL_8d0912.1a
 featureList:
   - align
   - build
-metadataStatus: Incomplete
+metadataStatus: Released
 description: 'Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing
   reads to long reference sequences. It is particularly good at aligning reads of
   about 50 up to 100s or 1,000s of characters, and particularly good at aligning to
