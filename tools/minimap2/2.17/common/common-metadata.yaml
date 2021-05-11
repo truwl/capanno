@@ -6,6 +6,8 @@ identifier: TL_938e07.48
 featureList:
   - sam
   - paf
+  - aligner
+  - index
 metadataStatus: Incomplete
 description:
 codeRepository:

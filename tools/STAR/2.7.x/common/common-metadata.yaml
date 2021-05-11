@@ -4,8 +4,8 @@ softwareVersion:
   includedVersions: [2.7.6a,2.7.5c]
 identifier: TL_8ab263.6f
 featureList:
-  - align
-  - index
+  - alignReads
+  - genomeGenerate
 metadataStatus: Released
 description: Ultrafast universal RNA-seq aligner
 codeRepository:

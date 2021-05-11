@@ -1,4 +1,4 @@
-name: STAR-Align
+name: alignReads
 metadataStatus: Released
 cwlStatus: Released
 snakemakeStatus: Released
