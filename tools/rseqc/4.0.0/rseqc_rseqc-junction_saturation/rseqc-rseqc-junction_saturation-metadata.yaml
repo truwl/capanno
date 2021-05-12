@@ -1,0 +1,16 @@
+name: rseqc-junction_saturation
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_73aadb_1b.49
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-junction_saturation.cwl
+    dateCreated: '2021-02-03'
+    sha1: cfe971e761263d537a3809645f2ebc4b299a0878
+parentMetadata: ../common/common-metadata.yaml

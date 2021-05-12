@@ -1,0 +1,16 @@
+name: sortmerna.tool
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_16b400_c2.9c
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../MG-RAST/CWL/Tools/sortmerna/sortmerna.tool.cwl
+    dateCreated: '2021-02-16'
+    sha1: d5a2173b40de943f425d4d2749190e932d52410c
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,16 @@
+name: meme-chip
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_9c2f92_c1.b4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/meme/meme-chip.cwl
+    dateCreated: '2021-02-03'
+    sha1: d370f31b1e437ab0e46694bbac97b13e4ee46419
+parentMetadata: ../common/common-metadata.yaml

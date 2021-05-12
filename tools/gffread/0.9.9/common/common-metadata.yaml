@@ -1,0 +1,43 @@
+name: gffread
+softwareVersion:
+  versionName: 0.9.9
+  includedVersions: []
+identifier: TL_b75c03.50
+featureList:
+  - gffread
+metadataStatus: Released
+description: program for filtering, converting and manipulating GFF files
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://ccb.jhu.edu/software/stringtie/gff.shtml
+  - name:
+    description: documentation
+    URL: https://ccb.jhu.edu/software/stringtie/gff.shtml
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_0077
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_0361
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Shell
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: gffread

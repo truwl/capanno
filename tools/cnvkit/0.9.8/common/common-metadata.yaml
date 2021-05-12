@@ -1,0 +1,44 @@
+name: cnvkit
+softwareVersion:
+  versionName: 0.9.8
+  includedVersions: []
+identifier: TL_0171fb.23
+featureList:
+  - vcf_export
+  - batch
+metadataStatus: Released
+description: CNVkit is a software toolkit to infer and visualize copy number from
+  targeted DNA sequencing data.
+codeRepository:
+  name:
+  URL:
+license: BSD-3-Clause
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/etal/cnvkit
+  - name:
+    description: documentation
+    URL: http://cnvkit.readthedocs.io/en/stable/
+contactPoint:
+  - name: Boris C. Bastian
+    email: boris.bastian@ucsf.edu
+    identifier:
+publication:
+  - identifier: 10.1371/journal.pcbi.1004873
+    headline: 'CNVkit: Genome-Wide Copy Number Detection and Visualization from Targeted
+      DNA Sequencing'
+keywords:
+  - http://edamontology.org/topic_3175
+  - http://edamontology.org/operation_3227
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: cnvkit

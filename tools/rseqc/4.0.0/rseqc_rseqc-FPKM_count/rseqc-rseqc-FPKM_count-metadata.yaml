@@ -1,0 +1,16 @@
+name: rseqc-FPKM_count
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_73aadb_61.49
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-FPKM_count.cwl
+    dateCreated: '2021-02-03'
+    sha1: eee53d9c094b5496d007f9ee5cfd90e9d4d0ad8e
+parentMetadata: ../common/common-metadata.yaml

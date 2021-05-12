@@ -1,0 +1,56 @@
+name: stringtie
+softwareVersion:
+  versionName: 2.1.4
+  includedVersions: []
+identifier: TL_30ca4b.28
+featureList:
+  - stringtie
+metadataStatus: Released
+description: Fast and highly efficient assembler of RNA-Seq alignments into potential
+  transcripts. It uses a novel network flow algorithm as well as an optional de novo
+  assembly step to assemble and quantitate full-length transcripts representing multiple
+  splice variants for each gene locus.
+codeRepository:
+  name:
+  URL:
+license: Artistic-2.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://ccb.jhu.edu/software/stringtie/
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/gpertea/stringtie
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/gpertea/stringtie/issues
+  - name:
+    description: documentation
+    URL: https://ccb.jhu.edu/software/stringtie/index.shtml?t=manual
+contactPoint:
+  - name:
+    email: mpertea@jhu.edu
+    identifier:
+publication:
+  - identifier: 10.1038/nbt.3122
+    headline: StringTie enables improved reconstruction of a transcriptome from RNA-seq
+      reads
+keywords:
+  - http://edamontology.org/topic_3308
+  - http://edamontology.org/topic_3170
+  - http://edamontology.org/operation_3258
+  - http://edamontology.org/operation_3680
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: stringtie

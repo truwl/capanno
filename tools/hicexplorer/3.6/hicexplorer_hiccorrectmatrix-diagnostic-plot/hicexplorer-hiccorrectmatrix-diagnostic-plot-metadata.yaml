@@ -1,0 +1,16 @@
+name: hiccorrectmatrix-diagnostic-plot
+metadataStatus: Released
+cwlStatus: Released
+version: 0.1.0
+identifier: TL_1c3c14_8c.e4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/hicexplorer/hiccorrectmatrix-diagnostic-plot.cwl
+    dateCreated: '2021-02-03'
+    sha1: ba8994b354596568a8c602c57539efc59585b389
+parentMetadata: ../common/common-metadata.yaml
