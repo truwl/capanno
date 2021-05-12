@@ -1,8 +1,10 @@
 name: hicplotmatrix
 metadataStatus: Released
-cwlStatus: ReleasedsnakemakeStatus: Incomplete
+cwlStatus: Released
+snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
-wdlStatus: Incomplete: 0.1.0
+wdlStatus: Incomplete
+version: 0.1.0
 identifier: TL_1c3c14_8e.e4
 description:
 keywords:
