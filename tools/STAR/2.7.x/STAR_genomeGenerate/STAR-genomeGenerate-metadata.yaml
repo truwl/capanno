@@ -1,4 +1,4 @@
-name: STAR-Index
+name: genomeGenerate
 metadataStatus: Released
 cwlStatus: Released
 snakemakeStatus: Released
