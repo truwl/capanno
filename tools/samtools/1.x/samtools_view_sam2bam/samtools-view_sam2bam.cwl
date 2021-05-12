@@ -2,16 +2,12 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand:
   - "samtools"
-  - "index"
-requirements:
-  - class: InitialWorkDirRequirement
-    listing:
-      - $(inputs.bam_sorted)
+  - "view"
 hints:
   - dockerPull: truwl/samtools:1.9_0.1.0
     class: DockerRequirement
   - coresMin: 1
-    ramMin: 20000
+    ramMin: 10000
     class: ResourceRequirement
   - packages:
       samtools:
@@ -19,18 +15,16 @@ hints:
         version: ["1.10"]
     class: SoftwareRequirement
 arguments: []
+stdout: $(inputs.sam.nameroot).bam
 doc: |
-  Indexing BAM.
+  Convert SAM to BAM.
 inputs:
-  bam_sorted:
+  sam:
     type: File
     inputBinding:
       position: 2
     doc: |-
-      sorted bam input file
+      reads to be checked in sam format
 outputs:
-  bam_sorted_indexed:
-    type: File
-    outputBinding:
-      glob: $(inputs.bam_sorted.basename)
-    secondaryFiles: .bai
+  bam:
+    type: stdout

@@ -2,16 +2,14 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand:
   - "samtools"
-  - "index"
+  - "view"
 requirements:
-  - class: InitialWorkDirRequirement
-    listing:
-      - $(inputs.bam_sorted)
+  - class: InlineJavascriptRequirement
 hints:
   - dockerPull: truwl/samtools:1.9_0.1.0
     class: DockerRequirement
   - coresMin: 1
-    ramMin: 20000
+    ramMin: 10000
     class: ResourceRequirement
   - packages:
       samtools:
@@ -19,18 +17,23 @@ hints:
         version: ["1.10"]
     class: SoftwareRequirement
 arguments: []
-doc: |
-  Indexing BAM.
+stdout: $(inputs.bam.nameroot)_filt.bam
+doc: for single end data
 inputs:
-  bam_sorted:
+  min_mapping_quality:
+    type: int
+    default: 20
+    inputBinding:
+      prefix: -q
+      position: 1
+    doc: |-
+      Reads with a mapping quality below this will be excluded
+  bam:
     type: File
     inputBinding:
-      position: 2
+      position: 10
     doc: |-
-      sorted bam input file
+      aligned reads to be checked in bam format
 outputs:
-  bam_sorted_indexed:
-    type: File
-    outputBinding:
-      glob: $(inputs.bam_sorted.basename)
-    secondaryFiles: .bai
+  bam_filtered:
+    type: stdout

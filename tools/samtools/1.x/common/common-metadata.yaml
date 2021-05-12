@@ -46,6 +46,9 @@ featureList:
   - markdup
   - bam2fq_interleaved
   - nfindex
+  - view_filter
+  - view_count_alignments
+  - view_sam2bam
 metadataStatus: Released
 description: A software package with various utilities for processing alignments in
   the SAM format, including variant calling and alignment viewing.
