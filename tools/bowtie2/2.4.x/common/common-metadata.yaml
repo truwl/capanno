@@ -1,0 +1,68 @@
+identifier: TL_8d0912.1a
+name: bowtie2
+softwareVersion:
+  versionName: '2.4.x'
+  includedVersions:
+    - 2.4.2
+metadataStatus: Released
+featureList:
+  - align
+  - build
+description: 'Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing
+  reads to long reference sequences. It is particularly good at aligning reads of
+  about 50 up to 100s or 1,000s of characters, and particularly good at aligning to
+  relatively long (e.g. mammalian) genomes. Bowtie 2 indexes the genome with an FM
+  Index to keep its memory footprint small: for the human genome, its memory footprint
+  is typically around 3.2 GB. Bowtie 2 supports gapped, local, and paired-end alignment
+  modes.'
+codeRepository:
+  URL:
+  name:
+license: GPL-3.0
+WebSite:
+  - description: homepage
+    URL: http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
+    name:
+  - description: Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/bowtie2/bowtie2/2.2.6.2
+    name:
+  - description: documentation
+    URL: http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
+    name:
+  - description: documentation
+    URL: https://github.com/BenLangmead/bowtie2
+    name:
+contactPoint:
+  - identifier:
+    email:
+    name: Ben Langmead
+publication:
+  - identifier: 10.1038/nmeth.1923
+    headline:
+  - identifier: 10.1186/1471-2105-14-184
+    headline:
+  - identifier: 10.1016/j.ygeno.2017.03.001
+    headline: Evaluation and assessment of read-mapping by multiple next-generation
+      sequencing aligners based on genome-wide characteristics
+  - identifier: 10.1186/1471-2164-15-264
+    headline:
+  - identifier: 10.1093/bioinformatics/btu146
+    headline: Lacking alignments? The next-generation sequencing mapper segemehl revisited
+  - identifier: 10.7490/f1000research.1114334.1
+    headline:
+keywords:
+  - http://edamontology.org/topic_0102
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0102
+  - http://edamontology.org/operation_3198
+alternateName:
+creator:
+  - identifier:
+    email:
+    name: Ben Langmead
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: bowtie2
