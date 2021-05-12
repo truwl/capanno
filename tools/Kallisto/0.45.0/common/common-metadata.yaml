@@ -4,8 +4,8 @@ softwareVersion:
   includedVersions: []
 identifier: TL_11b64f.a1
 featureList:
-  - Kallisto-Quant
-  - Kallisto-Index
+  - quant
+  - index
 metadataStatus: Released
 description: A program for quantifying abundances of transcripts from RNA-Seq data,
   or more generally of target sequences using high-throughput sequencing reads. It

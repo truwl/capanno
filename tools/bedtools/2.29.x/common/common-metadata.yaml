@@ -16,6 +16,7 @@ featureList:
   - cluster
   - complement
   - coverage
+  - coveragebed
   - expand
   - flank
   - fisher

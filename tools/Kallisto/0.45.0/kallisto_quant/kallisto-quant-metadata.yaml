@@ -1,11 +1,6 @@
 name: quant
-<<<<<<< HEAD
-metadataStatus: Incomplete
-cwlStatus: Released
-=======
 metadataStatus: Released
-cwlStatus: Incomplete
->>>>>>> 21b5bfd05e542b7c9cb298a51b8e43944262e9dc
+cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
