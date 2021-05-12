@@ -1,6 +1,9 @@
 name: rseqc-infer_experiment
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_17.49
 description:

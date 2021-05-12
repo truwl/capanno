@@ -1,6 +1,9 @@
 name: rseqc-junction_annotation
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_30.49
 description:

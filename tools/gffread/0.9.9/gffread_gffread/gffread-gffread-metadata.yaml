@@ -1,6 +1,9 @@
 name: gffread
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_b75c03_b7.50
 description:

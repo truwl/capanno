@@ -1,6 +1,9 @@
 name: chromhmm-learnmodel
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_d78180_d4.71
 description:

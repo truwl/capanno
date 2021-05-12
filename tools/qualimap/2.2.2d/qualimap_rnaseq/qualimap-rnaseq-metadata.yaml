@@ -1,6 +1,9 @@
 name: rnaseq
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_f6b1de_1f.35
 description:

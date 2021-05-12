@@ -1,6 +1,9 @@
 name: blast-blastdbcmd
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_9e1b93_11.e2
 description:

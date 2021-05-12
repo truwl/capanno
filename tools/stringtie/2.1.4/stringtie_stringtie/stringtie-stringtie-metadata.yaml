@@ -1,6 +1,9 @@
 name: stringtie
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_30ca4b_30.28
 description:

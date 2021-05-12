@@ -1,6 +1,9 @@
 name: meme
 metadataStatus: Released
 cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_9c2f92_9c.b4
 description:
