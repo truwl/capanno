@@ -1,11 +1,18 @@
 name: bwa
 softwareVersion:
   versionName: 0.7.x
-  includedVersions: [0.7.8]
+  includedVersions: [0.7.8,0.7.17]
 identifier: TL_a6be17.8e
 featureList:
   - BWA-Index
   - BWA-Mem
+  - aln
+  - index
+  - mem
+  - mem-samblaster
+  - sampe
+  - samse
+  - samxe
 metadataStatus: Released
 description: Burrow-Wheeler Aligner for pairwise alignment between DNA sequences
 codeRepository:
