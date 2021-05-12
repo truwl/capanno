@@ -1,64 +1,36 @@
-#!/usr/bin/env cwl-runner
-
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: [samtools, index]
-
-
+baseCommand:
+  - "samtools"
+  - "index"
 requirements:
-- class: InlineJavascriptRequirement
-
+  - class: InitialWorkDirRequirement
+    listing:
+      - $(inputs.bam_sorted)
+hints:
+  - dockerPull: truwl/samtools:1.9_0.1.0
+    class: DockerRequirement
+  - coresMin: 1
+    ramMin: 20000
+    class: ResourceRequirement
+  - packages:
+      samtools:
+        specs: ["http://identifiers.org/biotools/samtools"]
+        version: ["1.10"]
+    class: SoftwareRequirement
+arguments: []
+doc: |
+  Indexing BAM.
 inputs:
-
-  b:
-    type: ["null", boolean]
-    inputBinding:
-      prefix: -b
-      position: 1
-    doc: Create a BAI index. This is currently the default when no format options are used.
-
-  c:
-    type: ["null", boolean]
-    inputBinding:
-      prefix: -c
-      position: 1
-    doc: Create a CSI index. By default, the minimum interval size for the index is 2^14, which is the same as the fixed value used by the BAI format.
-
-  m:
-    type: ["null", int]
-    inputBinding:
-      prefix: -m
-      position: 2
-    doc: Create a CSI index, with a minimum interval size of 2^INT.
-
-  inputFile:
+  bam_sorted:
     type: File
     inputBinding:
-      position: 4
-    doc: coordinate-sorted BAM or CRAM file
-
-  outputFilename:
-    type: ["null", string]
-    inputBinding:
-      position: 6
-    doc: If an output filename is given, the index file will be written to out.index
-
+      position: 2
+    doc: |-
+      sorted bam input file
 outputs:
-  output:
+  bam_sorted_indexed:
     type: File
     outputBinding:
-      glob: ${
-        if (inputs.outputFilename) {
-          return inputs.outputFileName
-          }
-        else if (inputs.inputFile.path.endsWith(".cram")) {
-          return inputs.inputFile.path + ".crai"}
-        else {
-          if (inputs.c) {
-            return inputs.inputFile.path + ".csi"}
-          else {
-            return inputs.inputFile.path + ".bai"
-          }
-
-        }
-        }
+      glob: $(inputs.bam_sorted.basename)
+    secondaryFiles: .bai

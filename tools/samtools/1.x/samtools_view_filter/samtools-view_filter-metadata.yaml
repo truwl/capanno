@@ -1,11 +1,11 @@
-name: stats
-metadataStatus: Released
+name: view_filter
+metadataStatus: Incomplete
 cwlStatus: Incomplete
-snakemakeStatus: Released
+snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
-identifier: TL_ec2a8d_44.bd
+identifier: TL_ec2a8d_64.0b
 description:
 keywords:
 - name:
@@ -13,7 +13,7 @@ keywords:
 alternateName:
 extra:
   cwlDocument:
-    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/samtools/samtools_stats.cwl
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/samtools/samtools_view_filter.cwl
     dateCreated: '2020-09-21'
     sha256:
     dockerImage:
