@@ -4,14 +4,14 @@ softwareVersion:
   includedVersions: []
 identifier: TL_73aadb.49
 featureList:
-  - rseqc-FPKM_count
-  - rseqc-infer_experiment
-  - rseqc-read_quality
-  - rseqc-junction_saturation
-  - rseqc-junction_annotation
-  - rseqc-geneBody_coverage
-  - rseqc-read_distribution
-  - rseqc-bam_stat
+  - FPKM_count
+  - infer_experiment
+  - read_quality
+  - junction_saturation
+  - junction_annotation
+  - geneBody_coverage
+  - read_distribution
+  - bam_stat
 metadataStatus: Released
 description: Provides a number of useful modules that can comprehensively evaluate
   high throughput sequence data especially RNA-seq data. Some basic modules quickly
