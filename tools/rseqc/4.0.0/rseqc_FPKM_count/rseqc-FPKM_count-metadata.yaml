@@ -1,11 +1,11 @@
-name: rseqc-geneBody_coverage
+name: FPKM_count
 metadataStatus: Released
 cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
-identifier: TL_73aadb_de.49
+identifier: TL_73aadb_61.49
 description:
 keywords:
   - name:
@@ -13,7 +13,7 @@ keywords:
 alternateName:
 extra:
   cwlDocument:
-    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-geneBody_coverage.cwl
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-FPKM_count.cwl
     dateCreated: '2021-02-03'
-    sha1: 4114fac2191becb678c4f3d5b63f7dba5a948433
+    sha1: eee53d9c094b5496d007f9ee5cfd90e9d4d0ad8e
 parentMetadata: ../common/common-metadata.yaml

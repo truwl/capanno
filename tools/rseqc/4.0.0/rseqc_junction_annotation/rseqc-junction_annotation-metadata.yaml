@@ -1,11 +1,11 @@
-name: rseqc-FPKM_count
+name: junction_annotation
 metadataStatus: Released
 cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
-identifier: TL_73aadb_61.49
+identifier: TL_73aadb_30.49
 description:
 keywords:
   - name:
@@ -13,7 +13,7 @@ keywords:
 alternateName:
 extra:
   cwlDocument:
-    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-FPKM_count.cwl
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-junction_annotation.cwl
     dateCreated: '2021-02-03'
-    sha1: eee53d9c094b5496d007f9ee5cfd90e9d4d0ad8e
+    sha1: 9dd96a21eb943492f06420274289031ca22944d2
 parentMetadata: ../common/common-metadata.yaml

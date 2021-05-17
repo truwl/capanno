@@ -1,11 +1,11 @@
-name: rseqc-read_distribution
+name: read_quality
 metadataStatus: Released
 cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
-identifier: TL_73aadb_a7.49
+identifier: TL_73aadb_52.49
 description:
 keywords:
   - name:
@@ -13,7 +13,7 @@ keywords:
 alternateName:
 extra:
   cwlDocument:
-    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-read_distribution.cwl
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-read_quality.cwl
     dateCreated: '2021-02-03'
-    sha1: f1d296eb16aeefd9c5091ca92ec2511f321f3ba8
+    sha1: b251305c63a2121b437448b0868e894637154466
 parentMetadata: ../common/common-metadata.yaml
