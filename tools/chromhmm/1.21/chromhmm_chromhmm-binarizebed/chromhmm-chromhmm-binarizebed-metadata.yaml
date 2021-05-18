@@ -1,0 +1,19 @@
+name: chromhmm-binarizebed
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_d78180_2f.71
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/chromhmm/chromhmm-binarizebed.cwl
+    dateCreated: '2021-02-03'
+    sha1: 891305300de306a98bc8312006f661e4f7ebb8dd
+parentMetadata: ../common/common-metadata.yaml

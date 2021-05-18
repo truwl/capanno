@@ -1,0 +1,19 @@
+name: fasta-most
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_9c2f92_09.b4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/meme/fasta-most.cwl
+    dateCreated: '2021-02-03'
+    sha1: 2850d52170aeed370f5b1b7937521f64fe0649bd
+parentMetadata: ../common/common-metadata.yaml

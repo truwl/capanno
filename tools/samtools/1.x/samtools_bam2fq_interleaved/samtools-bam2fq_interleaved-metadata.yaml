@@ -1,0 +1,20 @@
+name: bam2fq_interleaved
+metadataStatus: Released
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Released
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_ec2a8d_4c.0b
+description: Convert BAM to fastq
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  snakemakeDocument:
+    isBasedOn: https://raw.githubusercontent.com/truwl/snakemake-wrappers/master/bio/samtools/bam2fq/interleaved/wrapper.py
+    dateCreated: '2021-04-14'
+  sha1:
+  dockerImage:
+parentMetadata: ../common/common-metadata.yaml

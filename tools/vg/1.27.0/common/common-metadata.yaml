@@ -1,0 +1,44 @@
+name: vg
+softwareVersion:
+  versionName: 1.27.0
+  includedVersions: []
+identifier: TL_181523.d9
+featureList:
+  - construct
+  - ids
+  - index_gcsa
+  - index_xg
+  - kmers
+  - merge
+  - prune
+  - sim
+metadataStatus: Incomplete
+description: variation graph data structures, interchange formats, alignment, genotyping,
+  and variant calling methods
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/vgteam/vg
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/operation_3209
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: vg

@@ -1,0 +1,45 @@
+name: varscan
+softwareVersion:
+  versionName: 2.4.3
+  includedVersions: []
+identifier: TL_6518d5.7a
+featureList:
+  - mpileup2indel
+  - somatic
+metadataStatus: Incomplete
+description: VarScan, an open source tool for variant detection that is compatible
+  with several short read align-ers.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://dkoboldt.github.io/varscan/
+  - name:
+    description: documentation
+    URL: http://dkoboldt.github.io/varscan/using-varscan.html
+contactPoint:
+  - name: Support Forum
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline: 'VarScan: Variant detection in massively parallel sequencing of individual
+      and pooled samples'
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_2885
+  - http://edamontology.org/operation_3227
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: varscan

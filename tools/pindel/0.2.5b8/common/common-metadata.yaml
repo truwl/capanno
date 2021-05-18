@@ -1,0 +1,63 @@
+name: pindel
+softwareVersion:
+  versionName: 0.2.5b8
+  includedVersions: []
+identifier: TL_8543fc.f9
+featureList:
+  - call
+  - pindel2vcf
+metadataStatus: Incomplete
+description: A pattern growth approach to detect break points of large deletions and
+  medium sized insertions from paired end short reads.
+codeRepository:
+  name:
+  URL:
+license: Unlicense
+WebSite:
+  - name:
+    description: homepage
+    URL: http://gmt.genome.wustl.edu/packages/pindel/
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/genome/pindel
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/genome/pindel/issues
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/pindel/pindel/0.2.5a3
+  - name:
+    description: documentation
+    URL: http://gmt.genome.wustl.edu/packages/pindel/
+  - name:
+    description: documentation
+    URL: http://gmt.genome.wustl.edu/packages/pindel/user-manual.html
+contactPoint:
+  - name: Support Forum
+    email:
+    identifier:
+  - name: Kai Ye
+    email: kaiye@xjtu.edu.cn
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/btp394
+    headline: 'Pindel: A pattern growth approach to detect break points of large deletions
+      and medium sized insertions from paired-end short reads'
+keywords:
+  - http://edamontology.org/topic_3175
+  - http://edamontology.org/topic_3325
+  - http://edamontology.org/operation_0239
+alternateName:
+creator:
+  - name: Kai Ye
+    email: kaiye@xjtu.edu.cn
+    identifier:
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: pindel

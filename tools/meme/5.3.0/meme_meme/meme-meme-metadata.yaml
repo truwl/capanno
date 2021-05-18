@@ -1,0 +1,19 @@
+name: meme
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_9c2f92_9c.b4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/meme/meme.cwl
+    dateCreated: '2021-02-03'
+    sha1: 6f9dfd9f2c86ad56187463699e24015f54cd67c9
+parentMetadata: ../common/common-metadata.yaml

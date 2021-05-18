@@ -1,0 +1,13 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: pileup
+identifier: TL_89cd0d_38.93
+description: Pileup aligned reads (single-end) or fragments (paired-end)
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

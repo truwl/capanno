@@ -1,0 +1,40 @@
+name: filtlong
+softwareVersion:
+  versionName: he941832_2
+  includedVersions: []
+identifier: TL_5ec688.97
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Filtlong is a tool for filtering long reads by quality. It can take a
+  set of long reads and produce a smaller, better subset. It uses both read length
+  (longer is better) and read identity (higher is better) when choosing which reads
+  pass the filter.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/rrwick/Filtlong
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: filtlong

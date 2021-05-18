@@ -1,0 +1,57 @@
+name: plass
+softwareVersion:
+  versionName: 2.c7e35
+  includedVersions: []
+identifier: TL_430187.9c
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: 'Protein-Level ASSembler (PLASS): sensitive and precise protein assembler'
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://plass.mmseqs.com
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/soedinglab/plass/issues
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/soedinglab/plass
+contactPoint:
+  - name: Martin Steinegger
+    email:
+    identifier: http://orcid.org/0000-0001-8781-9753
+  - name: Johannes Söding
+    email:
+    identifier: http://orcid.org/0000-0001-9642-8244
+publication:
+  - identifier: 10.1038/s41592-019-0437-4
+    headline: Protein-level assembly increases protein sequence recovery from metagenomic
+      samples manyfold
+  - identifier: 10.1101/386110
+    headline:
+keywords:
+  - http://edamontology.org/topic_0196
+  - http://edamontology.org/topic_3174
+  - http://edamontology.org/topic_3308
+  - http://edamontology.org/operation_0310
+alternateName:
+creator:
+  - name: Martin Steinegger
+    email:
+    identifier: http://orcid.org/0000-0001-8781-9753
+  - name: Milot Mirdita
+    email:
+    identifier: http://orcid.org/0000-0001-8637-6719
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: plass

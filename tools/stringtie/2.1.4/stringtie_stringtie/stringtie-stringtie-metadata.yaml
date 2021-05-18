@@ -1,0 +1,19 @@
+name: stringtie
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_30ca4b_30.28
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../wustl/definitions/tools/stringtie/stringtie.cwl
+    dateCreated: '2021-02-16'
+    sha1: bccc889a98570b9828ed3552b3fb59a1b5069ab7
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,50 @@
+name: trinity
+softwareVersion:
+  versionName: 2.8.4
+  includedVersions: []
+identifier: TL_ee2055.c7
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Trinity is a transcriptome assembler which relies on three different
+  tools, inchworm an assembler, chrysalis which pools contigs and butterfly which
+  amongst others compacts a graph resulting from butterfly with reads.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/trinityrnaseq/trinityrnaseq/wiki
+  - name:
+    description: documentation
+    URL: https://github.com/trinityrnaseq/trinityrnaseq/wiki
+contactPoint:
+  - name: Nir Friedman
+    email: nir@cs.huji.ac.il
+    identifier:
+  - name: Aviv Regev
+    email: aregev@broad.mit.edu
+    identifier:
+publication:
+  - identifier:
+    headline: Full-length transcriptome assembly from RNA-Seq data without a reference
+      genome
+keywords:
+  - http://edamontology.org/topic_3308
+  - http://edamontology.org/topic_0203
+  - http://edamontology.org/topic_3512
+  - http://edamontology.org/operation_3258
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: trinity

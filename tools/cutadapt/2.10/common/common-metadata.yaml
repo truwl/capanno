@@ -1,0 +1,51 @@
+name: cutadapt
+softwareVersion:
+  versionName: '2.10'
+  includedVersions: []
+identifier: TL_f8ebe1.24
+featureList:
+  - pe
+  - se
+metadataStatus: Incomplete
+description: Find and remove adapter sequences, primers, poly-A tails and other types
+  of unwanted sequence from your high-throughput sequencing reads.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://pypi.python.org/pypi/cutadapt
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/mvalade/cutadapt_v2/cutadapt/1.6
+  - name:
+    description: documentation
+    URL: https://cutadapt.readthedocs.io/en/stable/
+contactPoint:
+  - name: Marcel Martin
+    email: marcel.martin@scilifelab.se
+    identifier:
+publication:
+  - identifier: 10.14806/ej.17.1.200
+    headline:
+  - identifier: 10.7490/f1000research.1114334.1
+    headline:
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0632
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_3192
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: cutadapt

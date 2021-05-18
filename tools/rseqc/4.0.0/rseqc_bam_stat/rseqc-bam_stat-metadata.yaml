@@ -1,0 +1,19 @@
+name: bam_stat
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_73aadb_63.49
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/rseqc/rseqc-bam_stat.cwl
+    dateCreated: '2021-02-03'
+    sha1: 08618cea141701005823599a03e1c5fb0e1bca4e
+parentMetadata: ../common/common-metadata.yaml

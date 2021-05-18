@@ -1,0 +1,19 @@
+name: hicdetectloops
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_1c3c14_7a.e4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/hicexplorer/hicdetectloops.cwl
+    dateCreated: '2021-02-03'
+    sha1: d81f8a825df98b1a022517550910a958d728057f
+parentMetadata: ../common/common-metadata.yaml

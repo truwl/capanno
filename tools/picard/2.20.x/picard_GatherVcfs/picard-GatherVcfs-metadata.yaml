@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: GatherVcfs
+identifier: TL_e24fa5_42.c8
+description: Gathers multiple VCF files from a scatter operation into a single VCF
+  file. Input files must be supplied in genomic order and must not have events at
+  overlapping positions.
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

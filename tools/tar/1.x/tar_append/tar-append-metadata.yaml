@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: append
+identifier: TL_db5570_95.8b
+description: "-r, --append\n       Append files to the end of an archive.  Arguments\
+  \ have the same meaning as for -c (--create)."
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

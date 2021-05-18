@@ -1,0 +1,15 @@
+name: annotate
+metadataStatus: Released
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Released
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_0dbbaf_5c.17
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,51 @@
+name: jannovar
+softwareVersion:
+  versionName: '0.31'
+  includedVersions: []
+identifier: TL_593213.ba
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Stand-alone Java application as well as a Java library designed to be
+  used in larger software frameworks for exome analysis.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://charite.github.io/software-jannovar.html
+  - name:
+    description:
+      - Software catalogue
+    URL: http://www.mybiosoftware.com/jannovar-0-5-a-java-library-for-exome-annotation.html
+  - name:
+    description: documentation
+    URL: http://jannovar.readthedocs.io/en/master/
+contactPoint:
+  - name:
+    email: compbio@charite.de
+    identifier:
+publication:
+  - identifier:
+    headline: 'Jannovar: A Java Library for Exome Annotation'
+keywords:
+  - http://edamontology.org/topic_0099
+  - http://edamontology.org/topic_3676
+  - http://edamontology.org/topic_0659
+  - http://edamontology.org/topic_3512
+  - http://edamontology.org/topic_0634
+  - http://edamontology.org/operation_0361
+  - http://edamontology.org/operation_3229
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: jannovar

@@ -1,0 +1,19 @@
+name: blast-blastdbcmd
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_9e1b93_11.e2
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../pitagora/tool/blast/blast-blastdbcmd.cwl
+    dateCreated: '2021-02-16'
+    sha1: 11d1f6762cf98e9a2d71c830f600e16c55cba446
+parentMetadata: ../common/common-metadata.yaml

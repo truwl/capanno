@@ -1,0 +1,19 @@
+name: hicplottads
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_1c3c14_cc.e4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/hicexplorer/hicplottads.cwl
+    dateCreated: '2021-02-03'
+    sha1: 42bb50388538e2d8490df425decfea6488401d69
+parentMetadata: ../common/common-metadata.yaml

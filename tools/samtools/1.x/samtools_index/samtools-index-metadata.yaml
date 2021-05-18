@@ -1,0 +1,20 @@
+name: index
+metadataStatus: Released
+cwlStatus: Released
+nextflowStatus: Released
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_ec2a8d_a9.0b
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  nextflowDocument:
+    isBasedOn: https://raw.githubusercontent.com/nf-core/modules/master/software/samtools/index/main.nf
+    dateCreated: '2021-04-14'
+  sha1:
+  dockerImage:
+parentMetadata: ../common/common-metadata.yaml

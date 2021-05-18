@@ -1,0 +1,38 @@
+name: genomepy
+softwareVersion:
+  versionName: 0.8.3
+  includedVersions: []
+identifier: TL_ab12d4.c5
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: The goal is to have a simple and straightforward way to download and
+  use genomic sequences. Currently, genomepy supports UCSC, Ensembl and NCBI.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/vanheeringen-lab/genomepy
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: genomepy

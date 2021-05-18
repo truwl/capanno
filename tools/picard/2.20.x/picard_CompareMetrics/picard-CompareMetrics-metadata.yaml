@@ -1,0 +1,17 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: CompareMetrics
+identifier: TL_e24fa5_1b.c8
+description: "Compare two metrics files.This tool compares the metrics and histograms\
+  \ generated from metric tools to determine if the generated results are identical.\
+  \ This tool is useful to test and compare outputs when code changes are implemented.\
+  \ It is not meant for use by end-users of this toolkit.\nThe tool's output simply\
+  \ indicates whether two metrics files are equal or not equal."
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

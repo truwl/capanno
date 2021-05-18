@@ -1,0 +1,40 @@
+name: picard
+softwareVersion:
+  versionName: 2.22.1
+  includedVersions: []
+identifier: TL_e24fa5.ea
+featureList:
+  - addorreplacereadgroups
+  - bedtointervallist
+  - collectalignmentsummarymetrics
+  - collecthsmetrics
+  - samtofastq
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

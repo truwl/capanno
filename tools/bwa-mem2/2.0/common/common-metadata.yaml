@@ -1,0 +1,64 @@
+name: bwa-mem2
+softwareVersion:
+  versionName: '2.0'
+  includedVersions: []
+identifier: TL_ad909e.d1
+featureList:
+  - index
+  - mem
+  - mem-samblaster
+metadataStatus: Incomplete
+description: Fast, accurate, memory-efficient aligner for short and long sequencing
+  reads
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: http://bio-bwa.sourceforge.net
+  - name:
+    description: documentation
+    URL: http://bio-bwa.sourceforge.net/bwa.shtml
+contactPoint:
+  - name: bwa team
+    email: bio-bwa-help@sourceforge.net
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/btp324
+    headline: Fast and accurate short read alignment with Burrows-Wheeler transform
+  - identifier: 10.1186/1471-2105-14-184
+    headline: Benchmarking short sequence mapping tools
+  - identifier: 10.1016/j.ygeno.2017.03.001
+    headline: Evaluation and assessment of read-mapping by multiple next-generation
+      sequencing aligners based on genome-wide characteristics
+  - identifier: 10.1186/1471-2164-15-264
+    headline: 'Comparison of mapping algorithms used in high-throughput sequencing:
+      Application to Ion Torrent data'
+  - identifier: 10.1093/bioinformatics/btu146
+    headline: Lacking alignments? The next-generation sequencing mapper segemehl revisited
+  - identifier: 10.1093/bioinformatics/btp698
+    headline: Fast and accurate long-read alignment with Burrows-Wheeler transform
+keywords:
+  - http://edamontology.org/topic_0102
+  - http://edamontology.org/operation_3211
+  - http://edamontology.org/operation_0292
+  - http://edamontology.org/operation_3198
+  - http://edamontology.org/operation_0292
+  - http://edamontology.org/operation_3429
+  - http://edamontology.org/operation_0292
+  - http://edamontology.org/operation_3429
+  - http://edamontology.org/operation_0292
+  - http://edamontology.org/operation_0292
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: bwa

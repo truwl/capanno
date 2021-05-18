@@ -1,0 +1,38 @@
+name: sourmash
+softwareVersion:
+  versionName: 2.0.0a7
+  includedVersions: []
+identifier: TL_f24b98.f0
+featureList:
+  - compute
+metadataStatus: Incomplete
+description: Compute and compare MinHash signatures for DNA data sets.
+codeRepository:
+  name:
+  URL:
+license: BSD-3-Clause
+WebSite:
+  - name:
+    description: homepage
+    URL: https://sourmash.readthedocs.io/en/latest/
+contactPoint:
+  - name: C. Titus Brown
+    email: ctbrown@ucdavis.edu
+    identifier:
+publication:
+  - identifier: 10.21105/joss.00027
+    headline:
+keywords:
+  - http://edamontology.org/topic_3307
+  - http://edamontology.org/operation_0346
+  - http://edamontology.org/operation_0289
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: sourmash

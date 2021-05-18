@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: links
+identifier: TL_43392c_80.c8
+description: Creates an HTML file with links to an instance of the UCSC Genome Browser
+  for all features / intervals in a file. This is useful for cases when one wants
+  to manually inspect through a large set of annotations or features.
+keywords:
+- name:
+  category:
+alternateName: linksBed
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Released
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: complement
+identifier: TL_43392c_e6.c8
+description: bedtools complement returns all intervals in a genome that are not covered
+  by at least one interval in the input BED/GFF/VCF file.
+keywords:
+- name:
+  category:
+alternateName: complementBed
+parentMetadata: ../common/common-metadata.yaml

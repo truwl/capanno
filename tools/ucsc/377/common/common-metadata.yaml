@@ -1,0 +1,38 @@
+name: ucsc
+softwareVersion:
+  versionName: '377'
+  includedVersions: []
+identifier: TL_d32934.d3
+featureList:
+  - bedGraphToBigWig
+  - faToTwoBit
+  - twoBitInfo
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

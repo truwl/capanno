@@ -1,0 +1,19 @@
+name: gffread
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_b75c03_b7.50
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/gffread/gffread.cwl
+    dateCreated: '2021-02-03'
+    sha1: 4be5e51631d326ca7b0570d0aa5a60068cd69374
+parentMetadata: ../common/common-metadata.yaml

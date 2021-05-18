@@ -1,0 +1,54 @@
+name: ptrimmer
+softwareVersion:
+  versionName: 1.3.3
+  includedVersions: []
+identifier: TL_cfc272.5b
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Tool to trim primers of multiplex deep sequencing data.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/DMU-lilab/pTrimmer
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/DMU-lilab/pTrimmer/issues
+  - name:
+    description: documentation
+    URL: https://github.com/DMU-lilab/pTrimmer/blob/master/README.md
+contactPoint:
+  - name: Jun Chen
+    email: chenjundl@vip.sina.com
+    identifier:
+  - name: Zhiguang Li
+    email: zhiguangli2013@126.com
+    identifier:
+publication:
+  - identifier: 10.1186/S12859-019-2854-X
+    headline: 'PTrimmer: An efficient tool to trim primers of multiplex deep sequencing
+      data'
+keywords:
+  - http://edamontology.org/topic_0632
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/operation_3192
+  - http://edamontology.org/operation_3237
+  - http://edamontology.org/operation_0308
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+  - C
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: ptrimmer

@@ -1,0 +1,19 @@
+name: igvtools-totdf
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_8e5623_7f.a1
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/igvtools/igvtools-totdf.cwl
+    dateCreated: '2021-02-03'
+    sha1: f4691047531919a6a94386839a1d8f683ae1ebe5
+parentMetadata: ../common/common-metadata.yaml

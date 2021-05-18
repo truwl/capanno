@@ -1,0 +1,55 @@
+name: epic
+softwareVersion:
+  versionName: 0.2.7
+  includedVersions: []
+identifier: TL_020be1.fa
+featureList:
+  - peaks
+metadataStatus: Incomplete
+description: EPIC is a R package and Shiny app to estimate the proportions of different
+  cell types from bulk gene expression data.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/GfellerLab/EPIC
+  - name:
+    description:
+      - Other
+    URL: http://epic.gfellerlab.org
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/scvannost/epicpy
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1007/978-1-0716-0327-7_17
+    headline: 'EPIC: A tool to estimate the proportions of different cell types from
+      bulk gene expression data'
+keywords:
+  - http://edamontology.org/topic_3948
+  - http://edamontology.org/topic_0203
+  - http://edamontology.org/topic_3170
+  - http://edamontology.org/topic_3512
+  - http://edamontology.org/topic_2229
+  - http://edamontology.org/operation_2495
+  - http://edamontology.org/operation_3629
+  - http://edamontology.org/operation_3435
+  - http://edamontology.org/operation_3431
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: epic

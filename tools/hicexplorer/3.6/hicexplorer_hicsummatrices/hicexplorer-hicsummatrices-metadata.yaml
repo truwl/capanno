@@ -1,0 +1,19 @@
+name: hicsummatrices
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_1c3c14_06.e4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/hicexplorer/hicsummatrices.cwl
+    dateCreated: '2021-02-03'
+    sha1: 5bbaa1bee8bded5a8c8f485fdb604447e4af6c87
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,19 @@
+name: hicplotmatrix
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_1c3c14_8e.e4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/hicexplorer/hicplotmatrix.cwl
+    dateCreated: '2021-02-03'
+    sha1: acc2da2cae43aab7bb5bc8cccb6752e29da897db
+parentMetadata: ../common/common-metadata.yaml

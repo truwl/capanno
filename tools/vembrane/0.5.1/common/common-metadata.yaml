@@ -1,0 +1,40 @@
+name: vembrane
+softwareVersion:
+  versionName: 0.5.1
+  includedVersions: []
+identifier: TL_03cccb.d1
+featureList:
+  - filter
+  - table
+metadataStatus: Incomplete
+description: vembrane allows to simultaneously filter variants based on any INFO field,
+  CHROM, POS, REF, ALT, QUAL, and the annotation field ANN. When filtering based on
+  ANN, annotation entries are filtered first. If no annotation entry remains, the
+  entire variant is deleted.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/vembrane/vembrane
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/operation_3675
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: vembrane

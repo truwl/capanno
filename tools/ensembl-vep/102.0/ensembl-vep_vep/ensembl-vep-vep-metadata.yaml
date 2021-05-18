@@ -1,0 +1,19 @@
+name: vep
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_54930c_73.cc
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../wustl/definitions/tools/ensembl-vep/vep.cwl
+    dateCreated: '2021-02-16'
+    sha1: 2c3ae40e19eff0c287ae8087a33de8205bb6c250
+parentMetadata: ../common/common-metadata.yaml

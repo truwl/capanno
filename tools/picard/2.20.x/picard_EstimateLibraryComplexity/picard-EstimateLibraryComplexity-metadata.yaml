@@ -1,0 +1,36 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: EstimateLibraryComplexity
+identifier: TL_e24fa5_2f.c8
+description: "Estimates the numbers of unique molecules in a sequencing library.\n\
+  This tool outputs quality metrics for a sequencing library preparation. Library\
+  \ complexity refers to the number of unique DNA fragments present in a given library.\
+  \ Reductions in complexity resulting from PCR amplification during library preparation\
+  \ will ultimately compromise downstream analyses via an elevation in the number\
+  \ of duplicate reads. PCR-associated duplication artifacts can result from: inadequate\
+  \ amounts of starting material (genomic DNA, cDNA, etc.), losses during cleanups,\
+  \ and size selection issues. Duplicate reads can also arise from optical duplicates\
+  \ resulting from sequencing-machine optical sensor artifacts.\nThis tool attempts\
+  \ to estimate library complexity from sequence of read pairs alone. Reads are sorted\
+  \ by the first N bases (5 by default) of the first read and then the first N bases\
+  \ of the second read of a pair. Read pairs are considered to be duplicates if they\
+  \ match each other with no gaps and an overall mismatch rate less than or equal\
+  \ to MAX_DIFF_RATE (0.03 by default). Reads of poor quality are filtered out to\
+  \ provide a more accurate estimate. The filtering removes reads with any poor quality\
+  \ bases as defined by a read's MIN_MEAN_QUALITY (20 is the default value) across\
+  \ either the first or second read. Unpaired reads are ignored in this computation.\n\
+  The algorithm attempts to detect optical duplicates separately from PCR duplicates\
+  \ and excludes these in the calculation of library size. Also, since there is no\
+  \ alignment information used in this algorithm, an additional filter is applied\
+  \ to the data as follows. After examining all reads, a histogram is built in which\
+  \ the number of reads in a duplicate set is compared with the number of of duplicate\
+  \ sets. All bins that contain exactly one duplicate set are then removed from the\
+  \ histogram as outliers prior to the library size estimation."
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

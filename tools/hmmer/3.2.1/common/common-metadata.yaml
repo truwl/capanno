@@ -1,0 +1,51 @@
+name: hmmer
+softwareVersion:
+  versionName: 3.2.1
+  includedVersions: []
+identifier: TL_28f952.f2
+featureList:
+  - hmmbuild
+  - hmmpress
+  - hmmscan
+  - hmmsearch
+metadataStatus: Incomplete
+description: Older version of the HMMER3 program (https://bio.tools/hmmer3) used for
+  searching sequence databases for sequence homologs, and for making sequence alignments.
+codeRepository:
+  name:
+  URL:
+license: BSD-3-Clause
+WebSite:
+  - name:
+    description: homepage
+    URL: http://hmmer.org/
+  - name:
+    description:
+      - Service
+    URL: https://www.ebi.ac.uk/Tools/hmmer/
+  - name:
+    description: documentation
+    URL: http://eddylab.org/software/hmmer/Userguide.pdf
+contactPoint:
+  - name:
+    email: sean@eddylab.org
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_0160
+  - http://edamontology.org/operation_2421
+  - http://edamontology.org/operation_3092
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: hmmer2

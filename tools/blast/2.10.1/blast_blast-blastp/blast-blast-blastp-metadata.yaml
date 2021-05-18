@@ -1,0 +1,19 @@
+name: blast-blastp
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_9e1b93_6a.e2
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../pitagora/tool/blast/blast-blastp.cwl
+    dateCreated: '2021-02-16'
+    sha1: 0cb046f6e7c16ac41c2139ed3f41ab4aa614edef
+parentMetadata: ../common/common-metadata.yaml

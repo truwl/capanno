@@ -1,0 +1,45 @@
+name: fastq_screen
+softwareVersion:
+  versionName: 0.5.2
+  includedVersions: []
+identifier: TL_e4e11a.78
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: A simple way to screen a library of short reads against a set of reference
+  libraries. Its most common use is as part of a QC pipeline to confirm that a library
+  comes from the expected source, and to help identify any sources of contamination.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://www.bwhpc-c5.de/wiki/index.php/FastQ_screen
+  - name:
+    description: documentation
+    URL: https://www.bwhpc-c5.de/wiki/index.php/FastQ_screen
+contactPoint:
+  - name: FastQ Screen Contact Form
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_3308
+  - http://edamontology.org/operation_3218
+  - http://edamontology.org/operation_3198
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: fastq_screen

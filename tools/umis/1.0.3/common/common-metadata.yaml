@@ -1,0 +1,42 @@
+name: umis
+softwareVersion:
+  versionName: 1.0.3
+  includedVersions: []
+identifier: TL_0e8a11.12
+featureList:
+  - bamtag
+metadataStatus: Incomplete
+description: A package that provides tools for estimating expression in RNA-Seq data
+  which performs sequencing of end tags of transcript, and incorporate molecular tags
+  to correct for amplification bias.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/vals/umis/
+contactPoint:
+  - name: Valentine Svensson
+    email: vale@ebi.ac.uk
+    identifier:
+publication:
+  - identifier: 10.1038/nmeth.4220
+    headline: Power analysis of single-cell rnA-sequencing experiments
+keywords:
+  - http://edamontology.org/topic_0203
+  - http://edamontology.org/topic_3170
+  - http://edamontology.org/operation_3800
+  - http://edamontology.org/operation_3680
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: umis

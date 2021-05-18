@@ -1,0 +1,15 @@
+name: profiler_illumina
+metadataStatus: Released
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Released
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_2c5f64_80.8b
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml

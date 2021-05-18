@@ -1,0 +1,61 @@
+name: delly
+softwareVersion:
+  versionName: 0.8.1
+  includedVersions: []
+identifier: TL_d53982.c6
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Integrated structural variant prediction method that can discover, genotype
+  and visualize deletions, tandem duplications, inversions and translocations at single-nucleotide
+  resolution in short-read massively parallel sequencing data. It uses paired-ends
+  and split-reads to sensitively and accurately delineate genomic rearrangements throughout
+  the genome. Structural variants can be visualized using Delly-maze and Delly-suave.
+codeRepository:
+  name:
+  URL:
+license: BSD-3-Clause
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/dellytools/delly
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/dellytools/delly
+  - name:
+    description: documentation
+    URL: https://github.com/dellytools/delly/blob/master/README.md
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/bts378
+    headline: 'DELLY: Structural variant discovery by integrated paired-end and split-read
+      analysis'
+keywords:
+  - http://edamontology.org/topic_3175
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_0634
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/topic_0091
+  - http://edamontology.org/topic_3796
+  - http://edamontology.org/topic_3325
+  - http://edamontology.org/operation_0452
+  - http://edamontology.org/operation_3228
+  - http://edamontology.org/operation_3227
+  - http://edamontology.org/operation_3196
+  - http://edamontology.org/operation_3197
+alternateName:
+creator:
+  - name: Tobias Rausch
+    email: tobias.rausch@embl.de
+    identifier: https://orcid.org/0000-0001-5773-5620
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: delly2
