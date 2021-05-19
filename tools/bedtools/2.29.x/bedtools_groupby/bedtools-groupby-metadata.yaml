@@ -1,9 +1,10 @@
+name: groupby
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: groupby
+version: 0.1.0
 identifier: TL_43392c_a5.c8
 description: bedtools groupby is a useful tool that mimics the “group by” clause in
   database systems. Given a file or stream that is sorted by the appropriate “grouping
@@ -12,7 +13,10 @@ description: bedtools groupby is a useful tool that mimics the “group by” cl
   other tab-delimited file or stream. As such, this is a generally useful tool for
   all command-line analyses, not just genomics related research.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: groupBy
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

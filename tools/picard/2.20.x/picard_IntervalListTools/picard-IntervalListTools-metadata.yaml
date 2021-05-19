@@ -1,9 +1,10 @@
+name: IntervalListTools
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: IntervalListTools
+version: 0.1.0
 identifier: TL_e24fa5_81.c8
 description: "Manipulates interval lists. This tool offers multiple interval list\
   \ file manipulation capabilities include sorting, merging, subtracting, padding,\
@@ -20,7 +21,10 @@ description: "Manipulates interval lists. This tool offers multiple interval lis
   The coordinate system of interval_list files is such that the first base or position\
   \ in a sequence is position \"1\"."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

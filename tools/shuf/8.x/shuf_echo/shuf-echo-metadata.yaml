@@ -1,13 +1,17 @@
+name: echo
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: echo
+version: 0.1.0
 identifier: TL_8b1156_e1.1d
 description: "-e, --echo\n       treat each ARG as an input line"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

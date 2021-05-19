@@ -1,15 +1,19 @@
+name: __main__
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: __main__
+version: 0.1.0
 identifier: TL_28ea7f_54.68
 description:
 keywords:
-- http://edamontology.org/topic_0622
-- http://edamontology.org/topic_0632
-- http://edamontology.org/topic_3168
-- http://edamontology.org/operation_3192
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0632
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_3192
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

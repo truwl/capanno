@@ -1,9 +1,10 @@
+name: ScatterIntervalsByNs
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: ScatterIntervalsByNs
+version: 0.1.0
 identifier: TL_e24fa5_88.c8
 description: Writes an interval list based on splitting a reference by Ns. This tool
   identifies positions in a reference where the bases are 'no-calls' and writes out
@@ -12,7 +13,10 @@ description: Writes an interval list based on splitting a reference by Ns. This 
   as an alternative to using fixed-length intervals. The number of contiguous nocalls
   that can be tolerated before creating a break is adjustable from the command line.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

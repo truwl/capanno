@@ -1,9 +1,10 @@
+name: CollectInsertSizeMetrics
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CollectInsertSizeMetrics
+version: 0.1.0
 identifier: TL_e24fa5_4e.c8
 description: "This tool provides useful metrics for validating library construction\
   \ including the insert size distribution and read orientation of paired-end libraries.\n\
@@ -16,7 +17,10 @@ description: "This tool provides useful metrics for validating library construct
   \ histogram (.insert_size_Histogram.pdf) and as a data table (.insert_size_metrics.txt).\n\
   Note: Metrics labeled as percentages are actually expressed as fractions!"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

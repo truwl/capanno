@@ -1,9 +1,10 @@
+name: CollectHiSeqXPfFailMetrics
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CollectHiSeqXPfFailMetrics
+version: 0.1.0
 identifier: TL_e24fa5_e4.c8
 description: "Classify PF-Failing reads in a HiSeqX Illumina Basecalling directory\
   \ into various categories.\nThis tool categorizes the reads that did not pass filter\
@@ -33,7 +34,10 @@ description: "Classify PF-Failing reads in a HiSeqX Illumina Basecalling directo
   \ of the PF-Failed reads.\nNote: Metrics labeled as percentages are actually expressed\
   \ as fractions!\n"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

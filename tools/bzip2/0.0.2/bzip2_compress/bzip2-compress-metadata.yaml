@@ -1,15 +1,15 @@
 name: compress
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_03ce1b_39.fb
 description: Compress to .bzip2
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
 extra:
   cwlDocument:

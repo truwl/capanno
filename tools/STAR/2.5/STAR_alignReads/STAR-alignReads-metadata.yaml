@@ -1,25 +1,21 @@
 name: alignReads
 metadataStatus: Released
 cwlStatus: Released
-
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
+version: 0.1.0
 identifier: TL_8ab263_a4.82
-
-# RECOMMENDED
-
-description: >
-  In this step user supplies the genome files generated in the 1st step, as well as
-  the RNA-seq
-  reads (sequences) in the form of FASTA or FASTQ files. STAR maps the reads to the
-  genome,
-  and writes several output files, such as alignments (SAM/BAM), mapping summary statistics,
-  splice junctions, unmapped reads, signal (wiggle) tracks etc.
-
-# OPTIONAL
-
+description: "In this step user supplies the genome files generated in the 1st step,\
+  \ as well as the RNA-seq reads (sequences) in the form of FASTA or FASTQ files.\
+  \ STAR maps the reads to the genome, and writes several output files, such as alignments\
+  \ (SAM/BAM), mapping summary statistics, splice junctions, unmapped reads, signal\
+  \ (wiggle) tracks etc.\n"
+keywords:
+  - name:
+    category:
 alternateName: []
-
-
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

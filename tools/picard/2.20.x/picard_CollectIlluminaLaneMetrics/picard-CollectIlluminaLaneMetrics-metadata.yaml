@@ -1,9 +1,10 @@
+name: CollectIlluminaLaneMetrics
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CollectIlluminaLaneMetrics
+version: 0.1.0
 identifier: TL_e24fa5_6e.c8
 description: Collects Illumina lane metrics for the given BaseCalling analysis directory.
   This tool produces quality control metrics on cluster density for each lane of an
@@ -12,7 +13,10 @@ description: Collects Illumina lane metrics for the given BaseCalling analysis d
   refers to the fraction of molecules that fall behind or jump ahead (prephasing)
   during a read cycle.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

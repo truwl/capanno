@@ -1,9 +1,10 @@
+name: quickcheck
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: quickcheck
+version: 0.1.0
 identifier: TL_ec2a8d_9a.0b
 description: "samtools quickcheck [options] in.sam|in.bam|in.cram [ ... ]\nQuickly\
   \ check that input files appear to be intact. Checks that beginning of the file\
@@ -16,7 +17,10 @@ description: "samtools quickcheck [options] in.sam|in.bam|in.cram [ ... ]\nQuick
   \ non-zero exit code if any input files don't have a valid header or are missing\
   \ an EOF block. Otherwise it will exit successfully (with a zero exit code)."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

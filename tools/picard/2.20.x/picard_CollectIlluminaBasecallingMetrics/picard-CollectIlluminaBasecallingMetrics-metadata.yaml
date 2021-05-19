@@ -1,9 +1,10 @@
+name: CollectIlluminaBasecallingMetrics
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CollectIlluminaBasecallingMetrics
+version: 0.1.0
 identifier: TL_e24fa5_24.c8
 description: "Collects Illumina Basecalling metrics for a sequencing run.\nThis tool\
   \ will produce per-barcode and per-lane basecall metrics for each sequencing run.\
@@ -18,7 +19,10 @@ description: "Collects Illumina Basecalling metrics for a sequencing run.\nThis 
   \ obtained from the ExtractIlluminaBarcodes tool.\nNote: Metrics labeled as percentages\
   \ are actually expressed as fractions!"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

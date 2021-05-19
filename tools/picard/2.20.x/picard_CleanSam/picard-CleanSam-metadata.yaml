@@ -1,14 +1,18 @@
+name: CleanSam
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CleanSam
+version: 0.1.0
 identifier: TL_e24fa5_5c.c8
 description: Cleans the provided SAM/BAM, soft-clipping beyond-end-of-reference alignments
   and setting MAPQ to 0 for unmapped reads
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

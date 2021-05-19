@@ -1,15 +1,19 @@
+name: merge
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: merge
+version: 0.1.0
 identifier: TL_bf790f_65.e9
 description: "sambamba merge is used for merging several sorted BAM files into one.\
   \ The sorting order of all the files must be the same, and it is maintained in the\
   \ output file.\nSAM headers are merged automatically like in Picard merging tool."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

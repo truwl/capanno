@@ -1,14 +1,18 @@
+name: ClusterCrosscheckMetrics
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: ClusterCrosscheckMetrics
+version: 0.1.0
 identifier: TL_e24fa5_7e.c8
 description: Clusters the results from a CrosscheckFingerprints into groups that are
   connected according to a large enough LOD score.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

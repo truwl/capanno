@@ -1,9 +1,10 @@
+name: coverage
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: coverage
+version: 0.1.0
 identifier: TL_43392c_60.c8
 description: The bedtools coverage tool computes both the depth and breadth of coverage
   of features in file B on the features in file A. For example, bedtools coverage
@@ -14,7 +15,10 @@ description: The bedtools coverage tool computes both the depth and breadth of c
   overlapped by one or more features. Thus, bedtools coverage also computes the breadth
   of coverage observed for each interval in A.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: coverageBed
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

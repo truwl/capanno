@@ -1,16 +1,20 @@
+name: recursive
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: recursive
+version: 0.1.0
 identifier: TL_4a037f_f8.29
 description: "-r, --recursive\nRead all files under each directory, recursively, following\
   \ symbolic links only if they are on the command line. Note that if no file operand\
   \ is given, grep searches the working directory. This is equivalent to the -d recurse\
   \ option."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: rgrep
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

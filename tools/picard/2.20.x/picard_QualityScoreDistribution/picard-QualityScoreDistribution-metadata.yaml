@@ -1,9 +1,10 @@
+name: QualityScoreDistribution
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: QualityScoreDistribution
+version: 0.1.0
 identifier: TL_e24fa5_da.c8
 description: "Chart the distribution of quality scores.\nThis tool is used for determining\
   \ the overall 'quality' for a library in a given run. To that effect, it outputs\
@@ -16,7 +17,10 @@ description: "Chart the distribution of quality scores.\nThis tool is used for d
   \ be set to plot the OQ value as well as the primary quality value for the evaluation.\
   \ Note: Metrics labeled as percentages are actually expressed as fractions!"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

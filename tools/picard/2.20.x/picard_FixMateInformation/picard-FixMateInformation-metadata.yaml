@@ -1,9 +1,10 @@
+name: FixMateInformation
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: FixMateInformation
+version: 0.1.0
 identifier: TL_e24fa5_0f.c8
 description: Verify mate-pair information between mates and fix if needed. This tool
   ensures that all mate-pair information is in sync between each read and its mate
@@ -11,7 +12,10 @@ description: Verify mate-pair information between mates and fix if needed. This 
   and then copied over the INPUT file. Reads marked with the secondary alignment flag
   are written to the output file unchanged.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

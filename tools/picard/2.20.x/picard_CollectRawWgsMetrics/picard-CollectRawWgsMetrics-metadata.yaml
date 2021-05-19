@@ -1,9 +1,10 @@
+name: CollectRawWgsMetrics
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CollectRawWgsMetrics
+version: 0.1.0
 identifier: TL_e24fa5_39.c8
 description: "Collect whole genome sequencing-related metrics. This tool computes\
   \ metrics that are useful for evaluating coverage and performance of whole genome\
@@ -24,7 +25,10 @@ description: "Collect whole genome sequencing-related metrics. This tool compute
   \ both tools enable the user to input specific threshold values.\nNote: Metrics\
   \ labeled as percentages are actually expressed as fractions!"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

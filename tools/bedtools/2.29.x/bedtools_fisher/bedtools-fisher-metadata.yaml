@@ -1,9 +1,10 @@
+name: fisher
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: fisher
+version: 0.1.0
 identifier: TL_43392c_21.c8
 description: "Perform fisher’s exact test on the number of overlaps/unique intervals\
   \ between 2 files.\n\nTraditionally, in order to test whether 2 sets of intervals\
@@ -13,7 +14,10 @@ description: "Perform fisher’s exact test on the number of overlaps/unique int
   \ and the number of intervals unique to each file and it infers (or accepts) the\
   \ number that are not present in each file."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

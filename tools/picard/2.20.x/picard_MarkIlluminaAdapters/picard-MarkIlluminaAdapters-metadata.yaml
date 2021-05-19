@@ -1,16 +1,20 @@
+name: MarkIlluminaAdapters
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: MarkIlluminaAdapters
+version: 0.1.0
 identifier: TL_e24fa5_07.c8
 description: "Reads a SAM or BAM file and rewrites it with new adapter-trimming tags.\n\
   This tool clears any existing adapter-trimming tags (XT:i:) in the optional tag\
   \ region of a SAM file. The SAM/BAM file must be sorted by query name.\nOutputs\
   \ a metrics file histogram showing counts of bases_clipped per read."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -1,9 +1,10 @@
+name: AddCommentsToBam
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: AddCommentsToBam
+version: 0.1.0
 identifier: TL_e24fa5_12.c8
 description: "Adds comments to the header of a BAM file. This tool makes a copy of\
   \ the input bam file, with a modified header that includes the comments specified\
@@ -11,7 +12,10 @@ description: "Adds comments to the header of a BAM file. This tool makes a copy 
   \ include whitespace or special characters.\nNote that this tool cannot be run on\
   \ SAM files."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

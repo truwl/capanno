@@ -1,9 +1,10 @@
-metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
-nextflowStatus: Incomplete
-wdlStatus: Incomplete
 name: merge
+metadataStatus: Released
+cwlStatus: Released
+nextflowStatus: Incomplete
+snakemakeStatus: Released
+wdlStatus: Incomplete
+version: 0.1.0
 identifier: TL_ec2a8d_65.0b
 description: "samtools merge [-nur1f] [-h inh.sam] [-t tag] [-R reg] [-b list] out.bam\
   \ in1.bam [in2.bam in3.bam ... inN.bam]\nMerge multiple sorted alignment files,\
@@ -16,7 +17,10 @@ description: "samtools merge [-nur1f] [-h inh.sam] [-t tag] [-R reg] [-b list] o
   \ options. If they do not, the output order will be undefined. See sort for information\
   \ about record ordering."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

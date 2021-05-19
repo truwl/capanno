@@ -1,15 +1,15 @@
 name: view_filter
 metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
+cwlStatus: Released
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ec2a8d_64.0b
 description:
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
 extra:
   cwlDocument:

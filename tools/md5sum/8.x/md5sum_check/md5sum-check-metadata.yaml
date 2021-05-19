@@ -1,9 +1,17 @@
+name: check
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: check
+version: 0.1.0
 identifier: TL_c8f1ee_0b.47
 description: read MD5 sums from the FILEs and check them.
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

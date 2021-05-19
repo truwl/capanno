@@ -1,15 +1,15 @@
 name: viterbi
 metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
+cwlStatus: Released
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_a7703a_68.28
 description:
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
 extra:
   cwlDocument:

@@ -1,9 +1,10 @@
+name: slop
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
-nextflowStatus: Incomplete
+nextflowStatus: Released
+snakemakeStatus: Released
 wdlStatus: Incomplete
-name: slop
+version: 0.1.0
 identifier: TL_43392c_8a.c8
 description: bedtools slop will increase the size of each feature in a feature file
   by a user-defined number of bases. While something like this could be done with
@@ -11,7 +12,10 @@ description: bedtools slop will increase the size of each feature in a feature f
   resizing to the size of the chromosome (i.e. no start < 0 and no end > chromosome
   size).
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: slopBed
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

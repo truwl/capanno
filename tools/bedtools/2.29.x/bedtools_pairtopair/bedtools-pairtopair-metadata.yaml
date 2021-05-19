@@ -1,9 +1,10 @@
+name: pairtopair
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: pairtopair
+version: 0.1.0
 identifier: TL_43392c_ae.c8
 description: pairToPair compares two BEDPE files in search of overlaps where each
   end of a BEDPE feature in A overlaps with the ends of a feature in B. For example,
@@ -11,7 +12,10 @@ description: pairToPair compares two BEDPE files in search of overlaps where eac
   in two files. This could suggest (among other things) that the discordant pair suggests
   the same structural variation in each file/sample.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

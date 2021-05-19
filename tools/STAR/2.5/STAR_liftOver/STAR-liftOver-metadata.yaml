@@ -1,17 +1,17 @@
 name: liftOver
-identifier: TL_8ab263_15.82
 metadataStatus: Released
-cwlStatus: Incomplete
-
-# RECOMMENDED
-
-snakemakeStatus: Incomplete
+cwlStatus: Released
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_8ab263_15.82
 description:
-
-# OPTIONAL
-
+keywords:
+  - name:
+    category:
 alternateName: []
-
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

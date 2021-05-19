@@ -1,9 +1,10 @@
+name: GatherBamFiles
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: GatherBamFiles
+version: 0.1.0
 identifier: TL_e24fa5_c4.c8
 description: "Concatenate one or more BAM files as efficiently as possibleThis tool\
   \ performs a rapid \"gather\" operation on BAM files after scatter operations where\
@@ -15,7 +16,10 @@ description: "Concatenate one or more BAM files as efficiently as possibleThis t
   \ directly for speed but also supports generation of an MD5 on the output and indexing\
   \ of the output BAM file. Only supports BAM files, does not support SAM files."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

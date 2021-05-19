@@ -1,9 +1,10 @@
+name: depad
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: depad
+version: 0.1.0
 identifier: TL_ec2a8d_3e.0b
 description: "samtools depad [-SsCu1] [-T ref.fa] [-o output] in.bam\nConverts a BAM\
   \ aligned against a padded reference to a BAM aligned against the depadded reference.\
@@ -14,7 +15,10 @@ description: "samtools depad [-SsCu1] [-T ref.fa] [-o output] in.bam\nConverts a
   \ the reference \"*\" bases are deleted and such aligned sequence base-calls become\
   \ insertions. Similarly transformations apply for deletions and padding cigar operations."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -1,9 +1,10 @@
+name: slice
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: slice
+version: 0.1.0
 identifier: TL_bf790f_6d.e9
 description: "Outputs reads overlapping specified region into new BAM file. (Default\
   \ destination is STDOUT.) Input file must be coordinate-sorted and indexed.\nWhile\
@@ -14,7 +15,10 @@ description: "Outputs reads overlapping specified region into new BAM file. (Def
   \ are copied as is. As such, this tool doesn't offer any options related to number\
   \ of threads or compression level - most of the time is spent on I/O operations."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

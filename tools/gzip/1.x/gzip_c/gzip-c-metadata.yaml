@@ -1,15 +1,19 @@
+name: c
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: c
+version: 0.1.0
 identifier: TL_749cad_4a.1d
 description: zcat uncompresses either a list of files on the command line or its standard
   input and writes the uncompressed data on standard output. zcat will uncompress
   files that have the correct magic number whether they have a .gz suffix or not.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: zcat
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml
