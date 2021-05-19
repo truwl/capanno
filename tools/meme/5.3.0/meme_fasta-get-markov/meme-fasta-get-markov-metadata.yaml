@@ -1,0 +1,19 @@
+name: fasta-get-markov
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_9c2f92_a0.b4
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../cwl-ngs-workflows-cbb/tools/meme/fasta-get-markov.cwl
+    dateCreated: '2021-02-03'
+    sha1: af2dea75a92c7f175c51ca4bc4ae369ed3daa95b
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,19 @@
+name: batch
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_0171fb_d2.23
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../wustl/definitions/tools/cnvkit/cnvkit_batch.cwl
+    dateCreated: '2021-02-16'
+    sha1: f3c49c173cf19c806f4af54c8bf0691f9e6e77d3
+parentMetadata: ../common/common-metadata.yaml

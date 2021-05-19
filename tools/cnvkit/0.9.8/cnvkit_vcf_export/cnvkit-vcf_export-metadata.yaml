@@ -1,0 +1,19 @@
+name: vcf_export
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_0171fb_b4.23
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../wustl/definitions/tools/cnvkit/cnvkit_vcf_export.cwl
+    dateCreated: '2021-02-16'
+    sha1: 070a5b3bd449bef7aa2a534074da7ef013b44074
+parentMetadata: ../common/common-metadata.yaml

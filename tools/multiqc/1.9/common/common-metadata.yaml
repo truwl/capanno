@@ -1,0 +1,58 @@
+name: multiqc
+softwareVersion:
+  versionName: '1.9'
+  includedVersions: []
+identifier: TL_230939.48
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: MultiQC aggregates results from multiple bioinformatics analyses across
+  many samples into a single report. It searches a given directory for analysis logs
+  and compiles a HTML report. It's a general use tool, perfect for summarising the
+  output from numerous bioinformatics tools.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://multiqc.info/
+  - name:
+    description:
+      - Other
+    URL: http://multiqc.info/
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/ewels/MultiQC/issues
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/ewels/MultiQC
+  - name:
+    description: documentation
+    URL: http://multiqc.info/docs/
+contactPoint:
+  - name: Phil Ewels
+    email: phil.ewels@scilifelab.se
+    identifier: http://orcid.org/0000-0003-4101-2502
+publication:
+  - identifier: 10.1093/bioinformatics/btw354
+    headline: 'MultiQC: Summarize analysis results for multiple tools and samples
+      in a single report'
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_0091
+  - http://edamontology.org/operation_2428
+alternateName:
+creator:
+  - name: Philip Ewels
+    email: phil.ewels@scilifelab.se
+    identifier: http://orcid.org/0000-0003-4101-2502
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: multiqc

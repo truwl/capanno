@@ -1,0 +1,60 @@
+name: clustalo
+softwareVersion:
+  versionName: 1.2.4
+  includedVersions: []
+identifier: TL_adf4ea.08
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Multiple sequence alignment software. The name is occassionally spelled
+  as ClustalOmega, Clustal Ω, ClustalΩ, Clustal O, ClustalO.
+codeRepository:
+  name:
+  URL:
+license: GPL-2.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://www.clustal.org/omega/
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/?tool_id=toolshed.pasteur.fr%2Frepos%2Fdcorreia%2Fclustalo%2Fclustalo%2F1.2.1.1&version=1.2.1.1&__identifer=9si4ugr4fwu
+  - name:
+    description:
+      - Issue tracker
+    URL: http://bioinf.ucd.ie/bugzilla/buglist.cgi?quicksearch=clustal
+  - name:
+    description: documentation
+    URL: http://www.clustal.org/omega/#Documentation
+  - name:
+    description: documentation
+    URL: http://www.clustal.org/omega/README
+  - name:
+    description: documentation
+    URL: http://www.clustal.org/omega/INSTALL
+contactPoint:
+  - name: Clustal helpdesk
+    email: clustalw@ucd.ie
+    identifier:
+publication:
+  - identifier: 10.1038/msb.2011.75
+    headline: Fast, scalable generation of high-quality protein multiple sequence
+      alignments using Clustal Omega
+  - identifier: 10.1002/pro.3290
+    headline: Clustal Omega for making accurate alignments of many protein sequences
+  - identifier: 10.1002/0471250953.bi0313s48
+    headline: Clustal Omega
+keywords:
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_0492
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: clustalo

@@ -1,0 +1,56 @@
+name: vcftools
+softwareVersion:
+  versionName: 0.1.16
+  includedVersions: []
+identifier: TL_f8b441.ea
+featureList:
+  - filter
+metadataStatus: Incomplete
+description: Provide easily accessible methods for working with complex genetic variation
+  data in the form of VCF files.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://vcftools.github.io/index.html
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/vcftools/vcftools
+  - name:
+    description:
+      - Helpdesk
+    URL: https://vcftools.github.io/links.html
+  - name:
+    description: documentation
+    URL: https://vcftools.github.io/man_latest.html
+  - name:
+    description: documentation
+    URL: https://vcftools.github.io/examples.html
+contactPoint:
+  - name: Mailing list
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/btr330
+    headline: The variant call format and VCFtools
+keywords:
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/operation_2409
+  - http://edamontology.org/operation_3675
+  - http://edamontology.org/operation_3197
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: vcftools

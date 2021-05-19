@@ -1,0 +1,50 @@
+name: mapdamage2
+softwareVersion:
+  versionName: '2.2'
+  includedVersions: []
+identifier: TL_78d380.17
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Identify and quantify DNA damage patterns in ancient DNA.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://ginolhac.github.io/mapDamage/
+  - name:
+    description: documentation
+    URL: http://ginolhac.github.io/mapDamage/
+contactPoint:
+  - name: Aurélien Ginolhac
+    email: ginolhac@gmail.com
+    identifier:
+  - name: Mikkel Schubert
+    email: MSchubert@snm.ku.dk
+    identifier:
+  - name: Hákon Jónsson
+    email: jonsson.hakon@gmail.com
+    identifier:
+publication:
+  - identifier:
+    headline: 'mapDamage: Testing for damage patterns in ancient DNA sequences'
+keywords:
+  - http://edamontology.org/topic_0654
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_3218
+  - http://edamontology.org/operation_2238
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: mapdamage

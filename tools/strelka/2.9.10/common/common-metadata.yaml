@@ -1,0 +1,44 @@
+name: strelka
+softwareVersion:
+  versionName: 2.9.10
+  includedVersions: []
+identifier: TL_1cf458.87
+featureList:
+  - germline
+  - somatic
+metadataStatus: Incomplete
+description: Strelka is an analysis package designed to detect somatic SNVs and small
+  indels from the aligned sequencing reads of matched tumor-normal samples.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://sites.google.com/site/strelkasomaticvariantcaller/
+  - name:
+    description: documentation
+    URL: https://bansal-lab.github.io/software/crisp.html
+contactPoint:
+  - name: Christopher T. Saunders
+    email: csaunders@illumina.com
+    identifier:
+publication:
+  - identifier:
+    headline: 'Strelka: Accurate somatic small-variant calling from sequenced tumor-normal
+      sample pairs'
+keywords:
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/operation_3227
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: strelka

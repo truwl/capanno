@@ -1,0 +1,37 @@
+name: rasusa
+softwareVersion:
+  versionName: 0.3.0
+  includedVersions: []
+identifier: TL_52d706.e6
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Produces an unbiased subsample of your reads
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/mbhall88/rasusa
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: rasusa

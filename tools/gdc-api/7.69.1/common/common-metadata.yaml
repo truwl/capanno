@@ -1,0 +1,40 @@
+name: gdc-api
+softwareVersion:
+  versionName: 7.69.1
+  includedVersions: []
+identifier: TL_bd748f.d3
+featureList:
+  - bam-slicing
+metadataStatus: Incomplete
+description: The GDC API drives the GDC Data and Submission Portals and provides programmatic
+  access to GDC functionality. This includes searching for, downloading, and submitting
+  data and metadata. The GDC API uses JSON as its communication format, and standard
+  HTTP methods like GET, PUT, POST and DELETE.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/#the-gdc-application-programming-interface-api-an-overview
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: gdc-api

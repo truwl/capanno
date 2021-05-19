@@ -1,0 +1,36 @@
+name: nanoplot
+softwareVersion:
+  versionName: 1.29.0
+  includedVersions: []
+identifier: TL_ee40c1.e5
+featureList:
+  - nanoplot
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

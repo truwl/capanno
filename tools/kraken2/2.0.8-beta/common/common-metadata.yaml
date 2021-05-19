@@ -1,0 +1,51 @@
+name: kraken2
+softwareVersion:
+  versionName: 2.0.8-beta
+  includedVersions: []
+identifier: TL_2bc7f0.6c
+featureList:
+  - kraken2
+metadataStatus: Incomplete
+description: Kraken 2 is the newest version of Kraken, a taxonomic classification
+  system using exact k-mer matches to achieve high accuracy and fast classification
+  speeds. This classifier matches each k-mer within a query sequence to the lowest
+  common ancestor (LCA) of all genomes containing the given k-mer. The k-mer assignments
+  inform the classification algorithm.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://ccb.jhu.edu/software/kraken2/
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/DerrickWood/kraken2
+  - name:
+    description: documentation
+    URL: https://ccb.jhu.edu/software/kraken2/index.shtml?t=manual
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1101/762302
+    headline:
+keywords:
+  - http://edamontology.org/topic_0637
+  - http://edamontology.org/topic_3174
+  - http://edamontology.org/operation_3460
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: kraken2

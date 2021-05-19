@@ -1,0 +1,46 @@
+name: open-cravat
+softwareVersion:
+  versionName: '2.1'
+  includedVersions: []
+identifier: TL_72cfa3.08
+featureList:
+  - run
+metadataStatus: Incomplete
+description: OpenCRAVAT is a new open source, scalable decision support system to
+  support variant and gene prioritization. It offers a dynamic GUI, allowing users
+  to easily, download tools from an extensive resource catalog, create customized
+  pipelines, run jobs at speeds that exceed current variant annotation API services,
+  and explore results in a richly detailed viewing environment. OpenCRAVAT is distinguished
+  from similar tools by the amount and diversity of data resources and computational
+  prediction methods available, which span germline, somatic, common, rare, coding
+  and non-coding variants. We have designed the OpenCRAVAT resource catalog to be
+  open and modular to maximize community and developer involvement, and as a result
+  the catalog is being actively developed and growing larger every month.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://opencravat.org/
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: open-cravat

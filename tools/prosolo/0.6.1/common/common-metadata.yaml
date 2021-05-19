@@ -1,0 +1,59 @@
+name: prosolo
+softwareVersion:
+  versionName: 0.6.1
+  includedVersions: []
+identifier: TL_1717f9.85
+featureList:
+  - single-cell-bulk
+  - single_cell_bulk
+  - control-fdr
+metadataStatus: Incomplete
+description: "Accurate Variant Calling from Single Cell DNA Sequencing Data.\n\nProSolo:\
+  \ bulk backing vocals for single cell solos.\n\nProSolo is a variant caller for\
+  \ multiple displacement amplified DNA sequencing data from diploid single cells.\
+  \ It relies on a pair of samples, where one is from an MDA single cell and the other\
+  \ from a bulk sample of the same cell population, sequenced with any next-generation\
+  \ sequencing technology."
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/prosolo/prosolo
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/prosolo/benchmarking_prosolo
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1101/2020.04.27.064071
+    headline:
+keywords:
+  - http://edamontology.org/topic_3673
+  - http://edamontology.org/topic_0625
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/topic_3676
+  - http://edamontology.org/topic_0769
+  - http://edamontology.org/operation_3227
+  - http://edamontology.org/operation_3196
+  - http://edamontology.org/operation_3557
+  - http://edamontology.org/operation_3799
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Shell
+  - Python
+  - C++
+  - R
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: prosolo

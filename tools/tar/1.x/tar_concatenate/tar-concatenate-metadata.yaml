@@ -1,0 +1,19 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: concatenate
+identifier: TL_db5570_d8.8b
+description: "-A, --catenate, --concatenate\nAppend archive to the end of another\
+  \ archive. The arguments are treated as the names of archives to append. All archives\
+  \ must be of the same format as the archive they are appended to, otherwise the\
+  \ resulting archive might be unusable with non-GNU  implementations of tar. Notice\
+  \ also that when more than one archive is given, the members from archives other\
+  \ than the first one will be accessible in the resulting archive only if using the\
+  \ -i (--ignore-zeros) option.\nCompressed archives cannot be concatenated."
+keywords:
+- name:
+  category:
+alternateName: tar catenate
+parentMetadata: ../common/common-metadata.yaml

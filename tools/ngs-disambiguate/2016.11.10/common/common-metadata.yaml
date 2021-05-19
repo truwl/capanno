@@ -1,0 +1,52 @@
+name: ngs-disambiguate
+softwareVersion:
+  versionName: 2016.11.10
+  includedVersions: []
+identifier: TL_e280c6.90
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Disambiguating two species in next generation sequencing data from grafted
+  samples. Operates on DNA or RNA-seq alignments to the two species and separates
+  the components at very high sensitivity and specificity.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/AstraZeneca-NGS/disambiguate
+  - name:
+    description:
+      - Repository
+    URL: http://bioconda.github.io/recipes/ngs-disambiguate/README.html
+  - name:
+    description:
+      - Repository
+    URL: https://quay.io/repository/biocontainers/ngs-disambiguate
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.12688/f1000research.10082.2
+    headline:
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_3379
+  - http://edamontology.org/topic_0102
+  - http://edamontology.org/operation_3800
+  - http://edamontology.org/operation_2495
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: disambiguate

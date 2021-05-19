@@ -1,0 +1,57 @@
+name: macs2
+softwareVersion:
+  versionName: '2.2'
+  includedVersions: []
+identifier: TL_89cd0d.17
+featureList:
+  - callpeak
+metadataStatus: Incomplete
+description: Model-based Analysis of ChIP-seq data.
+codeRepository:
+  name:
+  URL:
+license: Artistic-2.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://liulab.dfci.harvard.edu/MACS/
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/macs2/modencode_peakcalling_macs2/2.0.10.2
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=peakcalling_macs
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/macs14/peakcalling_macs14/1.4.2
+  - name:
+    description: documentation
+    URL: https://github.com/taoliu/MACS/blob/macs_v1/README.rst
+contactPoint:
+  - name: MACS Support
+    email: macs.supporter@gmail.com
+    identifier:
+publication:
+  - identifier:
+    headline: Model-based analysis of ChIP-Seq (MACS)
+keywords:
+  - http://edamontology.org/topic_3169
+  - http://edamontology.org/topic_0602
+  - http://edamontology.org/topic_0749
+  - http://edamontology.org/operation_3222
+  - http://edamontology.org/operation_3501
+  - http://edamontology.org/operation_1781
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: macs

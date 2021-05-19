@@ -1,0 +1,19 @@
+name: mafft
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_1a8d36_1a.ea
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/mafft/mafft.cwl
+    dateCreated: '2021-02-16'
+    sha1: 274dfab2e9825230138497d3dcc2aef3ed2315fc
+parentMetadata: ../common/common-metadata.yaml

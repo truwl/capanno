@@ -1,0 +1,44 @@
+name: nanosim-h
+softwareVersion:
+  versionName: 1.1.0.4
+  includedVersions: []
+identifier: TL_7e6926.1b
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Nanopore sequence read simulator based on statistical characterization.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://www.bcgsc.ca/platform/bioinfo/software/nanosim
+  - name:
+    description: documentation
+    URL: https://github.com/bcgsc/NanoSim
+contactPoint:
+  - name: Inanç Birol
+    email: ibirol@bcgsc.ca
+    identifier:
+publication:
+  - identifier: 10.1093/gigascience/gix010
+    headline: 'NanoSim: Nanopore sequence read simulator based on statistical characterization'
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_3524
+  - http://edamontology.org/topic_2269
+  - http://edamontology.org/operation_2426
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - R
+  - Python
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: nanosim

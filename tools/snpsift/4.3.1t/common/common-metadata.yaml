@@ -1,0 +1,47 @@
+name: snpsift
+softwareVersion:
+  versionName: 4.3.1t
+  includedVersions: []
+identifier: TL_ec6b68.17
+featureList:
+  - dbnsfp
+  - genesets
+  - gwascat
+  - varType
+  - annotate
+metadataStatus: Incomplete
+description: Toolbox that allows you to filter and manipulate annotated vcf files.
+codeRepository:
+  name:
+  URL:
+license: LGPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://snpeff.sourceforge.net/SnpSift.html
+  - name:
+    description: documentation
+    URL: http://snpeff.sourceforge.net/SnpSift.html
+contactPoint:
+  - name:
+    email: pcingola@users.sourceforge.net
+    identifier:
+publication:
+  - identifier: 10.3389/fgene.2012.00035
+    headline: Using Drosophila melanogaster as a model for genotoxic chemical mutational
+      studies with a new program, SnpSift
+keywords:
+  - http://edamontology.org/topic_3071
+  - http://edamontology.org/topic_3365
+  - http://edamontology.org/operation_3675
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: snpsift

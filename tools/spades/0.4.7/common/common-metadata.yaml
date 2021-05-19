@@ -1,0 +1,36 @@
+name: spades
+softwareVersion:
+  versionName: 0.4.7
+  includedVersions: []
+identifier: TL_b5fc93.8d
+featureList:
+  - spades
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

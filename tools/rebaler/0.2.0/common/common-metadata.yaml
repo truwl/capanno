@@ -1,0 +1,38 @@
+name: rebaler
+softwareVersion:
+  versionName: 0.2.0
+  includedVersions: []
+identifier: TL_065334.44
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Rebaler is a program for conducting reference-based assemblies using
+  long reads. It relies mainly on minimap2 for alignment and Racon for making consensus
+  sequences.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/rrwick/Rebaler
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/operation_0524
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: rebaler

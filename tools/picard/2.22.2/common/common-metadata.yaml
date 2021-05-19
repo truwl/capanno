@@ -1,0 +1,49 @@
+name: picard
+softwareVersion:
+  versionName: 2.22.2
+  includedVersions: []
+identifier: TL_e24fa5.04
+featureList:
+  - AddOrReplaceReadGroups
+  - MarkDuplicates
+  - CreateSequenceDictionary.orig
+  - CreateSequenceDictionary
+  - SortSam
+metadataStatus: Incomplete
+description: Add or Replace Read Groups in an input BAM or SAM file.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://broadinstitute.github.io/picard/
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/picard_pasteur_wrapper/picard_ARRG/1.56.0
+contactPoint:
+  - name: Galaxy Support Team
+    email: galaxy@pasteur.fr
+    identifier:
+publication:
+  - identifier: 10.1093/nar/gkw343
+    headline: 'The Galaxy platform for accessible, reproducible and collaborative
+      biomedical analyses: 2016 update'
+  - identifier: 10.7490/f1000research.1114334.1
+    headline:
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_0231
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: picard_arrg

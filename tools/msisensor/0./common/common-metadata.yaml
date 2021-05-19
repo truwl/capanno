@@ -1,0 +1,53 @@
+name: msisensor
+softwareVersion:
+  versionName: '0.'
+  includedVersions: []
+identifier: TL_f93bbe.4b
+featureList: []
+metadataStatus: Incomplete
+description: C++ program for automatically detecting somatic and germline variants
+  at microsatellite regions. It computes length distributions of microsatellites per
+  site in paired tumor and normal sequence data, subsequently using these to statistically
+  compare observed distributions in both samples.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/ding-lab/msisensor
+  - name:
+    description:
+      - Software catalogue
+    URL: http://www.mybiosoftware.com/msisensor-0-2-microsatellite-instability-detection.html
+  - name:
+    description: documentation
+    URL: https://github.com/ding-lab/msisensor/blob/master/README.md
+contactPoint:
+  - name: Beifang Niu
+    email: bniu@genome.wustl.edu
+    identifier:
+  - name: Kai Ye
+    email: kye@genome.wustl.edu
+    identifier:
+publication:
+  - identifier:
+    headline: 'MSIsensor: Microsatellite instability detection using paired tumor-normal
+      sequence data'
+keywords:
+  - http://edamontology.org/topic_0654
+  - http://edamontology.org/topic_0199
+  - http://edamontology.org/topic_2640
+  - http://edamontology.org/operation_0415
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: msisensor

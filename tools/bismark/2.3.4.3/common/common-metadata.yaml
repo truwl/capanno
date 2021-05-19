@@ -1,0 +1,54 @@
+name: bismark
+softwareVersion:
+  versionName: 2.3.4.3
+  includedVersions: []
+identifier: TL_d0f5d1.9b
+featureList:
+  - bam2nuc
+  - bismark
+  - bismark2bedGraph
+  - bismark2report
+  - bismark2summary
+  - bismark_genome_preparation
+  - bismark_methylation_extractor
+  - deduplicate_bismark
+metadataStatus: Incomplete
+description: Bismark is a tool to map bisulfite treated sequencing reads and perform
+  methylation calling in a quick and easy-to-use fashion.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/FelixKrueger/Bismark
+  - name:
+    description: documentation
+    URL: https://github.com/FelixKrueger/Bismark/tree/master/Docs
+contactPoint:
+  - name: Simon Andrews
+    email: simon.andrews@babraham.ac.uk
+    identifier:
+publication:
+  - identifier:
+    headline: 'Bismark: A flexible aligner and methylation caller for Bisulfite-Seq
+      applications'
+keywords:
+  - http://edamontology.org/topic_3173
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_3295
+  - http://edamontology.org/operation_3204
+  - http://edamontology.org/operation_3198
+  - http://edamontology.org/operation_3186
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Perl
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: bismark

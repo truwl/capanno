@@ -1,0 +1,49 @@
+name: trimmomatic
+softwareVersion:
+  versionName: '0.36'
+  includedVersions: []
+identifier: TL_a2e03a.4a
+featureList:
+  - pe
+  - se
+metadataStatus: Incomplete
+description: A flexible read trimming tool for Illumina NGS data
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://www.usadellab.org/cms/index.php?page=trimmomatic
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/odoppelt/trimmomatic/trimmomatic/0.36
+  - name:
+    description: documentation
+    URL: http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf
+contactPoint:
+  - name: Anthony Bolger
+    email: bolger@bio1.rwth-aachen.de
+    identifier:
+publication:
+  - identifier: 10.1093/nar/gks540
+    headline: 'RobiNA: A user-friendly, integrated software solution for RNA-Seq-based
+      transcriptomics'
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/topic_3572
+  - http://edamontology.org/operation_3192
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: trimmomatic

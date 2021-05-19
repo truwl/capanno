@@ -1,0 +1,8 @@
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: __main__
+identifier: TL_e7d707_54.47
+parentMetadata: ../common/common-metadata.yaml

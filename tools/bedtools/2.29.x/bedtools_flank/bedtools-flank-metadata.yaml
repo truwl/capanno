@@ -1,0 +1,15 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: flank
+identifier: TL_43392c_47.c8
+description: bedtools flank will create two new flanking intervals for each interval
+  in a BED/GFF/VCF file. Note that flank will restrict the created flanking intervals
+  to the size of the chromosome (i.e. no start < 0 and no end > chromosome size).
+keywords:
+- name:
+  category:
+alternateName: flankBed
+parentMetadata: ../common/common-metadata.yaml

@@ -1,0 +1,60 @@
+name: hicexplorer
+softwareVersion:
+  versionName: '3.6'
+  includedVersions: []
+identifier: TL_1c3c14.e4
+featureList:
+  - hicdetectloops
+  - hiccorrectmatrix-diagnostic-plot
+  - hiccorrectmatrix-correct
+  - hicplottads
+  - hicfindtads
+  - hicsummatrices
+  - hicplotmatrix
+  - hicbuildmatrix
+  - hicmergematrixbins
+metadataStatus: Released
+description: "A web server for reproducible Hi-C, capture Hi-C and single-cell Hi-C\
+  \ data analysis, quality control and visualization.\n\nHiCExplorer — HiCExplorer\
+  \ 3.6 documentation.\n\nscHiCExplorer — scHiCExplorer 7 documentation.\n\nFree document\
+  \ hosting provided by Read the Docs."
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://hicexplorer.usegalaxy.eu
+  - name:
+    description: documentation
+    URL: https://hicexplorer.readthedocs.io
+  - name:
+    description: documentation
+    URL: https://schicexplorer.readthedocs.io
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/NAR/GKAA220
+    headline:
+keywords:
+  - http://edamontology.org/topic_0769
+  - http://edamontology.org/topic_0654
+  - http://edamontology.org/topic_3940
+  - http://edamontology.org/topic_3169
+  - http://edamontology.org/topic_3295
+  - http://edamontology.org/operation_2428
+  - http://edamontology.org/operation_0337
+  - http://edamontology.org/operation_3435
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: hicexplorer

@@ -1,0 +1,36 @@
+name: sortmerna
+softwareVersion:
+  versionName: '4.03'
+  includedVersions: []
+identifier: TL_16b400.9c
+featureList:
+  - sortmerna.tool
+metadataStatus: Released
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

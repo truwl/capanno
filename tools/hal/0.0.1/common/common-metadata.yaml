@@ -1,0 +1,36 @@
+name: hal
+softwareVersion:
+  versionName: 0.0.1
+  includedVersions: []
+identifier: TL_cde9e8.25
+featureList:
+  - halliftover
+metadataStatus: Incomplete
+description:
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description:
+    URL:
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+datePublished:
+downloadURL:
+extra:

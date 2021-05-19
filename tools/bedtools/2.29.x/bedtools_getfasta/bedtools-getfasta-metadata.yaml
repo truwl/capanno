@@ -1,0 +1,18 @@
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: getfasta
+identifier: TL_43392c_e5.c8
+description: bedtools getfasta extracts sequences from a FASTA file for each of the
+  intervals defined in a BED/GFF/VCF file.
+keywords:
+- name:
+  category:
+alternateName: getFastaFromBed
+parentMetadata: ../common/common-metadata.yaml
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/bedtools/bedtools_getfasta.cwl
+    dateCreated: '2020-09-21'

@@ -1,0 +1,43 @@
+name: fgbio
+softwareVersion:
+  versionName: 0.6.1
+  includedVersions: []
+identifier: TL_67e97b.85
+featureList:
+  - annotatebamwithumis
+  - callmolecularconsensusreads
+  - collectduplexseqmetrics
+  - filterconsensusreads
+  - groupreadsbyumi
+  - setmateinformation
+metadataStatus: Incomplete
+description: fgbio is a command line toolkit for working with genomic and particularly
+  next generation sequencing data.
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: http://fulcrumgenomics.github.io/fgbio/
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - name:
+    category:
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: fgbio

@@ -1,0 +1,15 @@
+name: build
+metadataStatus: Released
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Released
+wdlStatus: Incomplete
+version: 0.1.0
+identifier: TL_8d0912_b0.1a
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml

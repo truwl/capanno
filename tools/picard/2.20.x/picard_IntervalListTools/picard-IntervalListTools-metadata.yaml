@@ -1,0 +1,26 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: IntervalListTools
+identifier: TL_e24fa5_81.c8
+description: "Manipulates interval lists. This tool offers multiple interval list\
+  \ file manipulation capabilities include sorting, merging, subtracting, padding,\
+  \ customizing, and other set-theoretic operations. If given one or more inputs,\
+  \ the default operation is to merge and sort them. Other options e.g. interval subtraction\
+  \ are controlled by the arguments. The tool lists intervals with respect to a reference\
+  \ sequence.\nBoth interval_list and VCF files are accepted as input. The interval_list\
+  \ file format is relatively simple and reflects the SAM alignment format to a degree.\
+  \ A SAM style header must be present in the file that lists the sequence records\
+  \ against which the intervals are described. After the header, the file then contains\
+  \ records, one per line in text format with the following values tab-separated:\n\
+  * Sequence name (SN) * Start position (1-based)** * End position (1-based, end inclusive)\
+  \ * Strand (either + or -) * Interval name (ideally unique names for intervals)\n\
+  The coordinate system of interval_list files is such that the first base or position\
+  \ in a sequence is position \"1\"."
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

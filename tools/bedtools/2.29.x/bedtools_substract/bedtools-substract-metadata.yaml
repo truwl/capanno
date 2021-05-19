@@ -1,0 +1,18 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: substract
+identifier: TL_43392c_08.c8
+description: bedtools subtract bedtools` subtract searches for features in B that
+  overlap A by at least the number of base pairs given by the -f option. If an overlapping
+  feature is found in B, the overlapping portion is removed from A and the remaining
+  portion of A is reported. If a feature in B overlaps all of a feature in A, the
+  A feature will not be reported. If a feature in B does not overlap a feature in
+  A by at least the -f amount, the A feature will be reported in its entirety.
+keywords:
+- name:
+  category:
+alternateName: subtractBed
+parentMetadata: ../common/common-metadata.yaml

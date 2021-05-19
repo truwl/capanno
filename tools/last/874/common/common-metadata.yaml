@@ -1,0 +1,44 @@
+name: last
+softwareVersion:
+  versionName: '874'
+  includedVersions: []
+identifier: TL_98bd1c.51
+featureList:
+  - lastal
+  - lastdb
+metadataStatus: Incomplete
+description: Short read alignment program incorporating quality scores
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://last.cbrc.jp/
+  - name:
+    description: documentation
+    URL: http://last.cbrc.jp/doc/
+contactPoint:
+  - name: LAST Support
+    email: last-align@googlegroups.com
+    identifier:
+publication:
+  - identifier:
+    headline: Incorporating sequence quality data into alignment improves DNA read
+      mapping
+keywords:
+  - http://edamontology.org/topic_0622
+  - http://edamontology.org/topic_0797
+  - http://edamontology.org/operation_0292
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: last

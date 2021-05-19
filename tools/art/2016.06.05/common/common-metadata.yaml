@@ -1,0 +1,53 @@
+name: art
+softwareVersion:
+  versionName: 2016.06.05
+  includedVersions: []
+identifier: TL_2c5f64.8b
+featureList:
+  - profiler_illumina
+metadataStatus: Released
+description: ART is a set of simulation tools to generate synthetic next-generation
+  sequencing reads. ART simulates sequencing reads by mimicking real sequencing process
+  with empirical error models or quality profiles summarized from large recalibrated
+  sequencing data. ART can also simulate reads using user own read error model or
+  quality profiles. ART supports simulation of single-end, paired-end/mate-pair reads
+  of three major commercial next-generation sequencing platforms. Illuminas Solexa,
+  Roches 454 and Applied Biosystems SOLiD
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: https://www.niehs.nih.gov/research/resources/software/biostatistics/art/index.cfm
+  - name:
+    description:
+      - Software catalogue
+    URL: https://www.niehs.nih.gov/research/resources/software/biostatistics/art/index.cfm
+  - name:
+    description: documentation
+    URL: https://www.niehs.nih.gov/research/resources/software/biostatistics/art/index.cfm
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/btr708
+    headline: 'ART: A next-generation sequencing read simulator'
+keywords:
+  - http://edamontology.org/topic_0091
+  - http://edamontology.org/operation_3434
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+  - Perl
+  - Shell
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: art

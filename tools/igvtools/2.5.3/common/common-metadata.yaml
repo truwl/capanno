@@ -1,0 +1,53 @@
+name: igvtools
+softwareVersion:
+  versionName: 2.5.3
+  includedVersions: []
+identifier: TL_8e5623.a1
+featureList:
+  - igvtools-totdf
+  - igvtools-count
+metadataStatus: Released
+description: The igvtools utility provides a set of tools for pre-processing data
+  files.
+codeRepository:
+  name:
+  URL:
+license: MIT
+WebSite:
+  - name:
+    description: homepage
+    URL: https://software.broadinstitute.org/software/igv/igvtools
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/igvteam/igv/
+  - name:
+    description:
+      - Issue tracker
+    URL: https://github.com/igvteam/igv/issues
+  - name:
+    description: documentation
+    URL: https://software.broadinstitute.org/software/igv/igvtools_commandline
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/bib/bbs017
+    headline: 'Integrative Genomics Viewer (IGV): High-performance genomics data visualization
+      and exploration'
+keywords:
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_0335
+  - http://edamontology.org/operation_0256
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: igvtools

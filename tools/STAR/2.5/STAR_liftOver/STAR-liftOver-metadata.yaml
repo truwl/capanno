@@ -1,0 +1,17 @@
+name: liftOver
+identifier: TL_8ab263_15.82
+metadataStatus: Incomplete
+cwlStatus: Incomplete
+
+# RECOMMENDED
+
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+description:
+
+# OPTIONAL
+
+alternateName: []
+
+parentMetadata: ../common/common-metadata.yaml

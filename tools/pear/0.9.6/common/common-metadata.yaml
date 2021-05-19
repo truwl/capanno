@@ -1,0 +1,43 @@
+name: pear
+softwareVersion:
+  versionName: 0.9.6
+  includedVersions: []
+identifier: TL_8893dc.3b
+featureList:
+  - __main__
+metadataStatus: Incomplete
+description: Paired-end read merger. PEAR evaluates all possible paired-end read overlaps
+  without requiring the target fragment size as input. In addition, it implements
+  a statistical test for minimizing false-positive results.
+codeRepository:
+  name:
+  URL:
+license: CC-BY-NC-1.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://sco.h-its.org/exelixis/web/software/pear/
+  - name:
+    description: documentation
+    URL: https://sco.h-its.org/exelixis/web/software/pear/doc.html
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier: 10.1093/bioinformatics/btt593
+    headline: 'PEAR: A fast and accurate Illumina Paired-End reAd mergeR'
+keywords:
+  - http://edamontology.org/topic_0196
+  - http://edamontology.org/operation_0232
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - C++
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: pear

@@ -1,0 +1,59 @@
+name: fastqc
+softwareVersion:
+  versionName: 0.1.11.5
+  includedVersions: []
+identifier: TL_9af1de.0e
+featureList:
+  - '1'
+  - '2'
+metadataStatus: Released
+description: This tool aims to provide a QC report which can spot problems or biases
+  which originate either in the sequencer or in the starting library material. It
+  can be run in one of two modes. It can either run as a stand alone interactive application
+  for the immediate analysis of small numbers of FastQ files, or it can be run in
+  a non-interactive mode where it would be suitable for integrating into a larger
+  analysis pipeline for the systematic processing of large numbers of files.
+codeRepository:
+  name:
+  URL:
+license: GPL-3.0
+WebSite:
+  - name:
+    description: homepage
+    URL: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+  - name:
+    description:
+      - Repository
+    URL: https://github.com/csf-ngs/fastqc
+  - name:
+    description:
+      - Galaxy service
+    URL: https://galaxy.pasteur.fr/tool_runner?tool_id=fastqc
+  - name:
+    description: documentation
+    URL: https://github.com/csf-ngs/fastqc/tree/master/Help
+contactPoint:
+  - name: Simon Andrews
+    email: simon.andrews@bbsrc.ac.uk
+    identifier:
+publication:
+  - identifier: 10.7490/f1000research.1114334.1
+    headline:
+keywords:
+  - http://edamontology.org/topic_3168
+  - http://edamontology.org/topic_3572
+  - http://edamontology.org/topic_0080
+  - http://edamontology.org/operation_0236
+  - http://edamontology.org/operation_3218
+  - http://edamontology.org/operation_2238
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage:
+  - Java
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: fastqc

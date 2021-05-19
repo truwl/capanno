@@ -1,0 +1,9 @@
+name: __main__
+metadataStatus: Released
+cwlStatus: Released
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+identifier: TL_cadc8c_54.47
+
+parentMetadata: ../common/common-metadata.yaml

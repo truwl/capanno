@@ -1,0 +1,14 @@
+metadataStatus: Released
+cwlStatus: Incomplete
+snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
+wdlStatus: Incomplete
+name: input-range
+identifier: TL_8b1156_86.1d
+description: "-i, --input-range=LO-HI\n       treat each number LO through HI as an\
+  \ input line"
+keywords:
+- name:
+  category:
+alternateName:
+parentMetadata: ../common/common-metadata.yaml

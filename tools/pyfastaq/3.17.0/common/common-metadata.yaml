@@ -1,0 +1,39 @@
+name: pyfastaq
+softwareVersion:
+  versionName: 3.17.0
+  includedVersions: []
+identifier: TL_c33da3.40
+featureList:
+  - replace_bases
+metadataStatus: Incomplete
+description: Python3 script to manipulate FASTA and FASTQ (and other format) files,
+  plus API for developers
+codeRepository:
+  name:
+  URL:
+license:
+WebSite:
+  - name:
+    description: homepage
+    URL: https://github.com/sanger-pathogens/Fastaq
+contactPoint:
+  - name:
+    email:
+    identifier:
+publication:
+  - identifier:
+    headline:
+keywords:
+  - http://edamontology.org/operation_3192
+  - http://edamontology.org/operation_3237
+  - http://edamontology.org/operation_0363
+alternateName:
+creator:
+  - name:
+    email:
+    identifier:
+programmingLanguage: []
+datePublished:
+downloadURL:
+extra:
+  biotoolsID: pyfastaq
