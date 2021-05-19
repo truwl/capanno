@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_cc07e9.12
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A tool for assembling bacterial genomes from a combination of short (2nd
   generation) and long (3rd generation) sequencing reads.
 codeRepository:

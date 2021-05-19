@@ -7,7 +7,7 @@ featureList:
   - align
   - index
   - prepare
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Protein alignment for functional profiling whole metagenome shotgun data.
 codeRepository:
   name:

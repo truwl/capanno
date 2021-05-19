@@ -6,7 +6,7 @@ identifier: TL_4b66ba.0b
 featureList:
   - subsample_pe
   - subsample_se
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A tool for processing sequences in the FASTA or FASTQ format. It parses
   both FASTA and FASTQ files which can also be optionally compressed by gzip.
 codeRepository:

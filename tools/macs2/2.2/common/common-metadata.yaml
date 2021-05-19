@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_89cd0d.17
 featureList:
   - callpeak
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Model-based Analysis of ChIP-seq data.
 codeRepository:
   name:

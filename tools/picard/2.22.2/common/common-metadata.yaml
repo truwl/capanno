@@ -9,7 +9,7 @@ featureList:
   - CreateSequenceDictionary.orig
   - CreateSequenceDictionary
   - SortSam
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Add or Replace Read Groups in an input BAM or SAM file.
 codeRepository:
   name:

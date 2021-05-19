@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_c33da3.40
 featureList:
   - replace_bases
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Python3 script to manipulate FASTA and FASTQ (and other format) files,
   plus API for developers
 codeRepository:

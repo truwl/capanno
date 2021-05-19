@@ -6,7 +6,7 @@ identifier: TL_75c6f0.63
 featureList:
   - blastx
   - makedb
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Sequence aligner for protein and translated DNA searches and functions
   as a drop-in replacement for the NCBI BLAST software tools. It is suitable for protein-protein
   search as well as DNA-protein search on short reads and longer sequences including

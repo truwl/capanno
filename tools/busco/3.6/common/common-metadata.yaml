@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_717dd0.e4
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Provides measures for quantitative assessment of genome assembly, gene
   set, and transcriptome completeness based on evolutionarily informed expectations
   of gene content from near-universal single-copy orthologs.

@@ -8,7 +8,7 @@ featureList:
   - plotfingerprint
   - plotheatmap
   - plotprofile
-metadataStatus: Incomplete
+metadataStatus: Released
 description: User-friendly tools for the normalization and visualization of deep-sequencing
   data.
 codeRepository:

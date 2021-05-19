@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_52d706.e6
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Produces an unbiased subsample of your reads
 codeRepository:
   name:

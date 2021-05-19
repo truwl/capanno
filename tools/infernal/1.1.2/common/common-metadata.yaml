@@ -6,7 +6,7 @@ identifier: TL_a9fea8.52
 featureList:
   - cmpress
   - cmscan
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Infernal ("INFERence of RNA ALignment") is for searching DNA sequence
   databases for RNA structure and sequence similarities. It is an implementation of
   a special case of profile stochastic context-free grammars called covariance models

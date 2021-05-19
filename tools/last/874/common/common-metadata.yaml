@@ -6,7 +6,7 @@ identifier: TL_98bd1c.51
 featureList:
   - lastal
   - lastdb
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Short read alignment program incorporating quality scores
 codeRepository:
   name:

@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_72cfa3.08
 featureList:
   - run
-metadataStatus: Incomplete
+metadataStatus: Released
 description: OpenCRAVAT is a new open source, scalable decision support system to
   support variant and gene prioritization. It offers a dynamic GUI, allowing users
   to easily, download tools from an extensive resource catalog, create customized

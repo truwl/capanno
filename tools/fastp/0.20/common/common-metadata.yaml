@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_f73dc8.c0
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A tool designed to provide fast all-in-one preprocessing for FastQ files.
   This tool is developed in C++ with multithreading supported to afford high performance.
 codeRepository:

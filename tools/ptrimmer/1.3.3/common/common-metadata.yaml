@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_cfc272.5b
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Tool to trim primers of multiplex deep sequencing data.
 codeRepository:
   name:

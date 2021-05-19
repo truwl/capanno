@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_7e6926.1b
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Nanopore sequence read simulator based on statistical characterization.
 codeRepository:
   name:

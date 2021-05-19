@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_ee2055.c7
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Trinity is a transcriptome assembler which relies on three different
   tools, inchworm an assembler, chrysalis which pools contigs and butterfly which
   amongst others compacts a graph resulting from butterfly with reads.

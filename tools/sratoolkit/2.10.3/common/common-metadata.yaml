@@ -6,7 +6,7 @@ identifier: TL_84a745.27
 featureList:
   - fastq_dump
   - prefetch
-metadataStatus: Incomplete
+metadataStatus: Released
 description: The SRA Toolkit and SDK from NCBI is a collection of tools and libraries
   for using data in the INSDC Sequence Read Archives.
 codeRepository:

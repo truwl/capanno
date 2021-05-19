@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_b36ace.35
 featureList:
   - download
-metadataStatus: Incomplete
+metadataStatus: Released
 description: The gdc-client provides several convenience functions over the GDC API
   which provides general download/upload via HTTPS.
 codeRepository:

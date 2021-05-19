@@ -8,7 +8,7 @@ featureList:
   - paf
   - aligner
   - index
-metadataStatus: Incomplete
+metadataStatus: Released
 description:
 codeRepository:
   name:

@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_808057.54
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: "RazerS 3 is a tool for mapping millions of short genomic reads onto\
   \ a\nreference genome. It was designed with focus on mapping next-generation\nsequencing\
   \ reads onto whole DNA genomes. RazerS 3 searches for matches of\nreads with a percent\

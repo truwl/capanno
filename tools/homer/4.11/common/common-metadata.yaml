@@ -9,7 +9,7 @@ featureList:
   - getDifferentialPeaks
   - makeTagDirectory
   - mergePeaks
-metadataStatus: Incomplete
+metadataStatus: Released
 description: HOMER contains a novel motif discovery algorithm that was designed for
   regulatory element analysis in genomics applications (DNA only, no protein).  It
   is a differential motif discovery algorithm, which means that it takes two sets

@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_a7703a.43
 featureList:
   - call
-metadataStatus: Incomplete
+metadataStatus: Released
 description: LoFreq* (i.e. LoFreq version 2) is a fast and sensitive variant-caller
   for inferring SNVs and indels from next-generation sequencing data. It makes full
   use of base-call qualities and other sources of errors inherent in sequencing (e.g.

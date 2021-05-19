@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_ec197e.a2
 featureList:
   - lc_extrap
-metadataStatus: Incomplete
+metadataStatus: Released
 description: This package is aimed at predicting and number of distinct reads and
   how many will be expected from additional sequencing using an initial sequencing
   experiment. The estimates can then be used to examine the utility of further sequencing,

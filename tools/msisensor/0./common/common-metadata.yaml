@@ -4,7 +4,7 @@ softwareVersion:
   includedVersions: []
 identifier: TL_f93bbe.4b
 featureList: []
-metadataStatus: Incomplete
+metadataStatus: Released
 description: C++ program for automatically detecting somatic and germline variants
   at microsatellite regions. It computes length distributions of microsatellites per
   site in paired tumor and normal sequence data, subsequently using these to statistically

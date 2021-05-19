@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_d6cefb.7d
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Shovill is a pipeline for assembly of bacterial isolate genomes from
   Illumina paired-end reads.  Shovill uses SPAdes at its core, but alters the steps
   before and after the primary assembly step to get similar results in less time.

@@ -6,7 +6,7 @@ identifier: TL_f8ebe1.24
 featureList:
   - pe
   - se
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Find and remove adapter sequences, primers, poly-A tails and other types
   of unwanted sequence from your high-throughput sequencing reads.
 codeRepository:

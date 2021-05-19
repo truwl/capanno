@@ -6,7 +6,7 @@ identifier: TL_a2e03a.4a
 featureList:
   - pe
   - se
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A flexible read trimming tool for Illumina NGS data
 codeRepository:
   name:

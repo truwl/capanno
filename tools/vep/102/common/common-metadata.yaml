@@ -7,7 +7,7 @@ featureList:
   - plugins
   - annotate
   - cache
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Tool for predicting effects of variants for any genome in Ensembl or
   with genome annotation (via GFF). This includes vertebrates and also plants, fungi,
   protists, metazoa and bacteria.  There is a web and a REST API version but the most

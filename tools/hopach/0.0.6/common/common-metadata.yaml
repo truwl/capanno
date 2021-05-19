@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_0a69c6.03
 featureList:
   - hopach
-metadataStatus: Incomplete
+metadataStatus: Released
 description: This algorithm builds a hierarchical tree of clusters by recursively
   partitioning a data set, while ordering and possibly collapsing clusters at each
   level. It uses the Mean/Median Split Silhouette (MSS) criteria to identify the level

@@ -8,7 +8,7 @@ featureList:
   - hmmpress
   - hmmscan
   - hmmsearch
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Older version of the HMMER3 program (https://bio.tools/hmmer3) used for
   searching sequence databases for sequence homologs, and for making sequence alignments.
 codeRepository:

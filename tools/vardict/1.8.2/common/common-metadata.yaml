@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_ba744c.b1
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: VarDict is an ultra sensitive variant caller for both single and paired
   sample variant calling from BAM files. VarDict implements several novel features
   such as amplicon bias aware variant calling from targeted sequencing experiments,

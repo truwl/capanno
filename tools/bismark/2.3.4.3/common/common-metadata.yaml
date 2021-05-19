@@ -12,7 +12,7 @@ featureList:
   - bismark_genome_preparation
   - bismark_methylation_extractor
   - deduplicate_bismark
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Bismark is a tool to map bisulfite treated sequencing reads and perform
   methylation calling in a quick and easy-to-use fashion.
 codeRepository:

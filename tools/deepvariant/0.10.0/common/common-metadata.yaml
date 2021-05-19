@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_5eb53f.df
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: DeepVariant is a deep learning-based variant caller that takes aligned
   reads (in BAM or CRAM format), produces pileup image tensors from them, classifies
   each tensor using a convolutional neural network, and finally reports the results

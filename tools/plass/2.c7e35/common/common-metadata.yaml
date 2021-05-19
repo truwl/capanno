@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_430187.9c
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: 'Protein-Level ASSembler (PLASS): sensitive and precise protein assembler'
 codeRepository:
   name:

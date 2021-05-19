@@ -6,7 +6,7 @@ identifier: TL_0dbbaf.17
 featureList:
   - annotate
   - download
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Variant annotation and effect prediction tool. It annotates and predicts
   the effects of variants on genes and proteins (such as amino acid changes).
 codeRepository:

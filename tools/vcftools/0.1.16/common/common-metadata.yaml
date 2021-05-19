@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_f8b441.ea
 featureList:
   - filter
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Provide easily accessible methods for working with complex genetic variation
   data in the form of VCF files.
 codeRepository:

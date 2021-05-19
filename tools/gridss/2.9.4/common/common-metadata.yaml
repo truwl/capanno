@@ -8,7 +8,7 @@ featureList:
   - call
   - preprocess
   - setupreference
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A high-speed next-gen sequencing structural variation caller. It calls
   variants based on alignment-guided positional de Bruijn graph breakpoint assembly,
   split read, and read pair evidence.
