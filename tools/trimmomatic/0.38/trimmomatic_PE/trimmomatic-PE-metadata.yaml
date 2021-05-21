@@ -1,6 +1,6 @@
 name: PE
 metadataStatus: Released
-cwlStatus: Released
+cwlStatus: Draft
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
