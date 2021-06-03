@@ -6,7 +6,7 @@ nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_7e0c8a_57.c6
-description:
+description: Bandage is a GUI program that allows users to interact with the assembly graphs made by de novo assemblers such as Velvet, SPAdes, MEGAHIT and others.
 keywords:
 - name:
   category:

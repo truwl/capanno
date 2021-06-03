@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_4f3c04_44.21
-description:
+description: The command bamtools stats prints general alignment statistics from the BAM file
 keywords:
   - name:
     category:
