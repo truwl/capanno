@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_0dbbaf_5c.17
-description:
+description: This is the default command. It is used for annotating variant filed
 keywords:
   - name:
     category:

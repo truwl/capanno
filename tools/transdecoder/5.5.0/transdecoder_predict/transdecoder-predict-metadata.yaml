@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_332881_59.db
-description:
+description: Transcriptome Protein Prediction
 keywords:
   - name:
     category:

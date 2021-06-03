@@ -6,7 +6,7 @@ identifier: TL_ee40c1.e5
 featureList:
   - nanoplot
 metadataStatus: Released
-description:
+description: Plotting tool for long read sequencing data and alignments.
 codeRepository:
   name:
   URL:

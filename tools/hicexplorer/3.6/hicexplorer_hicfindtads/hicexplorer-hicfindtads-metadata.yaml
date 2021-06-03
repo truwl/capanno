@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_1c3c14_ee.e4
-description:
+description: Uses a measure called TAD-separation score to identify the degree of separation between the left and right regions at each Hi-C matrix bin. This is done for a running window of different sizes. Then, TADs are called as those positions having a local TAD-separation score minimum.
 keywords:
   - name:
     category:
