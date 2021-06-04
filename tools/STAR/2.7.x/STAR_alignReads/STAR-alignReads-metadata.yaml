@@ -1,15 +1,15 @@
 name: alignReads
 metadataStatus: Released
 cwlStatus: Released
-nextflowStatus: Incomplete
 snakemakeStatus: Released
+nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_8ab263_aa.6f
-description: align sequence reads to the reference genome in a spliced manner
+description: Perform spliced alignment
 keywords:
-  - name:
-    category:
+- name:
+  category:
 alternateName:
 extra:
   cwlDocument:

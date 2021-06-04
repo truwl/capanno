@@ -1,12 +1,12 @@
 name: read_distribution
 metadataStatus: Released
 cwlStatus: Released
-nextflowStatus: Released
 snakemakeStatus: Incomplete
+nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_a7.49
-description: The tool calculates the fraction of reads mapped to coding exons, 5'-UTR exons, 3'-UTR exons, introns and intergenic regions based on the gene models provided. This module roughly reflects the uniformity of coverage; for example, reads are generally over-represented in 3'-UTR for the polyA + RNA-seq protocol.
+description: The tool calculates the fraction of reads mapped to coding exons, 5'-UTR exons, 3'-UTR exons, introns and intergenic regions based on the gene models provided
 keywords:
   - name:
     category:

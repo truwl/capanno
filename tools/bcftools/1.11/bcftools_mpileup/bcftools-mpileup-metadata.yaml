@@ -1,12 +1,12 @@
 name: mpileup
 metadataStatus: Released
 cwlStatus: Incomplete
-nextflowStatus: Released
+nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_6b0c16_e0.cb
-description:
+description: multi-way pileup producing genotype likelihoods
 keywords:
   - name:
     category:

@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_0dbbaf_fd.17
-description:
+description: Download a snpeff index for a species
 keywords:
   - name:
     category:
