@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_dab8f4_54.03
-description:
+description: remove adapters
 keywords:
   - name:
     category:

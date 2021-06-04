@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_babf1a_54.d3
-description:
+description: convert a bed to bigBed format
 keywords:
   - name:
     category:
