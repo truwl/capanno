@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_1c3c14_06.e4
-description:
+description: Adds Hi-C matrices of the same size. Format has to be hdf5 (.h5) or npz
 keywords:
   - name:
     category:
