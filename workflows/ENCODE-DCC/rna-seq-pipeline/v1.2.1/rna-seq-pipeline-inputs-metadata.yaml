@@ -1,0 +1,153 @@
+parameter_meta:
+  rna.endedness:
+    description: Indicates whether the endedness of the experiment is paired or single.
+    group: input_genomic_data
+    choices:
+      - paired
+      - single
+    example: paired
+  rna.strandedness:
+    description: Indicates whether the experiment is stranded or unstranded. If this is stranded, then the rna.strandedness_direction should be set to forward or reverse
+    group: input_genomic_data
+    choices: 
+      - stranded
+      - unstranded
+    example: stranded
+  rna.strandedness_direction:
+    description: Indicates the direction of strandedness. Options are forward, reverse and unstranded.
+    group: input_genomic_data
+    choices: 
+      - forward
+      - reverse
+      - unstranded
+    example: forward          
+  rna.fastqs_R1:
+    description: A list of lists of gzipped fastq files containing the first pairs of reads.
+    group: input_genomic_data
+    example: [
+      ["test_data/ENCSR653DFZ_rep1_chr19_10000reads_R1.fastq.gz"], 
+      ["test_data/ENCSR653DFZ_rep2_chr19_10000reads_R1.fastq.gz"]
+    ]
+  rna.fastqs_R2:
+    description: Is list of lists of gzipped fastq files containing the second pairs of reads.
+    group: input_genomic_data
+    example: [
+      ["test_data/ENCSR653DFZ_rep1_chr19_10000reads_R2.fastq.gz"], 
+      ["test_data/ENCSR653DFZ_rep2_chr19_10000reads_R2.fastq.gz"]
+    ]    
+  rna.align_index:
+    description: The index for STAR aligner.
+    example: "test_data/GRCh38_v24_ERCC_phiX_starIndex_chr19only.tgz"
+    group: input_genomic_data
+  rna.rsem_index:
+    description: Is the index for RSEM quantifier.
+    example: "test_data/GRCh38_v24_ERCC_phiX_rsemIndex_chr19only.tgz"
+    group: input_genomic_data
+  rna.bamroot: 
+    description: This is a prefix that gets added into the output filenames. Additionally the files are prefixed with information of the replicate they originate from.
+    example: PE_stranded
+    group: input_genomic_data
+  rna.chrom_sizes:
+    description: Is the file containing the chromosome sizes.
+    example: "test_data/GRCh38_EBV.chrom.sizes"
+    group: input_genomic_data
+  rna.rna_qc_tr_id_to_gene_type_tsv:
+    description: rna_qc task calculates the number of reads by gene type. For this a tsv file that contains a mapping from transcript IDs to gene types is provided. For GRCh38, hg19, and mm10 with ERCC (ambion 1) and PhiX spikes the tsv is provided in this repo. If you are using some other annotation, you can use code here to build your own.
+    example: "transcript_id_to_gene_type_mappings/gencodeV24pri-tRNAs-ERCC-phiX.transcript_id_to_genes.tsv"
+    group: input_genomic_data
+  rna.run_kallisto:
+    description: Boolean defaulting to true. If set to false kallisto will not be run, and you do not need to provide values for any kallisto related parameters.
+    example: true
+    group: task_kallisto
+  rna.kallisto_index:
+    description: The index for Kallisto quantifier. Required only if rna.run_kallisto is true (Default is true).
+    example: "test_data/Homo_sapiens.GRCh38.cdna.all.chr19_ERCC_phix_k31_kallisto.idx"
+    group: task_kallisto
+  rna.kallisto_number_of_threads:
+    description: How many threads are used for Kallisto quantification.
+    help: Required only if rna.run_kallisto is true (Default is true)
+    example: 8
+    group: task_kallisto
+  rna.kallisto_ramGB:
+    description: How many GBs of memory are available for kallisto.
+    help: Required only if rna.run_kallisto is true (Default is true)
+    example: 4
+    group: task_kallisto
+  rna.kallisto_fragment_length:
+    description: Is an array of average fragment lengths as integers, one per replicate. 
+    help: Required only if rna.run_kallisto is true (Default is true)
+    example: [250,250]
+    group: task_kallisto
+  rna.kallisto_sd_of_fragment_length:
+    description: Is and array standard deviations of the fragment lengths as floats, one per replicate. 
+    help: Required only if rna.run_kallisto is true (Default is true).
+    example: [10,10]
+    group: task_kallisto
+  rna.bam_to_signals_ncpus:
+    description: Is the number of cpus given to bam_to_signals task.
+    example: 1
+    group: task_resources
+  rna.bam_to_signals_ramGB:
+    description: Is the amount of memory in GB given to bam_to_signals.
+    example: 2
+    group: task_resources
+  rna.bam_to_signals_disk:
+    description: How much disk space is available for bam_to_signals.
+    help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.
+    example: local-disk 200 SSD
+    group: task_resources
+  rna.align_ncpus:
+    description: How many cpus are available for STAR alignment.
+    example: 1
+    group: task_resources
+  rna.align_ramGB:
+    description: How many GBs of memory are available for STAR alignment.
+    example: 4
+    group: task_resources
+  rna.align_disk:
+    description: How much disk space is available for Align task.
+    help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.
+    example: local-disk 200 SSD
+    group: task_resources
+  rna.rsem_ncpus:
+    description: How many cpus are available for RSEM quantification.
+    example: 1
+    group: task_resources
+  rna.rsem_ramGB:
+    description: How many GBs of memory are available for RSEM quantification.
+    example: 8
+    group: task_resources
+  rna.rsem_disk:
+    description: The amount of disk space in gigabytes to RSEM.
+    help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.
+    example: local-disk 200 SSD
+    group: task_resources
+  rna.kallisto_disk:
+    description: Is the amount of disk space in gigabytes to the kallisto task. 
+    help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive. Required only if rna.run_kallisto is true (Default is true).
+    example: local-disk 200 SSD
+    group: task_kallisto
+  rna.mad_qc_disk:
+    description: Is the amount of disk space in gigabytes to MAD QC. 
+    help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.    
+    example: local-disk 200 SSD
+    group: task_kallisto
+  rna.rna_qc_disk:
+    description: Is the amount of disk space in gigabytes to RNA QC. 
+    help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.
+    example: local-disk 200 SSD
+    group: task_resources
+      
+parameter_group:
+    input_genomic_data:
+        title: Input genomic data
+        description: >
+          Genomic input files for experiment.
+    task_kallisto:
+        title: Kallisto
+        description: >
+          Kallisto quantifier makes use of average fragment lenghts and standard deviations of those lengths. In the case of paired end experiments, those values can be calculated from the data, but in case of single-ended experiment those values must be provided. If rna.kallisto_run is set to `false` kallisto will not be run, and you do not need to provide values for any kallisto related parameters.
+    task_resources:
+        title: Computational Resources
+        description: >
+          The hardware resources needed to run the pipeline depend on the sequencing depth so it is hard to give definitive values that will be good for everyone. However, for every pipeline run, alignment is going to be the most memory-intensive task, quantitation with RSEM is going to be computationally hardest, kallisto will require some non-trivial amount of resources, and typically the rest of the tasks are rather light both in CPU and memory use. Disk usage again depends on the sequencing depth, but `"local-disk 100 HDD"` is a good starting point for all the tasks. See the ENCODE Github (https://github.com/ENCODE-DCC/rna-seq-pipeline/blob/master/docs/reference.md#note-about-resources) for recommendations that are a sensible starting point for further optimizations in a typical case (non-CPU or memory related inputs omitted).

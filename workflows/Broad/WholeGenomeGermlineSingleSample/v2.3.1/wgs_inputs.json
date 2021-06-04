@@ -1,0 +1,69 @@
+{
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.ApplyBQSR.memory_multiplier": "Int (optional, default = 1)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.BaseRecalibrator.gatk_docker": "String (optional, default = \"us.gcr.io/broad-gatk/gatk:4.1.8.0\")",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.SplitRG.reads_per_file": "Int (optional, default = 48000000)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.ApplyBQSR.additional_disk": "Int (optional, default = 20)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.ApplyBQSR.gatk_docker": "String (optional, default = \"us.gcr.io/broad-gatk/gatk:4.1.8.0\")",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.CheckContamination.disable_sanity_check": "Boolean (optional, default = false)",
+  "WholeGenomeGermlineSingleSample.BamToGvcf.make_bamout": "Boolean (optional, default = false)",
+  "WholeGenomeGermlineSingleSample.BamToCram.ValidateCram.additional_disk": "Int (optional, default = 20)",
+  "WholeGenomeGermlineSingleSample.fingerprint_genotypes_file": "File? (optional)",
+  "WholeGenomeGermlineSingleSample.provide_bam_output": "Boolean (optional, default = false)",
+  "WholeGenomeGermlineSingleSample.CollectRawWgsMetrics.memory_multiplier": "Int (optional, default = 1)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.bin_base_qualities": "Boolean (optional, default = true)",
+  "WholeGenomeGermlineSingleSample.references": {
+    "calling_interval_list": "File",
+    "haplotype_database_file": "File",
+    "dbsnp_vcf": "File",
+    "known_indels_sites_indices": "Array[File]",
+    "reference_fasta": {
+      "ref_fasta": "File",
+      "ref_dict": "File",
+      "ref_alt": "File",
+      "ref_ann": "File",
+      "ref_sa": "File",
+      "ref_amb": "File",
+      "ref_bwt": "File",
+      "ref_fasta_index": "File",
+      "ref_pac": "File"
+    },
+    "contamination_sites_ud": "File",
+    "known_indels_sites_vcfs": "Array[File]",
+    "contamination_sites_bed": "File",
+    "evaluation_interval_list": "File",
+    "dbsnp_vcf_index": "File",
+    "contamination_sites_mu": "File"
+  },
+  "WholeGenomeGermlineSingleSample.sample_and_unmapped_bams": {
+    "final_gvcf_base_name": "String? (optional)",
+    "unmapped_bam_suffix": "String",
+    "flowcell_unmapped_bams": "Array[File]",
+    "sample_name": "String",
+    "base_file_name": "String"
+  },
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.somatic": "Boolean (optional, default = false)",
+  "WholeGenomeGermlineSingleSample.BamToGvcf.make_gvcf": "Boolean (optional, default = true)",
+  "WholeGenomeGermlineSingleSample.wgs_coverage_interval_list": "File",
+  "WholeGenomeGermlineSingleSample.BamToGvcf.ValidateVCF.gatk_docker": "String (optional, default = \"us.gcr.io/broad-gatk/gatk:4.1.8.0\")",
+  "WholeGenomeGermlineSingleSample.fingerprint_genotypes_index": "File? (optional)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.MarkDuplicates.additional_disk": "Int (optional, default = 20)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.MarkDuplicates.read_name_regex": "String? (optional)",
+  "WholeGenomeGermlineSingleSample.AggregatedBamQC.CollectReadgroupBamQualityMetrics.collect_gc_bias_metrics": "Boolean (optional, default = true)",
+  "WholeGenomeGermlineSingleSample.use_gatk3_haplotype_caller": "Boolean (optional, default = true)",
+  "WholeGenomeGermlineSingleSample.BamToGvcf.HaplotypeCallerGATK4.gatk_docker": "String (optional, default = \"us.gcr.io/broad-gatk/gatk:4.1.8.0\")",
+  "WholeGenomeGermlineSingleSample.papi_settings": {
+    "preemptible_tries": "Int",
+    "agg_preemptible_tries": "Int"
+  },
+  "WholeGenomeGermlineSingleSample.BamToCram.ValidateCram.memory_multiplier": "Int (optional, default = 1)",
+  "WholeGenomeGermlineSingleSample.scatter_settings": {
+    "haplotype_scatter_count": "Int",
+    "break_bands_at_multiples_of": "Int"
+  },
+  "WholeGenomeGermlineSingleSample.AggregatedBamQC.CollectAggregationMetrics.collect_gc_bias_metrics": "Boolean (optional, default = true)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.MarkDuplicates.memory_multiplier": "Int (optional, default = 1)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.GatherBqsrReports.gatk_docker": "String (optional, default = \"us.gcr.io/broad-gatk/gatk:4.1.8.0\")",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.hard_clip_reads": "Boolean (optional, default = false)",
+  "WholeGenomeGermlineSingleSample.CollectRawWgsMetrics.additional_disk": "Int (optional, default = 20)",
+  "WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.CheckContamination.disable_sanity_check": "Boolean (optional, default = true)"
+}

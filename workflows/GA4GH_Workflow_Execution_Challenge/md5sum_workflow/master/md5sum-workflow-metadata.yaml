@@ -7,8 +7,16 @@ softwareVersion:
   versionName: master
   includedVersions:
     - master__42b7f70
-cwlStatus: Released
 metadataStatus: Released
+workflowStatus: Released
+workflowLanguage: cwl
+graphStatus: Incomplete
+executable: false
+current: true
+runit_filename:
+runit_pipeline_name:
+runit_git_hash:
+
 
 keywords:
 

@@ -7,7 +7,14 @@ softwareVersion:
   includedVersions:
     - 1.0
 metadataStatus: Released
-cwlStatus: Released
+workflowStatus: Released
+workflowLanguage: cwl
+graphStatus: Released
+executable: false
+current: true
+runit_filename:
+runit_pipeline_name:
+runit_git_hash:
 identifier: WF_0b650e.e4
 keywords:
 

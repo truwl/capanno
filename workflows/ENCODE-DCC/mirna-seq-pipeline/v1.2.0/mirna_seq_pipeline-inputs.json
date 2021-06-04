@@ -1,0 +1,18 @@
+{
+  "mirna_seq_pipeline.fastqs": "Array[Array[File]]",
+  "mirna_seq_pipeline.five_prime_adapters": "Array[Array[File]]",
+  "mirna_seq_pipeline.three_prime_adapters": "File",
+  "mirna_seq_pipeline.star_index": "File",
+  "mirna_seq_pipeline.mirna_annotation": "File",
+  "mirna_seq_pipeline.chrom_sizes": "File",
+  "mirna_seq_pipeline.experiment_prefix": "String",
+  "mirna_seq_pipeline.star_ncpus": "Int",
+  "mirna_seq_pipeline.star_ramGB": "Int",
+  "mirna_seq_pipeline.star_disk": "String",
+  "mirna_seq_pipeline.cutadapt_ncpus": "Int",
+  "mirna_seq_pipeline.cutadapt_ramGB": "Int",
+  "mirna_seq_pipeline.cutadapt_disk": "String",
+  "mirna_seq_pipeline.wigtobigwig_ncpus": "Int",
+  "mirna_seq_pipeline.wigtobigwig_ramGB": "Int",
+  "mirna_seq_pipeline.wigtobigwig_disk": "String"
+}

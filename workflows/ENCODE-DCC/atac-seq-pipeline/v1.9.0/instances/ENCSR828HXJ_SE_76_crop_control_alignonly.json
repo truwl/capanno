@@ -1,0 +1,17 @@
+{
+    "chip.title": "ENCSR828HXJ",
+    "chip.description": "ENCSR828HXJ_SE_76_crop_control_alignonly",
+    "chip.pipeline_type": "control",
+    "chip.align_only": true,
+    "chip.paired_end": false,
+    "chip.crop_length": 76,
+    "chip.crop_length_tol": 2,
+    "chip.genome_tsv": "gs://encode-pipeline-genome-data/genome_tsv/v2/hg38_gcp.tsv",
+    "chip.ref_fa": "https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz",
+    "chip.bowtie2_idx_tar": "https://www.encodeproject.org/files/ENCFF110MCL/@@download/ENCFF110MCL.tar.gz",
+    "chip.chrsz": "https://www.encodeproject.org/files/GRCh38_EBV.chrom.sizes/@@download/GRCh38_EBV.chrom.sizes.tsv",
+    "chip.blacklist": "https://www.encodeproject.org/files/ENCFF356LFX/@@download/ENCFF356LFX.bed.gz",
+    "chip.fastqs_rep1_R1": [
+        "https://www.encodeproject.org/files/ENCFF953PQD/@@download/ENCFF953PQD.fastq.gz"
+    ]
+}

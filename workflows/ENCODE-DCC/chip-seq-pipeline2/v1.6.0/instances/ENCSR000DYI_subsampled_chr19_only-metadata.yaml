@@ -1,0 +1,11 @@
+workflowIdentifier: WF_dd6938.8f
+identifier: WF_dd6938.8f.8aa3
+name: REF ENCSR000DYI (subsampled to Chr 19 only)
+version: 1.0
+softwareVersion: v1.6.0
+jobStatus: Released
+freeze: true
+status: published
+description: CEBPB ChIP-seq (TF ChIP-seq) on human A549 (cell line) produced by Snyder lab. See experiment details at https://www.encodeproject.org/experiments/ENCSR000DYI/
+inputObjects:
+outputObjects:

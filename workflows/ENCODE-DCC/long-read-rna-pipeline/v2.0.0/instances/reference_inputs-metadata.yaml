@@ -1,0 +1,11 @@
+workflowIdentifier: WF_308a61.8f
+identifier: WF_308a61.8f.181f
+name: REF Inputs.json from GitHub docs
+version: 1.0
+softwareVersion: v2.0.0
+jobStatus: Released
+freeze: true
+status: published
+description: A typical input.json structure
+inputObjects:
+outputObjects:
