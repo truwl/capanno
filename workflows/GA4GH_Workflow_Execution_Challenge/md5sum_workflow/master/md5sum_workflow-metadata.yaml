@@ -1,7 +1,7 @@
-name: md5sum checker workflow wrapping md5sum workflow
-identifier: WF_ba9852.6e
+name: md5sum tool workflow
+identifier: WF_680a59.6e
 description: |
-  This demonstrates how to wrap a "real" tool with a checker workflow that runs both the tool and a tool that performs verification of results
+  A one step "workflow" to be a subworkflow of a wrapping checker workflow.
 
 softwareVersion:
   versionName: master
@@ -10,12 +10,13 @@ softwareVersion:
 metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: cwl
-graphStatus: Released
+graphStatus: Incomplete
 executable: false
 current: true
-runit_filename:
+runit_filename: md5sum-workflow.cwl
 runit_pipeline_name:
 runit_git_hash:
+
 
 keywords:
 
@@ -25,6 +26,4 @@ codeRepository:
 
 callMap:
   - id: md5sum
-    identifier: WF_680a59.6e
-  - id: checker
-    identifier: ST_493ada.e4
+    identifier: ST_71882e.e4

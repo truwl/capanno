@@ -5,10 +5,11 @@ description: >
 
   This ChIP-Seq pipeline is based off the ENCODE (phase-3) transcription factor and histone ChIP-seq pipeline
   specifications (by Anshul Kundaje) in this [google doc](https://docs.google.com/document/d/1lG_Rd7fnYgRpSIqrIfuVlAz2dW1VaSQThzk836Db99c/edit#).
-softwareVersion: v1.6.0
+softwareVersion:
+  versionName: v1.6.0
 metadataStatus: Released
 workflowStatus: Released
-cytoscapeStatus: Incomplete
+graphStatus: Incomplete
 executable: true
 current: true
 runit_filename: chip.wdl
@@ -17,9 +18,8 @@ runit_git_hash: v1.6.0
 codeRepository:
   URL: https://github.com/ENCODE-DCC/chip-seq-pipeline2/
   name: GitHub
-websites:
-  0:
-    name: Encode Project Website
+WebSite:
+  - name: Encode Project Website
     description:
     URL: https://www.encodeproject.org/data-standards/chip-seq/
 keywords:

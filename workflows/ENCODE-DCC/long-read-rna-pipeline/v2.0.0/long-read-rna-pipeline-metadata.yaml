@@ -1,13 +1,13 @@
-
-meta:
 name: ENCODE Long read RNA-seq pipeline
 identifier: WF_308a61.8f
 description: >
   This is the ENCODE-DCC Long read RNA-seq pipeline. This pipeline can handle data from both PacBio and Oxford Nanopore platforms. Pipeline does read alignment, corrects for mismatches, microindels and non-canonical splice junctions and then provides quantitations and QC-metrics.
-softwareVersion: v2.0.0
+softwareVersion:
+  versionName: v2.0.0
+  includedVersions:
 metadataStatus: Released
 workflowStatus: Released
-cytoscapeStatus: Incomplete
+graphStatus: Incomplete
 executable: true
 current: true
 runit_filename: long-read-rna-pipeline.wdl
@@ -17,9 +17,8 @@ inputs_file: long-read-rna-pipeline-inputs.json
 codeRepository:
   URL: https://github.com/ENCODE-DCC/long-read-rna-pipeline
   name: GitHub
-websites:
-  0:
-    name: Encode Project Website
+WebSite:
+  - name: Encode Project Website
     description:
     URL: https://www.encodeproject.org/rna-seq/long-read-rna-seq/
 keywords:

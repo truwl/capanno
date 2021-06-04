@@ -16,10 +16,12 @@ description: >
   - GVCF output names must end in ".g.vcf.gz"
   - Reference genome must be Hg38 with ALT contigs
 
-softwareVersion: v2.3.1
+softwareVersion:
+  versionName: v2.3.1
 metadataStatus: Released
 workflowStatus: Released
-cytoscapeStatus: Incomplete
+workflowLanguage: wdl
+graphStatus: Incomplete
 runit_filename: WholeGenomeGermlineSingleSample_v2.3.1.wdl
 runit_pipeline_name: WholeGenomeGermlineSingleSample
 runit_git_hash: v2.3.1
@@ -28,7 +30,6 @@ executable: true
 current: true
 codeRepository:
   URL: https://github.com/truwl/WholeGenomeGermlineSingleSample
-websites:
-  0:
-    url: https://github.com/broadinstitute/warp/
+WebSite:
+  - URL: https://github.com/broadinstitute/warp/
     name: Broad WARP (WDL Analysis Research Pipelines) repository

@@ -5,10 +5,11 @@ description: >
   This is the ENCODE-DCC RNA-sequencing pipeline. The scope of the pipeline is to align reads, generate signal tracks, and quantify genes and isoforms.
 
   RNA-seq data is valuable as it allows the measure of RNA expression levels as a transcriptional readout and the study of RNA structures in order to understand how RNA-based mechanisms impact gene regulation and thus disease and phenotypic variation. Since RNA populations are diverse, the ENCODE Consortium has developed the following RNA-seq pipelines:
-softwareVersion: v1.2.1
+softwareVersion:
+  versionName: v1.2.1
 metadataStatus: Released
 workflowStatus: Released
-cytoscapeStatus: Incomplete
+graphStatus: Incomplete
 executable: true
 current: true
 runit_filename: rna-seq-pipeline.wdl
@@ -17,9 +18,8 @@ runit_git_hash: v1.2.1
 codeRepository:
   URL: https://github.com/ENCODE-DCC/rna-seq-pipeline
   name: GitHub
-websites:
-  0:
-    name: Encode Project Website
+WebSite:
+  - name: Encode Project Website
     description:
     URL: https://www.encodeproject.org/rna-seq/
 keywords:

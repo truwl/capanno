@@ -12,7 +12,7 @@ workflowLanguage: cwl
 graphStatus: Released
 executable: false
 current: true
-runit_filename:
+runit_filename: hello_world.cwl
 runit_pipeline_name:
 runit_git_hash:
 identifier: WF_0b650e.e4

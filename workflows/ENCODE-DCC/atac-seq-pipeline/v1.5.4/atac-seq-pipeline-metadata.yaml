@@ -24,9 +24,12 @@ description: >
 
   The ATAC-seq pipeline protocol specification is here (https://docs.google.com/document/d/1f0Cm4vRyDQDu0bMehHD7P7KOMxTOP-HiNoIvL1VcBt8/edit?usp=sharing).
   Some parts of the ATAC-seq pipeline were developed in collaboration with Jason Buenrostro, Alicia Schep and Will Greenleaf at Stanford.
-softwareVersion: 'v1.5.4'
+softwareVersion:
+  versionName: v1.5.4
 metadataStatus: Released
 workflowStatus: Draft  # workflow is. Multiple lib items in task will be a problem.
-cytoscapeStatus: Incomplete
+graphStatus: Incomplete
+runit_filename: atac.wdl
+runit_pipeline_name: atac-seq-pipeline
 executable: false
 current: false
