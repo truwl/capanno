@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ec2a8d_a9.0b
-description:
+description: index a bam file
 keywords:
   - name:
     category:

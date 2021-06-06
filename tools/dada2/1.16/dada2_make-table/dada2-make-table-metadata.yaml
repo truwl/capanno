@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_cbf4cc_a0.69
-description:
+description: Construct a sample-by-sequence observation matrix.
 keywords:
   - name:
     category:

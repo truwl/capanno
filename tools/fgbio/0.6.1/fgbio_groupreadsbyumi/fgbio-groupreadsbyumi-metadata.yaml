@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_67e97b_2e.85
-description:
+description: Groups reads together that appear to have come from the same original molecule. Reads are grouped by template, and then templates are sorted by the 5’ mapping positions of the reads from the template, used from earliest mapping position to latest. Reads that have the same end positions are then sub-grouped by UMI sequence.
 keywords:
   - name:
     category:

@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_cbf4cc_8a.69
-description:
+description: assignTaxonomy implements the RDP naive Bayesian classifier method described in Wang et al. 2007.
 keywords:
   - name:
     category:
