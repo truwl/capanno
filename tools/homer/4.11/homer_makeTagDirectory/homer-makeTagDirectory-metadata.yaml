@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_dfa832_93.42
-description:
+description: create a directory on your computer that contains several files describing your experiment
 keywords:
   - name:
     category:

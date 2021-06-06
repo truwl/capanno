@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_43392c_ec.c8
-description:
+description: Make interval windows across a genome.
 keywords:
   - name:
     category:

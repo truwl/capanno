@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_0f87b2_01.d1
-description:
+description: a highly efficient and accurate read summarization program
 keywords:
   - name:
     category:

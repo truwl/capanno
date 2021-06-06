@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_03cccb_aa.d1
-description:
+description: write tabular data instead of vcf
 keywords:
   - name:
     category:
