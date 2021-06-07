@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_181523_bf.d9
-description:
+description: node ID manipulation
 keywords:
   - name:
     category:

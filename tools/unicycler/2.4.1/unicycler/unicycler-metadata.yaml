@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_cc07e9_54.12
-description:
+description: Unicycler is an assembly pipeline for bacterial genomes.
 keywords:
   - name:
     category:
