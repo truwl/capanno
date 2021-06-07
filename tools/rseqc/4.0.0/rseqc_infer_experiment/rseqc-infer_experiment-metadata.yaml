@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_17.49
-description:
+description: This program is used to guess how RNA-seq sequencing were configured, particulary how reads were stranded for strand-specific RNA-seq data, through comparing the strandness of reads with the standness of transcripts
 keywords:
   - name:
     category:

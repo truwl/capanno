@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_717dd0_54.e4
-description:
+description: gene predictions from raw sequences
 keywords:
   - name:
     category:

@@ -6,7 +6,7 @@ identifier: TL_84d780.63
 featureList:
   - rmdup
 metadataStatus: Released
-description:
+description: a cross-platform and ultrafast toolkit for FASTA/Q file manipulation
 codeRepository:
   name:
   URL:
