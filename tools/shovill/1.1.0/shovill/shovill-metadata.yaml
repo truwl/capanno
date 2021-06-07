@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_d6cefb_54.7d
-description:
+description: Assemble bacterial isolate genomes from Illumina paired-end reads
 keywords:
   - name:
     category:

@@ -1,12 +1,12 @@
 name: __main__
 metadataStatus: Released
 cwlStatus: Incomplete
-nextflowStatus: Released
+nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_dab8f4_54.03
-description:
+description: AdapterRemoval searches for and removes adapter sequences from High-Throughput Sequencing (HTS) data and (optionally) trims low quality bases from the 3' end of reads following adapter removal
 keywords:
   - name:
     category:

@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_180fd1_6a.e7
-description:
+description: index the transcriptome
 keywords:
   - name:
     category:

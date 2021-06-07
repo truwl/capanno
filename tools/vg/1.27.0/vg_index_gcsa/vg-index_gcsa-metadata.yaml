@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_181523_30.d9
-description:
+description: store the graph in the xg/gcsa index pair
 keywords:
   - name:
     category:

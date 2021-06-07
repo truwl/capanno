@@ -1,4 +1,5 @@
 """Snakemake wrapper for trimming unpaired reads using trim_galore."""
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 
 __author__ = "Kerrin Mendler"
 __copyright__ = "Copyright 2018, Kerrin Mendler"

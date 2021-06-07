@@ -9,7 +9,7 @@ featureList:
   - Gunzip
   - extract_fastq
 metadataStatus: Released
-description:
+description: basic tools based in bash
 codeRepository:
   name:
   URL:

@@ -1,4 +1,5 @@
 """Snakemake wrapper for Bismark bismark2bedGraph tool."""
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 # https://github.com/FelixKrueger/Bismark/blob/master/bismark2bedGraph
 
 __author__ = "Roman Chernyatchik"

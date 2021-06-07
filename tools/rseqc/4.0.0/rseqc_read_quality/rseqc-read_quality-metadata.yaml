@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_52.49
-description:
+description: make read quality histogram
 keywords:
   - name:
     category:

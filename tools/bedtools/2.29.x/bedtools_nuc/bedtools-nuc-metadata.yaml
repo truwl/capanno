@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_43392c_a9.c8
-description:
+description: Profiles the nucleotide content of intervals in a fasta file
 keywords:
   - name:
     category:

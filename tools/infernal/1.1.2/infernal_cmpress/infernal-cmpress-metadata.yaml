@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_a9fea8_9c.52
-description:
+description: prepare a covariance model database for cmscan
 keywords:
   - name:
     category:

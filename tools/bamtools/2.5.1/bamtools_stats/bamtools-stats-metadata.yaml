@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_4f3c04_44.21
-description:
+description: Prints some basic statistics from input BAM file(s)
 keywords:
   - name:
     category:

@@ -1,12 +1,12 @@
 name: index
 metadataStatus: Released
 cwlStatus: Incomplete
-nextflowStatus: Released
+nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ad909e_6a.d1
-description:
+description: build the bwa-mem index
 keywords:
   - name:
     category:

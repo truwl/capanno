@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_5253fb_54.f5
-description:
+description: Import and summarize transcript-level estimates for transcript- and gene-level analysis
 keywords:
   - name:
     category:

@@ -1,3 +1,4 @@
+// nf-core DSL2 modules are provided by Truwl to teach internal Nextflow process mechanics. See https://github.com/nf-core/modules for instructions on how to use these in your recipes
 // Import generic module functions
 include { initOptions; saveFiles; getSoftwareName } from './functions'
 

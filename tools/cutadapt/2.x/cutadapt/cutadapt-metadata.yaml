@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_28ea7f_54.68
-description:
+description: trim adapters
 keywords:
   - http://edamontology.org/topic_0622
   - http://edamontology.org/topic_0632

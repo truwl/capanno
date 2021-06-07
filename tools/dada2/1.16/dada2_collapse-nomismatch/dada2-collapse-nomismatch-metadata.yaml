@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_cbf4cc_e6.69
-description:
+description: ombine together sequences that are identical up to shifts and/or length
 keywords:
   - name:
     category:

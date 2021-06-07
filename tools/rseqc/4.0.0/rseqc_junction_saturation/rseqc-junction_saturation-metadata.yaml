@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_1b.49
-description:
+description: check if current sequencing depth is deep enough to perform alternative splicing analyses
 keywords:
   - name:
     category:

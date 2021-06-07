@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_e1a757_ca.ee
-description:
+description: sort a variation graph
 keywords:
   - name:
     category:

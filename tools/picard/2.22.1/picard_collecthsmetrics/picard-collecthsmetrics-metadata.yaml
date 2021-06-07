@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_e24fa5_19.ea
-description:
+description: Collects hybrid-selection (HS) metrics for a SAM or BAM file.
 keywords:
   - name:
     category:

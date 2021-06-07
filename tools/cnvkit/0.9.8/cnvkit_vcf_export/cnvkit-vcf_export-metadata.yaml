@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_0171fb_b4.23
-description:
+description: export cnvs as a vcf
 keywords:
   - name:
     category:

@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_180fd1_ee.e7
-description:
+description: quantify a sample
 keywords:
   - name:
     category:

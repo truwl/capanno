@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ec2a8d_c4.0b
-description:
+description: Count alignments
 keywords:
   - name:
     category:

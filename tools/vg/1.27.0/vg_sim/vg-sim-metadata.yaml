@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_181523_e9.d9
-description:
+description: simulate a bunch of 150bp reads from the graph, one per line
 keywords:
   - name:
     category:

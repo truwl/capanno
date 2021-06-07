@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_43392c_81.c8
-description:
+description: coverageBed computes both the depth and breadth of coverage of features in file A across the features in file B
 keywords:
   - name:
     category:

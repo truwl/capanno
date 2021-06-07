@@ -6,7 +6,7 @@ nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_d574d4_ab.7f
-description:
+description: decompress a gzipped file
 keywords:
 - name:
   category:

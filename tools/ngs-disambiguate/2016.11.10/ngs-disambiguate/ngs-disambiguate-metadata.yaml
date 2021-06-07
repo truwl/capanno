@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_e280c6_54.90
-description:
+description: Disambiguation algorithm for reads aligned to two species (e.g. human and mouse genomes) from Tophat, Hisat2, STAR or BWA mem
 keywords:
   - name:
     category:

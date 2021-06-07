@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_332881_5d.db
-description:
+description: TransDecoder.LongOrfs will identify coding regions within transcript sequences (ORFs) that are at least 100 amino acids long.
 keywords:
   - name:
     category:
