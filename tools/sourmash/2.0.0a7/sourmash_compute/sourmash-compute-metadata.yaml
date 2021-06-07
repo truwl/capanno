@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_f24b98_77.f0
-description:
+description: Compute scaled signatures
 keywords:
   - name:
     category:

@@ -1,4 +1,5 @@
 """Snakemake wrapper for VarDict Single sample mode"""
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 
 __author__ = "Patrik Smeds"
 __copyright__ = "Copyright 2021, Patrik Smeds"

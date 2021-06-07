@@ -1,4 +1,5 @@
 """Snakemake wrapper for HISAT2 index"""
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 
 __author__ = "Joël Simoneau"
 __copyright__ = "Copyright 2019, Joël Simoneau"

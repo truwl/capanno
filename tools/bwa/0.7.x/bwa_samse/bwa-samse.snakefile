@@ -1,4 +1,5 @@
 """Snakemake wrapper for bwa sampe."""
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 
 __author__ = "Julian de Ruiter"
 __copyright__ = "Copyright 2017, Julian de Ruiter"
