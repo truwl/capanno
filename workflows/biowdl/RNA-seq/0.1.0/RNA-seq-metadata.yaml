@@ -1,0 +1,25 @@
+
+name: BioWDL RNA-seq pipeline
+identifier: WF_e82aa0.33
+description: >
+  This workflow can be used to process RNA-seq data, starting from FastQ files. It will perform quality control (using FastQC and MultiQC), adapter clipping (using cutadapt), mapping (using STAR or HISAT2) and expression quantification an transcript assembly (using HTSeq-Count and Stringtie). Optionally variantcalling (based on the GATK Best Practises) and lncRNA detection (using CPAT) can also be performed. This workflow is part of BioWDL developed by the SASC team at Leiden University Medical Center.
+softwareVersion:
+  versionName: 4.0.0
+  includedVersions:
+metadataStatus: Released
+workflowStatus: Released
+workflowLanguage: wdl
+graphStatus: Incomplete
+runit_filename: RNA-seq.wdl
+runit_pipeline_name: biowdl-rna-seq-pipeline
+runit_git_hash: v4.0.0
+inputs_file: rnaseq_inputs.json
+executable: true
+current: true
+codeRepository:
+  URL: https://github.com/truwl/biowdl-rna-seq
+WebSite:
+    - URL: https://biowdl.github.io/RNA-seq/develop/index.html
+      name: BioWDL-RNA-seq
+
+

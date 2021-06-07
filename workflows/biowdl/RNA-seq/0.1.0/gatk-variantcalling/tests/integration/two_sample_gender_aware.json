@@ -1,0 +1,19 @@
+{
+  "MultisampleCalling.bamFilesAndGenders": [
+    {"file": "tests/data/gender-aware/male.bam",
+     "index":  "tests/data/gender-aware/male.bai",
+      "gender":"male"},
+    {"file": "tests/data/gender-aware/female.bam",
+     "index":  "tests/data/gender-aware/female.bai",
+      "gender":"female"}
+  ],
+  "MultisampleCalling.referenceFasta": "tests/data/gender-aware/reference.fasta",
+  "MultisampleCalling.referenceFastaFai": "tests/data/gender-aware/reference.fasta.fai",
+  "MultisampleCalling.referenceFastaDict": "tests/data/gender-aware/reference.dict",
+  "MultisampleCalling.dbsnpVCF": "tests/data/gender-aware/expected.vcf.gz",
+  "MultisampleCalling.dbsnpVCFIndex": "tests/data/gender-aware/expected.vcf.gz.tbi",
+  "MultisampleCalling.scatterSize": 10000,
+  "MultisampleCalling.XNonParRegions": "tests/data/gender-aware/x_non_par.bed",
+  "MultisampleCalling.YNonParRegions": "tests/data/gender-aware/y_non_par.bed",
+  "MultisampleCalling.singleSampleGvcf": true
+}

@@ -1,0 +1,11 @@
+workflowIdentifier: WF_e82aa0.33
+identifier: WF_e82aa0.33.2a73
+name: PairedEndHisat2-abs
+version: 1.0
+softwareVersion: v1.2.1
+jobStatus: Released
+freeze: true
+status: published
+description: Official test data from https://github.com/biowdl/RNA-seq/blob/develop/tests/integration/PairedEndHisat2.json
+inputObjects:
+outputObjects:
