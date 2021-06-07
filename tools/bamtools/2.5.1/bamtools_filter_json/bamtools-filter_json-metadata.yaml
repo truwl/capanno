@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_4f3c04_e2.21
-description:
+description: filter bam
 keywords:
   - name:
     category:

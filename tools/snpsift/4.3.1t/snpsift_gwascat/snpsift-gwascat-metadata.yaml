@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ec6b68_53.17
-description:
+description: Annotate using GWAS catalog
 keywords:
   - name:
     category:

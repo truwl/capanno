@@ -6,7 +6,7 @@ snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_8e5623_7f.a1
-description:
+description: A tiled data file (TDF) file (.tdf) is a binary file that contains data that has been preprocessed for faster display in IGV.
 keywords:
   - name:
     category:

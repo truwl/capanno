@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_148c00_54.e4
-description:
+description: Python application to generate self-contained igv.js pages that can be opened within a browser with "file" protocol. The generated html page contains all data neccessary for IGV as uuencoded blobs.
 keywords:
   - name:
     category:

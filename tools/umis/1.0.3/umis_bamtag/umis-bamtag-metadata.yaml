@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_0e8a11_4b.12
-description:
+description: Convert a BAM/SAM with fastqtransformed read names to have UMI
 keywords:
   - name:
     category:
