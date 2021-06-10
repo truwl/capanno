@@ -6,7 +6,7 @@ identifier: TL_8543fc.f9
 featureList:
   - call
   - pindel2vcf
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A pattern growth approach to detect break points of large deletions and
   medium sized insertions from paired end short reads.
 codeRepository:

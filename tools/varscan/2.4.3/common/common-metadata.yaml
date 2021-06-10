@@ -6,7 +6,7 @@ identifier: TL_6518d5.7a
 featureList:
   - mpileup2indel
   - somatic
-metadataStatus: Incomplete
+metadataStatus: Released
 description: VarScan, an open source tool for variant detection that is compatible
   with several short read align-ers.
 codeRepository:

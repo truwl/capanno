@@ -8,7 +8,7 @@ featureList:
   - extract
   - index
   - merge
-metadataStatus: Incomplete
+metadataStatus: Released
 description: STRling (pronounced like “sterling”) is a method to detect large STR
   expansions from short-read sequencing data. It is capable of detecting novel STR
   expansions, that is expansions where there is no STR in the reference genome at

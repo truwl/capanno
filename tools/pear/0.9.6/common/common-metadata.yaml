@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_8893dc.3b
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Paired-end read merger. PEAR evaluates all possible paired-end read overlaps
   without requiring the target fragment size as input. In addition, it implements
   a statistical test for minimizing false-positive results.

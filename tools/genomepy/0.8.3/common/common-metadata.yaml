@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_ab12d4.c5
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: The goal is to have a simple and straightforward way to download and
   use genomic sequences. Currently, genomepy supports UCSC, Ensembl and NCBI.
 codeRepository:

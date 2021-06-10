@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_8bc842.06
 featureList:
   - fasterq-dump
-metadataStatus: Incomplete
+metadataStatus: Released
 description: The SRA Toolkit and SDK from NCBI is a collection of tools and libraries
   for using data in the INSDC Sequence Read Archives.
 codeRepository:

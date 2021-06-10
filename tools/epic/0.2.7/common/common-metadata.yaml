@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_020be1.fa
 featureList:
   - peaks
-metadataStatus: Incomplete
+metadataStatus: Released
 description: EPIC is a R package and Shiny app to estimate the proportions of different
   cell types from bulk gene expression data.
 codeRepository:

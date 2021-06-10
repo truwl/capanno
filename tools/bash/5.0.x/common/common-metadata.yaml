@@ -8,7 +8,7 @@ featureList:
   - bedgraph_sort
   - Gunzip
   - extract_fastq
-metadataStatus: Incomplete
+metadataStatus: Released
 description:
 codeRepository:
   name:

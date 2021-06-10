@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_ec96b2.fb
 featureList:
   - manorm
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Simple and effective method for quantitative comparison of ChIP-Seq data
   sets describing transcription factor binding sites and epigenetic modifications.
 codeRepository:

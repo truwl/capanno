@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_3cbe31.48
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Primerclip™ is an alignment-based primer trimming tool designed to trim
   primer sequences for Swift Biosciences Accel-Amplicon™ panels. The motivation for
   designing an alignment-based primer trimming tool to increase speed. Primerclip

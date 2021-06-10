@@ -1,5 +1,5 @@
 name: extract_fastq
-metadataStatus: Incomplete
+metadataStatus: Released
 cwlStatus: Incomplete
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete

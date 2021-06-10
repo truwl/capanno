@@ -8,7 +8,7 @@ featureList:
   - indelrealigner
   - printreads
   - realignertargetcreator
-metadataStatus: Incomplete
+metadataStatus: Released
 description: "The Genome Analysis Toolkit (GATK) is a set of bioinformatic tools for\
   \ analyzing high-throughput sequencing (HTS) and variant call format (VCF) data.\
   \ The toolkit is well established for germline short variant discovery from whole\

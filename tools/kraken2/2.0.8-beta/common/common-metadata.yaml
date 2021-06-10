@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_2bc7f0.6c
 featureList:
   - kraken2
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Kraken 2 is the newest version of Kraken, a taxonomic classification
   system using exact k-mer matches to achieve high accuracy and fast classification
   speeds. This classifier matches each k-mer within a query sequence to the lowest

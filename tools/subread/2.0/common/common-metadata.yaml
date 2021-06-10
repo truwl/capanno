@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_0f87b2.d1
 featureList:
   - featurecounts
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Subread is a general-purpose read aligner which can be used to map both
   genomic DNA-seq reads and RNA-seq reads. It uses a new mapping paradigm called "seed-and-vote"
   to achieve fast, accurate and scalable read mapping. It automatically determines

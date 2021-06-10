@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_bd748f.d3
 featureList:
   - bam-slicing
-metadataStatus: Incomplete
+metadataStatus: Released
 description: The GDC API drives the GDC Data and Submission Portals and provides programmatic
   access to GDC functionality. This includes searching for, downloading, and submitting
   data and metadata. The GDC API uses JSON as its communication format, and standard

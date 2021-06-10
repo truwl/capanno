@@ -6,7 +6,7 @@ identifier: TL_03cccb.d1
 featureList:
   - filter
   - table
-metadataStatus: Incomplete
+metadataStatus: Released
 description: vembrane allows to simultaneously filter variants based on any INFO field,
   CHROM, POS, REF, ALT, QUAL, and the annotation field ANN. When filtering based on
   ANN, annotation entries are filtered first. If no annotation entry remains, the

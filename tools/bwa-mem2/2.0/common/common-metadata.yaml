@@ -7,7 +7,7 @@ featureList:
   - index
   - mem
   - mem-samblaster
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Fast, accurate, memory-efficient aligner for short and long sequencing
   reads
 codeRepository:

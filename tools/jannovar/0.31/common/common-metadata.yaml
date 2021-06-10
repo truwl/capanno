@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_593213.ba
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Stand-alone Java application as well as a Java library designed to be
   used in larger software frameworks for exome analysis.
 codeRepository:

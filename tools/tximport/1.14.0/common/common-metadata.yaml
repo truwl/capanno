@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_5253fb.f5
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: An R/Bioconductor package that imports transcript-level abundance, estimated
   counts and transcript lengths, and summarizes into matrices for use with downstream
   gene-level analysis packages.

@@ -6,7 +6,7 @@ identifier: TL_180fd1.e7
 featureList:
   - index
   - quant
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A tool for transcript expression quantification from RNA-seq data
 codeRepository:
   name:

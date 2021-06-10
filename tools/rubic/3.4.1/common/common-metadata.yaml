@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_a7190b.83
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: RUBIC detects recurrent copy number aberrations using copy number breaks,
   rather than recurrently amplified or deleted regions. This allows for a vastly simplified
   approach as recursive peak splitting procedures and repeated re-estimation of the

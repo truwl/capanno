@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_9af1de.e7
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: This tool aims to provide a QC report which can spot problems or biases
   which originate either in the sequencer or in the starting library material. It
   can be run in one of two modes. It can either run as a stand alone interactive application

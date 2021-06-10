@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_065334.44
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Rebaler is a program for conducting reference-based assemblies using
   long reads. It relies mainly on minimap2 for alignment and Racon for making consensus
   sequences.

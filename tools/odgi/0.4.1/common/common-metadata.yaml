@@ -9,7 +9,7 @@ featureList:
   - sort
   - viz
   - build
-metadataStatus: Incomplete
+metadataStatus: Released
 description:
 codeRepository:
   name:

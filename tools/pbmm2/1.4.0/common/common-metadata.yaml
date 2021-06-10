@@ -6,7 +6,7 @@ identifier: TL_8b5d9a.1b
 featureList:
   - align
   - index
-metadataStatus: Incomplete
+metadataStatus: Released
 description: pbmm2 is a SMRT C++ wrapper for minimap2's C API. Its purpose is to support
   native PacBio in- and output, provide sets of recommended parameters, generate sorted
   output on-the-fly, and postprocess alignments. Sorted output can be used directly

@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_d53982.c6
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Integrated structural variant prediction method that can discover, genotype
   and visualize deletions, tandem duplications, inversions and translocations at single-nucleotide
   resolution in short-read massively parallel sequencing data. It uses paired-ends

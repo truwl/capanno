@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_0e8a11.12
 featureList:
   - bamtag
-metadataStatus: Incomplete
+metadataStatus: Released
 description: A package that provides tools for estimating expression in RNA-Seq data
   which performs sequencing of end tags of transcript, and incorporate molecular tags
   to correct for amplification bias.

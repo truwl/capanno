@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_0070da.1b
 featureList:
   - fastx_quality_stats
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing.
 codeRepository:
   name:

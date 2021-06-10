@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_e280c6.90
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Disambiguating two species in next generation sequencing data from grafted
   samples. Operates on DNA or RNA-seq alignments to the two species and separates
   the components at very high sensitivity and specificity.

@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_e4fc9c.54
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Bayesian genetic variant detector designed to find small polymorphisms,
   specifically SNPs, indels, multi-nucleotide polymorphisms, and complex events (composite
   insertion and substitution events) smaller than the length of a short-read sequencing

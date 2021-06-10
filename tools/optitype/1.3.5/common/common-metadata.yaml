@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_67f56e.f8
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: OptiType is a novel HLA genotyping algorithm based on integer linear
   programming, capable of producing accurate 4-digit HLA genotyping predictions from
   NGS data by simultaneously selecting all major and minor HLA Class I alleles.

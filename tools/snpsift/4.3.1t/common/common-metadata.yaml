@@ -9,7 +9,7 @@ featureList:
   - gwascat
   - varType
   - annotate
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Toolbox that allows you to filter and manipulate annotated vcf files.
 codeRepository:
   name:

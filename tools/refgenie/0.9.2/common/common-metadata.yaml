@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_fb3f1c.59
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Refgenie manages storage, access, and transfer of reference genome resources.
   It provides command-line and Python interfaces to download pre-built reference genome
   "assets", like indexes used by bioinformatics tools. It can also build assets for

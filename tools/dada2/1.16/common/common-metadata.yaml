@@ -16,7 +16,7 @@ featureList:
   - quality-profile
   - remove-chimeras
   - sample-inference
-metadataStatus: Incomplete
+metadataStatus: Released
 description: This package infers exact sequence variants (SVs) from amplicon data,
   replacing the commonly used and coarser OTU clustering approach. This pipeline inputs
   demultiplexed fastq files, and outputs the sequence variants and their sample-wise
