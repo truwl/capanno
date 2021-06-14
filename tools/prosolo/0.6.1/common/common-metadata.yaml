@@ -16,15 +16,11 @@ description: "Accurate Variant Calling from Single Cell DNA Sequencing Data.\n\n
   \ sequencing technology."
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/prosolo/prosolo
 license: GPL-3.0
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/prosolo/prosolo
-  - name:
     description:
-      - Repository
     URL: https://github.com/prosolo/benchmarking_prosolo
 contactPoint:
   - name:
