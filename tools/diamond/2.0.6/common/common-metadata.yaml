@@ -28,9 +28,11 @@ WebSite:
     URL: https://github.com/bbuchfink/diamond/blob/master/diamond_manual.pdf
 contactPoint:
   - name:
-    email: buchfink@gmail.com
+    email:
     identifier:
 publication:
+  - identifier: https://doi.org/10.1038/s41592-021-01101-x
+    headline: Sensitive protein alignments at tree-of-life scale using DIAMOND
   - identifier: 10.1038/nmeth.3176
     headline: Fast and sensitive protein alignment using DIAMOND
 keywords:
@@ -39,8 +41,8 @@ keywords:
   - http://edamontology.org/operation_0258
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Benjamin Buchfink
+    email: buchfink@gmail.com
     identifier:
 programmingLanguage:
   - Shell

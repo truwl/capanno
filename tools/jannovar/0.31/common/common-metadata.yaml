@@ -10,8 +10,8 @@ description: Stand-alone Java application as well as a Java library designed to 
   used in larger software frameworks for exome analysis.
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/charite/jannovar
+license: BSD2
 WebSite:
   - name:
     description: homepage

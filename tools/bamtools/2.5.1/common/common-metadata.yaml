@@ -13,12 +13,9 @@ description: BamTools provides a fast, flexible C++ API & toolkit for reading, w
   and managing BAM files.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/pezmaster31/bamtools
 license: MIT
 WebSite:
-  - name:
-    description: homepage
-    URL: https://github.com/pezmaster31/bamtools
   - name:
     description: documentation
     URL: https://github.com/pezmaster31/bamtools/wiki
@@ -27,7 +24,7 @@ contactPoint:
     email: derekwbarnett@gmail.com
     identifier:
 publication:
-  - identifier:
+  - identifier: https://doi.org/10.1093/bioinformatics/btr174
     headline: 'Bamtools: A C++ API and toolkit for analyzing and managing BAM files'
 keywords:
   - http://edamontology.org/topic_3168

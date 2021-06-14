@@ -13,19 +13,22 @@ description: LoFreq* (i.e. LoFreq version 2) is a fast and sensitive variant-cal
   methods or only used for filtering.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/CSB5/lofreq
 license:
 WebSite:
   - name:
     description: homepage
     URL: https://csb5.github.io/lofreq/
 contactPoint:
-  - name:
-    email:
+  - name: Andreas Wilm
+    email: wilma@gis.a-star.edu.sg
+    identifier:
+  - name: Niranjan Nagarajan
+    email: wilma@gis.a-star.edu.sg
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/nar/gks918
+    headline: 'LoFreq: a sequence-quality aware, ultra-sensitive variant caller for uncovering cell-population heterogeneity from high-throughput sequencing datasets'
 keywords:
   - name:
     category:

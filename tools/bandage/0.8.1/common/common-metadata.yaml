@@ -21,8 +21,8 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://github.com/rrwick/Bandage
+    headline: 'Bandage: interactive visualization of de novo genome assemblies'
 keywords:
   - http://edamontology.org/operation_0524
 alternateName:

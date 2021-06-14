@@ -11,27 +11,22 @@ description: Disambiguating two species in next generation sequencing data from 
   the components at very high sensitivity and specificity.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/AstraZeneca-NGS/disambiguate
 license: MIT
 WebSite:
-  - name:
-    description: homepage
-    URL: https://github.com/AstraZeneca-NGS/disambiguate
-  - name:
-    description:
-      - Repository
+  - name: bioconda
+    description: Repository
     URL: http://bioconda.github.io/recipes/ngs-disambiguate/README.html
-  - name:
-    description:
-      - Repository
+  - name: quay
+    description: container
     URL: https://quay.io/repository/biocontainers/ngs-disambiguate
 contactPoint:
-  - name:
-    email:
+  - name: Miika J. Ahdesmäki
+    email: miika.ahdesmaki@astrazeneca.com
     identifier:
 publication:
-  - identifier: 10.12688/f1000research.10082.2
-    headline:
+  - identifier: https://doi.org/10.12688/f1000research.10082.1
+    headline: An open-source application for disambiguating two species in next generation sequencing data from grafted samples.
 keywords:
   - http://edamontology.org/topic_3168
   - http://edamontology.org/topic_3379

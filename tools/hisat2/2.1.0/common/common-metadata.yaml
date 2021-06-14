@@ -12,16 +12,12 @@ description: Alignment program for mapping next-generation sequencing reads (bot
   genome).
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/infphilo/hisat2
 license: GPL-3.0
 WebSite:
   - name:
     description: homepage
     URL: https://ccb.jhu.edu/software/hisat2/index.shtml
-  - name:
-    description:
-      - Repository
-    URL: https://github.com/infphilo/hisat2
   - name:
     description:
       - Issue tracker
@@ -30,9 +26,13 @@ WebSite:
     description: documentation
     URL: https://ccb.jhu.edu/software/hisat2/manual.shtml
 contactPoint:
-  - name:
-    email:
+  - name: Daehwan Kim
+    email: infphilo@gmail.com
     identifier:
+  - name: Chanchee Park
+    email: parkchanhee@gmail.com
+    identifier:
+
 publication:
   - identifier: 10.1038/nmeth.3317
     headline: 'HISAT: A fast spliced aligner with low memory requirements'

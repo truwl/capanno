@@ -24,11 +24,11 @@ WebSite:
     description: documentation
     URL: http://bcb.dfci.harvard.edu/~gcyuan/MAnorm/MAnorm.htm#Downloads
 contactPoint:
-  - name:
+  - name: Yijing Zhang
     email: zhangyij@gmail.com
     identifier:
 publication:
-  - identifier:
+  - identifier: https://doi.org/10.1186/gb-2012-13-3-r16
     headline: 'MAnorm: A robust model for quantitative comparison of ChIP-Seq data
       sets'
 keywords:

@@ -24,8 +24,8 @@ WebSite:
     description: documentation
     URL: http://bowtie-bio.sourceforge.net/manual.shtml
 contactPoint:
-  - name: Ben Langmead
-    email: langmea@cs.jhu.edu
+  - name:
+    email:
     identifier:
 publication:
   - identifier: 10.1186/gb-2009-10-3-r25
@@ -42,8 +42,8 @@ keywords:
   - http://edamontology.org/operation_0292
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Ben Langmead
+    email: langmea@cs.jhu.edu
     identifier:
 programmingLanguage:
   - C++

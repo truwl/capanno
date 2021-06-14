@@ -9,26 +9,26 @@ metadataStatus: Released
 description: Plotting tool for long read sequencing data and alignments.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/wdecoster/NanoPlot
 license:
 WebSite:
-  - name:
-    description:
-    URL:
+  - name: Nanoplot Online
+    description: Nanoplot web service
+    URL: http://nanoplot.bioinf.be/
 contactPoint:
   - name:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/bioinformatics/bty149
+    headline: 'NanoPack: visualizing and processing long-read sequencing data'
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Wouter De Coster
+    email: decosterwouter@gmail.com
     identifier:
 programmingLanguage:
 datePublished:

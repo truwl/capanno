@@ -9,25 +9,20 @@ metadataStatus: Released
 description: Collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/agordon/fastx_toolkit
 license: AGPL-3.0
 WebSite:
   - name:
     description: homepage
     URL: http://hannonlab.cshl.edu/fastx_toolkit/
   - name:
-    description:
-      - Repository
-    URL: https://github.com/agordon/fastx_toolkit
-  - name:
-    description:
-      - Issue tracker
+    description: Issue tracker
     URL: https://github.com/agordon/fastx_toolkit/issues
   - name:
     description: documentation
     URL: http://hannonlab.cshl.edu/fastx_toolkit/galaxy.html
 contactPoint:
-  - name:
+  - name: Assaf Gordon
     email: gordon@cshl.edu
     identifier:
 publication:

@@ -16,7 +16,7 @@ description: Infernal ("INFERence of RNA ALignment") is for searching DNA sequen
   primary sequence.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/EddyRivasLab/infernal
 license:
 WebSite:
   - name:
@@ -27,14 +27,14 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/bioinformatics/btt509
+    headline: 'Infernal 1.1: 100-fold faster RNA homology searches'
 keywords:
   - http://edamontology.org/operation_2478
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Eric P. Nawrocki
+    email: nawrockie@janelia.hhmi.org
     identifier:
 programmingLanguage: []
 datePublished:
