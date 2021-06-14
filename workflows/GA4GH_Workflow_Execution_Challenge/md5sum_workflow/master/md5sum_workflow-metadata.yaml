@@ -10,7 +10,7 @@ softwareVersion:
 metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: cwl
-graphStatus: Incomplete
+graphStatus: Released
 executable: false
 current: true
 runit_filename: md5sum-workflow.cwl

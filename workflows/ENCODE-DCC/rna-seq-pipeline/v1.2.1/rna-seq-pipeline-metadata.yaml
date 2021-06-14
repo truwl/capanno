@@ -14,6 +14,7 @@ executable: true
 current: true
 runit_filename: rna-seq-pipeline.wdl
 runit_pipeline_name: rna-seq-pipeline
+inputs_file: rna-seq-pipeline-inputs.json
 runit_git_hash: v1.2.1
 codeRepository:
   URL: https://github.com/ENCODE-DCC/rna-seq-pipeline

@@ -30,7 +30,7 @@ graphStatus: Incomplete
 runit_filename: rnaseq/rnaseq_pipeline_fastq.wdl
 runit_pipeline_name: gtex-rna
 runit_git_hash: v10
-inputs_file: gtex-rna_inputs.json
+inputs_file: ../gtex-rna_inputs.json # relative to runit_filename path.
 executable: true
 current: true
 codeRepository:
