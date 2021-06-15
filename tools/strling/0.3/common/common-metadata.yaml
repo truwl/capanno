@@ -18,12 +18,12 @@ description: STRling (pronounced like “sterling”) is a method to detect larg
   precisely discover the position of the STR expansion in the reference genome.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/quinlan-lab/STRling
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/quinlan-lab/STRling
+    description: Documentation
+    URL: https://strling.readthedocs.io/en/latest/
 contactPoint:
   - name:
     email:
@@ -35,8 +35,11 @@ keywords:
   - http://edamontology.org/operation_0379
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Harriet Dashnow
+    email: h.dashnow@gmail.com
+    identifier:
+  - name: Brent Pedersen
+    email: bpederse@gmail.com
     identifier:
 programmingLanguage: []
 datePublished:

@@ -9,24 +9,27 @@ metadataStatus: Released
 description: Generate mutated sequence files from a reference genome.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/CFSAN-Biostatistics/snp-mutator
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/CFSAN-Biostatistics/snp-mutator
+    description: Documentation
+    URL: https://snp-mutator.readthedocs.io/en/latest/readme.html
 contactPoint:
   - name:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.7717/peerj-cs.20
+    headline: 'CFSAN SNP Pipeline: an automated method for constructing SNP matrices from next-generation sequence data'
 keywords:
   - http://edamontology.org/operation_0364
 alternateName:
 creator:
-  - name:
+  - name: Steve Davis
+    email: steven.davis@fda.hhs.gov
+    identifier:
+  - name:  James B. Pettengill
     email:
     identifier:
 programmingLanguage: []

@@ -24,7 +24,7 @@ WebSite:
     description: documentation
     URL: http://bioinf.wehi.edu.au/subread-package/SubreadUsersGuide.pdf
 contactPoint:
-  - name: Dr Wei Shi
+  - name: Wei Shi
     email: shi@wehi.edu.au
     identifier:
 publication:
