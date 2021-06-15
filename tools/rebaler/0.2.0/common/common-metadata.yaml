@@ -11,12 +11,12 @@ description: Rebaler is a program for conducting reference-based assemblies usin
   sequences.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/rrwick/Rebaler
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/rrwick/Rebaler
+    description:
+    URL:
 contactPoint:
   - name:
     email:
@@ -28,8 +28,8 @@ keywords:
   - http://edamontology.org/operation_0524
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Ryan Wick
+    email: rrwick@gmail.com
     identifier:
 programmingLanguage: []
 datePublished:

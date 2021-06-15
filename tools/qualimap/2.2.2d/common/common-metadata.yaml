@@ -11,7 +11,7 @@ description: Platform-independent application written in Java and R that provide
   the quality control of alignment sequencing data.
 codeRepository:
   name:
-  URL:
+  URL: https://bitbucket.org/kokonech/qualimap/
 license:
 WebSite:
   - name:
@@ -25,14 +25,19 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
+  - identifier: https://doi.org/10.1093/bioinformatics/bts503
     headline: 'Qualimap: Evaluating next-generation sequencing alignment data'
+  - identifier: https://doi.org/10.1093/bioinformatics/btv566
+    headline: 'Qualimap 2: advanced multi-sample quality control for high-throughput sequencing data'
 keywords:
   - http://edamontology.org/topic_3572
   - http://edamontology.org/operation_3218
 alternateName:
 creator:
-  - name:
+  - name: Ana Conesa
+    email: aconesa@cipf.es
+    identifier:
+  - name: Konstantin Okonechnikov
     email:
     identifier:
 programmingLanguage:

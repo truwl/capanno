@@ -13,26 +13,26 @@ description: "RazerS 3 is a tool for mapping millions of short genomic reads ont
   \ as well as gaps."
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/seqan/seqan/tree/master/apps/razers3
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/seqan/seqan/tree/master/apps/razers3
+    description:
+    URL:
 contactPoint:
   - name:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/bioinformatics/bts505
+    headline: 'RazerS 3: faster, fully sensitive read mapping'
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: David Weese
+    email: david.weese@fu-berlin.de
     identifier:
 programmingLanguage: []
 datePublished:

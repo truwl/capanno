@@ -41,8 +41,17 @@ keywords:
   - http://edamontology.org/operation_3799
 alternateName:
 creator:
-  - name:
+  - name: Louis Dijkstra
+    email: dijkstra@leibniz-bips.de
+    identifier:
+  - name: Johannes Köster
+    email: johannes.koester@uni-due.de
+    identifier:
+  - name: David Lähnemann
     email:
+    identifier:
+  - name: Alexander Schönhuth
+    email: alexander.schonhuth@cwi.nl
     identifier:
 programmingLanguage:
   - Shell

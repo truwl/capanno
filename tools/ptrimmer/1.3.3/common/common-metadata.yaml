@@ -9,15 +9,14 @@ metadataStatus: Released
 description: Tool to trim primers of multiplex deep sequencing data.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/DMU-lilab/pTrimmer
 license: GPL-3.0
 WebSite:
   - name:
     description: homepage
-    URL: https://github.com/DMU-lilab/pTrimmer
+    URL:
   - name:
-    description:
-      - Issue tracker
+    description: Issue tracker
     URL: https://github.com/DMU-lilab/pTrimmer/issues
   - name:
     description: documentation

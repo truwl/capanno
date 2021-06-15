@@ -13,16 +13,12 @@ description: Shovill is a pipeline for assembly of bacterial isolate genomes fro
   take advantage of the pre- and post-processing the Shovill provides with those too.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/tseemann/shovill
 license: GPL-3.0
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/tseemann/shovill
-  - name:
     description:
-      - Repository
-    URL: https://github.com/tseemann/shovill
+    URL:
 contactPoint:
   - name:
     email:
@@ -38,7 +34,7 @@ keywords:
 alternateName:
 creator:
   - name: Torsten Seemann
-    email:
+    email: torsten.seemann@monash.edu
     identifier: https://orcid.org/0000-0001-6046-610X
 programmingLanguage:
   - Perl
