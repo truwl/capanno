@@ -14,7 +14,7 @@ description: AdapterRemoval searches for and removes adapter sequences from High
   sequence for paired-ended reads, if which this information is not available.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/MikkelSchubert/adapterremoval
 license:
 WebSite:
   - name:
@@ -25,15 +25,15 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1186/s13104-016-1900-2
+    headline: "AdapterRemoval v2: rapid adapter trimming, identification, and read merging"
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Mekkel Schubert
+    email: MikkelSch@gmail.com
     identifier:
 programmingLanguage: []
 datePublished:

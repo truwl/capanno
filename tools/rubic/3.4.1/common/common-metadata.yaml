@@ -13,19 +13,19 @@ description: RUBIC detects recurrent copy number aberrations using copy number b
   on the level of called regions, rather than at the probe level.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/NKI-CCB/RUBIC
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/NKI-CCB/RUBIC
+    description:
+    URL:
 contactPoint:
-  - name:
-    email:
+  - name:  Lodewyk Wessels
+    email: l.wessels@nki.nl
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1038/ncomms12159
+    headline: RUBIC identifies driver genes by detecting recurrent DNA copy number breaks
 keywords:
   - http://edamontology.org/operation_3964
 alternateName:

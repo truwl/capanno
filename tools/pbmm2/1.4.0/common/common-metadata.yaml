@@ -15,12 +15,12 @@ description: pbmm2 is a SMRT C++ wrapper for minimap2's C API. Its purpose is to
   and especially runtime. pbmm2 is the official replacement for BLASR.
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/PacificBiosciences/pbmm2
+license: BSD-3-Clause
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/PacificBiosciences/pbmm2
+    description:
+    URL:
 contactPoint:
   - name:
     email:
@@ -33,8 +33,8 @@ keywords:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Armin Töpfer
+    email: armin.toepfer@gmail.com
     identifier:
 programmingLanguage: []
 datePublished:

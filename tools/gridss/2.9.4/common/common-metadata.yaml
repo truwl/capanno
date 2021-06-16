@@ -14,33 +14,26 @@ description: A high-speed next-gen sequencing structural variation caller. It ca
   split read, and read pair evidence.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/PapenfussLab/gridss/
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/PapenfussLab/gridss
-  - name:
-    description:
-      - Repository
-    URL: https://github.com/PapenfussLab/gridss/
-  - name:
     description: documentation
-    URL: https://github.com/PapenfussLab/gridss/blob/master/Readme.md
+    URL: https://github.com/PapenfussLab/gridss/wiki/GRIDSS-Documentation
 contactPoint:
-  - name: Australia
-    email:
+  - name: Anthony T. Papenfuss
+    email: papenfuss@wehi.edu.au
     identifier:
 publication:
   - identifier: 10.1101/110387
-    headline:
+    headline: 'GRIDSS: sensitive and specific genomic rearrangement detection using positional de Bruijn graph assembly'
 keywords:
   - http://edamontology.org/topic_0122
   - http://edamontology.org/topic_3175
   - http://edamontology.org/operation_3228
 alternateName:
 creator:
-  - name: D Cameron
+  - name: Daniel Cameron
     email:
     identifier:
 programmingLanguage:

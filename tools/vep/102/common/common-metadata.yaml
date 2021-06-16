@@ -14,7 +14,7 @@ description: Tool for predicting effects of variants for any genome in Ensembl o
   powerful is the Perl script version. See McLaren et al., 2016, Genome Biology
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/Ensembl/ensembl-vep
 license: Apache-2.0
 WebSite:
   - name:

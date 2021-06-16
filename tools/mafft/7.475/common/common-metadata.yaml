@@ -10,22 +10,21 @@ description: MAFFT (Multiple Alignment using Fast Fourier Transform) is a high s
   multiple sequence alignment program.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/GSLBiotech/mafft
 license: BSD-Source-Code
 WebSite:
   - name:
     description: homepage
     URL: http://mafft.cbrc.jp/alignment/server/index.html
   - name:
-    description:
-      - Galaxy service
+    description: Galaxy service
     URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/mafft/rbc_mafft/7.273.1
   - name:
     description: documentation
     URL: https://mafft.cbrc.jp/alignment/software/tips0.html
 contactPoint:
-  - name: Contact Form
-    email:
+  - name: Katzutaka Katoh
+    email: katoh@ifrec.osaka-u.ac.jp
     identifier:
 publication:
   - identifier: 10.1007/978-1-62703-646-7_8

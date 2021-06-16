@@ -29,7 +29,7 @@ contactPoint:
     email: jonsson.hakon@gmail.com
     identifier:
 publication:
-  - identifier:
+  - identifier: https://doi.org/10.1093/bioinformatics/btr347
     headline: 'mapDamage: Testing for damage patterns in ancient DNA sequences'
 keywords:
   - http://edamontology.org/topic_0654

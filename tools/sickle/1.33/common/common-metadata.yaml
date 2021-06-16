@@ -12,12 +12,9 @@ description: A  tool that uses sliding windows along with quality and length thr
   determines when the quality is sufficiently high enough to trim the 5'-end of reads.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/najoshi/sickle
 license: MIT
 WebSite:
-  - name:
-    description: homepage
-    URL: https://github.com/najoshi/sickle
   - name:
     description: documentation
     URL: https://github.com/najoshi/sickle/blob/master/README.md
@@ -27,13 +24,17 @@ contactPoint:
     identifier:
 publication:
   - identifier:
-    headline:
+    headline: 'Sickle: A sliding-window, adaptive, quality-based trimming tool for FastQ files'
+
 keywords:
   - http://edamontology.org/topic_3572
   - http://edamontology.org/operation_3192
 alternateName:
 creator:
-  - name:
+  - name: Nikhil A Joshi
+    email: nikhil.joshi@yale.edu
+    identifier:
+  - name: Joseph Fass
     email:
     identifier:
 programmingLanguage:

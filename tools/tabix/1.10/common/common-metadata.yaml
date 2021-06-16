@@ -19,8 +19,8 @@ description: "Tabix indexes a TAB-delimited genome position file in.tab.bgz and 
   \ positions greater than that, you will need to use a CSI index."
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/samtools/htslib
+license: MIT
 WebSite:
   - name:
     description: homepage
@@ -37,8 +37,8 @@ keywords:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Heng Li
+    email: hengli@broadinstitute.org
     identifier:
 programmingLanguage: []
 datePublished:

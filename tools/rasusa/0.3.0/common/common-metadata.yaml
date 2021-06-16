@@ -9,26 +9,26 @@ metadataStatus: Released
 description: Produces an unbiased subsample of your reads
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/mbhall88/rasusa
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/mbhall88/rasusa
+    description:
+    URL:
 contactPoint:
   - name:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: http://doi.org/10.5281/zenodo.3731394
+    headline: 'Rasusa: Randomly subsample sequencing reads to a specified coverage'
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Michael Hall
+    email: michael@mbh.sh
     identifier:
 programmingLanguage: []
 datePublished:

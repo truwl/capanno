@@ -11,19 +11,19 @@ description: A fast and effective stochastic algorithm to infer phylogenetic tre
   likelihoods with similar computing time
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/Cibiv/IQ-TREE
 license:
 WebSite:
   - name:
     description: homepage
     URL: http://www.iqtree.org/
 contactPoint:
-  - name:
-    email:
+  - name: Bui Quang Minh
+    email: minh.bui@univie.ac.at
     identifier:
 publication:
   - identifier: 10.1093/molbev/msu300
-    headline:
+    headline: 'IQ-TREE: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies'
 keywords:
   - http://edamontology.org/topic_3293
   - http://edamontology.org/operation_0324

@@ -16,12 +16,12 @@ description: Primerclip™ is an alignment-based primer trimming tool designed t
   panel increases.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/swiftbiosciences/primerclip
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/swiftbiosciences/primerclip
+    description:
+    URL:
 contactPoint:
   - name:
     email:
@@ -34,8 +34,8 @@ keywords:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Jonathan Irish
+    email: irish@swiftbiosci.com
     identifier:
 programmingLanguage: []
 datePublished:

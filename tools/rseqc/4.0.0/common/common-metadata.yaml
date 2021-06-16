@@ -22,7 +22,7 @@ description: Provides a number of useful modules that can comprehensively evalua
 codeRepository:
   name:
   URL:
-license:
+license: GPLv3
 WebSite:
   - name:
     description: homepage
@@ -44,8 +44,14 @@ keywords:
   - http://edamontology.org/operation_2409
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Liguo Wang
+    email: wangliguo78@gmail.com
+    identifier:
+  - name: Shengqin Wang
+    email: wzsqwang@gmail.com
+    identifier:
+  - name: Wei Li superliwei@gmail.com
+    email: superliwei@gmail.com
     identifier:
 programmingLanguage: []
 datePublished:

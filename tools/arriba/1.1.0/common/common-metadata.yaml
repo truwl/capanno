@@ -12,7 +12,7 @@ description: Arriba is a command-line tool to detect gene fusions from RNA-Seq d
   Arriba is the winner of the DREAM SMC-RNA Challenge.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/suhrig/arriba/
 license: MIT
 WebSite:
   - name:
@@ -30,8 +30,8 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1101/gr.257246.119
+    headline: Accurate and efficient detection of gene fusions from RNA sequencing data.
 keywords:
   - http://edamontology.org/topic_3512
   - http://edamontology.org/topic_3320
@@ -40,8 +40,8 @@ keywords:
   - http://edamontology.org/operation_3199
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Sebastian Uhrig
+    email: s.uhrig@dkfz.de
     identifier:
 programmingLanguage:
   - C++

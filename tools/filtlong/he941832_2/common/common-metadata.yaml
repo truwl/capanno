@@ -12,12 +12,12 @@ description: Filtlong is a tool for filtering long reads by quality. It can take
   pass the filter.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/rrwick/Filtlong
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/rrwick/Filtlong
+    description:
+    URL:
 contactPoint:
   - name:
     email:

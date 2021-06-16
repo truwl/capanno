@@ -12,12 +12,9 @@ description: DeepVariant is a deep learning-based variant caller that takes alig
   in a standard VCF or gVCF file.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/google/deepvariant
 license: BSD-3-Clause
 WebSite:
-  - name:
-    description: homepage
-    URL: https://github.com/google/deepvariant
   - name:
     description:
       - Issue tracker
@@ -27,8 +24,10 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier: 10.1093/BIOINFORMATICS/BTAA1081
-    headline:
+  - identifier: https://doi.org/10.1038/nbt.4235
+    headline: A universal SNP and small-indel variant caller using deep neural networks
+  - identifier: https://doi.org/10.1093/bioinformatics/btaa1081
+    headline: Accurate, scalable cohort variant calls using DeepVariant and GLnexus
 keywords:
   - http://edamontology.org/topic_3673
   - http://edamontology.org/topic_3676

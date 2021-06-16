@@ -18,12 +18,18 @@ description: OpenCRAVAT is a new open source, scalable decision support system t
   the catalog is being actively developed and growing larger every month.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/KarchinLab/open-cravat
 license:
 WebSite:
   - name:
     description: homepage
     URL: https://opencravat.org/
+  - name:
+    description: Web service
+    URL: https://run.opencravat.org/
+  - name:
+    description: Documentation
+    URL: https://open-cravat.readthedocs.io/en/latest/
 contactPoint:
   - name:
     email:

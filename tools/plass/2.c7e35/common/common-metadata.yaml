@@ -9,23 +9,18 @@ metadataStatus: Released
 description: 'Protein-Level ASSembler (PLASS): sensitive and precise protein assembler'
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/soedinglab/plass
 license: GPL-3.0
 WebSite:
   - name:
     description: homepage
     URL: https://plass.mmseqs.com
   - name:
-    description:
-      - Issue tracker
+    description: Issue tracker
     URL: https://github.com/soedinglab/plass/issues
-  - name:
-    description:
-      - Repository
-    URL: https://github.com/soedinglab/plass
 contactPoint:
   - name: Martin Steinegger
-    email:
+    email: martin.steinegger@snu.ac.kr
     identifier: http://orcid.org/0000-0001-8781-9753
   - name: Johannes Söding
     email:

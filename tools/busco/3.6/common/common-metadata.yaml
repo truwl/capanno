@@ -11,7 +11,7 @@ description: Provides measures for quantitative assessment of genome assembly, g
   of gene content from near-universal single-copy orthologs.
 codeRepository:
   name:
-  URL:
+  URL: http://gitlab.com/ezlab/busco
 license:
 WebSite:
   - name:
@@ -21,10 +21,14 @@ WebSite:
     description: documentation
     URL: http://gitlab.com/ezlab/busco/raw/master/BUSCO_v3_userguide.pdf
 contactPoint:
-  - name:
+  - name: Evgeny M. Zdobnov
     email: evgeny.zdobnov@unige.ch
     identifier:
 publication:
+  - identifier: 10.1007/978-1-4939-9173-0_14
+    headline: 'BUSCO: Assessing Genome Assembly and Annotation Completeness'
+  - identifier: 10.1093/molbev/msx319
+    headline: 'BUSCO applications from quality assessments to gene prediction and phylogenomics'
   - identifier: 10.1093/bioinformatics/btv351
     headline: 'BUSCO: Assessing genome assembly and annotation completeness with single-copy
       orthologs'

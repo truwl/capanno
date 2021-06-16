@@ -56,9 +56,6 @@ codeRepository:
 license: GPL-2.0
 WebSite:
   - name:
-    URL: https://github.com/arq5x/bedtools2
-    description: homepage
-  - name:
     URL: http://bedtools.readthedocs.io/en/latest/
     description: documentation
   - name: bedtools-discuss
@@ -76,8 +73,11 @@ keywords:
   - http://edamontology.org/operation_2429
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Aaron Quinlan
+    email: aaronquinlan@gmail.com
+    identifier:
+  - name: Ira M. Hall
+    email: imh4y@virginia.edu
     identifier:
 programmingLanguage:
   - C++

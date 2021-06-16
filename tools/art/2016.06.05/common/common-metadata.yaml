@@ -21,16 +21,10 @@ WebSite:
   - name:
     description: homepage
     URL: https://www.niehs.nih.gov/research/resources/software/biostatistics/art/index.cfm
-  - name:
-    description:
-      - Software catalogue
-    URL: https://www.niehs.nih.gov/research/resources/software/biostatistics/art/index.cfm
-  - name:
-    description: documentation
-    URL: https://www.niehs.nih.gov/research/resources/software/biostatistics/art/index.cfm
+
 contactPoint:
-  - name:
-    email:
+  - name: Weichun Huang
+    email: huang6@niehs.nih.gov
     identifier:
 publication:
   - identifier: 10.1093/bioinformatics/btr708

@@ -6,29 +6,29 @@ identifier: TL_b5fc93.8d
 featureList:
   - spades
 metadataStatus: Released
-description:
+description: SPAdes – St. Petersburg genome assembler – is an assembly toolkit containing various assembly pipelines.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/ablab/spades
 license:
 WebSite:
   - name:
-    description:
-    URL:
+    description: Hompage
+    URL: https://cab.spbu.ru/software/spades/
 contactPoint:
   - name:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1002/cpbi.102
+    headline: Using SPAdes De Novo Assembler
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Anton Korobeynikov
+    email: a.korobeynikov@spbu.ru
     identifier:
 programmingLanguage:
 datePublished:

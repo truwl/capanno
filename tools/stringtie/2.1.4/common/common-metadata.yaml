@@ -11,7 +11,7 @@ description: Fast and highly efficient assembler of RNA-Seq alignments into pote
   assembly step to assemble and quantitate full-length transcripts representing multiple
   splice variants for each gene locus.
 codeRepository:
-  name:
+  name: https://github.com/gpertea/stringtie
   URL:
 license: Artistic-2.0
 WebSite:
@@ -20,17 +20,13 @@ WebSite:
     URL: https://ccb.jhu.edu/software/stringtie/
   - name:
     description:
-      - Repository
-    URL: https://github.com/gpertea/stringtie
-  - name:
-    description:
       - Issue tracker
     URL: https://github.com/gpertea/stringtie/issues
   - name:
     description: documentation
     URL: https://ccb.jhu.edu/software/stringtie/index.shtml?t=manual
 contactPoint:
-  - name:
+  - name: Mihaela Pertea
     email: mpertea@jhu.edu
     identifier:
 publication:

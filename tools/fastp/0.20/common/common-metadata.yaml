@@ -10,19 +10,19 @@ description: A tool designed to provide fast all-in-one preprocessing for FastQ 
   This tool is developed in C++ with multithreading supported to afford high performance.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/OpenGene/fastp
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/OpenGene/fastp
+    description:
+    URL:
 contactPoint:
-  - name:
-    email:
+  - name: Shifu Chen
+    email: chen@haplox.com
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/bioinformatics/bty560
+    headline: 'fastp: an ultra-fast all-in-one FASTQ preprocessor'
 keywords:
   - name:
     category:
