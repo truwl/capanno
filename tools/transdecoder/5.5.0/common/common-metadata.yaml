@@ -12,12 +12,18 @@ description: TransDecoder identifies candidate coding regions within transcript 
   constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/TransDecoder/TransDecoder
 license:
 WebSite:
   - name:
     description: homepage
     URL: https://github.com/TransDecoder/TransDecoder/wiki
+  - name:
+    description: Galaxy
+    URL: https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/transdecoder/transdecoder/5.5.0+galaxy0
+  - name:
+    description: Google Group
+    URL: https://groups.google.com/forum/#!forum/transdecoder-users
 contactPoint:
   - name:
     email:
@@ -30,8 +36,8 @@ keywords:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Brian Haas
+    email: brianjohnhaas@gmail.com
     identifier:
 programmingLanguage: []
 datePublished:

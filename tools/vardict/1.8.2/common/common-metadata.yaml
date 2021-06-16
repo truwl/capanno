@@ -13,15 +13,15 @@ description: VarDict is an ultra sensitive variant caller for both single and pa
   than many Java based variant callers.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/AstraZeneca-NGS/VarDict
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/AstraZeneca-NGS/VarDict
+    description:
+    URL:
 contactPoint:
-  - name:
-    email:
+  - name: Polina Bevad
+    email: polina_bevad@epam.com
     identifier:
 publication:
   - identifier: 10.1093/nar/gkw227
