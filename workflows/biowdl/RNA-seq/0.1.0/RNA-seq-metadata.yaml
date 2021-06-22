@@ -10,10 +10,10 @@ metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
-runit_filename: RNA-seq.wdl
-runit_pipeline_name: biowdl-rna-seq-pipeline
-runit_git_hash: v4.0.0
-inputs_file: rnaseq_inputs.json
+workflowFile: RNA-seq.wdl
+workflowName: biowdl-rna-seq-pipeline
+gitTag: v4.0.0
+inputsTemplate: rnaseq_inputs.json
 executable: true
 current: true
 codeRepository:

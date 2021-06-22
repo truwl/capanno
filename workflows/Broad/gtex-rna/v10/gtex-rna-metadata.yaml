@@ -27,10 +27,10 @@ metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
-runit_filename: rnaseq/rnaseq_pipeline_fastq.wdl
-runit_pipeline_name: gtex-rna
-runit_git_hash: v10
-inputs_file: ../gtex-rna_inputs.json # relative to runit_filename path.
+workflowFile: rnaseq/rnaseq_pipeline_fastq.wdl
+workflowName: gtex-rna
+gitTag: v10
+inputsTemplate: ../gtex-rna_inputs.json # relative to workflowFile path.
 executable: true
 current: true
 codeRepository:

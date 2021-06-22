@@ -13,9 +13,9 @@ workflowLanguage: cwl
 graphStatus: Released
 executable: false
 current: true
-runit_filename: md5sum-workflow.cwl
-runit_pipeline_name:
-runit_git_hash:
+workflowFile: md5sum-workflow.cwl
+workflowName:
+gitTag:
 
 
 keywords:

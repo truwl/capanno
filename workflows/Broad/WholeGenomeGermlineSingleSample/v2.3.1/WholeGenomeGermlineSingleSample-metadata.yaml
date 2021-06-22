@@ -22,10 +22,10 @@ metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
-runit_filename: WholeGenomeGermlineSingleSample_v2.3.1.wdl
-runit_pipeline_name: WholeGenomeGermlineSingleSample
-runit_git_hash: v2.3.1
-inputs_file: wgs_inputs.json
+workflowFile: WholeGenomeGermlineSingleSample_v2.3.1.wdl
+workflowName: WholeGenomeGermlineSingleSample
+gitTag: v2.3.1
+inputsTemplate: wgs_inputs.json
 executable: true
 current: true
 codeRepository:

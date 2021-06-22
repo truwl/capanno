@@ -13,9 +13,9 @@ workflowLanguage: cwl
 graphStatus: Released
 executable: false
 current: true
-runit_filename: checker-workflow-wrapping-workflow.cwl
-runit_pipeline_name:
-runit_git_hash:
+workflowFile: checker-workflow-wrapping-workflow.cwl
+workflowName:
+gitTag:
 
 keywords:
 

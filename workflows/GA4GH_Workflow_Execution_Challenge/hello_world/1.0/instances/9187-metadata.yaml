@@ -3,10 +3,6 @@ workflowVersion: 1
 workflowIdentifier: WF_0b650e.e4
 name:
 jobStatus: Released
-softwareVersion:
-  versionName: 1.0
-  includedVersions:
-    - 1.0
 identifier: WF_0b650e.e4.9187
 inputObjects:
   - id: template_file

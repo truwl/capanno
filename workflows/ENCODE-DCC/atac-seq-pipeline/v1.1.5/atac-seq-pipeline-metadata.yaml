@@ -23,9 +23,9 @@ softwareVersion:
 metadataStatus: Released
 workflowStatus: Released
 graphStatus: Incomplete
-runit_filename: atac.wdl
-runit_pipeline_name: atac-seq-pipeline
-runit_git_hash: v1.1.5
-inputs_file: atac-inputs_sidelined.json
+workflowFile: atac.wdl
+workflowName: atac-seq-pipeline
+gitTag: v1.1.5
+inputsTemplate: atac-inputs_sidelined.json
 current: false
 executable: false

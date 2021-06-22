@@ -9,9 +9,9 @@ softwareVersion:
 metadataStatus: Released
 workflowStatus: Released
 graphStatus: Incomplete
-runit_filename: atac.wdl
-runit_pipeline_name: atac-seq-pipeline
-runit_git_hash: v1.9.0
+workflowFile: atac.wdl
+workflowName: atac-seq-pipeline
+gitTag: v1.9.0
 executable: true
 current: true
 codeRepository:

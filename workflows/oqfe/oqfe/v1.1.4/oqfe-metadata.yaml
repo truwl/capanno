@@ -9,10 +9,10 @@ metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
-runit_filename: oqfe.wdl
-runit_pipeline_name: oqfe_wdl
-runit_git_hash: v1.0.11
-inputs_file: oqfe_inputs.json
+workflowFile: oqfe.wdl
+workflowName: oqfe_wdl
+gitTag: v1.0.11
+inputsTemplate: oqfe_inputs.json
 executable: true
 current: true
 codeRepository:
