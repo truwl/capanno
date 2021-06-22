@@ -26,8 +26,11 @@ publication:
   - identifier: https://doi.org/10.1093/bioinformatics/bty191
     headline: 'Minimap2: pairwise alignment for nucleotide sequences'
 keywords:
-  - name:
-    category:
+  - name: Pairwise sequence alignment
+    category: operation
+  - name: Mapping
+    category: topic
+
 alternateName:
 creator:
   - name: Heng Li
@@ -37,3 +40,4 @@ programmingLanguage:
 datePublished:
 downloadURL:
 extra:
+  biotoolsID: minimap2
