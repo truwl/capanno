@@ -13,7 +13,7 @@ graphStatus: Released
 executable: false
 current: true
 workflowFile: hello_world.cwl
-workflowName:
+repoName:
 gitTag:
 identifier: WF_0b650e.e4
 keywords:

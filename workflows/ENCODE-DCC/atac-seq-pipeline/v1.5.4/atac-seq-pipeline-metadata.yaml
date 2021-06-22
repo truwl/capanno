@@ -30,6 +30,6 @@ metadataStatus: Released
 workflowStatus: Draft  # workflow is. Multiple lib items in task will be a problem.
 graphStatus: Incomplete
 workflowFile: atac.wdl
-workflowName: atac-seq-pipeline
+repoName: atac-seq-pipeline
 executable: false
 current: false

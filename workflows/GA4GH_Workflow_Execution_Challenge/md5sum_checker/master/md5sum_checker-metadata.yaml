@@ -14,7 +14,7 @@ graphStatus: Released
 executable: false
 current: true
 workflowFile: checker-workflow-wrapping-workflow.cwl
-workflowName:
+repoName:
 gitTag:
 
 keywords:

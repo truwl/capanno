@@ -11,7 +11,7 @@ workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
 workflowFile: RNA-seq.wdl
-workflowName: biowdl-rna-seq-pipeline
+repoName: biowdl-rna-seq-pipeline
 gitTag: v4.0.0
 inputsTemplate: rnaseq_inputs.json
 executable: true

@@ -10,7 +10,7 @@ workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
 workflowFile: oqfe.wdl
-workflowName: oqfe_wdl
+repoName: oqfe_wdl
 gitTag: v1.0.11
 inputsTemplate: oqfe_inputs.json
 executable: true

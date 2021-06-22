@@ -11,7 +11,7 @@ graphStatus: Released
 executable: False
 current: true
 workflowFile: cat_sort.cwl
-workflowName:
+repoName:
 gitTag:
 identifier: WF_1f4d8f.cb
 keywords:

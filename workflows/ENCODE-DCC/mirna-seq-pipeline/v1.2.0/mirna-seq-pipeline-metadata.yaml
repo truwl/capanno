@@ -14,7 +14,7 @@ graphStatus: Incomplete
 executable: true
 current: true
 workflowFile: mirna_seq_pipeline.wdl
-workflowName: mirna-seq-pipeline
+repoName: mirna-seq-pipeline
 gitTag: v1.2.0
 inputsTemplate: mirna_seq_pipeline-inputs.json
 codeRepository:

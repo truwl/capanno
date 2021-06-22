@@ -11,7 +11,7 @@ graphStatus: Incomplete
 executable: true
 current: true
 workflowFile: long-read-rna-pipeline.wdl
-workflowName: long-read-rna-pipeline
+repoName: long-read-rna-pipeline
 gitTag: v2.0.0
 inputsTemplate: long-read-rna-pipeline-inputs.json
 codeRepository:

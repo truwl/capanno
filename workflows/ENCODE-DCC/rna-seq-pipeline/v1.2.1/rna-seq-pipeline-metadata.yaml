@@ -13,7 +13,7 @@ graphStatus: Incomplete
 executable: true
 current: true
 workflowFile: rna-seq-pipeline.wdl
-workflowName: rna-seq-pipeline
+repoName: rna-seq-pipeline
 inputsTemplate: rna-seq-pipeline-inputs.json
 gitTag: v1.2.1
 codeRepository:

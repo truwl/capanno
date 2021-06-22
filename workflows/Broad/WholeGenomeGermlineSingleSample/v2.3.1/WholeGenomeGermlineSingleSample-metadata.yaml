@@ -23,7 +23,7 @@ workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
 workflowFile: WholeGenomeGermlineSingleSample_v2.3.1.wdl
-workflowName: WholeGenomeGermlineSingleSample
+repoName: WholeGenomeGermlineSingleSample
 gitTag: v2.3.1
 inputsTemplate: wgs_inputs.json
 executable: true

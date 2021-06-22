@@ -13,7 +13,7 @@ graphStatus: Incomplete
 executable: true
 current: true
 workflowFile: chip.wdl
-workflowName: chip-seq-pipeline2
+repoName: chip-seq-pipeline2
 gitTag: v1.6.0
 codeRepository:
   URL: https://github.com/ENCODE-DCC/chip-seq-pipeline2/

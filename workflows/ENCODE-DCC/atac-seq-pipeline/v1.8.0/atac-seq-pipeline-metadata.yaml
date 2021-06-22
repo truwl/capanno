@@ -11,7 +11,7 @@ workflowStatus: Released
 workflowLanguage: wdl
 graphStatus: Incomplete
 workflowFile: atac.wdl
-workflowName: atac-seq-pipeline
+repoName: atac-seq-pipeline
 gitTag: v1.8.0
 executable: true
 current: true
