@@ -34,6 +34,11 @@ keywords:
   - http://edamontology.org/topic_3170
   - http://edamontology.org/topic_3308
   - http://edamontology.org/operation_0292
+  - http://edamontology.org/operation_3680
+  - http://edamontology.org/operation_3198
+  - http://edamontology.org/operation_3199
+  - name: ENCODE
+    category: topic
 alternateName:
 creator:
   - name:

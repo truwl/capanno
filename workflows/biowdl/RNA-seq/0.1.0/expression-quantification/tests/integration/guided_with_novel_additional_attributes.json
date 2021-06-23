@@ -1,0 +1,22 @@
+{
+    "MultiBamExpressionQuantification.strandedness": "None",
+    "MultiBamExpressionQuantification.referenceGtfFile": "tests/data/reference.gtf",
+    "MultiBamExpressionQuantification.detectNovelTranscripts": true,
+    "MultiBamExpressionQuantification.additionalAttributes": ["ref_gene_id"],
+    "MultiBamExpressionQuantification.bams": [
+        {
+            "left": "sample1",
+            "right": {
+                "file": "tests/data/rna3.bam",
+                "index": "tests/data/rna3.bai"
+            }
+        },
+        {
+            "left": "sample2",
+            "right": {
+                "file": "tests/data/rna3.bam",
+                "index": "tests/data/rna3.bai"
+            }
+        }
+    ]
+}

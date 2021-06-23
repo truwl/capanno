@@ -1,0 +1,129 @@
+workflow_name: BioWDL RNA-Seq Pipeline
+workflow_description:
+parameter_meta:
+  RNAseq.sampleConfigFile:
+     description: The sample configuration file
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/samplesheets/Rna3PairedEnd.yml"
+  RNAseq.dockerImagesFile:
+     description:  A file listing the used docker images
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/dockerImages.yml"
+  RNAseq.starIndex:
+     description:  A list of star index files
+     group: required_inputs
+     example: [
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrLength.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrName.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrNameLength.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrStart.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/Genome",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/genomeParameters.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/SA",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/SAindex"
+     ]
+  RNAseq.referenceFasta:
+     description:  A path to a reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.fasta"
+  RNAseq.referenceFastaFai:
+     description:  The path to the index associated with the reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.fasta.fai"
+  RNAseq.referenceFastaDict:
+     description:  The path to the dict file associated with the reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.dict"
+  RNAseq.refflatFile:
+     description:  Reference annotation Refflat file. This will be used for expression quantification
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.refflat"
+  RNAseq.referenceGtfFile:
+     description:  Reference annotation GTF file. This will be used for expression quantification
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.gtf"
+  RNAseq.strandedness:
+     description:  Indicates the strandedness of the input data. This should be one of the following - FR (Forward, Reverse), RF (Reverse, Forward) or None (Unstranded)
+     group: required_inputs
+     example: "None"
+  RNAseq.adapterForward:
+     description:  Used to set a forward read adapter. Default Illumina Universal Adapter  AGATCGGAAGAG
+     group: optional_inputs
+  RNAseq.adapterReverse:
+     description:  Used to set a reverse read adapter (for paired-end reads). Default Illumina Universal Adapter  AGATCGGAAGAG
+     group: optional_inputs
+  RNAseq.umiDeduplication:
+     description:  Whether or not UMI based deduplication should be run. See the notes below on UMIs
+     group: optional_inputs
+  RNAseq.scatterSizeMillions:
+     description:  The size of the scattered regions in million bases for the GATK subworkflows. Scattering is used to speed up certain processes. The genome will be seperated into multiple chunks (scatters) which will be processed in their own job, allowing for parallel processing. Higher values will result in a lower number of jobs. The optimal value here will depend on the available resources.
+     group: optional_inputs
+  RNAseq.variantCalling: 
+     description:  Whether or not variantcalling should be performed, defaults to False
+     group: variant_calling
+     example: true
+  RNAseq.dbsnpVCF:
+     description:  A VCF file to aid in the variantcalling
+     group: variant_calling
+     example: "https://storage.googleapis.com/biowdl-rnaseq/wgs2.vcf.gz"
+  RNAseq.dbsnpVCFIndex:
+     description:  The index for the dbsnpVCF
+     group: variant_calling
+     example: "https://storage.googleapis.com/biowdl-rnaseq/wgs2.vcf.gz.tbi"
+  RNAseq.cpatLogitModel:
+     example: "https://storage.googleapis.com/biowdl-rnaseq/CPAT/Human_logitModel.RData"
+     description: The CPAT logitModel to be used
+     group: lncRNA_detection
+  RNAseq.cpatHex:
+     example: "https://storage.googleapis.com/biowdl-rnaseq/CPAT/Human_Hexamer.tsv"
+     description: The CPAT hexamer tab file to be used
+     group: lncRNA_detection
+  RNAseq.lncRNAdatabases:
+     description: A list of gtf files containing known lncRNAs
+     example: [
+        "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.gtf"
+     ]
+     group: lncRNA_detection
+  RNAseq.lncRNAdetection:
+    description: Whether or not lncRNA detection should be performed, defaults to False
+    example: true
+    group: lncRNA_detection
+  RNAseq.hisat2Index: 
+    description: use hisat2
+    group: hisat2
+    example: [
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.1.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.2.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.3.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.4.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.5.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.6.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.7.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.8.ht2"
+    ]
+parameter_group:
+    required_inputs:
+        title: Required input parameters
+        description: Required input files for experiment
+        help: Required
+    expanded_inputs:
+        title: Expanded input parameters
+        description: Expanded input files for experiment
+        help: Expanded
+    optional_inputs:
+        title: Optional input parameters
+        description: Optional
+        help: Optional
+    variant_calling:
+        title: Variant calling input parameters
+        description: Variant calling
+        help: Variant calling
+    lncRNA_detection:
+        title: lncRNA detection input parameters
+        description: lncRNA detection
+        help: lncRNA detection
+    hisat2:
+        title: hisat2
+        description: hisat2
+        help: hisat2
+

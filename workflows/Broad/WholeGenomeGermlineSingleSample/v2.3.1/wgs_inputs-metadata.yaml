@@ -1,0 +1,188 @@
+workflow_name: GATK WARP Whole Genome Germline Single Sample
+workflow_description:
+parameter_meta:
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.ApplyBQSR.memory_multiplier:
+        description: The sample configuration file
+        group: DiskAndMemory
+        example: 1
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.BaseRecalibrator.gatk_docker:
+        description: The Docker image just for FirstPassBQSR
+        group: Dockers
+        example: "us.gcr.io/broad-gatk/gatk:4.1.8.0"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.ApplyBQSR.gatk_docker:
+        description: The Docker image just for ApplyBQSR
+        group: Dockers
+        example: "us.gcr.io/broad-gatk/gatk:4.1.8.0"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.GatherBqsrReports.gatk_docker:
+        description: The Docker image just for GatherBQSR
+        group: Dockers
+        example: "us.gcr.io/broad-gatk/gatk:4.1.8.0"
+    WholeGenomeGermlineSingleSample.BamToGvcf.ValidateVCF.gatk_docker:
+        description: The Docker image just for ValidateVCF
+        group: Dockers
+        example: "us.gcr.io/broad-gatk/gatk:4.1.8.0"
+    WholeGenomeGermlineSingleSample.BamToGvcf.HaplotypeCallerGATK4.gatk_docker:
+        description: The Docker image just for HaplotypeCaller
+        group: Dockers
+        example: "us.gcr.io/broad-gatk/gatk:4.1.8.0"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.SplitRG.reads_per_file:
+        description: Reads per file
+        group: DiskAndMemory
+        example: "48000000"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.ApplyBQSR.additional_disk:
+        description: ApplyBQSR additional disk space
+        group: DiskAndMemory
+        example: "20"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.CheckContamination.disable_sanity_check:
+        description: Check contamination
+        group: CoreOptions
+        example: "false"
+    WholeGenomeGermlineSingleSample.BamToGvcf.make_bamout:
+        description: Make bamout, nice for visaualization
+        group: OutputOptions
+        example: "false"
+    WholeGenomeGermlineSingleSample.BamToCram.ValidateCram.additional_disk:
+        description: Additional disk for ValidateCram
+        group: DiskAndMemory
+        example: "20"
+    WholeGenomeGermlineSingleSample.fingerprint_genotypes_file:
+        description: Additional disk for ValidateCram
+        group: References
+        example: "gs://dsde-data-na12878-public/NA12878.hg38.reference.fingerprint.vcf"
+    WholeGenomeGermlineSingleSample.provide_bam_output:
+        description: Provide bam output
+        group: OutputOptions
+        example: "false"
+    WholeGenomeGermlineSingleSample.CollectRawWgsMetrics.memory_multiplier:
+        description: Memory Multiplier for CollectRawWgsMetrics
+        group: DiskAndMemory
+        example: "1"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.bin_base_qualities:
+        description: Bin base qualities
+        group: CoreOptions
+        example: "true"
+    WholeGenomeGermlineSingleSample.references:
+        description: Bin base qualities
+        group: References
+#        calling_interval_list: "File",
+#        haplotype_database_file: "File",
+#        dbsnp_vcf: "File",
+#        known_indels_sites_indices: "Array[File]",
+#        reference_fasta: {
+#          ref_fasta: "File",
+#          ref_dict: "File",
+#          ref_alt: "File",
+#          ref_ann: "File",
+#          ref_sa: "File",
+#          ref_amb: "File",
+#          ref_bwt: "File",
+#          ref_fasta_index: "File",
+#          ref_pac: "File"
+#        },
+#        contamination_sites_ud: "File",
+#        known_indels_sites_vcfs: "Array[File]",
+#        contamination_sites_bed: "File",
+#        evaluation_interval_list: "File",
+#        dbsnp_vcf_index: "File",
+#        contamination_sites_mu: "File"
+#      },
+    WholeGenomeGermlineSingleSample.sample_and_unmapped_bams:
+        group: Samples
+#{
+#        final_gvcf_base_name: "String? (optional)",
+#    unmapped_bam_suffix: "String",
+#    flowcell_unmapped_bams: "Array[File]",
+#        sample_name: "String",
+#        base_file_name: "String"
+#      },
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.somatic:
+        description: Somatic tissue
+        group: CoreOptions
+        example: "false"
+    WholeGenomeGermlineSingleSample.BamToGvcf.make_gvcf:
+        description: Make GVCF
+        group: OutputOptions
+        example: "true"
+    WholeGenomeGermlineSingleSample.wgs_coverage_interval_list:
+        description: Inteval List
+        group: CoreInputs
+        example: "File"
+    WholeGenomeGermlineSingleSample.fingerprint_genotypes_index:
+        description: Genotypes index
+        group: CoreInputs
+        example: "File"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.MarkDuplicates.additional_disk:
+        description: Memory Multiplier for Markdups
+        group: DiskAndMemory
+        example: "20"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.MarkDuplicates.read_name_regex:
+        description: Regular expression that can be used to parse read names in the incoming SAM file
+        group: CoreInputs
+        example: "[a-zA-Z0-9]+_([0-9]+)#([0-9]+)_([0-9]+)_([0-9]+)"
+    WholeGenomeGermlineSingleSample.AggregatedBamQC.CollectReadgroupBamQualityMetrics.collect_gc_bias_metrics:
+        description: Collect GC bias metrics for readgroups
+        group: OutputOptions
+        example: "true"
+    WholeGenomeGermlineSingleSample.use_gatk3_haplotype_caller:
+        description: Use GATK3 Haplotype Caller
+        group: CoreOptions
+        example: "true"
+    WholeGenomeGermlineSingleSample.papi_settings:
+        group: PapiScat
+#{
+#        preemptible_tries: "Int",
+#        agg_preemptible_tries: "Int"
+#      },
+    WholeGenomeGermlineSingleSample.BamToCram.ValidateCram.memory_multiplier:
+        description: Validate CRAM memory mulitplier
+        group: DiskAndMemory
+        example: "1"
+    WholeGenomeGermlineSingleSample.scatter_settings:
+        group: PapiScat
+#{
+#        haplotype_scatter_count: "Int",
+#        break_bands_at_multiples_of: "Int"
+#      },
+    WholeGenomeGermlineSingleSample.AggregatedBamQC.CollectAggregationMetrics.collect_gc_bias_metrics:
+        description: Collect GC bias metrics for aggregates
+        group: OutputOptions
+        example: "true"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.MarkDuplicates.memory_multiplier:
+        description: Markdups memory mulitplier
+        group: DiskAndMemory
+        example: "1"
+    WholeGenomeGermlineSingleSample.UnmappedBamToAlignedBam.hard_clip_reads:
+        description: Hard clip reads
+        group: CoreOptions
+        example: "false"
+    WholeGenomeGermlineSingleSample.CollectRawWgsMetrics.additional_disk:
+        description: Collect WGS Metrics additional disk
+        group: DiskAndMemory
+        example: "20"
+parameter_group:
+    References:
+        title: References
+        description: Reference files
+    Samples:
+        title: Samples
+        description: Sample files
+    CoreOptions:
+        title: Input options
+        description: Input and runtime options
+        help: Input and runtime options
+    OutputOptions:
+        title: Output options
+        description: Output and metric options
+        help: Output and metric options
+    DiskAndMemory:
+        title: Disk and Memory
+        description: Disk and Memory settings
+        help: Disk and Memory settings
+    Dockers:
+        title: Dockers
+        description: Docker images to use
+        help: Docker images to use
+    PapiScat:
+        title: PAPI and Scatter
+        description: Retry and parallelization options
+

@@ -1,0 +1,10 @@
+workflowIdentifier: WF_e85df4.f10
+identifier: WF_e85df4.f10.95d4
+name: ENCSR113MBR_PE_1rep_peakcall
+version: 1.0
+softwareVersion: 1.0
+jobStatus: Released
+freeze: true
+description: ATAC-seq (1.9.0) on Homo sapiens adrenal gland tissue male adult (54 years)
+inputObjects:
+outputObjects:

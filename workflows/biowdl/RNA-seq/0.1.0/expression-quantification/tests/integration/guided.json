@@ -1,0 +1,21 @@
+{
+    "MultiBamExpressionQuantification.strandedness": "None",
+    "MultiBamExpressionQuantification.referenceGtfFile": "tests/data/reference.gtf",
+    "MultiBamExpressionQuantification.runStringtieQuantification": true,
+    "MultiBamExpressionQuantification.bams": [
+        {
+            "left": "sample1",
+            "right": {
+                "file": "tests/data/rna3.bam",
+                "index": "tests/data/rna3.bai"
+            }
+        },
+        {
+            "left": "sample2",
+            "right": {
+                "file": "tests/data/rna3.bam",
+                "index": "tests/data/rna3.bai"
+            }
+        }
+    ]
+}

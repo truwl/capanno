@@ -1,0 +1,11 @@
+workflowIdentifier: WF_dd6938.8f
+identifier: WF_dd6938.8f.7a78
+name: ENCSR135FYV_PE_100_crop_control_alignonly
+version: 1.0
+softwareVersion: v1.6.0
+jobStatus: Released
+freeze: true
+status: published
+description: Homo sapiens adrenal gland tissue male adult (54 years)
+inputObjects:
+outputObjects:

@@ -1,0 +1,11 @@
+workflowIdentifier: WF_e85df4.f11
+identifier: WF_e85df4.f8.d788
+name: REF ENCSR356KRQ (subsampled 1/400)
+version: 1.0
+softwareVersion: 1.0
+jobStatus: Released
+freeze: true
+status: published
+description: ATAC-seq (1.9.0) on primary keratinocytes in day 0.0 of differentiation
+inputObjects:
+outputObjects:

@@ -1,0 +1,11 @@
+workflowIdentifier: WF_844a7e.de
+identifier: WF_844a7e.de.5f29
+name: REF Inputs.json from GitHub docs
+version: 1.0
+softwareVersion: v1.2.0
+jobStatus: Released
+freeze: true
+status: published
+description: A typical input.json structure
+inputObjects:
+outputObjects:

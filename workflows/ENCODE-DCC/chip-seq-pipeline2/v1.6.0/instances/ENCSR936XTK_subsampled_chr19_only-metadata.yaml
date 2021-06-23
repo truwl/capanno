@@ -1,0 +1,11 @@
+workflowIdentifier: WF_dd6938.8f
+identifier: WF_dd6938.8f.340f
+name: REF ENCSR936XTK (subsampled to Chr 19 only)
+version: 1.0
+softwareVersion: v1.6.0
+jobStatus: Released
+freeze: true
+status: published
+description: ZNF143 ChIP-seq (TF ChIP-seq) on human GM12878 (cell line). See experiment details at https://www.encodeproject.org/experiments/ENCSR936XTK/
+inputObjects:
+outputObjects:

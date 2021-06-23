@@ -1,0 +1,24 @@
+{
+    "chip.title": "ENCSR450BLH",
+    "chip.description": "ENCSR450BLH_PE_100_crop_tf_peakcall",
+    "chip.pipeline_type": "tf",
+    "chip.align_only": false,
+    "chip.paired_end": true,
+    "chip.crop_length": 100,
+    "chip.crop_length_tol": 2,
+    "chip.genome_tsv": "gs://encode-pipeline-genome-data/genome_tsv/v2/hg38_gcp.tsv",
+    "chip.ref_fa": "https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz",
+    "chip.bowtie2_idx_tar": "https://www.encodeproject.org/files/ENCFF110MCL/@@download/ENCFF110MCL.tar.gz",
+    "chip.chrsz": "https://www.encodeproject.org/files/GRCh38_EBV.chrom.sizes/@@download/GRCh38_EBV.chrom.sizes.tsv",
+    "chip.blacklist": "https://www.encodeproject.org/files/ENCFF356LFX/@@download/ENCFF356LFX.bed.gz",
+    "chip.ctl_nodup_bams": [
+        "https://www.encodeproject.org/files/ENCFF303LLG/@@download/ENCFF303LLG.bam"
+    ],
+    "chip.always_use_pooled_ctl": true,
+    "chip.fastqs_rep1_R1": [
+        "https://www.encodeproject.org/files/ENCFF725BGJ/@@download/ENCFF725BGJ.fastq.gz"
+    ],
+    "chip.fastqs_rep1_R2": [
+        "https://www.encodeproject.org/files/ENCFF125ONW/@@download/ENCFF125ONW.fastq.gz"
+    ]
+}

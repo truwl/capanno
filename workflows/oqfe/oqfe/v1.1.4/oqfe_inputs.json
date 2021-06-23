@@ -1,0 +1,9 @@
+{
+  "oqfe.optical_duplicate_pixel_distance": "Int? (optional)",
+  "oqfe.sample": "String",
+  "oqfe.cram_reference_fasta": "File? (optional)",
+  "oqfe.reuse_cram_header": "Boolean (optional, default = false)",
+  "oqfe.forward_reads": "File",
+  "oqfe.reverse_reads": "File? (optional)"
+}
+

@@ -1,0 +1,13 @@
+{
+  "GatkPreprocess.referenceFasta": "tests/data/reference.fasta",
+  "GatkPreprocess.referenceFastaFai": "tests/data/reference.fasta.fai",
+  "GatkPreprocess.referenceFastaDict": "tests/data/reference.dict",
+  "GatkPreprocess.bam": "tests/data/wgs1.bam",
+  "GatkPreprocess.bamIndex": "tests/data/wgs1.bai",
+  "GatkPreprocess.dbsnpVCF": "tests/data/wgs2.vcf.gz",
+  "GatkPreprocess.dbsnpVCFIndex": "tests/data/wgs2.vcf.gz.tbi",
+  "GatkPreprocess.splitSplicedReads": true,
+  "GatkPreprocess.scatters": ["tests/data/scatters/scatter-0.bed", 
+    "tests/data/scatters/scatter-1.bed"],
+  "GatkPreprocess.bamName": "test"
+}

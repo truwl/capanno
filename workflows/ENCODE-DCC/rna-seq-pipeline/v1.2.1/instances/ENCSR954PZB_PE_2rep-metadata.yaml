@@ -1,0 +1,11 @@
+workflowIdentifier: WF_0741dc.ac
+identifier: WF_0741dc.ac.8f33
+name:  ENCSR954PZB_PE_2rep
+version: 1.0
+softwareVersion: v1.2.1
+jobStatus: Released
+freeze: true
+status: published
+description: The libraries contained in this Experiment come from tissue sub-sections of a 54 year old male's adrenal gland tissue section obtained from GTEx. They are stranded PE101 Illumina Hi-Seq RNA-Seq libraries from rRNA-depleted Total RNA > 200 nucleotides in size.
+inputObjects:
+outputObjects:

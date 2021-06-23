@@ -1,0 +1,31 @@
+# Assumptions for this file.
+#  Files are defined in single fastqs file, not fastqs_rep1_R1, etc.
+# pipeline_type == 'atac'
+# All the calls are called. Some are conditional. Not worrying about that yet.
+# tas = [] the default
+# align only is false
+
+name: ENCODE ATAC-seq pipeline
+identifier: WF_e85df4.f7
+description: |
+  The prototype ATAC-seq pipeline was developed by Anshul Kundaje's lab at Stanford University. Upon revision and
+  full implementation, it will be a part of the ENCODE Uniform Processing Pipelines series. The full ATAC-seq
+  pipeline code is available on Github.
+
+  The ENCODE ATAC-seq pipeline is used for quality control and statistical signal processing of short-read sequencing
+   data, producing alignments and measures of enrichment.
+
+  The pipeline shown here assumes the following defaults: align_only is false, pipeline_type is 'atac', all fastq and adapter
+  files are defined in a single files, true_rep_only is false, disable_xcor is false, disable_ataqc is false,
+  enable_idr is true (false is the default value, but set to true so all the possible steps are shown).
+softwareVersion:
+  versionName: v1.1.5
+metadataStatus: Released
+workflowStatus: Released
+graphStatus: Incomplete
+workflowFile: atac.wdl
+repoName: atac-seq-pipeline
+gitTag: v1.1.5
+inputsTemplate: atac-inputs_sidelined.json
+current: false
+executable: false

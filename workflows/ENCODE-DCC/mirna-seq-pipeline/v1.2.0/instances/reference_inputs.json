@@ -1,0 +1,18 @@
+{
+    "mirna_seq_pipeline.fastqs" : [["gs://mirna-seq-pipeline/inputs/ENCSR569QVM/ENCFF119JCH_rep1.fastq.gz"],["gs://mirna-seq-pipeline/inputs/ENCSR569QVM/ENCFF756CSN_rep2.fastq.gz"]],
+    "mirna_seq_pipeline.five_prime_adapters" : [["gs://mirna-seq-pipeline/full_sized_reference_files/adapters/five_prime_adapter_set3.fasta"],["gs://mirna-seq-pipeline/full_sized_reference_files/adapters/five_prime_adapter_set4.fasta"]],
+    "mirna_seq_pipeline.three_prime_adapters" : "gs://mirna-seq-pipeline/full_sized_reference_files/adapters/three_prime_adapter.fasta",
+    "mirna_seq_pipeline.star_index" : "gs://mirna-seq-pipeline/full_sized_reference_files/Star_index_GRCh38.tar.gz",
+    "mirna_seq_pipeline.mirna_annotation" : "gs://mirna-seq-pipeline/full_sized_reference_files/ENCFF628BVT_mirna_anno.gtf.gz",
+    "mirna_seq_pipeline.chrom_sizes" : "gs://mirna-seq-pipeline/full_sized_reference_files/GRCh38_EBV.chrom.sizes.tsv",
+    "mirna_seq_pipeline.experiment_prefix" : "ENCSR569QVM",
+    "mirna_seq_pipeline.cutadapt_ncpus" : "2",
+    "mirna_seq_pipeline.cutadapt_ramGB" : "7",
+    "mirna_seq_pipeline.cutadapt_disk" : "local-disk 200 SSD",
+    "mirna_seq_pipeline.star_ncpus" : "16",
+    "mirna_seq_pipeline.star_ramGB" : "60",
+    "mirna_seq_pipeline.star_disk" : "local-disk 200 SSD",
+    "mirna_seq_pipeline.wigtobigwig_ncpus" : "2",
+    "mirna_seq_pipeline.wigtobigwig_ramGB" : "7",
+    "mirna_seq_pipeline.wigtobigwig_disk" : "local-disk 200 SSD"
+}
