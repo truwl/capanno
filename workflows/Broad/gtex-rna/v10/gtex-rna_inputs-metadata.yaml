@@ -1,0 +1,142 @@
+workflow_name: Broad GTEx RNA-Seq Pipeline
+workflow_description: This repository contains all components of the RNA-seq pipeline used by the GTEx Consortium, including alignment, expression quantification, and quality control.
+parameter_meta:
+    rnaseq_pipeline_fastq_workflow.prefix:
+        group: General
+    rnaseq_pipeline_fastq_workflow.star.alignIntronMax:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.alignIntronMin:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.alignMatesGapMax:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.alignSJDBoverhangMin:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.alignSJoverhangMin:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.alignSoftClipAtReferenceEnds:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.chimJunctionOverhangMin:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.chimMainSegmentMultNmax:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.chimOutJunctionFormat:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.chimOutType:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.chimSegmentMin:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.disk_space:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.fastq1:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.fastq2:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.limitSjdbInsertNsj:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.memory:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.num_preempt:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.num_threads:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outFilterIntronMotifs:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outFilterMatchNminOverLread:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outFilterMismatchNmax:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outFilterMismatchNoverLmax:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outFilterMultimapNmax:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outFilterScoreMinOverLread:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outFilterType:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outSAMattrRGline:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outSAMattributes:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.outSAMstrandField:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.quantMode:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.sjdbFileChrStartEnd:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.star_index:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.varVCFfile:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.star.waspOutputMode:
+        group: STAR
+    rnaseq_pipeline_fastq_workflow.markduplicates.disk_space:
+        group: MarkDuplicates
+    rnaseq_pipeline_fastq_workflow.markduplicates.max_records_in_ram:
+        group: MarkDuplicates
+    rnaseq_pipeline_fastq_workflow.markduplicates.memory:
+        group: MarkDuplicates
+    rnaseq_pipeline_fastq_workflow.markduplicates.num_preempt:
+        group: MarkDuplicates
+    rnaseq_pipeline_fastq_workflow.markduplicates.num_threads:
+        group: MarkDuplicates
+    rnaseq_pipeline_fastq_workflow.markduplicates.sorting_collection_size_ratio:
+        group: MarkDuplicates
+    rnaseq_pipeline_fastq_workflow.rsem.disk_space:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.estimate_rspd:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.is_stranded:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.max_frag_len:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.memory:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.num_preempt:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.num_threads:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.paired_end:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rsem.rsem_reference:
+        group: RSEM
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.disk_space:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.flags:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.genes_gtf:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.intervals_bed:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.memory:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.num_preempt:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.num_threads:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.rnaseqc2.strandedness:
+        group: RNASeQC
+    rnaseq_pipeline_fastq_workflow.fastqc.disk_space:
+        group: FastQC
+    rnaseq_pipeline_fastq_workflow.fastqc.fastq1:
+        group: FastQC
+    rnaseq_pipeline_fastq_workflow.fastqc.fastq2:
+        group: FastQC
+    rnaseq_pipeline_fastq_workflow.fastqc.memory:
+        group: FastQC
+    rnaseq_pipeline_fastq_workflow.fastqc.num_preempt:
+        group: FastQC
+    rnaseq_pipeline_fastq_workflow.fastqc.num_threads:
+        group: FastQC
+parameter_group:
+    General:
+      title: General
+    STAR:
+      title: STAR
+    MarkDuplicates:
+      title: MarkDuplicates
+    RSEM:
+      title: RSEM
+    RNASeQC:
+      title: RNASeQC
+    FastQC:
+      title: FastQC

@@ -1,0 +1,29 @@
+name: md5sum tool workflow
+identifier: WF_680a59.6e
+description: |
+  A one step "workflow" to be a subworkflow of a wrapping checker workflow.
+
+softwareVersion:
+  versionName: master
+  includedVersions:
+    - master__42b7f70
+metadataStatus: Released
+workflowStatus: Released
+workflowLanguage: cwl
+graphStatus: Released
+executable: false
+current: true
+workflowFile: md5sum-workflow.cwl
+repoName:
+gitTag:
+
+
+keywords:
+
+codeRepository:
+  name: GitHub
+  URL: https://github.com/dockstore-testing/md5sum-checker
+
+callMap:
+  - id: md5sum
+    identifier: ST_71882e.e4

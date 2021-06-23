@@ -1,0 +1,4 @@
+{
+    "QC.read1": "tests/data/ct_r1.fq.gz",
+    "QC.extractFastqcZip": true
+}

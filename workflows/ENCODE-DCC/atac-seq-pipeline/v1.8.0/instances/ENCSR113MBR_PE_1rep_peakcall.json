@@ -1,0 +1,28 @@
+{
+    "atac.title": "ENCSR113MBR",
+    "atac.description": "ENCSR113MBR_PE_1rep_peakcall",
+    "atac.pipeline_type": "atac",
+    "atac.align_only": false,
+    "atac.paired_end": true,
+    "atac.multimapping": 4,
+    "atac.genome_tsv": "https://storage.googleapis.com/encode-pipeline-genome-data/genome_tsv/v3/hg38.tsv",
+    "atac.ref_fa": "https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz",
+    "atac.ref_mito_fa": "https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15_mito_only/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15_mito_only.fasta.gz",
+    "atac.bowtie2_idx_tar": "https://www.encodeproject.org/files/ENCFF110MCL/@@download/ENCFF110MCL.tar.gz",
+    "atac.bowtie2_mito_idx_tar": "https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15_mito_only_bowtie2_index/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15_mito_only_bowtie2_index.tar.gz",
+    "atac.chrsz": "https://www.encodeproject.org/files/GRCh38_EBV.chrom.sizes/@@download/GRCh38_EBV.chrom.sizes.tsv",
+    "atac.blacklist": "https://www.encodeproject.org/files/ENCFF356LFX/@@download/ENCFF356LFX.bed.gz",
+    "atac.tss": "https://www.encodeproject.org/files/ENCFF493CCB/@@download/ENCFF493CCB.bed.gz",
+    "atac.prom": "https://www.encodeproject.org/files/ENCFF140XLU/@@download/ENCFF140XLU.bed.gz",
+    "atac.enh": "https://www.encodeproject.org/files/ENCFF212UAV/@@download/ENCFF212UAV.bed.gz",
+    "atac.gensz": "hs",
+    "atac.auto_detect_adapter": true,
+    "atac.fastqs_rep1_R1": [
+        "https://www.encodeproject.org/files/ENCFF085AWY/@@download/ENCFF085AWY.fastq.gz",
+        "https://www.encodeproject.org/files/ENCFF228CZJ/@@download/ENCFF228CZJ.fastq.gz"
+    ],
+    "atac.fastqs_rep1_R2": [
+        "https://www.encodeproject.org/files/ENCFF051QFS/@@download/ENCFF051QFS.fastq.gz",
+        "https://www.encodeproject.org/files/ENCFF898MTS/@@download/ENCFF898MTS.fastq.gz"
+    ]
+}

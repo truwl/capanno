@@ -1,0 +1,11 @@
+workflowIdentifier: WF_63e0c3.bc
+identifier: WF_63e0c3.bc.b3de
+name: WARP Plumbing GATK SS Test Public
+version: 1.0
+softwareVersion: v1.2.1
+jobStatus: Released
+freeze: true
+status: published
+description: Official test data from https://raw.githubusercontent.com/broadinstitute/warp/develop/pipelines/broad/dna_seq/germline/single_sample/wgs/input_files/WholeGenomeGermlineSingleSample.inputs.plumbing.json
+inputObjects:
+outputObjects:

@@ -9,7 +9,7 @@ featureList:
   - collectalignmentsummarymetrics
   - collecthsmetrics
   - samtofastq
-metadataStatus: Incomplete
+metadataStatus: Released
 description: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF
 codeRepository:
   name:

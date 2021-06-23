@@ -1,0 +1,104 @@
+- name: dna
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/dna.json bammetrics.wdl
+  stdout: &cromwell_stdout_succes
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/wgs1.flagstats"
+    - path: "test-output/wgs1.alignment_summary_metrics"
+    - path: "test-output/wgs1.bait_bias_detail_metrics"
+    - path: "test-output/wgs1.bait_bias_summary_metrics"
+    - path: "test-output/wgs1.base_distribution_by_cycle_metrics"
+    - path: "test-output/wgs1.base_distribution_by_cycle.pdf"
+    - path: "test-output/wgs1.error_summary_metrics"
+    - path: "test-output/wgs1.gc_bias.detail_metrics"
+    - path: "test-output/wgs1.gc_bias.pdf"
+    - path: "test-output/wgs1.gc_bias.summary_metrics"
+    - path: "test-output/wgs1.insert_size_histogram.pdf"
+    - path: "test-output/wgs1.insert_size_metrics"
+    - path: "test-output/wgs1.insert_size_metrics"
+    - path: "test-output/wgs1.pre_adapter_detail_metrics"
+    - path: "test-output/wgs1.pre_adapter_summary_metrics"
+    - path: "test-output/wgs1.quality_by_cycle_metrics"
+    - path: "test-output/wgs1.quality_by_cycle.pdf"
+    - path: "test-output/wgs1.quality_distribution_metrics"
+    - path: "test-output/wgs1.quality_distribution.pdf"
+    - path: "test-output/wgs1.quality_yield_metrics"
+    # These files should not be created by default.
+    - path: "test-output/wgs1.targetPcrPerTargetCoverage"
+      should_exist: false
+    - path: "test-output/wgs1.targetPcrPerBaseCoverage"
+      should_exist: false
+    - path: "test-output/wgs1.targetPcrMetrics"
+      should_exist: false
+    - path: "test-output/wgs1.RNA_Metrics.pdf"
+      should_exist: false
+    - path: "test-output/wgs1.RNA_Metrics"
+      should_exist: false
+
+- name: dna_targeted
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/dna_targeted.json bammetrics.wdl
+  stdout: *cromwell_stdout_succes
+  files:
+    - path: "test-output/wgs1.flagstats"
+    - path: "test-output/wgs1.alignment_summary_metrics"
+    - path: "test-output/wgs1.bait_bias_detail_metrics"
+    - path: "test-output/wgs1.bait_bias_summary_metrics"
+    - path: "test-output/wgs1.base_distribution_by_cycle_metrics"
+    - path: "test-output/wgs1.base_distribution_by_cycle.pdf"
+    - path: "test-output/wgs1.error_summary_metrics"
+    - path: "test-output/wgs1.gc_bias.detail_metrics"
+    - path: "test-output/wgs1.gc_bias.pdf"
+    - path: "test-output/wgs1.gc_bias.summary_metrics"
+    - path: "test-output/wgs1.insert_size_histogram.pdf"
+    - path: "test-output/wgs1.insert_size_metrics"
+    - path: "test-output/wgs1.insert_size_metrics"
+    - path: "test-output/wgs1.pre_adapter_summary_metrics"
+    - path: "test-output/wgs1.pre_adapter_detail_metrics"
+    - path: "test-output/wgs1.quality_by_cycle_metrics"
+    - path: "test-output/wgs1.quality_by_cycle.pdf"
+    - path: "test-output/wgs1.quality_distribution_metrics"
+    - path: "test-output/wgs1.quality_distribution.pdf"
+    - path: "test-output/wgs1.quality_yield_metrics"
+    - path: "test-output/wgs1.targetPcrPerTargetCoverage"
+    - path: "test-output/wgs1.targetPcrPerBaseCoverage"
+    - path: "test-output/wgs1.targetPcrMetrics"
+
+- name: rna
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/rna.json  bammetrics.wdl
+  stdout: *cromwell_stdout_succes
+  files:
+    - path: "test-output/rna3.flagstats"
+    - path: "test-output/rna3.alignment_summary_metrics"
+    - path: "test-output/rna3.bait_bias_detail_metrics"
+    - path: "test-output/rna3.bait_bias_summary_metrics"
+    - path: "test-output/rna3.base_distribution_by_cycle_metrics"
+    - path: "test-output/rna3.base_distribution_by_cycle.pdf"
+    - path: "test-output/rna3.error_summary_metrics"
+    - path: "test-output/rna3.gc_bias.detail_metrics"
+    - path: "test-output/rna3.gc_bias.pdf"
+    - path: "test-output/rna3.gc_bias.summary_metrics"
+    - path: "test-output/rna3.insert_size_histogram.pdf"
+    - path: "test-output/rna3.insert_size_metrics"
+    - path: "test-output/rna3.insert_size_metrics"
+    - path: "test-output/rna3.pre_adapter_summary_metrics"
+    - path: "test-output/rna3.pre_adapter_detail_metrics"
+    - path: "test-output/rna3.quality_by_cycle_metrics"
+    - path: "test-output/rna3.quality_by_cycle.pdf"
+    - path: "test-output/rna3.quality_distribution_metrics"
+    - path: "test-output/rna3.quality_distribution.pdf"
+    - path: "test-output/rna3.quality_yield_metrics"
+    - path: "test-output/rna3.RNA_Metrics.pdf"
+    - path: "test-output/rna3.RNA_Metrics"

@@ -1,0 +1,92 @@
+---
+layout: default
+title: "Inputs: {{ workflow_name }}"
+---
+
+# Inputs for {{ workflow_name }}
+
+The following is an overview of all available inputs in
+{{ workflow_name }}.
+
+{% if required is defined %}
+## Required inputs
+<dl>
+{% for ri in required|sort(attribute='name') -%}
+<dt id="{{ ri.name }}"><a href="#{{ ri.name }}">{{ ri.name }}</a></dt>
+<dd>
+    <i>{{ ri.type }} </i>
+    {%- if ri.default is not none -%}
+    <i>&mdash; Default:</i> <code>{{ ri.default }}</code>
+    {%- endif -%}
+    <br />
+    {{ ri.description }}
+</dd>
+{% endfor -%}
+</dl>
+{% endif -%}
+
+{% if common is defined %}
+## Other common inputs
+<dl>
+{% for ci in common|sort(attribute='name') -%}
+<dt id="{{ ci.name }}"><a href="#{{ ci.name }}">{{ ci.name }}</a></dt>
+<dd>
+    <i>{{ ci.type }} </i>
+    {%- if ci.default is not none -%}
+    <i>&mdash; Default:</i> <code>{{ ci.default }}</code>
+    {%- endif -%}
+    <br />
+    {{ ci.description }}
+</dd>
+{% endfor -%}
+</dl>
+{% endif -%}
+
+{% if advanced is defined %}
+## Advanced inputs
+<details>
+<summary> Show/Hide </summary>
+<dl>
+{% for ai in advanced|sort(attribute='name') -%}
+<dt id="{{ ai.name }}"><a href="#{{ ai.name }}">{{ ai.name }}</a></dt>
+<dd>
+    <i>{{ ai.type }} </i>
+    {%- if ai.default is not none -%}
+    <i>&mdash; Default:</i> <code>{{ ai.default }}</code>
+    {%- endif -%}
+    <br />
+    {{ ai.description }}
+</dd>
+{% endfor -%}
+</dl>
+</details>
+{% endif %}
+
+{% if other is defined %}
+## Other inputs
+<details>
+<summary> Show/Hide </summary>
+<dl>
+{% for oi in other|sort(attribute='name') -%}
+<dt id="{{ oi.name }}"><a href="#{{ oi.name }}">{{ oi.name }}</a></dt>
+<dd>
+    <i>{{ oi.type }} </i>
+    {%- if oi.default is not none -%}
+    <i>&mdash; Default:</i> <code>{{ oi.default }}</code>
+    {%- endif -%}
+    <br />
+    {{ oi.description }}
+</dd>
+{% endfor -%}
+</dl>
+</details>
+{% endif %}
+
+{% if excluded_inputs | length > 0 %}
+## Do not set these inputs!
+The following inputs should ***not*** be set, even though womtool may
+show them as being available inputs.
+{% for ei in excluded_inputs %}
+* {{ ei }}
+{%- endfor %}
+{% endif %}

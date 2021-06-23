@@ -1,0 +1,11 @@
+workflowIdentifier: WF_254045.d5
+identifier: WF_254045.d5.a4f4
+name:  SRR7058289
+version: 1.0
+softwareVersion: v10
+jobStatus: Released
+freeze: true
+status: published
+description: Quertermous SRR7058289 correct STAR ref
+inputObjects:
+outputObjects:

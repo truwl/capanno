@@ -1,0 +1,83 @@
+workflow_name: ENCODE Micro RNA-seq pipeline
+workflow_description:
+parameter_meta:
+  mirna_seq_pipeline.fastqs:
+    description: A list of lists of input fastq files, one for each replicate. Typically the sublists contain only one element, except in the case when each replicate consists of multiple technical replicates represented by separate gzipped fastq files.
+    example: [
+      ["gs://mirna-seq-pipeline/inputs/ENCSR569QVM/ENCFF119JCH_rep1.fastq.gz"],
+      ["gs://mirna-seq-pipeline/inputs/ENCSR569QVM/ENCFF756CSN_rep2.fastq.gz"]
+    ]
+    group: input_genomic_data
+  mirna_seq_pipeline.five_prime_adapters:
+    description: Is a list of lists of 5' adapter fasta files, one for each replicate.
+    help: "Note: structure of this list should correspond to the structure of mirna_seq_pipeline.fastqs. Typically the sublists contain only one element, except in the case when each replicate consists of multiple technical replicates. Note that even in the case where all the techical replicates use same 5' adapters, the same file name needs to be repeated as many times as there are technical replicates."
+    example: [
+      ["gs://mirna-seq-pipeline/full_sized_reference_files/adapters/five_prime_adapter_set3.fasta"], 
+      ["gs://mirna-seq-pipeline/full_sized_reference_files/adapters/five_prime_adapter_set4.fasta"]
+    ]
+    group: input_genomic_data
+  mirna_seq_pipeline.three_prime_adapters:
+    description: The fasta file containing 3' adapters. Same set is used for all the replicates.
+    example: "gs://mirna-seq-pipeline/full_sized_reference_files/adapters/three_prime_adapter.fasta"
+    group: input_genomic_data
+  mirna_seq_pipeline.star_index:
+    description: Is the gzipped tar archive that contains STAR index. GRCh38 based on Gencode V24 version is available for download on The ENCODE Portal.
+    example: "gs://mirna-seq-pipeline/full_sized_reference_files/Star_index_GRCh38.tar.gz"
+    group: input_genomic_data
+  mirna_seq_pipeline.mirna_annotation:
+    description: Is the gzipped .gtf(.gz) file containing miRNA annotations. Gencode V24 version available for download on The ENCODE Portal.
+    example: "gs://mirna-seq-pipeline/full_sized_reference_files/ENCFF628BVT_mirna_anno.gtf.gz"
+    group: input_genomic_data
+  mirna_seq_pipeline.chrom_sizes:
+    description: Is a .tsv that contains chromosome sizes. This can be downloaded from The ENCODE Portal
+    example: "gs://mirna-seq-pipeline/full_sized_reference_files/GRCh38_EBV.chrom.sizes.tsv"
+    group: input_genomic_data
+  mirna_seq_pipeline.experiment_prefix:
+    description: Is prefix that will be added to important output filenames.
+    example: ENCSR569QVM
+    group: input_genomic_data
+  mirna_seq_pipeline.cutadapt_ncpus:
+    description: Is the number of cores given to the cutadapt task.
+    example: 2
+    group: task_resources
+  mirna_seq_pipeline.cutadapt_ramGB:
+    description: Is the amount of ram in gigabytes given to the cutadapt task.
+    example: 7
+    group: task_resources
+  mirna_seq_pipeline.cutadapt_disk:
+    description: Is the amount of disk space in gigabytes to the cutadapt task.
+    example: local-disk 200 SSD
+    group: task_resources
+  mirna_seq_pipeline.star_ncpus:
+    description: Is the number of cores given to the star task.
+    example: 16
+    group: task_resources
+  mirna_seq_pipeline.star_ramGB:
+    description: Is the amount of ram in gigabytes given to the star task.
+    example: 60
+    group: task_resources
+  mirna_seq_pipeline.star_disk:
+    description: Is the amount of disk space in gigabytes to the star task.
+    example: local-disk 200 SSD
+    group: task_resources
+  mirna_seq_pipeline.wigtobigwig_ncpus:
+    description: Is the number of cores given to the wigtobigwig task.
+    example: 2
+    group: task_resources
+  mirna_seq_pipeline.wigtobigwig_ramGB:
+    description: Is the amount of ram in gigabytes given to the wigtobigwig task.
+    example: 7
+    group: task_resources
+  mirna_seq_pipeline.wigtobigwig_disk:
+    description: Is the amount of disk space in gigabytes to the wigtobigwig task.
+    example: local-disk 200 SSD
+    group: task_resources  
+
+parameter_group:
+    input_genomic_data:
+        title: Input genomic data
+        description: Genomic input files for experiment.
+        help: MiRNA annotations are available in The ENCODE Portal. Corresponding STAR Index is also available via The ENCODE Portal. It is also possible to build STAR index from reference by using the generate_star_index.wdl.
+    task_resources:
+        title: Computational Resources
+        description: Following inputs define the computational resources given to the pipeline tasks.
