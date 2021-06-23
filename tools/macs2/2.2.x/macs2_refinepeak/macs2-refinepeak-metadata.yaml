@@ -1,13 +1,17 @@
+name: refinepeak
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: refinepeak
+version: 0.1.0
 identifier: TL_89cd0d_81.93
 description: Take raw reads alignment, refine peak summits.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

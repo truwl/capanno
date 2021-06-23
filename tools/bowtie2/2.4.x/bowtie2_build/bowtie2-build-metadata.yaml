@@ -1,12 +1,12 @@
 name: build
 metadataStatus: Released
 cwlStatus: Incomplete
-nextflowStatus: Incomplete
+nextflowStatus: Released
 snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_8d0912_b0.1a
-description:
+description: build index
 keywords:
   - name:
     category:

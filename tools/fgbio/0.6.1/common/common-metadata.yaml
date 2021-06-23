@@ -15,15 +15,18 @@ description: fgbio is a command line toolkit for working with genomic and partic
   next generation sequencing data.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/fulcrumgenomics/fgbio
 license:
 WebSite:
   - name:
     description: homepage
     URL: http://fulcrumgenomics.github.io/fgbio/
 contactPoint:
-  - name:
-    email:
+  - name: Tim Fennell
+    email: tim@fulcrumgenomics.com
+    identifier:
+  - name: Nils Homer
+    email: nils@fulcrumgenomics.com
     identifier:
 publication:
   - identifier:

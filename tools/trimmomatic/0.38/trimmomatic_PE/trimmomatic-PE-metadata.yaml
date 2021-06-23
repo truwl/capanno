@@ -1,11 +1,17 @@
-metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
-nextflowStatus: Incomplete
-wdlStatus: Incomplete
 name: PE
+metadataStatus: Released
+cwlStatus: Draft
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
 identifier: TL_a2e03a_3a.af
 description: Trimmomatic for paired end reads.
-keywords: []
+keywords:
+  - name:
+    category:
 alternateName: []
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

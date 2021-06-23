@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ab57db_54.7d
-description:
+description: detect gene fusions from rna-seq
 keywords:
   - name:
     category:

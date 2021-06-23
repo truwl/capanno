@@ -10,15 +10,15 @@ description: Python3 script to manipulate FASTA and FASTQ (and other format) fil
   plus API for developers
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/sanger-pathogens/Fastaq
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/sanger-pathogens/Fastaq
+    description:
+    URL:
 contactPoint:
   - name:
-    email:
+    email: path-help@sanger.ac.uk
     identifier:
 publication:
   - identifier:

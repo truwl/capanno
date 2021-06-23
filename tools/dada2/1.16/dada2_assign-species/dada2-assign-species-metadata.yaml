@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_cbf4cc_57.69
-description:
+description: assignSpecies uses exact string matching against a reference database to assign Genus species binomials.
 keywords:
   - name:
     category:

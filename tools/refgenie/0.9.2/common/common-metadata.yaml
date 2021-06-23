@@ -13,7 +13,7 @@ description: Refgenie manages storage, access, and transfer of reference genome 
   folder structure, so software can swap from one genome to another.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/refgenie/refgenie
 license: BSD-2-Clause
 WebSite:
   - name:
@@ -24,15 +24,20 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier: 10.1101/698704
-    headline:
+  - identifier: https://doi.org/10.1093/gigascience/giz149
+    headline: 'Refgenie: a reference genome resource manager'
+  - identifier: https://doi.org/10.1093/nargab/lqab036
+    headline: Identity and compatibility of reference genome resources
 keywords:
   - http://edamontology.org/topic_0080
   - http://edamontology.org/operation_2422
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Nathan Sheffield
+    email: nathan@databio.org
+    identifier:
+  - name: Michal Stolarczyk
+    email: michal@virginia.edu
     identifier:
 programmingLanguage:
   - Python

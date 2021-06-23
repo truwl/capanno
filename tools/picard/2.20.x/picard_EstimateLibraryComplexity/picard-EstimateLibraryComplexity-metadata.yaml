@@ -1,9 +1,10 @@
+name: EstimateLibraryComplexity
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: EstimateLibraryComplexity
+version: 0.1.0
 identifier: TL_e24fa5_2f.c8
 description: "Estimates the numbers of unique molecules in a sequencing library.\n\
   This tool outputs quality metrics for a sequencing library preparation. Library\
@@ -30,7 +31,10 @@ description: "Estimates the numbers of unique molecules in a sequencing library.
   \ sets. All bins that contain exactly one duplicate set are then removed from the\
   \ histogram as outliers prior to the library size estimation."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

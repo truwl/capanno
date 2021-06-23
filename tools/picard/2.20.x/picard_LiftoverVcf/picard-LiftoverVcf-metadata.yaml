@@ -1,9 +1,10 @@
+name: LiftoverVcf
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: LiftoverVcf
+version: 0.1.0
 identifier: TL_e24fa5_e5.c8
 description: "Lifts over a VCF file from one reference build to another. This tool\
   \ adjusts the coordinates of variants within a VCF file to match a new reference.\
@@ -15,7 +16,10 @@ description: "Lifts over a VCF file from one reference build to another. This to
   \ the source and target reference genomes. Rejected records will be emitted with\
   \ filters to the REJECT file, using the source genome coordinates."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

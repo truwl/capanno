@@ -11,12 +11,12 @@ description: A tool for processing sequences in the FASTA or FASTQ format. It pa
   both FASTA and FASTQ files which can also be optionally compressed by gzip.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/lh3/seqtk
 license: MIT
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/lh3/seqtk
+    description:
+    URL:
   - name:
     description: documentation
     URL: https://github.com/lh3/seqtk/blob/master/README.md

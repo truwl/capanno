@@ -21,16 +21,16 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: http://dx.doi.org/10.21105/joss.00320
+    headline: 'genomepy: download genomes the easy way'
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
-    identifier:
+  - name: Simon J. van Heeringen
+    email: simon.vanheeringen@gmail.com
+    identifier: https://orcid.org/0000-0002-0411-3219
 programmingLanguage: []
 datePublished:
 downloadURL:

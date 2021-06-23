@@ -9,22 +9,19 @@ metadataStatus: Released
 description: program for filtering, converting and manipulating GFF files
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/gpertea/gffread
 license: MIT
 WebSite:
   - name:
     description: homepage
     URL: https://ccb.jhu.edu/software/stringtie/gff.shtml
-  - name:
-    description: documentation
-    URL: https://ccb.jhu.edu/software/stringtie/gff.shtml
 contactPoint:
-  - name:
-    email:
+  - name: Mihaela Pertea
+    email: mpertea@jhu.edu
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: http://dx.doi.org/10.12688/f1000research.23297.1
+    headline: 'GFF Utilities: GffRead and GffCompare'
 keywords:
   - http://edamontology.org/topic_0077
   - http://edamontology.org/topic_0080

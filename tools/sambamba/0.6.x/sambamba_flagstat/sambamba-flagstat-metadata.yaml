@@ -1,9 +1,10 @@
+name: flagstat
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: flagstat
+version: 0.1.0
 identifier: TL_bf790f_c2.e9
 description: "Outputs some statistics drawn from read flags.\nFirst line contains\
   \ numbers of QC-passed and QC-failed reads. Then come pairs of numbers, the former\
@@ -16,7 +17,10 @@ description: "Outputs some statistics drawn from read flags.\nFirst line contain
   \ reads where mate is mapped to a different chromosome the same as previous but\
   \ mapping quality is not less than 5"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

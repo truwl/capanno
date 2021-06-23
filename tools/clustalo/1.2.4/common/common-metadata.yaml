@@ -17,12 +17,10 @@ WebSite:
     description: homepage
     URL: http://www.clustal.org/omega/
   - name:
-    description:
-      - Galaxy service
+    description: Galaxy service
     URL: https://galaxy.pasteur.fr/?tool_id=toolshed.pasteur.fr%2Frepos%2Fdcorreia%2Fclustalo%2Fclustalo%2F1.2.1.1&version=1.2.1.1&__identifer=9si4ugr4fwu
   - name:
-    description:
-      - Issue tracker
+    description: Issue tracker
     URL: http://bioinf.ucd.ie/bugzilla/buglist.cgi?quicksearch=clustal
   - name:
     description: documentation

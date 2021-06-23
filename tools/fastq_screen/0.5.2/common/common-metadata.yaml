@@ -14,6 +14,9 @@ codeRepository:
   URL:
 license: GPL-3.0
 WebSite:
+  - name: Babraham
+    description:
+    URL: https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/
   - name:
     description: homepage
     URL: https://www.bwhpc-c5.de/wiki/index.php/FastQ_screen
@@ -21,8 +24,8 @@ WebSite:
     description: documentation
     URL: https://www.bwhpc-c5.de/wiki/index.php/FastQ_screen
 contactPoint:
-  - name: FastQ Screen Contact Form
-    email:
+  - name: Steven Wingett
+    email: steven.wingett@babraham.ac.uk
     identifier:
 publication:
   - identifier:

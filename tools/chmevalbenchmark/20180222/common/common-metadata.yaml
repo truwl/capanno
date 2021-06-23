@@ -15,7 +15,7 @@ description: CHM-eval, aka Syndip, is a benchmark dataset for evaluating the acc
   to existing benchmark datasets.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/lh3/CHM-eval
 license:
 WebSite:
   - name:
@@ -26,8 +26,8 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1038/s41592-018-0054-7
+    headline: A synthetic-diploid benchmark for accurate variant-calling evaluation.
 keywords:
   - name:
     category:

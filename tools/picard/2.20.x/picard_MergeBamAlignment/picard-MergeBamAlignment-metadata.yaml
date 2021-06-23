@@ -1,9 +1,10 @@
+name: MergeBamAlignment
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: MergeBamAlignment
+version: 0.1.0
 identifier: TL_e24fa5_95.c8
 description: Merge alignment data from a SAM or BAM with data in an unmapped BAM file.
   This tool produces a new SAM or BAM file that includes all aligned and unaligned
@@ -17,7 +18,10 @@ description: Merge alignment data from a SAM or BAM with data in an unmapped BAM
   output sort order is not coordinate, then reads that are clipped due to adapters
   or overlapping will not contain the NM, MD, or UQ tags.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

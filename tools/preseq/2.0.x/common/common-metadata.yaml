@@ -16,7 +16,7 @@ description: This package is aimed at predicting and number of distinct reads an
   samples.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/smithlabcode/preseq
 license:
 WebSite:
   - name:
@@ -28,9 +28,6 @@ WebSite:
   - name:
     description: documentation
     URL: https://cran.r-project.org/web/packages/preseqR/preseqR.pdf
-  - name:
-    description: documentation
-    URL: https://github.com/smithlabcode/preseq
 contactPoint:
   - name:
     email:
@@ -45,8 +42,8 @@ keywords:
   - http://edamontology.org/operation_2423
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Timothy Daley
+    email: timy.pdaley@gmail.com
     identifier:
 programmingLanguage:
   - Java

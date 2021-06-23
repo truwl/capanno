@@ -20,23 +20,17 @@ description: BCFtools is a set of utilities that manipulate variant calls in the
   with both VCFs and BCFs, both uncompressed and BGZF-compressed.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/samtools/bcftools
 license: MIT
 WebSite:
   - name:
     description: homepage
     URL: http://www.htslib.org/
   - name:
-    description:
-      - Repository
-    URL: https://github.com/samtools/bcftools
-  - name:
-    description:
-      - Mailing list
+    description: Mailing list
     URL: http://www.htslib.org/support/#lists
   - name:
-    description:
-      - Issue tracker
+    description: Issue tracker
     URL: https://github.com/samtools/bcftools/issues
   - name:
     description: documentation
@@ -62,8 +56,8 @@ keywords:
   - http://edamontology.org/operation_3227
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Heng Li
+    email: lh3@me.com
     identifier:
 programmingLanguage:
   - C

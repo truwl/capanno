@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_f8ebe1_ef.24
-description:
+description: Trim single-end reads using cutadapt.
 keywords:
   - name:
     category:

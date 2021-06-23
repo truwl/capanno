@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_181523_65.d9
-description:
+description: merge graphs
 keywords:
   - name:
     category:

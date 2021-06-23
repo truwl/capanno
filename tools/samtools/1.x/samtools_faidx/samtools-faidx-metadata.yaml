@@ -1,9 +1,10 @@
-metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
-nextflowStatus: Incomplete
-wdlStatus: Incomplete
 name: faidx
+metadataStatus: Released
+cwlStatus: Released
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+version: 0.1.0
 identifier: TL_ec2a8d_bb.0b
 description: "samtools faidx <ref.fasta> [region1 [...]]\nIndex reference sequence\
   \ in the FASTA format or extract subsequence from indexed reference sequence. If\
@@ -13,7 +14,10 @@ description: "samtools faidx <ref.fasta> [region1 [...]]\nIndex reference sequen
   FASTQ files can be read and indexed by this command. Without using --fastq any extracted\
   \ subsequence will be in FASTA format."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

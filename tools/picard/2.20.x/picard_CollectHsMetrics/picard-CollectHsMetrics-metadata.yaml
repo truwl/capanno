@@ -1,9 +1,10 @@
+name: CollectHsMetrics
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CollectHsMetrics
+version: 0.1.0
 identifier: TL_e24fa5_a4.c8
 description: "Collects hybrid-selection (HS) metrics for a SAM or BAM file. This tool\
   \ takes a SAM/BAM file input and collects metrics that are specific for sequence\
@@ -26,7 +27,10 @@ description: "Collects hybrid-selection (HS) metrics for a SAM or BAM file. This
   \ sequence depth information for every target interval, use the PER_TARGET_COVERAGE\
   \ option.\nNote: Metrics labeled as percentages are actually expressed as fractions!"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

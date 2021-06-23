@@ -1,9 +1,10 @@
+name: ConvertSequencingArtifactToOxoG
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: ConvertSequencingArtifactToOxoG
+version: 0.1.0
 identifier: TL_e24fa5_94.c8
 description: "Extract OxoG metrics from generalized artifacts metrics.\nThis tool\
   \ extracts 8-oxoguanine (OxoG) artifact metrics from the output of CollectSequencingArtifactsMetrics\
@@ -20,7 +21,10 @@ description: "Extract OxoG metrics from generalized artifacts metrics.\nThis too
   \ generated automatically. Finally, to run this tool successfully, the REFERENCE_SEQUENCE\
   \ must be provided."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

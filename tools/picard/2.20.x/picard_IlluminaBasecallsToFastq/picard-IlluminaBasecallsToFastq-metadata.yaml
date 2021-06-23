@@ -1,9 +1,10 @@
+name: IlluminaBasecallsToFastq
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: IlluminaBasecallsToFastq
+version: 0.1.0
 identifier: TL_e24fa5_8e.c8
 description: "Generate FASTQ file(s) from Illumina basecall read data.\nThis tool\
   \ generates FASTQ files from data in an Illumina BaseCalls output directory. Separate\
@@ -22,7 +23,10 @@ description: "Generate FASTQ file(s) from Illumina basecall read data.\nThis too
   \ reads e.g. index, barcode, or blank (if it contains a template read). The {number}\
   \ indicates the read number, either first (1) or second (2) for paired-end sequencing."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

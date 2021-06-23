@@ -1,0 +1,19 @@
+{
+    "MultiBamExpressionQuantification.strandedness": "None",
+    "MultiBamExpressionQuantification.bams": [
+        {
+            "left": "sample1",
+            "right": {
+                "file": "tests/data/rna3.bam",
+                "index": "tests/data/rna3.bai"
+            }
+        },
+        {
+            "left": "sample2",
+            "right": {
+                "file": "tests/data/rna3.bam",
+                "index": "tests/data/rna3.bai"
+            }
+        }
+    ]
+}

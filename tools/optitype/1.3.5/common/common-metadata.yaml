@@ -11,19 +11,19 @@ description: OptiType is a novel HLA genotyping algorithm based on integer linea
   NGS data by simultaneously selecting all major and minor HLA Class I alleles.
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/FRED-2/OptiType
+license: BSD-3-Clause
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/FRED-2/OptiType
+    description:
+    URL:
 contactPoint:
-  - name:
-    email:
+  - name: András Szolek
+    email: szolek@informatik.uni-tuebingen.de
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/bioinformatics/btu548
+    headline: 'OptiType: precision HLA typing from next-generation sequencing data'
 keywords:
   - name:
     category:

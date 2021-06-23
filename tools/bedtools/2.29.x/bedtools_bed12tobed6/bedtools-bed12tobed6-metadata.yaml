@@ -1,16 +1,20 @@
+name: bed12tobed6
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: bed12tobed6
+version: 0.1.0
 identifier: TL_43392c_b0.c8
 description: bed12ToBed6 is a convenience tool that converts BED features in BED12
   (a.k.a. “blocked” BED features such as genes) to discrete BED6 features. For example,
   in the case of a gene with six exons, bed12ToBed6 would create six separate BED6
   features (i.e., one for each exon).
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -1,9 +1,17 @@
+name: __main__
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: __main__
-description:
+version: 0.1.0
 identifier: TL_c8f1ee_d4.47
+description: calculate md5sum
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

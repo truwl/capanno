@@ -16,12 +16,12 @@ description: "Wgsim is a small tool for simulating sequence reads from a referen
   \ a SNP caller with wgsim_eval.pl\nthat comes with the package."
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/lh3/wgsim
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/lh3/wgsim
+    description:
+    URL:
 contactPoint:
   - name:
     email:
@@ -34,8 +34,8 @@ keywords:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Heng Li
+    email: hengli@broadinstitute.org
     identifier:
 programmingLanguage: []
 datePublished:

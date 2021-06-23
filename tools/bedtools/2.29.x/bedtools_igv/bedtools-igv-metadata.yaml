@@ -5,7 +5,7 @@ nextflowStatus: Incomplete
 wdlStatus: Incomplete
 name: igv
 identifier: TL_43392c_aa.c8
-description:
+description: bedToIgv creates an IGV (http://www.broadinstitute.org/igv/) batch script (see http:// www.broadinstitute.org/igv/batch for details) such that a snapshot will be taken at each features in a feature file.
 keywords:
 - name:
   category:

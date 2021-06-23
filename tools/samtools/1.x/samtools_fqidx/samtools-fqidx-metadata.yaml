@@ -1,9 +1,10 @@
+name: fqidx
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: fqidx
+version: 0.1.0
 identifier: TL_ec2a8d_a3.0b
 description: "samtools fqidx <ref.fastq> [region1 [...]]\nIndex reference sequence\
   \ in the FASTQ format or extract subsequence from indexed reference sequence. If\
@@ -15,7 +16,10 @@ description: "samtools fqidx <ref.fastq> [region1 [...]]\nIndex reference sequen
   \ produce an index that is almost as big as the original file, and searches using\
   \ the index will be very slow and use a lot of memory."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

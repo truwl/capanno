@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_67e97b_57.85
-description:
+description: Collects a suite of metrics to QC duplexes for UMI grouped data
 keywords:
   - name:
     category:

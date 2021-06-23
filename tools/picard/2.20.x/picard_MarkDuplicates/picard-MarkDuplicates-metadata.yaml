@@ -1,9 +1,10 @@
+name: MarkDuplicates
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: MarkDuplicates
+version: 0.1.0
 identifier: TL_e24fa5_5f.c8
 description: "Identifies duplicate reads.\nThis tool locates and tags duplicate reads\
   \ in a BAM or SAM file, where duplicate reads are defined as originating from a\
@@ -45,7 +46,10 @@ description: "Identifies duplicate reads.\nThis tool locates and tags duplicate 
   If desired, duplicates can be removed using the REMOVE_DUPLICATE and REMOVE_SEQUENCING_DUPLICATES\
   \ options."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

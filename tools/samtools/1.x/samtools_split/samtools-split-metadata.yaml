@@ -1,15 +1,19 @@
+name: split
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: split
+version: 0.1.0
 identifier: TL_ec2a8d_ee.0b
 description: "samtools split [options] merged.sam|merged.bam|merged.cram\nSplits a\
   \ file by read group, producing one or more output files matching a common prefix\
   \ (by default based on the input filename) each containing one read-group."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

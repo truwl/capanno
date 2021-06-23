@@ -121,8 +121,8 @@ inputs:
       - 'null'
     inputBinding:
       prefix: -f
-    doc: |4-
-       STR|INT Required flag, 0 for unset. See also `samtools flags` [0] 
+    doc: |-
+       STR|INT Required flag, 0 for unset. See also samtools flags
   sparse:
     type:
       - 'null'

@@ -1,12 +1,12 @@
 name: FPKM_count
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_61.49
-description:
+description: Calculate raw read count, FPM (fragment per million) and FPKM (fragment per million mapped reads per kilobase exon) for each gene in BED file. Note SAM file is not supported.
 keywords:
   - name:
     category:

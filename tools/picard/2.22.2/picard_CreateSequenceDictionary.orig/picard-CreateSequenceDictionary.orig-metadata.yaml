@@ -1,15 +1,15 @@
 name: CreateSequenceDictionary.orig
 metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
+cwlStatus: Released
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_e24fa5_1c.04
-description:
+description: Creates a sequence dictionary for a reference sequence. This tool creates a sequence dictionary file (with ".dict" extension) from a reference sequence provided in FASTA format, which is required by many processing and analysis tools. The output file contains a header but no SAMRecords, and the header contains only sequence records.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
 extra:
   cwlDocument:

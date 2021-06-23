@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_4f3c04_ee.21
-description:
+description: Splits a BAM file on user-specified property, creating a new BAM output file for each value found
 keywords:
   - name:
     category:

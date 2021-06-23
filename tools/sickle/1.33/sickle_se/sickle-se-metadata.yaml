@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_979979_ef.5d
-description:
+description: takes an input fastq file and outputs a trimmed version of that file
 keywords:
   - name:
     category:

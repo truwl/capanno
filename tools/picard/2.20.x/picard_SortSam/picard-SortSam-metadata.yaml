@@ -1,9 +1,10 @@
+name: SortSam
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: SortSam
+version: 0.1.0
 identifier: TL_e24fa5_7b.c8
 description: "Sorts a SAM or BAM file. This tool sorts the input SAM or BAM file by\
   \ coordinate, queryname (QNAME), or some other property of the SAM record. The SortOrder\
@@ -17,7 +18,10 @@ description: "Sorts a SAM or BAM file. This tool sorts the input SAM or BAM file
   \ within these groups. Reads having the same queryname are derived from the same\
   \ template."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -1,8 +1,17 @@
+name: __main__
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: __main__
+version: 0.1.0
 identifier: TL_9579db_54.89
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

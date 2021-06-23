@@ -13,24 +13,22 @@ description: Kraken 2 is the newest version of Kraken, a taxonomic classificatio
   inform the classification algorithm.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/DerrickWood/kraken2
 license: MIT
 WebSite:
   - name:
     description: homepage
     URL: https://ccb.jhu.edu/software/kraken2/
   - name:
-    description:
-      - Repository
-    URL: https://github.com/DerrickWood/kraken2
-  - name:
     description: documentation
     URL: https://ccb.jhu.edu/software/kraken2/index.shtml?t=manual
 contactPoint:
-  - name:
-    email:
+  - name: Derrick Wood
+    email: dwood@cs.jhu.edu
     identifier:
 publication:
+  - identifier: https://doi.org/10.1186/s13059-019-1891-0
+    headline: Improved metagenomic analysis with Kraken 2
   - identifier: 10.1101/762302
     headline:
 keywords:
@@ -39,7 +37,7 @@ keywords:
   - http://edamontology.org/operation_3460
 alternateName:
 creator:
-  - name:
+  - name: Derek Wood
     email:
     identifier:
 programmingLanguage:

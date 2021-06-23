@@ -6,7 +6,7 @@ nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_7e0c8a_71.c6
-description:
+description: get info about an assembly
 keywords:
 - name:
   category:

@@ -1,9 +1,10 @@
+name: SplitVcfs
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: SplitVcfs
+version: 0.1.0
 identifier: TL_e24fa5_c1.c8
 description: Splits SNPs and INDELs into separate files. This tool reads in a VCF
   or BCF file and writes out the SNPs and INDELs it contains to separate files. The
@@ -11,7 +12,10 @@ description: Splits SNPs and INDELs into separate files. This tool reads in a VC
   for both outputs. If records other than SNPs or INDELs are present, set the STRICT
   option to "false", otherwise the tool will raise an exception and quit.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

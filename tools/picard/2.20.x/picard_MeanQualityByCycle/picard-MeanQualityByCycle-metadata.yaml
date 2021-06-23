@@ -1,9 +1,10 @@
+name: MeanQualityByCycle
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: MeanQualityByCycle
+version: 0.1.0
 identifier: TL_e24fa5_99.c8
 description: "Collect mean quality by cycle. This tool generates a data table and\
   \ chart of mean quality by cycle from a BAM file. It is intended to be used on a\
@@ -15,7 +16,10 @@ description: "Collect mean quality by cycle. This tool generates a data table an
   \ during sequencing.\nNote: Metrics labeled as percentages are actually expressed\
   \ as fractions!"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

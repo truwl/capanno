@@ -6,11 +6,11 @@ identifier: TL_16b400.9c
 featureList:
   - sortmerna.tool
 metadataStatus: Released
-description:
+description: SortMeRNA is a program tool for filtering, mapping and OTU-picking NGS reads in metatranscriptomic and metagenomic data. The core algorithm is based on approximate seeds and allows for fast and sensitive analyses of nucleotide sequences. The main application of SortMeRNA is filtering ribosomal RNA from metatranscriptomic data. Additional applications include OTU-picking and taxonomy assignation available through QIIME v1.9+
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/biocore/sortmerna
+license: GPL-3.0
 WebSite:
   - name:
     description:
@@ -20,16 +20,20 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/bioinformatics/bts611
+    headline: 'SortMeRNA: fast and accurate filtering of ribosomal RNAs in metatranscriptomic data'
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Evguenia Kopylova
+    email: jenya.kopylov@gmail.com
     identifier:
+  - name:
+    email: biocodz@protonmail.com
+    identifier:
+
 programmingLanguage:
 datePublished:
 downloadURL:

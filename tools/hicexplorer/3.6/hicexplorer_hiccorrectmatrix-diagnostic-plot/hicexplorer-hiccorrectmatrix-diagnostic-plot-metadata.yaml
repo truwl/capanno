@@ -1,12 +1,12 @@
 name: hiccorrectmatrix-diagnostic-plot
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_1c3c14_8c.e4
-description:
+description: This function provides 2 balancing methods which can be applied on a raw matrix.
 keywords:
   - name:
     category:

@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_cbf4cc_da.69
-description:
+description: load in an exact match species training set such as silva_species_assignment_v128.fa.gz for ASVs
 keywords:
   - name:
     category:

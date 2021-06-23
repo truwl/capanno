@@ -11,16 +11,12 @@ description: BBMap is a fast splice-aware aligner for RNA and DNA.  It is faster
   particularly for reads with many errors and indels.
 codeRepository:
   name:
-  URL:
+  URL: https://sourceforge.net/projects/bbmap/
 license: BSD-3-Clause
 WebSite:
   - name:
     description: homepage
     URL: https://jgi.doe.gov/data-and-tools/bbtools/
-  - name:
-    description:
-      - Repository
-    URL: https://sourceforge.net/projects/bbmap/
   - name:
     description: documentation
     URL: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbmap-guide/
@@ -29,8 +25,8 @@ contactPoint:
     email: bbtools@lbl.gov
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1371/journal.pone.0185056
+    headline: BBMerge – Accurate paired shotgun read merging via overlap
 keywords:
   - http://edamontology.org/topic_3168
   - http://edamontology.org/topic_3320

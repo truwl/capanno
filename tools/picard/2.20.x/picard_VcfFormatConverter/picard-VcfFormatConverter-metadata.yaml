@@ -1,9 +1,10 @@
+name: VcfFormatConverter
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: VcfFormatConverter
+version: 0.1.0
 identifier: TL_e24fa5_dc.c8
 description: Converts VCF to BCF or BCF to VCF. This tool converts files between the
   plain-text VCF format and its binary compressed equivalent, BCF. Input and output
@@ -11,7 +12,10 @@ description: Converts VCF to BCF or BCF to VCF. This tool converts files between
   results, it is recommended to ensure that an index file is present and set the REQUIRE_INDEX
   option to true.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

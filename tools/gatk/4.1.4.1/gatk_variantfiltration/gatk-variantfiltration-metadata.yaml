@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_55f722_74.3a
-description:
+description: Filter variant calls based on INFO and/or FORMAT annotations
 keywords:
   - name:
     category:

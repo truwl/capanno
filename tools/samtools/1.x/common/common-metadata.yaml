@@ -83,9 +83,12 @@ publication:
   - identifier: 10.1093/bioinformatics/btp352
     headline:
 keywords:
+  - http://edamontology.org/topic_3673
   - http://edamontology.org/topic_0102
   - http://edamontology.org/topic_0080
   - http://edamontology.org/topic_3168
+  - http://edamontology.org/operation_2409
+  - http://edamontology.org/operation_3227
   - http://edamontology.org/operation_0227
   - http://edamontology.org/operation_3096
   - http://edamontology.org/operation_1812

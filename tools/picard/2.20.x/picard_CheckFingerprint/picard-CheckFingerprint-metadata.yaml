@@ -1,9 +1,10 @@
+name: CheckFingerprint
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CheckFingerprint
+version: 0.1.0
 identifier: TL_e24fa5_83.c8
 description: "Computes a fingerprint from the supplied input file (SAM/BAM or VCF)\
   \ file and compares it to the expected fingerprint genotypes provided. The key output\
@@ -19,7 +20,10 @@ description: "Computes a fingerprint from the supplied input file (SAM/BAM or VC
   \ metrics having a file extension 'fingerprinting_summary_metrics' and the detail\
   \ metrics having a file extension 'fingerprinting_detail_metrics'."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_a4fd95_ef.1c
-description:
+description: trim single-end reads
 keywords:
   - name:
     category:

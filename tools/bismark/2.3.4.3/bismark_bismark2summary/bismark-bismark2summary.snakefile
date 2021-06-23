@@ -1,4 +1,5 @@
 """Snakemake wrapper to generate summary graphical HTML report from several Bismark text report files."""
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 # https://github.com/FelixKrueger/Bismark/blob/master/bismark2summary
 
 __author__ = "Roman Chernyatchik"

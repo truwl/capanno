@@ -28,8 +28,8 @@ WebSite:
     description: homepage
     URL: http://homer.ucsd.edu/homer/motif/
 contactPoint:
-  - name:
-    email:
+  - name: Christopher Benner
+    email: cbenner@ucsd.edu
     identifier:
 publication:
   - identifier:

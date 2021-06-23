@@ -1,0 +1,20 @@
+{
+    "chip.title": "ENCSR135FYV",
+    "chip.description": "ENCSR135FYV_PE_100_crop_control_alignonly",
+    "chip.pipeline_type": "control",
+    "chip.align_only": true,
+    "chip.paired_end": true,
+    "chip.crop_length": 100,
+    "chip.crop_length_tol": 2,
+    "chip.genome_tsv": "gs://encode-pipeline-genome-data/genome_tsv/v2/hg38_gcp.tsv",
+    "chip.ref_fa": "https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz",
+    "chip.bowtie2_idx_tar": "https://www.encodeproject.org/files/ENCFF110MCL/@@download/ENCFF110MCL.tar.gz",
+    "chip.chrsz": "https://www.encodeproject.org/files/GRCh38_EBV.chrom.sizes/@@download/GRCh38_EBV.chrom.sizes.tsv",
+    "chip.blacklist": "https://www.encodeproject.org/files/ENCFF356LFX/@@download/ENCFF356LFX.bed.gz",
+    "chip.fastqs_rep1_R1": [
+        "https://www.encodeproject.org/files/ENCFF650PTL/@@download/ENCFF650PTL.fastq.gz"
+    ],
+    "chip.fastqs_rep1_R2": [
+        "https://www.encodeproject.org/files/ENCFF050RJA/@@download/ENCFF050RJA.fastq.gz"
+    ]
+}

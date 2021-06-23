@@ -11,23 +11,17 @@ description: A pattern growth approach to detect break points of large deletions
   medium sized insertions from paired end short reads.
 codeRepository:
   name:
-  URL:
+  URL:  https://github.com/genome/pindel
 license: Unlicense
 WebSite:
   - name:
     description: homepage
     URL: http://gmt.genome.wustl.edu/packages/pindel/
   - name:
-    description:
-      - Repository
-    URL: https://github.com/genome/pindel
-  - name:
-    description:
-      - Issue tracker
+    description: Issue tracker
     URL: https://github.com/genome/pindel/issues
   - name:
-    description:
-      - Galaxy service
+    description: Galaxy service
     URL: https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/pindel/pindel/0.2.5a3
   - name:
     description: documentation

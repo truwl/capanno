@@ -1,12 +1,12 @@
 name: align
 metadataStatus: Released
 cwlStatus: Incomplete
-nextflowStatus: Incomplete
+nextflowStatus: Released
 snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_8d0912_f7.1a
-description:
+description: align reads
 keywords:
   - name:
     category:

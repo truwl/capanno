@@ -1,9 +1,10 @@
+name: AddOrReplaceReadGroups
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: AddOrReplaceReadGroups
+version: 0.1.0
 identifier: TL_e24fa5_05.c8
 description: "Replace read groups in a BAM file. This tool enables the user to replace\
   \ all read groups in the INPUT file with a single new read group and assign all\
@@ -11,7 +12,10 @@ description: "Replace read groups in a BAM file. This tool enables the user to r
   \ groups, see the GATK Dictionary entry.\nThis tool accepts INPUT BAM and SAM files\
   \ or URLs from the Global Alliance for Genomics and Health (GA4GH) (see http://ga4gh.org/#/documentation)."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

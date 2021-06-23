@@ -1,4 +1,5 @@
 """Snakemake wrapper for bam2nuc tool that calculates mono- and di-nucleotide coverage of the reads and compares them with average genomic sequence
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 composition."""
 # https://github.com/FelixKrueger/Bismark/blob/master/bam2nuc
 

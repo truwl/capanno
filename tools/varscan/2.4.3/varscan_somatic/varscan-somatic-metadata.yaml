@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_6518d5_85.7a
-description:
+description: call somatic mutations
 keywords:
   - name:
     category:

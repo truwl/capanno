@@ -1,9 +1,10 @@
+name: collate
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: collate
+version: 0.1.0
 identifier: TL_ec2a8d_31.0b
 description: "samtools collate [options] in.sam|in.bam|in.cram [<prefix>]\nShuffles\
   \ and groups reads together by their names. A faster alternative to a full query\
@@ -12,7 +13,10 @@ description: "samtools collate [options] in.sam|in.bam|in.cram [<prefix>]\nShuff
   \ between groups.\nThe output from this command should be suitable for any operation\
   \ that requires all reads from the same template to be grouped together."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -1,11 +1,17 @@
+name: SE
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: SE
+version: 0.1.0
 identifier: TL_a2e03a_53.af
 description: Trimmomatic for single end reads.
-keywords: []
+keywords:
+  - name:
+    category:
 alternateName: []
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

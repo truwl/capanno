@@ -10,23 +10,18 @@ description: EPIC is a R package and Shiny app to estimate the proportions of di
   cell types from bulk gene expression data.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/GfellerLab/EPIC
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/GfellerLab/EPIC
-  - name:
-    description:
-      - Other
+    description: Homepage
     URL: http://epic.gfellerlab.org
   - name:
-    description:
-      - Repository
+    description: Repository
     URL: https://github.com/scvannost/epicpy
 contactPoint:
-  - name:
-    email:
+  - name: Julien Racle
+    email: julien.racle@unil.ch
     identifier:
 publication:
   - identifier: 10.1007/978-1-0716-0327-7_17

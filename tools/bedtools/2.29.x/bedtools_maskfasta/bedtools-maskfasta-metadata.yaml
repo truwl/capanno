@@ -1,9 +1,10 @@
+name: maskfasta
 metadataStatus: Released
 cwlStatus: Incomplete
+nextflowStatus: Released
 snakemakeStatus: Incomplete
-nextflowStatus: Incomplete
 wdlStatus: Incomplete
-name: maskfasta
+version: 0.1.0
 identifier: TL_43392c_4c.c8
 description: bedtools maskfasta masks sequences in a FASTA file based on intervals
   defined in a feature file. The headers in the input FASTA file must exactly match
@@ -11,7 +12,10 @@ description: bedtools maskfasta masks sequences in a FASTA file based on interva
   own masked genome file based on custom annotations or for masking all but your target
   regions when aligning sequence data from a targeted capture experiment.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: maskFastaFromBed
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -1,9 +1,17 @@
 name: __main__
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
+version: 0.1.0
 identifier: TL_cadc8c_54.47
-
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

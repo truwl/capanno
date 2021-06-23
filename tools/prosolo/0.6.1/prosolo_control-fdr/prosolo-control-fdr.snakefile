@@ -1,4 +1,5 @@
 """Snakemake wrapper for ProSolo FDR control"""
+# Snakemake wrappers are provided by Truwl to teach the internal mechanics of Snakemake recipes. View https://github.com/snakemake/snakemake-wrappers to learn how to use wrappers.
 
 __author__ = "David Lähnemann"
 __copyright__ = "Copyright 2020, David Lähnemann"

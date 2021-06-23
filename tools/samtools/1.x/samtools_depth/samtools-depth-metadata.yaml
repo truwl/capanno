@@ -1,14 +1,18 @@
+name: depth
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: depth
+version: 0.1.0
 identifier: TL_ec2a8d_12.0b
 description: "samtools depth [options] [in1.sam|in1.bam|in1.cram [in2.sam|in2.bam|in2.cram]\
   \ [...]]\nComputes the read depth at each position or region."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

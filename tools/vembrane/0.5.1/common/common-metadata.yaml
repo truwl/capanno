@@ -13,12 +13,12 @@ description: vembrane allows to simultaneously filter variants based on any INFO
   entire variant is deleted.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/vembrane/vembrane
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/vembrane/vembrane
+    description:
+    URL:
 contactPoint:
   - name:
     email:
@@ -30,7 +30,16 @@ keywords:
   - http://edamontology.org/operation_3675
 alternateName:
 creator:
-  - name:
+  - name: Till Hartmann
+    email:
+    identifier:
+  - name: Christopher Schröder
+    email: christopher.schroeder@tu-dortmund.de
+    identifier:
+  - name: Johannes Köster
+    email: johannes.koester@uni-due.de
+    identifier:
+  - name: Jan Forster
     email:
     identifier:
 programmingLanguage: []

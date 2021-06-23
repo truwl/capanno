@@ -6,10 +6,10 @@ identifier: TL_cde9e8.25
 featureList:
   - halliftover
 metadataStatus: Released
-description:
+description: HAL is a structure to efficiently store and index multiple genome alignments and ancestral reconstructions. HAL is a graph-based representation which provides several advantages over matrix/block-based formats such as MAF, such as improved scalability and the ability to perform queries with respect to an arbitrary reference or subtree.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/ComparativeGenomicsToolkit/hal
 license:
 WebSite:
   - name:
@@ -20,15 +20,15 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://dx.doi.org/10.1093%2Fbioinformatics%2Fbtt128
+    headline: 'HAL: a hierarchical format for storing and analyzing multiple genome alignments'
 keywords:
   - name:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Glenn Hickey
+    email: hickey@soe.ucsc.edu
     identifier:
 programmingLanguage:
 datePublished:

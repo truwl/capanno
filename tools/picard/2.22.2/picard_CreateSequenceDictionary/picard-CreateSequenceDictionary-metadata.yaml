@@ -1,15 +1,15 @@
 name: CreateSequenceDictionary
 metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
+cwlStatus: Released
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_e24fa5_4c.04
-description:
+description: Creates a sequence dictionary for a reference sequenc
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
 extra:
   cwlDocument:

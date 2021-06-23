@@ -1,14 +1,18 @@
+name: bamtofastq
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: bamtofastq
+version: 0.1.0
 identifier: TL_43392c_11.c8
 description: bedtools bamtofastq is a conversion utility for extracting FASTQ records
   from sequence alignments in BAM format.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: bamToFastq
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

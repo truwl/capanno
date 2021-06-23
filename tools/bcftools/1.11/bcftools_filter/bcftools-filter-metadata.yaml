@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_6b0c16_b2.cb
-description:
+description: filter VCF/BCF files using fixed thresholds
 keywords:
   - name:
     category:

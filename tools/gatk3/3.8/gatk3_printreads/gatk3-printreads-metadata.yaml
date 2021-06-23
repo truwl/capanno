@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_6ad060_49.80
-description:
+description: Print reads in the SAM/BAM/CRAM file
 keywords:
   - name:
     category:

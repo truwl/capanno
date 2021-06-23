@@ -1,9 +1,10 @@
+name: MarkDuplicatesWithMateCigar
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: MarkDuplicatesWithMateCigar
+version: 0.1.0
 identifier: TL_e24fa5_4a.c8
 description: "Identifies duplicate reads, accounting for mate CIGAR. This tool locates\
   \ and tags duplicate reads (both PCR and optical) in a BAM or SAM file, where duplicate\
@@ -21,7 +22,10 @@ description: "Identifies duplicate reads, accounting for mate CIGAR. This tool l
   \ force making that window very large, thus exhausting memory.\nNote: Metrics labeled\
   \ as percentages are actually expressed as fractions!"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

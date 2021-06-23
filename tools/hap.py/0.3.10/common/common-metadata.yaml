@@ -11,12 +11,12 @@ description: "This is a set of programs based on htslib to benchmark variant cal
   \ dataset, use the following commmand line to perform genotype-level haplotype comparison."
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/Illumina/hap.py
 license:
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/Illumina/hap.py
+    description:
+    URL:
 contactPoint:
   - name:
     email:
@@ -29,8 +29,8 @@ keywords:
     category:
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Peter Krusche
+    email: pkrusche@illumina.com
     identifier:
 programmingLanguage: []
 datePublished:

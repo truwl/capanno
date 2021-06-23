@@ -1,12 +1,12 @@
 name: hicmergematrixbins
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_1c3c14_44.e4
-description:
+description: Merges bins from a Hi-C matrix.
 keywords:
   - name:
     category:

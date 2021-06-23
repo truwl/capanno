@@ -17,12 +17,9 @@ description: Bismark is a tool to map bisulfite treated sequencing reads and per
   methylation calling in a quick and easy-to-use fashion.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/FelixKrueger/Bismark
 license: GPL-3.0
 WebSite:
-  - name:
-    description: homepage
-    URL: https://github.com/FelixKrueger/Bismark
   - name:
     description: documentation
     URL: https://github.com/FelixKrueger/Bismark/tree/master/Docs
@@ -31,7 +28,7 @@ contactPoint:
     email: simon.andrews@babraham.ac.uk
     identifier:
 publication:
-  - identifier:
+  - identifier: https://doi.org/10.1093/bioinformatics/btr167
     headline: 'Bismark: A flexible aligner and methylation caller for Bisulfite-Seq
       applications'
 keywords:

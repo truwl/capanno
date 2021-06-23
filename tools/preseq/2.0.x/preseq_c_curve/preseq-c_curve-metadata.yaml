@@ -1,9 +1,10 @@
+name: c_curve
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: c_curve
+version: 0.1.0
 identifier: TL_ec197e_8b.d1
 description: "c_curve computes the expected yield of distinct reads for experiments\
   \ smaller than the input experiment in a .bed or .bam file through resampling. The\
@@ -11,7 +12,10 @@ description: "c_curve computes the expected yield of distinct reads for experime
   \ is the desired output file name and input.bed is the input .bed file, then simply\
   \ type\n$ preseq c_curve -o output.txt input.sort.bed"
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

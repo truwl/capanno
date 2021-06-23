@@ -17,12 +17,12 @@ description: variation graph data structures, interchange formats, alignment, ge
   and variant calling methods
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/vgteam/vg
+license: MIT
 WebSite:
   - name:
-    description: homepage
-    URL: https://github.com/vgteam/vg
+    description:
+    URL:
 contactPoint:
   - name:
     email:
@@ -34,7 +34,31 @@ keywords:
   - http://edamontology.org/operation_3209
 alternateName:
 creator:
-  - name:
+  - name: Adam Novak
+    email: anovak@soe.ucsc.edu
+    identifier:
+  - name: Erik Garrison
+    email:
+    identifier:
+  - name: Jordan Eizenga
+    email:
+    identifier:
+  - name: Glenn Hickey
+    email:
+    identifier:
+  - name: Xian Chang
+    email:
+    identifier:
+  - name: Jouni Siren
+    email:
+    identifier:
+  - name: Eric T. Dawson
+    email: eric.t.dawson@gmail.com
+    identifier:
+  - name: Susanna Morin
+    email: susanna.morin@gmail.com
+    identifier:
+  - name: Toshiyuki Yokoyama
     email:
     identifier:
 programmingLanguage: []

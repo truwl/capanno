@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_7354bf_5c.ec
-description:
+description: annotate variants
 keywords:
   - name:
     category:

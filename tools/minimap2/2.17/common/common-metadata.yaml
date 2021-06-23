@@ -9,31 +9,35 @@ featureList:
   - aligner
   - index
 metadataStatus: Released
-description:
+description: A versatile pairwise aligner for genomic and spliced nucleotide sequences
 codeRepository:
   name:
-  URL:
-license:
+  URL: https://github.com/lh3/minimap2
+license: MIT
 WebSite:
-  - name:
+  - name: Homepage
     description:
-    URL:
+    URL: https://lh3.github.io/minimap2/
 contactPoint:
   - name:
     email:
     identifier:
 publication:
-  - identifier:
-    headline:
+  - identifier: https://doi.org/10.1093/bioinformatics/bty191
+    headline: 'Minimap2: pairwise alignment for nucleotide sequences'
 keywords:
-  - name:
-    category:
+  - name: Pairwise sequence alignment
+    category: operation
+  - name: Mapping
+    category: topic
+
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Heng Li
+    email: hengli@broadinstitute.org
     identifier:
 programmingLanguage:
 datePublished:
 downloadURL:
 extra:
+  biotoolsID: minimap2

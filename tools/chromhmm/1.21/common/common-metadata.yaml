@@ -24,7 +24,7 @@ contactPoint:
     email: jason.ernst@ucla.edu
     identifier:
 publication:
-  - identifier:
+  - identifier: https://doi.org/10.1038/nmeth.1906
     headline: 'ChromHMM: Automating chromatin-state discovery and characterization'
 keywords:
   - http://edamontology.org/topic_3173

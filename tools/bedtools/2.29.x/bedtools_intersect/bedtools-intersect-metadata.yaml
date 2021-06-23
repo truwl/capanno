@@ -1,9 +1,10 @@
-metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Released
-nextflowStatus: Incomplete
-wdlStatus: Incomplete
 name: intersect
+metadataStatus: Released
+cwlStatus: Released
+nextflowStatus: Released
+snakemakeStatus: Released
+wdlStatus: Incomplete
+version: 0.1.0
 identifier: TL_43392c_eb.c8
 description: By far, the most common question asked of two sets of genomic features
   is whether or not any of the features in the two sets “overlap” with one another.
@@ -12,11 +13,11 @@ description: By far, the most common question asked of two sets of genomic featu
   control as to how the intersections are reported. bedtools intersect works with
   both BED/GFF/VCF and BAM files as input.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: intersectBed
-parentMetadata: ../common/common-metadata.yaml
 extra:
   cwlDocument:
     isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/bedtools/bedtools_intersect.cwl
     dateCreated: '2020-09-21'
+parentMetadata: ../common/common-metadata.yaml

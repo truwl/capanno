@@ -6,7 +6,7 @@ snakemakeStatus: Released
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_cbf4cc_11.69
-description:
+description: Dereplication combines all identical sequencing reads into into unique sequences with a corresponding abundance equal to the number of reads with that unique sequence. Dereplication substantially reduces computation time by eliminating redundant comparisons.
 keywords:
   - name:
     category:

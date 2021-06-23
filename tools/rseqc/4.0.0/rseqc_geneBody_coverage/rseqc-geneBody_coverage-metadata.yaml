@@ -6,7 +6,7 @@ nextflowStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_73aadb_de.49
-description:
+description: This tool scales all transcripts to 100nt and calculates the number of reads covering each nucleotide position.
 keywords:
   - name:
     category:

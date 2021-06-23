@@ -1,15 +1,15 @@
 name: '2'
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_9af1de_c8.0e
 description: Run QC on different file types including fastq, sam, and bam
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
 extra:
   cwlDocument:

@@ -1,0 +1,34 @@
+{
+  "long_read_rna_pipeline.input_type": "String (optional, default = \"pacbio\")",
+  "long_read_rna_pipeline.canonical_only": "Boolean (optional, default = true)",
+  "long_read_rna_pipeline.genome_build": "String",
+  "long_read_rna_pipeline.small_task_resources": {
+    "cpu": "Int",
+    "memory_gb": "Int",
+    "disks": "String"
+  },
+  "long_read_rna_pipeline.large_task_resources": {
+    "cpu": "Int",
+    "memory_gb": "Int",
+    "disks": "String"
+  },
+  "long_read_rna_pipeline.fastqs": "Array[File]",
+  "long_read_rna_pipeline.variants": "File? (optional)",
+  "long_read_rna_pipeline.annotation": "File",
+  "long_read_rna_pipeline.annotation_name": "String",
+  "long_read_rna_pipeline.spikeins": "Array[File] (optional, default = [])",
+  "long_read_rna_pipeline.experiment_prefix": "String (optional, default = \"my_experiment\")",
+  "long_read_rna_pipeline.xlarge_task_resources": {
+    "cpu": "Int",
+    "memory_gb": "Int",
+    "disks": "String"
+  },
+  "long_read_rna_pipeline.talon_prefixes": "Array[String] (optional, default = [])",
+  "long_read_rna_pipeline.reference_genome": "File",
+  "long_read_rna_pipeline.medium_task_resources": {
+    "cpu": "Int",
+    "memory_gb": "Int",
+    "disks": "String"
+  }
+}
+

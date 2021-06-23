@@ -1,9 +1,10 @@
+name: CreateSequenceDictionary
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: CreateSequenceDictionary
+version: 0.1.0
 identifier: TL_e24fa5_4c.c8
 description: "Creates a sequence dictionary for a reference sequence. This tool creates\
   \ a sequence dictionary file (with \".dict\" extension) from a reference sequence\
@@ -12,7 +13,10 @@ description: "Creates a sequence dictionary for a reference sequence. This tool 
   \ sequence records.\nThe reference sequence can be gzipped (both .fasta and .fasta.gz\
   \ are supported)."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

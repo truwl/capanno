@@ -1,14 +1,18 @@
+name: update
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: update
+version: 0.1.0
 identifier: TL_db5570_3a.8b
 description: "-u, --update\nAppend files which are newer than the corresponding copy\
   \ in the archive. Arguments have the same meaning as with -c and -r options."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

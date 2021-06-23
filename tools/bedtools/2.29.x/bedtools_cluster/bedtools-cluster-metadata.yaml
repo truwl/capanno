@@ -1,9 +1,10 @@
+name: cluster
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: cluster
+version: 0.1.0
 identifier: TL_43392c_06.c8
 description: Similar to merge, cluster report each set of overlapping or “book-ended”
   features in an interval file. In contrast to merge, cluster does not flatten the
@@ -11,7 +12,10 @@ description: Similar to merge, cluster report each set of overlapping or “book
   ID to each record in each cluster. This is useful for having fine control over how
   sets of overlapping intervals in a single interval file are combined.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: clusterBed
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

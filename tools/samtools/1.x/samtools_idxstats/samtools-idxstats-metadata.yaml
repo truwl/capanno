@@ -1,9 +1,10 @@
+name: idxstats
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Released
 wdlStatus: Incomplete
-name: idxstats
+version: 0.1.0
 identifier: TL_ec2a8d_d1.0b
 description: "samtools idxstats in.sam|in.bam|in.cram\nRetrieve and print stats in\
   \ the index file corresponding to the input file. Before calling idxstats, the input\
@@ -14,7 +15,10 @@ description: "samtools idxstats in.sam|in.bam|in.cram\nRetrieve and print stats 
   \ sequence name, sequence length, # mapped reads and # unmapped reads. It is written\
   \ to stdout."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

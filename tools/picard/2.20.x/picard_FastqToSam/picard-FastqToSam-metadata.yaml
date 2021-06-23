@@ -1,9 +1,10 @@
+name: FastqToSam
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: FastqToSam
+version: 0.1.0
 identifier: TL_e24fa5_bb.c8
 description: "Converts a FASTQ file to an unaligned BAM or SAM file. This tool extracts\
   \ read sequences and base qualities from the input FASTQ file and writes them out\
@@ -12,7 +13,10 @@ description: "Converts a FASTQ file to an unaligned BAM or SAM file. This tool e
   \ FastqSolexa and FastqIllumina (see http://maq.sourceforge.net/fastq.shtml for\
   \ details). Input FASTQ files can be in GZip format (with .gz extension)."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

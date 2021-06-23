@@ -1,15 +1,15 @@
 name: fastq_dump
 metadataStatus: Released
-cwlStatus: Incomplete
-snakemakeStatus: Incomplete
+cwlStatus: Released
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_84a745_fc.27
 description:
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
 extra:
   cwlDocument:

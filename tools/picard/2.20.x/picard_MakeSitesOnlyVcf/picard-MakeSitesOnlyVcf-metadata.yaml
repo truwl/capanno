@@ -1,15 +1,19 @@
+name: MakeSitesOnlyVcf
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: MakeSitesOnlyVcf
+version: 0.1.0
 identifier: TL_e24fa5_46.c8
 description: Reads a VCF/VCF.gz/BCF and removes all genotype information from it while
   retaining all site level information, including annotations based on genotypes (e.g.
   AN, AF). Output an be any support variant format including .vcf, .vcf.gz or .bcf.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

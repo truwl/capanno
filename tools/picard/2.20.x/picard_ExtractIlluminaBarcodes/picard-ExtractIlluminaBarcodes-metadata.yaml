@@ -1,9 +1,10 @@
+name: ExtractIlluminaBarcodes
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: ExtractIlluminaBarcodes
+version: 0.1.0
 identifier: TL_e24fa5_23.c8
 description: "Tool determines the barcode for each read in an Illumina lane.\nThis\
   \ tool determines the numbers of reads containing barcode-matching sequences and\
@@ -32,7 +33,10 @@ description: "Tool determines the barcode for each read in an Illumina lane.\nTh
   \ and can be found in the BaseCalls directory. For poorly matching barcodes, the\
   \ order of specification of barcodes can cause arbitrary output differences."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

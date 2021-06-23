@@ -1,13 +1,17 @@
+name: sort
 metadataStatus: Released
 cwlStatus: Incomplete
+nextflowStatus: Released
 snakemakeStatus: Released
-nextflowStatus: Incomplete
 wdlStatus: Incomplete
-name: sort
+version: 0.1.0
 identifier: TL_43392c_ca.c8
 description: The bedtools sort tool sorts a feature file by chromosome and other criteria.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName: sortBed
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

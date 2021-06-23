@@ -1,15 +1,19 @@
+name: delete
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: delete
+version: 0.1.0
 identifier: TL_db5570_09.8b
 description: "--delete\nDelete from the archive. The arguments supply names of the\
   \ archive members to be removed. At least one argument must be given.\nThis option\
   \ does not operate on compressed archives. There is no short option equivalent."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

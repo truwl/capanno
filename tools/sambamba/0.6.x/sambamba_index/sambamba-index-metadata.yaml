@@ -1,9 +1,10 @@
+name: index
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: index
+version: 0.1.0
 identifier: TL_bf790f_6a.e9
 description: "sambamba index builds an index for a sorted by coordinate BAM file.\
   \ This step is required for effective region querying in most tools for working\
@@ -11,7 +12,10 @@ description: "sambamba index builds an index for a sorted by coordinate BAM file
   \ except .bai extension added to the end. The user can, however, override this default\
   \ by providing desired output filename explicitly as an optional command-line argument."
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

@@ -1,9 +1,10 @@
+name: BamIndexStats
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: BamIndexStats
+version: 0.1.0
 identifier: TL_e24fa5_e0.c8
 description: Generate index statistics from a BAM fileThis tool calculates statistics
   from a BAM index (.bai) file, emulating the behavior of the "samtools idxstats"
@@ -11,7 +12,10 @@ description: Generate index statistics from a BAM fileThis tool calculates stati
   as well as all records with no start coordinate. The input to the tool is the BAM
   file name but it must be accompanied by a corresponding index file.
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

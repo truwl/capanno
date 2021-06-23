@@ -1,8 +1,8 @@
 name: Pizzly
 metadataStatus: Released
 cwlStatus: Released
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_213d9e_21.2c
@@ -10,7 +10,7 @@ description: pizzly is a program for detecting gene fusions from RNA-Seq data of
   samples. It requires running kallisto with the --fusion parameter (available in
   version 0.43.1 or later).
 keywords:
-- http://edamontology.org/topic_0114
+  - http://edamontology.org/topic_0114
 alternateName:
 extra:
   cwlDocument:

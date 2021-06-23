@@ -1,9 +1,10 @@
+name: LiftOverIntervalList
 metadataStatus: Released
 cwlStatus: Incomplete
-snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-name: LiftOverIntervalList
+version: 0.1.0
 identifier: TL_e24fa5_a0.c8
 description: 'Lifts over an interval list from one reference build to another. This
   tool adjusts the coordinates in an interval list derived from one reference to match
@@ -12,7 +13,10 @@ description: 'Lifts over an interval list from one reference build to another. T
   and uses a UCSC chain file to guide its operation. It accepts both Picard interval_list
   files or VCF files as interval inputs.'
 keywords:
-- name:
-  category:
+  - name:
+    category:
 alternateName:
+extra:
+  sha1:
+  dockerImage:
 parentMetadata: ../common/common-metadata.yaml

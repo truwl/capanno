@@ -11,7 +11,7 @@ description: VarScan, an open source tool for variant detection that is compatib
   with several short read align-ers.
 codeRepository:
   name:
-  URL:
+  URL: https://github.com/dkoboldt/varscan
 license:
 WebSite:
   - name:
@@ -25,7 +25,7 @@ contactPoint:
     email:
     identifier:
 publication:
-  - identifier:
+  - identifier: https://doi.org/10.1093/bioinformatics/btp373
     headline: 'VarScan: Variant detection in massively parallel sequencing of individual
       and pooled samples'
 keywords:
@@ -34,8 +34,8 @@ keywords:
   - http://edamontology.org/operation_3227
 alternateName:
 creator:
-  - name:
-    email:
+  - name: Dan Koboldt
+    email: Daniel.Koboldt@nationwidechildrens.org
     identifier:
 programmingLanguage:
   - Java
