@@ -1,8 +1,8 @@
-name: __main__
+name: germline
 metadataStatus: Released
 cwlStatus: Released
 nextflowStatus: Incomplete
-snakemakeStatus: Released
+snakemakeStatus: Incomplete
 wdlStatus: Released
 version: 0.1.0
 identifier: TL_ba744c_54.b1
