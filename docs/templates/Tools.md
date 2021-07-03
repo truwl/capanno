@@ -1,6 +1,6 @@
 # Introduction
 
-This document contains xD Bio's best practices for the describing command line tools with the
+This document contains Truwl's best practices for the describing command line tools with the
 [Common Workflow Language](https://github.com/common-workflow-language/common-workflow-language) (CWL) and tool metadata
 files.
 Several practices here were adapted from 
