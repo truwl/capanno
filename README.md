@@ -79,9 +79,9 @@ scripts/{groupName}/
 │           ├── {scriptName1}.[cwl | wdl | nf | snakefile]
 │           └── instances/
 └── {projectName2}
-│   ├── {versionName2}
-│   │   ├── common
-│   │   │   └── common-metadata.yaml
+    ├── {versionName2}
+    │   ├── common
+    │   │   └── common-metadata.yaml
     │   ├── {scriptName2}
     │   │   ├── {scriptName2}-metadata.yaml
     │   │   ├── {scriptName2}.[cwl | wdl | nf | snakefile]
@@ -93,39 +93,14 @@ scripts/{groupName}/
     └── {versionName3}
         ├── common
         │   └── common-metadata.yaml
-        └── {scriptName5
-            ├── encode_task_xcor-metadata.yaml
-            └── instances
-
-```
-
-```
-scripts/GA4GH_Workflow_Execution_Challenge/
-├── helloworld
-│   └── 1.0.x
-│       └── hello_world
-│           ├── hello_world-metadata.yaml
-│           ├── hello_world.cwl
-│           └── instances
-├── helloworld-checker
-│   └── 1.1.x
-│       └── helloworld_check
-│           ├── helloworld_check-metadata.yaml
-│           ├── helloworld_check.cwl
-│           └── instances
-├── md5sum
-│   └── master
-│       └── my_md5sum
-│           ├── instances
-│           ├── my_md5sum-metadata.yaml
-│           └── my_md5sum.cwl
-└── md5sum-checker
-    └── master
-        └── md5sum-checker
-            ├── instances
-            ├── md5sum-checker-metadata.yaml
-            └── md5sum-checker.cwl
-
+        ├── {scriptName2}
+        │   ├── {scriptName2}-metadata.yaml
+        │   ├── {scriptName2}.[cwl | wdl | nf | snakefile]
+        │   └── instances/
+    │   └── {scriptName3}
+            ├── {scriptName3}-metadata.yaml
+            ├── {scriptName3}.[cwl | wdl | nf | snakefile]
+            └── instances/
 ```
 
 The `groupName` and `projectName` path components should be meaningful and unique enough to not clash with other names. Each group can have many projects.
@@ -148,19 +123,14 @@ The `workflows` directory has a similar structure to `scripts` and follows the p
 Contains workflow file, workflow metadata file, and instances directory.
 
 
-## Utilities available
-
-Code for generating, validating, and working with files (including generation of tool metadata from [bio.tools](https://bio.tools/)) is in the utilities directory have been developed and tested using Python 3.6 (we like f-strings and use them liberally!). Use of these utilities and setting up a virtual environment is covered in the [getting started](docs/Getting_Started.md) documentation.
-
 ## License
 
 All contributions to this repository shall be made available under the [Apache-2.0](LICENSE.txt). 
 
 
 ## What we're working on now (and you could help!)
-- More utilities for generating and validating content (tools wrappers, job files, job metadata, etc.)
-- Continuous integration
-- Referencing software containers.
+- More utilities for generating and validating content (job files, job metadata, etc.)
+- Referencing software containers for exact versions.
 - utilities for generating tool wrappers.
 - More content!
 
