@@ -1,12 +1,12 @@
 Introduction
 ============
 
-This document contains xD Bio's best practices for the describing
-command line tools with the [Common Workflow
+This document contains Truwl's best practices for the describing
+command line tools with metadata files and the [Common Workflow
 Language](https://github.com/common-workflow-language/common-workflow-language)
-(CWL) and tool metadata files. Several practices here were adapted from
+(CWL). Several practices here were adapted from
 [CommonsWorkflow Language User Guide: Recommended
-Practices](http://www.commonwl.org/user_guide/rec-practices/)
+Practices](http://www.commonwl.org/user_guide/rec-practices/). Best practices for other workflow language files (WDL, Snakemake, Nextflow) will be added as developed.
 
 Definitions
 -----------
@@ -15,17 +15,12 @@ The words "MUST", "REQUIRED", "SHOULD" and "MAY" have the meanings
 described in [Key words for use in RFCs to Indicate Requirement
 Levels](https://www.ietf.org/rfc/rfc2119.txt)
 
-CWL and metadata types
+Division of tools into subtools
 ----------------------
 
-There are 2 types of CWL tool files and three types of tool metadata
-files:
+There two types of tool metadata files:
 
--   **Complete tools:** Metadata and CWL files for a tool that is not
-    separated into separate subtools.
-
--   **Parent metadata** Metadata (only) that is inherited by multiple
-    subtools.
+-   **common-metadata** Metadata that is common to all subtools of .
 
 -   **Subtools** Metadata and CWL tool files that are specific to a
     subtool.
@@ -41,7 +36,7 @@ together should be described by a single CWL and metadata file. Tools
 that contain multiple subtools or modes that include mutually exclusive
 arguments should be divided into separate CWL files and metadata files
 as described above. For example md5sum should be divided into
-`md5sum.cwl` and `md5sum-check.cwl` since `md5sum --check [File]` has
+`md5sum` and `md5sum-check` since `md5sum --check [File]` has
 arguments that are not relevant when running `md5sum` without the
 --check option.
 

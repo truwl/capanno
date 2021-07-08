@@ -1,20 +1,19 @@
 [![Build Status](https://travis-ci.org/truwl/capanno.svg?branch=master)](https://travis-ci.org/truwl/capanno)
 ## Repository scope and purpose
 
-This repository contains workflow language files, usage examples (instances), descriptions and other metadata for computational tools, scripts, and workflows--collectively referred to as 'methods'--used in bioinformatics. The repository focuses on four major pipeline frameworks: [Common Workflow Language](https://www.commonwl.org/) (CWL), [Workflow Description Language](https://openwdl.org/) (WDL), [Nextflow](http://nextflow.io/), and [Snakemake](https://snakemake.github.io/).
+This repository contains metadata, workflow language files, and corresponding inputs files that describe jobs for computational tools, scripts, and workflows--collectively referred to as 'methods'--used in bioinformatics. The repository focuses on four major pipeline frameworks: [Common Workflow Language](https://www.commonwl.org/) (CWL), [Workflow Description Language](https://openwdl.org/) (WDL), [Nextflow](http://nextflow.io/), and [Snakemake](https://snakemake.github.io/).
 
-The goal is to document, collect resources, and openly curate methods to facilitate easier access and use by life science researchers. 
+The goal is to document, collect resources, and openly curate methods and usage examples to facilitate easier access and use by life science researchers. 
 
-Resources in this repository are divided broadly into three directories: tools, scripts, and workflows. Tools and scripts differ in the format of their metadata and the software that they describe. Tools typically describe stand-alone programs and are more likely to have documentation and versioned releases. Scripts will often call tools, are more specialized, and have parent and child relationships with other scripts. Workflows correspond to series of tools and/or scripts that are called and executed in a interdependent manner.
+Resources in this repository are divided broadly into three directories: tools, scripts, and workflows. Tools and scripts differ in the format of their metadata and the software that they describe. Tools typically consist stand-alone programs and are more likely to have documentation and versioned releases. Scripts will often call tools, are more specialized, and have parent and child relationships with other scripts--they call or are called by other scripts. Workflows correspond to series of tools and/or scripts that are called and executed in an interdependent manner.
 
-Each method directory has an `instances` directory where inputs files (i.e. job files/usage examples) and metadata that describe individual runs can be placed.
+Each method directory has an `instances` directory where inputs files that describe a job and metadata that describe individual runs can be placed.
 
 ### Integration with truwl.com
-
-Methods contributed to this repository that meet a minimum version requirement will be made available through [truwl.com](https://truwl.com). Each method will be viewable from its own web page and be made more findable and accessible through search engine queries. Web pages include comments sections and allow logged in users to save their favorite methods and vote on comments. Each method and use case (job/instance) will also be assigned a unique identifier that can be explicitly referenced.  Relationships between, tools, scripts, workflows, and thier input/output files can be explored and tool wrapper files can be downloaded directly from the site. Workflows will be displayed as interactive graphs from which component tools, scripts, subworkflows, and inputs/outputs can be explored. Many of the workflows described in WDL are execuatable directly from the site with a web based input editor. 
+Validated methods contributed to this repository will be made available through [truwl.com](https://truwl.com). Each method will be viewable from its own web page and be made more findable and accessible through search engine queries. Web pages include comments sections and allow logged in users to save their favorite methods and vote on comments. Each method and usage example (job/instance) will also be assigned a unique identifier that can be explicitly referenced. Relationships between, tools, scripts, workflows, and thier input/output files can be explored and tool wrapper files can be downloaded directly from the site. Some workflows can be displayed as interactive graphs from which component tools, scripts, subworkflows, and inputs/outputs can be explored. Many of the workflows described in WDL can be executed, monitored, and shared directly from the site. 
 
 ## Repository management with `capanno-utils`
-There is a companion python package [`capanno-utils`](https://github.com/truwl/capanno-utils) available to simplify generating and validating content in this repository. Additional documentation can be found in that repository.
+[`capanno-utils`](https://github.com/truwl/capanno-utils) is a companion Python package to simplify generating and validating content in this repository. Additional documentation can be found in that repository.
 
 ## How to contribute
 
@@ -23,6 +22,12 @@ Contributions including additions to methods as well as corrections and enhancem
 ## <a name="structure"></a> Repository structure and directory/file names
 
 This repository has three main content directories: [tools](#tools), [scripts](#scripts), and [workflows](#workflows).
+```
+capanno/
+├── scripts
+├── tools
+└── workflows
+```
 
 ### <a name="tools"></a> tools directory structure
 
@@ -50,20 +55,23 @@ tools/{toolName}
 
 ```
 
-This structure is easily generated using `capanno-utils` when adding a new tool, versionName directory, or subtool.
+This structure and initialized metadata files are easily generated using `capanno-utils` when adding a new tool, versionName directory, or subtool.
 
 The `{toolName}` path component must be named with the name of the tool being described preserving all capitalization, dashes, and underscores used in the tool's name.
 
 The `{versionName}` path component should be named according to version conventions of the tool author as much as possible. Since metadata and workflow language files can be applicable to multiple versions of the tool, version names can, and usually do contain variable portions; e.g. 1.x, 1.2.x, etc. A list of specific versions that are covered by the version name can be specified in the `common-metadata.yaml` file. When tool descriptions, other metadata, and parameters can no longer accurately be described by a single set of files a new `{versionName}` directory should be created to allow the differences in versions to diverge.
 
-The scope of functions that a tool performs can vary widely. Tools may be developed as a single program or may include multiple subtools or modes that are specified when called, e.g. `toolName subtoolName ...`. Metadata and relevant inputs and parameters differ depending on the subtool. Tools that contain multiple subtools or modes are divided into these logical components and described in their own subdirectories named `{toolName}-{subtoolName}` to accommodate these differences e.g. `tools/STAR/2.7/STAR-genomeGenerate/`. For tools that can be called without specifying a subtool, a {toolName} directory is included e.g `tools/cat/8.x/cat/cat-metadata.yaml` and `tools/cat/8.25/cat/cat.cwl`. If dividing subtools into more finite components is necessary, additional subdivision must be specified in the filename e.g. `tools/{tool_name}/{tool_version}/{tool_name}-{subtool_name}/{tool_name}-{subtool_name}-{subtool_component_name}-metadata.yaml` rather than adding more directory nesting. Each tool/version combination contains a `common/` directory. This directory must contain a `common-metadata.yaml` file that contains metadata that is pertinent all of the subtools, and may contain additional files that are pertinent to multiple subtools such as requirements files that need to be imported by more than one subtool such as SchemaDefRequirement and DockerRequirement for CWL files.
+The scope of functions that a tool performs can vary widely. Tools may be developed as a single program or may include multiple subtools or modes that are specified when called, e.g. `toolName subtoolName ...`. Metadata and relevant inputs and parameters differ depending on the subtool. Tools that contain multiple subtools or modes are divided into these logical components and described in their own subdirectories named `{toolName}-{subtoolName}` to accommodate these differences e.g. `tools/STAR/2.7/STAR-genomeGenerate/`. For tools that can be called without specifying a subtool, a {toolName} directory is included e.g `tools/cat/8.x/cat/`. If dividing subtools into more finite components is necessary, additional subdivision must be specified in the filenames e.g. `tools/{tool_name}/{tool_version}/{tool_name}-{subtool_name}/{tool_name}-{subtool_name}-{subtool_component_name}-metadata.yaml` rather than adding more directory nesting. Each tool/version combination contains a `common/` directory. This directory must contain a `common-metadata.yaml` file that contains metadata that is pertinent all of the subtools, and may contain additional files that are pertinent to multiple subtools such as requirements files that need to be imported by more than one subtool such as SchemaDefRequirement and DockerRequirement descriptions for CWL files.
 
 If the same metadata fields are provided in both the subtool and common metadata, the metadata in the subtool metadata file takes precedence.
 
+##### tool metadata
+
+The metadata fields for tools are described in the [tool metadata guide](docs/ToolGuide.md)
 
 ##### <a name="tool-instances"></a> Tool instances directories
 
-Each `tools/{toolName}/{toolVersion}/{tool or subtool name}` directory has an `instances` directory. This directory will contain any inputs/job files for the tool or subtool and associated metadata about the run. Instance metadata files must have the same name as the job file with -metadata appended to the base name: e.g. `tools/cat/8.25/cat/instances/8a6c.yaml` (job file) and `tools/cat/8.25/cat/instances/8a6c-metadata.yaml` (metadata for job file). 
+Each `tools/{toolName}/{toolVersion}/{tool or subtool name}` directory has an `instances` directory. This directory will contain any inputs files for the tool or subtool and associated metadata about the run. Instance metadata files must have the same name as the job file with -metadata appended to the base name: e.g. `tools/cat/8.25/cat/instances/8a6c.yaml` (job file) and `tools/cat/8.25/cat/instances/8a6c-metadata.yaml` (metadata for job file). 
 
 
 ### <a name="scripts"></a> scripts
@@ -97,7 +105,7 @@ scripts/{groupName}/
         │   ├── {scriptName2}-metadata.yaml
         │   ├── {scriptName2}.[cwl | wdl | nf | snakefile]
         │   └── instances/
-    │   └── {scriptName3}
+        └── {scriptName3}
             ├── {scriptName3}-metadata.yaml
             ├── {scriptName3}.[cwl | wdl | nf | snakefile]
             └── instances/
@@ -109,19 +117,46 @@ The `{versionName}` path component must be named according to the version of the
 
 Several `{scriptName}` directories may be present in each `{versionName}` directory. Generally, scripts that are in the same code repository and that are versioned together should be in the same `{versionName}` directory. When there are multiple scripts grouped together, there should also be a `scripts/{groupName}/{projectName}/{version}/common/` directory to place metadata that is relevant to multiple scripts in the directory. 
 
+##### Script metadata
+The metadata fields for tools are described in the [script metadata guide](docs/ScriptGuide.md)
+
 ##### <a name="script-instances"></a> Script instances directories
 
 This follows the same pattern as [tool instances directories](#tool-instances)
- 
+
 
 ### <a name="workflows"></a> workflows
 
-The `workflows` directory has a similar structure to `scripts` and follows the pattern `workflows/{groupName}/{projectName}/{version}/...`.
+The `workflows` directory has a similar structure to `scripts` and is arranged around group and project names.
 
 ### Contents of `workflows/{groupName}/{projectName}/{version}/...`
 
 Contains workflow file, workflow metadata file, and instances directory.
 
+```
+workflows/{groupName}/
+├── {projectName1}
+│   ├── {versionName1a}
+│   │   ├── {empty inputs specifation file}
+│   │   ├── {projectName1}-metadata.yaml
+│   │   ├── {workflowName}.[cwl | wdl | nf | snakefile]
+│   │   └── instances
+│   │       ├── {instanceName}-metadata.yaml
+│   │       └── {instanceName}.json
+│   ├── versionName1b
+│   │   ├── {empty inputs specifation file}
+│   │   ├── {projectName}-metadata.yaml
+│   │   ├── {workflowName}.[cwl | wdl | nf | snakefile]
+│   │   └── instances/
+├── {projectName2}
+│   └── versionName2a
+│       ├── {projectName2}-metadata.yaml
+│       ├── additional-files...
+│       └── instances/
+```
+
+##### Workflow metadata
+The metadata fields for workflows are described in the [workflow metadata guide](docs/WorkflowGuide.md)
 
 ## License
 
@@ -130,7 +165,7 @@ All contributions to this repository shall be made available under the [Apache-2
 
 ## What we're working on now (and you could help!)
 - More utilities for generating and validating content (job files, job metadata, etc.)
-- Referencing software containers for exact versions.
+- Referencing software containers.
 - utilities for generating tool wrappers.
 - More content!
 
