@@ -141,6 +141,7 @@ tools/STAR/2.x/
     └── common-metadata.yaml
 ```
 ### workflows
+
 To add a new workflow use the `capanno-utils` command `capanno-add workflow`
 
 ```shell
@@ -156,7 +157,9 @@ optional arguments:
   -h, --help        show this help message and exit
 
 ```
+
 ####Examples
+
 Add a workflow for a group `example_group` with a project name `sequencing_workflow` version `1.fake`.
 
 ```shell
@@ -176,7 +179,7 @@ The metadata fields for workflows are described in [Workflow Guide](WorkflowGuid
 
 ## Workflow Language Files
 ### CWL
-CWL files should follow [best practices]() described in this repository and must be validated using capanno-utils as described below.
+CWL files should follow [best practices]() described in this repository and must be validated using `capanno-utils` as described below.
 
 ### Snakemake
 No guidance or validation is provided for Snakemake files at this time.

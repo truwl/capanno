@@ -1,11 +1,6 @@
 ## File names
 
-Files must be named with the format `{workflowName}.cwl`. Whitespace in the workflow name should be replaced with underscores.
-More on file names and directory structure can be found in this repository's [README](../../README.md)
-
-## Defining name and versions
-
-The name and version of the methods must be specified in the tool's metadata.
+Files should keep the names given by the original workflow author and be specified int the workflow's metadata file.
 
 ## Field specific instructions
 
