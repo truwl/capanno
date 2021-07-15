@@ -1,28 +1,11 @@
 # Introduction
 
-This document contains xD Bio's best practices for the describing command line tools with the
-[Common Workflow Language](https://github.com/common-workflow-language/common-workflow-language) (CWL) and tool metadata
-files.
-Several practices here were adapted from 
-[CommonsWorkflow Language User Guide: Recommended Practices](http://www.commonwl.org/user_guide/rec-practices/)
+This document contains Truwl's practices for describing worklfow metadata and workflow language files.
 
 ## Definitions
 
 !include docs/components/definitions.md
 
-## CWL and metadata types 
-
-There is one types of CWL workflow file and one type of workflow metadata files.
-
-## CWL Workflow status
-
-!include docs/components/cwl_file_status.md
-
-# CWL Files
-
-Still lots to do here.
-
-!include docs/templates/Workflow_guide.md
 
 # Workflow metadata files
 
@@ -35,10 +18,6 @@ The name of the workflow
 #### softwareVersion
 
 !include docs/components/softwareVersion_field.md
-
-#### version
-
-!include docs/components/version.md
 
 #### identifier
 
@@ -91,3 +70,21 @@ The name of the workflow
 #### datePublished
 
 !include docs/components/datePublished_field.md
+
+
+
+# CWL Files
+
+!include docs/templates/Workflow_guide.md
+
+# WDL Files
+
+No guidance at this point.
+
+# Snakemake Files
+
+No guidance at this point.
+
+# Nextflow Files
+
+No guidance at this point.

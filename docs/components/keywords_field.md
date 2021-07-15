@@ -4,7 +4,6 @@ EDAM keywords are preferred. If you wish to provide a keyword that is not in an 
 specified with the keys `name` and `category`. The value of `category` must be either 'topic' or 
 'operation' for tools. These categories have the meanings defined by [EDAM](http://edamontology.org/page).
 
-e.g.
 ~~~yaml
 keywords:
   - http://edamontology.org/operation_3182  # Genome alignment

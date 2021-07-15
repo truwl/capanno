@@ -6,17 +6,15 @@ rather than being specified separately in each subtool/script CWL file.
 
 ## Parameter completeness
 
-The cwl documents in this repository are intended to completely describe
+The CWL documents in this repository are intended to describe
 use cases for tools, subtools, and scripts. Documents should be in progress towards including all the parameters for a 
-method. The --help parameter or other similar options are an exception to this, although 
---help could be described as its own subtool. Authors are encouraged to contribute a tools/subtools with
+method. The --help parameter or other similar options are an exception. Authors are encouraged to contribute a tools/subtools with
 incomplete parameter descriptions that can be built upon later by themselves or others.
 
 ## File names
 
 Files must be named with the format `{toolName}-{subtoolName}.cwl` or `{sciptName}.cwl` The subtoolName must be 
-excluded if the tool is not divided into subtools. 
-More on file names can be found in this repository's [README](../../README.md)
+excluded if the tool is called without a subcommand.
 
 ## Defining name and versions
 
@@ -103,7 +101,7 @@ the `doc` field should contain the parameter description as it appears in
 the documentation for the tool (man page, output of help, etc.).
 
 - `format` should be specified for all input and output `File`s.
-Bioinformatics tools should use format identifiers from [EDAM][edam-example].
+Bioinformatics tools should use format identifiers from [EDAM](http://edamontology.org/page).
 
 - Mark all input and output `File`s that are read from or written to in a
 streaming compatible way (only once, no random-access), as `streamable: true`.

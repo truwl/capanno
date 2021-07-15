@@ -13,11 +13,11 @@ Each method directory has an `instances` directory where inputs files that descr
 Validated methods contributed to this repository will be made available through [truwl.com](https://truwl.com). Each method will be viewable from its own web page and be made more findable and accessible through search engine queries. Web pages include comments sections and allow logged in users to save their favorite methods and vote on comments. Each method and usage example (job/instance) will also be assigned a unique identifier that can be explicitly referenced. Relationships between, tools, scripts, workflows, and thier input/output files can be explored and tool wrapper files can be downloaded directly from the site. Some workflows can be displayed as interactive graphs from which component tools, scripts, subworkflows, and inputs/outputs can be explored. Many of the workflows described in WDL can be executed, monitored, and shared directly from the site. 
 
 ## Repository management with `capanno-utils`
-[`capanno-utils`](https://github.com/truwl/capanno-utils) is a companion Python package to simplify generating and validating content in this repository. Additional documentation can be found in that repository.
+[`capanno-utils`](https://github.com/truwl/capanno-utils) is a companion Python package to simplify generating and validating content in this repository. Basic use of `capanno-utils` is described in [Getting Started](docs/Getting_Started.md)
 
 ## How to contribute
 
-Contributions including additions to methods as well as corrections and enhancements to existing files and documentation are highly encouraged and can be made through pull requests and issues. See [getting started](docs/Getting_Started.md) to learn how to add new content with the proper directory structure and initialize metadata files. 
+Contributions including additions to methods as well as corrections and enhancements to existing files and documentation are highly encouraged and can be made through pull requests and issues. See [Getting Started](docs/Getting_Started.md) to learn how to add new content with the proper directory structure and initialize metadata files. 
 
 ## <a name="structure"></a> Repository structure and directory/file names
 
@@ -128,8 +128,6 @@ This follows the same pattern as [tool instances directories](#tool-instances)
 ### <a name="workflows"></a> workflows
 
 The `workflows` directory has a similar structure to `scripts` and is arranged around group and project names.
-
-### Contents of `workflows/{groupName}/{projectName}/{version}/...`
 
 Contains workflow file, workflow metadata file, and instances directory.
 

@@ -101,7 +101,7 @@ Add `STAR` to the repository with a version name of 2.x. STAR has subtools align
 ```bash
 $ capanno-add tool STAR 2.x alignReads inputAlignmentsFromBAM liftOVer --biotoolsID star
 ```
-Creates the directory structure below. `common/common-metadata.yaml` is populated with metadata from bio.tools. Metadata can also be added or updated directly in the metadata file if the bio.tools entry is incomplete or there is not a bio.tools entry for the tool. The metadata fields are described in [ToolMetadataGuide](). 
+Creates the directory structure below. `common/common-metadata.yaml` is populated with metadata from bio.tools. Metadata can also be added or updated directly in the metadata file if the bio.tools entry is incomplete or there is not a bio.tools entry for the tool. The metadata fields are described in [Tool Guide](ToolGuide.md). 
 ```shell
 tools/STAR/2.x/
 ├── STAR_alignReads
@@ -171,6 +171,8 @@ workflows/example_group
         └── sequencing_workflow-metadata.yaml
 ```
 The workflow file(s) and additional related files can then be added directly to the directory.
+
+The metadata fields for workflows are described in [Workflow Guide](WorkflowGuide.md)
 
 ## Workflow Language Files
 ### CWL

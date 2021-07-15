@@ -1,6 +1,5 @@
-A list of websites associated with the tool, excluding the code repository which should be provided in `codeRepository`.
+A list of websites associated with the tool, excluding the code repository which should be provided in `codeRepository`. e.g.:
 
-e.g.:
 ~~~yaml
 Website:
   - name: Samtools  # The name of the website.

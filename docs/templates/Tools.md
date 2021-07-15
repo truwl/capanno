@@ -33,7 +33,7 @@ has arguments that are not relevant when running `md5sum`  without the --check s
 # Tool metadata files
 
 This describes how to document metadata for command line tools described in this repository. Metadata files are
-specified in YAML and can be generated programmatically (see [getting started](../../docs/Getting_Started.md). Most metadata keys are defined by [schema.org](https://schema.org/) vocabularies and can be adapted to be 
+specified in YAML and can be generated programmatically (see [getting started](../../docs/Getting_Started.md)). Most metadata keys are defined by [schema.org](https://schema.org/) vocabularies and can be adapted to be 
 imported by CWL files.
 
 ## List order
@@ -47,9 +47,9 @@ metadata files from the bio.tools api is described in [Geting Started](../Gettin
 
 Metadata can also be obtained from tool manual and help pages, [SciCrunch](https://scicrunch.org/), or other web resources.
 
-## <a name="common"><a/>Common Metadata
+## Common Metadata
 
-The metadata fields for common metadata files fields are described below.
+The metadata fields for common metadata (common to whole tool suite) files fields are described below.
 
 ### Required Fields
 
@@ -65,12 +65,13 @@ A unique identifier for the tool. `capanno-utils` will generate this automatical
 
 !include docs/components/softwareVersion_field.md
 
-#### <a name="featureList"><a/> featureList
+#### featureList
 
 !include docs/components/featureList_field.md
 
 #### metadataStatus
 The status of the metadata file.
+
 !include docs/components/status_field.md
 
 ### Recommended Fields 
@@ -89,7 +90,7 @@ The status of the metadata file.
 
 #### WebSite
 
-!include docs/components/license_field.md
+!include docs/components/WebSite_field.md
 
 #### contactPoint
 
@@ -101,35 +102,36 @@ The status of the metadata file.
 
 #### keywords
 
-!include docs/components/publication_field.md
+!include docs/components/keywords_field.md
 
 ### Optional Fields
 
-#### <a name="alternate"><a/>alternateName
+#### alternateName
 
 !include docs/components/alternateName_field.md
 
 #### creator
 
+!include docs/components/creator_field.md
+
 #### programmingLanguage
+
+!include docs/components/programmingLanguage_field.md
 
 #### datePublished
 
+!include docs/components/datePublished_field.md
 
 
-## <a name="subtools"><a/>Subtool metadata files
+## Subtool metadata files
 
-For subtools, fields marked with a * can be provided in the metadata file for the subtool or can be inherited from a [common metadata]() file, and fields marked with \*\*  must be inherited from the common metadata file and cannot be provided in the subtool metadata file.  If values are provided in the subtool metadata and the common metadata, the value in subtool metadata is used.
+Metadata that is specific to subtools. If values are provided in the subtool metadata and the common metadata, the value in subtool metadata is used.
 
 ### Required Fields
 
-#### <a name="name1"><a/>name
+#### name
 
 The name must correspond to the name of the subtool as specified in the [featureList](#featurelist) field of the common metadata file.
-
-
-#### <a name="version"></a> version
-No longer used for subtools.
 
 #### identifier
 
@@ -137,22 +139,27 @@ No longer used for subtools.
 
 #### metadataStatus
 The status of the subtool metadata file.
+
 !include docs/components/status_field.md
 
 #### cwlStatus
 The status of the subtool cwl file.
+
 !include docs/components/status_field.md
 
 #### nextflowStatus
 The status of the subtool nextflow file.
+
 !include docs/components/status_field.md
 
 #### snakemakeStatus
 The status of the subtool snakemake file.
+
 !include docs/components/status_field.md
 
 #### wdlStatus
 The status of the subtool wdl file.
+
 !include docs/components/status_field.md
 
 ### Recommended Fields
@@ -161,14 +168,13 @@ The status of the subtool wdl file.
 
 !include docs/components/description_subtool.md
 
-#### \*keywords
+#### keywords
 
 !include docs/components/keywords_field.md
 
-
 ### Optional Fields
 
-#### \*alternateName
+#### alternateName
 
 !include docs/components/alternateName_field.md
 
