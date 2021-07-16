@@ -1,1 +1,1 @@
-Unique identifier for truwl.com. If not provided, it will be initialized for you.
+Unique identifier. This is generated automatically by `capanno-utils`. The identifier format differs slightly for tools, subtools, scripts, workflows, and use cases of these.

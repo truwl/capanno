@@ -3,7 +3,7 @@ metadataStatus: Released
 cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Released
-wdlStatus: Released
+wdlStatus: Incomplete
 version: 0.1.0
 identifier: TL_ba744c_54.b1
 description: VarDict is an ultra sensitive variant caller for both single and paired sample variant calling from BAM files. VarDict implements several novel features such as amplicon bias aware variant calling from targeted sequencing experiments, rescue of long indels by realigning bwa soft clipped reads and better scalability than many Java based variant callers.
