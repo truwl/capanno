@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_d574d4_08.7f
 description: Tool to run custom script set as script input with arguments from param
 keywords:

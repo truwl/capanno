@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_e0.c8
 description: Generate index statistics from a BAM fileThis tool calculates statistics
   from a BAM index (.bai) file, emulating the behavior of the "samtools idxstats"

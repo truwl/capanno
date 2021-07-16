@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_bf790f_ca.e9
 description: "BAM files can have either 'coordinate' sort order, or 'qname' one.\n\
   The first one means to sort the file by (integer) reference ID, and for each reference\

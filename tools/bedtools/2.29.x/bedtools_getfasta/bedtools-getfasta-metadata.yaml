@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Released
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_e5.c8
 description: bedtools getfasta extracts sequences from a FASTA file for each of the
   intervals defined in a BED/GFF/VCF file.

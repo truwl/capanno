@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_177544_63.aa
 description: "-e script, --expression=script\n\n    add the script to the commands\
   \ to be executed"

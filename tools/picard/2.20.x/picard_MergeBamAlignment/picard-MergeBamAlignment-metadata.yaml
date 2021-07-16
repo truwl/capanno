@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_95.c8
 description: Merge alignment data from a SAM or BAM with data in an unmapped BAM file.
   This tool produces a new SAM or BAM file that includes all aligned and unaligned

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_47.c8
 description: bedtools flank will create two new flanking intervals for each interval
   in a BED/GFF/VCF file. Note that flank will restrict the created flanking intervals

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_f4.c8
 description: "Transforms raw Illumina sequencing data into an unmapped SAM or BAM\
   \ file.\nThe IlluminaBaseCallsToSam program collects, demultiplexes, and sorts reads\

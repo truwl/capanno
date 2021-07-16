@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_749cad_82.1d
 description: "gunzip  takes  a  list of files on its command line and replaces each\
   \ file whose name ends with .gz, -gz, .z, -z, or _z (ignoring case) and which begins\

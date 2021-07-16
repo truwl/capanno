@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_cde9e8_fa.25
 description: Annotations in BED can be lifted over between genomes using halLiftover. halLiftover does a base-by-base mapping between any two sequences in the alignment (following paralogy relations as well). The output is written in BED (default) or PSL format.
 keywords:

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_93.c8
 description: Takes a SAM or BAM file and separates all the reads into one SAM or BAM
   file per library name. Reads that do not have a read group specified or whose read

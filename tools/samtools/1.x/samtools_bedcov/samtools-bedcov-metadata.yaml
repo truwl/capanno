@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_a4.0b
 description: "samtools bedcov [options] region.bed in1.sam|in1.bam|in1.cram[...]\n\
   Reports the total read base count (i.e. the sum of per base read depths) for each\

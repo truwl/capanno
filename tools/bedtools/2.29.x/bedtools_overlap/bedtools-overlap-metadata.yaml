@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_9c.c8
 description: overlap computes the amount of overlap (in the case of positive values)
   or distance (in the case of negative values) between feature coordinates occurring

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_e0.0b
 description: "samtools mpileup [-EB] [-C capQcoef] [-r reg] [-f in.fa] [-l list] [-Q\
   \ minBaseQ] [-q minMapQ] in.bam [in2.bam [...]]\nGenerate textual pileup for one\

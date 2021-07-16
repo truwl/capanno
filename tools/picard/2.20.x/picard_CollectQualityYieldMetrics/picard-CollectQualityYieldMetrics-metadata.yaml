@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_56.c8
 description: "Collect metrics about reads that pass quality thresholds and Illumina-specific\
   \ filters. This tool evaluates the overall quality of reads within a bam file containing\

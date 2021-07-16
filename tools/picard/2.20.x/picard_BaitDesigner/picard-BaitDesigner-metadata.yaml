@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_2b.c8
 description: "Designs oligonucleotide baits for hybrid selection reactions.\nThis\
   \ tool is used to design custom bait sets for hybrid selection experiments. The\
