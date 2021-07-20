@@ -1,4 +1,4 @@
 pandoc-include==0.3.2
-capanno-utils==0.9.3
+capanno-utils==0.9.5a0
 future==0.17.1
 pytest==4.3.1

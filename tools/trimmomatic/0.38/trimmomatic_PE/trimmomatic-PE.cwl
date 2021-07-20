@@ -292,3 +292,6 @@ outputs:
     outputBinding:
       glob: $(inputs.output)
     doc: Trimmed fastq file.
+
+$namespaces:
+  edam: http://edamontology.org/
