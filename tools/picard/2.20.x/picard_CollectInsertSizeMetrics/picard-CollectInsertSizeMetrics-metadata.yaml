@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_4e.c8
 description: "This tool provides useful metrics for validating library construction\
   \ including the insert size distribution and read orientation of paired-end libraries.\n\

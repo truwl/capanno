@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_80.c8
 description: 'Class to downsample a BAM file while respecting that we should either
   get rid of both ends of a pair or neither end of the pair. In addition, this program

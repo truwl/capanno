@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_e6.c8
 description: "Sorts one or more VCF files. This tool sorts the records in VCF files\
   \ according to the order of the contigs in the header/sequence dictionary and then\

@@ -4,7 +4,7 @@ cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_d78180_2f.71
 description: converts a set of bed files of aligned reads into binarized data files for model learning and optionally prints the intermediate signal files
 keywords:

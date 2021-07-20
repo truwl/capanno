@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_03cccb_b2.d1
 description: vembrane allows to simultaneously filter variants based on any INFO field, CHROM, POS, REF, ALT, QUAL, and the annotation field ANN. When filtering based on ANN, annotation entries are filtered first. If no annotation entry remains, the entire variant is deleted.
 keywords:

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_4a037f_2f.29
 description: "-e PATTERN, --regexp=PATTERN\nUse PATTERN as the pattern. If this option\
   \ is used multiple times or is combined with the -f (--file) option, search for\

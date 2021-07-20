@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_7b.c8
 description: "Sorts a SAM or BAM file. This tool sorts the input SAM or BAM file by\
   \ coordinate, queryname (QNAME), or some other property of the SAM record. The SortOrder\

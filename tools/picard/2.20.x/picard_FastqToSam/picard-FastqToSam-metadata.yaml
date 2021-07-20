@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_bb.c8
 description: "Converts a FASTQ file to an unaligned BAM or SAM file. This tool extracts\
   \ read sequences and base qualities from the input FASTQ file and writes them out\

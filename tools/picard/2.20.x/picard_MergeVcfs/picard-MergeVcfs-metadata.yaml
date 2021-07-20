@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_b0.c8
 description: Merges multiple VCF or BCF files into one VCF file. Input files must
   be sorted by their contigs and, within contigs, by start position. The input files

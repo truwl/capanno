@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_db5570_3a.8b
 description: "-u, --update\nAppend files which are newer than the corresponding copy\
   \ in the archive. Arguments have the same meaning as with -c and -r options."

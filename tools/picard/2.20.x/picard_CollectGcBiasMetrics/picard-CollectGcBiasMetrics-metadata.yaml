@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_b6.c8
 description: "Collect metrics regarding GC bias. This tool collects information about\
   \ the relative proportions of guanine (G) and cytosine (C) nucleotides in a sample.\

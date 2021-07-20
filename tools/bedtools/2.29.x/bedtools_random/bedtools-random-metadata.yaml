@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_7d.c8
 description: bedtools random will generate a random set of intervals in BED6 format.
   One can specify both the number (-n) and the size (-l) of the intervals that should

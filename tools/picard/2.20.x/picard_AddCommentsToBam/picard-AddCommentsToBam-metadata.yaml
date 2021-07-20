@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_12.c8
 description: "Adds comments to the header of a BAM file. This tool makes a copy of\
   \ the input bam file, with a modified header that includes the comments specified\

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_ee.0b
 description: "samtools split [options] merged.sam|merged.bam|merged.cram\nSplits a\
   \ file by read group, producing one or more output files matching a common prefix\

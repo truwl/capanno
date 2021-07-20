@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_5b.c8
 description: "Converts a BED file to a Picard Interval List. This tool provides easy\
   \ conversion from BED to the Picard interval_list format which is required by many\

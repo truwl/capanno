@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_4a037f_8c.29
 description: "-f FILE, --file=FILE\nObtain patterns from FILE, one per line. If this\
   \ option is used multiple times or is combined with the -e (--regexp) option, search\

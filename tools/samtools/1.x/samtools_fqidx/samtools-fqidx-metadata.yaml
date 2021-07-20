@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_a3.0b
 description: "samtools fqidx <ref.fastq> [region1 [...]]\nIndex reference sequence\
   \ in the FASTQ format or extract subsequence from indexed reference sequence. If\

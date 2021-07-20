@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8b3ec0_be.9f
 description: This tool creates a profile plot for scores over sets of genomic regions
 keywords:

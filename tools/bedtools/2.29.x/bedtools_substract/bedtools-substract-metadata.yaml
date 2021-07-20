@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_08.c8
 description: bedtools subtract bedtools` subtract searches for features in B that
   overlap A by at least the number of base pairs given by the -f option. If an overlapping

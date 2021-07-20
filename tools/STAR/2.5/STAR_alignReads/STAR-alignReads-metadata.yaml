@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8ab263_a4.82
 description: "In this step user supplies the genome files generated in the 1st step,\
   \ as well as the RNA-seq reads (sequences) in the form of FASTA or FASTQ files.\

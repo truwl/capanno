@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_4a.c8
 description: "Identifies duplicate reads, accounting for mate CIGAR. This tool locates\
   \ and tags duplicate reads (both PCR and optical) in a BAM or SAM file, where duplicate\
