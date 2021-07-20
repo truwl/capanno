@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_b0.c8
 description: bed12ToBed6 is a convenience tool that converts BED features in BED12
   (a.k.a. “blocked” BED features such as genes) to discrete BED6 features. For example,

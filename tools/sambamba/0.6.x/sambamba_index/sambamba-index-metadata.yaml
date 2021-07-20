@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_bf790f_6a.e9
 description: "sambamba index builds an index for a sorted by coordinate BAM file.\
   \ This step is required for effective region querying in most tools for working\

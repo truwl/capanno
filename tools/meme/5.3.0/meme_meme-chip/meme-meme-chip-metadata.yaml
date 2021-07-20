@@ -4,7 +4,7 @@ cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_9c2f92_c1.b4
 description: MEME-ChIP performs comprehensive motif analysis (including motif discovery) on LARGE sets of (typically nucleotide) sequences such as those identified by ChIP-seq or CLIP-seq experiments
 keywords:

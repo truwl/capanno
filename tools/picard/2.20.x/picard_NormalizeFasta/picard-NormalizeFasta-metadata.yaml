@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_77.c8
 description: Normalizes lines of sequence in a FASTA file to be of the same length.This
   tool takes any FASTA-formatted file and reformats the sequence to ensure that all

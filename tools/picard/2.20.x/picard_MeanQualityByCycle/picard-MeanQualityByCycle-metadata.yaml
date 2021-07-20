@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_99.c8
 description: "Collect mean quality by cycle. This tool generates a data table and\
   \ chart of mean quality by cycle from a BAM file. It is intended to be used on a\

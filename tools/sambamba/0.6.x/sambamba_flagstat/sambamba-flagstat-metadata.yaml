@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_bf790f_c2.e9
 description: "Outputs some statistics drawn from read flags.\nFirst line contains\
   \ numbers of QC-passed and QC-failed reads. Then come pairs of numbers, the former\

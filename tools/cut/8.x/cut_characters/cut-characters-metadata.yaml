@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_fe47aa_25.1d
 description: "-c, --characters=LIST\n       select only these characters"
 keywords:

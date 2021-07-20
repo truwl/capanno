@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_ca.0b
 description: "samtools sort [-l level] [-m maxMem] [-o out.bam] [-O format] [-n] [-t\
   \ tag] [-T tmpprefix] [-@ threads] [in.sam|in.bam|in.cram]\nSort alignments by leftmost\

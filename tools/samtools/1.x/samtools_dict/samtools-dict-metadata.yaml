@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_b4.0b
 description: "samtools dict ref.fasta|ref.fasta.gz\nCreate a sequence dictionary file\
   \ from a fasta file."

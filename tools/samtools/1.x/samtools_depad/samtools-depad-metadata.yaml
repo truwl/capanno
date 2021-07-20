@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_3e.0b
 description: "samtools depad [-SsCu1] [-T ref.fa] [-o output] in.bam\nConverts a BAM\
   \ aligned against a padded reference to a BAM aligned against the depadded reference.\

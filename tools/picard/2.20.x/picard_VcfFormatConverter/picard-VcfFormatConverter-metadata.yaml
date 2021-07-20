@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_dc.c8
 description: Converts VCF to BCF or BCF to VCF. This tool converts files between the
   plain-text VCF format and its binary compressed equivalent, BCF. Input and output

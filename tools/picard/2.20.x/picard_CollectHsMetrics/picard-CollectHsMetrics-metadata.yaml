@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_a4.c8
 description: "Collects hybrid-selection (HS) metrics for a SAM or BAM file. This tool\
   \ takes a SAM/BAM file input and collects metrics that are specific for sequence\

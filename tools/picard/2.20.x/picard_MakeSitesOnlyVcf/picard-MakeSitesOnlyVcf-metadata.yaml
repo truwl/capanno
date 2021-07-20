@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_46.c8
 description: Reads a VCF/VCF.gz/BCF and removes all genotype information from it while
   retaining all site level information, including annotations based on genotypes (e.g.

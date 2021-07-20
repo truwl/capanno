@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_bf790f_02.e9
 description: Marks (by default) or removes duplicate reads. For determining whether
   a read is a duplicate or not, the same criteria as in Picard are used.

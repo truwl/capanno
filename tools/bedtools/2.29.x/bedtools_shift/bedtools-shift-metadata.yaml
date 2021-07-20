@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_2a.c8
 description: bedtools shift will move each feature in a feature file by a user-defined
   number of bases. While something like this could be done with an awk '{OFS="\t"

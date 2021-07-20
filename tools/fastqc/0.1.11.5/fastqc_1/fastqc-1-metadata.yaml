@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_9af1de_c4.0e
 description: Run fastqc on raw reads in FASTQ format (single or paired end) or aligned
   reads in BAM

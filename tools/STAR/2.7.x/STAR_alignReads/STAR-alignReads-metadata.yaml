@@ -4,7 +4,7 @@ cwlStatus: Released
 snakemakeStatus: Released
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8ab263_aa.6f
 description: Perform spliced alignment
 keywords:

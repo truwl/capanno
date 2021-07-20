@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_4f.c8
 description: Subset read data from a SAM or BAM fileThis tool takes a SAM or BAM file
   and subsets it to a new file that either excludes or only includes either aligned

@@ -4,7 +4,7 @@ cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_a4fd95_a4.d0
 description: Trim Galore! is a wrapper script to automate quality and adapter trimming as well as quality control, with some added functionality to remove biased methylation positions for RRBS sequence files
 keywords:

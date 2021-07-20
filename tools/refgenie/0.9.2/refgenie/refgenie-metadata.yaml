@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_fb3f1c_54.59
 description: refgenie manages storage, access, and transfer of reference genome resources
 keywords:

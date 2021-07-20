@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_db5570_d8.8b
 description: "-A, --catenate, --concatenate\nAppend archive to the end of another\
   \ archive. The arguments are treated as the names of archives to append. All archives\

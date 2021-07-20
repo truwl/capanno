@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_db5570_10.8b
 description: "-t, --list\nList the contents of an archive. Arguments are optional.\
   \ When given, they specify the names of the members to list."

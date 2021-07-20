@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_40.c8
 description: "Produces a summary of alignment metrics from a SAM or BAM file. This\
   \ tool takes a SAM/BAM file input and produces metrics detailing the quality of\

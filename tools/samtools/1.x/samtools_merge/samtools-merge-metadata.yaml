@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_65.0b
 description: "samtools merge [-nur1f] [-h inh.sam] [-t tag] [-R reg] [-b list] out.bam\
   \ in1.bam [in2.bam in3.bam ... inN.bam]\nMerge multiple sorted alignment files,\

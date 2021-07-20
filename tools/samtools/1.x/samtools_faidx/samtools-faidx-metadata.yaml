@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_bb.0b
 description: "samtools faidx <ref.fasta> [region1 [...]]\nIndex reference sequence\
   \ in the FASTA format or extract subsequence from indexed reference sequence. If\

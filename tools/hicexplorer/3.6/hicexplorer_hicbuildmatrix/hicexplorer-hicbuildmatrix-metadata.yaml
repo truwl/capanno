@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_1c3c14_db.e4
 description: Using an alignment from a program that supports local alignment (eg. Bowtie2) where both PE reads are mapped using the –local option, this program reads such file and creates a matrix of interactions.
 keywords:

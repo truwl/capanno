@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_03.ea
 description: Converts a BED file to a Picard Interval List. This tool provides easy conversion from BED to the Picard interval_list format which is required by many Picard processing tools. Note that the coordinate system of BED files is such that the first base or position in a sequence is numbered "0", while in interval_list files it is numbered "1".
 keywords:

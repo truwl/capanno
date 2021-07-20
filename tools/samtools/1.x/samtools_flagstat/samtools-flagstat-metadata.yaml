@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_a6.0b
 description: "samtools flagstat in.sam|in.bam|in.cram\nDoes a full pass through the\
   \ input file to calculate and print statistics to stdout.\nProvides counts for each\

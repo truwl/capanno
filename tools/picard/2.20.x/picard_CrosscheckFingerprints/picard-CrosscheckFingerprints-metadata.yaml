@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_bd.c8
 description: Checks if all fingerprints within a set of files appear to come from
   the same individual. The fingerprints are calculated initially at the readgroup
