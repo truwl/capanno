@@ -68,6 +68,10 @@ workflow rna {
 	    String workflow_identifier
 		File Rscript_aggregate
     }
+	
+	output {
+		File talltable = glueme.talltable
+	}
 
     # dummy variable value for the single-ended case
     Array[Array[File]] fastqs_R2_ = if (endedness == "single") then fastqs_R1 else fastqs_R2
@@ -154,8 +158,24 @@ workflow rna {
 		      Rscript_aggregate = Rscript_aggregate
 		}
     }
+	call cbind as glueme { input: files=aggmelt.talltable }
 }
 
+task cbind {
+  Array[File] array_of_files
+
+  command <<<
+  cat ${write_lines(array_of_files)} > "truwlbenchmarks.txt"
+  >>>
+
+  output {
+  File talltable = "truwlbenchmarks.txt"
+  }
+
+  runtime {
+  docker: "ubuntu:latest"
+  }
+}
 
 task align {
     input {
