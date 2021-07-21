@@ -150,7 +150,7 @@ workflow rna {
 		      workflow_instance_identifier = workflow_instance_identifier,
 		      workflow_identifier = workflow_identifier,
 			  rep = "rep"+i,
-		      qcfile = rna_qc_rep.rnaQC
+		      qcfile = rna_qc_rep.rnaQC,
 		      Rscript_aggregate = Rscript_aggregate
 		}
     }
