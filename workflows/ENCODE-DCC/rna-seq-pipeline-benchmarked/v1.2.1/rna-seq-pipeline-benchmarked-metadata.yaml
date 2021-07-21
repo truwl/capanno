@@ -13,7 +13,7 @@ graphStatus: Incomplete
 executable: true
 current: true
 workflowFile: workflows/ENCODE-DCC/rna-seq-pipeline-benchmarked/v1.2.1/rna-seq-pipeline.wdl
-repoName: rna-seq-pipeline
+repoName: rna-seq-benchmarked
 inputsTemplate: rna-seq-pipeline-benchmarked-inputs.json
 gitTag: v1.2.1
 codeRepository:
