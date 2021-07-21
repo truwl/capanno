@@ -66,6 +66,7 @@ workflow rna {
 	    String job_id
 	    String workflow_instance_identifier
 	    String workflow_identifier
+		File Rscript_aggregate
     }
 
     # dummy variable value for the single-ended case
