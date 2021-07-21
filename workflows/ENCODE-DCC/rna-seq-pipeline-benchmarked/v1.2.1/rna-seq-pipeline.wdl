@@ -138,25 +138,22 @@ workflow rna {
     }
 
     scatter (i in range(length(align.annobam))) {
-        call rna_qc { input:
+        call rna_qc as rna_qc_rep { input:
             input_bam=align.annobam[i],
             tr_id_to_gene_type_tsv=rna_qc_tr_id_to_gene_type_tsv,
             output_filename="rep"+(i+1)+bamroot+"_qc.json",
             disks=rna_qc_disk,
         }
-		
-
+		call aggregate.melt as aggmelt {
+		    input:
+		      job_id = job_id,
+		      workflow_instance_identifier = workflow_instance_identifier,
+		      workflow_identifier = workflow_identifier,
+			  rep = "rep"+i,
+		      qcfile = rna_qc_rep.rnaQC
+		      Rscript_aggregate = Rscript_aggregate
+		}
     }
-	
-	call aggregate.melt as aggmelt {
-	    input:
-	      job_id = job_id,
-	      workflow_instance_identifier = workflow_instance_identifier,
-	      workflow_identifier = workflow_identifier,
-		  rep = 1,
-	      qcfile = rna_qc.rnaQC
-	      Rscript_aggregate = Rscript_aggregate
-	}
 }
 
 
