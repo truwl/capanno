@@ -145,16 +145,18 @@ workflow rna {
             disks=rna_qc_disk,
         }
 		
-		call aggregate.melt as aggmelt {
-		    input:
-		      job_id = job_id,
-		      workflow_instance_identifier = workflow_instance_identifier,
-		      workflow_identifier = workflow_identifier,
-			  rep = "rep"+i,
-		      qcfile = "rep"+(i+1)+bamroot+"_qc.json",
-		      Rscript_aggregate = Rscript_aggregate
-		}
+
     }
+	
+	call aggregate.melt as aggmelt {
+	    input:
+	      job_id = job_id,
+	      workflow_instance_identifier = workflow_instance_identifier,
+	      workflow_identifier = workflow_identifier,
+		  rep = 1,
+	      qcfile = rna_qc.rnaQC
+	      Rscript_aggregate = Rscript_aggregate
+	}
 }
 
 
