@@ -167,7 +167,7 @@ task catfiles {
   }
 
   command {
-  cat ${sep=' ' array_of_files} > truwlbenchmarks.txt
+   awk '!/^WorkflowId/ || !f++' ${sep=' ' array_of_files} > truwlbenchmarks.txt
   }
 
   output {
