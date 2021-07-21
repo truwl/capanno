@@ -1,6 +1,6 @@
 
 name: ENCODE RNA-seq pipeline
-identifier: 'WF_0741dd.ac'
+identifier: 'WF_7dae0a.6b'
 description: >
   This is the ENCODE-DCC RNA-sequencing pipeline. The scope of the pipeline is to align reads, generate signal tracks, and quantify genes and isoforms.
 
@@ -14,7 +14,7 @@ executable: true
 current: true
 workflowFile: rna-seq-pipeline.wdl
 repoName: rna-seq-pipeline
-inputsTemplate: rna-seq-pipeline-inputs.json
+inputsTemplate: rna-seq-pipeline-benchmarked-inputs.json
 gitTag: v1.2.1
 codeRepository:
   URL: https://github.com/ENCODE-DCC/rna-seq-pipeline

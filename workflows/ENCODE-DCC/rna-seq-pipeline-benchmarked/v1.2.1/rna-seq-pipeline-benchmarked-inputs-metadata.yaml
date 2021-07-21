@@ -137,7 +137,10 @@ parameter_meta:
     help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.
     example: local-disk 200 SSD
     group: task_resources
-      
+  rna.Rscript_aggregate:
+    group: Scripts
+    description:
+    example: "aggregate.R"
 parameter_group:
     input_genomic_data:
         title: Input genomic data

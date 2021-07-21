@@ -26,5 +26,6 @@
   "rna.rsem_disk": "String? (optional)",
   "rna.kallisto_disk": "String? (optional)",
   "rna.mad_qc_disk": "String? (optional)",
-  "rna.rna_qc_disk": "String? (optional)"  
+  "rna.rna_qc_disk": "String? (optional)",
+  "GermlineVariantCallBenchmark.Rscript_aggregate": "File"
 }
