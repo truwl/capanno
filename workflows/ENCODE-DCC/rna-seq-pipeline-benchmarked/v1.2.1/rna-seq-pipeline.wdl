@@ -166,9 +166,9 @@ task catfiles {
   Array[File] array_of_files
   }
   
-  command {
+  command <<<
   cat ${write_lines(array_of_files)} > "truwlbenchmarks.txt"
-  }
+  >>>
 
   output {
   File talltable = "truwlbenchmarks.txt"

@@ -21,6 +21,8 @@ jsonlite::read_json(qcfile) %>% first() %>% as.data.frame() %>% dplyr::mutate(Wo
                                             JobRunID=job_id,
                                             rep=rep) -> temp1
 
+cat(temp1)
+
 temp1 %>%
   gather(key = "variable", value="value", -WorkflowInstanceID, -WorkflowId, -JobRunID, -rep) %>%
   write.table(row.names=FALSE,sep="\t",file=outputfile,quote=FALSE)
