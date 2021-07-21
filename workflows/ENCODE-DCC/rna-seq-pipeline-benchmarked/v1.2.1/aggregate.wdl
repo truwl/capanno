@@ -10,7 +10,7 @@ task melt {
       File Rscript_aggregate
   }
   output {
-    File talltable = "truwlbenchmarks.txt"
+    File talltable = "truwlbenchmarks{~rep}.txt"
   }
   command <<<
     Rscript ~{Rscript_aggregate} ~{job_id} ~{workflow_instance_identifier} ~{workflow_identifier} ~{rep} ~{qcfile} truwlbenchmarks{~rep}.txt

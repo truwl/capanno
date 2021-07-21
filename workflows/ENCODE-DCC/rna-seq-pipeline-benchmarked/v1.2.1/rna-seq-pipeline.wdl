@@ -158,10 +158,10 @@ workflow rna {
 		      Rscript_aggregate = Rscript_aggregate
 		}
     }
-	call cbind as glueme { input: files=aggmelt.talltable }
+	call catfiles as glueme { input: array_of_files=aggmelt.talltable }
 }
 
-task cbind {
+task catfiles {
   Array[File] array_of_files
 
   command <<<
