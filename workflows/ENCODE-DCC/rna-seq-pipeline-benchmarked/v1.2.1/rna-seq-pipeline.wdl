@@ -71,6 +71,12 @@ workflow rna {
 	
 	output {
 		File talltable = glueme.talltable
+		File quants = kallisto.quants
+        File annobam = align.annobam
+		
+        genes_results = rsem_quant.genes_results
+        isoforms_results = rsem_quant.genes_results
+		madQCplot = mad_qc.madQCplot
 	}
 
     # dummy variable value for the single-ended case
