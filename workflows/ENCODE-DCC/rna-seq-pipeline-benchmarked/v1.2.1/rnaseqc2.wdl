@@ -2,20 +2,22 @@ version 1.0
 
 task rnaseqc2 {
 
-    File bam_file
-    File genes_gtf
-    String sample_id
-    String? strandedness
-    File? intervals_bed
-    File? reference_fasta
-    File? reference_fasta_index
-    String? flags
+	input {
+	    File bam_file
+	    File genes_gtf
+	    String sample_id
+	    String? strandedness
+	    File? intervals_bed
+	    File? reference_fasta
+	    File? reference_fasta_index
+	    String? flags
 
-    Int memory
-    Int disk_space
-    Int num_threads
-    Int num_preempt
-
+	    Int memory
+	    Int disk_space
+	    Int num_threads
+	    Int num_preempt
+	}
+	
     command {
         set -euo pipefail
         echo $(date +"[%b %d %H:%M:%S] Running RNA-SeQC 2")
