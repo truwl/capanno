@@ -67,6 +67,9 @@ workflow rna {
 	    String workflow_instance_identifier
 	    String workflow_identifier
 		File Rscript_aggregate
+		
+		#rnaseqc
+		File genes_gtf
     }
 	
 	output {
@@ -165,6 +168,12 @@ workflow rna {
 		}
     }
 	call catfiles as glueme { input: array_of_files=aggmelt.talltable }
+	
+	call rnaseqc2 as broadrnaseqc {
+		input:
+		    bam_file = align.genome_bam
+		    genes_gtf = genes_gtf
+	}
 }
 
 task catfiles {

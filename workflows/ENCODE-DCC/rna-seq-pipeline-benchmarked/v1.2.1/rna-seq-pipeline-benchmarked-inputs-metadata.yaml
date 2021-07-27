@@ -55,6 +55,9 @@ parameter_meta:
     description: rna_qc task calculates the number of reads by gene type. For this a tsv file that contains a mapping from transcript IDs to gene types is provided. For GRCh38, hg19, and mm10 with ERCC (ambion 1) and PhiX spikes the tsv is provided in this repo. If you are using some other annotation, you can use code here to build your own.
     example: "transcript_id_to_gene_type_mappings/gencodeV24pri-tRNAs-ERCC-phiX.transcript_id_to_genes.tsv"
     group: input_genomic_data
+  rna.genes_gtf:
+    description: gene models for RNA-SeQC2
+    example: gs://truwl-rna-seq-test-data/gencode.v38.basic.annotation.gtf.gz
   rna.run_kallisto:
     description: Boolean defaulting to true. If set to false kallisto will not be run, and you do not need to provide values for any kallisto related parameters.
     example: true
