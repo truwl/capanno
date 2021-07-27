@@ -105,7 +105,6 @@ workflow rna {
 			    genes_gtf = genes_gtf,
 				
 			    memory=rsem_ramGB,
-			    disk_space=rsem_disk,
 			    num_threads=rsem_ncpus,
 			    num_preempt=3
 		}
