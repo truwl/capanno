@@ -101,7 +101,7 @@ workflow rna {
 		call rnaseqc2.rnaseqc2 as broadrnaseqc {
 			input:
 			    bam_file = align.genomebam,
-				sample_id = align.bamroot,
+				sample_id = "rep"+(i+1)+bamroot,
 			    genes_gtf = genes_gtf,
 				
 			    memory=rsem_ramGB,
