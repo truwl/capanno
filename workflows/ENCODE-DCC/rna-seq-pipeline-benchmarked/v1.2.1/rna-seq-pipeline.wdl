@@ -7,6 +7,7 @@ version 1.0
 #CROO out_def https://storage.googleapis.com/encode-pipeline-output-definition/bulkrna.output_definition.json
 
 import "./aggregate.wdl" as aggregate
+import "./rnaseqc2.wdl" as rnaseqc2
 
 workflow rna {
     meta {
@@ -74,12 +75,12 @@ workflow rna {
 	
 	output {
 		File talltable = glueme.talltable
-		File quants = kallisto.quants
-        File annobam = align.annobam
+		Array[File]? quants = kallisto.quants
+        Array[File] annobam = align.annobam
 		
-        genes_results = rsem_quant.genes_results
-        isoforms_results = rsem_quant.genes_results
-		madQCplot = mad_qc.madQCplot
+        Array[File] genes_results = rsem_quant.genes_results
+        Array[File] isoforms_results = rsem_quant.genes_results
+		File? madQCplot = mad_qc.madQCplot
 	}
 
     # dummy variable value for the single-ended case
@@ -96,6 +97,12 @@ workflow rna {
             ramGB=align_ramGB,
             disks=align_disk,
         }
+		
+		call rnaseqc2.rnaseqc2 as broadrnaseqc {
+			input:
+			    bam_file = align.genomebam,
+			    genes_gtf = genes_gtf
+		}
 
         call bam_to_signals { input:
             input_bam=align.genomebam,
@@ -169,11 +176,7 @@ workflow rna {
     }
 	call catfiles as glueme { input: array_of_files=aggmelt.talltable }
 	
-	call rnaseqc2 as broadrnaseqc {
-		input:
-		    bam_file = align.genome_bam
-		    genes_gtf = genes_gtf
-	}
+
 }
 
 task catfiles {

@@ -58,6 +58,7 @@ parameter_meta:
   rna.genes_gtf:
     description: gene models for RNA-SeQC2
     example: gs://truwl-rna-seq-test-data/gencode.v38.basic.annotation.gtf.gz
+    group: input_genomic_data
   rna.run_kallisto:
     description: Boolean defaulting to true. If set to false kallisto will not be run, and you do not need to provide values for any kallisto related parameters.
     example: true
