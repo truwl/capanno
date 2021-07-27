@@ -101,7 +101,13 @@ workflow rna {
 		call rnaseqc2.rnaseqc2 as broadrnaseqc {
 			input:
 			    bam_file = align.genomebam,
-			    genes_gtf = genes_gtf
+				sample_id = align.bamroot,
+			    genes_gtf = genes_gtf,
+				
+			    memory=rsem_ramGB,
+			    disk_space=rsem_disk,
+			    num_threads=rsem_ncpus,
+			    num_preempt=3
 		}
 
         call bam_to_signals { input:
