@@ -1,3 +1,5 @@
+version 1.0
+
 task rnaseqc2 {
 
     File bam_file
@@ -45,9 +47,4 @@ task rnaseqc2 {
     meta {
         author: "Francois Aguet"
     }
-}
-
-
-workflow rnaseqc2_workflow {
-    call rnaseqc2
 }
