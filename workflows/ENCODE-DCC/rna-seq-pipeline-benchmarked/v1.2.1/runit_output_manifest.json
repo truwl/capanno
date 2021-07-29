@@ -1,1 +1,1 @@
-{"facets": ["rep"], "metric_files": ["rna.talltable"]}
+{"facets": ["rep","test"], "metric_files": ["rna.talltable"]}
