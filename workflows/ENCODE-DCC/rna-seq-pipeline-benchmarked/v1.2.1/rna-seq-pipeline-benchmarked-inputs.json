@@ -28,5 +28,6 @@
   "rna.mad_qc_disk": "String? (optional)",
   "rna.rna_qc_disk": "String? (optional)",
   "rna.Rscript_madqcagg": "File",
+  "rna.Rscript_rnaseqcagg": "File",
   "rna.genes_gtf": "File"
 }
