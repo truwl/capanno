@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 library(dplyr)
 library(tidyr)
-##USAGE: Rscript aggregate.R job_id workflow_instance_identifier workflow_identifier rep qcfile outputfile
+##USAGE: Rscript madqcagg.R job_id workflow_instance_identifier workflow_identifier rep test qcfile outputfile
 
 
 #args = commandArgs(trailingOnly=TRUE)
@@ -13,14 +13,15 @@ job_id<-args[1]
 workflow_inst<-args[2]
 workflow_id<-args[3]
 rep<-args[4]
-qcfile<-args[5]
-outputfile <- args[6]
+test<-args[5]
+qcfile<-args[6]
+outputfile <- args[7]
 
 jsonlite::read_json(qcfile) %>% first() %>% as.data.frame() %>% dplyr::mutate(WorkflowId=workflow_id,
                                             WorkflowInstanceID=workflow_inst,
                                             JobRunID=job_id,
                                             rep=rep,
-                                            test="madQC") -> temp1
+                                            test=test) -> temp1
 
 
 temp1 %>%

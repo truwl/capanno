@@ -141,10 +141,10 @@ parameter_meta:
     help: You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.
     example: local-disk 200 SSD
     group: task_resources
-  rna.Rscript_aggregate:
+  rna.Rscript_madqcagg:
     group: Scripts
     description:
-    example: "aggregate.R"
+    example: "madqcagg.R"
 parameter_group:
     Scripts:
         title: Scripts

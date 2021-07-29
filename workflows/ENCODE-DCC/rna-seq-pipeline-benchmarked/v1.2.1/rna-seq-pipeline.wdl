@@ -67,7 +67,8 @@ workflow rna {
 	    String job_id
 	    String workflow_instance_identifier
 	    String workflow_identifier
-		File Rscript_aggregate
+		File Rscript_madqcagg
+		File Rscript_rnaseqcagg
 		
 		#rnaseqc
 		File genes_gtf
@@ -107,6 +108,17 @@ workflow rna {
 			    memory=rsem_ramGB,
 			    num_threads=rsem_ncpus,
 			    num_preempt=3
+		}
+		
+		call aggregate.melt as rnaseqcmelt {
+		    input:
+		      job_id = job_id,
+		      workflow_instance_identifier = workflow_instance_identifier,
+		      workflow_identifier = workflow_identifier,
+			  rep = "rep"+i,
+			  test = "rnaseqc2",
+		      qcfile = broadrnaseqc.metrics,
+		      Rscript_aggregate = Rscript_rnaseqcagg
 		}
 
         call bam_to_signals { input:
@@ -169,17 +181,18 @@ workflow rna {
             output_filename="rep"+(i+1)+bamroot+"_qc.json",
             disks=rna_qc_disk,
         }
-		call aggregate.melt as aggmelt {
+		call aggregate.melt as madqcmelt {
 		    input:
 		      job_id = job_id,
 		      workflow_instance_identifier = workflow_instance_identifier,
 		      workflow_identifier = workflow_identifier,
 			  rep = "rep"+i,
+			  test = "madqc",
 		      qcfile = rna_qc_rep.rnaQC,
-		      Rscript_aggregate = Rscript_aggregate
+		      Rscript_madqcagg = Rscript_madqcagg
 		}
     }
-	call catfiles as glueme { input: array_of_files=aggmelt.talltable }
+	call catfiles as glueme { input: array_of_files=madqcmelt.talltable+rnaseqcmelt.talltable }
 	
 
 }
