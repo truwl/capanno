@@ -17,8 +17,11 @@ test<-args[5]
 qcfile<-args[6]
 outputfile <- args[7]
 
+#WorkflowId	WorkflowInstanceID	JobRunID	rep	test	variable	value
 read.table(qcfile,sep="\t",header=FALSE,quote="") %>% dplyr::rename("variable"=V1,"value"=V2) %>% dplyr::mutate(WorkflowId=workflow_id,
                                             WorkflowInstanceID=workflow_inst,
                                             JobRunID=job_id,
                                             rep=rep,
-                                            test=test) %>% write.table(row.names=FALSE,sep="\t",file=outputfile,quote=FALSE)
+                                            test=test) %>% 
+                                            dplyr::select(WorkflowId,WorkflowInstanceID,JobRunID,rep,test,variable,value) %>%
+                                            write.table(row.names=FALSE,sep="\t",file=outputfile,quote=FALSE)
