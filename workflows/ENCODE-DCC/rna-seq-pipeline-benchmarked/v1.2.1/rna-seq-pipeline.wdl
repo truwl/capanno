@@ -189,10 +189,10 @@ workflow rna {
 			  rep = "rep"+i,
 			  test = "madqc",
 		      qcfile = rna_qc_rep.rnaQC,
-		      Rscript_madqcagg = Rscript_madqcagg
+		      Rscript_aggregate = Rscript_madqcagg
 		}
     }
-	call catfiles as glueme { input: array_of_files=madqcmelt.talltable+rnaseqcmelt.talltable }
+	call catfiles as glueme { input: array_of_files=flatten([madqcmelt.talltable,rnaseqcmelt.talltable]) }
 	
 
 }
