@@ -1,48 +1,79 @@
-WorkflowId	WorkflowInstanceID	JobRunID	rep	variable	value
-workflow_identifier	workflow_instance_identifier	job_id	rep	X3prime_overlapping_ncrna	2
-workflow_identifier	workflow_instance_identifier	job_id	rep	IG_C_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	IG_C_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	IG_D_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	IG_J_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	IG_J_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	IG_V_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	IG_V_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	Mt_rRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	Mt_tRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	TEC	6
-workflow_identifier	workflow_instance_identifier	job_id	rep	TR_C_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	TR_D_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	TR_J_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	TR_J_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	TR_V_gene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	TR_V_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	antisense	50
-workflow_identifier	workflow_instance_identifier	job_id	rep	bidirectional_promoter_lncrna	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	lincRNA	50
-workflow_identifier	workflow_instance_identifier	job_id	rep	macro_lncRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	miRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	misc_RNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	non_coding	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	polymorphic_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	processed_pseudogene	62
-workflow_identifier	workflow_instance_identifier	job_id	rep	processed_transcript	24
-workflow_identifier	workflow_instance_identifier	job_id	rep	protein_coding	16418
-workflow_identifier	workflow_instance_identifier	job_id	rep	pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	rRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	ribozyme	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	sRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	scaRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	sense_intronic	6
-workflow_identifier	workflow_instance_identifier	job_id	rep	sense_overlapping	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	snRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	snoRNA	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	spikein	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	tRNAscan	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	transcribed_processed_pseudogene	18
-workflow_identifier	workflow_instance_identifier	job_id	rep	transcribed_unitary_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	transcribed_unprocessed_pseudogene	8
-workflow_identifier	workflow_instance_identifier	job_id	rep	transcript_id_not_found	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	translated_unprocessed_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	unitary_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	unprocessed_pseudogene	0
-workflow_identifier	workflow_instance_identifier	job_id	rep	vaultRNA	0
+variable	value	WorkflowId	WorkflowInstanceID	JobRunID	rep	test
+Sample	rep1PE_stranded	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Mapping Rate	0.9999	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Unique Rate of Mapped	1	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Duplicate Rate of Mapped	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Duplicate Rate of Mapped, excluding Globins	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Base Mismatch	0.00959848	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Mapping Rate	0.9999	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Mapping Rate	0.9999	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Mismatch Rate	0.0123389	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Mismatch Rate	0.00685811	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Expression Profiling Efficiency	0.8855	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+High Quality Rate	0.958696	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Exonic Rate	0.885589	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Intronic Rate	0.0563556	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Intergenic Rate	0.0131013	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Intragenic Rate	0.941944	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Ambiguous Alignment Rate	0.0449545	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+High Quality Exonic Rate	0.888066	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+High Quality Intronic Rate	0.0570624	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+High Quality Intergenic Rate	0.013092	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+High Quality Intragenic Rate	0.945128	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+High Quality Ambiguous Alignment Rate	0.0417797	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Discard Rate	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+rRNA Rate	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Sense Rate	0.00948019	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Sense Rate	0.989356	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Avg. Splits per Read	0.505401	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Alternative Alignments	662	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Chimeric Reads	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Chimeric Alignment Rate	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Duplicate Reads	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Antisense	9299	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Antisense	100	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Bases	1009899	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Bases	1009899	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Mapped Reads	9999	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Mapped Reads	9999	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Mismatches	12461	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Mismatches	6926	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 1 Sense	89	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+End 2 Sense	9295	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Exonic Reads	17710	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Failed Vendor QC	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+High Quality Reads	19172	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Intergenic Reads	262	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Intragenic Reads	18837	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Ambiguous Reads	899	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Intronic Reads	1127	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Low Mapping Quality	562	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Low Quality Reads	826	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Mapped Duplicate Reads	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Mapped Reads	19998	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Mapped Unique Reads	19998	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Mismatched Bases	19387	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Non-Globin Reads	19998	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Non-Globin Duplicate Reads	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Reads used for Intron/Exon counts	19998	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+rRNA Reads	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Total Bases	2019798	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Total Mapped Pairs	9999	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Total Reads	20662	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Unique Mapping, Vendor QC Passed Reads	20000	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Unpaired Reads	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Read Length	101	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Genes Detected	504	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Estimated Library Complexity	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Genes used in 3' bias	2	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Mean 3' bias	0.108435	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Median 3' bias	0.0581395	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+3' bias Std	0.0502953	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+3' bias MAD_Std	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+3' Bias, 25th Percentile	0.15873	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+3' Bias, 75th Percentile	3.23518e+122	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Median of Avg Transcript Coverage	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Median of Transcript Coverage Std	0	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Median of Transcript Coverage CV	1.92005	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Median Exon CV	0.7312	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2
+Exon CV MAD	0.606399	workflow_identifier	workflow_instance_identifier	job_id	rep	rnaseqc2

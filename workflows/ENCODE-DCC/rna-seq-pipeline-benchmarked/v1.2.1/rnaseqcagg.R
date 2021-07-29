@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 library(dplyr)
 library(tidyr)
-##USAGE: Rscript aggregate.R job_id workflow_instance_identifier workflow_identifier rep qcfile outputfile
+##USAGE: Rscript rnaseqcagg.R job_id workflow_instance_identifier workflow_identifier rep qcfile outputfile
 
 
 #args = commandArgs(trailingOnly=TRUE)
@@ -16,13 +16,8 @@ rep<-args[4]
 qcfile<-args[5]
 outputfile <- args[6]
 
-jsonlite::read_json(qcfile) %>% first() %>% as.data.frame() %>% dplyr::mutate(WorkflowId=workflow_id,
+read.table(qcfile,sep="\t",header=FALSE,quote="") %>% dplyr::rename("variable"=V1,"value"=V2) %>% dplyr::mutate(WorkflowId=workflow_id,
                                             WorkflowInstanceID=workflow_inst,
                                             JobRunID=job_id,
                                             rep=rep,
-                                            test="madQC") -> temp1
-
-
-temp1 %>%
-  gather(key = "variable", value="value", -WorkflowInstanceID, -WorkflowId, -JobRunID, -rep, -test) %>%
-  write.table(row.names=FALSE,sep="\t",file=outputfile,quote=FALSE)
+                                            test="rnaseqc2") %>% write.table(row.names=FALSE,sep="\t",file=outputfile,quote=FALSE)
