@@ -75,7 +75,7 @@ task star {
         touch star_out/${prefix}.Chimeric.out.sorted.bam.bai
         touch star_out/${prefix}.ReadsPerGene.out.tab  # run_STAR.py will gzip
 
-        /src/run_STAR.py \
+       STAR \
             star_index $fastq1_abs $fastq2_abs ${prefix} \
             --output_dir star_out \
             ${"--outFilterMultimapNmax " + outFilterMultimapNmax} \
@@ -121,7 +121,7 @@ task star {
     }
 
     runtime {
-        docker: "gcr.io/broad-cga-francois-gtex/gtex_rnaseq:V10"
+        docker: "truwl/star:2.7.9a_0.1.0"
         memory: "${memory}GB"
         disks: "local-disk ${disk_space} HDD"
         cpu: "${num_threads}"
