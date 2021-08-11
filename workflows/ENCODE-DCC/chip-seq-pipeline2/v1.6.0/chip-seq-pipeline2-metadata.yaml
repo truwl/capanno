@@ -13,6 +13,7 @@ graphStatus: Incomplete
 executable: true
 current: true
 workflowFile: chip.wdl
+inputsTemplate: <GENERATE>
 repoName: chip-seq-pipeline2
 gitTag: v1.6.0
 codeRepository:
