@@ -13,6 +13,7 @@ workflowFile: atac.wdl
 repoName: atac-seq-pipeline
 gitTag: v1.9.0
 executable: true
+inputsTemplate: atac-inputs.json
 current: true
 codeRepository:
   URL: https://github.com/ENCODE-DCC/atac-seq-pipeline
