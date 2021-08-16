@@ -13,6 +13,7 @@ graphStatus: Incomplete
 workflowFile: atac.wdl
 repoName: atac-seq-pipeline
 gitTag: v1.8.0
+inputsTemplate: atac-inputs.json
 executable: true
 current: true
 codeRepository:
@@ -20,4 +21,7 @@ codeRepository:
 WebSite:
   - URL: https://www.encodeproject.org/atac-seq/
     name: Encode Project Website
+keywords:
+  - name: ENCODE
+    category: topic
 

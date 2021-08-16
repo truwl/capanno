@@ -30,7 +30,7 @@ graphStatus: Incomplete
 workflowFile: rnaseq/rnaseq_pipeline_fastq.wdl
 repoName: gtex-rna
 gitTag: v10
-inputsTemplate: ../gtex-rna_inputs.json # relative to workflowFile path.
+inputsTemplate: gtex-rna_inputs.json
 executable: true
 current: true
 codeRepository:
