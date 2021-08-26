@@ -1,0 +1,46 @@
+name: Variant Benchmarking Pipeline Intervene
+identifier: WF_b1de71.e6
+description: >
+  This repository contains the benchmarking workflow that can be used to assess performance of germline variant calling pipelines based on testing with GIAB samples
+softwareVersion:
+  versionName: 0.1
+  includedVersions:
+    - 0.1
+metadataStatus: Released
+workflowStatus: Released
+workflowLanguage: wdl
+workflowFile: benchmarking.wdl
+repoName: stanfordbenchmarking
+gitTag: intervene
+inputsTemplate: inputs.json
+executable: true
+current: true
+WebSite:
+  - URL: https://github.com/truwl/stanford_benchmarking
+    name: Stanford benchmarking
+
+
+# ('name', None),
+# ('softwareVersion', None),
+# ('current', False),
+# ('description', None),
+# ('identifier', None),
+# ('metadataStatus', 'Incomplete'),
+# ('workflowStatus', 'Incomplete'),
+# ('workflowLanguage', 'wdl'),
+# ('workflowFile', None), # Workflow file.
+# ('repoName', None),
+# ('gitTag', None),
+# ('inputsTemplate', None),
+# ('callMap', None),  # This field is to make associations between called tasks/steps and underlying tools/scripts.
+# ('graphStatus', 'Incomplete'),
+# ('executable', False),  # if configured to execute on Truwl.
+# ('codeRepository', None),
+# ('WebSite', None),
+# ('license', None),
+# ('contactPoint', None),
+# ('publication', None),
+# ('keywords', None),
+# ('alternateName', None),
+# ('creator', None),
+# ('datePublished', None),

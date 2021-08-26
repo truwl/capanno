@@ -1,0 +1,112 @@
+workflow_name: Stanford Benchmarking
+workflow_description: This repository contains the benchmarking workflow that can be used to assess performance of germline variant calling pipelines based on testing with GIAB samples
+parameter_meta:
+  GermlineVariantCallBenchmark.chrRemovedVCF_fileSuffix:
+    group: Affixes
+    description:
+    example: "_chrRemoved.vcf.gz"
+  GermlineVariantCallBenchmark.indelSizeDistributionSuffix:
+    group: Affixes
+    description:
+    example: "_indelSizeDistribution.txt"
+  GermlineVariantCallBenchmark.indelSizeDistributionPlotSuffix:
+    group: Affixes
+    description:
+    example: "_indelSizeDistributionPlot.pdf"
+  GermlineVariantCallBenchmark.truthWholeExomeVCF:
+    group: Truth
+    description: bedtool intersect of the high confidence bed
+    example: "gs://benchmarking-datasets/Truth.highconf.WholeExome.vcf.gz"
+  GermlineVariantCallBenchmark.truthWholeExomeBED:
+    group: Truth
+    description:
+    example: "gs://benchmarking-datasets/HG002_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-Solid-10X_CHROM1-22_v3.3_highconf.bed"
+  GermlineVariantCallBenchmark.truthCodingExonsVCF:
+    group: Truth
+    description:
+    example: "gs://benchmarking-datasets/Truth.highconf.CodingExons.vcf.gz"
+  GermlineVariantCallBenchmark.truthCodingExonsBED:
+    group: Truth
+    description: Exons BED from UCSC
+    example: "gs://benchmarking-datasets/codingexons.nochr.bed"
+  GermlineVariantCallBenchmark.WholeExomePrefix:
+    group: Affixes
+    description:
+    example: "wes"
+  GermlineVariantCallBenchmark.referenceFasta:
+    group: References
+    description:
+    example: "gs://benchmarking-datasets/GRCh37-lite.fa"
+  GermlineVariantCallBenchmark.queryVCF:
+    group: Query
+    description:
+    example: "gs://benchmarking-datasets/HG002run1_S1.genome.vcf"
+    name: queryVCF
+  GermlineVariantCallBenchmark.subject:
+    group: Query
+    description: Member of Ashkenazi trio used in the query VCF (HG002, HG003, or HG004)
+    choices: ['HG002', 'HG003', 'HG004']
+    example: 'HG002'
+  GermlineVariantCallBenchmark.includeB1S5A:
+    group: Competitors 
+    description: Include B1S5A All Benchmark Regions B1S5A The Genomics Team in Google Health DeepVariant PacBio
+  GermlineVariantCallBenchmark.includeCZA1Y:
+    group: Competitors
+    description: MHC CZA1Y Sentieon "Combination of Illumina, PacBio HIFI, and Oxford Nanopore submission Model2"
+  GermlineVariantCallBenchmark.includeEIUT6:
+    group: Competitors
+    description: MHC, Difficult-to-Map Regions" EIUT6 Sentieon PacBio HIFI only submission
+  GermlineVariantCallBenchmark.includeIA789:
+    group: Competitors
+    description: Include B1S5A PACBIO All Benchmark Regions B1S5A The Genomics Team in Google Health DeepVariant PacBio
+  GermlineVariantCallBenchmark.includeW607K:
+    group: Competitors
+    description: Include B1S5A PACBIO All Benchmark Regions B1S5A The Genomics Team in Google Health DeepVariant PacBio
+  GermlineVariantCallBenchmark.includeWX8VK:
+    group: Competitors
+    description: All Benchmark Regions, MHC WX8VK Sentieon Combination of Illumina, PacBio HIFI, and Oxford Nanopore submission
+  GermlineVariantCallBenchmark.includeXC97E:
+    group: Competitors
+    description: Include B1S5A PACBIO All Benchmark Regions B1S5A The Genomics Team in Google Health DeepVariant PacBio
+  GermlineVariantCallBenchmark.includeXV7ZN:
+    group: Competitors
+    description: Include B1S5A PACBIO All Benchmark Regions B1S5A The Genomics Team in Google Health DeepVariant PacBio
+  GermlineVariantCallBenchmark.outputFile_commonPrefix:
+    group: Affixes
+    description:
+    example: "happyResults_NA24385_NISTv3.3"
+  GermlineVariantCallBenchmark.indelDistributionSuffix:
+    group: Affixes
+    description:
+    example: "_indelDistribution_Frombcftools.txt"
+  GermlineVariantCallBenchmark.referenceFasta_indexed:
+    group: References
+    description:
+    example: "GRCh37-lite.fa.fai"
+  GermlineVariantCallBenchmark.consoleOutputPartialFilename:
+    group: Affixes
+    description:
+    example: "_ConsoleOutput.txt"
+  GermlineVariantCallBenchmark.codingExonsPrefix:
+    group: Affixes
+    description:
+    example: "cds"
+  GermlineVariantCallBenchmark.Rscript_indelSize:
+    group: Scripts
+    description:
+    example: "indelSizeDistribution_Detailed.R"
+  GermlineVariantCallBenchmark.Rscript_aggregate:
+    group: Scripts
+    description:
+    example: "aggregateResults.R"
+parameter_group:
+  Query:
+    title: Query
+  Truth:
+    title: Truth sets
+  Affixes:
+    title: Prefixes/Suffixes
+  Scripts:
+    title: Scripts
+  References:
+    title: References
