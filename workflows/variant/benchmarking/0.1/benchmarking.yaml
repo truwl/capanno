@@ -10,14 +10,14 @@ metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
 workflowFile: wdl/benchmarking.wdl
-repoName: stanfordbenchmarking
+repoName: variantbenchmarking
 gitTag: intervene
 inputsTemplate: inputs.json
 executable: true
 current: true
 WebSite:
-  - URL: https://github.com/truwl/stanford_benchmarking
-    name: Stanford benchmarking
+  - URL: https://github.com/truwl/variant_benchmarking
+    name: Variant benchmarking
 
 # name: Variant Benchmarking Pipeline Intervene
 # softwareVersion:
