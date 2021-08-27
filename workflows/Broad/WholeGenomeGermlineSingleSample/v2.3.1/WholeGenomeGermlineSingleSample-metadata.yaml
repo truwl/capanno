@@ -1,6 +1,6 @@
 name: Broad WGS Single Sample pipeline
 identifier: WF_63e0c3.bc
-description: >
+description: |
   This WDL pipeline implements data pre-processing and initial variant calling (GVCF
   generation) according to the GATK Best Practices (June 2016) for germline SNP and
   Indel discovery in human whole-genome data
