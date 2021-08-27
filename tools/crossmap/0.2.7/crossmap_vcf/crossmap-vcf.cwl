@@ -5,6 +5,12 @@ arguments: ['vcf']
 requirements:
   - dockerPull: truwl/crossmap:0.4.2_0.1.0
     class: DockerRequirement
+  - class: InlineJavascriptRequirement
+    expressionLib:
+      - var get_output_filename = function(ext) { var alt_ext = ""; ext = (ext || ext=="")?ext:alt_ext;
+        if (inputs.output_basename == ""){ var root = inputs.input_vcf.basename.split('.').slice(0,-1).join('.');
+        return (root == "")?inputs.input_vcf.basename+ext:root+ext; } else { return
+        inputs.output_basename+ext; } };
 doc: |-
   Runs CrossMap.py script to project input vcf file based on input chain file.
 inputs:
@@ -24,12 +30,19 @@ inputs:
     type: File
     inputBinding:
       position: 4
-  output_file:
-    type: string
+  output_basename:
+    type:
+      - 'null'
+      - string
     inputBinding:
-      position: 5
-    doc: |
-      Name for the generated output file
+      position: 4
+      valueFrom: $(get_output_filename(""))
+#  output_file:
+#    type: string
+#    inputBinding:
+#      position: 5
+#    doc: |
+#      Name for the generated output file
   no_comp_alleles:
     type: boolean
     inputBinding:
@@ -48,7 +61,10 @@ outputs:
   projected_file:
     type: File
     outputBinding:
-      glob:
+      glob: |
+        ${
+          return get_output_filename();
+        }
     doc: |
       Projected output file
   unmap_file:
