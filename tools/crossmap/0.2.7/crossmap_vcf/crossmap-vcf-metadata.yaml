@@ -1,0 +1,15 @@
+name: vcf
+current: true
+metadataStatus: Released
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+identifier: TL_3673de_18.fa
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml
