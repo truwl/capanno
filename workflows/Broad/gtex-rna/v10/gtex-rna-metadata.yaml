@@ -1,7 +1,7 @@
 
 name: GTEx
 identifier: WF_254045.d5
-description: >
+description: |
   This repository contains all components of the RNA-seq pipeline used by the GTEx Consortium, including alignment, expression quantification, and quality control.
 
   SamToFastq: BAM to FASTQ conversion

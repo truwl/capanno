@@ -4,15 +4,16 @@ toolIdentifier: TL_9579db_54.89
 identifier: 'TL_9579db_54.89.1c10'
 name:
 jobStatus: Released
-description: >-
+description: |
   Create a combined GTF file from Gencode annotations, Gencode tRNAs, and spike-ins fasta
   usage: gawk -f GTF.awk genomeAnnotationGRF tRNAAnnotationGTF spikeInFasta > mergedGTF
+  
   input files:
-  genomeAnnotationGTF:      main gtf file, e.g. "gencode.v19.annotation.gtf"
-  tRNAAnnotationGTF:        gtf file for tRNAs or other annotations - exons only!
-  spikeInFasta: fasta file with spike-ins, e.g. "spikes.fixed.fasta"
+     genomeAnnotationGTF:      main gtf file, e.g. "gencode.v19.annotation.gtf"
+     tRNAAnnotationGTF:        gtf file for tRNAs or other annotations - exons only!
+     spikeInFasta:             fasta file with spike-ins, e.g. "spikes.fixed.fasta"
   output file:
-  MergedGTF:  Single merged GTF file to be used for genome generation with STAR, RSEM, TopHat
+     MergedGTF:                Single merged GTF file to be used for genome generation with STAR, RSEM, TopHat
 command: >
   {base_command: 'gawk -f', command_inputs: [$(inputs.awkFile), $(inputs.genomeAnnotationGTF),
   $(inputs.tRNAAnnotationGTF), $(inputs.spikeInFasta)]}
