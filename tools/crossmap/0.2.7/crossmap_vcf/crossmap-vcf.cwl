@@ -48,7 +48,7 @@ outputs:
   projected_file:
     type: File
     outputBinding:
-      glob: $(inputs.output_file)
+      glob:
     doc: |
       Projected output file
   unmap_file:
