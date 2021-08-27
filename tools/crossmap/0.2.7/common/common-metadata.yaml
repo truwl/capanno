@@ -5,8 +5,10 @@ softwareVersion:
 identifier: TL_3673de.fa
 featureList:
   - crossmap
+  - vcf
 metadataStatus: Released
-description: CrossMap is a program for genome coordinates conversion between different assemblies
+description: CrossMap is a program for genome coordinates conversion between different
+  assemblies
 codeRepository:
   name: crossmap
   URL: http://crossmap.sourceforge.net/
