@@ -33,7 +33,7 @@ workflow GermlineVariantCallBenchmark {
       }
     }
     
-    Map[String,File] truthCodingExonsBED = {"hg37":"gs://benchmarking-datasets/codingexons.nochr.bed","hg38":"truwl-giab/genome-stratifications/v2.0/GRCh38/FunctionalRegions/GRCh38_refseq_cds.bed.gz"}
+    Map[String,File] truthCodingExonsBED = {"hg37":"gs://benchmarking-datasets/codingexons.nochr.bed","hg38":"gs://truwl-giab/genome-stratifications/v2.0/GRCh38/FunctionalRegions/GRCh38_refseq_cds.bed.gz"}
     Map[String,File] truthWholeExomeBED = {"hg37":"gs://benchmarking-datasets/HG002_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-Solid-10X_CHROM1-22_v3.3_highconf.bed","hg38":"gs://truwl-giab/genome-stratifications/v2.0/GRCh38/exome/Twist_Exome_Target_hg38.bed"}
     
     
@@ -41,8 +41,8 @@ workflow GermlineVariantCallBenchmark {
     File Rscript_aggregate = "gs://benchmarking-datasets/aggregateResults.R"
     File Rscript_precrecall = "gs://benchmarking-datasets/precRecallPlot.R"
 
-    Map[String,File] referenceFasta = {"hg37":"gs://truwl-giab/references/GRCh37-lite.fa", "hg38":"gs://truwl-giab/references/GRCh38.fa"}
-    Map[String,File] referenceFasta_indexed = {"hg37":"gs://truwl-giab/GRCh37-lite.fa.fai", "hg38":"gs://truwl-giab/references/GRCh38.fa.fai"}
+    Map[String,File] referenceFasta = {"hg37":"gs://truwl-giab/references/GRCh37-lite.fa", "hg38":"gs://truwl-giab/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set_maskedGRC_exclusions.fasta.gz"}
+    Map[String,File] referenceFasta_indexed = {"hg37":"gs://truwl-giab/GRCh37-lite.fa.fai", "hg38":"gs://truwl-giab/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set_maskedGRC_exclusions.fasta.gz.fai"}
 
     String chrRemovedVCF_fileSuffix = "_chrRemoved.vcf.gz"
     String outputFile_commonPrefix = "results"
@@ -187,7 +187,8 @@ workflow GermlineVariantCallBenchmark {
           includeIA789 = includeIA789,
           includeW607K = includeW607K,
           subject = subject,
-          queryVCF = queryVCF
+          queryVCF = queryVCF,
+          freeze = freeze
   }
 
   call aggregate.melt as aggmelt {

@@ -9,38 +9,54 @@ softwareVersion:
 metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
-workflowFile: benchmarking.wdl
-repoName: stanfordbenchmarking
+workflowFile: wdl/benchmarking.wdl
+repoName: variantbenchmarking
 gitTag: intervene
 inputsTemplate: inputs.json
 executable: true
 current: true
 WebSite:
-  - URL: https://github.com/truwl/stanford_benchmarking
-    name: Stanford benchmarking
+  - URL: https://github.com/truwl/variantbenchmarking
+    name: Variant benchmarking
 
-
-# ('name', None),
-# ('softwareVersion', None),
-# ('current', False),
-# ('description', None),
-# ('identifier', None),
-# ('metadataStatus', 'Incomplete'),
-# ('workflowStatus', 'Incomplete'),
-# ('workflowLanguage', 'wdl'),
-# ('workflowFile', None), # Workflow file.
-# ('repoName', None),
-# ('gitTag', None),
-# ('inputsTemplate', None),
-# ('callMap', None),  # This field is to make associations between called tasks/steps and underlying tools/scripts.
-# ('graphStatus', 'Incomplete'),
-# ('executable', False),  # if configured to execute on Truwl.
-# ('codeRepository', None),
-# ('WebSite', None),
-# ('license', None),
-# ('contactPoint', None),
-# ('publication', None),
-# ('keywords', None),
-# ('alternateName', None),
-# ('creator', None),
-# ('datePublished', None),
+# name: Variant Benchmarking Pipeline Intervene
+# softwareVersion:
+#   versionName: '0.1'
+#   includedVersions: []
+# current: false
+# description:
+# identifier: WF_b21f41.9e
+# metadataStatus: Incomplete
+# workflowStatus: Incomplete
+# workflowLanguage: wdl
+# workflowFile:
+# repoName:
+# gitTag:
+# inputsTemplate:
+# callMap:
+# graphStatus: Incomplete
+# executable: false
+# codeRepository:
+#   name:
+#   URL:
+# WebSite:
+#   - name:
+#     description:
+#     URL:
+# license:
+# contactPoint:
+#   - name:
+#     email:
+#     identifier:
+# publication:
+#   - identifier:
+#     headline:
+# keywords:
+#   - name:
+#     category:
+# alternateName:
+# creator:
+#   - name:
+#     email:
+#     identifier:
+# datePublished:

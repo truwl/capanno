@@ -1,6 +1,22 @@
-workflow_name: Stanford Benchmarking
+workflow_name: Variant Benchmarking
 workflow_description: This repository contains the benchmarking workflow that can be used to assess performance of germline variant calling pipelines based on testing with GIAB samples
 parameter_meta:
+  GermlineVariantCallBenchmark.queryVCF:
+    group: Query
+    description:
+    example: "gs://benchmarking-datasets/HG002run1_S1.genome.vcf"
+    name: queryVCF
+  GermlineVariantCallBenchmark.subject:
+    group: Query
+    description: Member of Ashkenazi trio used in the query VCF (HG002, HG003, or HG004)
+    choices: ['HG002', 'HG003', 'HG004']
+    example: 'HG002'
+  GermlineVariantCallBenchmark.freeze:
+    group: Query
+    description: Genome freeze
+    choices: ['hg38', 'hg37']
+    example: 'Genome freeze. hg37 is no-chr'
+    
   GermlineVariantCallBenchmark.chrRemovedVCF_fileSuffix:
     group: Affixes
     description:
@@ -13,21 +29,20 @@ parameter_meta:
     group: Affixes
     description:
     example: "_indelSizeDistributionPlot.pdf"
-  GermlineVariantCallBenchmark.truthWholeExomeVCF:
+  GermlineVariantCallBenchmark.truthVCF:
     group: Truth
     description: bedtool intersect of the high confidence bed
     example: "gs://benchmarking-datasets/Truth.highconf.WholeExome.vcf.gz"
-  GermlineVariantCallBenchmark.truthWholeExomeBED:
-    group: Truth
-    description:
-    example: "gs://benchmarking-datasets/HG002_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-Solid-10X_CHROM1-22_v3.3_highconf.bed"
   GermlineVariantCallBenchmark.truthCodingExonsVCF:
     group: Truth
     description:
     example: "gs://benchmarking-datasets/Truth.highconf.CodingExons.vcf.gz"
+  GermlineVariantCallBenchmark.truthWholeExomeBED:
+    group: Truth
+    description: Exome BED
   GermlineVariantCallBenchmark.truthCodingExonsBED:
     group: Truth
-    description: Exons BED from UCSC
+    description: Exons BED
     example: "gs://benchmarking-datasets/codingexons.nochr.bed"
   GermlineVariantCallBenchmark.WholeExomePrefix:
     group: Affixes
@@ -37,16 +52,6 @@ parameter_meta:
     group: References
     description:
     example: "gs://benchmarking-datasets/GRCh37-lite.fa"
-  GermlineVariantCallBenchmark.queryVCF:
-    group: Query
-    description:
-    example: "gs://benchmarking-datasets/HG002run1_S1.genome.vcf"
-    name: queryVCF
-  GermlineVariantCallBenchmark.subject:
-    group: Query
-    description: Member of Ashkenazi trio used in the query VCF (HG002, HG003, or HG004)
-    choices: ['HG002', 'HG003', 'HG004']
-    example: 'HG002'
   GermlineVariantCallBenchmark.includeB1S5A:
     group: Competitors 
     description: Include B1S5A All Benchmark Regions B1S5A The Genomics Team in Google Health DeepVariant PacBio
@@ -99,14 +104,40 @@ parameter_meta:
     group: Scripts
     description:
     example: "aggregateResults.R"
+  GermlineVariantCallBenchmark.Rscript_precrecall:
+    group: Scripts
+    description:
+    example: "precRecall.R"
+  GermlineVariantCallBenchmark.Jupyter_report:
+    group: Scripts
+    description:
+    example: "report.ipynb"
+  GermlineVariantCallBenchmark.job_id:
+    group: Builtin
+  GermlineVariantCallBenchmark.workflow_instance_identifier:
+    group: Builtin
+  GermlineVariantCallBenchmark.workflow_identifier:
+    group: Builtin
+
 parameter_group:
   Query:
     title: Query
+    display: true
   Truth:
     title: Truth sets
+    display: false
   Affixes:
     title: Prefixes/Suffixes
+    display: false
   Scripts:
     title: Scripts
+    display: false
   References:
     title: References
+    display: false
+  Competitors:
+    title: Competitors
+    display: true
+  Builtin:
+    title: Built-in paramaeters
+    display: false

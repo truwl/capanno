@@ -16,7 +16,7 @@ inputsTemplate: inputs.json
 executable: true
 current: true
 WebSite:
-  - URL: https://github.com/truwl/variant_benchmarking
+  - URL: https://github.com/truwl/variantbenchmarking
     name: Variant benchmarking
 
 # name: Variant Benchmarking Pipeline Intervene
