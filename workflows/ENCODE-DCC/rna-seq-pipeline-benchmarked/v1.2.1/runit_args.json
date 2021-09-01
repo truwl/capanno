@@ -1,0 +1,397 @@
+[
+	{
+		"id": "rna.endedness",
+		"name": "rna.endedness",
+		"group": "input_genomic_data",
+		"choices": [
+			"paired",
+			"single"
+		],
+		"example": "paired",
+		"param_type": {
+			"optional": false,
+			"param_type": "String"
+		},
+		"description": "Indicates whether the endedness of the experiment is paired or single."
+	},
+	{
+		"id": "rna.fastqs_R1",
+		"name": "rna.fastqs_R1",
+		"group": "input_genomic_data",
+		"example": "[['test_data/ENCSR653DFZ_rep1_chr19_10000reads_R1.fastq.gz'], ['test_data/ENCSR653DFZ_rep2_chr19_10000reads_R1.fastq.gz']]",
+		"param_type": {
+			"items": {
+				"items": {
+					"optional": false,
+					"param_type": "File"
+				},
+				"optional": false,
+				"param_type": "Array"
+			},
+			"optional": false,
+			"param_type": "Array"
+		},
+		"description": "A list of lists of gzipped fastq files containing the first pairs of reads."
+	},
+	{
+		"id": "rna.fastqs_R2",
+		"name": "rna.fastqs_R2",
+		"group": "input_genomic_data",
+		"default": [
+
+		],
+		"example": "[['test_data/ENCSR653DFZ_rep1_chr19_10000reads_R2.fastq.gz'], ['test_data/ENCSR653DFZ_rep2_chr19_10000reads_R2.fastq.gz']]",
+		"param_type": {
+			"items": {
+				"items": {
+					"optional": false,
+					"param_type": "File"
+				},
+				"optional": false,
+				"param_type": "Array"
+			},
+			"optional": true,
+			"param_type": "Array"
+		},
+		"description": "Is list of lists of gzipped fastq files containing the second pairs of reads."
+	},
+	{
+		"id": "rna.align_index",
+		"name": "rna.align_index",
+		"group": "input_genomic_data",
+		"example": "test_data/GRCh38_v24_ERCC_phiX_starIndex_chr19only.tgz",
+		"param_type": {
+			"optional": false,
+			"param_type": "File"
+		},
+		"description": "The index for STAR aligner."
+	},
+	{
+		"id": "rna.rsem_index",
+		"name": "rna.rsem_index",
+		"group": "input_genomic_data",
+		"example": "test_data/GRCh38_v24_ERCC_phiX_rsemIndex_chr19only.tgz",
+		"param_type": {
+			"optional": false,
+			"param_type": "File"
+		},
+		"description": "Is the index for RSEM quantifier."
+	},
+	{
+		"id": "rna.bamroot",
+		"name": "rna.bamroot",
+		"group": "input_genomic_data",
+		"example": "PE_stranded",
+		"param_type": {
+			"optional": false,
+			"param_type": "String"
+		},
+		"description": "This is a prefix that gets added into the output filenames. Additionally the files are prefixed with information of the replicate they originate from."
+	},
+	{
+		"id": "rna.strandedness",
+		"name": "rna.strandedness",
+		"group": "input_genomic_data",
+		"choices": [
+			"stranded",
+			"unstranded"
+		],
+		"example": "stranded",
+		"param_type": {
+			"optional": false,
+			"param_type": "String"
+		},
+		"description": "Indicates whether the experiment is stranded or unstranded. If this is stranded, then the rna.strandedness_direction should be set to forward or reverse"
+	},
+	{
+		"id": "rna.strandedness_direction",
+		"name": "rna.strandedness_direction",
+		"group": "input_genomic_data",
+		"choices": [
+			"forward",
+			"reverse",
+			"unstranded"
+		],
+		"example": "forward",
+		"param_type": {
+			"optional": false,
+			"param_type": "String"
+		},
+		"description": "Indicates the direction of strandedness. Options are forward, reverse and unstranded."
+	},
+	{
+		"id": "rna.chrom_sizes",
+		"name": "rna.chrom_sizes",
+		"group": "input_genomic_data",
+		"example": "test_data/GRCh38_EBV.chrom.sizes",
+		"param_type": {
+			"optional": false,
+			"param_type": "File"
+		},
+		"description": "Is the file containing the chromosome sizes."
+	},
+	{
+		"id": "rna.rna_qc_tr_id_to_gene_type_tsv",
+		"name": "rna.rna_qc_tr_id_to_gene_type_tsv",
+		"group": "input_genomic_data",
+		"example": "transcript_id_to_gene_type_mappings/gencodeV24pri-tRNAs-ERCC-phiX.transcript_id_to_genes.tsv",
+		"param_type": {
+			"optional": false,
+			"param_type": "File"
+		},
+		"description": "rna_qc task calculates the number of reads by gene type. For this a tsv file that contains a mapping from transcript IDs to gene types is provided. For GRCh38, hg19, and mm10 with ERCC (ambion 1) and PhiX spikes the tsv is provided in this repo. If you are using some other annotation, you can use code here to build your own."
+	},
+	{
+		"id": "rna.run_kallisto",
+		"name": "rna.run_kallisto",
+		"group": "task_kallisto",
+		"default": true,
+		"example": "True",
+		"param_type": {
+			"optional": true,
+			"param_type": "Boolean"
+		},
+		"description": "Boolean defaulting to true. If set to false kallisto will not be run, and you do not need to provide values for any kallisto related parameters."
+	},
+	{
+		"id": "rna.kallisto_index",
+		"name": "rna.kallisto_index",
+		"group": "task_kallisto",
+		"example": "test_data/Homo_sapiens.GRCh38.cdna.all.chr19_ERCC_phix_k31_kallisto.idx",
+		"param_type": {
+			"optional": true,
+			"param_type": "File"
+		},
+		"description": "The index for Kallisto quantifier. Required only if rna.run_kallisto is true (Default is true)."
+	},
+	{
+		"id": "rna.kallisto_number_of_threads",
+		"doc": "Required only if rna.run_kallisto is true (Default is true)",
+		"name": "rna.kallisto_number_of_threads",
+		"group": "task_kallisto",
+		"example": "8",
+		"param_type": {
+			"optional": true,
+			"param_type": "Int"
+		},
+		"description": "How many threads are used for Kallisto quantification."
+	},
+	{
+		"id": "rna.kallisto_ramGB",
+		"doc": "Required only if rna.run_kallisto is true (Default is true)",
+		"name": "rna.kallisto_ramGB",
+		"group": "task_kallisto",
+		"example": "4",
+		"param_type": {
+			"optional": true,
+			"param_type": "Int"
+		},
+		"description": "How many GBs of memory are available for kallisto."
+	},
+	{
+		"id": "rna.kallisto_fragment_length",
+		"doc": "Required only if rna.run_kallisto is true (Default is true)",
+		"name": "rna.kallisto_fragment_length",
+		"group": "task_kallisto",
+		"default": [
+
+		],
+		"example": "[250, 250]",
+		"param_type": {
+			"items": {
+				"optional": false,
+				"param_type": "Int"
+			},
+			"optional": true,
+			"param_type": "Array"
+		},
+		"description": "Is an array of average fragment lengths as integers, one per replicate."
+	},
+	{
+		"id": "rna.kallisto_sd_of_fragment_length",
+		"doc": "Required only if rna.run_kallisto is true (Default is true).",
+		"name": "rna.kallisto_sd_of_fragment_length",
+		"group": "task_kallisto",
+		"default": [
+
+		],
+		"example": "[10, 10]",
+		"param_type": {
+			"items": {
+				"optional": false,
+				"param_type": "Float"
+			},
+			"optional": true,
+			"param_type": "Array"
+		},
+		"description": "Is and array standard deviations of the fragment lengths as floats, one per replicate."
+	},
+	{
+		"id": "rna.bam_to_signals_ncpus",
+		"name": "rna.bam_to_signals_ncpus",
+		"group": "task_resources",
+		"example": "1",
+		"param_type": {
+			"optional": false,
+			"param_type": "Int"
+		},
+		"description": "Is the number of cpus given to bam_to_signals task."
+	},
+	{
+		"id": "rna.bam_to_signals_ramGB",
+		"name": "rna.bam_to_signals_ramGB",
+		"group": "task_resources",
+		"example": "2",
+		"param_type": {
+			"optional": false,
+			"param_type": "Int"
+		},
+		"description": "Is the amount of memory in GB given to bam_to_signals."
+	},
+	{
+		"id": "rna.bam_to_signals_disk",
+		"doc": "You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.",
+		"name": "rna.bam_to_signals_disk",
+		"group": "task_resources",
+		"example": "local-disk 200 SSD",
+		"param_type": {
+			"optional": true,
+			"param_type": "String"
+		},
+		"description": "How much disk space is available for bam_to_signals."
+	},
+	{
+		"id": "rna.align_ncpus",
+		"name": "rna.align_ncpus",
+		"group": "task_resources",
+		"example": "1",
+		"param_type": {
+			"optional": false,
+			"param_type": "Int"
+		},
+		"description": "How many cpus are available for STAR alignment."
+	},
+	{
+		"id": "rna.align_ramGB",
+		"name": "rna.align_ramGB",
+		"group": "task_resources",
+		"example": "4",
+		"param_type": {
+			"optional": false,
+			"param_type": "Int"
+		},
+		"description": "How many GBs of memory are available for STAR alignment."
+	},
+	{
+		"id": "rna.align_disk",
+		"doc": "You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.",
+		"name": "rna.align_disk",
+		"group": "task_resources",
+		"example": "local-disk 200 SSD",
+		"param_type": {
+			"optional": true,
+			"param_type": "String"
+		},
+		"description": "How much disk space is available for Align task."
+	},
+	{
+		"id": "rna.rsem_ncpus",
+		"name": "rna.rsem_ncpus",
+		"group": "task_resources",
+		"example": "1",
+		"param_type": {
+			"optional": false,
+			"param_type": "Int"
+		},
+		"description": "How many cpus are available for RSEM quantification."
+	},
+	{
+		"id": "rna.rsem_ramGB",
+		"name": "rna.rsem_ramGB",
+		"group": "task_resources",
+		"example": "8",
+		"param_type": {
+			"optional": false,
+			"param_type": "Int"
+		},
+		"description": "How many GBs of memory are available for RSEM quantification."
+	},
+	{
+		"id": "rna.rsem_disk",
+		"doc": "You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.",
+		"name": "rna.rsem_disk",
+		"group": "task_resources",
+		"example": "local-disk 200 SSD",
+		"param_type": {
+			"optional": true,
+			"param_type": "String"
+		},
+		"description": "The amount of disk space in gigabytes to RSEM."
+	},
+	{
+		"id": "rna.kallisto_disk",
+		"doc": "You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive. Required only if rna.run_kallisto is true (Default is true).",
+		"name": "rna.kallisto_disk",
+		"group": "task_kallisto",
+		"example": "local-disk 200 SSD",
+		"param_type": {
+			"optional": true,
+			"param_type": "String"
+		},
+		"description": "Is the amount of disk space in gigabytes to the kallisto task."
+	},
+	{
+		"id": "rna.mad_qc_disk",
+		"doc": "You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.",
+		"name": "rna.mad_qc_disk",
+		"group": "task_kallisto",
+		"example": "local-disk 200 SSD",
+		"param_type": {
+			"optional": true,
+			"param_type": "String"
+		},
+		"description": "Is the amount of disk space in gigabytes to MAD QC."
+	},
+	{
+		"id": "rna.rna_qc_disk",
+		"doc": "You can also specify the type of disk, HDD for a spinning disk and SSD for a solid state drive.",
+		"name": "rna.rna_qc_disk",
+		"group": "task_resources",
+		"example": "local-disk 200 SSD",
+		"param_type": {
+			"optional": true,
+			"param_type": "String"
+		},
+		"description": "Is the amount of disk space in gigabytes to RNA QC."
+	},
+	{
+		"id": "rna.Rscript_madqcagg",
+		"name": "rna.Rscript_madqcagg",
+		"group": "Scripts",
+		"example": "madqcagg.R",
+		"param_type": {
+			"optional": false,
+			"param_type": "File"
+		}
+	},
+	{
+		"id": "rna.Rscript_rnaseqcagg",
+		"name": "rna.Rscript_rnaseqcagg",
+		"group": "Scripts",
+		"example": "rnaseqcagg.R",
+		"param_type": {
+			"optional": false,
+			"param_type": "File"
+		}
+	},
+	{
+		"id": "rna.genes_gtf",
+		"name": "rna.genes_gtf",
+		"example": "gs://truwl-rna-seq-test-data/gencode.v38.basic.annotation.gtf.gz",
+		"param_type": {
+			"optional": false,
+			"param_type": "File"
+		},
+		"description": "gene models for RNA-SeQC2"
+	}
+]
