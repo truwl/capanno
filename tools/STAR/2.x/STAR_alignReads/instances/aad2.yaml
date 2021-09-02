@@ -22,7 +22,7 @@ outSAMheaderHD: '@HD VN:1.4 SO:coordinate'
 outSAMunmapped: Within
 outFilterType: BySJout
 outSAMattributes: [NH, HI, AS, NM, MD]
-outSAMtype: [BAM, SortedByCoordinate]
+outSAMtype: BAM SortedByCoordinate
 quantMode: [TranscriptomeSAM]
 sjdbScore: 1
 limitBAMsortRAM: 60000000000
