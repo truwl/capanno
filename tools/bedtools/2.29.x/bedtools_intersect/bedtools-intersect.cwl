@@ -52,9 +52,30 @@ inputs:
       position: 8
     doc: |-
       Only report those entries in A that have _no overlaps_ with B
+  wa:
+    type:
+      - 'null'
+      - boolean
+    inputBinding:
+      prefix: "-wa"
+      position: 8
+    doc: |
+      Write the original entry in A for each overlap.
+  header:
+    type:
+      - 'null'
+      - boolean
+    inputBinding:
+      prefix: "-header"
+      position: 8
+    doc: |
+      Print the header from the A file prior to results.
+  output_filename:
+    type:
+      - 'null'
+      - string
+
 outputs:
   intersected_file:
-    type: File
-    outputBinding:
-      glob: $(default_output_filename())
+    type: stdout
     doc: "Intersected BED file"
