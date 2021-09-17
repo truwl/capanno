@@ -1,11 +1,11 @@
 name: inputAlignmentsFromBAM
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 
-identifier: TL_8ab263_d6.68
+identifier: TL_8ab263_d6.82
 description:
 keywords:
   - name:

@@ -5,7 +5,7 @@ softwareVersion:
 identifier: TL_19e641.c8
 featureList:
   - __main__
-metadataStatus: Incomplete
+metadataStatus: Released
 description: |
   Papermill is a tool for parameterizing and executing Jupyter Notebooks.
 

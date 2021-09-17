@@ -30,6 +30,8 @@ inputs:
     type: File
     inputBinding:
       position: 4
+    secondaryFiles:
+      - .fai
 #  output_basename:
 #    type:
 #      - 'null'

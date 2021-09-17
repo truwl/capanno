@@ -1,6 +1,6 @@
 name: __main__
-current: false
-metadataStatus: Incomplete
+current: true
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
