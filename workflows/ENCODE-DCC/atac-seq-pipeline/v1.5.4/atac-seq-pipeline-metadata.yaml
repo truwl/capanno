@@ -7,7 +7,7 @@
 
 name: ENCODE ATAC-seq pipeline
 identifier: WF_e85df4.f8
-description: >
+description: |
   This pipeline is designed for automated end-to-end quality control and processing of ATAC-seq and DNase-seq data.
   The pipeline can be run on compute clusters with job submission engines as well as on stand alone machines.
   It inherently makes uses of parallelized/distributed computing. Pipeline installation is also easy as most dependencies are automatically installed.

@@ -1,6 +1,6 @@
 name: ENCODE ChIP-seq pipeline2
 identifier: 'WF_dd6938.8f'
-description: >
+description: |
   ENCODE Transcription Factor and Histone ChIP-Seq processing pipeline
 
   This ChIP-Seq pipeline is based off the ENCODE (phase-3) transcription factor and histone ChIP-seq pipeline

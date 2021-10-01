@@ -1,16 +1,16 @@
-name: inputAlignmentsFromBAM
+name: __main__
+current: true
 metadataStatus: Released
-cwlStatus: Released
+cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-
-identifier: TL_8ab263_d6.82
-description: Processing of BAM file without re-alignment.
+identifier: TL_19e641_54.c8
+description:
 keywords:
   - name:
     category:
-alternateName: []
+alternateName:
 extra:
   sha1:
   dockerImage:

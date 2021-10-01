@@ -1,0 +1,19 @@
+reference_fasta:  # Required File
+  class: File
+  path:
+  location: https://storage.googleapis.com/truwl-giab/references/GRCh37/hs37d5.fa.gz
+  secondaryFiles:
+    - class: File
+      location: https://storage.googleapis.com/truwl-giab/references/GRCh37/hs37d5.fa.gz.fai
+output_file: 4HLOB_HG002_hg19.vcf # Required string
+#output_basename: 4HLOB_HG002_hg19
+no_comp_alleles: false  # Required boolean
+input_vcf:  # Required File
+  class: File
+  path:
+  location: https://storage.googleapis.com/truwl-giab/submission_vcfs/4HL0B/4HL0B_HG002.vcf.gz
+compress: false  # Required boolean
+chain_file:  # Required File
+  class: File
+  path:
+  location: https://storage.googleapis.com/truwl-general-001/chain-files/hg38ToHg19.over.chain.gz

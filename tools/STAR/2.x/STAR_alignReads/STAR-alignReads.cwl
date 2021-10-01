@@ -7,6 +7,15 @@ requirements:
 baseCommand: STAR
 arguments: [--runMode, alignReads]
 
+hints:
+  - dockerPull: "truwl/STAR:2.7.6a_0.1.0"
+    class: DockerRequirement
+  - packages:
+      STAR:
+        specs: ["http://identifiers.org/biotools/star"]
+        version: ["2.7.6a"]
+    class: SoftwareRequirement
+
 inputs:
 # Required parameters.
   # alignReads specific parameters.
@@ -19,9 +28,10 @@ inputs:
       prefix: --readFilesIn
     doc: |
       string(s): paths to files that contain input read1 (and, if needed,  read2)
+    format: http://edamontology.org/format_1930
 
   readFilesCommand:
-    type: string
+    type: ["null", string]
     inputBinding:
       position: 1
       prefix: --readFilesCommand
@@ -34,7 +44,15 @@ inputs:
 # Optional parameters.
   # alignReads specific parameters.
   genomeLoad:
-    type: ["null", string]
+    type:
+      - "null"
+      - type: enum
+        symbols:
+          - LoadAndKeep
+          - LoadAndRemove
+          - LoadAndExit
+          - Remove
+          - NoSharedMemory
     inputBinding:
       position: 1
       prefix: --genomeLoad
@@ -222,6 +240,13 @@ inputs:
       default: 1000000
       int>=0: maximum number of junction to be inserted to the genome on the fly at the mapping stage, including those from annotations and those detected in the 1st step of the 2-pass run
 
+  Gtf:
+    type:
+      - 'null'
+      - File
+    inputBinding:
+      prefix: "--sjdbGTFfile"
+
   outFileNamePrefix:
     type: ["null", string]
     inputBinding:
@@ -268,7 +293,12 @@ inputs:
         BAM_Quant              ... alignments to transcriptome in BAM format, unsorted. Requires --quantMode TranscriptomeSAM
 
   outReadsUnmapped:
-    type: ["null", string]
+    type:
+      - "null"
+      - type: enum
+        symbols:
+          - None
+          - Fastx
     inputBinding:
       position: 1
       prefix: --outReadsUnmapped
@@ -301,8 +331,17 @@ inputs:
   outSAMtype:
     type:
       - "null"
-      - type: array
-        items: string
+      - type: enum
+        symbols:
+          - None
+          - BAM
+          - BAM Unsorted
+          - BAM SortedByCoordinate
+          - BAM Unsorted SortedByCoordinate
+          - SAM
+          - SAM Unsorted
+          - SAM SortedByCoordinate
+          - SAM Unsorted SortedByCoordinate
     inputBinding:
       position: 1
       prefix: --outSAMtype
@@ -318,7 +357,13 @@ inputs:
         SortedByCoordinate ... sorted by coordinate. This option will allocate extra memory for sorting which can be specified by --limitBAMsortRAM.
 
   outSAMmode:
-    type: ["null", string]
+    type:
+      - "null"
+      - type: enum
+        symbols:
+          - None
+          - Full
+          - NoQS
     inputBinding:
       position: 1
       prefix: --outSAMmode
@@ -330,7 +375,12 @@ inputs:
         NoQS ... full SAM but without quality scores
 
   outSAMstrandField:
-    type: ["null", string]
+    type:
+      - "null"
+      - type: enum
+        symbols:
+          - None
+          - intronMotif
     inputBinding:
       position: 1
       prefix: --outSAMstrandField
@@ -372,7 +422,13 @@ inputs:
       int>=0:  start value for the IH attribute. 0 may be required by some downstream software, such as Cufflinks or StringTie.
 
   outSAMunmapped:
-    type: ["null", string]
+    type:
+      - "null"
+      - type: enum
+        symbols:
+          - None
+          - Within
+          - Within KeepPairs
     inputBinding:
       position: 1
       prefix: --outSAMunmapped
@@ -622,7 +678,13 @@ inputs:
         None   ... no normalization, "raw" counts
 
   outFilterType:
-    type: ["null", string]
+    type:
+      - "null"
+      - type: enum
+        symbols:
+          - Normal
+          - BySJout
+
     inputBinding:
       position: 1
       prefix: --outFilterType
@@ -663,7 +725,7 @@ inputs:
 
 
   outFilterMismatchNoverLmax:
-    type: ["null", float]
+    type: ["null", double]
     inputBinding:
       position: 1
       prefix: --outFilterMismatchNoverLmax
@@ -700,7 +762,13 @@ inputs:
       paired-end reads
 
   outFilterIntronMotifs:
-    type: ["null", string]
+    type:
+      - "null"
+      - type: enum
+        symbols:
+          - None
+          - RemoveNoncanonical
+          - RemoveNoncanonicalUnannotated
     inputBinding:
       position: 1
       prefix: --outFilterIntronMotifs
@@ -1246,6 +1314,12 @@ inputs:
       int: formatting type for the Chimeric.out.junction file
         0 ... no comment lines/headers
         1 ... comment lines at the end of the file: command line and Nreads: total, unique, multi
+  chimJunctionOverhangMin:
+    type:
+      - 'null'
+      - int
+    inputBinding:
+      prefix: "--chimJunctionOverhangMin"
 
   quantMode:
     type:

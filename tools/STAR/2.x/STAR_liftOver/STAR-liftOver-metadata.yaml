@@ -1,11 +1,11 @@
-name: liftOVer
-metadataStatus: Incomplete
+name: liftOver
+metadataStatus: Released
 cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 
-identifier: TL_8ab263_81.68
+identifier: TL_8ab263_15.82
 description:
 keywords:
   - name:

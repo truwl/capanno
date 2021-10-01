@@ -1,12 +1,12 @@
 name: genomeGenerate
-metadataStatus: Incomplete
-cwlStatus: Incomplete
+metadataStatus: Released
+cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
 
-identifier: TL_8ab263_95.68
-description:
+identifier: TL_8ab263_95.82
+description: genomeGenerate option directs STAR to run genome indices generation job.
 keywords:
   - name:
     category:
