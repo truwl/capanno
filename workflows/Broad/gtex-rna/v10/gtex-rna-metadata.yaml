@@ -1,7 +1,7 @@
 
 name: GTEx
 identifier: WF_254045.d5
-description: >
+description: |
   This repository contains all components of the RNA-seq pipeline used by the GTEx Consortium, including alignment, expression quantification, and quality control.
 
   SamToFastq: BAM to FASTQ conversion
@@ -30,7 +30,7 @@ graphStatus: Incomplete
 workflowFile: rnaseq/rnaseq_pipeline_fastq.wdl
 repoName: gtex-rna
 gitTag: v10
-inputsTemplate: ../gtex-rna_inputs.json # relative to workflowFile path.
+inputsTemplate: gtex-rna_inputs.json
 executable: true
 current: true
 codeRepository:

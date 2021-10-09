@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_21.c8
 description: "Perform fisher’s exact test on the number of overlaps/unique intervals\
   \ between 2 files.\n\nTraditionally, in order to test whether 2 sets of intervals\

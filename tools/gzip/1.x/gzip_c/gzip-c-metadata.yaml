@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_749cad_4a.1d
 description: zcat uncompresses either a list of files on the command line or its standard
   input and writes the uncompressed data on standard output. zcat will uncompress

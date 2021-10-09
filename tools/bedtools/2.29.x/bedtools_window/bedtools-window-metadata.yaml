@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_05.c8
 description: Similar to bedtools intersect, window searches for overlapping features
   in A and B. However, window adds a specified number (1000, by default) of base pairs

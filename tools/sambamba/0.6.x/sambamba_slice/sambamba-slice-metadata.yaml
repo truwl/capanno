@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_bf790f_6d.e9
 description: "Outputs reads overlapping specified region into new BAM file. (Default\
   \ destination is STDOUT.) Input file must be coordinate-sorted and indexed.\nWhile\

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_88.c8
 description: Writes an interval list based on splitting a reference by Ns. This tool
   identifies positions in a reference where the bases are 'no-calls' and writes out

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_ce.c8
 description: "Collect metrics about coverage and performance of whole genome sequencing\
   \ (WGS) experiments.\nThis tool collects metrics about the fractions of reads that\

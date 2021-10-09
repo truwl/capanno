@@ -1,6 +1,6 @@
-A list that describes publications related to the tool. The first entry should be the main reference to cite the tool. 
+A list of publications related to the tool. The first entry should be the main reference to cite the tool. 
 
-ex:
+e.g.
 
 ~~~yaml
 publication:

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8399d8_e1.1d
 description: "--files0-from=F\n    read input from the files specified by NUL-terminated\
   \ names in file F; If F is - then read names from standard input"

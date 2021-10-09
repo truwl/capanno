@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e4fc9c_54.54
 description: from a FASTA reference sequence, and a BAM-format alignment file sorted by reference position, make a vcf
 keywords:

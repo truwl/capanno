@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_71.0b
 description: "samtools reheader [-iP] in.header.sam in.bam\nReplace the header in\
   \ in.bam with the header in in.header.sam. This command is much faster than replacing\

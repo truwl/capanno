@@ -16,8 +16,6 @@ metadata files from the bio.tools api is described in [geting started].
 
 Metadata can also be obtained from tool manual and help pages, [SciCrunch](https://scicrunch.org/), or other web resources.
 
-!include docs/components/version.md
-
 ## <a name="complete"><a/>Complete tool metadata files
 
 Metadata file fields for a tool that is not separated into subtools.
@@ -116,11 +114,6 @@ Metadata file fields for a CWL file that describes a subtool of a tool.
 
 This must correspond to the name of the subtool as specified in the [featureList](#featurelist) field of the primary tool metadata file.
 ex: `search`
-
-#### version
-
-Same as [version](#version1) above. Each subtool CWL file
-must have its own version.
 
 ### Recommended Fields
 

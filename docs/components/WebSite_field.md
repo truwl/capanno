@@ -1,6 +1,4 @@
-A list of websites associated with the tool, excluding the code repository which should be provided in `codeRepository`.
-
-ex:
+A list of websites associated with the tool, excluding the code repository which should be provided in `codeRepository`. e.g.:
 
 ~~~yaml
 Website:
@@ -10,5 +8,4 @@ Website:
   - name: Wikipeda
     description: Wikipedia entry for SAMtools
     URL: https://en.wikipedia.org/wiki/SAMtools
-
 ~~~

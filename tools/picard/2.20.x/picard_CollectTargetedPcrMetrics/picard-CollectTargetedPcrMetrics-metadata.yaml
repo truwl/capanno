@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_6a.c8
 description: "Calculate PCR-related metrics from targeted sequencing data.\nThis tool\
   \ calculates a set of PCR-related metrics from an aligned SAM or BAM file containing\

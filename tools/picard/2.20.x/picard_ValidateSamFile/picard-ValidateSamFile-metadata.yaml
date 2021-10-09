@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_b5.c8
 description: "Validates a SAM or BAM file.\nThis tool reports on the validity of a\
   \ SAM or BAM file relative to the SAM format specification. This is useful for troubleshooting\

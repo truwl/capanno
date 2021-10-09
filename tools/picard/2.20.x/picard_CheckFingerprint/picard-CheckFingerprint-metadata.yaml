@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_83.c8
 description: "Computes a fingerprint from the supplied input file (SAM/BAM or VCF)\
   \ file and compares it to the expected fingerprint genotypes provided. The key output\

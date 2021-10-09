@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_90.c8
 description: Subsets intervals from a reference sequence to a new FASTA file. This
   tool takes a list of intervals, reads the corresponding subsquences from a reference

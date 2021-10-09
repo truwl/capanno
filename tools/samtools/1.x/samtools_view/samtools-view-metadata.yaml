@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_46.0b
 description: "samtools view [options] in.sam|in.bam|in.cram [region...]\nWith no options\
   \ or regions specified, prints all alignments in the specified input alignment file\

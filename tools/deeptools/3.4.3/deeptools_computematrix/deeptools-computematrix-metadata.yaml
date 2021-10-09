@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8b3ec0_1d.9f
 description: This tool calculates scores per genome regions and prepares an intermediate file that can be used with plotHeatmap and plotProfiles
 keywords:

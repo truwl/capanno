@@ -1,0 +1,24 @@
+name: vcf
+current: true
+metadataStatus: Released
+cwlStatus: Released
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+identifier: TL_3673de_18.fa
+description: |
+  CrossMap.py vcf <chain_file>  <input.vcf>  <refGenome.fa>  <output_file> [options]
+  Examples:
+  CrossMap.py vcf hg19ToHg18.over.chain.gz test.hg19.vcf hg18.fa test.hg18.vcf
+  # comparing ref_allele to alt_allele to make sure they are different.
+  CrossMap.py vcf hg19ToHg18.over.chain.gz test.hg19.vcf hg18.fa test.hg18.vcf  --no-comp-alleles
+  #do NOT compare ref_allele to alt_allele.
+  Options:
+    --no-comp-alleles  If set, CrossMap does NOT check if the reference allele is different from the alternate allele.
+    --compress         If set, compress the output VCF file by calling the system "gzip".
+keywords:
+  - name:
+    category:
+alternateName:
+extra: {}
+parentMetadata: ../common/common-metadata.yaml

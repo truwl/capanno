@@ -1,0 +1,1 @@
+Status can be set to `Incomplete`, `Draft`, or `Released`. Default = `Incomplete`. Incomplete signifies that the file does not exist or has been initalized but not populated. Draft  signifies that the file is a work in progress. Released means the file is (reasonably) ready to be used. 

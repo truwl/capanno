@@ -54,11 +54,6 @@ ex: `name: foo.py`
 
 !include docs/components/identifier_field.md
 
-#### version
-
-!include docs/components/version.md
-
-
 #### parentMetadata
 
 Required for script metadata that inherits some of its data from a common file. 

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_65.c8
 description: Renames a sample within a VCF or BCF. This tool enables the user to rename
   a sample in either a VCF or BCF file. It is intended to change the name of a sample

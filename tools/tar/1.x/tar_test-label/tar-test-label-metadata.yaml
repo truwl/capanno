@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_db5570_1d.8b
 description: "--test-label\nTest the archive volume label and exit. When used without\
   \ arguments, it prints the volume label (if any) and exits with status 0. When one\
