@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Released
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8d0912_f7.1a
 description: align reads
 keywords:

@@ -4,7 +4,7 @@ cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_55f722_c2.d9
 description: Apply a Convolutional Neural Net to filter annotated variants
 keywords:

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_a0.c8
 description: 'Lifts over an interval list from one reference build to another. This
   tool adjusts the coordinates in an interval list derived from one reference to match

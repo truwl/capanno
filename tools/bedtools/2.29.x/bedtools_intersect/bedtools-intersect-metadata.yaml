@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Released
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_eb.c8
 description: By far, the most common question asked of two sets of genomic features
   is whether or not any of the features in the two sets “overlap” with one another.

@@ -1,30 +1,14 @@
-# Introduction
+## Introduction
 
-This document contains xD Bio's best practices for the describing command line tools with the
-[Common Workflow Language](https://github.com/common-workflow-language/common-workflow-language) (CWL) and tool metadata
-files.
-Several practices here were adapted from 
-[CommonsWorkflow Language User Guide: Recommended Practices](http://www.commonwl.org/user_guide/rec-practices/)
+This document contains Truwl's practices for describing worklfow metadata and workflow language files.
 
 ## Definitions
 
 !include docs/components/definitions.md
 
-## CWL and metadata types 
 
-There is one types of CWL workflow file and one type of workflow metadata files.
-
-## CWL Workflow status
-
-!include docs/components/cwl_file_status.md
-
-# CWL Files
-
-Still lots to do here.
-
-!include docs/templates/Workflow_guide.md
-
-# Workflow metadata files
+## Workflow metadata files
+Workflow metadata is specified in YAML files and can be initiated with the proper format and directory structure using `capanno-utils` as described in [Getting Started](./GettingStarted.md). Workflow descriptions differ from the how [tools](ToolGuide.md) are described in that only one main workflow language file is expected per workflow, and it will be in a single workflow language. A tool is broken up into various subtools and can be described separately by multiple workflow languages. Neither of these generally apply to workflows. It would be difficult to express the *same* workflow in multiple workflow languages and workflows are not typically written run in many diverse ways.
 
 ### Required Fields
 
@@ -36,13 +20,41 @@ The name of the workflow
 
 !include docs/components/softwareVersion_field.md
 
-#### version
-
-!include docs/components/version.md
-
 #### identifier
 
 !include docs/components/identifier_field.md
+
+#### metadataStatus
+
+The status of the workflow's metadata.
+
+!include docs/components/status_field.md
+
+#### workflowStatus
+
+The status of the workflow.
+
+!include docs/components/status_field.md
+
+#### workflowLanguage
+
+The language that the workflow is written in. Must be one of cwl, wdl, nextflow, or snakemake.
+
+#### workflowFile
+
+The name of the main workflow file. e.g. `atac.wdl`
+
+#### repoName
+
+The name of the git repository if public.
+
+#### gitTag
+
+The git tag for the repo if available; usually a version.
+
+#### inputsTemplate
+
+The name of an inputs file template: a **blank** inputs.json for WDL, job.yaml for CWL, etc.
 
 #### callMap
 
@@ -84,10 +96,24 @@ The name of the workflow
 
 !include docs/components/creator_field.md
 
-#### programmingLanguage
-
-!include docs/components/programmingLanguage_field.md
-
 #### datePublished
 
 !include docs/components/datePublished_field.md
+
+
+
+## CWL Files
+
+!include docs/templates/Workflow_guide.md
+
+## WDL Files
+
+No guidance at this point.
+
+## Snakemake Files
+
+No guidance at this point.
+
+## Nextflow Files
+
+No guidance at this point.

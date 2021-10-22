@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_fe47aa_d0.1d
 description: "-f, --fields=LIST\n       select only these fields;  also print any\
   \ line that contains no delimiter character, unless the -s option is specified"

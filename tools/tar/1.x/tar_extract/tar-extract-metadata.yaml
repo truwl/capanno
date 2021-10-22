@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_db5570_3e.8b
 description: "-x, --extract, --get\nExtract files from an archive. Arguments are optional.\
   \ When given, they specify names of the archive members to be extracted."

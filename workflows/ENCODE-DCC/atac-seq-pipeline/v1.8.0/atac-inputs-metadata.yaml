@@ -1,0 +1,719 @@
+parameter_meta:
+  atac.title:
+    description: 'Experiment title.'
+    group: 'pipeline_metadata'
+    example: 'ENCSR356KRQ (subsampled 1/400)'
+
+  atac.description:
+    description: 'Experiment description.'
+    group: 'pipeline_metadata'
+    example: 'ATAC-seq on primary keratinocytes in day 0.0 of differentiation (subsampled 1/400)'
+
+  atac.genome_tsv:
+    description: 'Reference genome database TSV.'
+    group: 'reference_genome'
+    help: 'This TSV files includes all genome specific parameters (e.g. reference FASTA, bowtie2 index). You can still invidiaully define any parameters in it. Parameters defined in input JSON will override those defined in genome TSV.'
+    example: 'https://storage.googleapis.com/encode-pipeline-genome-data/genome_tsv/v1/hg38_caper.tsv'
+
+  atac.genome_name:
+    description: 'Genome name.'
+    group: 'reference_genome'
+
+  atac.ref_fa:
+    description: 'Reference FASTA file.'
+    group: 'reference_genome'
+
+  atac.ref_mito_fa:
+    description: 'Reference FASTA file (mitochondrial reads only).'
+    group: 'reference_genome'
+
+  atac.bowtie2_idx_tar:
+    description: 'BWA index TAR file.'
+    group: 'reference_genome'
+
+  atac.bowtie2_mito_idx_tar:
+    description: 'BWA index TAR file (mitochondrial reads only).'
+    group: 'reference_genome'
+
+  atac.chrsz:
+    description: '2-col chromosome sizes file.'
+    group: 'reference_genome'
+
+  atac.blacklist:
+    description: 'Blacklist file in BED format.'
+    group: 'reference_genome'
+    help: 'Peaks will be filtered with this file.'
+
+  atac.blacklist2:
+    description: 'Secondary blacklist file in BED format.'
+    group: 'reference_genome'
+    help: 'If it is defined, it will be merged with atac.blacklist. Peaks will be filtered with merged blacklist.'
+
+  atac.mito_chr_name:
+    description: 'Mitochondrial chromosome name.'
+    group: 'reference_genome'
+    help: 'e.g. chrM, MT. Mitochondrial reads defined here will be filtered out during filtering BAMs in "filter" task.'
+
+  atac.regex_bfilt_peak_chr_name:
+    description: 'Reg-ex for chromosomes to keep while filtering peaks.'
+    group: 'reference_genome'
+    help: 'Chromosomes defined here will be kept. All other chromosomes will be filtered out in .bfilt. peak file. This is done along with blacklist filtering peak file.'
+
+  atac.gensz:
+    description: 'Genome sizes. "hs" for human, "mm" for mouse or sum of 2nd columnin chromosome sizes file.'
+    group: 'reference_genome'
+
+  atac.tss:
+    description: 'TSS file in BED format.'
+    group: 'reference_genome'
+
+  atac.dnase:
+    description: 'Open chromatin regions file in BED format.'
+    group: 'reference_genome'
+
+  atac.prom:
+    description: 'Promoter regions file in BED format.'
+    group: 'reference_genome'
+
+  atac.enh:
+    description: 'Enhancer regions file in BED format.'
+    group: 'reference_genome'
+
+  atac.reg2map:
+    description: 'Cell type signals file.'
+    group: 'reference_genome'
+
+  atac.reg2map_bed:
+    description: 'File of regions used to generate reg2map signals.'
+    group: 'reference_genome'
+
+  atac.roadmap_meta:
+    description: 'Roadmap metadata.'
+    group: 'reference_genome'
+
+  atac.paired_end:
+    description: 'Sequencing endedness.'
+    group: 'input_genomic_data'
+    help: 'Setting this on means that all replicates are paired ended. For mixed samples, use atac.paired_ends array instead.'
+    example: true
+
+  atac.paired_ends:
+    description: 'Sequencing endedness array (for mixed SE/PE datasets).'
+    group: 'input_genomic_data'
+    help: 'Whether each biological replicate is paired ended or not.'
+
+  atac.fastqs_rep1_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 1.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from FASTQ files. Pipeline can start from any type of inputs (e.g. FASTQs, BAMs, ...). Choose one type and fill paramters for that type and leave other undefined. Especially for FASTQs, we have individual variable for each biological replicate to allow FASTQs of technical replicates can be merged. Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep1_R2). These FASTQs are usually technical replicates to be merged.'
+    example: [
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep1/pair1/ENCFF341MYG.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep1/pair1/ENCFF106QGY.subsampled.400.fastq.gz"
+    ]
+
+  atac.fastqs_rep1_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 1.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep1_R1). These FASTQs are usually technical replicates to be merged.'
+    example: [
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep1/pair2/ENCFF248EJF.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep1/pair2/ENCFF368TYI.subsampled.400.fastq.gz"
+    ]
+
+  atac.fastqs_rep2_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 2.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep2_R2). These FASTQs are usually technical replicates to be merged.'
+    example: [
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair1/ENCFF641SFZ.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair1/ENCFF751XTV.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair1/ENCFF927LSG.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair1/ENCFF859BDM.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair1/ENCFF193RRC.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair1/ENCFF366DFI.subsampled.400.fastq.gz"
+    ]
+
+  atac.fastqs_rep2_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 2.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep2_R1). These FASTQs are usually technical replicates to be merged.'
+    example: [
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair2/ENCFF031ARQ.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair2/ENCFF590SYZ.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair2/ENCFF734PEQ.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair2/ENCFF007USV.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair2/ENCFF886FSC.subsampled.400.fastq.gz",
+        "https://storage.googleapis.com/encode-pipeline-test-samples/encode-atac-seq-pipeline/ENCSR356KRQ/fastq_subsampled/rep2/pair2/ENCFF573UXK.subsampled.400.fastq.gz"
+    ]
+
+  atac.fastqs_rep3_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 3.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep3_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep3_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 3.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep3_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep4_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 4.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep4_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep4_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 4.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep4_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep5_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 5.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep5_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep5_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 5.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep5_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep6_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 6.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep6_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep6_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 6.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep6_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep7_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 7.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep7_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep7_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 7.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep7_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep8_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 8.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep8_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep8_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 8.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep8_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep9_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 9.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep9_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep9_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 9.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep9_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep10_R1:
+    description: 'Read1 FASTQs to be merged for a biological replicate 10.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.fastqs_rep10_R2). These FASTQs are usually technical replicates to be merged.'
+
+  atac.fastqs_rep10_R2:
+    description: 'Read2 FASTQs to be merged for a biological replicate 10.'
+    group: 'input_genomic_data'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.fastqs_rep10_R1). These FASTQs are usually technical replicates to be merged.'
+
+  atac.bams:
+    description: 'List of unfiltered/raw BAM files for each biological replicate.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from BAM files. Unfiltered/raw BAM file generated from aligner (e.g. bowtie2). Each entry for each biological replicate. e.g. [rep1.bam, rep2.bam, rep3.bam, ...].'
+
+  atac.nodup_bams:
+    description: 'List of filtered/deduped BAM files for each biological replicate'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from filtered BAM files. Filtered/deduped BAM file. Each entry for each biological replicate. e.g. [rep1.nodup.bam, rep2.nodup.bam, rep3.nodup.bam, ...].'
+
+  atac.tas:
+    description: 'List of TAG-ALIGN files for each biological replicate.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from TAG-ALIGN files. TAG-ALIGN is in a 6-col BED format. It is a simplified version of BAM. Each entry for each biological replicate. e.g. [rep1.tagAlign.gz, rep2.tagAlign.gz, ...].'
+
+  atac.peaks:
+    description: 'List of NARROWPEAK files (not blacklist filtered) for each biological replicate.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from PEAK files. Each entry for each biological replicate. e.g. [rep1.narrowPeak.gz, rep2.narrowPeak.gz, ...]. Define other PEAK parameters (e.g. atac.peaks_pr1, atac.peak_pooled) according to your flag settings (e.g. atac.true_rep_only) and number of replicates. If you have more than one replicate then define atac.peak_pooled, atac.peak_ppr1 and atac.peak_ppr2. If atac.true_rep_only flag is on then do not define any parameters (atac.peaks_pr1, atac.peaks_pr2, atac.peak_ppr1 and atac.peak_ppr2) related to pseudo replicates.'
+
+  atac.peaks_pr1:
+    description: 'List of NARROWPEAK files (not blacklist filtered) for pseudo-replicate 1 of each biological replicate.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from PEAK files. Define if atac.true_rep_only flag is off.'
+
+  atac.peaks_pr2:
+    description: 'List of NARROWPEAK files (not blacklist filtered) for pseudo-replicate 2 of each biological replicate.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from PEAK files. Define if atac.true_rep_only flag is off.'
+
+  atac.peak_pooled:
+    description: 'NARROWPEAK file for pooled true replicate.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from PEAK files. Define if you have multiple biological replicates. Pooled true replicate means analysis on pooled biological replicates.'
+
+  atac.peak_ppr1:
+    description: 'NARROWPEAK file for pooled pseudo replicate 1.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from PEAK files. Define if you have multiple biological replicates and atac.true_rep_only flag is off. PPR1 means analysis on pooled 1st pseudo replicates. Each biological replicate is shuf/split into two pseudos. This is a pooling of each replicate''s 1st pseudos.'
+
+  atac.peak_ppr2:
+    description: 'NARROWPEAK file for pooled pseudo replicate 2.'
+    group: 'input_genomic_data'
+    help: 'Define if you want to start pipeline from PEAK files. Define if you have multiple biological replicates and atac.true_rep_only flag is off. PPR1 means analysis on pooled 2nd pseudo replicates. Each biological replicate is shuf/split into two pseudos. This is a pooling of each replicate''s 2nd pseudos.'
+
+
+  atac.pipeline_type:
+    description: 'Pipeline type. atac for ATAC-Seq or dnase for DNase-Seq.'
+    group: 'pipeline_parameter'
+    help: 'The only difference of two types is that TN5 shifting of TAG-ALIGN is done for atac. TAG-ALIGN is in 6-col BED format. It is a simplified version of BAM.'
+    choices: [ 'atac', 'dnase' ]
+    example: 'atac'
+
+  atac.align_only:
+    description: 'Align only mode.'
+    group: 'pipeline_parameter'
+    help: 'Reads will be aligned but there will be no peak-calling on them.'
+
+  atac.true_rep_only:
+    description: 'Disables all analyses related to pseudo-replicates.'
+    group: 'pipeline_parameter'
+    help: 'Pipeline generates 2 pseudo-replicate from one biological replicate. This flag turns off all analyses related to pseudos (with prefix/suffix pr, ppr).'
+
+  atac.enable_xcor:
+    description: 'Enables cross-correlation analysis.'
+    group: 'pipeline_parameter'
+    help: 'Generates cross-correlation plot.'
+
+  atac.enable_count_signal_track:
+    description: 'Enables generation of count signal tracks.'
+    group: 'pipeline_parameter'
+
+  atac.enable_idr:
+    description: 'Enables IDR on MACS2 NARROWPEAKs.'
+    group: 'pipeline_parameter'
+
+  atac.enable_preseq:
+    description: 'Enables preseq analysis.'
+    group: 'pipeline_parameter'
+
+  atac.enable_fraglen_stat:
+    description: 'Enables calculation of fragment length distribution/statistics.'
+    group: 'pipeline_parameter'
+
+  atac.enable_tss_enrich:
+    description: 'Enables TSS enrichment plot generation.'
+    group: 'pipeline_parameter'
+
+  atac.enable_annot_enrich:
+    description: 'Enables annotated regions enrichment analysis.'
+    group: 'pipeline_parameter'
+
+  atac.enable_jsd:
+    description: 'Enables Jensen-Shannon Distance (JSD) plot generation.'
+    group: 'pipeline_parameter'
+
+  atac.enable_compare_to_roadmap:
+    description: 'Enables comparison to Roadmap.'
+    group: 'pipeline_parameter'
+
+  atac.enable_gc_bias:
+    description: 'Enables GC bias calculation.'
+    group: 'pipeline_parameter'
+
+
+  atac.cutadapt_param:
+    description: 'Parameters for cutadapt.'
+    group: 'adapter_trimming'
+    help: 'It is -e 0.1 -m 5 by default (err_rate=0.1, min_trim_len=5). You can define any parameters that cutadapt supports.'
+
+  atac.auto_detect_adapter:
+    description: 'Auto-detect/trim adapter sequences.'
+    group: 'adapter_trimming'
+    help: 'Can detect/trim three types of adapter sequences. Illumina: AGATCGGAAGAGC, Nextera: CTGTCTCTTATA, smallRNA: TGGAATTCTCGG.'
+    example: true
+
+  atac.adapter:
+    description: 'Adapter for all FASTQs.'
+    group: 'adapter_trimming'
+    help: 'Define if all FASTQs have the same adapter sequence. Otherwise define adapter sequence for individual FASTQ in atac.adapters_repX_R1 and atac.adapters_repX_R2 instead. Use atac.auto_detect_adapter if you want to detect adapters automatically. If all of your FASTQs are already trimmed then leave all adapter-related parameters undefined/empty.'
+
+  atac.adapters_rep1_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 1.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep1_R2). You can combine this with atac.auto_detect_adapter. Pipeline will auto-detect/trim adapter sequences for null entry in this list. e.g. ["AAGGCCTT", null, "AAGGCCTT"].'
+
+  atac.adapters_rep1_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 1.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep1_R1).'
+
+  atac.adapters_rep2_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 2.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep2_R2).'
+
+  atac.adapters_rep2_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 2.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep2_R1).'
+
+  atac.adapters_rep3_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 3.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep3_R2).'
+
+  atac.adapters_rep3_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 3.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep3_R1).'
+
+  atac.adapters_rep4_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 4.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep4_R2).'
+
+  atac.adapters_rep4_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 4.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep4_R1).'
+
+  atac.adapters_rep5_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 5.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep5_R2).'
+
+  atac.adapters_rep5_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 5.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep5_R1).'
+
+  atac.adapters_rep6_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 6.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep6_R2).'
+
+  atac.adapters_rep6_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 6.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep6_R1).'
+
+  atac.adapters_rep7_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 7.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep7_R2).'
+
+  atac.adapters_rep7_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 7.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep7_R1).'
+
+  atac.adapters_rep8_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 8.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep8_R2).'
+
+  atac.adapters_rep8_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 8.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep8_R1).'
+
+  atac.adapters_rep9_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 9.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep9_R2).'
+
+  atac.adapters_rep9_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 9.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep9_R1).'
+
+  atac.adapters_rep10_R1:
+    description: 'Adapter sequences for read1 FASTQs to be merged for a biological replicate 10.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read2 FASTQs (atac.adapters_rep10_R2).'
+
+  atac.adapters_rep10_R2:
+    description: 'Adapter sequences for read2 FASTQs to be merged for a biological replicate 10.'
+    group: 'adapter_trimming'
+    help: 'Make sure that they are consistent with read1 FASTQs (atac.adapters_rep10_R1).'
+
+
+  atac.multimapping:
+    description: 'Number of multimappers.'
+    group: 'alignment'
+    help: 'It is 4 by default. Set it to 0 if your sample does not have multimappers.'
+
+  atac.dup_marker:
+    description: 'Marker for duplicate reads. picard or sambamba.'
+    group: 'alignment'
+    help: 'picard for Picard MarkDuplicates or sambamba for sambamba markdup.'
+
+  atac.no_dup_removal:
+    description: 'Disable removal of duplicate reads during filtering BAM.'
+    group: 'alignment'
+    help: 'Duplicate reads are filtererd out during filtering BAMs to gerenate NODUP_BAM. This flag will keep all duplicate reads in NODUP_BAM. This flag does not affect naming of NODUP_BAM. NODUP_BAM will still have .nodup. suffix in its filename.'
+
+  atac.mapq_thresh:
+    description: 'Threshold for low MAPQ reads removal.'
+    group: 'alignment'
+    help: 'Low MAPQ reads are filtered out while filtering BAM.'
+
+  atac.filter_chrs:
+    description: 'List of chromosomes to be filtered out while filtering BAM.'
+    group: 'alignment'
+    help: 'It is ["chrM", "MT"] by default. Therefore, mitochondrial reads will be filtered out while filtering. Make it empty if you want to keep all reads.'
+
+  atac.subsample_reads:
+    description: 'Subsample reads. Shuffle and subsample reads.'
+    group: 'alignment'
+    help: 'This affects all downstream analyses after filtering BAM. (e.g. all TAG-ALIGN files, peak-calling). Reads will be shuffled only if actual number of reads in BAM exceeds this number.  0 means disabled.'
+
+  atac.xcor_subsample_reads:
+    description: 'Subsample reads for cross-corrlelation analysis only.'
+    group: 'alignment'
+    help: 'This does not affect downstream analyses after filtering BAM. It is for cross-correlation analysis only. 0 means disabled.'
+
+  atac.read_len:
+    description: 'Read length per biological replicate.'
+    group: 'alignment'
+    help: 'Pipeline can estimate read length from FASTQs. If you start pipeline from other types (BAM, NODUP_BAM, TA, ...) than FASTQ. Then provide this for some analyses that require read length (e.g. TSS enrichment plot).'
+
+
+  atac.cap_num_peak:
+    description: 'Upper limit on the number of peaks.'
+    group: 'peak_calling'
+    help: 'Called peaks will be sorted in descending order of score and the number of peaks will be capped at this number by taking first N peaks.'
+
+  atac.pval_thresh:
+    description: 'p-value Threshold for MACS2 peak caller.'
+    group: 'peak_calling'
+    help: 'macs2 callpeak -p'
+
+  atac.smooth_win:
+    description: 'Size of smoothing windows for MACS2 peak caller.'
+    group: 'peak_calling'
+    help: 'This will be used for both generating MACS2 peaks/signal tracks.'
+
+  atac.idr_thresh:
+    description: 'IDR threshold.'
+    group: 'peak_calling'
+
+
+  atac.align_cpu:
+    description: 'Number of cores for task align.'
+    group: 'resource_parameter'
+    help: 'Task align merges/crops/maps FASTQs.'
+
+  atac.align_mem_mb:
+    description: 'Memory (MB) required for task align.'
+    group: 'resource_parameter'
+    help: 'This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.align_time_hr:
+    description: 'Walltime (h) required for task align.'
+    group: 'resource_parameter'
+    help: 'This is for HPCs only. e.g. SLURM, SGE, ...'
+
+  atac.align_disks:
+    description: 'Persistent disk size to store intermediate files and outputs of task align.'
+    group: 'resource_parameter'
+    help: 'This is for GCP/AWS only.'
+
+  atac.filter_cpu:
+    description: 'Number of cores for task filter.'
+    group: 'resource_parameter'
+    help: 'Task filter filters raw/unfilterd BAM to get filtered/deduped BAM.'
+
+  atac.filter_mem_mb:
+    description: 'Memory (MB) required for task filter.'
+    group: 'resource_parameter'
+    help: 'This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.filter_time_hr:
+    description: 'Walltime (h) required for task filter.'
+    group: 'resource_parameter'
+    help: 'This is for HPCs only. e.g. SLURM, SGE, ...'
+
+  atac.filter_disks:
+    description: 'Persistent disk size to store intermediate files and outputs of task filter.'
+    group: 'resource_parameter'
+    help: 'This is for GCP/AWS only.'
+
+  atac.bam2ta_cpu:
+    description: 'Number of cores for task bam2ta.'
+    group: 'resource_parameter'
+    help: 'Task bam2ta converts filtered/deduped BAM in to TAG-ALIGN (6-col BED) format.'
+
+  atac.bam2ta_mem_mb:
+    description: 'Memory (MB) required for task bam2ta.'
+    group: 'resource_parameter'
+    help: 'This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.bam2ta_time_hr:
+    description: 'Walltime (h) required for task bam2ta.'
+    group: 'resource_parameter'
+    help: 'This is for HPCs only. e.g. SLURM, SGE, ...'
+
+  atac.bam2ta_disks:
+    description: 'Persistent disk size to store intermediate files and outputs of task bam2ta.'
+    group: 'resource_parameter'
+    help: 'This is for GCP/AWS only.'
+
+  atac.spr_mem_mb:
+    description: 'Memory (MB) required for task spr.'
+    group: 'resource_parameter'
+    help: 'Task spr generates two pseudo-replicates from each biological replicate. This task uses Unix shuf/sort, which can take significant amount of memory.'
+
+  atac.jsd_cpu:
+    description: 'Number of cores for task jsd.'
+    group: 'resource_parameter'
+    help: 'Task jsd plots Jensen-Shannon distance and metrics related to it.'
+
+  atac.jsd_mem_mb:
+    description: 'Memory (MB) required for task jsd.'
+    group: 'resource_parameter'
+    help: 'This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.jsd_time_hr:
+    description: 'Walltime (h) required for task jsd.'
+    group: 'resource_parameter'
+    help: 'This is for HPCs only. e.g. SLURM, SGE, ...'
+
+  atac.jsd_disks:
+    description: 'Persistent disk size to store intermediate files and outputs of task jsd.'
+    group: 'resource_parameter'
+    help: 'This is for GCP/AWS only.'
+
+  atac.xcor_cpu:
+    description: 'Number of cores for task xcor.'
+    group: 'resource_parameter'
+    help: 'Task xcor does cross-correlation analysis (including a plot) on subsampled TAG-ALIGNs.'
+
+  atac.xcor_mem_mb:
+    description: 'Memory (MB) required for task xcor.'
+    group: 'resource_parameter'
+    help: 'This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.xcor_time_hr:
+    description: 'Walltime (h) required for task xcor.'
+    group: 'resource_parameter'
+    help: 'This is for HPCs only. e.g. SLURM, SGE, ...'
+
+  atac.xcor_disks:
+    description: 'Persistent disk size to store intermediate files and outputs of task xcor.'
+    group: 'resource_parameter'
+    help: 'This is for GCP/AWS only.'
+
+  atac.call_peak_cpu:
+    description: 'Number of cores for task call_peak.'
+    group: 'resource_parameter'
+    help: 'Task call_peak call peaks on TAG-ALIGNs by using MACS2 peak caller.'
+
+  atac.call_peak_mem_mb:
+    description: 'Memory (MB) required for task call_peak.'
+    group: 'resource_parameter'
+    help: 'This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.call_peak_time_hr:
+    description: 'Walltime (h) required for task call_peak.'
+    group: 'resource_parameter'
+    help: 'This is for HPCs only. e.g. SLURM, SGE, ...'
+
+  atac.call_peak_disks:
+    description: 'Persistent disk size to store intermediate files and outputs of task call_peak.'
+    group: 'resource_parameter'
+    help: 'This is for GCP/AWS only.'
+
+  atac.macs2_signal_track_mem_mb:
+    description: 'Memory (MB) required for task macs2_signal_track.'
+    group: 'resource_parameter'
+    help: 'Task macs2_signal_track_mem_mb uses MACS2 to get signal tracks for p-val (suffixed with .pval.) and fold enrichment (suffixed with .fc.). This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.macs2_signal_track_time_hr:
+    description: 'Walltime (h) required for task macs2_signal_track.'
+    group: 'resource_parameter'
+    help: 'This is for HPCs only. e.g. SLURM, SGE, ...'
+
+  atac.macs2_signal_track_disks:
+    description: 'Persistent disk size to store intermediate files and outputs of task macs2_signal_track.'
+    group: 'resource_parameter'
+    help: 'This is for GCP/AWS only.'
+
+  atac.preseq_mem_mb:
+    description: 'Memory (MB) required for task preseq.'
+    group: 'resource_parameter'
+    help: 'Task preseq estimates the future yield of a genomic library. This will be used for determining instance type for GCP/AWS or job''s maximum required memory for HPC.'
+
+  atac.filter_picard_java_heap:
+    description: 'Maximum Java heap (java -Xmx) in task filter.'
+    group: 'resource_parameter'
+    help: 'Maximum memory for Picard tools MarkDuplicates. If not defined, 90% of filter_mem_mb will be used.'
+
+  atac.preseq_picard_java_heap:
+    description: 'Maximum Java heap (java -Xmx) in task preseq.'
+    group: 'resource_parameter'
+    help: 'Maximum memory for Picard tools EstimateLibraryComplexity. If not defined, 90% of preseq_mem_mb will be used.'
+
+  atac.fraglen_stat_picard_java_heap:
+    description: 'Maximum Java heap (java -Xmx) in task fraglen_stat_pe (for paired end replicate only).'
+    group: 'resource_parameter'
+    help: 'Maximum memory for Picard tools CollectInsertSizeMetrics. If not defined, 90% of 8000 MB will be used.'
+
+  atac.gc_bias_picard_java_heap:
+    description: 'Maximum Java heap (java -Xmx) in task gc_bias.'
+    group: 'resource_parameter'
+    help: 'Maximum memory for Picard tools CollectGcBiasMetrics. If not defined, 90% of 10000 MB will be used.'
+
+
+
+parameter_group:
+  pipeline_metadata:
+    title: 'Pipeline metadata'
+    description: 'Metadata for a pipeline (e.g. title and description).'
+
+  reference_genome:
+    title: 'Reference genome'
+    description: 'Genome specific files. e.g. reference FASTA, bowtie2 index, chromosome sizes file.'
+    help: 'Choose one atac.genome_tsv file that defines all genome specific parameters in it or define each genome specific parameter in input JSON to override those defined in genome TSV file. If you use Caper then use https://storage.googleapis.com/encode-pipeline-genome-data/genome_tsv/v1/[GENOME]_caper.tsv. Caper will automatically download/install all files defined in such TSV. Otherwise download genome TSV file by using a shell script (scripts/download_genome_data.sh [GENOME] [DEST_DIR]). Supported genomes are hg38, hg19, mm10 and mm9. See pipeline documentation if you want to build genome database from your own FASTA file. If some genome data are missing then analyses using such data will be skipped.'
+
+  input_genomic_data:
+    title: 'Input genomic data'
+    description: 'Genomic input files for experiment.'
+    help: 'Pipeline can start with any types of experiment data (e.g. FASTQ, BAM, NODUP_BAM, TAG-ALIGN, PEAK). Choose one type and leave others empty. FASTQs have a variable for each biological replicate. e.g. atac.fastqs_rep1_R1 and atac.fastqs_rep2_R1. You can define up to 10 experiment replicates. For other types, there is an array to define file for each biological replicate. e.g. atac.bams: ["rep1.bam", "rep1.bam"]. Define sequential endedness with atac.paired_end, if you have mixed SE and PE replicates then define atac.paired_ends instead for each replicate. e.g. atac.paired_ends: [false, true].'
+
+  adapter_trimming:
+    title: 'Adapter trimming'
+    description: 'Parameters for adapter trimming.'
+    help: 'Use atac.auto_detect_adapter to automatically detect/trim 3 adapters (Illumina: AGATCGGAAGAGC, Nextera: CTGTCTCTTATA, smallRNA: TGGAATTCTCGG) or manually define adapter sequence to be trimmed (atac.adapter or atac.adapters_repX_RY). Leave all parameters undefined/empty if your FASTQs are already trimmed.'
+
+  pipeline_parameter:
+    title: 'Pipeline parameter'
+    description: 'Pipeline type and flags to turn on/off analyses.'
+    help: 'Pipeline can run as DNAse-seq mode. The only difference is TN5-shifting of read in ATAC-seq mode. Use atac.align_only to align FASTQs without peak calling.'
+
+  alignment:
+    title: 'Alignment'
+    description: 'Parameters for alignment.'
+    help: 'Pipeline calculates mitochondrial fraction of reads in raw BAM. But after that it filters out mitochondrial reads (e.g. chrM, MT) from NODUP_BAMs (filtered/deduped). It is controlled by atac.filter_chrs array. If you want to keep mitochondrial reads then make this array empty.'
+
+  peak_calling:
+    title: 'Peak calling'
+    description: 'Parameters for peak calling.'
+    help: 'This group includes statistical thresholds for peak-calling or post-peak-calling analyses: p-val, FDR, IDR.'
+
+  resource_parameter:
+    title: 'Resource parameter'
+    description: 'Number of CPUs (threads), max. memory and walltime for tasks.'
+    help: 'Resource settings are used for determining an instance type on cloud backends (e.g. GCP, AWS) and used for submitting tasks to a cluster engine (e.g. SLURM, SGE, ...). Walltime (atac.*_time_hr) is only used for cluster engines. Other tasks default to use 1 CPU and 4GB of memory.'
+            
+        

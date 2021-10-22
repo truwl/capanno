@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_a6be17_02.8e
 description: Align using mem algorithm. To use BWA, you need to first index the genome
   with `bwa index'. There are three alignment algorithms in BWA `mem', `bwasw', and

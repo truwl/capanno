@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_3b.c8
 description: Converts a SAM or BAM file to FASTQ. This tool extracts read sequences
   and base quality scores from the input SAM/BAM file and outputs them in FASTQ format.

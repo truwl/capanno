@@ -1,0 +1,20 @@
+name: __main__
+metadataStatus: Released
+cwlStatus: Released
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+
+identifier: TL_3673de_36.fa
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  cwlDocument:
+    isBasedOn: /Users/leipzig/Documents/dev/capanno-utils/capanno_utils/helpers/../../bio-cwl-tools-submodule/crossmap/crossmap.cwl
+    dateCreated: '2020-09-21'
+    sha256:
+    dockerImage:
+parentMetadata: ../common/common-metadata.yaml

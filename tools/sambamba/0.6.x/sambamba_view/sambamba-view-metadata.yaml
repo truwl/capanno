@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_bf790f_1b.e9
 description: "sambamba view allows to efficiently filter BAM file for alignments satisfying\
   \ various conditions, as well as access its SAM header and information about reference\

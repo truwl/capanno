@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_da.c8
 description: "Chart the distribution of quality scores.\nThis tool is used for determining\
   \ the overall 'quality' for a library in a given run. To that effect, it outputs\

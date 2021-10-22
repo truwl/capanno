@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_05.c8
 description: "Replace read groups in a BAM file. This tool enables the user to replace\
   \ all read groups in the INPUT file with a single new read group and assign all\

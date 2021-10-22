@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_c8f1ee_d4.47
 description: calculate md5sum
 keywords:

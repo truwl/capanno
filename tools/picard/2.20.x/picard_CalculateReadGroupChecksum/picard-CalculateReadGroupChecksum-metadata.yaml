@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_1c.c8
 description: Creates a hash code based on the read groups (RG). This tool creates
   a hash code based on identifying information in the read groups (RG) of a ".BAM"

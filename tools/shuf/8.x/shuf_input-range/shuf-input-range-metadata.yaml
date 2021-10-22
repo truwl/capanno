@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8b1156_86.1d
 description: "-i, --input-range=LO-HI\n       treat each number LO through HI as an\
   \ input line"

@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_67f56e_54.f8
 description: Precision HLA typing from next-generation sequencing data
 keywords:

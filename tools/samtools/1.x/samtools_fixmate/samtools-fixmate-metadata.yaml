@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_a2.0b
 description: "samtools fixmate [-rpcm] [-O format] in.nameSrt.bam out.bam\nFill in\
   \ mate coordinates, ISIZE and mate related flags from a name-sorted alignment."

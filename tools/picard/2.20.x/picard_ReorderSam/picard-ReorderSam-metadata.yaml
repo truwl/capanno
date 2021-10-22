@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_36.c8
 description: Not to be confused with SortSam which sorts a SAM or BAM file with a
   valid sequence dictionary, ReorderSam reorders reads in a SAM/BAM file to match

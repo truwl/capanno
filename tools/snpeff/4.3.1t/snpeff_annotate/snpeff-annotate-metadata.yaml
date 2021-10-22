@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_0dbbaf_5c.17
 description: Annotate a VCF
 keywords:

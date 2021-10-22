@@ -1,0 +1,17 @@
+name: __main__
+current: true
+metadataStatus: Released
+cwlStatus: Incomplete
+nextflowStatus: Incomplete
+snakemakeStatus: Incomplete
+wdlStatus: Incomplete
+identifier: TL_19e641_54.c8
+description:
+keywords:
+  - name:
+    category:
+alternateName:
+extra:
+  sha1:
+  dockerImage:
+parentMetadata: ../common/common-metadata.yaml

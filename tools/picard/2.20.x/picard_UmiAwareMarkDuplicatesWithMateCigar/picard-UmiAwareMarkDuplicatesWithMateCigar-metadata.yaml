@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_0b.c8
 description: "Identifies duplicate reads using information from read positions and\
   \ UMIs.\nThis tool locates and tags duplicate reads in a BAM or SAM file, where\

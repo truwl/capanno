@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_8b1156_e1.1d
 description: "-e, --echo\n       treat each ARG as an input line"
 keywords:

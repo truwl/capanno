@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Released
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_8a.c8
 description: bedtools slop will increase the size of each feature in a feature file
   by a user-defined number of bases. While something like this could be done with

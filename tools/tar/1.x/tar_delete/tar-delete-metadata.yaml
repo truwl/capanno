@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_db5570_09.8b
 description: "--delete\nDelete from the archive. The arguments supply names of the\
   \ archive members to be removed. At least one argument must be given.\nThis option\

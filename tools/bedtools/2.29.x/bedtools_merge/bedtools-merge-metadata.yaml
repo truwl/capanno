@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Released
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_65.c8
 description: bedtools merge combines overlapping or “book-ended” features in an interval
   file into a single feature which spans all of the combined features.

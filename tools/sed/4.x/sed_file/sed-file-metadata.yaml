@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_177544_8c.aa
 description: "-f script-file, --file=script-file\n\n    add the contents of script-file\
   \ to the commands to be executed"

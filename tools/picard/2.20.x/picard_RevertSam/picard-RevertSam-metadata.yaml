@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_c8.c8
 description: Reverts SAM or BAM files to a previous state. This tool removes or restores
   certain properties of the SAM records, including alignment information, which can

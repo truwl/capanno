@@ -4,7 +4,7 @@ cwlStatus: Released
 snakemakeStatus: Incomplete
 nextflowStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_73aadb_a7.49
 description: The tool calculates the fraction of reads mapped to coding exons, 5'-UTR exons, 3'-UTR exons, introns and intergenic regions based on the gene models provided
 keywords:

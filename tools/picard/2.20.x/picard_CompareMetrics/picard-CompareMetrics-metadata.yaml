@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_e24fa5_1b.c8
 description: "Compare two metrics files.This tool compares the metrics and histograms\
   \ generated from metric tools to determine if the generated results are identical.\

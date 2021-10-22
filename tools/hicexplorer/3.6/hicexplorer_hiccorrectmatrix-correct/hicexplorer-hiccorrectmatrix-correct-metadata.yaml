@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_1c3c14_7b.e4
 description: Run Knight-Ruiz matrix balancing algorithm (KR) or the iterative matrix correction (ICE)
 keywords:

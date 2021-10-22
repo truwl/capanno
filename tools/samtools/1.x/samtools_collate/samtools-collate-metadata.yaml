@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_ec2a8d_31.0b
 description: "samtools collate [options] in.sam|in.bam|in.cram [<prefix>]\nShuffles\
   \ and groups reads together by their names. A faster alternative to a full query\

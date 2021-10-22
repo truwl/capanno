@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_f6b1de_1f.35
 description: RNA-seq QC analysis
 keywords:

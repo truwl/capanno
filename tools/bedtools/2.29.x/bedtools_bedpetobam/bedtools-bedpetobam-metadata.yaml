@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_43392c_f8.c8
 description: bedToBam converts features in a feature file to BAM format. This is useful
   as an efficient means of storing large genome annotations in a compact, indexed

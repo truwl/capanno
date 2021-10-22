@@ -4,7 +4,7 @@ cwlStatus: Incomplete
 nextflowStatus: Incomplete
 snakemakeStatus: Released
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_f93bbe_3e.d3
 description: MSIsensor is a C++ program to detect replication slippage variants at microsatellite regions
 keywords:

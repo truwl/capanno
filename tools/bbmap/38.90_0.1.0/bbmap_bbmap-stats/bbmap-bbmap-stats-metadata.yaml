@@ -4,7 +4,7 @@ cwlStatus: Released
 nextflowStatus: Incomplete
 snakemakeStatus: Incomplete
 wdlStatus: Incomplete
-version: 0.1.0
+
 identifier: TL_c81cef_18.90
 description: Generates basic assembly statistics such as scaffold count, N50, L50, GC content, gap percent, etc
 keywords:
