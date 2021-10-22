@@ -1,4 +1,5 @@
 name: hello world script with checker
+shortDescription: This demonstrates how to wrap a "real" tool with a checker workflow that runs both the tool and a tool that performs verification of results.
 description: |
   This demonstrates how to wrap a "real" tool with a checker workflow that runs both the tool and a tool that performs
   verification of results.
