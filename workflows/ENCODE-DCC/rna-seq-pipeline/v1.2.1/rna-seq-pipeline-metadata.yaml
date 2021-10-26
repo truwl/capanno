@@ -1,5 +1,5 @@
 
-name: RNA-seq pipeline
+name: ENCODE RNA-seq pipeline
 identifier: 'WF_0741dc.ac'
 shortDescription: The ENCODE Data Coordinating Center (DCC) total RNA-seq uniform processing pipeline.
 softwareVersion:

@@ -1,4 +1,3 @@
-
 name: GTEx
 identifier: WF_254045.d5
 shortDescription: RNA-seq pipeline used by the GTEx Consortium
@@ -17,5 +16,3 @@ current: true
 codeRepository:
   URL: https://github.com/broadinstitute/gtex-pipeline
 WebSite:
-  - URL: https://github.com/broadinstitute/gtex-pipeline
-    name: Broad GTEx RNA-Seq Pipeline
