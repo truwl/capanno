@@ -6,6 +6,9 @@ softwareVersion:
 metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
+videos:
+  - name: Running ENCODE ATAC-seq pipeline on Truwl
+    URL: https://www.youtube.com/watch?v=UNvtUuDc_Iw
 graphStatus: Incomplete
 workflowFile: atac.wdl
 repoName: atac-seq-pipeline

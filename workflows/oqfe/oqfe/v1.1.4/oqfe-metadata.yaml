@@ -15,6 +15,9 @@ executable: true
 current: true
 codeRepository:
   URL: https://github.com/truwl/oqfe_wdl
+videos:
+  - name: Running OQFE on Truwl
+    URL: https://www.youtube.com/watch?v=pYlyM2ZpmaE
 WebSite:
   - URL: https://hub.docker.com/r/dnanexus/oqfe
     name: Original Quality Functional Equivalent (OQFE) Pipeline
