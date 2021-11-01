@@ -19,6 +19,9 @@ WebSite:
   - name: Encode Project Website
     description:
     URL: https://www.encodeproject.org/data-standards/chip-seq/
+videos:
+  - name: ChIP-seq demo
+    URL: https://www.youtube.com/watch?v=eSwtF1t3uCw
 keywords:
   - name: ENCODE
     category: topic
