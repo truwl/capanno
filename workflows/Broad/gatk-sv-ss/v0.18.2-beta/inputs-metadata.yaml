@@ -1,0 +1,250 @@
+workflow_name: Broad GATK-SV Single Sample Pipeline
+workflow_description: This repository contains all components of the RNA-seq pipeline used by the GTEx Consortium, including alignment, expression quantification, and quality control.
+parameter_meta:
+  GATKSVPipelineSingleSample.allosome_file:
+    group: Global
+  GATKSVPipelineSingleSample.annotation_max_shards_per_chrom_step1:
+    group: AnnotateVcf
+  GATKSVPipelineSingleSample.annotation_min_records_per_shard_step1:
+    group: AnnotateVcf
+  GATKSVPipelineSingleSample.annotation_sv_per_shard:
+    group: AnnotateVcf
+  GATKSVPipelineSingleSample.autosome_file:
+    group: Global
+  GATKSVPipelineSingleSample.bam_or_cram_file:
+    group: GatherSampleEvidence
+  GATKSVPipelineSingleSample.bam_or_cram_index:
+    group: GatherSampleEvidence
+  GATKSVPipelineSingleSample.baseline_cleaned_vcf:
+    group: SingleSampleMetrics
+  GATKSVPipelineSingleSample.baseline_final_vcf:
+    group: SingleSampleMetrics
+  GATKSVPipelineSingleSample.baseline_genotyped_depth_vcf:
+    group: SingleSampleMetrics
+  GATKSVPipelineSingleSample.baseline_genotyped_pesr_vcf:
+    group: SingleSampleMetrics
+  GATKSVPipelineSingleSample.baseline_non_genotyped_unique_depth_calls_vcf:
+    group: SingleSampleMetrics
+  GATKSVPipelineSingleSample.batch:
+    group: Batch
+  GATKSVPipelineSingleSample.bin_exclude:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.clean_vcf_max_shards_per_chrom_clean_vcf_step1:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.clean_vcf_min_records_per_shard_clean_vcf_step1:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.clean_vcf_min_sr_background_fail_batches:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.clean_vcf_random_seed:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.clean_vcf_samples_per_clean_vcf_step2_shard:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.cloud_sdk_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.cnmops_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.cnmops_exclude_list:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.cnmops_mem_gb_override_sample3:
+    group: Resources
+  GATKSVPipelineSingleSample.condense_counts_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.contig_ploidy_model_tar:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.cutoffs:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.cytobands:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.depth_exclude_list:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.depth_flags:
+    group: ClusterBatch
+  GATKSVPipelineSingleSample.depth_frac:
+    group: ClusterBatch
+  GATKSVPipelineSingleSample.empty_file:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.external_af_population:
+    group: ExternalAF
+  GATKSVPipelineSingleSample.external_af_ref_bed:
+    group: ExternalAF
+  GATKSVPipelineSingleSample.external_af_ref_bed_prefix:
+    group: ExternalAF
+  GATKSVPipelineSingleSample.gatk_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.gatk_docker_pesr_override:
+    group: Docker
+  GATKSVPipelineSingleSample.gcnv_gatk_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.gcnv_model_tars:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.gcnv_qs_cutoff:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.genomes_in_the_cloud_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.genome_file:
+    group: Global
+  GATKSVPipelineSingleSample.genotype_depth_depth_sepcutoff:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.genotype_depth_pesr_sepcutoff:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.genotype_pesr_depth_sepcutoff:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.genotype_pesr_pesr_sepcutoff:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.genotyping_n_per_split:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.inclusion_bed:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.linc_rna_gtf:
+    group: AnnotateVcf
+  GATKSVPipelineSingleSample.linux_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.manta_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.manta_region_bed:
+    group: Manta
+  GATKSVPipelineSingleSample.matrix_qc_distance:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.max_ref_panel_carrier_freq:
+    group: SingleSampleMetrics
+  GATKSVPipelineSingleSample.max_shard_size_resolve:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.mei_bed:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.melt_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.melt_standard_vcf_header:
+    group: Melt
+  GATKSVPipelineSingleSample.min_svsize:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.noncoding_bed:
+    group: AnnotateVcf
+  GATKSVPipelineSingleSample.n_RD_genotype_bins:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.pesr_distance:
+    group: ClusterBatch
+  GATKSVPipelineSingleSample.pesr_exclude_list:
+    group: ClusterBatch
+  GATKSVPipelineSingleSample.pesr_flags:
+    group: ClusterBatch
+  GATKSVPipelineSingleSample.pesr_frac:
+    group: ClusterBatch
+  GATKSVPipelineSingleSample.pesr_svsize:
+    group: ClusterBatch
+  GATKSVPipelineSingleSample.pe_exclude_list:
+    group: MakeCohortVcf
+  GATKSVPipelineSingleSample.PE_metrics:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.preprocessed_intervals:
+    group: GatherSampleEvidence
+  GATKSVPipelineSingleSample.primary_contigs_fai:
+    group: Global
+  GATKSVPipelineSingleSample.primary_contigs_list:
+    group: Global
+  GATKSVPipelineSingleSample.promoter_bed:
+    group: AnnotateVcf
+  GATKSVPipelineSingleSample.protein_coding_gtf:
+    group: AnnotateVcf
+  GATKSVPipelineSingleSample.qc_definitions:
+    group: QC
+  GATKSVPipelineSingleSample.reference_dict:
+    group: Global
+  GATKSVPipelineSingleSample.reference_fasta:
+    group: Global
+  GATKSVPipelineSingleSample.reference_index:
+    group: Global
+  GATKSVPipelineSingleSample.ref_copy_number_autosomal_contigs:
+    group: Global
+  GATKSVPipelineSingleSample.ref_panel_bincov_matrix:
+    group: Global
+  GATKSVPipelineSingleSample.ref_panel_del_bed:
+    group: Global
+  GATKSVPipelineSingleSample.ref_panel_dup_bed:
+    group: Global
+  GATKSVPipelineSingleSample.ref_panel_vcf:
+    group: Global
+  GATKSVPipelineSingleSample.ref_ped_file:
+    group: Global
+  GATKSVPipelineSingleSample.ref_pesr_disc_files:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.ref_pesr_split_files:
+    group: GatherBatchEvidence
+  GATKSVPipelineSingleSample.ref_samples:
+    group: Global
+  GATKSVPipelineSingleSample.ref_std_manta_vcfs:
+    group: Manta
+  GATKSVPipelineSingleSample.ref_std_melt_vcfs:
+    group: Melt
+  GATKSVPipelineSingleSample.ref_std_wham_vcfs:
+    group: Wham
+  GATKSVPipelineSingleSample.requester_pays_cram:
+    group: Resources
+  GATKSVPipelineSingleSample.rmsk:
+    group: GenerateBatchMetrics
+  GATKSVPipelineSingleSample.run_vcf_qc:
+    group: EvidenceQC
+  GATKSVPipelineSingleSample.sample_id:
+    group: Batch
+  GATKSVPipelineSingleSample.samtools_cloud_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.segdups:
+    group: GenerateBatchMetrics
+  GATKSVPipelineSingleSample.SR_metrics:
+    group: GenotypeBatch
+  GATKSVPipelineSingleSample.sv_base_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.sv_base_mini_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.sv_pipeline_base_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.sv_pipeline_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.sv_pipeline_qc_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.sv_pipeline_rdtest_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.use_melt:
+    group: Melt
+  GATKSVPipelineSingleSample.wgd_scoring_mask:
+    group: EvidenceQC
+  GATKSVPipelineSingleSample.wham_docker:
+    group: Docker
+  GATKSVPipelineSingleSample.wham_include_list_bed_file:
+    group: Wham
+parameter_group:
+  Global:
+    title: Global
+  AnnotateVcf:
+    title: AnnotateVcf
+  GatherSampleEvidence:
+    title: GatherSampleEvidence
+  SingleSampleMetrics:
+    title: SingleSampleMetrics
+  Batch:
+    title: Batch
+  GenotypeBatch:
+    title: GenotypeBatch
+  MakeCohortVcf:
+    title: MakeCohortVcf
+  Docker:
+    title: Docker
+  GatherBatchEvidence:
+    title: GatherBatchEvidence
+  Resources:
+    title: Resources
+  ClusterBatch:
+    title: ClusterBatch
+  ExternalAF:
+    title: ExternalAF
+  Manta:
+    title: Manta
+  Melt:
+    title: Melt
+  QC:
+    title: QC
+  Wham:
+    title: Wham
+  GenerateBatchMetrics:
+    title: GenerateBatchMetrics
+  EvidenceQC:
+    title: EvidenceQC

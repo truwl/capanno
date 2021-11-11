@@ -1,7 +1,6 @@
 name: GATK-SV Single Sample
 identifier: WF_95b9dc.8f
 description: >
-  <!-- markdown=true -->
   A structural variation discovery pipeline for Illumina short-read whole-genome sequencing (WGS) data.
 
   ##Requirements/expectations
