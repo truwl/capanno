@@ -1,0 +1,11 @@
+[
+  {
+    "fields":
+      [
+        "job_id",
+        "workflow_instance_identifier",
+        "workflow_identifier"
+      ],
+    "prefix": "rna"
+  }
+]
