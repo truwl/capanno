@@ -12,7 +12,7 @@ executable: true
 current: true
 workflowFile: mirna_seq_pipeline.wdl
 repoName: mirna-seq-pipeline
-gitTag: v1.2.0
+gitTag: 1.2.0
 inputsTemplate: mirna_seq_pipeline-inputs.json
 codeRepository:
   URL: https://github.com/ENCODE-DCC/mirna-seq-pipeline
