@@ -1,0 +1,16 @@
+{
+  "MultisampleCalling.bamFilesAndGenders": [
+    {"file":"tests/data/rna3.bam",
+    "index":"tests/data/rna3.bai"},
+    {"file":"tests/data/rna4.bam",
+    "index":"tests/data/rna4.bai"}],
+  "MultisampleCalling.referenceFasta": "tests/data/reference.fasta",
+  "MultisampleCalling.referenceFastaFai": "tests/data/reference.fasta.fai",
+  "MultisampleCalling.referenceFastaDict": "tests/data/reference.dict",
+  "MultisampleCalling.dbsnpVCF": "tests/data/wgs2.vcf.gz",
+  "MultisampleCalling.dbsnpVCFIndex": "tests/data/wgs2.vcf.gz.tbi",
+  "MultisampleCalling.scatterSize": 10000,
+  "MultisampleCalling.jointgenotyping": false,
+  "MultisampleCalling.dontUseSoftClippedBases": true,
+  "MultisampleCalling.standardMinConfidenceThresholdForCalling": 20.0
+}

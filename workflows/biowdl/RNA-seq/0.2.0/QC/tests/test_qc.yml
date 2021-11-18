@@ -1,0 +1,186 @@
+- name: paired_end_zipped
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/paired_end_zipped.json QC.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/ct_r1_fastqc.zip"
+    - path: "test-output/ct_r2_fastqc.zip"
+    - path: "test-output/ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/ct_r1_fastqc/summary.txt"
+      must_not_contain:
+        - "PASS\tAdapter Content"
+    - path: "test-output/ct_r2_fastqc.html"
+    - path: "test-output/ct_r2_fastqc/summary.txt"
+      must_not_contain:
+        - "PASS\tAdapter Content"
+    - path: "test-output/cutadapt_ct_r1_fastqc.zip"
+    - path: "test-output/cutadapt_ct_r2_fastqc.zip"
+    - path: "test-output/cutadapt_ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/cutadapt_ct_r1_fastqc/summary.txt"
+      contains:
+        - "PASS\tAdapter Content"
+    - path: "test-output/cutadapt_ct_r2_fastqc.html"
+    - path: "test-output/cutadapt_ct_r2_fastqc/summary.txt"
+      contains:
+        - "PASS\tAdapter Content"
+    - path: "test-output/ct_r1_cutadapt_report.txt"
+    - path: "test-output/cutadapt_ct_r1.fq.gz"
+    - path: "test-output/cutadapt_ct_r2.fq.gz"
+
+- name: single_end_zipped_contaminations
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/single_end_zipped_contaminations.json QC.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/ct_r1_fastqc.zip"
+    - path: "test-output/ct_r2_fastqc.zip"
+      should_exist: false
+    - path: "test-output/ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/ct_r1_fastqc/summary.txt"
+      must_not_contain:
+        - "PASS\tAdapter Content"
+    - path: "test-output/ct_r2_fastqc.html"
+      should_exist: false
+    - path: "test-output/cutadapt_ct_r1_fastqc.zip"
+    - path: "test-output/cutadapt_ct_r2_fastqc.zip"
+      should_exist: false
+    - path: "test-output/cutadapt_ct_r1_fastqc.html"
+    - path: "test-output/cutadapt_ct_r1_fastqc/summary.txt"
+      contains:
+        - "PASS\tAdapter Content"
+      must_not_contain:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/cutadapt_ct_r2_fastqc.html"
+      should_exist: false
+    - path: "test-output/ct_r1_cutadapt_report.txt"
+    - path: "test-output/cutadapt_ct_r1.fq.gz"
+    - path: "test-output/cutadapt_ct_r2.fq.gz"
+      should_exist: false
+
+- name: paired_end
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/paired_end.json QC.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/ct_r1_fastqc.zip"
+    - path: "test-output/ct_r2_fastqc.zip"
+    - path: "test-output/ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/ct_r1_fastqc/summary.txt"
+      must_not_contain:
+        - "PASS\tAdapter Content"
+    - path: "test-output/ct_r2_fastqc.html"
+    - path: "test-output/ct_r2_fastqc/summary.txt"
+      must_not_contain:
+        - "PASS\tAdapter Content"
+    - path: "test-output/cutadapt_ct_r2_fastqc.zip"
+    - path: "test-output/cutadapt_ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/cutadapt_ct_r1_fastqc/summary.txt"
+      contains:
+        - "PASS\tAdapter Content"
+    - path: "test-output/cutadapt_ct_r2_fastqc.html"
+    - path: "test-output/cutadapt_ct_r2_fastqc/summary.txt"
+      contains:
+        - "PASS\tAdapter Content"
+    - path: "test-output/ct_r1_cutadapt_report.txt"
+    - path: "test-output/cutadapt_ct_r1.fq"
+    - path: "test-output/cutadapt_ct_r2.fq"
+
+
+- name: single_end_zipped
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/single_end_zipped.json QC.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/ct_r1_fastqc.zip"
+    - path: "test-output/ct_r2_fastqc.zip"
+      should_exist: false
+    - path: "test-output/ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/ct_r1_fastqc/summary.txt"
+      must_not_contain:
+        - "PASS\tAdapter Content"
+    - path: "test-output/ct_r2_fastqc.html"
+      should_exist: false
+    - path: "test-output/cutadapt_ct_r1_fastqc.zip"
+    - path: "test-output/cutadapt_ct_r2_fastqc.zip"
+      should_exist: false
+    - path: "test-output/cutadapt_ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/cutadapt_ct_r1_fastqc/summary.txt"
+      contains:
+        - "PASS\tAdapter Content"
+    - path: "test-output/cutadapt_ct_r2_fastqc.html"
+      should_exist: false
+    - path: "test-output/ct_r1_cutadapt_report.txt"
+    - path: "test-output/cutadapt_ct_r1.fq.gz"
+    - path: "test-output/cutadapt_ct_r2.fq.gz"
+      should_exist: false
+
+- name: single_end
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/single_end.json QC.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/ct_r1_fastqc.zip"
+    - path: "test-output/ct_r2_fastqc.zip"
+      should_exist: false
+    - path: "test-output/ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/ct_r2_fastqc.html"
+      should_exist: false
+    - path: "test-output/ct_r1_fastqc/summary.txt"
+      must_not_contain:
+        - "PASS\tAdapter Content"
+    - path: "test-output/cutadapt_ct_r1_fastqc.zip"
+    - path: "test-output/cutadapt_ct_r2_fastqc.zip"
+      should_exist: false
+    - path: "test-output/cutadapt_ct_r1_fastqc.html"
+      contains:
+        - "TruSeq Adapter, Index 18"
+    - path: "test-output/cutadapt_ct_r1_fastqc/summary.txt"
+      contains:
+        - "PASS\tAdapter Content"
+    - path: "test-output/cutadapt_ct_r2_fastqc.html"
+      should_exist: false
+    - path: "test-output/ct_r1_cutadapt_report.txt"
+    - path: "test-output/cutadapt_ct_r1.fq"
+    - path: "test-output/cutadapt_ct_r2.fq"
+      should_exist: false

@@ -1,0 +1,6 @@
+{
+  "CalculateRegions.referenceFasta": "tests/data/gender-aware/reference.fasta",
+  "CalculateRegions.referenceFastaFai": "tests/data/gender-aware/reference.fasta.fai",
+  "CalculateRegions.referenceFastaDict": "tests/data/gender-aware/reference.dict",
+  "CalculateRegions.scatterSize": 10000
+}

@@ -1,0 +1,9 @@
+{
+  "BamMetrics.bam": "tests/data/wgs1.bam",
+  "BamMetrics.bamIndex": "tests/data/wgs1.bai",
+  "BamMetrics.referenceFasta": "tests/data/reference.fasta",
+  "BamMetrics.referenceFastaFai": "tests/data/reference.fasta.fai",
+  "BamMetrics.referenceFastaDict": "tests/data/reference.dict",
+  "BamMetrics.ampliconIntervals": "tests/data/target.bed",
+  "BamMetrics.targetIntervals": ["tests/data/target.bed"]
+}
