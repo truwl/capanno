@@ -1,0 +1,24 @@
+name: Variant Benchmarking
+identifier: WF_b1de71.e9
+shortDescription: This benchmarking workflow that can be used to assess performance of germline variant calling pipelines based on testing with GIAB samples.
+softwareVersion:
+  versionName: 0.2
+  includedVersions:
+    - 0.2
+metadataStatus: Released
+workflowStatus: Released
+workflowLanguage: wdl
+workflowFile: wdl/benchmarking.wdl
+repoName: variantbenchmarking
+gitTag: structs
+inputsTemplate: inputs.json
+executable: true
+current: true
+codeRepository:
+  URL: https://github.com/truwl/variantbenchmarking
+  name: Variant benchmarking
+videos:
+  - name:
+    URL: https://www.youtube.com/watch?v=ttl9nPyh2bE&t=6s
+WebSite:
+  - name:

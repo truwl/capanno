@@ -1,10 +1,6 @@
 name: ENCODE ChIP-seq pipeline2
 identifier: 'WF_dd6938.8f'
-description: |
-  ENCODE Transcription Factor and Histone ChIP-Seq processing pipeline
-
-  This ChIP-Seq pipeline is based off the ENCODE (phase-3) transcription factor and histone ChIP-seq pipeline
-  specifications (by Anshul Kundaje) in this [google doc](https://docs.google.com/document/d/1lG_Rd7fnYgRpSIqrIfuVlAz2dW1VaSQThzk836Db99c/edit#).
+shortDescription: The ENCODE Data Coordinating Center (DCC) ChIP-seq uniform processing pipeline.
 softwareVersion:
   versionName: v1.6.0
 metadataStatus: Released
@@ -23,6 +19,9 @@ WebSite:
   - name: Encode Project Website
     description:
     URL: https://www.encodeproject.org/data-standards/chip-seq/
+videos:
+  - name: ChIP-seq demo
+    URL: https://www.youtube.com/watch?v=eSwtF1t3uCw
 keywords:
   - name: ENCODE
     category: topic

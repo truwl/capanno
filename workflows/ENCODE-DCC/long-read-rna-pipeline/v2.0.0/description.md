@@ -1,0 +1,1 @@
+This is the ENCODE-DCC Long read RNA-seq pipeline. This pipeline can handle data from both PacBio and Oxford Nanopore platforms. Pipeline does read alignment, corrects for mismatches, microindels and non-canonical splice junctions and then provides quantification and QC-metrics.

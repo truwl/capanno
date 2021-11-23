@@ -1,5 +1,6 @@
 name: md5sum tool workflow
 identifier: WF_680a59.6e
+shortDescription: A one step "workflow" to be a subworkflow of a wrapping checker workflow.
 description: |
   A one step "workflow" to be a subworkflow of a wrapping checker workflow.
 

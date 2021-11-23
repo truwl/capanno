@@ -1,0 +1,290 @@
+workflow_name: Variant Benchmarking
+workflow_description: >
+  <!-- markdown=true -->
+
+  This benchmarking workflow can be used to assess performance of germline variant calling pipelines run on Genome in a bottle (GIAB) samples HGOO2, HG003, and HG004 (https://truwl.com/files/library/FC_ac361c.1).
+  It is an implementation of the [GA4GH best practices](https://doi.org/10.1038/s41587-019-0054-x) that uses vcfeval as the comparison engine and 'genotype match' to calculate true positive, false positives, and false negatives.
+  Additional statistics are generated for partial matches.
+
+  The workflow allows for selection of 'competitors' and 'regions'.
+  Competitor selection allows you to compare your VCF against the winning VCF submissions for the [PrecisionFDA Truth Challenge V2](https://www.biorxiv.org/content/10.1101/2020.11.13.380741v4).
+  Region selection allows you to specify which genomic regions are used for the comparison.
+
+  The workflow generates two html reports: a multiQC report generated using Bcftools and a notebook that contains upset plots, precision recall metrics, and indell size distribution plots generated using papermill.
+
+  Metrics from each benchmarking run are also loaded into the Truwl Performance Metrics table which enables you to compare metrics across multiple benchmarking runs.
+parameter_meta:
+  
+  GermlineVariantCallBenchmark.queryVCF:
+    group: Query
+    description: VCF to benchmark. Specify VCF (".vcf",".vcf.gz",".vcf.bgz") using any publicly accessible uri.
+    example: "gs://benchmarking-datasets/HG002run1_S1.genome.vcf"
+    name: queryVCF
+    upload:
+      accept: [".vcf",".vcf.gz",".vcf.bgz"]
+      maxSize: 200000000
+  GermlineVariantCallBenchmark.subject:
+    group: Query
+    description: Member of Ashkenazi trio used to genrate the query VCF (HG002, HG003, or HG004)
+    choices: ['HG002', 'HG003', 'HG004']
+    example: 'HG002'
+  GermlineVariantCallBenchmark.freeze:
+    group: Query
+    description: Genome freeze
+    example: 'Genome freeze. hg37 is no-chr'
+    
+  GermlineVariantCallBenchmark.chrRemovedVCF_fileSuffix:
+    group: Affixes
+    description:
+    example: "_chrRemoved.vcf.gz"
+  GermlineVariantCallBenchmark.indelSizeDistributionSuffix:
+    group: Affixes
+    description:
+    example: "_indelSizeDistribution.txt"
+  GermlineVariantCallBenchmark.indelSizeDistributionPlotSuffix:
+    group: Affixes
+    description:
+    example: "_indelSizeDistributionPlot.pdf"
+  GermlineVariantCallBenchmark.truthVCF:
+    group: Truth
+    description: bedtool intersect of the high confidence bed
+    example: "gs://benchmarking-datasets/Truth.highconf.WholeExome.vcf.gz"
+  GermlineVariantCallBenchmark.truthCodingExonsVCF:
+    group: Truth
+    description:
+    example: "gs://benchmarking-datasets/Truth.highconf.CodingExons.vcf.gz"
+  GermlineVariantCallBenchmark.truthWholeExomeBED:
+    group: Truth
+    description: Exome BED
+  GermlineVariantCallBenchmark.truthCodingExonsBED:
+    group: Truth
+    description: Exons BED
+    example: "gs://benchmarking-datasets/codingexons.nochr.bed"
+  GermlineVariantCallBenchmark.WholeExomePrefix:
+    group: Affixes
+    description:
+    example: "wes"
+  GermlineVariantCallBenchmark.happyPrefix:
+    group: Affixes
+    description:
+    example: "hap"
+  GermlineVariantCallBenchmark.referenceFasta:
+    group: References
+    description:
+    example: "gs://benchmarking-datasets/GRCh37-lite.fa"
+  GermlineVariantCallBenchmark.includeB1S5A:
+    group: Competitors 
+    description: |
+      Submission name: DeepVariant PacBio
+      Participant: The Genomics Team in Google Health
+      Category: All Benchmark Regions
+      Technology: PacBio
+  GermlineVariantCallBenchmark.includeCZA1Y:
+    group: Competitors
+    description: |
+      Submission name: Combination of Illumina, PacBio HIFI, and Oxford Nanopore submission Model2
+      Participant: Sentieon
+      Category: MHC
+      Technology: Multi
+  GermlineVariantCallBenchmark.includeEIUT6:
+    group: Competitors
+    description: |
+      Submission name: PacBio HIFI only submission
+      Participant: Sentieon
+      Technology: PacBio
+      Category: MHC/Difficult-to-Map Regions
+  GermlineVariantCallBenchmark.includeIA789:
+    group: Competitors
+    description: |
+      Submission name: RN-Illumina-PacBio-ONT
+      Participant: Roche Sequencing Solutions
+      Technology: Multi
+      Category: Difficult-to-Map Regions
+  GermlineVariantCallBenchmark.includeW607K:
+    group: Competitors
+    description: |
+      Submission name: DRAGEN Experimental Extension into Difficult Regions
+      Participant: DRAGEN
+      Technology: Illumina
+      Category: All Benchmark Regions/Difficult-to-Map Regions
+  GermlineVariantCallBenchmark.includeWX8VK:
+    group: Competitors
+    description: |
+      Submission name: Combination of Illumina, PacBio HIFI, and Oxford Nanopore submission
+      Participant: Sentieon
+      Technology: Multi
+      Category: All Benchmark Regions/MHC
+  GermlineVariantCallBenchmark.includeXC97E:
+    group: Competitors
+    description: |
+      Submission name: DeepVariant PacBio
+      Participant: The Genomics Team in Google Health
+      Technology: PacBio
+      Category: All Benchmark Regions
+
+  GermlineVariantCallBenchmark.includeXV7ZN:
+    group: Competitors
+    description: |
+      Submission name: ONT NanoCaller Clair Medaka Ensemble
+      Participant: Wang Genomics Lab
+      Technology: ONT
+      Category: MHC
+  GermlineVariantCallBenchmark.outputFile_commonPrefix:
+    group: Affixes
+    description:
+    example: "happyResults_NA24385_NISTv3.3"
+  GermlineVariantCallBenchmark.indelDistributionSuffix:
+    group: Affixes
+    description:
+    example: "_indelDistribution_Frombcftools.txt"
+  GermlineVariantCallBenchmark.referenceFasta_indexed:
+    group: References
+    description:
+    example: "GRCh37-lite.fa.fai"
+  GermlineVariantCallBenchmark.consoleOutputPartialFilename:
+    group: Affixes
+    description:
+    example: "_ConsoleOutput.txt"
+  GermlineVariantCallBenchmark.codingExonsPrefix:
+    group: Affixes
+    description:
+    example: "cds"
+  GermlineVariantCallBenchmark.Rscript_indelSize:
+    group: Scripts
+    description:
+    example: "indelSizeDistribution_Detailed.R"
+  GermlineVariantCallBenchmark.Rscript_aggregate:
+    group: Scripts
+    description:
+    example: "aggregateResults.R"
+  GermlineVariantCallBenchmark.Rscript_precrecall:
+    group: Scripts
+    description:
+    example: "precRecall.R"
+  GermlineVariantCallBenchmark.Jupyter_report:
+    group: Scripts
+    description:
+    example: "report.ipynb"
+  GermlineVariantCallBenchmark.structToTrueLines:
+    group: Scripts
+  GermlineVariantCallBenchmark.job_id:
+    group: Builtin
+  GermlineVariantCallBenchmark.workflow_instance_identifier:
+    group: Builtin
+  GermlineVariantCallBenchmark.workflow_identifier:
+    group: Builtin
+
+  GermlineVariantCallBenchmark.popRegions:
+    group: PopularRegions
+    description: Twist exome is 33,167,129 bp and 192,264 regions, HG002_GIAB_highconfidence is 2,542,242,843bp and 481,622 regions, MHC is 4,970,557 bp and 1 region, Difficult 628,689,391 bp and 4,830,678 regions
+  GermlineVariantCallBenchmark.gsRegionsSon:
+    group: GenomeSpecificRegionsSon
+  GermlineVariantCallBenchmark.gsRegionsMom:
+    group: GenomeSpecificRegionsMom
+  GermlineVariantCallBenchmark.gsRegionsDad:
+    group: GenomeSpecificRegionsDad
+  GermlineVariantCallBenchmark.gsRegionsOther:
+    group: GenomeSpecificRegionsOther
+  GermlineVariantCallBenchmark.mpRegions:
+    group: MappabilityRegions
+  GermlineVariantCallBenchmark.odRegions:
+    group: OtherDifficultRegions
+  GermlineVariantCallBenchmark.sdRegions:
+    group: SegmentalDuplicationRegions
+  GermlineVariantCallBenchmark.unRegions:
+    group: UnionRegions
+  GermlineVariantCallBenchmark.lcRegions:
+    group: LowComplexityRegions
+  GermlineVariantCallBenchmark.gcRegions:
+    group: GCcontentRegions
+  GermlineVariantCallBenchmark.fcRegions:
+    group: FunctionalRegions
+
+  GermlineVariantCallBenchmark.popRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.fcRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.gcRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.gsRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.lcRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.mpRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.odRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.sdRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.unRegionsPath:
+    group: Paths
+  GermlineVariantCallBenchmark.competitors:
+    group: CachedMetrics
+      
+parameter_group:
+  Query:
+    title: Query
+    display: true
+    description: Specify your VCF, the subject dataset that your VCF was generated from (HG002, HG003, HG004) and the reference assembly version--only hg38 is currently supported.
+  Truth:
+    title: Truth sets
+    display: false
+  CachedMetrics:
+    title: Cached metrics
+    display: false
+  Affixes:
+    title: Prefixes/Suffixes
+    display: false
+  Scripts:
+    title: Scripts
+    display: false
+  Paths:
+    title: Scripts
+    display: false
+  References:
+    title: References
+    display: false
+  Competitors:
+    title: Competitors
+    display: true
+    description: Choose variant call files that you want to compare against. The below options are the winning submissions from the PrecisionFDA Truth Challenge V2. The most appropriate comparisons are those that used the same technology (Illumina, PacBio, ONT, multi) that you used to generate your VCF .
+  Builtin:
+    title: Built-in parameters
+    display: false
+  PopularRegions:
+    title: Popular Regions
+    display: true
+    description: Choose the regions to compare your variants against the reference set.
+  FunctionalRegions:
+    title: Functional Regions
+    display: false
+  GCcontentRegions:
+    title: GC Content Regions
+    display: false
+  GenomeSpecificRegionsSon:
+    title: HG002/Son Regions
+    display: false
+  GenomeSpecificRegionsMom:
+    title: HG004/Mom Regions
+    display: false
+  GenomeSpecificRegionsDad:
+    title: HG003/Dad Regions
+    display: false 
+  GenomeSpecificRegionsOther:
+    title: Other GS Regions
+    display: false
+  LowComplexityRegions:
+    title: Low Complexity Regions
+    display: false
+  MappabilityRegions:
+    title: Mappability Regions
+    display: false
+  OtherDifficultRegions:
+    title: Difficult Regions
+    display: false
+  UnionRegions:
+    title: Union Regions
+    display: false
+  SegmentalDuplicationRegions:
+    title: Segmental Duplication Regions
+    display: false
