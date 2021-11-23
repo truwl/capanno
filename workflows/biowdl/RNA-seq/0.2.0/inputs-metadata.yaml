@@ -1,0 +1,1022 @@
+workflow_name: BioWDL RNA-Seq Pipeline
+workflow_description:
+parameter_meta:
+  RNAseq.sampleConfig:
+     description: The sample config
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/samplesheets/Rna3PairedEnd.yml"
+  RNAseq.dockerImagesFile:
+     description:  A file listing the used docker images
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/dockerImages.yml"
+  RNAseq.starIndex:
+     description:  A list of star index files
+     group: required_inputs
+     example: [
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrLength.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrName.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrNameLength.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/chrStart.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/Genome",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/genomeParameters.txt",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/SA",
+         "https://storage.googleapis.com/biowdl-rnaseq/reference/star/SAindex"
+     ]
+  RNAseq.referenceFasta:
+     description:  A path to a reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.fasta"
+  RNAseq.referenceFastaFai:
+     description:  The path to the index associated with the reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.fasta.fai"
+  RNAseq.referenceFastaDict:
+     description:  The path to the dict file associated with the reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.dict"
+  RNAseq.refflatFile:
+     description:  Reference annotation Refflat file. This will be used for expression quantification
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.refflat"
+  RNAseq.referenceGtfFile:
+     description:  Reference annotation GTF file. This will be used for expression quantification
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.gtf"
+  RNAseq.strandedness:
+     description:  Indicates the strandedness of the input data. This should be one of the following - FR (Forward, Reverse), RF (Reverse, Forward) or None (Unstranded)
+     group: required_inputs
+     example: "None"
+  RNAseq.adapterForward:
+     description:  Used to set a forward read adapter. Default Illumina Universal Adapter  AGATCGGAAGAG
+     group: scatadapt
+  RNAseq.adapterReverse:
+     description:  Used to set a reverse read adapter (for paired-end reads). Default Illumina Universal Adapter  AGATCGGAAGAG
+     group: scatadapt
+  RNAseq.umiDeduplication:
+     description:  Whether or not UMI based deduplication should be run. See the notes below on UMIs
+     group: scatadapt
+  RNAseq.scatterSizeMillions:
+     description:  The size of the scattered regions in million bases for the GATK subworkflows. Scattering is used to speed up certain processes. The genome will be seperated into multiple chunks (scatters) which will be processed in their own job, allowing for parallel processing. Higher values will result in a lower number of jobs. The optimal value here will depend on the available resources.
+     group: scatadapt
+  RNAseq.variantCalling: 
+     description:  Whether or not variantcalling should be performed, defaults to False
+     group: variant_calling
+     example: true
+  RNAseq.dbsnpVCF:
+     description:  A VCF file to aid in the variantcalling
+     group: variant_calling
+     example: "https://storage.googleapis.com/biowdl-rnaseq/wgs2.vcf.gz"
+  RNAseq.dbsnpVCFIndex:
+     description:  The index for the dbsnpVCF
+     group: variant_calling
+     example: "https://storage.googleapis.com/biowdl-rnaseq/wgs2.vcf.gz.tbi"
+  RNAseq.cpatLogitModel:
+     example: "https://storage.googleapis.com/biowdl-rnaseq/CPAT/Human_logitModel.RData"
+     description: The CPAT logitModel to be used
+     group: lncRNA_detection
+  RNAseq.cpatHex:
+     example: "https://storage.googleapis.com/biowdl-rnaseq/CPAT/Human_Hexamer.tsv"
+     description: The CPAT hexamer tab file to be used
+     group: lncRNA_detection
+  RNAseq.lncRNAdatabases:
+     description: A list of gtf files containing known lncRNAs
+     example: [
+        "https://storage.googleapis.com/biowdl-rnaseq/reference/reference.gtf"
+     ]
+     group: lncRNA_detection
+  RNAseq.lncRNAdetection:
+    description: Whether or not lncRNA detection should be performed, defaults to False
+    example: true
+    group: lncRNA_detection
+  RNAseq.hisat2Index: 
+    description: use hisat2
+    group: hisat2
+    example: [
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.1.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.2.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.3.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.4.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.5.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.6.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.7.ht2",
+      "https://storage.googleapis.com/biowdl-rnaseq/reference/hisat2/reference.8.ht2"
+    ]
+
+  RNAseq.sampleJobs.markDuplicates.useJdkInflater:
+    group: mark_duplicates
+  RNAseq.sampleJobs.markDuplicates.useJdkDeflater:
+    group: mark_duplicates
+
+  RNAseq.sampleJobs.markDuplicates.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.markDuplicates.read_name_regex:
+    group: mark_duplicates
+  RNAseq.sampleJobs.markDuplicates.compressionLevel:
+    group: mark_duplicates
+  RNAseq.sampleJobs.markDuplicates.javaXmxMb:
+    group: resources
+  RNAseq.sampleJobs.markDuplicates.createMd5File:
+    group: mark_duplicates
+    
+    
+
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.collectBaseDistributionByCycle:
+    group: bam_metrics
+
+  RNAseq.sampleJobs.bamMetrics.ampliconIntervals:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.timeMinutes:
+    group: resources
+
+  RNAseq.sampleJobs.bamMetrics.Flagstat.timeMinutes:
+    group: resources
+
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.collectGcBiasMetrics:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.targetIntervalsLists.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.targetIntervals:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.collectAlignmentSummaryMetrics:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.javaXmxMb:
+    group: bam_metrics
+
+  RNAseq.sampleJobs.bamMetrics.ampliconIntervalsLists.javaXmx:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.collectInsertSizeMetrics:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.rnaSeqMetrics.javaXmx:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.ampliconIntervalsLists.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.meanQualityByCycle:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.qualityScoreDistribution:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.targetIntervalsLists.javaXmx:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.targetMetrics.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.rnaSeqMetrics.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.collectQualityYieldMetrics:
+    group: bam_metrics
+
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.collectSequencingArtifactMetrics:
+    group: bam_metrics
+  RNAseq.sampleJobs.bamMetrics.targetMetrics.javaXmx:
+    group: bam_metrics
+  
+  RNAseq.sampleJobs.qc.extractFastqcZip:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.casava:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.nano:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.qualityBase:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.stripF3:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.qc.Cutadapt.matchReadWildcards:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.tooLongPairedOutputPath:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.dir:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.tooShortPairedOutputPath:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.noFilter:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.times:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.nano:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.contaminants:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.qualityCutoff:
+    group: qc
+
+  RNAseq.sampleJobs.qc.FastqcRead1After.NoneFile:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.suffix:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.nextseqTrim:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.maximumLength:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.kmers:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.front:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.casava:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.nogroup:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.nano:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.nogroup:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.dir:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.tooShortOutputPath:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.javaXmx:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.casava:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.contaminants:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.prefix:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.NoneFile:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.limits:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.qc.readgroupName:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.lengthTag:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.bwa:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.adapters:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.maxN:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.minLength:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.minLength:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.NoneArray:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.overlap:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.nogroup:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.maq:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.NoneArray:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.NoneFile:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.discardTrimmed:
+    group: qc
+  RNAseq.sampleJobs.qc.runAdapterClipping:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.dir:
+    group: qc
+
+  RNAseq.sampleJobs.qc.Cutadapt.wildcardFilePath:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead2.NoneFile:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.casava:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.colorspace:
+    group: qc
+  RNAseq.sampleJobs.qc.contaminations:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.nano:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.contaminants:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.noFilter:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.errorRate:
+    group: qc
+
+  RNAseq.sampleJobs.qc.FastqcRead2After.limits:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.format:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.interleaved:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.frontRead2:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.noFilter:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.stripSuffix:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.nogroup:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.limits:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.noIndels:
+    group: qc
+
+  RNAseq.sampleJobs.qc.FastqcRead2After.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.qc.Cutadapt.compressionLevel:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.contaminants:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.limits:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.doubleEncode:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.zeroCap:
+    group: qc
+
+  RNAseq.sampleJobs.qc.Cutadapt.maskAdapter:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.cut:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.javaXmx:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.untrimmedPairedOutputPath:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.pairFilter:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.format:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.adapters:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.untrimmedOutputPath:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.trimN:
+    group: qc
+
+  RNAseq.sampleJobs.qc.FastqcRead2After.dir:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.adapters:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.adapters:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2After.format:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.javaXmx:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.noFilter:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.NoneArray:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.NoneArray:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.noTrim:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.noMatchAdapterWildcards:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.kmers:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.minimumLength:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.javaXmx:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.noZeroCap:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.kmers:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1After.kmers:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead1.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead1After.minLength:
+    group: qc
+  RNAseq.sampleJobs.qc.FastqcRead2.minLength:
+    group: qc
+
+  RNAseq.sampleJobs.qc.FastqcRead2.format:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.discardUntrimmed:
+    group: qc
+
+  RNAseq.sampleJobs.qc.Cutadapt.length:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.restFilePath:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.tooLongOutputPath:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.cores:
+    group: qc
+  RNAseq.sampleJobs.qc.Cutadapt.infoFilePath:
+    group: qc
+    
+
+  RNAseq.variantcalling.Stats.exclude:
+    group: variant_calling
+  RNAseq.variantCallingRegions:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.include:
+    group: variant_calling
+
+  RNAseq.variantcalling.callY.javaXmxMb:
+    group: variant_calling
+  RNAseq.variantcalling.mergeSingleSampleVcf.javaXmx:
+    group: variant_calling
+  RNAseq.variantcalling.mergeSingleSampleVcf.timeMinutes:
+    group: resources
+
+  RNAseq.variantcalling.mergeSingleSampleGvcf.timeMinutes:
+    group: resources
+
+  RNAseq.variantcalling.callX.emitRefConfidence:
+    group: variant_calling
+  RNAseq.variantcalling.callY.excludeIntervalList:
+    group: variant_calling
+
+  RNAseq.variantcalling.callX.excludeIntervalList:
+    group: variant_calling
+  RNAseq.variantcalling.mergeSingleSampleVcf.compressionLevel:
+    group: variant_calling
+  RNAseq.variantcalling.timeMinutes:
+    group: resources
+  RNAseq.variantcalling.mergeSingleSampleVcf.useJdkInflater:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.collapse:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.afTag:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.afBins:
+    group: variant_calling
+  RNAseq.variantcalling.statsRegions:
+    group: variant_calling
+  RNAseq.variantcalling.callAutosomal.outputMode:
+    group: variant_calling
+  RNAseq.variantcalling.mergeSingleSampleGvcf.javaXmx:
+    group: variant_calling
+  RNAseq.variantcalling.callAutosomal.excludeIntervalList:
+    group: variant_calling
+  RNAseq.variantcalling.callAutosomal.javaXmxMb:
+    group: variant_calling
+  RNAseq.variantcalling.callX.pedigree:
+    group: variant_calling
+  RNAseq.variantcalling.callY.outputMode:
+    group: variant_calling
+  RNAseq.variantcalling.callY.contamination:
+    group: variant_calling
+  RNAseq.variantcalling.mergeVcf:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.regions:
+    group: variant_calling
+  RNAseq.variantcalling.callAutosomal.emitRefConfidence:
+    group: variant_calling
+  RNAseq.variantcalling.callAutosomal.contamination:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.splitByID:
+    group: variant_calling
+  RNAseq.variantcalling.mergeSingleSampleVcf.useJdkDeflater:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.depth:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.applyFilters:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.verbose:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.compareVcf:
+    group: variant_calling
+  RNAseq.variantcalling.callX.javaXmxMb:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.compareVcfIndex:
+    group: variant_calling
+  RNAseq.variantcalling.callX.outputMode:
+    group: variant_calling
+
+  RNAseq.variantcalling.Stats.firstAlleleOnly:
+    group: variant_calling
+  RNAseq.variantcalling.callY.pedigree:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.samplesFile:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.userTsTv:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.targetsFile:
+    group: variant_calling
+  RNAseq.variantcalling.callAutosomal.pedigree:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.timeMinutes:
+    group: resources
+  RNAseq.variantcalling.gvcf:
+    group: variant_calling
+  RNAseq.variantcalling.callY.emitRefConfidence:
+    group: variant_calling
+  RNAseq.variantcalling.callX.contamination:
+    group: variant_calling
+  RNAseq.variantcalling.mergeSingleSampleGvcf.intervals:
+    group: variant_calling
+  RNAseq.variantcalling.Stats.targets:
+    group: variant_calling
+
+  RNAseq.variantcalling.Stats.exons:
+    group: variant_calling
+  RNAseq.variantcalling.callAutosomal.ploidy:
+    group: variant_calling
+    
+  RNAseq.expression.stringtie.minimumCoverage:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.discardSingleExonTransfragsAndReferenceTranscripts:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.K:
+    group: expression
+  RNAseq.expression.htSeqCount.idattr:
+    group: expression
+  RNAseq.expression.stringtie.timeMinutes:
+    group: resources
+
+  RNAseq.expression.mergedStringtieFPKMs.separator:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.precisionCorrection:
+    group: expression
+  RNAseq.expression.stringtieAssembly.timeMinutes:
+    group: resources
+  RNAseq.expression.mergedStringtieTPMs.timeMinutes:
+    group: resources
+  RNAseq.expression.additionalAttributes:
+    group: expression
+  RNAseq.expression.htSeqCount.nprocesses:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.X:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.verbose:
+    group: expression
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.header:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.A:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.debugMode:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.discardSingleExonReferenceTranscripts:
+    group: expression
+  RNAseq.expression.mergedStringtieFPKMs.featureAttribute:
+    group: expression
+
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.featureColumn:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.genomeSequences:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.maxDistanceGroupingTranscriptStartSites:
+    group: expression
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.sumOnDuplicateId:
+    group: expression
+  RNAseq.expression.stringtieAssembly.minimumCoverage:
+    group: expression
+  RNAseq.expression.htSeqCount.featureType:
+    group: expression
+
+  RNAseq.expression.htSeqCount.timeMinutes:
+    group: resources
+  RNAseq.expression.mergeStringtieGtf.namePrefix:
+    group: expression
+
+  RNAseq.expression.mergeStringtieGtf.timeMinutes:
+    group: resources
+
+
+  RNAseq.expression.mergeStringtieGtf.snCorrection:
+    group: expression
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.valueColumn:
+    group: expression
+  RNAseq.expression.stringtieAssembly.geneAbundanceFile:
+    group: expression
+  RNAseq.expression.mergedStringtieTPMs.featureColumn:
+    group: expression
+  RNAseq.expression.htSeqCount.additionalAttributes:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.inputGtfList:
+    group: expression
+
+  RNAseq.expression.htSeqCount.order:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.referenceAnnotation:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.noneFile:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.maxDistanceFreeEndsTerminalExons:
+    group: expression
+  RNAseq.expression.mergeStringtieGtf.noTmap:
+    group: expression
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.timeMinutes:
+    group: resources
+  RNAseq.expression.mergedStringtieTPMs.separator:
+    group: expression
+
+  RNAseq.expression.mergedStringtieFPKMs.timeMinutes:
+    group: resources
+  RNAseq.expression.mergedStringtieTPMs.featureAttribute:
+    group: expression
+  RNAseq.expression.mergedStringtieFPKMs.featureColumn:
+    group: expression
+
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.featureAttribute:
+    group: expression
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.separator:
+    group: expression
+  RNAseq.sampleJobs.star.outFilterScoreMin:
+      group: star
+  RNAseq.sampleJobs.star.outSAMunmapped:
+      group: star
+  RNAseq.sampleJobs.star.outSAMtype:
+      group: star
+  RNAseq.sampleJobs.star.outFilterMatchNmin:
+      group: star
+  RNAseq.sampleJobs.star.timeMinutes:
+      group: star
+  RNAseq.makeStarIndex.genomeDir:
+      group: star
+  RNAseq.sampleJobs.star.outBAMcompression:
+      group: star
+  RNAseq.sampleJobs.star.outStd:
+      group: star
+
+  RNAseq.sampleJobs.star.outFilterScoreMinOverLread:
+      group: star
+  RNAseq.sampleJobs.star.outFilterMatchNminOverLread:
+      group: star
+  RNAseq.makeStarIndex.timeMinutes:
+      group: star
+  RNAseq.sampleJobs.star.twopassMode:
+      group: star
+
+  RNAseq.makeStarIndex.sjdbOverhang:
+      group: star
+  RNAseq.sampleJobs.star.readFilesCommand:
+      group: star
+
+  RNAseq.sampleJobs.star.limitBAMsortRAM:
+      group: star
+  RNAseq.sampleJobs.star.runThreadN:
+      group: star
+  RNAseq.multiqcTask.export:
+      group: multiqc
+  RNAseq.multiqcTask.pdf:
+      group: multiqc
+  RNAseq.multiqcTask.comment:
+      group: multiqc
+  RNAseq.multiqcTask.config:
+      group: multiqc
+  RNAseq.multiqcTask.dirsDepth:
+      group: multiqc
+  RNAseq.multiqcTask.exclude:
+      group: multiqc
+  RNAseq.multiqcTask.fullNames:
+      group: multiqc
+  RNAseq.multiqcTask.clConfig:
+      group: multiqc
+  RNAseq.multiqcTask.dataFormat:
+      group: multiqc
+  RNAseq.multiqcTask.ignore:
+      group: multiqc
+  RNAseq.multiqcTask.module:
+      group: multiqc
+
+  RNAseq.multiqcTask.dirs:
+      group: multiqc
+  RNAseq.multiqcTask.flat:
+      group: multiqc
+  RNAseq.multiqcTask.zipDataDir:
+      group: multiqc
+  RNAseq.multiqcTask.ignoreSamples:
+      group: multiqc
+  RNAseq.multiqcTask.template:
+      group: multiqc
+  RNAseq.multiqcTask.lint:
+      group: multiqc
+  RNAseq.multiqcTask.megaQCUpload:
+      group: multiqc
+  RNAseq.multiqcTask.fileList:
+      group: multiqc
+  RNAseq.multiqcTask.interactive:
+      group: multiqc
+  RNAseq.multiqcTask.dataDir:
+      group: multiqc
+  RNAseq.multiqcTask.force:
+      group: multiqc
+  RNAseq.multiqcTask.sampleNames:
+      group: multiqc
+  RNAseq.multiqcTask.timeMinutes:
+      group: multiqc
+  RNAseq.multiqcTask.tag:
+      group: multiqc
+  RNAseq.multiqcTask.fileName:
+      group: multiqc
+  RNAseq.multiqcTask.title:
+      group: multiqc
+
+  RNAseq.sampleJobs.qc.FastqcRead2After.threads:
+    group: resources
+  RNAseq.variantcalling.Stats.threads:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead1.threads:
+    group: resources
+  RNAseq.sampleJobs.hisat2.sortThreads:
+    group: resources
+  RNAseq.expression.stringtie.threads:
+    group: resources
+  RNAseq.sampleJobs.hisat2.threads:
+    group: resources
+  RNAseq.expression.stringtieAssembly.threads:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead1After.threads:
+    group: resources
+  RNAseq.makeStarIndex.threads:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead2.threads:
+    group: resources
+  RNAseq.variantcalling.mergeSingleSampleVcf.memory:
+    group: resources
+  RNAseq.calculateRegions.scatterAutosomalRegions.memory:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.ampliconIntervalsLists.memory:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.targetMetrics.memory:
+    group: resources
+  RNAseq.variantcalling.callAutosomal.memoryMb:
+    group: resources
+  RNAseq.preprocessing.baseRecalibrator.memoryMb:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead2After.memory:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.rnaSeqMetrics.memory:
+    group: resources
+  RNAseq.calculateRegions.inverseBed.memory:
+    group: resources
+  RNAseq.expression.mergedHTSeqFragmentsPerGenes.memoryGb:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.picardMetrics.memoryMb:
+    group: resources
+  RNAseq.preprocessing.splitNCigarReads.memory:
+    group: resources
+  RNAseq.variantcalling.callY.memoryMb:
+    group: resources
+  RNAseq.sampleJobs.markDuplicates.memoryMb:
+    group: resources
+  RNAseq.calculateRegions.intersectAutosomalRegions.memory:
+    group: resources
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.memoryMb:
+    group: resources
+  RNAseq.convertDockerTagsFile.memory:
+    group: resources
+  RNAseq.sampleJobs.hisat2.memoryGb:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.targetIntervalsLists.memory:
+    group: resources
+  RNAseq.calculateRegions.mergeBeds.memory:
+    group: resources
+  RNAseq.createDesign.memory:
+    group: resources
+  RNAseq.variantcalling.mergeSingleSampleGvcf.memory:
+    group: resources
+  RNAseq.expression.mergedStringtieTPMs.memoryGb:
+    group: resources
+  RNAseq.gffreadTask.memory:
+    group: resources
+  RNAseq.makeStarIndex.memory:
+    group: resources
+  RNAseq.calculateRegions.intersectY.memory:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead1.memory:
+    group: resources
+  RNAseq.preprocessing.applyBqsr.memoryMb:
+    group: resources
+  RNAseq.preprocessing.gatherBamFiles.memoryMb:
+    group: resources
+  RNAseq.scatterList.memory:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead1After.memory:
+    group: resources
+  RNAseq.multiqcTask.memory:
+    group: resources
+  RNAseq.expression.htSeqCount.memory:
+    group: resources
+  RNAseq.preprocessing.gatherBqsr.memoryMb:
+    group: resources
+  RNAseq.sampleJobs.umiDedup.memory:
+    group: resources
+  RNAseq.sampleJobs.star.memory:
+    group: resources
+  RNAseq.calculateRegions.intersectX.memory:
+    group: resources
+  RNAseq.expression.stringtieAssembly.memory:
+    group: resources
+  RNAseq.sampleJobs.qc.FastqcRead2.memory:
+    group: resources
+  RNAseq.CPAT.memory:
+    group: resources
+  RNAseq.expression.mergedStringtieFPKMs.memoryGb:
+    group: resources
+  RNAseq.GffCompare.memory:
+    group: resources
+  RNAseq.variantcalling.Stats.memory:
+    group: resources
+  RNAseq.expression.mergeStringtieGtf.memory:
+    group: resources
+  RNAseq.expression.stringtie.memory:
+    group: resources
+  RNAseq.sampleJobs.bamMetrics.Flagstat.memory:
+    group: resources
+  RNAseq.sampleJobs.qc.Cutadapt.memory:
+    group: resources
+  RNAseq.createAnnotation.memory:
+    group: resources
+  RNAseq.sampleJobs.hisat2.sortMemoryPerThreadGb:
+    group: resources
+  RNAseq.variantcalling.callX.memoryMb:
+    group: resources
+  
+  RNAseq.scatterList.prefix:
+    group: scatadapt
+  RNAseq.calculateRegions.scatterAutosomalRegions.splitContigs:
+    group: scatadapt
+  RNAseq.scatterSize:
+    group: scatadapt
+  RNAseq.scatterList.splitContigs:
+    group: scatadapt
+  RNAseq.calculateRegions.scatterAutosomalRegions.prefix:
+    group: scatadapt
+
+  RNAseq.calculateRegions.intersectX.timeMinutes:
+    group: resources
+  RNAseq.calculateRegions.intersectY.timeMinutes:
+    group: resources
+  RNAseq.YNonParRegions:
+    group: scatadapt
+  RNAseq.GffCompare.K:
+    group: gffcompare
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.timeMinutes:
+    group: resources
+  RNAseq.GffCompare.A:
+    group: gffcompare
+  RNAseq.preprocessing.applyBqsr.javaXmxMb:
+    group: resources
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.read_name_regex:
+    group: mark_duplicates
+  RNAseq.GffCompare.verbose:
+    group: gffcompare
+  RNAseq.GffCompare.snCorrection:
+    group: gffcompare
+  RNAseq.XNonParRegions:
+    group: toplevel
+  RNAseq.gffreadTask.proteinFastaPath:
+    group: gffcompare
+  RNAseq.GffCompare.genomeSequences:
+    group: gffcompare
+  RNAseq.gffreadTask.CDSFastaPath:
+    group: gffcompare
+  RNAseq.CPAT.timeMinutes:
+    group: resources
+  RNAseq.preprocessing.gatherBamFiles.createMd5File:
+    group: prep
+  RNAseq.calculateRegions.scatterAutosomalRegions.timeMinutes:
+    group: resources
+  RNAseq.detectNovelTranscripts:
+    group: toplevel
+  RNAseq.gffreadTask.timeMinutes:
+    group: resources
+  RNAseq.GffCompare.maxDistanceGroupingTranscriptStartSites:
+    group: gffcompare
+  RNAseq.GffCompare.noneFile:
+    group: gffcompare
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.javaXmxMb:
+    group: resources
+  RNAseq.preprocessing.gatherBqsr.javaXmxMb:
+    group: resources
+  RNAseq.gffreadTask.outputGtfFormat:
+    group: gffcompare
+  RNAseq.createDesign.timeMinutes:
+    group: resources
+  RNAseq.GffCompare.precisionCorrection:
+    group: gffcompare
+  RNAseq.GffCompare.maxDistanceFreeEndsTerminalExons:
+    group: gffcompare
+  RNAseq.sampleJobs.umiDedup.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.createMd5File:
+   group: mark_duplicates
+  RNAseq.GffCompare.X:
+    group: gffcompare
+  RNAseq.sampleJobs.hisat2.compressionLevel:
+      group: hisat2
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.compressionLevel:
+    group: mark_duplicates
+  RNAseq.calculateRegions.intersectAutosomalRegions.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.hisat2.timeMinutes:
+    group: resources
+  RNAseq.collectUmiStats:
+    group: toplevel
+  RNAseq.preprocessing.baseRecalibrator.knownIndelsSitesVCFs:
+    group: prep
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.useJdkDeflater:
+    group: mark_duplicates
+  RNAseq.GffCompare.noTmap:
+    group: gffcompare
+  RNAseq.createAnnotation.timeMinutes:
+    group: resources
+  RNAseq.preprocessing.gatherBamFiles.timeMinutes:
+    group: resources
+  RNAseq.sampleJobs.postUmiDedupMarkDuplicates.useJdkInflater:
+   group: mark_duplicates
+  RNAseq.CPAT.startCodons:
+    group: lncRNA_detection
+  RNAseq.sampleJobs.umiDedup.umiSeparator:
+    group: scatadapt
+  RNAseq.preprocessing.baseRecalibrator.javaXmxMb:
+    group: resources
+  RNAseq.sampleJobs.hisat2.downstreamTranscriptomeAssembly:
+    group: hisat2
+  RNAseq.sampleJobs.DONOTDEFINE:
+    group: toplevel
+  RNAseq.GffCompare.outPrefix:
+    group: gffcompare
+  RNAseq.convertDockerTagsFile.dockerImage:
+    group: resources
+  RNAseq.preprocessing.gatherBamFiles.compressionLevel:
+    group: bam_metrics
+  RNAseq.dgeFiles:
+    group: toplevel
+  RNAseq.GffCompare.inputGtfList:
+    group: gffcompare
+  RNAseq.CPAT.stopCodons:
+    group: lncRNA_detection
+  RNAseq.preprocessing.gatherBamFiles.javaXmxMb:
+    group: resources
+  RNAseq.gffreadTask.filteredGffPath:
+    group: gffcompare
+  RNAseq.preprocessing.gatherBqsr.timeMinutes:
+    group: resources
+  RNAseq.GffCompare.timeMinutes:
+    group: resources
+  RNAseq.runStringtieQuantification:
+    group: toplevel
+  RNAseq.convertDockerTagsFile.timeMinutes:
+    group: resources
+  RNAseq.GffCompare.discardSingleExonTransfragsAndReferenceTranscripts:
+    group: gffcompare
+  RNAseq.calculateRegions.inverseBed.timeMinutes:
+    group: resources
+  RNAseq.calculateRegions.mergeBeds.timeMinutes:
+    group: resources
+  RNAseq.preprocessing.baseRecalibrator.knownIndelsSitesVCFIndexes:
+    group: prep
+  RNAseq.sampleJobs.umiDedup.tmpDir:
+    group: scatadapt
+  RNAseq.preprocessing.splitNCigarReads.javaXmx:
+    group: resources
+  RNAseq.platform:
+    group: toplevel
+  RNAseq.GffCompare.C:
+    group: gffcompare
+  RNAseq.outputDir:
+    group: toplevel
+  RNAseq.GffCompare.namePrefix:
+    group: gffcompare
+  RNAseq.GffCompare.debugMode:
+    group: gffcompare
+  RNAseq.GffCompare.discardSingleExonReferenceTranscripts:
+    group: gffcompare
+  RNAseq.scatterList.timeMinutes:
+    group: resources
+  RNAseq.calculateRegions.mergeBeds.outputBed:
+    group: scatadapt
+
+
+
+parameter_group:
+    required_inputs:
+        title: Required
+        description: Required input files for experiment
+        help: Required
+    toplevel:
+        title: Toplevel
+    expanded_inputs:
+        title: Expanded
+        description: Expanded input files for experiment
+        help: Expanded
+    mark_duplicates:
+        title: Mark Duplicates
+    bam_metrics:
+        title: BAM Metrics
+    qc:
+        title: QC
+    multiqc:
+        title: MultiQC
+    star:
+        title: STAR
+    expression:
+        title: Stringtie/htseq
+    variant_calling:
+        title: Variant calling
+        description: Variant calling
+        help: Variant calling
+    lncRNA_detection:
+        title: lncRNA detection
+        description: lncRNA detection
+        help: lncRNA detection
+    hisat2:
+        title: hisat2
+        description: hisat2
+        help: hisat2
+    prep:
+        title: prep
+    gffcompare:
+        title: gff
+    scatadapt:
+        title: scatadapt
+    resources:
+        title: resources
+

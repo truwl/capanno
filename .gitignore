@@ -18,3 +18,4 @@ __pycache__/
 
 temp/
 update_fields_scripts/*
+.gitkeep*

@@ -1,0 +1,56 @@
+# Copyright (c) 2018 Leiden University Medical Center
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+# This file contains the docker images used in the pipeline.
+# The containers used by default are biocontainers uploaded on quay.io.
+# https://quay.io/organization/biocontainers
+
+# The string should be formatted in the same way as utilized in a 'docker pull'
+# command.
+
+# Tools are sorted alphabetically for ease of use.
+
+bcftools: "quay.io/biocontainers/bcftools:1.10.2--h4f4756c_2"
+bedtools: "quay.io/biocontainers/bedtools:2.23.0--hdbcaa40_3"
+biowdl-input-converter: "quay.io/biocontainers/biowdl-input-converter:0.2.1--py_0"
+chunked-scatter: "quay.io/biocontainers/chunked-scatter:1.0.0--py_0"
+cutadapt: "quay.io/biocontainers/cutadapt:2.10--py37hf01694f_1"
+cpat: "quay.io/biocontainers/cpat:3.0.4--py39hcbe4a3b_0"
+collect-columns: "quay.io/biocontainers/collect-columns:1.0.0--py_0"
+fastqc: "quay.io/biocontainers/fastqc:0.11.9--0"
+gatk4: "quay.io/biocontainers/gatk4:4.1.8.0--py38h37ae868_0"
+gffcompare: "quay.io/biocontainers/gffcompare:0.10.6--h2d50403_0"
+gffread: "quay.io/biocontainers/gffread:0.9.12--0"
+# "hisat2" uses a combined container that has both hisat2 and samtools
+# quay.io/biocontainers/mulled-v2-a97e90b3b802d1da3d6958e0867610c718cb5eb1
+# hisat2=2.2.0, samtools=1.10.
+hisat2: "quay.io/biocontainers/mulled-v2-a97e90b3b802d1da3d6958e0867610c718cb5eb1:2880dd9d8ad0a7b221d4eacda9a818e92983128d-0"
+htseq: "quay.io/biocontainers/htseq:0.12.4--py37h0498b6d_2"
+multiqc: "quay.io/biocontainers/multiqc:1.9--pyh9f0ad1d_0"
+picard: "quay.io/biocontainers/picard:2.23.2--0"
+predex: "quay.io/biocontainers/predex:0.9.2--pyh3252c3a_0"
+samtools: "quay.io/biocontainers/samtools:1.10--h9402c20_2"
+star: "quay.io/biocontainers/star:2.7.5a--0"
+stringtie: "quay.io/biocontainers/stringtie:1.3.6--h92e31bf_0"
+tabix: "quay.io/biocontainers/tabix:0.2.6--ha92aebf_0"
+# "UMI-tools" uses a combined container that has both UMI-tools and samtools
+# quay.io/biocontainers/mulled-v2-509311a44630c01d9cb7d2ac5727725f51ea43af:3067b520386698317fd507c413baf7f901666fd4-0
+# this particular tag has versions umi_tools=1.1.1,samtools=1.10
+umi-tools: "quay.io/biocontainers/mulled-v2-509311a44630c01d9cb7d2ac5727725f51ea43af:3067b520386698317fd507c413baf7f901666fd4-0"
