@@ -61,7 +61,14 @@ parameter_meta:
     group: task_resources
   long_read_rna_pipeline.xlarge_task_resources:
     group: task_resources
-                
+  long_read_rna_pipeline.combined_spikeins.output_filename:
+    group: subworkflow
+  long_read_rna_pipeline.talon_label_reads.fraca_range_size:
+    group: subworkflow
+  long_read_rna_pipeline.make_gtf_from_spikein_fasta.output_filename:
+    group: subworkflow
+
+
 parameter_group:
     input_genomic_data:
         title: Input genomic data
@@ -69,3 +76,6 @@ parameter_group:
     task_resources:
         title: Task Resources
         description: The hardware resources needed to run the pipeline depend on the sequencing depth so it is hard to give definitive values that will be good for everyone. Further, some users may value time more than money, and vice versa. The defaults have been set with runtime on mind, but should also be quite cost effective.
+    subworkflow:
+      title: Subworkflow parameters
+      description: These are additional parameters that can be passed to subworklows. Defaults are usually fine.
