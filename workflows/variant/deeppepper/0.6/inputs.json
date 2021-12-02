@@ -1,0 +1,11 @@
+{
+  "deeppepper.threads": "Int (optional, default = 64)",
+  "deeppepper.ref": "File",
+  "deeppepper.fai": "File",
+  "deeppepper.bai": "File",
+  "deeppepper.bam": "File",
+  "deeppepper.longreadtype": "String (optional, default = \"ont\")",
+  "deeppepper.region": "String? (optional)",
+  "deeppepper.output_dir": "String (optional, default = \"output\")"
+}
+

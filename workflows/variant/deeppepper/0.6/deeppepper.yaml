@@ -1,0 +1,23 @@
+meta:
+  name: PEPPER-Margin-DeepVariant
+  identifier: WF_edcb65.c7
+  description: >
+    Variant calling for long reads - utilizes PEPPER for SNP calling, Margin for haplotyping and phasing, and DeepVariant for genotype calling 
+  softwareVersion: 1.0
+  metadataStatus: Released
+  workflowStatus: Released
+  cytoscapeStatus: Incomplete
+  runit_filename: deeppepper.wdl
+  runit_pipeline_name: deeppepper
+  runit_git_hash: 0.6
+  inputs_file: inputs.json
+  executable: true
+  current: true
+  codeRepository:
+    URL: https://github.com/truwl/deeppepper
+  websites:
+    0:
+      url: https://github.com/kishwarshafin/pepper
+      name: Original Quality Functional Equivalent (OQFE) Pipeline
+
+task_data: {}

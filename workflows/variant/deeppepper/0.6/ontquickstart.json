@@ -1,0 +1,10 @@
+{
+  "deeppepper.threads": "64",
+  "deeppepper.ref": "gs://pepper-deepvariant-public/quickstart_data/GRCh38_no_alt.chr20.fa",
+  "deeppepper.fai": "gs://pepper-deepvariant-public/quickstart_data/GRCh38_no_alt.chr20.fa.fai",
+  "deeppepper.bam": "gs://pepper-deepvariant-public/quickstart_data/HG002_ONT_2_GRCh38.chr20.quickstart.bam",
+  "deeppepper.bai": "gs:pepper-deepvariant-public/quickstart_data/HG002_ONT_2_GRCh38.chr20.quickstart.bam.bai",
+  "deeppepper.longreadtype": "ont",
+  "deeppepper.region": "chr20:1000000-1020000"
+}
+

@@ -1,0 +1,42 @@
+workflow_name: Original Quality Functional Equivalent (OQFE) Pipeline
+workflow_description: This app processes whole genome sequencing (WGS) or whole exome sequencing (WES) data - it aligns raw sequencing data to the human reference genome and additionally performs duplicate marking. It generates an OQFE CRAM file from a FASTQ or mapped CRAM file, following the Original Quality Functionally Equivalent (OQFE) protocol, which is a revision of the Functionally Equivalent (FE) protocol. The app follows the FE methodology by the adoption of a standard GRCh38 reference genome with alternate loci, read alignment with BWA-MEM, inclusion of supplementary alignments, duplicate marking that includes the supplementary alignments, CRAM compression and restricted tag usage. In accordance with the OQFE protocol, the app retains the original quality scores of the reads, which allows for recovery of original FASTQs from the generated OQFE CRAM, and implements updated versions of the used programs.
+parameter_meta:
+      deeppepper.threads:
+      group: Resources
+  deeppepper.ref:
+        description: The reference fasta
+        group: Required
+  deeppepper.fai:
+        description: The reference fasta index
+        group: Required
+  deeppepper.bai:
+  deeppepper.bam:
+  deeppepper.longreadtype:
+  deeppepper.region:
+            description: Perform only an interval
+            example: chr20:1000000-1020000
+        group: Required
+  deeppepper.output_dir:
+    oqfe.sample:
+        description: The sample name
+        group: Fields
+    oqfe.cram_reference_fasta:
+        description: Optional reference (GRCh38 built in)
+        group: Fields
+    oqfe.forward_reads:
+        description: Forward reads Fastq *.fastq.gz or *.fq.gz or a CRAM file *.cram. According to the FE protocol, the header line for the RG should contain minimally the tags ID, PL, PU, SM, and LB. Only if all of these tags are present in the input CRAM can they be used for the output OQFE CRAM header, otherwise the app will return an error and exit.
+        example: gs://broad-public-datasets/NA12878/NA12878.cram
+        group: Fields
+    oqfe.reverse_reads:
+        description: Reverse reads fastq (optional)
+        group: Fields
+    oqfe.optical_duplicate_pixel_distance:
+        description: optical duplicate pixel distance for "Picard MarkDuplicates" is a parameter default 2500
+        group: Fields
+    oqfe.reuse_cram_header:
+        description: Reuse CRAM header for readgroup (RG) info?
+        group: Fields
+parameter_group:
+    Fields:
+        title: OQFE Fields
+        description: OQFE Required and Optional Fields
