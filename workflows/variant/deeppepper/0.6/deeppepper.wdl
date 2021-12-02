@@ -7,7 +7,7 @@ workflow deeppepper{
         File ref
         File fai
         Int threads = 64 # https://cloud.google.com/life-sciences/docs/tutorials/deepvariant
-        String longreadtype = "ont_r9_guppy5_sup" #ont_r9_guppy5_sup or ont_r10_q20 or hifi or ont
+        String longreadtype = "ont_r9_guppy5_sup" #ont_r9_guppy5_sup or ont_r10_q20 or hifi
         String? region
         String output_dir = "output"
     }
