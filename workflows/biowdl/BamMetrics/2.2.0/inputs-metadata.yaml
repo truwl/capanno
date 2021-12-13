@@ -1,0 +1,86 @@
+workflow_name: BioWDL BamMetrics
+workflow_description: This repository contains all components of the RNA-seq pipeline used by the GTEx Consortium, including alignment, expression quantification, and quality control.
+parameter_meta:
+  BamMetrics.referenceFastaDict:
+    group: Required
+    help: The sequence dictionary associated with the reference fasta file
+  BamMetrics.referenceFasta:
+    group: Required
+    help: The reference fasta file
+  BamMetrics.picardMetrics.collectGcBiasMetrics:
+    group: Options
+  BamMetrics.targetMetrics.javaXmx:
+    group: Resources
+  BamMetrics.outputDir:
+    group: Required
+  BamMetrics.ampliconIntervalsLists.memory:
+    group: Resources
+  BamMetrics.picardMetrics.collectSequencingArtifactMetrics:
+    group: Options
+  BamMetrics.refRefflat:
+    group: Required
+  BamMetrics.meanQualityByCycle:
+    group: Options
+  BamMetrics.rnaSeqMetrics.memory:
+    group: Resources
+  BamMetrics.ampliconIntervalsLists.timeMinutes:
+    group: Resources
+  BamMetrics.picardMetrics.timeMinutes:
+    group: Resources
+  BamMetrics.targetMetrics.timeMinutes:
+    group: Resources
+  BamMetrics.Flagstat.timeMinutes:
+    group: Resources
+  BamMetrics.picardMetrics.collectQualityYieldMetrics:
+    group: Options
+  BamMetrics.referenceFastaFai:
+    group: Required
+  BamMetrics.picardMetrics.collectBaseDistributionByCycle:
+    group: Options
+  BamMetrics.targetIntervalsLists.javaXmx:
+    group: Resources
+  BamMetrics.picardMetrics.memoryMb:
+    group: Resources
+  BamMetrics.targetIntervals:
+    group: Required
+  BamMetrics.dockerImages:
+    group: Resources
+  BamMetrics.targetMetrics.memory:
+    group: Resources
+  BamMetrics.strandedness:
+    group: Required
+  BamMetrics.targetIntervalsLists.memory:
+    group: Resources
+  BamMetrics.picardMetrics.collectInsertSizeMetrics:
+    group: Options
+  BamMetrics.bamIndex:
+    group: Required
+    help: The index for the bam file
+  BamMetrics.rnaSeqMetrics.javaXmx:
+    group: Resources
+  BamMetrics.bam:
+    help: The BAM file for which metrics will be collected.
+    group: Required
+  BamMetrics.ampliconIntervalsLists.javaXmx:
+    group: Resources
+  BamMetrics.rnaSeqMetrics.timeMinutes:
+    group: Resources
+  BamMetrics.targetIntervalsLists.timeMinutes:
+    group: Resources
+  BamMetrics.picardMetrics.javaXmxMb:
+    group: Resources
+  BamMetrics.picardMetrics.qualityScoreDistribution:
+    group: Options
+  BamMetrics.ampliconIntervals:
+    group: Required
+  BamMetrics.Flagstat.memory:
+    group: Resources
+  BamMetrics.collectAlignmentSummaryMetrics:
+    group: Options
+parameter_group:
+  Required:
+    title: Required
+  Options:
+    title: Options
+  Resources:
+    title: Resources
