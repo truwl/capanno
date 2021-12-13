@@ -1,0 +1,33 @@
+workflow_name: Original Quality Functional Equivalent (OQFE) Pipeline
+workflow_description: This app processes whole genome sequencing (WGS) or whole exome sequencing (WES) data - it aligns raw sequencing data to the human reference genome and additionally performs duplicate marking. It generates an OQFE CRAM file from a FASTQ or mapped CRAM file, following the Original Quality Functionally Equivalent (OQFE) protocol, which is a revision of the Functionally Equivalent (FE) protocol. The app follows the FE methodology by the adoption of a standard GRCh38 reference genome with alternate loci, read alignment with BWA-MEM, inclusion of supplementary alignments, duplicate marking that includes the supplementary alignments, CRAM compression and restricted tag usage. In accordance with the OQFE protocol, the app retains the original quality scores of the reads, which allows for recovery of original FASTQs from the generated OQFE CRAM, and implements updated versions of the used programs.
+parameter_meta:
+    deeppepper.threads:
+        group: Resources
+    deeppepper.ref:
+        description: The reference fasta
+        group: Required
+    deeppepper.fai:
+        description: The reference fasta index
+        group: Required
+    deeppepper.bam:
+        description: The sample sequence bam
+        group: Required
+    deeppepper.bai:
+        description: The sample sequence bam index
+        group: Required
+    deeppepper.longreadtype:
+        description: Sequence type ont_r9_guppy5_sup or ont_r10_q20 or hifi
+        group: Required
+    deeppepper.region:
+        description: Perform only an interval
+        example: chr20:1000000-1020000
+        group: Required
+    deeppepper.output_dir:
+        group: hidden
+parameter_group:
+    Required:
+        title: Required Fields
+    Resources:
+        title: Resources
+    hidden:
+        display: false
