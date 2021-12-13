@@ -12,7 +12,7 @@ workflow deeppepper{
         String output_dir = "output"
     }
     
-    String output_prefix = bam + ".dp"
+    String output_prefix = basename(bam) + ".dp"
 
     call deeppeppertask {
         
