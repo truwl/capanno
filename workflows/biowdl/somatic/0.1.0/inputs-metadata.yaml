@@ -1,0 +1,1108 @@
+workflow_name: BioWDL RNA-Seq Pipeline
+workflow_description:
+parameter_meta:
+  Somatic.sampleConfig:
+     description: The sample config
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-Somatic/samplesheets/Rna3PairedEnd.yml"
+  Somatic.dockerImagesFile:
+     description:  A file listing the used docker images
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-Somatic/dockerImages.yml"
+  Somatic.referenceFasta:
+     description:  A path to a reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-Somatic/reference/reference.fasta"
+  Somatic.referenceFastaFai:
+     description:  The path to the index associated with the reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-Somatic/reference/reference.fasta.fai"
+  Somatic.referenceFastaDict:
+     description:  The path to the dict file associated with the reference fasta
+     group: required_inputs
+     example: "https://storage.googleapis.com/biowdl-Somatic/reference/reference.dict"
+  Somatic.adapterForward:
+     description:  Used to set a forward read adapter. Default Illumina Universal Adapter  AGATCGGAAGAG
+     group: scatadapt
+  Somatic.adapterReverse:
+     description:  Used to set a reverse read adapter (for paired-end reads). Default Illumina Universal Adapter  AGATCGGAAGAG
+     group: scatadapt
+  Somatic.umiDeduplication:
+     description:  Whether or not UMI based deduplication should be run. See the notes below on UMIs
+     group: scatadapt
+  Somatic.scatterSizeMillions:
+     description:  The size of the scattered regions in million bases for the GATK subworkflows. Scattering is used to speed up certain processes. The genome will be seperated into multiple chunks (scatters) which will be processed in their own job, allowing for parallel processing. Higher values will result in a lower number of jobs. The optimal value here will depend on the available resources.
+     group: scatadapt
+  Somatic.dbsnpVCF:
+     description:  A VCF file to aid in the variantcalling
+     group: variant_calling
+     example: "https://storage.googleapis.com/biowdl-Somatic/wgs2.vcf.gz"
+  Somatic.dbsnpVCFIndex:
+     description:  The index for the dbsnpVCF
+     group: variant_calling
+  Somatic.multiqcTask.export:
+      group: multiqc
+  Somatic.multiqcTask.pdf:
+      group: multiqc
+  Somatic.multiqcTask.comment:
+      group: multiqc
+  Somatic.multiqcTask.config:
+      group: multiqc
+  Somatic.multiqcTask.dirsDepth:
+      group: multiqc
+  Somatic.multiqcTask.exclude:
+      group: multiqc
+  Somatic.multiqcTask.fullNames:
+      group: multiqc
+  Somatic.multiqcTask.clConfig:
+      group: multiqc
+  Somatic.multiqcTask.dataFormat:
+      group: multiqc
+  Somatic.multiqcTask.ignore:
+      group: multiqc
+  Somatic.multiqcTask.module:
+      group: multiqc
+  Somatic.multiqcTask.dirs:
+      group: multiqc
+  Somatic.multiqcTask.flat:
+      group: multiqc
+  Somatic.multiqcTask.zipDataDir:
+      group: multiqc
+  Somatic.multiqcTask.ignoreSamples:
+      group: multiqc
+  Somatic.multiqcTask.template:
+      group: multiqc
+  Somatic.multiqcTask.lint:
+      group: multiqc
+  Somatic.multiqcTask.megaQCUpload:
+      group: multiqc
+  Somatic.multiqcTask.fileList:
+      group: multiqc
+  Somatic.multiqcTask.interactive:
+      group: multiqc
+  Somatic.multiqcTask.dataDir:
+      group: multiqc
+  Somatic.multiqcTask.force:
+      group: multiqc
+  Somatic.multiqcTask.sampleNames:
+      group: multiqc
+  Somatic.multiqcTask.timeMinutes:
+      group: multiqc
+  Somatic.multiqcTask.tag:
+      group: multiqc
+  Somatic.multiqcTask.fileName:
+      group: multiqc
+  Somatic.multiqcTask.title:
+      group: multiqc
+  Somatic.scatterList.memory:
+    group: resources
+  Somatic.multiqcTask.memory:
+    group: resources
+  Somatic.scatterList.prefix:
+    group: scatadapt
+  Somatic.scatterSize:
+    group: scatadapt
+  Somatic.scatterList.splitContigs:
+    group: scatadapt
+  Somatic.YNonParRegions:
+    group: scatadapt
+  Somatic.collectUmiStats:
+    group: toplevel
+  Somatic.platform:
+    group: toplevel
+  Somatic.outputDir:
+    group: toplevel
+  Somatic.scatterList.timeMinutes:
+    group: resources
+  Somatic.CNVs.annotatedIntervals:
+    group: Other
+  Somatic.CNVs.caseSample.callCopyRatioSegments.javaXmx:
+    group: resources
+  Somatic.CNVs.caseSample.callCopyRatioSegments.memory:
+    group: resources
+  Somatic.CNVs.caseSample.callCopyRatioSegments.timeMinutes:
+    group: resources
+  Somatic.CNVs.caseSample.collectAllelicCounts.javaXmx:
+    group: resources
+  Somatic.CNVs.caseSample.collectAllelicCounts.memory:
+    group: resources
+  Somatic.CNVs.caseSample.collectAllelicCounts.timeMinutes:
+    group: resources
+  Somatic.CNVs.caseSample.collectReadCounts.intervalMergingRule:
+    group: Other
+  Somatic.CNVs.caseSample.collectReadCounts.javaXmx:
+    group: resources
+  Somatic.CNVs.caseSample.collectReadCounts.memory:
+    group: resources
+  Somatic.CNVs.caseSample.collectReadCounts.timeMinutes:
+    group: resources
+  Somatic.CNVs.caseSample.denoiseReadCounts.javaXmx:
+    group: resources
+  Somatic.CNVs.caseSample.denoiseReadCounts.memory:
+    group: resources
+  Somatic.CNVs.caseSample.denoiseReadCounts.timeMinutes:
+    group: resources
+  Somatic.CNVs.caseSample.modelSegments.javaXmx:
+    group: resources
+  Somatic.CNVs.caseSample.modelSegments.maximumNumberOfSmoothingIterations:
+    group: Other
+  Somatic.CNVs.caseSample.modelSegments.memory:
+    group: resources
+  Somatic.CNVs.caseSample.modelSegments.minimumTotalAlleleCountCase:
+    group: Other
+  Somatic.CNVs.caseSample.modelSegments.timeMinutes:
+    group: resources
+  Somatic.CNVs.caseSample.plotDenoisedCopyRatios.javaXmx:
+    group: resources
+  Somatic.CNVs.caseSample.plotDenoisedCopyRatios.memory:
+    group: resources
+  Somatic.CNVs.caseSample.plotDenoisedCopyRatios.timeMinutes:
+    group: resources
+  Somatic.CNVs.caseSample.plotModeledSegments.javaXmx:
+    group: resources
+  Somatic.CNVs.caseSample.plotModeledSegments.memory:
+    group: resources
+  Somatic.CNVs.caseSample.plotModeledSegments.timeMinutes:
+    group: resources
+  Somatic.CNVs.controlSample.callCopyRatioSegments.javaXmx:
+    group: resources
+  Somatic.CNVs.controlSample.callCopyRatioSegments.memory:
+    group: resources
+  Somatic.CNVs.controlSample.callCopyRatioSegments.timeMinutes:
+    group: resources
+  Somatic.CNVs.controlSample.collectAllelicCounts.javaXmx:
+    group: resources
+  Somatic.CNVs.controlSample.collectAllelicCounts.memory:
+    group: resources
+  Somatic.CNVs.controlSample.collectAllelicCounts.timeMinutes:
+    group: resources
+  Somatic.CNVs.controlSample.collectReadCounts.intervalMergingRule:
+    group: Other
+  Somatic.CNVs.controlSample.collectReadCounts.javaXmx:
+    group: resources
+  Somatic.CNVs.controlSample.collectReadCounts.memory:
+    group: resources
+  Somatic.CNVs.controlSample.collectReadCounts.timeMinutes:
+    group: resources
+  Somatic.CNVs.controlSample.denoiseReadCounts.javaXmx:
+    group: resources
+  Somatic.CNVs.controlSample.denoiseReadCounts.memory:
+    group: resources
+  Somatic.CNVs.controlSample.denoiseReadCounts.timeMinutes:
+    group: resources
+  Somatic.CNVs.controlSample.matchedNormalAllelicCounts:
+    group: Other
+  Somatic.CNVs.controlSample.modelSegments.javaXmx:
+    group: resources
+  Somatic.CNVs.controlSample.modelSegments.maximumNumberOfSmoothingIterations:
+    group: Other
+  Somatic.CNVs.controlSample.modelSegments.memory:
+    group: resources
+  Somatic.CNVs.controlSample.modelSegments.minimumTotalAlleleCountCase:
+    group: Other
+  Somatic.CNVs.controlSample.modelSegments.timeMinutes:
+    group: resources
+  Somatic.CNVs.controlSample.plotDenoisedCopyRatios.javaXmx:
+    group: resources
+  Somatic.CNVs.controlSample.plotDenoisedCopyRatios.memory:
+    group: resources
+  Somatic.CNVs.controlSample.plotDenoisedCopyRatios.timeMinutes:
+    group: resources
+  Somatic.CNVs.controlSample.plotModeledSegments.javaXmx:
+    group: resources
+  Somatic.CNVs.controlSample.plotModeledSegments.memory:
+    group: resources
+  Somatic.CNVs.controlSample.plotModeledSegments.timeMinutes:
+    group: resources
+  Somatic.bwaIndex:
+    group: BWAMem
+  Somatic.bwaThreads:
+    group: resources
+  Somatic.cnvMinimumContigLength:
+    group: Other
+  Somatic.cnvPanelOfNormals:
+    group: Other
+  Somatic.controlPostition.dockerImage:
+    group: Other
+  Somatic.convertDockerImagesFile.dockerImage:
+    group: Other
+  Somatic.convertDockerImagesFile.memory:
+    group: resources
+  Somatic.convertDockerImagesFile.timeMinutes:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.PONname:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.annotateIntervals.featureQueryLookahead:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.annotateIntervals.intervalMergingRule:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.annotateIntervals.javaXmx:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.annotateIntervals.mappabilityTrack:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.annotateIntervals.memory:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.annotateIntervals.segmentalDuplicationTrack:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.annotateIntervals.timeMinutes:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.collectReadCounts.intervalMergingRule:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.collectReadCounts.javaXmx:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.collectReadCounts.memory:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.collectReadCounts.timeMinutes:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.javaXmx:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.memory:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.timeMinutes:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.performExplicitGcCorrection:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.preprocessIntervals.binLength:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.preprocessIntervals.intervalMergingRule:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.preprocessIntervals.javaXmx:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.preprocessIntervals.memory:
+    group: resources
+  Somatic.generateCnvPanelOfNormals.preprocessIntervals.padding:
+    group: Other
+  Somatic.generateCnvPanelOfNormals.preprocessIntervals.timeMinutes:
+    group: resources
+  Somatic.performCnvCalling:
+    group: Other
+  Somatic.preprocessedIntervals:
+    group: Other
+  Somatic.regions:
+    group: Other
+  Somatic.runCombineVariants:
+    group: Other
+  Somatic.runManta:
+    group: Other
+  Somatic.runMutect2:
+    group: Mutect
+  Somatic.runStrelka:
+    group: Strelka
+  Somatic.runVardict:
+    group: Vardict
+  Somatic.sampleWorkflow.DONOTDEFINE:
+    group: Other
+  Somatic.sampleWorkflow.bqsr.applyBqsr.javaXmxMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.applyBqsr.memoryMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.baseRecalibrator.javaXmxMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.baseRecalibrator.knownIndelsSitesVCFIndexes:
+    group: BQSR
+  Somatic.sampleWorkflow.bqsr.baseRecalibrator.knownIndelsSitesVCFs:
+    group: BQSR
+  Somatic.sampleWorkflow.bqsr.baseRecalibrator.memoryMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.gatherBamFiles.compressionLevel:
+    group: BQSR
+  Somatic.sampleWorkflow.bqsr.gatherBamFiles.createMd5File:
+    group: BQSR
+  Somatic.sampleWorkflow.bqsr.gatherBamFiles.javaXmxMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.gatherBamFiles.memoryMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.gatherBamFiles.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.gatherBqsr.javaXmxMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.gatherBqsr.memoryMb:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.gatherBqsr.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.splitNCigarReads.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.splitNCigarReads.memory:
+    group: resources
+  Somatic.sampleWorkflow.bqsr.splitSplicedReads:
+    group: BQSR
+  Somatic.sampleWorkflow.bwaMem.compressionLevel:
+    group: BWAMem
+  Somatic.sampleWorkflow.bwaMem.memoryGb:
+    group: resources
+  Somatic.sampleWorkflow.bwaMem.sixtyFour:
+    group: BWAMem
+  Somatic.sampleWorkflow.bwaMem.sortMemoryPerThreadGb:
+    group: resources
+  Somatic.sampleWorkflow.bwaMem.sortThreads:
+    group: resources
+  Somatic.sampleWorkflow.bwaMem.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.bwaMem2Index:
+    group: BWAMem
+  Somatic.sampleWorkflow.bwamem2Mem.compressionLevel:
+    group: BWAMem
+  Somatic.sampleWorkflow.bwamem2Mem.memoryGb:
+    group: resources
+  Somatic.sampleWorkflow.bwamem2Mem.sixtyFour:
+    group: BWAMem
+  Somatic.sampleWorkflow.bwamem2Mem.sortMemoryPerThreadGb:
+    group: resources
+  Somatic.sampleWorkflow.bwamem2Mem.sortThreads:
+    group: resources
+  Somatic.sampleWorkflow.bwamem2Mem.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.markdup.compressionLevel:
+    group: Other
+  Somatic.sampleWorkflow.markdup.hashTableSize:
+    group: Other
+  Somatic.sampleWorkflow.markdup.ioBufferSize:
+    group: Other
+  Somatic.sampleWorkflow.markdup.memoryMb:
+    group: resources
+  Somatic.sampleWorkflow.markdup.overFlowListSize:
+    group: Other
+  Somatic.sampleWorkflow.markdup.removeDuplicates:
+    group: Other
+  Somatic.sampleWorkflow.markdup.sortBufferSize:
+    group: Other
+  Somatic.sampleWorkflow.markdup.threads:
+    group: resources
+  Somatic.sampleWorkflow.markdup.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.metrics.Flagstat.memory:
+    group: resources
+  Somatic.sampleWorkflow.metrics.Flagstat.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.metrics.ampliconIntervals:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.memory:
+    group: resources
+  Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.metrics.collectAlignmentSummaryMetrics:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.meanQualityByCycle:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.picardMetrics.collectBaseDistributionByCycle:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.picardMetrics.collectGcBiasMetrics:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.picardMetrics.collectInsertSizeMetrics:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.picardMetrics.collectQualityYieldMetrics:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.picardMetrics.collectSequencingArtifactMetrics:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.picardMetrics.javaXmxMb:
+    group: resources
+  Somatic.sampleWorkflow.metrics.picardMetrics.memoryMb:
+    group: resources
+  Somatic.sampleWorkflow.metrics.picardMetrics.qualityScoreDistribution:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.picardMetrics.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.metrics.refRefflat:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.rnaSeqMetrics.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.metrics.rnaSeqMetrics.memory:
+    group: resources
+  Somatic.sampleWorkflow.metrics.rnaSeqMetrics.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.metrics.strandedness:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.targetIntervals:
+    group: Metrics
+  Somatic.sampleWorkflow.metrics.targetIntervalsLists.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.metrics.targetIntervalsLists.memory:
+    group: resources
+  Somatic.sampleWorkflow.metrics.targetIntervalsLists.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.metrics.targetMetrics.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.metrics.targetMetrics.memory:
+    group: resources
+  Somatic.sampleWorkflow.metrics.targetMetrics.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.bwa:
+    group: BWAMem
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.colorspace:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.compressionLevel:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.cores:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.cut:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.discardTrimmed:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.discardUntrimmed:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.doubleEncode:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.errorRate:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.front:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.frontRead2:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.infoFilePath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.interleaved:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.length:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.lengthTag:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.maq:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.maskAdapter:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.matchReadWildcards:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.maxN:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.maximumLength:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.memory:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.minimumLength:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.nextseqTrim:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.noIndels:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.noMatchAdapterWildcards:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.noTrim:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.noZeroCap:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.overlap:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.pairFilter:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.prefix:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.qualityBase:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.qualityCutoff:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.restFilePath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.stripF3:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.stripSuffix:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.suffix:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.times:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.tooLongOutputPath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.tooLongPairedOutputPath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.tooShortOutputPath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.tooShortPairedOutputPath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.trimN:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.untrimmedOutputPath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.untrimmedPairedOutputPath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.wildcardFilePath:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.Cutadapt.zeroCap:
+    group: Cutadapt
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.adapters:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.casava:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.contaminants:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.dir:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.format:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.kmers:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.limits:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.memory:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.minLength:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.nano:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.noFilter:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.nogroup:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.noneArray:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.noneFile:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.threads:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.adapters:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.casava:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.contaminants:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.dir:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.format:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.kmers:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.limits:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.memory:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.minLength:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.nano:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noFilter:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.nogroup:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noneArray:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noneFile:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.threads:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead1After.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.adapters:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.casava:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.contaminants:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.dir:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.format:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.kmers:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.limits:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.memory:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.minLength:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.nano:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.noFilter:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.nogroup:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.noneArray:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.noneFile:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.threads:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.adapters:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.casava:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.contaminants:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.dir:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.format:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.javaXmx:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.kmers:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.limits:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.memory:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.minLength:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.nano:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noFilter:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.nogroup:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noneArray:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noneFile:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.threads:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.FastqcRead2After.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.qualityControl.contaminations:
+    group: Other
+  Somatic.sampleWorkflow.qualityControl.extractFastqcZip:
+    group: FastQC
+  Somatic.sampleWorkflow.qualityControl.readgroupName:
+    group: Other
+  Somatic.sampleWorkflow.qualityControl.runAdapterClipping:
+    group: Other
+  Somatic.sampleWorkflow.umiDedup.memory:
+    group: resources
+  Somatic.sampleWorkflow.umiDedup.timeMinutes:
+    group: resources
+  Somatic.sampleWorkflow.umiDedup.umiSeparator:
+    group: Other
+  Somatic.somaticVariantcalling.combineVariants.dockerImage:
+    group: Other
+  Somatic.somaticVariantcalling.combineVariants.filteredRecordsMergeType:
+    group: Other
+  Somatic.somaticVariantcalling.combineVariants.genotypeMergeOption:
+    group: Other
+  Somatic.somaticVariantcalling.combineVariants.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.combineVariants.memory:
+    group: resources
+  Somatic.somaticVariantcalling.combineVariants.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.indelIndex.memory:
+    group: resources
+  Somatic.somaticVariantcalling.indelIndex.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.indelIndex.type:
+    group: Other
+  Somatic.somaticVariantcalling.mutect2.calculateContamination.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.calculateContamination.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.calculateContamination.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.filterMutectCalls.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.filterMutectCalls.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.filterMutectCalls.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.filterMutectCalls.uniqueAltReadCount:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.gatherVcfs.compressionLevel:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.gatherVcfs.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.gatherVcfs.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.gatherVcfs.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.gatherVcfs.useJdkDeflater:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.gatherVcfs.useJdkInflater:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.mergeStats.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.mergeStats.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.mergeStats.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.mutect2.f1r2TarGz:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.mutect2.germlineResource:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.mutect2.germlineResourceIndex:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.mutect2.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.mutect2.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.mutect2.outputStats:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.mutect2.panelOfNormals:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.mutect2.panelOfNormalsIndex:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.mutect2.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.scatterList.memory:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.scatterList.prefix:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.scatterList.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.mutect2.scatterSize:
+    group: Mutect
+  Somatic.somaticVariantcalling.mutect2.scatterSizeMillions:
+    group: Mutect
+  Somatic.somaticVariantcalling.pairedSomaticSeq.exclusionRegion:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.jsmVCF:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.lofreqIndel:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.lofreqSNV:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.memory:
+    group: resources
+  Somatic.somaticVariantcalling.pairedSomaticSeq.museVCF:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.scalpelVCF:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.somaticsniperVCF:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.threads:
+    group: resources
+  Somatic.somaticVariantcalling.pairedSomaticSeq.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.pairedSomaticSeq.varscanIndel:
+    group: Other
+  Somatic.somaticVariantcalling.pairedSomaticSeq.varscanSNV:
+    group: Other
+  Somatic.somaticVariantcalling.pairedTraining.exclusionRegion:
+    group: Other
+  Somatic.somaticVariantcalling.pairedTraining.memory:
+    group: resources
+  Somatic.somaticVariantcalling.pairedTraining.threads:
+    group: resources
+  Somatic.somaticVariantcalling.pairedTraining.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.singleSomaticSeq.exclusionRegion:
+    group: Other
+  Somatic.somaticVariantcalling.singleSomaticSeq.lofreqVCF:
+    group: Other
+  Somatic.somaticVariantcalling.singleSomaticSeq.memory:
+    group: resources
+  Somatic.somaticVariantcalling.singleSomaticSeq.scalpelVCF:
+    group: Other
+  Somatic.somaticVariantcalling.singleSomaticSeq.threads:
+    group: resources
+  Somatic.somaticVariantcalling.singleSomaticSeq.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.singleSomaticSeq.varscanVCF:
+    group: Other
+  Somatic.somaticVariantcalling.singleTraining.exclusionRegion:
+    group: Other
+  Somatic.somaticVariantcalling.singleTraining.memory:
+    group: resources
+  Somatic.somaticVariantcalling.singleTraining.threads:
+    group: resources
+  Somatic.somaticVariantcalling.singleTraining.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.sitesForContamination:
+    group: Other
+  Somatic.somaticVariantcalling.sitesForContaminationIndex:
+    group: Other
+  Somatic.somaticVariantcalling.snvIndex.memory:
+    group: resources
+  Somatic.somaticVariantcalling.snvIndex.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.snvIndex.type:
+    group: Other
+  Somatic.somaticVariantcalling.strelka.addGTFieldIndels.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.addGTFieldIndels.outputVCFName:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.addGTFieldIndels.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.addGTFieldSVs.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.addGTFieldSVs.outputVCFName:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.addGTFieldSVs.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.addGTFieldVariants.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.addGTFieldVariants.outputVCFName:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.addGTFieldVariants.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.bedPrepare.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.bedPrepare.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.combineVariants.dockerImage:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.combineVariants.filteredRecordsMergeType:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.combineVariants.genotypeMergeOption:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.combineVariants.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.combineVariants.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.combineVariants.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.exome:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherIndels.compressionLevel:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherIndels.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherIndels.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherIndels.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherIndels.useJdkDeflater:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherIndels.useJdkInflater:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherSVs.compressionLevel:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherSVs.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherSVs.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherSVs.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherSVs.useJdkDeflater:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherSVs.useJdkInflater:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherVariants.compressionLevel:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherVariants.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherVariants.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherVariants.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.gatherVariants.useJdkDeflater:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.gatherVariants.useJdkInflater:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.indelsIndex.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.indelsIndex.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.indelsIndex.type:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.mantaSomatic.cores:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.mantaSomatic.memoryGb:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.mantaSomatic.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.rna:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.scatterList.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.scatterList.prefix:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.scatterList.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.scatterSize:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.scatterSizeMillions:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.strelkaGermline.cores:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.strelkaGermline.memoryGb:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.strelkaGermline.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.strelkaSomatic.cores:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.strelkaSomatic.doNotDefineThis:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.strelkaSomatic.memoryGb:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.strelkaSomatic.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.svsIndex.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.svsIndex.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.svsIndex.type:
+    group: Strelka
+  Somatic.somaticVariantcalling.strelka.variantsIndex.memory:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.variantsIndex.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.strelka.variantsIndex.type:
+    group: Strelka
+  Somatic.somaticVariantcalling.trainingSet:
+    group: Other
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryAlignments:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.MAPQthreshold:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.excludeSpecificFilter:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.includeFilter:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.memory:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.referenceFasta:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.threads:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.uncompressedBamOutput:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.MAPQthreshold:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.excludeSpecificFilter:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.includeFilter:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.memory:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.referenceFasta:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.threads:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.uncompressedBamOutput:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.gatherVcfs.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.gatherVcfs.memory:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.gatherVcfs.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.scatterList.chunkSize:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.scatterList.memory:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.scatterList.minimumBasesPerFile:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.scatterList.overlap:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.scatterList.prefix:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.scatterList.splitContigs:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.scatterList.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.varDict.chromosomeColumn:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.endColumn:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.geneColumn:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.javaXmx:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.varDict.mappingQuality:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.memory:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.varDict.minimumAlleleFrequency:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.minimumTotalDepth:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.minimumVariantDepth:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.outputAllVariantsAtSamePosition:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.outputCandidateSomaticOnly:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.startColumn:
+    group: Vardict
+  Somatic.somaticVariantcalling.vardict.varDict.threads:
+    group: resources
+  Somatic.somaticVariantcalling.vardict.varDict.timeMinutes:
+    group: resources
+  Somatic.somaticVariantcalling.variantsForContamination:
+    group: Other
+  Somatic.somaticVariantcalling.variantsForContaminationIndex:
+    group: Other
+  Somatic.useBwaKit:
+    group: BWAMem
+
+parameter_group:
+    required_inputs:
+        title: Required
+        description: Required input files for experiment
+        help: Required
+    toplevel:
+        title: Toplevel
+    expanded_inputs:
+        title: Expanded
+        description: Expanded input files for experiment
+        help: Expanded
+    mark_duplicates:
+        title: Mark Duplicates
+    bam_metrics:
+        title: BAM Metrics
+    qc:
+        title: QC
+    multiqc:
+        title: MultiQC
+    star:
+        title: STAR
+    expression:
+        title: Stringtie/htseq
+    variant_calling:
+        title: Variant calling
+        description: Variant calling
+        help: Variant calling
+    lncRNA_detection:
+        title: lncRNA detection
+        description: lncRNA detection
+        help: lncRNA detection
+    hisat2:
+        title: hisat2
+        description: hisat2
+        help: hisat2
+    prep:
+        title: prep
+    scatadapt:
+        title: ScatAdapt
+    resources:
+        title: Resources
+    CNVs:
+        title: CNVs
+    BWAMem:
+        title: BWAMem
+    Cutadapt:
+        title: Cutadapt
+    Mutect:
+        title: Mutect
+    Strelka:
+        title: Strelka
+    Vardict:
+        title: Vardict
+    FastQC:
+        title: FastQC
+    Metrics:
+        title: Metrics
+    BQSR:
+        title: BQSR
+    Other:
+        title: Other

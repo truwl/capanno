@@ -1,0 +1,5239 @@
+[
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.applyBqsr.memoryMb",
+    "name": "Somatic.sampleWorkflow.bqsr.applyBqsr.memoryMb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.useJdkInflater",
+    "name": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.useJdkInflater",
+    "group": "Mutect",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldVariants.outputVCFName",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldVariants.outputVCFName",
+    "group": "Strelka",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.calculateContamination.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.calculateContamination.javaXmx",
+    "group": "resources",
+    "default": "12G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.scatterList.minimumBasesPerFile",
+    "name": "Somatic.somaticVariantcalling.vardict.scatterList.minimumBasesPerFile",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.modelSegments.minimumTotalAlleleCountCase",
+    "name": "Somatic.CNVs.caseSample.modelSegments.minimumTotalAlleleCountCase",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.umiDedup.umiSeparator",
+    "name": "Somatic.sampleWorkflow.umiDedup.umiSeparator",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleSomaticSeq.exclusionRegion",
+    "name": "Somatic.somaticVariantcalling.singleSomaticSeq.exclusionRegion",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.plotDenoisedCopyRatios.timeMinutes",
+    "name": "Somatic.CNVs.caseSample.plotDenoisedCopyRatios.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.collectAllelicCounts.javaXmx",
+    "name": "Somatic.CNVs.controlSample.collectAllelicCounts.javaXmx",
+    "group": "resources",
+    "default": "10G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.memoryMb",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.memoryMb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwaMem.memoryGb",
+    "name": "Somatic.sampleWorkflow.bwaMem.memoryGb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.strelkaGermline.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.strelkaGermline.timeMinutes",
+    "group": "resources",
+    "default": 90,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.adapters",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.adapters",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.endColumn",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.endColumn",
+    "group": "Vardict",
+    "default": 3,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.bwaIndex",
+    "name": "Somatic.bwaIndex",
+    "group": "BWAMem",
+    "param_type": {
+      "items": [
+        {
+          "id": "fastaFile",
+          "name": "fastaFile",
+          "param_type": {
+            "optional": false,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "indexFiles",
+          "name": "indexFiles",
+          "param_type": {
+            "items": {
+              "optional": false,
+              "param_type": "File"
+            },
+            "optional": false,
+            "param_type": "Array"
+          }
+        }
+      ],
+      "optional": true,
+      "param_type": "Struct"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.varscanSNV",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.varscanSNV",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.javaXmx",
+    "group": "resources",
+    "default": "12G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.tag",
+    "name": "Somatic.multiqcTask.tag",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.memory",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.casava",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.casava",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.javaXmx",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.javaXmx",
+    "group": "resources",
+    "default": "1750M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.rnaSeqMetrics.javaXmx",
+    "name": "Somatic.sampleWorkflow.metrics.rnaSeqMetrics.javaXmx",
+    "group": "resources",
+    "default": "8G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.timeMinutes",
+    "group": "resources",
+    "default": 300,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.scatterSize",
+    "name": "Somatic.somaticVariantcalling.strelka.scatterSize",
+    "group": "Strelka",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.prefix",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.prefix",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.stripF3",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.stripF3",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.force",
+    "name": "Somatic.multiqcTask.force",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.javaXmx",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.javaXmx",
+    "group": "resources",
+    "default": "16G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.overlap",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.overlap",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.germlineResourceIndex",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.germlineResourceIndex",
+    "group": "Mutect",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.memoryMb",
+    "name": "Somatic.sampleWorkflow.markdup.memoryMb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.convertDockerImagesFile.timeMinutes",
+    "name": "Somatic.convertDockerImagesFile.timeMinutes",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.noFilter",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.noFilter",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.flat",
+    "name": "Somatic.multiqcTask.flat",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.referenceFastaDict",
+    "name": "Somatic.referenceFastaDict",
+    "group": "required_inputs",
+    "example": "https://storage.googleapis.com/biowdl-Somatic/reference/reference.dict",
+    "param_type": {
+      "optional": false,
+      "param_type": "File"
+    },
+    "description": "The path to the dict file associated with the reference fasta"
+  },
+  {
+    "id": "Somatic.controlPostition.dockerImage",
+    "name": "Somatic.controlPostition.dockerImage",
+    "group": "Other",
+    "default": "python@sha256:e0f6a4df17d5707637fa3557ab266f44dddc46ebfc82b0f1dbe725103961da4e",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.collectReadCounts.timeMinutes",
+    "name": "Somatic.CNVs.caseSample.collectReadCounts.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.variantsForContamination",
+    "name": "Somatic.somaticVariantcalling.variantsForContamination",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.scatterList.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.scatterList.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.combineVariants.dockerImage",
+    "name": "Somatic.somaticVariantcalling.combineVariants.dockerImage",
+    "group": "Other",
+    "default": "broadinstitute/gatk3:3.8-1",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.collectGcBiasMetrics",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.collectGcBiasMetrics",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.callCopyRatioSegments.memory",
+    "name": "Somatic.CNVs.controlSample.callCopyRatioSegments.memory",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.snvIndex.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.snvIndex.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleSomaticSeq.varscanVCF",
+    "name": "Somatic.somaticVariantcalling.singleSomaticSeq.varscanVCF",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.variantsIndex.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.variantsIndex.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.annotateIntervals.mappabilityTrack",
+    "name": "Somatic.generateCnvPanelOfNormals.annotateIntervals.mappabilityTrack",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.modelSegments.timeMinutes",
+    "name": "Somatic.CNVs.controlSample.modelSegments.timeMinutes",
+    "group": "resources",
+    "default": 60,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.combineVariants.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.combineVariants.timeMinutes",
+    "group": "resources",
+    "default": 180,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noFilter",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noFilter",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.denoiseReadCounts.javaXmx",
+    "name": "Somatic.CNVs.controlSample.denoiseReadCounts.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwaMem.sortThreads",
+    "name": "Somatic.sampleWorkflow.bwaMem.sortThreads",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherVariants.useJdkDeflater",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherVariants.useJdkDeflater",
+    "group": "Strelka",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.panelOfNormalsIndex",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.panelOfNormalsIndex",
+    "group": "Mutect",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.geneColumn",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.geneColumn",
+    "group": "Vardict",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.combineVariants.filteredRecordsMergeType",
+    "name": "Somatic.somaticVariantcalling.combineVariants.filteredRecordsMergeType",
+    "group": "Other",
+    "default": "KEEP_IF_ANY_UNFILTERED",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.useJdkDeflater",
+    "name": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.useJdkDeflater",
+    "group": "Mutect",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.dataFormat",
+    "name": "Somatic.multiqcTask.dataFormat",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.runCombineVariants",
+    "name": "Somatic.runCombineVariants",
+    "group": "Other",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.kmers",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.kmers",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.exclusionRegion",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.exclusionRegion",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.javaXmxMb",
+    "name": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.javaXmxMb",
+    "group": "resources",
+    "default": 1024,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.plotDenoisedCopyRatios.javaXmx",
+    "name": "Somatic.CNVs.caseSample.plotDenoisedCopyRatios.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.format",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.format",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.nogroup",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.nogroup",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.targetMetrics.javaXmx",
+    "name": "Somatic.sampleWorkflow.metrics.targetMetrics.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.annotateIntervals.intervalMergingRule",
+    "name": "Somatic.generateCnvPanelOfNormals.annotateIntervals.intervalMergingRule",
+    "group": "Other",
+    "default": "OVERLAPPING_ONLY",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noneFile",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noneFile",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.threads",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldIndels.outputVCFName",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldIndels.outputVCFName",
+    "group": "Strelka",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.rnaSeqMetrics.timeMinutes",
+    "name": "Somatic.sampleWorkflow.metrics.rnaSeqMetrics.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherIndels.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherIndels.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.module",
+    "name": "Somatic.multiqcTask.module",
+    "group": "multiqc",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "String"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.adapterForward",
+    "name": "Somatic.adapterForward",
+    "group": "scatadapt",
+    "default": "AGATCGGAAGAG",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    },
+    "description": "Used to set a forward read adapter. Default Illumina Universal Adapter  AGATCGGAAGAG"
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooShortPairedOutputPath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooShortPairedOutputPath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.combineVariants.javaXmx",
+    "name": "Somatic.somaticVariantcalling.combineVariants.javaXmx",
+    "group": "resources",
+    "default": "12G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.adapters",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.adapters",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.referenceFasta",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.referenceFasta",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherIndels.useJdkInflater",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherIndels.useJdkInflater",
+    "group": "Strelka",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedTraining.threads",
+    "name": "Somatic.somaticVariantcalling.pairedTraining.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.trainingSet",
+    "name": "Somatic.somaticVariantcalling.trainingSet",
+    "group": "Other",
+    "param_type": {
+      "items": [
+        {
+          "id": "truthIndel",
+          "name": "truthIndel",
+          "param_type": {
+            "optional": false,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "normalBam",
+          "name": "normalBam",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "truthSNV",
+          "name": "truthSNV",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "lofreqSNV",
+          "name": "lofreqSNV",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "lofreqIndel",
+          "name": "lofreqIndel",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "mutect2VCF",
+          "name": "mutect2VCF",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "strelkaSNV",
+          "name": "strelkaSNV",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "strelkaIndel",
+          "name": "strelkaIndel",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "tumorBam",
+          "name": "tumorBam",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "normalBamIndex",
+          "name": "normalBamIndex",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "scalpelVCF",
+          "name": "scalpelVCF",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "tumorBamIndex",
+          "name": "tumorBamIndex",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "varscanSNV",
+          "name": "varscanSNV",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "somaticsniperVCF",
+          "name": "somaticsniperVCF",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "vardictVCF",
+          "name": "vardictVCF",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "jsmVCF",
+          "name": "jsmVCF",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "varscanIndel",
+          "name": "varscanIndel",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "museVCF",
+          "name": "museVCF",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        }
+      ],
+      "optional": true,
+      "param_type": "Struct"
+    }
+  },
+  {
+    "id": "Somatic.outputDir",
+    "name": "Somatic.outputDir",
+    "group": "toplevel",
+    "default": ".",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.collectBaseDistributionByCycle",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.collectBaseDistributionByCycle",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.limits",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.limits",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.padding",
+    "name": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.padding",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.javaXmx",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.javaXmx",
+    "group": "resources",
+    "default": "1750M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.timeMinutes",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.contaminations",
+    "name": "Somatic.sampleWorkflow.qualityControl.contaminations",
+    "group": "Other",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "String"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.modelSegments.timeMinutes",
+    "name": "Somatic.CNVs.caseSample.modelSegments.timeMinutes",
+    "group": "resources",
+    "default": 60,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.noneFile",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.noneFile",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.javaXmx",
+    "group": "resources",
+    "default": "12G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldIndels.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldIndels.timeMinutes",
+    "group": "resources",
+    "default": 20,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.calculateContamination.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.calculateContamination.timeMinutes",
+    "group": "resources",
+    "default": 180,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.timeMinutes",
+    "group": "resources",
+    "default": 120,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleSomaticSeq.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.singleSomaticSeq.timeMinutes",
+    "group": "resources",
+    "default": 60,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.convertDockerImagesFile.dockerImage",
+    "name": "Somatic.convertDockerImagesFile.dockerImage",
+    "group": "Other",
+    "default": "quay.io/biocontainers/biowdl-input-converter:0.3.0--pyhdfd78af_0",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.splitNCigarReads.memory",
+    "name": "Somatic.sampleWorkflow.bqsr.splitNCigarReads.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.cores",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.cores",
+    "group": "resources",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.compressionLevel",
+    "name": "Somatic.sampleWorkflow.markdup.compressionLevel",
+    "group": "Other",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.threads",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.combineVariants.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.combineVariants.timeMinutes",
+    "group": "resources",
+    "default": 180,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maximumLength",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maximumLength",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.collectQualityYieldMetrics",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.collectQualityYieldMetrics",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooLongPairedOutputPath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooLongPairedOutputPath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.startColumn",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.startColumn",
+    "group": "Vardict",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.variantsIndex.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.variantsIndex.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.binLength",
+    "name": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.binLength",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.memory",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.memory",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.memory",
+    "group": "resources",
+    "default": "1G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noTrim",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noTrim",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.strelkaGermline.memoryGb",
+    "name": "Somatic.somaticVariantcalling.strelka.strelkaGermline.memoryGb",
+    "group": "resources",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.splitNCigarReads.javaXmx",
+    "name": "Somatic.sampleWorkflow.bqsr.splitNCigarReads.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.panelOfNormals",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.panelOfNormals",
+    "group": "Mutect",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.combineVariants.memory",
+    "name": "Somatic.somaticVariantcalling.combineVariants.memory",
+    "group": "resources",
+    "default": "13G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.scatterList.splitContigs",
+    "name": "Somatic.scatterList.splitContigs",
+    "group": "scatadapt",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.minimumTotalDepth",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.minimumTotalDepth",
+    "group": "Vardict",
+    "default": 8,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.modelSegments.javaXmx",
+    "name": "Somatic.CNVs.controlSample.modelSegments.javaXmx",
+    "group": "resources",
+    "default": "10G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwamem2Mem.compressionLevel",
+    "name": "Somatic.sampleWorkflow.bwamem2Mem.compressionLevel",
+    "group": "BWAMem",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.minimumLength",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.minimumLength",
+    "group": "Cutadapt",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.ignore",
+    "name": "Somatic.multiqcTask.ignore",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwamem2Mem.sixtyFour",
+    "name": "Somatic.sampleWorkflow.bwamem2Mem.sixtyFour",
+    "group": "BWAMem",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.dirs",
+    "name": "Somatic.multiqcTask.dirs",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.scalpelVCF",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.scalpelVCF",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.hashTableSize",
+    "name": "Somatic.sampleWorkflow.markdup.hashTableSize",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.createMd5File",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.createMd5File",
+    "group": "BQSR",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.callCopyRatioSegments.timeMinutes",
+    "name": "Somatic.CNVs.caseSample.callCopyRatioSegments.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.collectAllelicCounts.timeMinutes",
+    "name": "Somatic.CNVs.caseSample.collectAllelicCounts.timeMinutes",
+    "group": "resources",
+    "default": 120,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.exclude",
+    "name": "Somatic.multiqcTask.exclude",
+    "group": "multiqc",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "String"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.platform",
+    "name": "Somatic.platform",
+    "group": "toplevel",
+    "default": "illumina",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.memory",
+    "name": "Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedTraining.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.pairedTraining.timeMinutes",
+    "group": "resources",
+    "default": 240,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.scatterList.prefix",
+    "name": "Somatic.somaticVariantcalling.vardict.scatterList.prefix",
+    "group": "Vardict",
+    "default": "./scatter",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.lengthTag",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.lengthTag",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.gatherVcfs.javaXmx",
+    "name": "Somatic.somaticVariantcalling.vardict.gatherVcfs.javaXmx",
+    "group": "resources",
+    "default": "8G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooLongOutputPath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooLongOutputPath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.nano",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.nano",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.annotateIntervals.timeMinutes",
+    "name": "Somatic.generateCnvPanelOfNormals.annotateIntervals.timeMinutes",
+    "group": "resources",
+    "default": 5,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.format",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.format",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.dir",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.dir",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.collectAllelicCounts.memory",
+    "name": "Somatic.CNVs.caseSample.collectAllelicCounts.memory",
+    "group": "resources",
+    "default": "11G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.indelIndex.type",
+    "name": "Somatic.somaticVariantcalling.indelIndex.type",
+    "group": "Other",
+    "default": "vcf",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.scatterList.timeMinutes",
+    "name": "Somatic.scatterList.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.threads",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.matchedNormalAllelicCounts",
+    "name": "Somatic.CNVs.controlSample.matchedNormalAllelicCounts",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.callCopyRatioSegments.timeMinutes",
+    "name": "Somatic.CNVs.controlSample.callCopyRatioSegments.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.front",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.front",
+    "group": "Cutadapt",
+    "default": [
+
+    ],
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "String"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherVariants.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherVariants.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.timeMinutes",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.runAdapterClipping",
+    "name": "Somatic.sampleWorkflow.qualityControl.runAdapterClipping",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.nogroup",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.nogroup",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.plotModeledSegments.javaXmx",
+    "name": "Somatic.CNVs.caseSample.plotModeledSegments.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.callCopyRatioSegments.javaXmx",
+    "name": "Somatic.CNVs.controlSample.callCopyRatioSegments.javaXmx",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.times",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.times",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.bedPrepare.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.bedPrepare.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.fileList",
+    "name": "Somatic.multiqcTask.fileList",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.varscanIndel",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.varscanIndel",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.timeMinutes",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.collectReadCounts.javaXmx",
+    "name": "Somatic.generateCnvPanelOfNormals.collectReadCounts.javaXmx",
+    "group": "resources",
+    "default": "7G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.extractFastqcZip",
+    "name": "Somatic.sampleWorkflow.qualityControl.extractFastqcZip",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.Flagstat.timeMinutes",
+    "name": "Somatic.sampleWorkflow.metrics.Flagstat.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.combineVariants.dockerImage",
+    "name": "Somatic.somaticVariantcalling.strelka.combineVariants.dockerImage",
+    "group": "Strelka",
+    "default": "broadinstitute/gatk3:3.8-1",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.scatterList.overlap",
+    "name": "Somatic.somaticVariantcalling.vardict.scatterList.overlap",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.runStrelka",
+    "name": "Somatic.runStrelka",
+    "group": "Strelka",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.outputStats",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.outputStats",
+    "group": "Mutect",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mergeStats.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.mergeStats.timeMinutes",
+    "group": "resources",
+    "default": 30,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.template",
+    "name": "Somatic.multiqcTask.template",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedTraining.memory",
+    "name": "Somatic.somaticVariantcalling.pairedTraining.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noneArray",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noneArray",
+    "group": "FastQC",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "File"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.javaXmx",
+    "name": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.collectAllelicCounts.javaXmx",
+    "name": "Somatic.CNVs.caseSample.collectAllelicCounts.javaXmx",
+    "group": "resources",
+    "default": "10G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.collectReadCounts.memory",
+    "name": "Somatic.CNVs.caseSample.collectReadCounts.memory",
+    "group": "resources",
+    "default": "8G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.scatterSize",
+    "name": "Somatic.scatterSize",
+    "group": "scatadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.casava",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.casava",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.rnaSeqMetrics.memory",
+    "name": "Somatic.sampleWorkflow.metrics.rnaSeqMetrics.memory",
+    "group": "resources",
+    "default": "9G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.infoFilePath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.infoFilePath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherSVs.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherSVs.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldIndels.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldIndels.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.threads",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.doubleEncode",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.doubleEncode",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.preprocessedIntervals",
+    "name": "Somatic.preprocessedIntervals",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.lint",
+    "name": "Somatic.multiqcTask.lint",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.scatterList.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.vardict.scatterList.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.scatterList.memory",
+    "name": "Somatic.scatterList.memory",
+    "group": "resources",
+    "default": "256M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldVariants.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldVariants.timeMinutes",
+    "group": "resources",
+    "default": 20,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.svsIndex.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.svsIndex.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.memory",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleTraining.threads",
+    "name": "Somatic.somaticVariantcalling.singleTraining.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.collectReadCounts.javaXmx",
+    "name": "Somatic.CNVs.controlSample.collectReadCounts.javaXmx",
+    "group": "resources",
+    "default": "7G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.lofreqSNV",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.lofreqSNV",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.suffix",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.suffix",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.denoiseReadCounts.javaXmx",
+    "name": "Somatic.CNVs.caseSample.denoiseReadCounts.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherSVs.javaXmx",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherSVs.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.scatterList.chunkSize",
+    "name": "Somatic.somaticVariantcalling.vardict.scatterList.chunkSize",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.runVardict",
+    "name": "Somatic.runVardict",
+    "group": "Vardict",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.umiDedup.timeMinutes",
+    "name": "Somatic.sampleWorkflow.umiDedup.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.collectInsertSizeMetrics",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.collectInsertSizeMetrics",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.discardTrimmed",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.discardTrimmed",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.noFilter",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.noFilter",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.targetIntervals",
+    "name": "Somatic.sampleWorkflow.metrics.targetIntervals",
+    "group": "Metrics",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "File"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.javaXmx",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.javaXmx",
+    "group": "resources",
+    "default": "1750M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.timeMinutes",
+    "group": "resources",
+    "default": 60,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.variantsForContaminationIndex",
+    "name": "Somatic.somaticVariantcalling.variantsForContaminationIndex",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maq",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maq",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.collectReadCounts.timeMinutes",
+    "name": "Somatic.CNVs.controlSample.collectReadCounts.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noMatchAdapterWildcards",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noMatchAdapterWildcards",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.pairFilter",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.pairFilter",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noZeroCap",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noZeroCap",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.dir",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.dir",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.ampliconIntervals",
+    "name": "Somatic.sampleWorkflow.metrics.ampliconIntervals",
+    "group": "Metrics",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.modelSegments.javaXmx",
+    "name": "Somatic.CNVs.caseSample.modelSegments.javaXmx",
+    "group": "resources",
+    "default": "10G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.annotateIntervals.featureQueryLookahead",
+    "name": "Somatic.generateCnvPanelOfNormals.annotateIntervals.featureQueryLookahead",
+    "group": "Other",
+    "default": 1000000,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.indelsIndex.type",
+    "name": "Somatic.somaticVariantcalling.strelka.indelsIndex.type",
+    "group": "Strelka",
+    "default": "vcf",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwamem2Mem.sortThreads",
+    "name": "Somatic.sampleWorkflow.bwamem2Mem.sortThreads",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.modelSegments.maximumNumberOfSmoothingIterations",
+    "name": "Somatic.CNVs.controlSample.modelSegments.maximumNumberOfSmoothingIterations",
+    "group": "Other",
+    "default": 10,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.Flagstat.memory",
+    "name": "Somatic.sampleWorkflow.metrics.Flagstat.memory",
+    "group": "resources",
+    "default": "256M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.stripSuffix",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.stripSuffix",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.modelSegments.maximumNumberOfSmoothingIterations",
+    "name": "Somatic.CNVs.caseSample.modelSegments.maximumNumberOfSmoothingIterations",
+    "group": "Other",
+    "default": 10,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.adapterReverse",
+    "name": "Somatic.adapterReverse",
+    "group": "scatadapt",
+    "default": "AGATCGGAAGAG",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    },
+    "description": "Used to set a reverse read adapter (for paired-end reads). Default Illumina Universal Adapter  AGATCGGAAGAG"
+  },
+  {
+    "id": "Somatic.multiqcTask.title",
+    "name": "Somatic.multiqcTask.title",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.dir",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.dir",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherVariants.compressionLevel",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherVariants.compressionLevel",
+    "group": "Strelka",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.plotModeledSegments.javaXmx",
+    "name": "Somatic.CNVs.controlSample.plotModeledSegments.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleSomaticSeq.scalpelVCF",
+    "name": "Somatic.somaticVariantcalling.singleSomaticSeq.scalpelVCF",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.dbsnpVCFIndex",
+    "name": "Somatic.dbsnpVCFIndex",
+    "group": "variant_calling",
+    "param_type": {
+      "optional": false,
+      "param_type": "File"
+    },
+    "description": "The index for the dbsnpVCF"
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.casava",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.casava",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.snvIndex.type",
+    "name": "Somatic.somaticVariantcalling.snvIndex.type",
+    "group": "Other",
+    "default": "vcf",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.sitesForContamination",
+    "name": "Somatic.somaticVariantcalling.sitesForContamination",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.scatterList.prefix",
+    "name": "Somatic.somaticVariantcalling.mutect2.scatterList.prefix",
+    "group": "Mutect",
+    "default": "scatters/scatter-",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.pdf",
+    "name": "Somatic.multiqcTask.pdf",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.plotModeledSegments.timeMinutes",
+    "name": "Somatic.CNVs.controlSample.plotModeledSegments.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.museVCF",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.museVCF",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.clConfig",
+    "name": "Somatic.multiqcTask.clConfig",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.timeMinutes",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.denoiseReadCounts.memory",
+    "name": "Somatic.CNVs.caseSample.denoiseReadCounts.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.memory",
+    "name": "Somatic.multiqcTask.memory",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.dbsnpVCF",
+    "name": "Somatic.dbsnpVCF",
+    "group": "variant_calling",
+    "example": "https://storage.googleapis.com/biowdl-Somatic/wgs2.vcf.gz",
+    "param_type": {
+      "optional": false,
+      "param_type": "File"
+    },
+    "description": "A VCF file to aid in the variantcalling"
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.applyBqsr.javaXmxMb",
+    "name": "Somatic.sampleWorkflow.bqsr.applyBqsr.javaXmxMb",
+    "group": "resources",
+    "default": 2048,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleTraining.memory",
+    "name": "Somatic.somaticVariantcalling.singleTraining.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.knownIndelsSitesVCFs",
+    "name": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.knownIndelsSitesVCFs",
+    "group": "BQSR",
+    "default": [
+
+    ],
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "File"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.collectAllelicCounts.timeMinutes",
+    "name": "Somatic.CNVs.controlSample.collectAllelicCounts.timeMinutes",
+    "group": "resources",
+    "default": 120,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.indelsIndex.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.indelsIndex.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.sampleNames",
+    "name": "Somatic.multiqcTask.sampleNames",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.germlineResource",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.germlineResource",
+    "group": "Mutect",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldSVs.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldSVs.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleSomaticSeq.threads",
+    "name": "Somatic.somaticVariantcalling.singleSomaticSeq.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.targetIntervalsLists.javaXmx",
+    "name": "Somatic.sampleWorkflow.metrics.targetIntervalsLists.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.scatterList.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.scatterList.memory",
+    "group": "resources",
+    "default": "256M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.collectReadCounts.intervalMergingRule",
+    "name": "Somatic.CNVs.caseSample.collectReadCounts.intervalMergingRule",
+    "group": "Other",
+    "default": "OVERLAPPING_ONLY",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.scatterList.memory",
+    "name": "Somatic.somaticVariantcalling.vardict.scatterList.memory",
+    "group": "resources",
+    "default": "256M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.nogroup",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.nogroup",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.mappingQuality",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.mappingQuality",
+    "group": "Vardict",
+    "default": 20,
+    "param_type": {
+      "optional": true,
+      "param_type": "Float"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.collectReadCounts.intervalMergingRule",
+    "name": "Somatic.generateCnvPanelOfNormals.collectReadCounts.intervalMergingRule",
+    "group": "Other",
+    "default": "OVERLAPPING_ONLY",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.performExplicitGcCorrection",
+    "name": "Somatic.generateCnvPanelOfNormals.performExplicitGcCorrection",
+    "group": "Other",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noneArray",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noneArray",
+    "group": "FastQC",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "File"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.collectAlignmentSummaryMetrics",
+    "name": "Somatic.sampleWorkflow.metrics.collectAlignmentSummaryMetrics",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.exome",
+    "name": "Somatic.somaticVariantcalling.strelka.exome",
+    "group": "Strelka",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.zipDataDir",
+    "name": "Somatic.multiqcTask.zipDataDir",
+    "group": "multiqc",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwamem2Mem.timeMinutes",
+    "name": "Somatic.sampleWorkflow.bwamem2Mem.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.somaticsniperVCF",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.somaticsniperVCF",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.errorRate",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.errorRate",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Float"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.timeMinutes",
+    "group": "resources",
+    "default": 120,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.config",
+    "name": "Somatic.multiqcTask.config",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.meanQualityByCycle",
+    "name": "Somatic.sampleWorkflow.metrics.meanQualityByCycle",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.bwaThreads",
+    "name": "Somatic.bwaThreads",
+    "group": "resources",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.restFilePath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.restFilePath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.untrimmedPairedOutputPath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.untrimmedPairedOutputPath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.memory",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.runManta",
+    "name": "Somatic.runManta",
+    "group": "Other",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.collectReadCounts.memory",
+    "name": "Somatic.CNVs.controlSample.collectReadCounts.memory",
+    "group": "resources",
+    "default": "8G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.scatterList.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.scatterList.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwaMem.compressionLevel",
+    "name": "Somatic.sampleWorkflow.bwaMem.compressionLevel",
+    "group": "BWAMem",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.gatherVcfs.memory",
+    "name": "Somatic.somaticVariantcalling.vardict.gatherVcfs.memory",
+    "group": "resources",
+    "default": "9G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldVariants.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldVariants.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.svsIndex.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.svsIndex.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.learnReadOrientationModel.memory",
+    "group": "resources",
+    "default": "13G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.kmers",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.kmers",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.targetMetrics.memory",
+    "name": "Somatic.sampleWorkflow.metrics.targetMetrics.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.collectSequencingArtifactMetrics",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.collectSequencingArtifactMetrics",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.excludeSpecificFilter",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.excludeSpecificFilter",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.DONOTDEFINE",
+    "name": "Somatic.sampleWorkflow.DONOTDEFINE",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.plotDenoisedCopyRatios.memory",
+    "name": "Somatic.CNVs.caseSample.plotDenoisedCopyRatios.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.MAPQthreshold",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.MAPQthreshold",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.timeMinutes",
+    "group": "resources",
+    "default": 240,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.mantaSomatic.memoryGb",
+    "name": "Somatic.somaticVariantcalling.strelka.mantaSomatic.memoryGb",
+    "group": "resources",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.minLength",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.minLength",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.lofreqIndel",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.lofreqIndel",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.regions",
+    "name": "Somatic.regions",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.modelSegments.memory",
+    "name": "Somatic.CNVs.controlSample.modelSegments.memory",
+    "group": "resources",
+    "default": "11G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.timeMinutes",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.timeMinutes",
+    "name": "Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.timeMinutes",
+    "group": "resources",
+    "default": 5,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.contaminants",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.contaminants",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.combineVariants.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.combineVariants.memory",
+    "group": "resources",
+    "default": "13G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.referenceFastaFai",
+    "name": "Somatic.referenceFastaFai",
+    "group": "required_inputs",
+    "example": "https://storage.googleapis.com/biowdl-Somatic/reference/reference.fasta.fai",
+    "param_type": {
+      "optional": false,
+      "param_type": "File"
+    },
+    "description": "The path to the index associated with the reference fasta"
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.qualityBase",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.qualityBase",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.contaminants",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.contaminants",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.javaXmxMb",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.javaXmxMb",
+    "group": "resources",
+    "default": 1024,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.memoryMb",
+    "name": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.memoryMb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.convertDockerImagesFile.memory",
+    "name": "Somatic.convertDockerImagesFile.memory",
+    "group": "resources",
+    "default": "128M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.nextseqTrim",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.nextseqTrim",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooShortOutputPath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.tooShortOutputPath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.qualityCutoff",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.qualityCutoff",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.timeMinutes",
+    "name": "Somatic.sampleWorkflow.markdup.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.cut",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.cut",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherIndels.javaXmx",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherIndels.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.knownIndelsSitesVCFIndexes",
+    "name": "Somatic.sampleWorkflow.bqsr.baseRecalibrator.knownIndelsSitesVCFIndexes",
+    "group": "BQSR",
+    "default": [
+
+    ],
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "File"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.collectAllelicCounts.memory",
+    "name": "Somatic.CNVs.controlSample.collectAllelicCounts.memory",
+    "group": "resources",
+    "default": "11G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.callCopyRatioSegments.javaXmx",
+    "name": "Somatic.CNVs.caseSample.callCopyRatioSegments.javaXmx",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.fileName",
+    "name": "Somatic.multiqcTask.fileName",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.collectUmiStats",
+    "name": "Somatic.collectUmiStats",
+    "group": "toplevel",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.timeMinutes",
+    "group": "resources",
+    "default": 90,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.uniqueAltReadCount",
+    "name": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.uniqueAltReadCount",
+    "group": "Mutect",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.modelSegments.memory",
+    "name": "Somatic.CNVs.caseSample.modelSegments.memory",
+    "group": "resources",
+    "default": "11G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.nano",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.nano",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.colorspace",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.colorspace",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.casava",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.casava",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.targetIntervalsLists.memory",
+    "name": "Somatic.sampleWorkflow.metrics.targetIntervalsLists.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwamem2Mem.sortMemoryPerThreadGb",
+    "name": "Somatic.sampleWorkflow.bwamem2Mem.sortMemoryPerThreadGb",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.denoiseReadCounts.memory",
+    "name": "Somatic.CNVs.controlSample.denoiseReadCounts.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.compressionLevel",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBamFiles.compressionLevel",
+    "group": "BQSR",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwamem2Mem.memoryGb",
+    "name": "Somatic.sampleWorkflow.bwamem2Mem.memoryGb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedTraining.exclusionRegion",
+    "name": "Somatic.somaticVariantcalling.pairedTraining.exclusionRegion",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.memory",
+    "group": "resources",
+    "default": "13G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.collectReadCounts.javaXmx",
+    "name": "Somatic.CNVs.caseSample.collectReadCounts.javaXmx",
+    "group": "resources",
+    "default": "7G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.memoryMb",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.memoryMb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.outputCandidateSomaticOnly",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.outputCandidateSomaticOnly",
+    "group": "Vardict",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.matchReadWildcards",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.matchReadWildcards",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.mantaSomatic.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.mantaSomatic.timeMinutes",
+    "group": "resources",
+    "default": 60,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.threads",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.adapters",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.adapters",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.memory",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.memory",
+    "group": "resources",
+    "default": "1G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.scatterList.prefix",
+    "name": "Somatic.scatterList.prefix",
+    "group": "scatadapt",
+    "default": "scatters/scatter-",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.compressionLevel",
+    "name": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.compressionLevel",
+    "group": "Mutect",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.scatterSizeMillions",
+    "name": "Somatic.scatterSizeMillions",
+    "group": "scatadapt",
+    "default": 1000,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    },
+    "description": "The size of the scattered regions in million bases for the GATK subworkflows. Scattering is used to speed up certain processes. The genome will be seperated into multiple chunks (scatters) which will be processed in their own job, allowing for parallel processing. Higher values will result in a lower number of jobs. The optimal value here will depend on the available resources."
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.sortBufferSize",
+    "name": "Somatic.sampleWorkflow.markdup.sortBufferSize",
+    "group": "Other",
+    "default": 2048,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.untrimmedOutputPath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.untrimmedOutputPath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.runMutect2",
+    "name": "Somatic.runMutect2",
+    "group": "Mutect",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.jsmVCF",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.jsmVCF",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noneFile",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.noneFile",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.memory",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.overFlowListSize",
+    "name": "Somatic.sampleWorkflow.markdup.overFlowListSize",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherVariants.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherVariants.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.refRefflat",
+    "name": "Somatic.sampleWorkflow.metrics.refRefflat",
+    "group": "Metrics",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.bedPrepare.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.bedPrepare.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.export",
+    "name": "Somatic.multiqcTask.export",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesTumor.timeMinutes",
+    "group": "resources",
+    "default": 120,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.noneArray",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.noneArray",
+    "group": "FastQC",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "File"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.javaXmx",
+    "group": "resources",
+    "default": "12G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherSVs.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherSVs.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.removeDuplicates",
+    "name": "Somatic.sampleWorkflow.markdup.removeDuplicates",
+    "group": "Other",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.splitSplicedReads",
+    "name": "Somatic.sampleWorkflow.bqsr.splitSplicedReads",
+    "group": "BQSR",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.combineVariants.genotypeMergeOption",
+    "name": "Somatic.somaticVariantcalling.combineVariants.genotypeMergeOption",
+    "group": "Other",
+    "default": "UNIQUIFY",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.zeroCap",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.zeroCap",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherVariants.javaXmx",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherVariants.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.fullNames",
+    "name": "Somatic.multiqcTask.fullNames",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.uncompressedBamOutput",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.uncompressedBamOutput",
+    "group": "Vardict",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.umiDedup.memory",
+    "name": "Somatic.sampleWorkflow.umiDedup.memory",
+    "group": "resources",
+    "default": "25G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.memory",
+    "name": "Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.memory",
+    "group": "resources",
+    "default": "8G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldSVs.outputVCFName",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldSVs.outputVCFName",
+    "group": "Strelka",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.megaQCUpload",
+    "name": "Somatic.multiqcTask.megaQCUpload",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.javaXmx",
+    "name": "Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.javaXmx",
+    "group": "resources",
+    "default": "7G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.trimN",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.trimN",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.cnvPanelOfNormals",
+    "name": "Somatic.cnvPanelOfNormals",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.plotDenoisedCopyRatios.timeMinutes",
+    "name": "Somatic.CNVs.controlSample.plotDenoisedCopyRatios.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.qualityScoreDistribution",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.qualityScoreDistribution",
+    "group": "Metrics",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.callCopyRatioSegments.memory",
+    "name": "Somatic.CNVs.caseSample.callCopyRatioSegments.memory",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.limits",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.limits",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.format",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.format",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.nano",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.nano",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.useBwaKit",
+    "name": "Somatic.useBwaKit",
+    "group": "BWAMem",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.dirsDepth",
+    "name": "Somatic.multiqcTask.dirsDepth",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherSVs.compressionLevel",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherSVs.compressionLevel",
+    "group": "Strelka",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.plotDenoisedCopyRatios.javaXmx",
+    "name": "Somatic.CNVs.controlSample.plotDenoisedCopyRatios.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.annotateIntervals.segmentalDuplicationTrack",
+    "name": "Somatic.generateCnvPanelOfNormals.annotateIntervals.segmentalDuplicationTrack",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.variantsIndex.type",
+    "name": "Somatic.somaticVariantcalling.strelka.variantsIndex.type",
+    "group": "Strelka",
+    "default": "vcf",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.dir",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.dir",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.kmers",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.kmers",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.timeMinutes",
+    "name": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.timeMinutes",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.frontRead2",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.frontRead2",
+    "group": "Cutadapt",
+    "default": [
+
+    ],
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "String"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.cnvMinimumContigLength",
+    "name": "Somatic.cnvMinimumContigLength",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.timeMinutes",
+    "name": "Somatic.generateCnvPanelOfNormals.createReadCountPanelOfNormals.timeMinutes",
+    "group": "resources",
+    "default": 5,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.limits",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.limits",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.minLength",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.minLength",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.dataDir",
+    "name": "Somatic.multiqcTask.dataDir",
+    "group": "multiqc",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBqsr.javaXmxMb",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBqsr.javaXmxMb",
+    "group": "resources",
+    "default": 256,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwaMem.sixtyFour",
+    "name": "Somatic.sampleWorkflow.bwaMem.sixtyFour",
+    "group": "BWAMem",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.threads",
+    "name": "Somatic.sampleWorkflow.markdup.threads",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.denoiseReadCounts.timeMinutes",
+    "name": "Somatic.CNVs.controlSample.denoiseReadCounts.timeMinutes",
+    "group": "resources",
+    "default": 5,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.indelIndex.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.indelIndex.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.calculateContamination.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.calculateContamination.memory",
+    "group": "resources",
+    "default": "13G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noIndels",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.noIndels",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBqsr.timeMinutes",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBqsr.timeMinutes",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.kmers",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.kmers",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maxN",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maxN",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.MAPQthreshold",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.MAPQthreshold",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.interleaved",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.interleaved",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.memory",
+    "group": "resources",
+    "default": "13G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.dockerImagesFile",
+    "name": "Somatic.dockerImagesFile",
+    "group": "required_inputs",
+    "example": "https://storage.googleapis.com/biowdl-Somatic/dockerImages.yml",
+    "param_type": {
+      "optional": false,
+      "param_type": "File"
+    },
+    "description": "A file listing the used docker images"
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.outputAllVariantsAtSamePosition",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.outputAllVariantsAtSamePosition",
+    "group": "Vardict",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.annotatedIntervals",
+    "name": "Somatic.CNVs.annotatedIntervals",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.comment",
+    "name": "Somatic.multiqcTask.comment",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.plotDenoisedCopyRatios.memory",
+    "name": "Somatic.CNVs.controlSample.plotDenoisedCopyRatios.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.scatterSizeMillions",
+    "name": "Somatic.somaticVariantcalling.mutect2.scatterSizeMillions",
+    "group": "Mutect",
+    "default": 1000,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.collectReadCounts.timeMinutes",
+    "name": "Somatic.generateCnvPanelOfNormals.collectReadCounts.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.threads",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleTraining.exclusionRegion",
+    "name": "Somatic.somaticVariantcalling.singleTraining.exclusionRegion",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bqsr.gatherBqsr.memoryMb",
+    "name": "Somatic.sampleWorkflow.bqsr.gatherBqsr.memoryMb",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.format",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.format",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.minLength",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.minLength",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.plotModeledSegments.memory",
+    "name": "Somatic.CNVs.controlSample.plotModeledSegments.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.scatterList.prefix",
+    "name": "Somatic.somaticVariantcalling.strelka.scatterList.prefix",
+    "group": "Strelka",
+    "default": "scatters/scatter-",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.addGTFieldSVs.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.addGTFieldSVs.timeMinutes",
+    "group": "resources",
+    "default": 20,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.targetIntervalsLists.timeMinutes",
+    "name": "Somatic.sampleWorkflow.metrics.targetIntervalsLists.timeMinutes",
+    "group": "resources",
+    "default": 5,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherSVs.useJdkDeflater",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherSVs.useJdkDeflater",
+    "group": "Strelka",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.combineVariants.javaXmx",
+    "name": "Somatic.somaticVariantcalling.strelka.combineVariants.javaXmx",
+    "group": "resources",
+    "default": "12G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.umiDeduplication",
+    "name": "Somatic.umiDeduplication",
+    "group": "scatadapt",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    },
+    "description": "Whether or not UMI based deduplication should be run. See the notes below on UMIs"
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.strelkaGermline.cores",
+    "name": "Somatic.somaticVariantcalling.strelka.strelkaGermline.cores",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleConfig",
+    "inputBinding": {
+    },
+    "param_type": {
+      "param_type": "Struct",
+      "optional": false,
+      "items": [
+        {
+          "id": "samples",
+          "name": "samples",
+          "param_type": {
+            "param_type": "Array",
+            "items": {
+              "param_type": "Struct",
+              "optional": false,
+              "items": [
+                {
+                  "id": "id",
+                  "name": "id",
+                  "param_type": "String",
+                  "optional": false
+                },
+                {
+                  "id": "readgroups",
+                  "name": "readgroups",
+                  "optional": true,
+                  "param_type": {
+                    "param_type": "Array",
+                    "items": {
+                      "param_type": "Struct",
+                      "optional": false,
+                      "items": [
+                        {
+                          "id": "id",
+                          "name": "id",
+                          "param_type": "String",
+                          "optional": false
+                        },
+                        {
+                          "id": "lib_id",
+                          "name": "lib_id",
+                          "param_type": "String",
+                          "optional": false
+                        },
+                        {
+                          "id": "R1",
+                          "name": "R1",
+                          "param_type": "File",
+                          "optional": false
+                        },
+                        {
+                          "id": "R2",
+                          "name": "R2",
+                          "optional": true,
+                          "param_type": "File"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "id": "gender",
+                  "name": "gender",
+                  "optional": true,
+                  "param_type": "String"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.cores",
+    "name": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.cores",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.noneFile",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.noneFile",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.annotateIntervals.memory",
+    "name": "Somatic.generateCnvPanelOfNormals.annotateIntervals.memory",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.nano",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.nano",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.javaXmx",
+    "name": "Somatic.sampleWorkflow.metrics.ampliconIntervalsLists.javaXmx",
+    "group": "resources",
+    "default": "3G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mergeStats.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.mergeStats.memory",
+    "group": "resources",
+    "default": "15G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.indelIndex.memory",
+    "name": "Somatic.somaticVariantcalling.indelIndex.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.plotModeledSegments.timeMinutes",
+    "name": "Somatic.CNVs.caseSample.plotModeledSegments.timeMinutes",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.pairedSomaticSeq.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.pairedSomaticSeq.timeMinutes",
+    "group": "resources",
+    "default": 60,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.collectReadCounts.memory",
+    "name": "Somatic.generateCnvPanelOfNormals.collectReadCounts.memory",
+    "group": "resources",
+    "default": "8G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.intervalMergingRule",
+    "name": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.intervalMergingRule",
+    "group": "Other",
+    "default": "OVERLAPPING_ONLY",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.minLength",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.minLength",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.minimumVariantDepth",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.minimumVariantDepth",
+    "group": "Vardict",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.adapters",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.adapters",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.discardUntrimmed",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.discardUntrimmed",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.scatterSize",
+    "name": "Somatic.somaticVariantcalling.mutect2.scatterSize",
+    "group": "Mutect",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.threads",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.length",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.length",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.collectReadCounts.intervalMergingRule",
+    "name": "Somatic.CNVs.controlSample.collectReadCounts.intervalMergingRule",
+    "group": "Other",
+    "default": "OVERLAPPING_ONLY",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.gatherVcfs.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.vardict.gatherVcfs.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.chromosomeColumn",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.chromosomeColumn",
+    "group": "Vardict",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.ignoreSamples",
+    "name": "Somatic.multiqcTask.ignoreSamples",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.contaminants",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.contaminants",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.markdup.ioBufferSize",
+    "name": "Somatic.sampleWorkflow.markdup.ioBufferSize",
+    "group": "Other",
+    "default": 128,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.performCnvCalling",
+    "name": "Somatic.performCnvCalling",
+    "group": "Other",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.javaXmx",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2.javaXmx",
+    "group": "resources",
+    "default": "1750M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.limits",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1After.limits",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.timeMinutes",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.plotModeledSegments.memory",
+    "name": "Somatic.CNVs.caseSample.plotModeledSegments.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.timeMinutes",
+    "name": "Somatic.multiqcTask.timeMinutes",
+    "group": "multiqc",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.memory",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.memory",
+    "group": "resources",
+    "default": "18G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.rna",
+    "name": "Somatic.somaticVariantcalling.strelka.rna",
+    "group": "Strelka",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleSomaticSeq.lofreqVCF",
+    "name": "Somatic.somaticVariantcalling.singleSomaticSeq.lofreqVCF",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.snvIndex.memory",
+    "name": "Somatic.somaticVariantcalling.snvIndex.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.filterMutectCalls.memory",
+    "group": "resources",
+    "default": "13G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.contaminants",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.contaminants",
+    "group": "FastQC",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.mantaSomatic.cores",
+    "name": "Somatic.somaticVariantcalling.strelka.mantaSomatic.cores",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mergeStats.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.mergeStats.javaXmx",
+    "group": "resources",
+    "default": "14G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.targetMetrics.timeMinutes",
+    "name": "Somatic.sampleWorkflow.metrics.targetMetrics.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.svsIndex.type",
+    "name": "Somatic.somaticVariantcalling.strelka.svsIndex.type",
+    "group": "Strelka",
+    "default": "vcf",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.referenceFasta",
+    "name": "Somatic.referenceFasta",
+    "group": "required_inputs",
+    "example": "https://storage.googleapis.com/biowdl-Somatic/reference/reference.fasta",
+    "param_type": {
+      "optional": false,
+      "param_type": "File"
+    },
+    "description": "A path to a reference fasta"
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.wildcardFilePath",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.wildcardFilePath",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.controlSample.modelSegments.minimumTotalAlleleCountCase",
+    "name": "Somatic.CNVs.controlSample.modelSegments.minimumTotalAlleleCountCase",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleSomaticSeq.memory",
+    "name": "Somatic.somaticVariantcalling.singleSomaticSeq.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.sitesForContaminationIndex",
+    "name": "Somatic.somaticVariantcalling.sitesForContaminationIndex",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwaMem.timeMinutes",
+    "name": "Somatic.sampleWorkflow.bwaMem.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherIndels.useJdkDeflater",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherIndels.useJdkDeflater",
+    "group": "Strelka",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.getPileupSummariesNormal.javaXmx",
+    "group": "resources",
+    "default": "12G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.annotateIntervals.javaXmx",
+    "name": "Somatic.generateCnvPanelOfNormals.annotateIntervals.javaXmx",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.referenceFasta",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.referenceFasta",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherIndels.compressionLevel",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherIndels.compressionLevel",
+    "group": "Strelka",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.bwa",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.bwa",
+    "group": "BWAMem",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.memory",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.memory",
+    "group": "resources",
+    "default": "5G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.strandedness",
+    "name": "Somatic.sampleWorkflow.metrics.strandedness",
+    "group": "Metrics",
+    "default": "None",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.doNotDefineThis",
+    "name": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.doNotDefineThis",
+    "group": "Strelka",
+    "param_type": {
+      "optional": true,
+      "param_type": "File"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherIndels.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherIndels.timeMinutes",
+    "group": "resources",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.memoryGb",
+    "name": "Somatic.somaticVariantcalling.strelka.strelkaSomatic.memoryGb",
+    "group": "resources",
+    "default": 4,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.CNVs.caseSample.denoiseReadCounts.timeMinutes",
+    "name": "Somatic.CNVs.caseSample.denoiseReadCounts.timeMinutes",
+    "group": "resources",
+    "default": 5,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryAlignments",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryAlignments",
+    "group": "Vardict",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.readgroupName",
+    "name": "Somatic.sampleWorkflow.qualityControl.readgroupName",
+    "group": "Other",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maskAdapter",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.maskAdapter",
+    "group": "Cutadapt",
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherSVs.useJdkInflater",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherSVs.useJdkInflater",
+    "group": "Strelka",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.mutect2.f1r2TarGz",
+    "name": "Somatic.somaticVariantcalling.mutect2.mutect2.f1r2TarGz",
+    "group": "Mutect",
+    "default": "f1r2.tar.gz",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.varDict.minimumAlleleFrequency",
+    "name": "Somatic.somaticVariantcalling.vardict.varDict.minimumAlleleFrequency",
+    "group": "Vardict",
+    "default": 0.02,
+    "param_type": {
+      "optional": true,
+      "param_type": "Float"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.PONname",
+    "name": "Somatic.generateCnvPanelOfNormals.PONname",
+    "group": "Other",
+    "default": "PON",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.memory",
+    "name": "Somatic.generateCnvPanelOfNormals.preprocessIntervals.memory",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.javaXmx",
+    "name": "Somatic.somaticVariantcalling.mutect2.gatherVcfs.javaXmx",
+    "group": "resources",
+    "default": "4G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.scatterList.splitContigs",
+    "name": "Somatic.somaticVariantcalling.vardict.scatterList.splitContigs",
+    "group": "Vardict",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.includeFilter",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.includeFilter",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.combineVariants.genotypeMergeOption",
+    "name": "Somatic.somaticVariantcalling.strelka.combineVariants.genotypeMergeOption",
+    "group": "Strelka",
+    "default": "UNIQUIFY",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noFilter",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.noFilter",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.noneArray",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.noneArray",
+    "group": "FastQC",
+    "param_type": {
+      "items": {
+        "optional": false,
+        "param_type": "File"
+      },
+      "optional": true,
+      "param_type": "Array"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.excludeSpecificFilter",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryControl.excludeSpecificFilter",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.multiqcTask.interactive",
+    "name": "Somatic.multiqcTask.interactive",
+    "group": "multiqc",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.includeFilter",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.includeFilter",
+    "group": "Vardict",
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.indelsIndex.memory",
+    "name": "Somatic.somaticVariantcalling.strelka.indelsIndex.memory",
+    "group": "resources",
+    "default": "2G",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.scatterSizeMillions",
+    "name": "Somatic.somaticVariantcalling.strelka.scatterSizeMillions",
+    "group": "Strelka",
+    "default": 1000,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwaMem2Index",
+    "name": "Somatic.sampleWorkflow.bwaMem2Index",
+    "group": "BWAMem",
+    "param_type": {
+      "items": [
+        {
+          "id": "fastaFile",
+          "name": "fastaFile",
+          "param_type": {
+            "optional": true,
+            "param_type": "File"
+          }
+        },
+        {
+          "id": "indexFiles",
+          "name": "indexFiles",
+          "param_type": {
+            "items": {
+              "optional": false,
+              "param_type": "File"
+            },
+            "optional": false,
+            "param_type": "Array"
+          }
+        }
+      ],
+      "optional": true,
+      "param_type": "Struct"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.uncompressedBamOutput",
+    "name": "Somatic.somaticVariantcalling.vardict.filterSupplementaryTumor.uncompressedBamOutput",
+    "group": "Vardict",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.metrics.picardMetrics.javaXmxMb",
+    "name": "Somatic.sampleWorkflow.metrics.picardMetrics.javaXmxMb",
+    "group": "resources",
+    "default": 3072,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.combineVariants.filteredRecordsMergeType",
+    "name": "Somatic.somaticVariantcalling.strelka.combineVariants.filteredRecordsMergeType",
+    "group": "Strelka",
+    "default": "KEEP_IF_ANY_UNFILTERED",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.Cutadapt.compressionLevel",
+    "name": "Somatic.sampleWorkflow.qualityControl.Cutadapt.compressionLevel",
+    "group": "Cutadapt",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.bwaMem.sortMemoryPerThreadGb",
+    "name": "Somatic.sampleWorkflow.bwaMem.sortMemoryPerThreadGb",
+    "group": "resources",
+    "default": 2,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.singleTraining.timeMinutes",
+    "name": "Somatic.somaticVariantcalling.singleTraining.timeMinutes",
+    "group": "resources",
+    "default": 240,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.nogroup",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead2After.nogroup",
+    "group": "FastQC",
+    "default": false,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  },
+  {
+    "id": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.threads",
+    "name": "Somatic.sampleWorkflow.qualityControl.FastqcRead1.threads",
+    "group": "resources",
+    "default": 1,
+    "param_type": {
+      "optional": true,
+      "param_type": "Int"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.mutect2.scatterList.memory",
+    "name": "Somatic.somaticVariantcalling.mutect2.scatterList.memory",
+    "group": "resources",
+    "default": "256M",
+    "param_type": {
+      "optional": true,
+      "param_type": "String"
+    }
+  },
+  {
+    "id": "Somatic.somaticVariantcalling.strelka.gatherVariants.useJdkInflater",
+    "name": "Somatic.somaticVariantcalling.strelka.gatherVariants.useJdkInflater",
+    "group": "Strelka",
+    "default": true,
+    "param_type": {
+      "optional": true,
+      "param_type": "Boolean"
+    }
+  }
+]
