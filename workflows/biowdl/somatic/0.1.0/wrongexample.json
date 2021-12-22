@@ -1,0 +1,18 @@
+{
+  "Somatic.somaticVariantcalling.tumorSample": "wgs3",
+  "Somatic.somaticVariantcalling.tumorBam": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/wgs3.bam",
+  "Somatic.somaticVariantcalling.tumorBamIndex": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/wgs3.bai",
+  "Somatic.referenceFasta": "gs://truwl-internal-inputs/biowdl/somatic/reference/reference.fasta",
+  "Somatic.referenceFastaFai": "gs://truwl-internal-inputs/biowdl/somatic/reference/reference.fasta.fai",
+  "Somatic.referenceFastaDict": "gs://truwl-internal-inputs/biowdl/somatic/reference/reference.dict",
+  "Somatic.somaticVariantcalling.trainingSet": {
+    "truthIndel": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/wgs3_indel_subset.vcf.gz",
+    "truthSNV": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/wgs3_snv_subset.vcf.gz",
+    "tumorBam": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/wgs3.bam",
+    "tumorBamIndex": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/wgs3.bai",
+    "mutect2VCF": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/somatic_variantcalling_vcfs/paired/mutect2/wgs3-wgs1.vcf.gz",
+    "vardictVCF": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/somatic_variantcalling_vcfs/paired/vardict/wgs3-wgs1.vcf.gz",
+    "strelkaSNV": "gs://truwl-internal-inputs/biowdl/somatic/wgs3/somatic_variantcalling_vcfs/paired/strelka/strelka_variants.vcf.gz"
+  },
+  "Somatic.somaticVariantcalling.runCombineVariants": true
+}

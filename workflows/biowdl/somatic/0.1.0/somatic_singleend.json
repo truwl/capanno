@@ -1,0 +1,37 @@
+{
+  "Somatic.sampleConfig": {
+        "samples": [
+            {
+                "id": "wgs1-single-end",
+                "gender": "M",
+                "readgroups": [
+                    {
+                        "R1": "gs://truwl-internal-inputs/biowdl/tests/data/wgs1/R1.fq.gz",
+                        "R1_md5": "R1_md5: b859d6dd76a6861ce7e9a978ae2e530e",
+                        "id": "lib1",
+                        "lib_id": "rg1"
+                    }
+                ]
+            }
+        ]
+    },
+  "Somatic.dockerImagesFile": "gs://truwl-internal-inputs/biowdl/somatic/dockerImages.yml",
+  "Somatic.referenceFasta": "gs://truwl-internal-inputs/biowdl/tests/data/reference/reference.fasta",
+  "Somatic.referenceFastaFai": "gs://truwl-internal-inputs/biowdl/tests/data/reference/reference.fasta.fai",
+  "Somatic.referenceFastaDict": "gs://truwl-internal-inputs/biowdl/tests/data/reference/reference.dict",
+  "Somatic.bwaIndex": {
+    "fastaFile": "gs://truwl-internal-inputs/biowdl/tests/data/reference/bwa/reference.fasta",
+    "indexFiles": [
+      "gs://truwl-internal-inputs/biowdl/tests/data/reference/bwa/reference.fasta.amb",
+      "gs://truwl-internal-inputs/biowdl/tests/data/reference/bwa/reference.fasta.ann",
+      "gs://truwl-internal-inputs/biowdl/tests/data/reference/bwa/reference.fasta.bwt",
+      "gs://truwl-internal-inputs/biowdl/tests/data/reference/bwa/reference.fasta.pac",
+      "gs://truwl-internal-inputs/biowdl/tests/data/reference/bwa/reference.fasta.sa"
+    ]
+  },
+  "Somatic.bwaThreads": 1,
+  "Somatic.dbsnpVCF": "gs://truwl-internal-inputs/biowdl/tests/data/wgs2.vcf.gz",
+  "Somatic.dbsnpVCFIndex": "gs://truwl-internal-inputs/biowdl/tests/data/wgs2.vcf.gz.tbi",
+  "Somatic.runManta": false
+}
+

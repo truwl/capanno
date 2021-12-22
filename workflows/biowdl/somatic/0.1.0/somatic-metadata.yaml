@@ -1,0 +1,27 @@
+name: BioWDL Somatic variant calling pipeline (from fastq)
+identifier: WF_6cb3ec.92
+description: >
+  This workflow uses several programs to call somatic variants and aggregate the results.
+  * strelka
+  * mutect2
+  * vardict
+  * manta
+  * somaticseq
+softwareVersion:
+  versionName: 4.1.0
+  includedVersions:
+metadataStatus: Released
+workflowStatus: Released
+workflowLanguage: wdl
+graphStatus: Incomplete
+workflowFile: somatic.wdl
+repoName: biowdl-somatic-fastq
+gitTag: v4.1.0
+inputsTemplate: inputs.json
+executable: true
+current: true
+codeRepository:
+  URL: https://github.com/truwl/biowdl-somatic-fastq
+WebSite:
+    - URL: https://github.com/biowdl/somatic-variantcalling
+      name: BioWDL Somatic Variantcalling
