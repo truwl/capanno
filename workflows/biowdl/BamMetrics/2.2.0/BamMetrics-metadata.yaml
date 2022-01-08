@@ -1,8 +1,7 @@
 
 name: BioWDL BamMetric pipeline 
 identifier: WF_ff89f2.51
-description: >
-  This repository contains the Biowdl workflow usable for collecting various metrics for BAM files.
+description:
 softwareVersion:
   versionName: 2.2.0
   includedVersions:

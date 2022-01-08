@@ -21,3 +21,15 @@ zcat gencode.v19.annotation.gtf.gz | \
   sed 's/chrM/chrMT/;s/chr//' > gencode.v19.annotation.patched_contigs.gtf
 ```
 A 2x76 bp paired-end sequencing protocol, will use a sjdbOverhang of 75
+
+
+
+---
+####Job Costs*
+
+|  Public example     |   Job cost  | Notes |
+| ------------------ | ---------------- |-------------------| 
+| [Quertermous SRR7058289](https://truwl.com/workflows/library/GTEx/v10/instances/WF_254045.d5.3469) | $ 1.68 | |
+
+*Job cost examples are for estimates only. To get a more accurate idea of job costs, try running a single job before running many jobs.
+

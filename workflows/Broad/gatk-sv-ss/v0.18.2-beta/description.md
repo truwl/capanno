@@ -1,5 +1,8 @@
 A structural variation discovery pipeline for Illumina short-read whole-genome sequencing (WGS) data.
 
+
+![drawing](https://storage.googleapis.com/static.truwl.com/dags/WF_95b9dc.8f.png)
+
   ##Requirements/expectations
   ### Data
     * Illumina short-read whole-genome CRAMs or BAMs, aligned to hg38 with [bwa-mem](https://github.com/lh3/bwa). BAMs must also be indexed.
@@ -16,3 +19,11 @@ A structural variation discovery pipeline for Illumina short-read whole-genome s
   * Contain only numeric characters
   * Be a substring of another sample ID in the same cohort
   * Contain any of the following substrings: `chr`, `name`, `DEL`, `DUP`, `CPX`, `CHROM`
+
+
+---
+#### Job Costs*
+
+Initial jobs with this workflow have had costs from $15-$25.
+
+*Job cost examples are for estimates only. To get a more accurate idea of job costs, try running a single job before running many jobs.

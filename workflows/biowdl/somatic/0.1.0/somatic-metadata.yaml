@@ -1,12 +1,6 @@
 name: BioWDL Somatic variant calling pipeline (from fastq)
 identifier: WF_6cb3ec.92
-description: >
-  This workflow uses several programs to call somatic variants and aggregate the results.
-  * strelka
-  * mutect2
-  * vardict
-  * manta
-  * somaticseq
+description:
 softwareVersion:
   versionName: 4.1.0
   includedVersions:
