@@ -1,7 +1,6 @@
 
 name: BioWDL BamMetric pipeline 
 identifier: WF_ff89f2.51
-description:
 softwareVersion:
   versionName: 2.2.0
   includedVersions:
@@ -20,5 +19,3 @@ codeRepository:
 WebSite:
     - URL: https://biowdl.github.io/RNA-seq/develop/index.html
       name: BioWDL-Bammetrics
-
-

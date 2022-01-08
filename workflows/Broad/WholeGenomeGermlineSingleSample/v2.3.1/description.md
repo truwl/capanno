@@ -12,3 +12,10 @@ Requirements/expectations :
     - all reads must have an RG tag
 - GVCF output names must end in ".g.vcf.gz"
 - Reference genome must be Hg38 with ALT contigs
+
+---
+#### Job Costs*
+
+Not enough data to determine cost estimates for this workflow yet. Shouldn't be more than a dollar or two.
+
+*Job cost examples are for estimates only. To get a more accurate idea of job costs, try running a single job before running many jobs.v

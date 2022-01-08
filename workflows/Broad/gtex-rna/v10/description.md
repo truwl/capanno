@@ -25,7 +25,7 @@ A 2x76 bp paired-end sequencing protocol, will use a sjdbOverhang of 75
 
 
 ---
-####Job Costs*
+#### Job Costs*
 
 |  Public example     |   Job cost  | Notes |
 | ------------------ | ---------------- |-------------------| 

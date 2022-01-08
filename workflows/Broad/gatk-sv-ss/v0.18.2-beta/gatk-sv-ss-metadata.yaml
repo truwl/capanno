@@ -3,8 +3,8 @@ identifier: WF_95b9dc.8f
 shortDescription: A structural variation discovery pipeline for Illumina short-read whole-genome sequencing (WGS) data.
 softwareVersion:
   versionName: v0.18.2-beta
-metadataStatus: Draft
-workflowStatus: Draft
+metadataStatus: Released
+workflowStatus: Incomplete
 workflowLanguage: wdl
 graphStatus: Incomplete
 workflowFile: wdl/GATKSVPipelineSingleSample.wdl

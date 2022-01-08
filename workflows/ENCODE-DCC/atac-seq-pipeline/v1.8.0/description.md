@@ -18,7 +18,7 @@ The ATACseq pipeline protocol specification is [here](https://docs.google.com/do
 Some parts of the ATAC-seq pipeline were developed in collaboration with Jason Buenrostro, Alicia Schep and Will Greenleaf at Stanford.
 
 ---
-####Job Costs*
+#### Job Costs*
 
 
 Examples:

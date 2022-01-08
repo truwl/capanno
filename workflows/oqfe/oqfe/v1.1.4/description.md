@@ -5,7 +5,7 @@ The app follows the FE methodology by the adoption of a standard GRCh38 referenc
 In accordance with the OQFE protocol, the app retains the original quality scores of the reads, which allows for recovery of original FASTQs from the generated OQFE CRAM, and implements updated versions of the used programs.
 
 ---
-####Job Costs*
+#### Job Costs*
 
 Not enough data to determine cost estimates for this workflow yet. Shouldn't be more than a dollar or two.
 
