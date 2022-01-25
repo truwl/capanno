@@ -1,46 +1,19 @@
-name: DeepPepper
+name: PEPPER-Margin-DeepVariant
+identifier: WF_edcb65.c7
+description: >
+  Variant calling for long reads - utilizes PEPPER for SNP calling, Margin for haplotyping and phasing, and DeepVariant for genotype calling 
 softwareVersion:
   versionName: 0.7
-  includedVersions: []
-current: false
-description:
-shortDescription:
-identifier: WF_edcb65.57
-metadataStatus: Incomplete
-workflowStatus: Draft
-workflowLanguage: wdl
+metadataStatus: Released
+workflowStatus: Released
 workflowFile: deeppepper.wdl
-repoName:
-gitTag:
-inputsTemplate:
-callMap:
-graphStatus: Incomplete
-executable: false
+repoName: deeppepper
+gitTag: benchmarked
+inputsTemplate: inputs.json
+executable: true
+current: true
 codeRepository:
-  name:
-  URL:
-videos:
-  - name:
-    description:
-    URL:
+  URL: https://github.com/truwl/deeppepper
 WebSite:
-  - name:
-    description:
-    URL:
-license:
-contactPoint:
-  - name:
-    email:
-    identifier:
-publication:
-  - identifier:
-    headline:
-keywords:
-  - name:
-    category:
-alternateName:
-creator:
-  - name:
-    email:
-    identifier:
-datePublished:
+  - URL: https://github.com/kishwarshafin/pepper
+    name: PEPPER-Margin-DeepVariant
