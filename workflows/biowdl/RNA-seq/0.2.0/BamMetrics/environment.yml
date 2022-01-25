@@ -1,0 +1,13 @@
+name: bammetrics
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - samtools==1.8
+  - picard==2.18.7
+  - biopet-scatterregions==0.1
+  - r==3.4.3
+  - gxx_linux-64==7.2.0
+  - biopet-bamstats==1.0
+

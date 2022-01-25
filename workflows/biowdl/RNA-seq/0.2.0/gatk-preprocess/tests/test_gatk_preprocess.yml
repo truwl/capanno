@@ -1,0 +1,32 @@
+- name: recalibrated_bam
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/recalibrated_bam.json gatk-preprocess.wdl
+  files:
+    - path: "test-output/test.bam"
+    - path: "test-output/test.bai"
+    - path: "test-output/test.bqsr"
+
+- name: split_n_cigar
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/split_n_cigar.json gatk-preprocess.wdl
+  files:
+    - path: "test-output/test.bam"
+    - path: "test-output/test.bai"
+    - path: "test-output/test.bqsr"
+
+- name: no_scatter
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/no_scatter.json gatk-preprocess.wdl
+  files:
+    - path: "test-output/test.bam"
+    - path: "test-output/test.bai"
+    - path: "test-output/test.bqsr"

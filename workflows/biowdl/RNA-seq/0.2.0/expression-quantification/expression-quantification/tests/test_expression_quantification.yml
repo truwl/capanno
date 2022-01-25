@@ -1,0 +1,89 @@
+- name: guided
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/guided.json multi-bam-quantify.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/fragments_per_gene/sample1.fragments_per_gene"
+    - path: "test-output/fragments_per_gene/sample2.fragments_per_gene"
+    - path: "test-output/stringtie/all_samples.TPM"
+    - path: "test-output/stringtie/all_samples.FPKM"
+    - path: "test-output/fragments_per_gene/all_samples.fragments_per_gene"
+
+- name: guided_with_novel
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/guided_with_novel.json multi-bam-quantify.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/stringtie/assembly/sample1.gtf"
+    - path: "test-output/fragments_per_gene/sample1.fragments_per_gene"
+    - path: "test-output/stringtie/assembly/sample2.gtf"
+    - path: "test-output/fragments_per_gene/sample2.fragments_per_gene"
+    - path: "test-output/stringtie/all_samples.TPM"
+    - path: "test-output/stringtie/all_samples.FPKM"
+    - path: "test-output/fragments_per_gene/all_samples.fragments_per_gene"
+
+- name: guided_with_novel_with_additional_attributes
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/guided_with_novel_additional_attributes.json multi-bam-quantify.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/stringtie/assembly/sample1.gtf"
+    - path: "test-output/fragments_per_gene/sample1.fragments_per_gene"
+    - path: "test-output/stringtie/assembly/sample2.gtf"
+    - path: "test-output/fragments_per_gene/sample2.fragments_per_gene"
+    - path: "test-output/stringtie/all_samples.TPM"
+    - path: "test-output/stringtie/all_samples.FPKM"
+    - path: "test-output/fragments_per_gene/all_samples.fragments_per_gene"
+      contains:
+        - "feature	ref_gene_id"
+
+- name: unguided
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/unguided.json multi-bam-quantify.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/stringtie/assembly/sample1.gtf"
+    - path: "test-output/fragments_per_gene/sample1.fragments_per_gene"
+    - path: "test-output/stringtie/assembly/sample2.gtf"
+    - path: "test-output/fragments_per_gene/sample2.fragments_per_gene"
+    - path: "test-output/stringtie/all_samples.TPM"
+    - path: "test-output/stringtie/all_samples.FPKM"
+    - path: "test-output/fragments_per_gene/all_samples.fragments_per_gene"
+
+- name: guided_no_stringtie
+  tags:
+    - integration
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/guided_no_stringtie.json multi-bam-quantify.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: "test-output/fragments_per_gene/sample1.fragments_per_gene"
+    - path: "test-output/fragments_per_gene/sample2.fragments_per_gene"
+    - path: "test-output/stringtie/all_samples.TPM"
+      should_exist: false
+    - path: "test-output/stringtie/all_samples.FPKM"
+      should_exist: false
+    - path: "test-output/fragments_per_gene/all_samples.fragments_per_gene"

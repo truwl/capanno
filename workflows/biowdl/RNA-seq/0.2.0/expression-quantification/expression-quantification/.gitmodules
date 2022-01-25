@@ -1,0 +1,7 @@
+[submodule "tasks"]
+    branch = develop
+	path = tasks
+	url = https://github.com/biowdl/tasks.git
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com/biowdl/scripts.git

@@ -1,0 +1,7 @@
+{
+  "CalculateRegions.referenceFasta": "tests/data/gender-aware/reference.fasta",
+  "CalculateRegions.referenceFastaFai": "tests/data/gender-aware/reference.fasta.fai",
+  "CalculateRegions.referenceFastaDict": "tests/data/gender-aware/reference.dict",
+  "CalculateRegions.XNonParRegions": "tests/data/gender-aware/x_non_par.bed",
+  "CalculateRegions.YNonParRegions": "tests/data/gender-aware/y_non_par.bed"
+}

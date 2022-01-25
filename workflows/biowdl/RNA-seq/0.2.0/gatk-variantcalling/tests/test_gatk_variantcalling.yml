@@ -1,0 +1,144 @@
+# Copyright (c) 2018 Leiden University Medical Center
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+- name: single_sample
+  tags:
+    - integration
+    - dna
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/single_sample_gvcf.json multisample-variantcalling.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: test-output/multisample.g.vcf.gz.tbi
+    - path: test-output/multisample.g.vcf.gz
+      contains: &vcf-contents  # We use a YAML anchor here. This saves a lot of typing later.
+        - "chr1	500	.	C	T"
+        - "chr1	1000	.	A	G"
+        - "chr1	1500	.	G	A"
+        - "chr1	2000	.	G	A"
+        - "chr1	2500	.	A	G"
+        - "chr1	3000	.	G	C"
+        - "chr1	3500	.	G	T"
+        - "chr1	4000	.	A	G"
+        - "chr1	4500	.	A	C"
+        - "chr1	5000	.	A	G"
+        - "chr1	5500	.	C	T"
+        - "chr1	6000	.	C	A"
+        - "chr1	6500	.	C	T"
+        - "chr1	7000	.	G	T"
+        - "chr1	7500	.	G	C"
+        - "chr1	8000	.	T	G"
+        - "chr1	8500	.	T	A"
+        - "chr1	9000	.	C	T"
+        - "chr1	9500	.	G	A"
+        - "chr1	10000	.	A	G"
+        - "chr1	10500	.	T	C"
+        - "chr1	11000	.	A	G"
+        - "chr1	11500	.	C	T"
+        - "chr1	12000	.	A	G"
+        - "chr1	12500	.	C	G"
+        - "chr1	13000	.	T	C"
+        - "chr1	13500	.	G	T"
+        - "chr1	14000	.	A	C"
+        - "chr1	14500	.	A	G"
+        - "chr1	15000	.	T	G"
+    - path: test-output/multisample.vcf.gz
+      contains: *vcf-contents
+    - path: test-output/multisample.vcf.gz.tbi
+
+- name: two_sample
+  tags:
+    - integration
+    - dna
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/two_sample_gvcf.json multisample-variantcalling.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: test-output/multisample.g.vcf.gz.tbi
+    - path: test-output/multisample.g.vcf.gz
+      contains: *vcf-contents
+    - path: test-output/multisample.vcf.gz
+      contains: *vcf-contents
+    - path: test-output/multisample.vcf.gz.tbi
+
+- name: two_sample_gender_aware
+  tags:
+    - integration
+    - dna
+    - gender-aware
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/two_sample_gender_aware.json multisample-variantcalling.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: test-output/samples/male.g.vcf.gz
+    - path: test-output/samples/male.g.vcf.gz.tbi
+    - path: test-output/samples/female.g.vcf.gz
+    - path: test-output/samples/female.g.vcf.gz.tbi
+    - path: test-output/multisample.g.vcf.gz.tbi
+    - path: test-output/multisample.g.vcf.gz
+    - path: test-output/multisample.vcf.gz
+    - path: test-output/multisample.vcf.gz.tbi
+
+
+- name: two_sample_gender_aware_with_regions
+  tags:
+    - integration
+    - dna
+    - gender-aware
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/two_sample_gender_aware_with_regions.json multisample-variantcalling.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: test-output/multisample.g.vcf.gz.tbi
+    - path: test-output/multisample.g.vcf.gz
+    - path: test-output/multisample.vcf.gz
+    - path: test-output/multisample.vcf.gz.tbi
+
+- name: rna_sample
+  tags:
+    - integration
+    - rna
+  command: >-
+    cromwell run -o tests/cromwell_options.json
+    -i tests/integration/rna_sample.json multisample-variantcalling.wdl
+  stdout:
+    contains:
+      - "WorkflowSucceededState"
+  files:
+    - path: test-output/multisample.g.vcf.gz.tbi
+      should_exist: false
+    - path: test-output/multisample.g.vcf.gz
+      should_exist: false
+    - path: "test-output/multisample.vcf.gz"
+      should_exist: false
+    - path: "test-output/samples/rna3.vcf.gz"
+    - path: "test-output/samples/rna4.vcf.gz"

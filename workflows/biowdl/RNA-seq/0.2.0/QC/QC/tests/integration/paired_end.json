@@ -1,0 +1,5 @@
+{
+  "QC.read1": "tests/data/ct_r1.fq",
+  "QC.read2": "tests/data/ct_r2.fq",
+  "QC.extractFastqcZip": true
+}
