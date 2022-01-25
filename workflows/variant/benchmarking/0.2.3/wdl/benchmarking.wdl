@@ -429,6 +429,7 @@ workflow GermlineVariantCallBenchmark {
       referenceFasta_indexed = referenceFasta_indexed[freeze],
 
       stratTable = aggAllStrats.strattable,
+      regions = removeEmpty.noEmptyLines,
       happyPrefix =  happyPrefix,
       outputFile_commonPrefix = outputFile_commonPrefix,
       consoleOutputPartialFilename = consoleOutputPartialFilename
@@ -481,7 +482,8 @@ workflow GermlineVariantCallBenchmark {
       subject = subject,
       jupyter_notebook = Jupyter_report,
       upset_plots = select_all(myintervene.upsetplot),
-      prec_recall_plot = aggprecRecall.precrecallplot
+      prec_recall_plot = aggprecRecall.precrecallplot,
+      regions = removeEmpty.noEmptyLines
   }
 
   output {
