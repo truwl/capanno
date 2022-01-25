@@ -22,7 +22,7 @@ parameter_meta:
     name: queryVCF
     upload:
       accept: [".vcf",".vcf.gz",".vcf.bgz"]
-      maxSize: 200000000
+      maxSize: 500000000
   GermlineVariantCallBenchmark.subject:
     group: Query
     description: Member of Ashkenazi trio used to genrate the query VCF (HG002, HG003, or HG004)
