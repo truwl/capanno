@@ -9,7 +9,7 @@ workflowStatus: Released
 workflowLanguage: wdl
 workflowFile: wdl/benchmarking.wdl
 repoName: variantbenchmarking
-gitTag: ashspecifichc
+gitTag: regionlabels
 inputsTemplate: inputs.json
 executable: true
 current: true

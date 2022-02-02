@@ -81,7 +81,7 @@ workflow GermlineVariantCallBenchmark {
     File Rscript_aggregate = "gs://benchmarking-datasets/aggregateExtended.R"
     File Rscript_precrecall = "gs://benchmarking-datasets/precRecallPlot.R"
     File structToTrueLines = "gs://benchmarking-datasets/structToTrueLines.py"
-    File Jupyter_report = "gs://benchmarking-datasets/scripts/0.2/reportmultiple.ipynb"
+    File Jupyter_report = "gs://benchmarking-datasets/scripts/0.3/reportmultiple.ipynb"
 
     Map[String,File] referenceFasta = {
                                         "hg37":"gs://truwl-giab/references/GRCh37-lite.fa", "hg38":"gs://truwl-giab/references/GRCh38/GCA_000001405.15_GRCh38_no_alt_analysis_set_maskedGRC_exclusions.fasta.gz"
@@ -131,7 +131,8 @@ workflow GermlineVariantCallBenchmark {
                                   'region_twist_exome_target_hg38':false,
                                   'region_HG002_GIAB_highconfidence':false,
                                   'region_HG003_GIAB_highconfidence':false,
-                                  'region_HG004_GIAB_highconfidence':false
+                                  'region_HG004_GIAB_highconfidence':false,
+                                  'region_GRCh38_Chr20':false
                                 }
 
     FunctionalRegions fcRegions = {

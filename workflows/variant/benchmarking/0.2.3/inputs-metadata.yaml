@@ -80,6 +80,7 @@ parameter_meta:
       Participant: The Genomics Team in Google Health
       Category: All Benchmark Regions
       Technology: PacBio
+    name: B1S5A Google Health DeepVariant PacBio
   GermlineVariantCallBenchmark.includeCZA1Y:
     group: Competitors
     description: |
@@ -87,6 +88,7 @@ parameter_meta:
       Participant: Sentieon
       Category: MHC
       Technology: Multi
+    name: CZA1Y Sentieon combination of Illumina, PacBio HIFI, and Oxford Nanopore submission Model2
   GermlineVariantCallBenchmark.includeEIUT6:
     group: Competitors
     description: |
@@ -94,6 +96,7 @@ parameter_meta:
       Participant: Sentieon
       Technology: PacBio
       Category: MHC/Difficult-to-Map Regions
+    name: EIUT6 Sentieon PacBio HIFI only submission
   GermlineVariantCallBenchmark.includeIA789:
     group: Competitors
     description: |
@@ -101,6 +104,7 @@ parameter_meta:
       Participant: Roche Sequencing Solutions
       Technology: Multi
       Category: Difficult-to-Map Regions
+    name: IA789 Roche RN-Illumina-PacBio-ONT
   GermlineVariantCallBenchmark.includeW607K:
     group: Competitors
     description: |
@@ -108,6 +112,7 @@ parameter_meta:
       Participant: DRAGEN
       Technology: Illumina
       Category: All Benchmark Regions/Difficult-to-Map Regions
+    name: W607K DRAGEN Experimental Extension into Difficult Regions
   GermlineVariantCallBenchmark.includeWX8VK:
     group: Competitors
     description: |
@@ -115,6 +120,7 @@ parameter_meta:
       Participant: Sentieon
       Technology: Multi
       Category: All Benchmark Regions/MHC
+    name: WX8VK Sentieon Combination of Illumina, PacBio HIFI, and Oxford Nanopore submission
   GermlineVariantCallBenchmark.includeXC97E:
     group: Competitors
     description: |
@@ -122,7 +128,7 @@ parameter_meta:
       Participant: The Genomics Team in Google Health
       Technology: PacBio
       Category: All Benchmark Regions
-
+    name: XC97E Google Health DeepVariant PacBio
   GermlineVariantCallBenchmark.includeXV7ZN:
     group: Competitors
     description: |
@@ -130,6 +136,7 @@ parameter_meta:
       Participant: Wang Genomics Lab
       Technology: ONT
       Category: MHC
+    name: XV7ZN Wang ONT NanoCaller Clair Medaka Ensemble
   GermlineVariantCallBenchmark.outputFile_commonPrefix:
     group: Affixes
     description:
@@ -221,7 +228,9 @@ parameter_meta:
     group: Paths
   GermlineVariantCallBenchmark.competitors:
     group: CachedMetrics
-      
+  GermlineVariantCallBenchmark.highconfBed:
+    group: References
+
 parameter_group:
   Query:
     title: Truth
