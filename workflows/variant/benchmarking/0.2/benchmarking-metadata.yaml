@@ -5,6 +5,8 @@ softwareVersion:
   versionName: 0.2
   includedVersions:
     - 0.2
+    - 0.2.2
+    - 0.2.3
 metadataStatus: Released
 workflowStatus: Released
 workflowLanguage: wdl
