@@ -22,7 +22,7 @@ parameter_meta:
     name: queryVCF
     upload:
       accept: [".vcf",".vcf.gz",".vcf.bgz"]
-      maxSize: 200000000
+      maxSize: 500000000
   GermlineVariantCallBenchmark.subject:
     group: Query
     description: Member of Ashkenazi trio used to genrate the query VCF (HG002, HG003, or HG004)
@@ -32,7 +32,8 @@ parameter_meta:
     group: Query
     description: Genome freeze
     example: 'Genome freeze. hg37 is no-chr'
-    
+  GermlineVariantCallBenchmark.truthVersion:
+    group: Query
   GermlineVariantCallBenchmark.chrRemovedVCF_fileSuffix:
     group: Affixes
     description:
@@ -223,7 +224,7 @@ parameter_meta:
       
 parameter_group:
   Query:
-    title: Query
+    title: Truth
     display: true
     description: Specify your VCF, the subject dataset that your VCF was generated from (HG002, HG003, HG004) and the reference assembly version--only hg38 is currently supported.
   Truth:
