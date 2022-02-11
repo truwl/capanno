@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/truwl/capanno.svg?branch=master)](https://travis-ci.com/truwl/capanno)
 ## Repository scope and purpose
 
 This repository contains metadata, workflow language files, and corresponding inputs files that describe jobs for computational tools, scripts, and workflows--collectively referred to as 'methods'--used in bioinformatics. The repository focuses on four major pipeline frameworks: [Common Workflow Language](https://www.commonwl.org/) (CWL), [Workflow Description Language](https://openwdl.org/) (WDL), [Nextflow](http://nextflow.io/), and [Snakemake](https://snakemake.github.io/).
