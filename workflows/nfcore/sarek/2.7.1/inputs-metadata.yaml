@@ -789,7 +789,8 @@ parameter_meta:
     group: institutional_config_options
     help: ''
     hidden: true
-parameter_groups:
+
+parameter_group:
   input_output_options:
     description: Define where the pipeline should find input data and save output
       data.
