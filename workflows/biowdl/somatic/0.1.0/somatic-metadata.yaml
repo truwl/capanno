@@ -1,6 +1,6 @@
 name: BioWDL Somatic variant calling pipeline (from fastq)
 identifier: WF_6cb3ec.92
-description:
+shortDescription:  This workflow uses several programs to call somatic variants and aggregate the results.
 softwareVersion:
   versionName: 4.1.0
   includedVersions:

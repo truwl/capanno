@@ -1,7 +1,6 @@
 name: Variant Benchmarking
 identifier: WF_6f6c41.3d
-description: >
-  This repository contains the benchmarking workflow that can be used to assess performance of germline variant calling pipelines based on testing with GIAB samples
+shortDescription: This benchmarking workflow is used to assess performance of germline variant calling pipelines based on testing with GIAB samples.
 softwareVersion:
   versionName: 0.2.3
 metadataStatus: Released
