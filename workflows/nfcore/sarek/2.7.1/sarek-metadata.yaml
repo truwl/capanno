@@ -1,0 +1,19 @@
+name: nf.core sarek
+identifier: WF_7b83ef.a0
+description: >
+  Sarek is a workflow designed to detect variants on whole genome or targeted sequencing data.
+softwareVersion:
+  versionName: 1.7.1
+metadataStatus: Released
+workflowStatus: Released
+workflowFile: sarek.wdl
+repoName: nfcore-sarek
+gitTag: master
+inputsTemplate: inputs.json
+executable: true
+current: true
+codeRepository:
+  URL: https://github.com/truwl/nfcore-sarek/
+WebSite:
+  - URL: https://github.com/nf-core/sarek
+    name: nf-core/sarek
